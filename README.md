@@ -1,5 +1,9 @@
 # Zot2net a.k.a. Ref2Net
 
+-------------------------------------------------------
+----------- VERSION IN DEVELOPMENT !!! ----------------
+-------------------------------------------------------
+
 --- PRESENTATION ---
 A Web app in Flask and Bootstrap to fetch Zotero datasets and then create graph visualizations with d3.js
 REFNET allows to generate datavisualisations from sets of Zotero references.
