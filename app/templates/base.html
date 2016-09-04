@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    
+    <head>
+    
+        <meta charset="utf-8">
+        <title> {{ glob.titleApp }} - beta version </title>
+        
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
+    
+	
+	<style>
+		
+		body {
+            background-color: black;    
+        }
+        
+        
+        header {
+            background-color: black;    
+        }
+		
+	</style>
+	
+    </head>
+
+	
+
+    <header>
+	
+	<!-- main logo / title / nav bar -->
+	<div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="/"> {{ glob.titleApp }} </a>
+    </div>
+
+	<div class = "container-fluid">
+	    
+		
+		
+	    <!-- Button 'About' triggering modal -->
+	    <button type="button"
+				  class="btn btn-primary"
+				  data-toggle="modal"
+				  style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+				  data-target="#modalAbout"
+				  > 
+	      About
+		  <!--{{ glob.titleApp }}-->
+	    </button>
+	    
+	    <!-- Modal About -->
+	    <div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	      <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
+				</div>
+		  
+				<div class="modal-body">
+				  
+				  <h4 class="text-center">--- PRESENTATION ---</h4>
+				  <p><em>{{ glob.titleApp }}</em> allows to generate datavisalisations from sets of Zotero references.</p>
+				  <hr></hr>
+				  
+				  <h4 class="text-center">--- HISTORY ---</h4>
+				  <p><em>{{ glob.titleApp }}</em> started as a part of <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=start">1.CAMP</a>,
+					  which a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
+					  Julien Bellanger could tell more about this part...
+				  </p>
+				  <hr></hr>
+				  
+				  <h4 class="text-center">--- WIKI ---</h4>
+				  <p><em>{{ glob.titleApp }}</em> development is documented
+					  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
+					  and soon on GitHub or GitLab (as soon as Julien P understands how it works...)
+				  </p>
+				  <hr></hr>
+				  
+				  <h4 class="text-center">--- UNDER THE HOOD ---</h4>
+				  <p><em>{{ glob.titleApp }}</em> is powered by
+					  <a target="_blank" href="https://www.python.org/" >Python</a> /
+					  <a target="_blank" href="https://www.zotero.org/" >Zotero</a> /
+					  <a target="_blank" href="http://flask.pocoo.org/" >Flask</a> /
+					  <a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> /
+					  <a target="_blank" href="https://d3js.org/" >d3.js</a>
+				  </p>
+				  <hr></hr>
+				  
+				  <h4 class="text-center">--- CREDITS ---</h4>
+				  <p>Project by
+					  <a target="_blank" href="http://www.pingbase.net/">PING</a> /
+					  <a target="_blank" href="http://artlabo.org/">ARTLABO</a>
+					  and developped by Julien P.
+				  </p>
+				  <hr></hr>
+				  
+				  <h4 class="text-center">--- LICENCE ---</h4>
+				  <p><em>{{ glob.titleApp }}</em> is an open source project under a Creative Commons licence : BY
+				  </p>
+				
+				</div>
+			</div>
+	      </div>
+	    </div>
+	    
+	    
+		
+		<!-- Button 'HOW TO' triggering modal -->
+	    <button type="button"
+				  class="btn btn-primary"
+				  data-toggle="modal"
+				  style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+				  data-target="#modalHowTo"
+				  > 
+	      How to use {{ glob.titleApp }}
+	    </button>
+		
+		<!-- Modal How to -->
+	    <div class="modal fade" id="modalHowTo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	      <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <h3 class="modal-title text-center" id="myModalLabel">How to use {{ glob.titleApp }} </h3>
+				</div>
+		  
+				<div class="modal-body">
+				  
+				  <h4 class="text-center">--- Node infos and neighbours ---</h4>
+				    <h5> <span class="glyphicon glyphicon-menu-right"></span>
+						<strong><em>Simple left-click</em></strong>
+						<p>select a node and show its infos in the panel on the right side of the window</p>
+					</h5>
+					<h5> <span class="glyphicon glyphicon-menu-right"></span>
+						<strong><em>Double left-click</em></strong>
+						<p>select/unselect a node and show its neighbours while hiding the others</p>
+					</h5>
+				
+				  <hr></hr>
+				
+				  <h4 class="text-center">--- Zoom and pan graph ---</h4>
+				    <h5> <span class="glyphicon glyphicon-menu-right"></span>
+						<strong><em>Zoom graph</em></strong>
+						<p>use your mouse wheel to zoom on the graph</p>
+					</h5>
+					<h5> <span class="glyphicon glyphicon-menu-right"></span>
+						<strong><em>Pan graph</em></strong>
+						<p>left-click and hold to move your graph. If the graph goes out of the window refresh the page. </p>
+					</h5>
+				
+				  <hr></hr>
+				
+				  <h4 class="text-center">--- Filters ---</h4>
+				    <h5> <span class="glyphicon glyphicon-menu-right"></span>
+						<strong><em>Select by categories</em></strong>
+						<p>check/uncheck the categories of nodes you want to show/hide</p>
+					</h5>
+					<h5> <span class="glyphicon glyphicon-menu-right"></span>
+						<strong><em>Select by groups </em></strong>
+						<p>check/uncheck the groups of nodes you want to show/hide</p>
+					</h5> 
+				
+				</div>
+			</div>
+	      </div>
+	    </div>
+		
+	    
+	    <!-- just one refresh button == to the displayed collection -->
+	    {% if data_JSON %}
+		
+		<button type="button"
+			class="btn btn-warning"
+			aria-label="Left Align"
+			data-toggle="modal"
+			data-placement="bottom"
+			title="refresh the {{ selection }} dataset"
+			style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 5px"
+			data-target="#modalRefresh"
+			>
+		    <span class="badge"><span class="glyphicon glyphicon-repeat"></span></span>
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade bs-example-modal-md"
+		     tabindex="-1"
+		     id="modalRefresh"
+		     tabindex="-1"
+		     role="dialog"
+		     aria-labelledby="myModalLabel"
+		     >
+		    <div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+			    <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+				    ...About refreshing datasets
+				</h4>
+			    </div>
+  
+			    <div class="modal-body">
+				<p class="text-justify lead">
+				    Refreshing a dataset with {{ glob.titleApp }} calls the Zotero's API,
+				    gets the diffents JSONs datas, generates the new nodes/links datas... and then displays the datas in a network graph.
+				    So it may take some time to do it properly.
+				</p>
+				<p class="text-justify lead">
+				    Please just click once and be patient, and before doing any graph or node manipulation, 
+				    please wait a few seconds for the page to completely finish to load...
+				</p>
+			    </div>
+			    
+			    <a href="/refresh/{{ selection }}">
+			    <button type="button" class="btn btn-lg btn-block btn-warning">
+				Understood! Let's refresh "{{ selection }}" !
+			    </button>
+			    </a>
+			    
+			</div>
+		    </div>
+		</div>
+		
+	    {% endif %}
+	    
+	    
+	    <!-- main buttons according to the length of 'collections_names' -->
+	    {% for coll in glob.collections_names %}
+		<a href="/{{ coll[0] }}">
+		<button type="button"
+			class="btn btn-info"
+			aria-label="Left Align"
+			style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px">
+		{{ coll[1] }}
+		</button></a>
+	    {% endfor %}
+	    
+	    
+	<div style="margin-right: 10px; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;"  class="container-fluid">	
+	</div>
+	
+	</div>
+	
+    </header>
+
+
+    <body id="body">
+	<!-- contents -->
+	<div class="container-layout" id="containerLayout" ></div>
+
+	<div class="container-fluid">
+	    {% block content %}{% endblock %}
+	</div>
+	
+
+    </body>
+
+    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"> </script>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!--  bootstrap callings  -->
+    <script type="text/javascript">
+	$(document).ready(
+	    function(){ $(".dropdown-toggle").dropdown() }) ;
+	
+	$(document).ready( checkFilter() );
+	
+	$(function () {
+	    $('[data-toggle="tooltip"]').tooltip()
+	});
+    </script>
+    
+    
+</html>
+

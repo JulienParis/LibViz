@@ -1,0 +1,62 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!--<!DOCTYPE html>-->
+    <meta charset="utf-8">
+    <style>
+        
+        /* ----- complementary CSS ----- */
+        
+        .links line {
+            stroke: white;
+            stroke-opacity: 1.0;
+            stroke-width: 0.7px;
+            /*stroke-dasharray: "4 4"*/
+        }
+        
+        /*.node text {
+          stroke:#333;
+          cursos:pointer;
+        }*/
+        
+        .node text {
+          pointer-events: none;
+          font: 14px sans-serif;
+        }
+          
+        .node circle {
+          stroke: #fff;
+          stroke-width: 1.0px;
+        }
+        
+        
+
+        
+        .container-layout {
+            position: absolute;
+            /*padding-right: 15px;*/
+            /*padding-left: 15px;*/
+            /*margin-right: auto;*/
+            /*margin-left: auto;*/
+            background-color: black;
+            z-index: 0;
+        }
+        
+        .container-fluid{
+            height: 100%;
+            z-index: 2;
+        }
+    
+    </style>
+    
+
+    
+    <!-- start big row for infos and graph -->
+    <div id="graphLayout" class="row" style="min-height: 100%"> <!-- jumbotron for debugging purposes -->
+    
+    {% block D3_infos %}{% endblock %}
+
+
+{% endblock %}

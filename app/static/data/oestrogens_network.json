@@ -1,0 +1,5830 @@
+{
+  "links": [
+    {
+      "ID": "edge_1",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_EDBBFUMN",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_2",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EDBBFUMN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_3",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BT6Z63QZ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_4",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_V96FMVV8",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_5",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_V96FMVV8",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_6",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_R5E7TDEI",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_7",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_R5E7TDEI",
+      "target": "ref_HDK7XA7K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_8",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_T3BZJESJ",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_9",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_T3BZJESJ",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_10",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_T3BZJESJ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_11",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_T3BZJESJ",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_12",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_T3BZJESJ",
+      "target": "ref_3M2S2E7R",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_13",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_H4RCQ7ZI",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_14",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ECED5A2P",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_15",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ECED5A2P",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_16",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_GDAJ28UW",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_17",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_GDAJ28UW",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_18",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_GDAJ28UW",
+      "target": "ref_9GN5KSGZ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_19",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_94M492SB",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_20",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_9GN5KSGZ",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_21",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_9GN5KSGZ",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_22",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9GN5KSGZ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_23",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_G9UPMX5V",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_24",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_G9UPMX5V",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_25",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_G9UPMX5V",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_26",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_NNAGUC3R",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_27",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NNAGUC3R",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_28",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8CPECCSN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_29",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2URM4FU2",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_30",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_3M2S2E7R",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_31",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3M2S2E7R",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_32",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_JZ3UJ6C9",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_33",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JZ3UJ6C9",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_34",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_T9V87MN6",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_35",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_T9V87MN6",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_36",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_UVXJWBI2",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_37",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_UVXJWBI2",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_38",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_UVXJWBI2",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_39",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_UVXJWBI2",
+      "target": "ref_99RQ5HRF",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_40",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_UVXJWBI2",
+      "target": "ref_AT9489PS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_41",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_AT9489PS",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_42",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AT9489PS",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_43",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AT9489PS",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_44",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AT9489PS",
+      "target": "ref_99RQ5HRF",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_45",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_99RQ5HRF",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_46",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_99RQ5HRF",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_47",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_99RQ5HRF",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_48",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VW8VK693",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_49",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VW8VK693",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_50",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_IQMWHNFG",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_51",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_IUXJINVH",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_52",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_DPB3QX84",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_53",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_554SE76H",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_54",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_HDK7XA7K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_55",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_XGRA2BDU",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_56",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_P8F2SBCX",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_57",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_ARWF9DRD",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_58",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ARWF9DRD",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_59",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ARWF9DRD",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_60",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ARWF9DRD",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_61",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ARWF9DRD",
+      "target": "ref_9KPGME85",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_62",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ARWF9DRD",
+      "target": "ref_VMQ2292C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_63",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ARWF9DRD",
+      "target": "ref_SRKQ6UNC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_64",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_554SE76H",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_65",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_554SE76H",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_66",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P8F2SBCX",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_67",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P8F2SBCX",
+      "target": "ref_XCJUNCJC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_68",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P8F2SBCX",
+      "target": "ref_KWCZEPB3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_69",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P8F2SBCX",
+      "target": "ref_ZXNPQ6M6",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_70",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XGRA2BDU",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_71",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XGRA2BDU",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_72",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_DPB3QX84",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_73",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_DPB3QX84",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_74",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_IUXJINVH",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_75",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IUXJINVH",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_76",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_IUXJINVH",
+      "target": "ref_7IK9XS5H",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_77",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_HDK7XA7K",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_78",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HDK7XA7K",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_79",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HDK7XA7K",
+      "target": "ref_PV9WRXUW",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_80",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HDK7XA7K",
+      "target": "ref_VM68J6X4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_81",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VM68J6X4",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_82",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_1276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_83",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_551",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_84",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_85",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_501",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_86",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_976",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_87",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_88",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PV9WRXUW",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_89",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZXNPQ6M6",
+      "target": "tag_851",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_90",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZXNPQ6M6",
+      "target": "tag_676",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_91",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZXNPQ6M6",
+      "target": "tag_651",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_92",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZXNPQ6M6",
+      "target": "tag_451",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_93",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZXNPQ6M6",
+      "target": "tag_176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_94",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZXNPQ6M6",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_95",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ZXNPQ6M6",
+      "target": "ref_GQ64BDW2",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_96",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ZXNPQ6M6",
+      "target": "ref_DFH3EE7E",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_97",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_DFH3EE7E",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_98",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_DFH3EE7E",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_99",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_HT8Q6DES",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_100",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HT8Q6DES",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_101",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HT8Q6DES",
+      "target": "ref_GQ64BDW2",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_102",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HT8Q6DES",
+      "target": "ref_VP7F4N2M",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_103",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_UXI9WQTF",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_104",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IQMWHNFG",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_105",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5XMDQ4DB",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_106",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5XMDQ4DB",
+      "target": "ref_GQ64BDW2",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_107",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5XMDQ4DB",
+      "target": "ref_GKZF99UV",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_108",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_R2CJAPG9",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_109",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_R2CJAPG9",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_110",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_R2CJAPG9",
+      "target": "ref_GQ64BDW2",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_111",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_R2CJAPG9",
+      "target": "ref_Z2II5B9C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_112",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_R2CJAPG9",
+      "target": "ref_MG5S4ZCE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_113",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_Z2II5B9C",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_114",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_Z2II5B9C",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_115",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Z2II5B9C",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_116",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Z2II5B9C",
+      "target": "ref_BFBE9FRR",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_117",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Z2II5B9C",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_118",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Z2II5B9C",
+      "target": "ref_V34SNSTA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_119",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Z2II5B9C",
+      "target": "ref_7IK9XS5H",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_120",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Z2II5B9C",
+      "target": "ref_KWCZEPB3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_121",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_KWCZEPB3",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_122",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_KWCZEPB3",
+      "target": "ref_GQ64BDW2",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_123",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_GQ64BDW2",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_124",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_GQ64BDW2",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_125",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_GQ64BDW2",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_126",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_GQ64BDW2",
+      "target": "ref_MG5S4ZCE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_127",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_GQ64BDW2",
+      "target": "ref_XCJUNCJC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_128",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VBCAKZ9H",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_129",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VBCAKZ9H",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_130",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VBCAKZ9H",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_131",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_GKZF99UV",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_132",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_GKZF99UV",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_133",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_GKZF99UV",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_134",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_W2IS79KX",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_135",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_W2IS79KX",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_136",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_W2IS79KX",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_137",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_W2IS79KX",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_138",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_29KDURAI",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_139",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_29KDURAI",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_140",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_29KDURAI",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_141",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_29KDURAI",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_142",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_29KDURAI",
+      "target": "ref_MG5S4ZCE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_143",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_MG5S4ZCE",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_144",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MG5S4ZCE",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_145",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_MG5S4ZCE",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_146",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_4QTKV4F3",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_147",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4QTKV4F3",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_148",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_4QTKV4F3",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_149",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_4QTKV4F3",
+      "target": "ref_EDI68INT",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_150",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_4QTKV4F3",
+      "target": "ref_VBBWD2V8",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_151",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VBBWD2V8",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_152",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VBBWD2V8",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_153",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VBBWD2V8",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_154",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_EDI68INT",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_155",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EDI68INT",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_156",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_EDI68INT",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_157",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_158",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_159",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1051",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_160",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_161",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_476",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_162",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_826",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_163",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1076",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_164",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_165",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_166",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1226",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_167",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_1126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_168",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_751",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_169",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_951",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_170",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_171",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_376",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_172",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_173",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_601",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_174",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_SRKQ6UNC",
+      "target": "tag_301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_175",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SRKQ6UNC",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_176",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SRKQ6UNC",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_177",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SRKQ6UNC",
+      "target": "ref_2SJJ2VPQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_178",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SRKQ6UNC",
+      "target": "ref_VP7F4N2M",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_179",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SRKQ6UNC",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_180",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VP7F4N2M",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_181",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VP7F4N2M",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_182",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VP7F4N2M",
+      "target": "ref_XCJUNCJC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_183",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_184",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_185",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_576",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_186",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_401",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_187",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_188",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_189",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_476",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_190",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_1151",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_191",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_1226",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_192",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_526",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_193",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_1101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_194",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_1126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_195",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_196",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_197",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_951",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_198",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_876",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_199",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_926",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_200",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_1026",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_201",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_202",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_203",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_151",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_204",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_726",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_205",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_206",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XCJUNCJC",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_207",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_626",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_208",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_351",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_209",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_826",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_210",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_1226",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_211",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_1126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_212",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_901",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_213",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_951",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_214",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_801",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_215",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VMQ2292C",
+      "target": "tag_226",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_216",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VMQ2292C",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_217",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VMQ2292C",
+      "target": "ref_PJXWJ4C7",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_218",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VMQ2292C",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_219",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_9KPGME85",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_220",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9KPGME85",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_221",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_7IK9XS5H",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_222",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_7IK9XS5H",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_223",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_7IK9XS5H",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_224",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_FXWCGUE5",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_225",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_FXWCGUE5",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_226",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FXWCGUE5",
+      "target": "ref_V34SNSTA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_227",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FXWCGUE5",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_228",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_V34SNSTA",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_229",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_V34SNSTA",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_230",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_V34SNSTA",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_231",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_V34SNSTA",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_232",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZQG84XQW",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_233",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZQG84XQW",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_234",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_4GAUANX5",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_235",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_4GAUANX5",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_236",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4GAUANX5",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_237",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_4GAUANX5",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_238",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_4GAUANX5",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_239",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_BFBE9FRR",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_240",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_BFBE9FRR",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_241",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BFBE9FRR",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_242",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_BFBE9FRR",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_243",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_2EQESATT",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_244",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2EQESATT",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_245",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_2EQESATT",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_246",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_2EQESATT",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_247",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_RNP48896",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_248",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RNP48896",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_249",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RNP48896",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_250",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RNP48896",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_251",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_QGHT3W5V",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_252",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_QGHT3W5V",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_253",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_QGHT3W5V",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_254",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QGHT3W5V",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_255",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QGHT3W5V",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_256",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_HZ86AXNV",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_257",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_HZ86AXNV",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_258",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HZ86AXNV",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_259",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HZ86AXNV",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_260",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HZ86AXNV",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_261",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_AQMUA2M4",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_262",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AQMUA2M4",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_263",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AQMUA2M4",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_264",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_53HBW8NV",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_265",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_53HBW8NV",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_266",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_53HBW8NV",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_267",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_53HBW8NV",
+      "target": "ref_Q57Z25WP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_268",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_CZVTI8Z9",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_269",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CZVTI8Z9",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_270",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_CZVTI8Z9",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_271",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_24925MUH",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_272",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_24925MUH",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_273",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_24925MUH",
+      "target": "ref_F7T48F3S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_274",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_Q7SFACDB",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_275",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Q7SFACDB",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_276",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Q7SFACDB",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_277",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_D2F3EV45",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_278",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_D2F3EV45",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_279",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_URRSHA4G",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_280",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_URRSHA4G",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_281",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_IEPBII8A",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_282",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IEPBII8A",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_283",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_33V8E7JS",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_284",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_33V8E7JS",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_285",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_33V8E7JS",
+      "target": "ref_2SJJ2VPQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_286",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_33V8E7JS",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_287",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6W34KJJN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_288",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_6W34KJJN",
+      "target": "ref_2SJJ2VPQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_289",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_6W34KJJN",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_290",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_WQE98M5C",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_291",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WQE98M5C",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_292",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_AEX984EM",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_293",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AEX984EM",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_294",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AEX984EM",
+      "target": "ref_2SJJ2VPQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_295",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_ZMUS8ZBK",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_296",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZMUS8ZBK",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_297",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ZMUS8ZBK",
+      "target": "ref_2SJJ2VPQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_298",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_EATV8CAD",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_299",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EATV8CAD",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_300",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_EATV8CAD",
+      "target": "ref_2SJJ2VPQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_301",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_2SJJ2VPQ",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_302",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2SJJ2VPQ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_303",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_F7T48F3S",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_304",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_F7T48F3S",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_305",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_F7T48F3S",
+      "target": "ref_XDZVQMF4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_306",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_F7T48F3S",
+      "target": "ref_DIZNN8PJ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_307",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_F7T48F3S",
+      "target": "ref_RR492BZJ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_308",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_F7T48F3S",
+      "target": "ref_IX2N69XV",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_309",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_RR492BZJ",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_310",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RR492BZJ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_311",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XDZVQMF4",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_312",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XDZVQMF4",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_313",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_DIZNN8PJ",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_314",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_DIZNN8PJ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_315",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_6B77HX4N",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_316",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6B77HX4N",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_317",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_6B77HX4N",
+      "target": "ref_2WQZTAAI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_318",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_2WQZTAAI",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_319",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2WQZTAAI",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_320",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_WHSXAMBF",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_321",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WHSXAMBF",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_322",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_IX2N69XV",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_323",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IX2N69XV",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_324",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CV34JIMD",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_325",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_FTWW88JB",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_326",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_FTWW88JB",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_327",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_FTWW88JB",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_328",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FTWW88JB",
+      "target": "ref_Q57Z25WP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_329",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_5W2N5P3G",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_330",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_5W2N5P3G",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_331",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5W2N5P3G",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_332",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5W2N5P3G",
+      "target": "ref_Q57Z25WP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_333",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PJXWJ4C7",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_334",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PJXWJ4C7",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_335",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_PJXWJ4C7",
+      "target": "ref_Q57Z25WP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_336",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Q57Z25WP",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_337",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_Q57Z25WP",
+      "target": "ref_F8Q923UA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_338",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_GBFB22CN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_339",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HPTTCTAJ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_340",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_F8Q923UA",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_341",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_F8Q923UA",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_342",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_X7N6ATKC",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_343",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_42BD9C79",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_344",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_DJJXKBEB",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_345",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8PX73DAA",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_346",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_8PX73DAA",
+      "target": "ref_VPR2282D",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_347",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VPR2282D",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_348",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BUTPXX4M",
+      "target": "group_1",
+      "weight": 1.0
+    }
+  ],
+  "nodes": [
+    {
+      "ID": "ref_EDBBFUMN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XI2ZU336"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "UFC-Que choisir met en garde contre les substances toxiques contenues dans certaines fournitures scolaires",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "newspaperArticle",
+      "url": "http://www.lemonde.fr/campus/article/2016/08/28/ufc-que-choisir-met-en-garde-contre-les-substances-toxiques-contenues-dans-certaines-fournitures-scolaires_4988923_4401467.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BT6Z63QZ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Dihydrotestosterone (DHT, andogenous androgen)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Dihydrotestosterone&oldid=730625611",
+      "weight": 25
+    },
+    {
+      "ID": "ref_V96FMVV8",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_IVGUCIJJ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "WHO - Endocrine disrupters and child health",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "webpage",
+      "url": "http://www.who.int/ceh/publications/endocrine_disrupters_child/en/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_R5E7TDEI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_HDK7XA7K"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Chlordecone in the French West Indies: updated assessment of health risks",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.cancer-environnement.fr/Portals/0/Documents%20PDF/Publication/PE/2011_Chlord%C3%A9cone_BEH%2002.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_T3BZJESJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S",
+        "ref_3M2S2E7R"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Strategie Nationale sur les Perturbateurs Endocriniens (Fr)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.developpement-durable.gouv.fr/IMG/pdf/2014-04-29_Strategie_Nationale_Perturbateurs_Endocriniens.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_H4RCQ7ZI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_IVGUCIJJ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "WHO - Recommended Classification of Pesticides",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.who.int/ipcs/publications/pesticides_hazard_rev_3.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ECED5A2P",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_IVGUCIJJ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "WHO - State of the science of endocrine disrupting chemicals",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "webpage",
+      "url": "http://www.who.int/ceh/publications/endocrine/en/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_GDAJ28UW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_9GN5KSGZ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Rapport au Parlement  relatif aux perturbateurs endocriniens",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "webpage",
+      "url": "http://www.cancer-environnement.fr/Portals/0/Documents%20PDF/Texte%20officiel/Minist%C3%A8res/PE-Rapport-Parlement-Loi-2412012-2.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_94M492SB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Acad\u00e9mie nationale de m\u00e9decine (Fr)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "blogPost",
+      "url": "http://www.academie-medecine.fr/publication100036409/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9GN5KSGZ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GDAJ28UW"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Office parlementaire d'\u00e9valuation des choix scientifiques et technologiques (Fr)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www2.assemblee-nationale.fr/14/les-delegations-comite-et-office-parlementaire/office-parlementaire-d-evaluation-des-choix-scientifiques-et-technologiques",
+      "weight": 25
+    },
+    {
+      "ID": "ref_G9UPMX5V",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Institut National de Veille Sanitaire (Fr)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.invs.sante.fr/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NNAGUC3R",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "European Food Safety Authority",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.efsa.europa.eu/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_8CPECCSN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "The CREDO Cluster - presentation_kortenkamp_univ_london.pdf",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://ec.europa.eu/research/endocrine/pdf/presentation_kortenkamp_univ_london.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2URM4FU2",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "L\u2019Anses se prononce sur les crit\u00e8res d\u2019identification des perturbateurs endocriniens | Anses - Agence nationale de s\u00e9curit\u00e9 sanitaire de l\u2019alimentation, de l\u2019environnement et du travail",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.anses.fr/fr/content/l%E2%80%99anses-se-prononce-sur-les-crit%C3%A8res-d%E2%80%99identification-des-perturbateurs-endocriniens",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3M2S2E7R",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_T3BZJESJ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Agence nationale de s\u00e9curit\u00e9 sanitaire de l\u2019alimentation, de l\u2019environnement et du travail (Anses, Fr)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "https://www.anses.fr/fr",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JZ3UJ6C9",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Programme National de Recherche sur les Perturbateurs Endocriniens (PNRPE, FR)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.pnrpe.fr/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_T9V87MN6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Cancer et environnement",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.cancer-environnement.fr/274-Perturbateurs-endocriniens.ce.aspx",
+      "weight": 25
+    },
+    {
+      "ID": "ref_UVXJWBI2",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S",
+        "ref_99RQ5HRF",
+        "ref_AT9489PS",
+        "ref_UGNB96A6"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Endocrine Society",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "https://www.endocrine.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AT9489PS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S",
+        "ref_99RQ5HRF",
+        "ref_UVXJWBI2"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Endocrine Society Experts Concerned EU Chemical Criteria Will Not Protect Public | Endocrine Society",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "https://www.endocrine.org/news-room/current-press-releases/endocrine-society-experts-concerned-eu-chemical-criteria-will-not-protect-public",
+      "weight": 25
+    },
+    {
+      "ID": "ref_99RQ5HRF",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S",
+        "ref_AT9489PS",
+        "ref_UVXJWBI2"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Perturbateurs endocriniens : le projet de r\u00e9glementation de Bruxelles critiqu\u00e9 par les scientifiques",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.lemonde.fr/planete/article/2016/07/29/polluants-chimiques-le-projet-de-reglementation-de-bruxelles-critique-par-les-scientifiques_4976260_3244.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VW8VK693",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_IQMWHNFG",
+        "ref_IUXJINVH",
+        "ref_DPB3QX84",
+        "ref_554SE76H",
+        "ref_HDK7XA7K",
+        "ref_XGRA2BDU",
+        "ref_P8F2SBCX",
+        "ref_ARWF9DRD"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Stockholm Convention on Persistent Organic Pollutants",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "http://chm.pops.int/default.aspx",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ARWF9DRD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693",
+        "ref_4QTKV4F3",
+        "ref_9KPGME85",
+        "ref_VMQ2292C",
+        "ref_SRKQ6UNC"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Endosulfan (insecticide)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Endosulfan&oldid=725836941",
+      "weight": 25
+    },
+    {
+      "ID": "ref_554SE76H",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Lindane (insecticide)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Lindane&oldid=729137648",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P8F2SBCX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XCJUNCJC",
+        "ref_KWCZEPB3",
+        "ref_ZXNPQ6M6",
+        "ref_VW8VK693"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Perfluorooctanesulfonic acid (PFOS, surfactant)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Perfluorooctanesulfonic_acid&oldid=728358635",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XGRA2BDU",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693",
+        "ref_HP285AHE"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Dioxin (herbicide)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=2,3,7,8-Tetrachlorodibenzodioxin&oldid=728946752",
+      "weight": 25
+    },
+    {
+      "ID": "ref_DPB3QX84",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693",
+        "ref_BUTFISXP"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "PCBs (dielectric and coolant fluids)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Polychlorinated_biphenyl&oldid=730304051",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IUXJINVH",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693",
+        "ref_B48D5GJU",
+        "ref_7IK9XS5H"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "DDT (insecticide)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=DDT&oldid=729485236",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HDK7XA7K",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693",
+        "ref_PV9WRXUW",
+        "ref_VM68J6X4",
+        "ref_R5E7TDEI"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Chlordecone (insecticide)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Kepone&oldid=716214129",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VM68J6X4",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_HDK7XA7K"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "pH dependence of chlordecone adsorption on activated carbons and role of adsorbent physico-chemical properties",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "journalArticle",
+      "url": "http://linkinghub.elsevier.com/retrieve/pii/S1385894713003604",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PV9WRXUW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_HDK7XA7K"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Alternative Agricultural Cropping Options for Chlordecone-Polluted Martinique",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "Agriculture",
+        "Martinique",
+        "SCIENTIFIC ARTICLES",
+        "chlord\u00e9cone",
+        "emploi",
+        "pollution"
+      ],
+      "type": "journalArticle",
+      "url": "https://etudescaribeennes.revues.org/6710",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZXNPQ6M6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_DFH3EE7E",
+        "ref_P8F2SBCX"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Maternal levels of perfluorinated chemicals and subfecundity",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fecundity",
+        "maternal blood",
+        "perfluorooctane sulfonate",
+        "perfluorooctanoate",
+        "time to pregnancy"
+      ],
+      "type": "journalArticle",
+      "url": "http://humrep.oxfordjournals.org/content/early/2009/01/28/humrep.den490",
+      "weight": 25
+    },
+    {
+      "ID": "ref_DFH3EE7E",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ZXNPQ6M6"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Fecundity reduction",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "document",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HT8Q6DES",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_VP7F4N2M"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Perfluorooctanoic Acid (PFOA) and Pubertal Maturation in You... : Epidemiology",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "webpage",
+      "url": "http://journals.lww.com/epidem/Fulltext/2009/11001/Perfluorooctanoic_Acid__PFOA__and_Pubertal.209.aspx",
+      "weight": 25
+    },
+    {
+      "ID": "ref_UXI9WQTF",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "0763.htm",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://isee.conference-services.net/reports/template/onetextabstract.xml?xsl=template/onetextabstract.xsl&conferenceID=1651&abstractID=312130",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IQMWHNFG",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_VW8VK693",
+        "ref_K5AMB3T6"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Aldrin",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Aldrin&oldid=729133527",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5XMDQ4DB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_GKZF99UV"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "PFOA in People",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://pubs.acs.org/doi/abs/10.1021/es0725697",
+      "weight": 25
+    },
+    {
+      "ID": "ref_R2CJAPG9",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_Z2II5B9C",
+        "ref_MG5S4ZCE"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "EPA, DuPont Agree on Measures to Protect Drinking Water Near the DuPont Washington Works",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://web.archive.org/web/20080725235306/http://www.epa.gov/region03/enforcement/dupont_factsheet.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Z2II5B9C",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BFBE9FRR",
+        "ref_R2C4XPZ6",
+        "ref_F7T48F3S",
+        "ref_V34SNSTA",
+        "ref_7IK9XS5H",
+        "ref_R2CJAPG9",
+        "ref_KWCZEPB3"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "US Environmental Protection Agency",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "https://www.epa.gov/endocrine-disruption/what-endocrine-disruption",
+      "weight": 25
+    },
+    {
+      "ID": "ref_KWCZEPB3",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_Z2II5B9C",
+        "ref_P8F2SBCX"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Drinking Water Health Advisories for PFOA and PFOS",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.epa.gov/ground-water-and-drinking-water/drinking-water-health-advisories-pfoa-and-pfos",
+      "weight": 25
+    },
+    {
+      "ID": "ref_GQ64BDW2",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_4QTKV4F3",
+        "ref_MG5S4ZCE",
+        "ref_R2CJAPG9",
+        "ref_5XMDQ4DB",
+        "ref_HT8Q6DES",
+        "ref_ZXNPQ6M6",
+        "ref_XCJUNCJC",
+        "ref_KWCZEPB3"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Perfluorooctanoic acid (PFOA, surfactant)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Perfluorooctanoic_acid&oldid=730113974",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VBCAKZ9H",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_WQE98M5C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "National Institute of Environmental Health Sciences (USA)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.niehs.nih.gov/research/programs/endocrine/bpa_initiatives/bpa-related/index.cfm",
+      "weight": 25
+    },
+    {
+      "ID": "ref_GKZF99UV",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_4QTKV4F3",
+        "ref_5XMDQ4DB"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "U S Food and Drug Administration",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.fda.gov/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_W2IS79KX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_WQE98M5C",
+        "ref_4QTKV4F3"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Studies on Chemical In Plastics Questioned",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.washingtonpost.com/wp-dyn/content/article/2008/04/26/AR2008042602126.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_29KDURAI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S",
+        "ref_4QTKV4F3",
+        "ref_MG5S4ZCE"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "The Weinberg proposal",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://pubs.acs.org/doi/abs/10.1021/es0630137",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MG5S4ZCE",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_4QTKV4F3",
+        "ref_29KDURAI",
+        "ref_R2CJAPG9"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "DuPont (USA)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.dupont.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4QTKV4F3",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_EH78XNAN",
+        "ref_WQE98M5C",
+        "ref_ARWF9DRD",
+        "ref_GQ64BDW2",
+        "ref_EDI68INT",
+        "ref_98Z7TCVD",
+        "ref_VBBWD2V8",
+        "ref_MG5S4ZCE",
+        "ref_W2IS79KX",
+        "ref_29KDURAI",
+        "ref_GKZF99UV"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Weinberg Group",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://weinberggroup.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VBBWD2V8",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_4QTKV4F3",
+        "ref_WQE98M5C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Exclusive: 'Science for Sale' Probe Deepens - ABC News",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://abcnews.go.com/Blotter/story?id=4428347&page=1",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EDI68INT",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_WQE98M5C",
+        "ref_4QTKV4F3"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Congress: Science for Sale? - ABC News",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://abcnews.go.com/Blotter/story?id=4252096",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SRKQ6UNC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S",
+        "ref_2SJJ2VPQ",
+        "ref_VP7F4N2M",
+        "ref_ARWF9DRD",
+        "ref_WQE98M5C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Inadvertent exposure to xenoestrogens in children",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "Adipose Tissue",
+        "Agriculture",
+        "Body Burden",
+        "Child",
+        "Child, Preschool",
+        "Cryptorchidism",
+        "Endocrine System",
+        "Environmental Exposure",
+        "Estrogens",
+        "Female",
+        "Humans",
+        "Industry",
+        "Male",
+        "Population Surveillance",
+        "Risk Assessment",
+        "SCIENTIFIC ARTICLES",
+        "Spain",
+        "Xenobiotics"
+      ],
+      "type": "journalArticle",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VP7F4N2M",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XCJUNCJC",
+        "ref_SRKQ6UNC",
+        "ref_HT8Q6DES"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Delayed puberty",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Delayed_puberty&oldid=731288770",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XCJUNCJC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_GQ64BDW2",
+        "ref_P8F2SBCX",
+        "ref_VP7F4N2M"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Association of Perfluorooctanoic Acid (PFOA) and Perfluorooctane Sulfonate (PFOS) with age of puberty among children living near a chemical plant",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "Adolescent",
+        "Aging",
+        "Alkanesulfonic Acids",
+        "Caprylates",
+        "Chemical Industry",
+        "Child",
+        "Child, Preschool",
+        "Environmental Monitoring",
+        "Female",
+        "Fluorocarbons",
+        "Gonadal Steroid Hormones",
+        "Humans",
+        "Interviews as Topic",
+        "Logistic Models",
+        "Male",
+        "Menarche",
+        "Ohio",
+        "Puberty",
+        "Residence Characteristics",
+        "SCIENTIFIC ARTICLES",
+        "Self Report",
+        "West Virginia",
+        "Young Adult"
+      ],
+      "type": "journalArticle",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VMQ2292C",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ARWF9DRD",
+        "ref_PJXWJ4C7",
+        "ref_F7T48F3S"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Persistent pesticides in human breast milk and cryptorchidism",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "Adult",
+        "Case-Control Studies",
+        "Cryptorchidism",
+        "Female",
+        "Humans",
+        "Infant, Newborn",
+        "Male",
+        "Milk, Human",
+        "Pesticides"
+      ],
+      "type": "journalArticle",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9KPGME85",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ARWF9DRD"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Effect of endosulfan on male reproductive development.",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "journalArticle",
+      "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1241773/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_7IK9XS5H",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Z2II5B9C",
+        "ref_IUXJINVH"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Silent Spring (Rachel Carson, 1962)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS",
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Silent_Spring&oldid=731872803",
+      "weight": 25
+    },
+    {
+      "ID": "ref_FXWCGUE5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_V34SNSTA",
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Natural Resources Defense Council",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "https://www.nrdc.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_V34SNSTA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_AQMUA2M4",
+        "ref_Z2II5B9C",
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45",
+        "ref_FXWCGUE5"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Syngenta Settles Weedkiller Lawsuit",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "newspaperArticle",
+      "url": "http://www.wsj.com/articles/SB10001424052702304840904577426172221346482",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZQG84XQW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7V5CXIAQ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Environmental racism",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Environmental_racism&oldid=729829339",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4GAUANX5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45",
+        "ref_AQMUA2M4"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Atrazine Effects in Xenopus Aren't Reproducible",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS",
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "webpage",
+      "url": "http://www.thecre.com/pdf/2008-Atrazine_ACS.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BFBE9FRR",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45",
+        "ref_Z2II5B9C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Does Atrazine Influence Larval Development and Sexual Differentiation in Xenopus laevis?",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS",
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "journalArticle",
+      "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2639758/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2EQESATT",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_R2C4XPZ6",
+        "ref_AQMUA2M4",
+        "ref_D2F3EV45",
+        "ref_HC8GACUB"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Atrazine induces complete feminization and chemical castration in male African clawed frogs (Xenopus laevis)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "journalArticle",
+      "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2842049/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RNP48896",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45",
+        "ref_HC8GACUB",
+        "ref_AQMUA2M4"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "The Frog of War",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.motherjones.com/environment/2011/11/tyrone-hayes-atrazine-syngenta-feud-frog-endangered",
+      "weight": 25
+    },
+    {
+      "ID": "ref_QGHT3W5V",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_D2F3EV45",
+        "ref_AQMUA2M4",
+        "ref_R2C4XPZ6",
+        "ref_HC8GACUB"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Herbicides: Feminization of male frogs in the wild",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS",
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "journalArticle",
+      "url": "http://www.nature.com/nature/journal/v419/n6910/full/419895a.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HZ86AXNV",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_D2F3EV45",
+        "ref_AQMUA2M4",
+        "ref_R2C4XPZ6"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Australian Pesticides and Veterinary Medicines Authority",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://apvma.gov.au/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AQMUA2M4",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45",
+        "ref_2EQESATT",
+        "ref_HZ86AXNV",
+        "ref_QGHT3W5V",
+        "ref_V34SNSTA",
+        "ref_RNP48896",
+        "ref_4GAUANX5"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Tyrone Hayes",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Tyrone_Hayes&oldid=730011044",
+      "weight": 25
+    },
+    {
+      "ID": "ref_53HBW8NV",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Q57Z25WP"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "DES Daughters - Centers for Disease Control and Prevention",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.cdc.gov/DES/CONSUMERS/daughters/index.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CZVTI8Z9",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_R2C4XPZ6",
+        "ref_D2F3EV45",
+        "ref_HC8GACUB"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Special Report: Syngenta's campaign to protect atrazine, discredit critics. \u2014 Environmental Health News",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.environmentalhealthnews.org/ehs/news/2013/atrazine",
+      "weight": 25
+    },
+    {
+      "ID": "ref_24925MUH",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Agir pour l'Environnement",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.agirpourlenvironnement.org/campagne/perturbateurs-endocriniens",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Q7SFACDB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_D2F3EV45",
+        "ref_R2C4XPZ6",
+        "ref_HC8GACUB"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "A Valuable Reputation - The New Yorker",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.newyorker.com/magazine/2014/02/10/a-valuable-reputation",
+      "weight": 25
+    },
+    {
+      "ID": "ref_D2F3EV45",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XEPKQQJ6",
+        "ref_R2C4XPZ6",
+        "ref_Q7SFACDB",
+        "ref_CZVTI8Z9",
+        "ref_RNP48896",
+        "ref_HZ86AXNV",
+        "ref_QGHT3W5V",
+        "ref_2EQESATT",
+        "ref_BFBE9FRR",
+        "ref_N4CJNCC2",
+        "ref_AQMUA2M4",
+        "ref_4GAUANX5",
+        "ref_V34SNSTA",
+        "ref_FXWCGUE5"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Syngenta (Switzerland)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www4.syngenta.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_URRSHA4G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XI2ZU336"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Chemos GmbH (Germany)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.chemos.de/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IEPBII8A",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XI2ZU336"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "B. P. Chemicals (UK, India)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.bpchemindia.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_33V8E7JS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SJJ2VPQ",
+        "ref_WQE98M5C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Hihang Industry Co. (China)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.haihangchem.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6W34KJJN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SJJ2VPQ",
+        "ref_WQE98M5C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Jinan Haohua Industry Co. (China)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.worldofchemicals.com/company/jinan-haohua-industry-co-ltd/8623.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_WQE98M5C",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_NG9J8T6J",
+        "ref_5WTZF8QX",
+        "ref_33V8E7JS",
+        "ref_DU2MWS4D",
+        "ref_QC4SATBA",
+        "ref_EDI68INT",
+        "ref_VBBWD2V8",
+        "ref_4QTKV4F3",
+        "ref_W2IS79KX",
+        "ref_VBCAKZ9H",
+        "ref_XXSZN2K5",
+        "ref_V6UER4T3",
+        "ref_BUTFISXP",
+        "ref_6W34KJJN",
+        "ref_B48D5GJU",
+        "ref_M5QEJF28",
+        "ref_SRKQ6UNC"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Bisphenol A (plastic compounds & epoxy resins)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Bisphenol_A&oldid=730160663",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AEX984EM",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SJJ2VPQ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Rugao Jinling Chemical Co. (China)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.jinlingchem.com/about_en.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZMUS8ZBK",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SJJ2VPQ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Connect Chemicals GmbH (Germany)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.connectchemicals.com/en/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EATV8CAD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SJJ2VPQ"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Sigma-Aldrich Corp. (US)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "CONTROVERSIAL ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "https://www.sigmaaldrich.com/united-states.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2SJJ2VPQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_EATV8CAD",
+        "ref_ZMUS8ZBK",
+        "ref_33V8E7JS",
+        "ref_6W34KJJN",
+        "ref_AEX984EM",
+        "ref_SRKQ6UNC"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Bisphenol S (epoxy resin & corrision inhibitor)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Bisphenol_S&oldid=724240981",
+      "weight": 25
+    },
+    {
+      "ID": "ref_F7T48F3S",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XDZVQMF4",
+        "ref_Z2II5B9C",
+        "ref_DIZNN8PJ",
+        "ref_RR492BZJ",
+        "ref_IX2N69XV",
+        "ref_24925MUH",
+        "ref_SRKQ6UNC",
+        "ref_29KDURAI",
+        "ref_VMQ2292C",
+        "ref_AT9489PS",
+        "ref_UVXJWBI2",
+        "ref_UGNB96A6",
+        "ref_T3BZJESJ",
+        "ref_99RQ5HRF"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Endocrine disruption",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Endocrine_disruptor&oldid=731768482",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RR492BZJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Sabotage Hormonal (Qu\u00e9bec)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.sabotage-hormonal.org/spip.php?article17",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XDZVQMF4",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "WWF",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://wwf.panda.org/about_our_earth/teacher_resources/webfieldtrips/toxics/our_chemical_world/edcs/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_DIZNN8PJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Greenpeace",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://www.greenpeace.org/international/en/news/Blogs/makingwaves/endocrine-distuptors/blog/54622/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6B77HX4N",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_E632NUJP",
+        "ref_2WQZTAAI"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Estrogen esters",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Estrogen_ester&oldid=730433457",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2WQZTAAI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6B77HX4N"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Hormone replacement therapy",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Hormone_replacement_therapy&oldid=727292258",
+      "weight": 25
+    },
+    {
+      "ID": "ref_WHSXAMBF",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_EH78XNAN"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Mycoestrogen (fungi estrogens)",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SUBSTANCES"
+      ],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Mycoestrogen&oldid=727693930",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IX2N69XV",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F7T48F3S"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "The Endocrine Disruption Exchange",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS"
+      ],
+      "type": "webpage",
+      "url": "http://endocrinedisruption.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CV34JIMD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Steroid Estrogens Profiles along River Stretches Arising from Sewage Treatment Works Discharges",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "journalArticle",
+      "url": "http://pubs.acs.org/doi/abs/10.1021/es0202107",
+      "weight": 25
+    },
+    {
+      "ID": "ref_FTWW88JB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Q57Z25WP"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "DES Action USA",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "ANTAGONISTIC ORGANISATIONS",
+        "SCANDALS"
+      ],
+      "type": "webpage",
+      "url": "http://www.desaction.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5W2N5P3G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Q57Z25WP"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Adenocarcinoma of the Vagina. Association of Maternal Stilbestrol Therapy with Tumor Appearance in Young Women",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "SCANDALS",
+        "SCIENTIFIC ARTICLES"
+      ],
+      "type": "journalArticle",
+      "url": "http://dx.doi.org/10.1056/NEJM197104222841604",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PJXWJ4C7",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ZPCINRKG",
+        "ref_Q57Z25WP",
+        "ref_VMQ2292C"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Cryptorchidism",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "webpage",
+      "url": "https://en.wikipedia.org/wiki/Cryptorchidism",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Q57Z25WP",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_F8Q923UA",
+        "ref_PJXWJ4C7",
+        "ref_5W2N5P3G",
+        "ref_FTWW88JB",
+        "ref_53HBW8NV"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Diethylstilbestrol (DES)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Diethylstilbestrol&oldid=729279977",
+      "weight": 25
+    },
+    {
+      "ID": "ref_GBFB22CN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "4-Androstenedione (andogenous androgen)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=4-Androstenedione&oldid=730201204",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HPTTCTAJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Testosterone (andogenous androgen)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Testosterone&oldid=731376180",
+      "weight": 25
+    },
+    {
+      "ID": "ref_F8Q923UA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Q57Z25WP"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Genital Anomalies",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "EFFECTS"
+      ],
+      "type": "journalArticle",
+      "url": "http://emedicine.medscape.com/article/1016681-overview",
+      "weight": 25
+    },
+    {
+      "ID": "ref_X7N6ATKC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Stilbestrol (non-steroidal estrogen)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Stilbestrol&oldid=729448633",
+      "weight": 25
+    },
+    {
+      "ID": "ref_42BD9C79",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Estriol (E3, andogenous estrogen)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "encyclopediaArticle",
+      "url": "https://en.wikipedia.org/w/index.php?title=Estriol&oldid=727680433",
+      "weight": 25
+    },
+    {
+      "ID": "ref_DJJXKBEB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6IQEWV38",
+        "ref_E632NUJP"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Alternative Climate Wedges \u2013 Population Wedge",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.philipcafaro.com/alternative-climate-wedges/population-wedge",
+      "weight": 25
+    },
+    {
+      "ID": "ref_8PX73DAA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_E632NUJP",
+        "ref_6IQEWV38",
+        "ref_VPR2282D"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Contraception is 'greenest' technology",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.lse.ac.uk/newsAndMedia/news/archives/2009/09/Contraception.aspx",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VPR2282D",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_E632NUJP",
+        "ref_6IQEWV38",
+        "ref_8PX73DAA"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "Fewer emitters, lower emissions, less costs",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.populationmatters.org/documents/reducing_emissions.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BUTPXX4M",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_E632NUJP",
+        "ref_6IQEWV38"
+      ],
+      "dataset": "OESTROGENS",
+      "dataset_": "oestrogens",
+      "group": [
+        "OESTROGENS"
+      ],
+      "label": "The Population Factor: how does it relate to climate change?",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.ourplanet.com/climate-adaptation/Potts_and_Marsh.pdf",
+      "weight": 25
+    },
+    {
+      "ID": "group_1",
+      "category": "group",
+      "color": "#8eba7d",
+      "group": "OESTROGENS",
+      "label": "OESTROGENS",
+      "supertag": true,
+      "tag": "",
+      "type": "group name",
+      "url": "",
+      "weight": 125
+    },
+    {
+      "ID": "tag_1",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Aging",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_26",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Young Adult",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_51",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Interviews as Topic",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_76",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Adolescent",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_101",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Chemical Industry",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_126",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Adipose Tissue",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_151",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Self Report",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_176",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "time to pregnancy",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_201",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Logistic Models",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_226",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Pesticides",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_251",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Population Surveillance",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_276",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "ANTAGONISTIC ORGANISATIONS",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_301",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Xenobiotics",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_326",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Residence Characteristics",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_351",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Case-Control Studies",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_376",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Risk Assessment",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_401",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Caprylates",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_426",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "SCIENTIFIC ARTICLES",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_451",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "perfluorooctanoate",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_476",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Child, Preschool",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_501",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "chlord\u00e9cone",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_526",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Fluorocarbons",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_551",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Martinique",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_576",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Alkanesulfonic Acids",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_601",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Spain",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_626",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Adult",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_651",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "perfluorooctane sulfonate",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_676",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "maternal blood",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_701",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "SUBSTANCES",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_726",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "West Virginia",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_751",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Industry",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_776",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Child",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_801",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Milk, Human",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_826",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Cryptorchidism",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_851",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "fecundity",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_876",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Menarche",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_901",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Infant, Newborn",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_926",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Ohio",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_951",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Male",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_976",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "emploi",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1001",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "SCANDALS",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1026",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Puberty",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1051",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Body Burden",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1076",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Endocrine System",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1101",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Gonadal Steroid Hormones",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1126",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Humans",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1151",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Environmental Monitoring",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1176",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Estrogens",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1201",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "EFFECTS",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1226",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Female",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1251",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "CONTROVERSIAL ORGANISATIONS",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1276",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Agriculture",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1301",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Environmental Exposure",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1326",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "pollution",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    }
+  ],
+  "stats": {
+    "edges": {
+      "edges number": 348
+    },
+    "nodes": {
+      "groups number": 0,
+      "nodes total number": 154,
+      "refs number": 100,
+      "tags number": 54
+    }
+  }
+}

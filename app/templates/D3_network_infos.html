@@ -1,0 +1,241 @@
+
+
+{% extends "D3_network_base.html" %}
+
+  {% block D3_infos %}
+  
+      <!-- search buttons -->
+      <div class="col-sm-2" >
+        
+        <!-- which datas -->
+        
+        <!-- explanation of which dataset is displayed -->
+        <!--<hr></hr>-->
+        <h2 class="text-center">
+          <span class="label label-primary">
+         {{ dataSet_name }}
+          </span>
+        
+          <!--<button type="button"-->
+          <!--    class="btn btn-warning"-->
+          <!--    aria-label="Left Align"-->
+          <!--    data-toggle="modal"-->
+          <!--    data-placement="bottom"-->
+          <!--    title="refresh the {{ selection }} dataset"-->
+          <!--    style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 5px"-->
+          <!--    data-target="#modalRefresh"-->
+          <!--    >-->
+          <!--    <span class="badge"><span class="glyphicon glyphicon-repeat"></span></span>-->
+          <!--</button>-->
+        
+        </h2>
+
+        <!--<h5> network </h5>-->
+        <!--<hr></hr>-->
+  
+  
+        <div class="list-group"> <p> </p> </div>
+
+        
+        
+        <!-- display search bar -->
+        <!--<hr></hr>-->
+        <!--<div class="panel panel-default">-->
+        <!--  <h5 class="text-center"><strong>research in graph</strong></h5>-->
+        <!--</div>-->
+        <div class="input-group">
+          <input id="search"
+                 type="text"
+                 class="form-control"
+                 placeholder="search a node" 
+                 onKeyPress="handle(event)">
+                
+          <span class="input-group-btn">
+            <button class="btn btn-default"
+                    type="button"
+                    onclick="searchNode()"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="search a node in the dataset"
+                    >
+            Go!
+            </button>
+          </span>
+        </div><!-- /input-group -->
+        
+
+        <div class="list-group"> <p></p> </div>
+
+        
+        
+        <!--<div class="panel panel-info">
+          <h5 class="text-center"><strong>select / hide nodes</strong></h5>
+        </div>-->
+        
+        <!-- display categories -->
+        
+        <!--<div class="btn-group btn-block ">-->
+        <!--  <button type="button" href="#"-->
+        <!--          class="btn btn-block btn-primary dropdown-toggle"-->
+        <!--          data-toggle="dropdown"-->
+        <!--          aria-haspopup="true"-->
+        <!--          aria-expanded="false">-->
+        <!--    {{ glob.ns.category }}(s)-->
+        <!--    <span class="caret"></span>-->
+        <!--  </button>-->
+        
+          
+          <div class="list-group">
+            <label class="text-center list-group-item active" >
+              {{ glob.ns.category }}(-ies)
+            </label>
+            
+            <label class="list-group-item">
+              <input class="checkFilter" type="checkbox" checked value="reference">
+                references
+            </label>
+            <label class="list-group-item">
+              <input class="checkFilter" type="checkbox" checked value="group">
+                groups
+            </label>
+            <label class="list-group-item">
+              <input class="checkFilter" type="checkbox" checked value="tag">
+                tags
+            </label>
+          </div>
+          
+          <div> <p></p> </div>
+  
+          <div class="list-group">
+            <label class="text-center list-group-item active" >
+              {{ glob.ns.group }}(s)
+            </label>
+            
+            {% for gr in groups %}
+            <label class="list-group-item">
+              <input class="checkFilter" type="checkbox" checked value="{{ gr }}">
+                {{ gr }}
+            </label>
+            {% endfor %}
+          </div>
+          
+          <div> <p></p> </div>
+          
+          
+          {% if selection == "1camp" %}
+          <div class="list-group">
+            <label class="text-center list-group-item active" >
+              super-{{ glob.ns.tags }}(s)
+            </label>
+            
+            {% for stag in supertags %}
+            <label class="list-group-item">
+              <input class="checkFilter" type="checkbox" checked value="{{ stag }}">
+                {{ stag }}
+            </label>
+            {% endfor %}
+            
+          </div>
+        {% endif %}
+  
+
+        
+        
+        <!-- display tags  
+        <div class="list-group">
+            <a class="list-group-item active " type="button" > 
+              super-{{ glob.ns.tags }}(s)
+            </a >          -->
+          <!-- List tags 
+             {% for stag in supertags %}
+              <button class="list-group-item btn-default " type="button" > {{ stag }} </button>
+            {% endfor %}
+        </div>        -->
+        
+      </div>
+
+
+
+
+   {% block D3_graph %}{% endblock %}
+   
+   
+   
+   
+    <!-- space to display contextual node infos  -->  
+    <div id="infoNode" class="col-sm-2 col-sm-offset-8">
+      <!--<hr></hr>-->
+      
+      
+        
+      <div class="list-group">
+        
+        <label class="text-center list-group-item active" >
+              LEGEND
+        </label>
+        
+        <div ID="legend" class="panel panel-info">
+        </div>
+        
+         <!--<h5 class="text-center"> 
+          <strong>legend</strong>
+        </h5>-->
+      </div>
+
+
+      
+      <!--<h5><strong>NOT SET YET...</strong></h5>-->
+      <!---->
+      <!--    <h6> - references</h6>-->
+      <!--    <h6> - groups</h6>-->
+      <!--    <h6> - supertags</h6>-->
+      <!--<hr></hr>-->
+        
+        
+      <div class="list-group">
+      <!--<div class="panel panel-info">-->
+        <label class="text-center list-group-item active" >
+              SELECTED NODE
+        </label>
+        <!--<h4 class="text-center">SELECTED NODE</h4>-->
+        
+        <p class="list-group-item">label :    <a id="nLabel"></a></p>
+        <p class="list-group-item">category : <a id="nCategory"></a></p>
+        <p class="list-group-item">group :    <a id="nGroup"></a></p>
+        <p class="list-group-item">type :     <a id="nType"></a></p>
+        <p class="list-group-item">url :      <a id="nUrl"></a></p>
+        <p class="list-group-item">tags :     <a id="nTags"></a></p> <!--still not displaying tags correctly-->
+        
+      </div>
+      <!--<hr></hr>-->
+
+      <!--<div class="panel panel-info">-->
+      <!--  <h5 class="text-center"><strong>how it works :</strong> </h5>-->
+      <!--</div>-->
+  <!--<h5> <span class="glyphicon glyphicon-menu-right"></span>
+        <strong><em>simple click</em></strong> : select a node and show its infos in this panel
+      </h5>
+      <h5> <span class="glyphicon glyphicon-menu-right"></span>
+        <strong><em>double click</em></strong> : select/unselect a node and show its neighbours
+      </h5>
+      
+      <hr></hr>-->
+      
+      <!---->
+      <!--<div id="nodeInfos">-->
+      <!--<div class="panel panel-info">-->
+      <!--<h5 class="text-center"><strong>infos :</strong> </h5>-->
+      <!--</div>-->
+      
+ 
+      </div>
+    
+    
+    </div>
+
+
+
+   {% block D3_js %}{% endblock %}
+
+
+  {% endblock %}
