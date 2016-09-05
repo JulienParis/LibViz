@@ -88,7 +88,7 @@ collections = {
         
         'API'           : 'Zotero',
         'dataSet_name'  : 'ALIENS_IN_GREEN',
-        'dataSet_key'   : '506887', ### aka collection key
+        'dataSet_key'   : '506887', ### aka group key
         'url_ROOT'      : createURL('506887'),
         'urlsDict'      : {
                             'N8IKC3JJ'  : {'name' : 'antagonistic organisations'  , 'len' : 0},
@@ -119,7 +119,7 @@ collections = {
         
         'API'           : 'Zotero',
         'dataSet_name'  : 'OESTROGENS',
-        'dataSet_key'   : '506887', ### aka collection key
+        'dataSet_key'   : '506887', ### aka group key
         'url_ROOT'      : createURL('506887'),
         'urlsDict'      : {
                             '9EXBK2DP'  : {'name' : 'OESTROGENS'  , 'len' : 0}
@@ -138,6 +138,37 @@ collections = {
         'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
     
         }
+        
+    
+    
+    ,
+    
+    'mediasFR' : {
+        
+        'API'           : 'Zotero',
+        'dataSet_name'  : 'MEDIAS_FRANCE',
+        'dataSet_key'   : '680968', ### aka group key
+        'url_ROOT'      : createURL('680968'),
+        'urlsDict'      : {
+                            '3BAX9FGR'  : {'name' : 'Groupes'   , 'len' : 0},
+                            'ZBZBM9H7'  : {'name' : 'Personnes' , 'len' : 0},
+                            'NUBA9JCC'  : {'name' : 'Presse'    , 'len' : 0}
+                        },
+        'nodesColorsDict' : {
+                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
+                node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                        },
+        'edgesDashDict' : {
+                'ref-ref'  : '10 1',
+                'ref-tag'  : '2 1 2',
+                'ref-group': '3 3'
+                        },
+        'switch_color'  : 'hex',
+        'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
+    
+        }
+        
         
 
     ### it should be possible to extend this list ...

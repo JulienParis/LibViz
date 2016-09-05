@@ -1,0 +1,6372 @@
+{
+  "links": [
+    {
+      "ID": "edge_1",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_UT6RDN7H",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_2",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_UT6RDN7H",
+      "target": "ref_AXPFKSED",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_3",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_N9XZKP8U",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_4",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_N9XZKP8U",
+      "target": "ref_BVE6KNPF",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_5",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5KSUEKDS",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_6",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5KSUEKDS",
+      "target": "ref_Z7R2WS6S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_7",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6VPB957G",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_8",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_6VPB957G",
+      "target": "ref_DVWH7XK6",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_9",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VM3MWNCW",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_10",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VM3MWNCW",
+      "target": "ref_XGNCMW8D",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_11",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_VM3MWNCW",
+      "target": "ref_EVK8FG8M",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_12",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_A4NAFA5B",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_13",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_A4NAFA5B",
+      "target": "ref_MQSRE2VC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_14",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZMGVWUS7",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_15",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ZMGVWUS7",
+      "target": "ref_S3TJCINM",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_16",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IZHTNN7D",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_17",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_IZHTNN7D",
+      "target": "ref_V2DX8R2G",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_18",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_96D2XDH6",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_19",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_96D2XDH6",
+      "target": "ref_Z7R2WS6S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_20",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_96D2XDH6",
+      "target": "ref_9NTT5KHE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_21",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_62BFUPBV",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_22",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_62BFUPBV",
+      "target": "ref_57XQ9QUM",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_23",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_R6QWHHVU",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_24",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_R6QWHHVU",
+      "target": "ref_X44Z7XPD",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_25",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_X8AVSSWN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_26",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_X8AVSSWN",
+      "target": "ref_SA9MD56K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_27",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ANSDFIGJ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_28",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CRFKQ7HQ",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_29",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_CRFKQ7HQ",
+      "target": "ref_5HKNMU4B",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_30",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_CRFKQ7HQ",
+      "target": "ref_PHEWDZUH",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_31",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_CRFKQ7HQ",
+      "target": "ref_Z7R2WS6S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_32",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3MKCSP9Q",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_33",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_C5NM88BR",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_34",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_C5NM88BR",
+      "target": "ref_FKQFFRM9",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_35",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_C5NM88BR",
+      "target": "ref_8J956WFM",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_36",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SH7ATNIX",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_37",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SH7ATNIX",
+      "target": "ref_FKQFFRM9",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_38",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IFH5SJ4K",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_39",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_IFH5SJ4K",
+      "target": "ref_FKQFFRM9",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_40",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SC9XIAHD",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_41",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SC9XIAHD",
+      "target": "ref_6HEZ7QTS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_42",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HEMXTUEN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_43",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_HEMXTUEN",
+      "target": "ref_6HEZ7QTS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_44",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RHS5N6J8",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_45",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RHS5N6J8",
+      "target": "ref_6HEZ7QTS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_46",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3XV8ERKN",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_47",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_3XV8ERKN",
+      "target": "ref_6HEZ7QTS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_48",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_E9HDZWKK",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_49",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NM8TS2M4",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_50",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_T3UZZZTT",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_51",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TBAEE3NH",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_52",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_5M58BNJW",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_53",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_BJX4QVRI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_54",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_AXPFKSED",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_55",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_JPDI4IVN",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_56",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_4FZQEWCP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_57",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_JM6V2WVQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_58",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_VAFWJNQ8",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_59",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_TBAEE3NH",
+      "target": "ref_EBX3PBUP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_60",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5A7MMEKE",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_61",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5A7MMEKE",
+      "target": "ref_5I6Z2D66",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_62",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5A7MMEKE",
+      "target": "ref_68GK7K7I",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_63",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5A7MMEKE",
+      "target": "ref_CM5SWTSI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_64",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5A7MMEKE",
+      "target": "ref_22IMWM25",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_65",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XGNCMW8D",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_66",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_XGNCMW8D",
+      "target": "ref_E6S5CTNC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_67",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_XGNCMW8D",
+      "target": "ref_JUZXSVVF",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_68",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_XGNCMW8D",
+      "target": "ref_EVK8FG8M",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_69",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_XGNCMW8D",
+      "target": "ref_5ZK7M8QC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_70",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5ZK7M8QC",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_71",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5ZK7M8QC",
+      "target": "ref_KSPC72KW",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_72",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5ZK7M8QC",
+      "target": "ref_AWM5MU8C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_73",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5ZK7M8QC",
+      "target": "ref_RR8P9ZBR",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_74",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5ZK7M8QC",
+      "target": "ref_2C9PZWPC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_75",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_X44Z7XPD",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_76",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_X44Z7XPD",
+      "target": "ref_2SC9965N",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_77",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P98T3FUD",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_78",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P98T3FUD",
+      "target": "ref_U8WNIWPC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_79",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P98T3FUD",
+      "target": "ref_NGS742ET",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_80",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P98T3FUD",
+      "target": "ref_CBRK2GN2",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_81",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2SC9965N",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_82",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_2SC9965N",
+      "target": "ref_PAGSWS5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_83",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_2SC9965N",
+      "target": "ref_T5TVA7QC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_84",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_T5TVA7QC",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_85",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_T5TVA7QC",
+      "target": "ref_JMGW2HKD",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_86",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_T5TVA7QC",
+      "target": "ref_6DIUHVIX",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_87",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_T5TVA7QC",
+      "target": "ref_TDZKAWIC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_88",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P4UT322F",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_89",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_MXETEAZA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_90",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_RFFK2RQC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_91",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_CXMI2RN3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_92",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_X8IEG8WS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_93",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_QAKXVHIM",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_94",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_HJHP46XT",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_95",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_E2EKFH9N",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_96",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_Q449QF7K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_97",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_SA9MD56K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_98",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_9RG9HVUJ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_99",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_P4UT322F",
+      "target": "ref_G9N9D7TU",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_100",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RSGH975G",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_101",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RSGH975G",
+      "target": "ref_K9QXMK7G",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_102",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RSGH975G",
+      "target": "ref_AC8MIRUR",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_103",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RSGH975G",
+      "target": "ref_74B773J5",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_104",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RSGH975G",
+      "target": "ref_57XQ9QUM",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_105",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RSGH975G",
+      "target": "ref_HTIXN5KQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_106",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_57XQ9QUM",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_107",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_57XQ9QUM",
+      "target": "ref_Z2F7PWE5",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_108",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_57XQ9QUM",
+      "target": "ref_9S3PNUVP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_109",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_57XQ9QUM",
+      "target": "ref_VM4ZUBSA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_110",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_57XQ9QUM",
+      "target": "ref_Z7R2WS6S",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_111",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_FKQFFRM9",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_112",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_2ZWEKTK3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_113",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_F7C958KJ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_114",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_7BM9QBGS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_115",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_BUT8SMNX",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_116",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_VSIA94BB",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_117",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_IGZ3XFNV",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_118",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_V8WTG4S4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_119",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_99EMNUBZ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_120",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_FKQFFRM9",
+      "target": "ref_NP6XRR9P",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_121",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8J956WFM",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_122",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_8J956WFM",
+      "target": "ref_259E5RQ9",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_123",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_8J956WFM",
+      "target": "ref_BUT8SMNX",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_124",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_8J956WFM",
+      "target": "ref_H7CK5JBB",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_125",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_8J956WFM",
+      "target": "ref_63FGUFA6",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_126",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_V2DX8R2G",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_127",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_V2DX8R2G",
+      "target": "ref_ADP4KZVB",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_128",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RN3TP6UB",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_129",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_MFFRF5TS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_130",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_VFRBM9A6",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_131",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_X9MK8HQ5",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_132",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_PE37VE3H",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_133",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_EGJX5RJP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_134",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_EHFM5AXC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_135",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_G2AQITX6",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_136",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_28JHSD4J",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_137",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_4JXHXUIN",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_138",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_F5QUPGDI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_139",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_HDJJDQPN",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_140",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_E4SZ4UU5",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_141",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_8EM3AP6P",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_142",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RN3TP6UB",
+      "target": "ref_HJGKQD27",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_143",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EVK8FG8M",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_144",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_EVK8FG8M",
+      "target": "ref_4P5KEZKE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_145",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_EVK8FG8M",
+      "target": "ref_BTHH7CJQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_146",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AXPFKSED",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_147",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AXPFKSED",
+      "target": "ref_ZXH3EHFH",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_148",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AXPFKSED",
+      "target": "ref_ZWNT7B2K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_149",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_AXPFKSED",
+      "target": "ref_32JSTM4C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_150",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_32JSTM4C",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_151",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZXH3EHFH",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_152",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZWNT7B2K",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_153",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_7W42I23X",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_154",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_NQ9QVRWD",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_155",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_HJ7JK4JI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_156",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_XNEG465X",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_157",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_6UBX7GQC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_158",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_BPTA4ICC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_159",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_P3IQ5MAC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_160",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_AS4Q682P",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_161",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7W42I23X",
+      "target": "ref_22IMWM25",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_162",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_22IMWM25",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_163",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_22IMWM25",
+      "target": "ref_RVNRQZDE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_164",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RVNRQZDE",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_165",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_3J3WKAKU",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_166",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_4VT8MWMP",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_167",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_R8V4E6R9",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_168",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_VHU5WN5B",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_169",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_5I6Z2D66",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_170",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_3MUQUUBD",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_171",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_CM5SWTSI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_172",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_RVNRQZDE",
+      "target": "ref_GB8V4NFF",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_173",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BVE6KNPF",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_174",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_BVE6KNPF",
+      "target": "ref_CBVT3E6N",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_175",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_BVE6KNPF",
+      "target": "ref_SQA4JEAA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_176",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_BVE6KNPF",
+      "target": "ref_AJUSEA3H",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_177",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_BVE6KNPF",
+      "target": "ref_J7JBRMGD",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_178",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_BVE6KNPF",
+      "target": "ref_EF3PBPFG",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_179",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZGKRNU3B",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_180",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ZGKRNU3B",
+      "target": "ref_Q449QF7K",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_181",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SA9MD56K",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_182",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SA9MD56K",
+      "target": "ref_IXRR48EN",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_183",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SA9MD56K",
+      "target": "ref_UR8MXVUK",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_184",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_SA9MD56K",
+      "target": "ref_JFEF3CUI",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_185",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_7R99EQCR",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_186",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7R99EQCR",
+      "target": "ref_JBQH4TBN",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_187",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_7R99EQCR",
+      "target": "ref_EJTVEAPB",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_188",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EJTVEAPB",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_189",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_QFIXFUEW",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_190",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QFIXFUEW",
+      "target": "ref_HUEAG6F7",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_191",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QFIXFUEW",
+      "target": "ref_SWBMG5SQ",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_192",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QFIXFUEW",
+      "target": "ref_N5CS4D5M",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_193",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QFIXFUEW",
+      "target": "ref_H72548J3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_194",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QFIXFUEW",
+      "target": "ref_IP2H9HEW",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_195",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_QFIXFUEW",
+      "target": "ref_JBQH4TBN",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_196",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JBQH4TBN",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_197",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_JBQH4TBN",
+      "target": "ref_SKIUJ22D",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_198",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MHE7EQ69",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_199",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_MHE7EQ69",
+      "target": "ref_XHG5ECP8",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_200",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3VJSKJQQ",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_201",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_3VJSKJQQ",
+      "target": "ref_PZU2REJA",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_202",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_E6S5CTNC",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_203",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PAGSWS5C",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_204",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Q449QF7K",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_205",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5HKNMU4B",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_206",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5HKNMU4B",
+      "target": "ref_7BM9QBGS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_207",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5HKNMU4B",
+      "target": "ref_4HGJ4WBR",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_208",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_5HKNMU4B",
+      "target": "ref_NP6XRR9P",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_209",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MFFRF5TS",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_210",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_S3TJCINM",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_211",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_9NTT5KHE",
+      "target": "tag_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_212",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9NTT5KHE",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_213",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PZU2REJA",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_214",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PHEWDZUH",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_215",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_PHEWDZUH",
+      "target": "ref_ZREXT8Z4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_216",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_DVWH7XK6",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_217",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_D6Q22Z6G",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_218",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_7KCJWZDJ",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_219",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_GHHRDNH5",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_220",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_24U3BUGD",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_221",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WEGQVS3P",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_222",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_V3FN6IHU",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_223",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EJ2MZCMW",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_224",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MD44X8RX",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_225",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_87E8GFIX",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_226",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_H2IF3DI3",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_227",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_K92NVFJ7",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_228",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BTHH7CJQ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_229",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4P5KEZKE",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_230",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EBX3PBUP",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_231",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VAFWJNQ8",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_232",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JM6V2WVQ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_233",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_GB8V4NFF",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_234",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RR8P9ZBR",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_235",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2C9PZWPC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_236",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HTIXN5KQ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_237",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Z7R2WS6S",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_238",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZREXT8Z4",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_239",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4HGJ4WBR",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_240",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_7BM9QBGS",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_241",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NP6XRR9P",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_242",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8EM3AP6P",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_243",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ADP4KZVB",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_244",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ADP4KZVB",
+      "target": "ref_46QG8MQC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_245",
+      "dash": "10 1",
+      "group": "ref-ref",
+      "source": "ref_ADP4KZVB",
+      "target": "ref_X9FRITHB",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_246",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HJGKQD27",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_247",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6HEZ7QTS",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_248",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MQSRE2VC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_249",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4FZQEWCP",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_250",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JPDI4IVN",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_251",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BJX4QVRI",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_252",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5M58BNJW",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_253",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SKIUJ22D",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_254",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5I6Z2D66",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_255",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_68GK7K7I",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_256",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CM5SWTSI",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_257",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JUZXSVVF",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_258",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_KSPC72KW",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_259",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AWM5MU8C",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_260",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NGS742ET",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_261",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CBRK2GN2",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_262",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_U8WNIWPC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_263",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TDZKAWIC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_264",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6DIUHVIX",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_265",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JMGW2HKD",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_266",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_G9N9D7TU",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_267",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9RG9HVUJ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_268",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_74B773J5",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_269",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AC8MIRUR",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_270",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_K9QXMK7G",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_271",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VM4ZUBSA",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_272",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9S3PNUVP",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_273",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Z2F7PWE5",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_274",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_46QG8MQC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_275",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_X9FRITHB",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_276",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_259E5RQ9",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_277",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_H7CK5JBB",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_278",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BUT8SMNX",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_279",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_63FGUFA6",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_280",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_99EMNUBZ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_281",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IGZ3XFNV",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_282",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_F7C958KJ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_283",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2ZWEKTK3",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_284",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_V8WTG4S4",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_285",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VSIA94BB",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_286",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EGJX5RJP",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_287",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PE37VE3H",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_288",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HDJJDQPN",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_289",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_X9MK8HQ5",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_290",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_E4SZ4UU5",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_291",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_F5QUPGDI",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_292",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4JXHXUIN",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_293",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_28JHSD4J",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_294",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_G2AQITX6",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_295",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VFRBM9A6",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_296",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EHFM5AXC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_297",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AS4Q682P",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_298",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P3IQ5MAC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_299",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6UBX7GQC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_300",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NQ9QVRWD",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_301",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BPTA4ICC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_302",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XNEG465X",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_303",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HJ7JK4JI",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_304",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_R8V4E6R9",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_305",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4VT8MWMP",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_306",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VHU5WN5B",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_307",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3MUQUUBD",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_308",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3J3WKAKU",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_309",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SQA4JEAA",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_310",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_EF3PBPFG",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_311",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_J7JBRMGD",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_312",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AJUSEA3H",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_313",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CBVT3E6N",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_314",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_E2EKFH9N",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_315",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CXMI2RN3",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_316",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MXETEAZA",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_317",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HJHP46XT",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_318",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RFFK2RQC",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_319",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_QAKXVHIM",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_320",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_X8IEG8WS",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_321",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JFEF3CUI",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_322",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IXRR48EN",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_323",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_UR8MXVUK",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_324",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_N5CS4D5M",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_325",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SWBMG5SQ",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_326",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HUEAG6F7",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_327",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IP2H9HEW",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_328",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_H72548J3",
+      "target": "group_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_329",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XHG5ECP8",
+      "target": "group_51",
+      "weight": 1.0
+    }
+  ],
+  "nodes": [
+    {
+      "ID": "ref_UT6RDN7H",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_AXPFKSED"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Martin Bouygues \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Martin_Bouygues",
+      "weight": 25
+    },
+    {
+      "ID": "ref_N9XZKP8U",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BVE6KNPF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Jean-Paul Baudecroux \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Jean-Paul_Baudecroux",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5KSUEKDS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Z7R2WS6S"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Nicolas Beytout \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Nicolas_Beytout",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6VPB957G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_DVWH7XK6"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Patrick Hurbain \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Patrick_Hurbain",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VM3MWNCW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XGNCMW8D",
+        "ref_EVK8FG8M"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Vincent Bollor\u00e9 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Vincent_Bollor%C3%A9",
+      "weight": 25
+    },
+    {
+      "ID": "ref_A4NAFA5B",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_MQSRE2VC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Benjamin de Rothschild \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Benjamin_de_Rothschild",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZMGVWUS7",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_S3TJCINM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Fran\u00e7ois-Henri Pinault \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois-Henri_Pinault",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IZHTNN7D",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_V2DX8R2G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Serge Dassault \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Serge_Dassault",
+      "weight": 25
+    },
+    {
+      "ID": "ref_96D2XDH6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Z7R2WS6S",
+        "ref_9NTT5KHE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Liliane Bettencourt \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Liliane_Bettencourt",
+      "weight": 25
+    },
+    {
+      "ID": "ref_62BFUPBV",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_57XQ9QUM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Bernard Arnault \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bernard_Arnault",
+      "weight": 25
+    },
+    {
+      "ID": "ref_R6QWHHVU",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_X44Z7XPD"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Patrick Drahi \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Patrick_Drahi",
+      "weight": 25
+    },
+    {
+      "ID": "ref_X8AVSSWN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_SA9MD56K"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Jean-Michel Baylet \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Jean-Michel_Baylet",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ANSDFIGJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_D95G8Q7R"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Jean-S\u00e9bastien Ferjou \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Jean-S%C3%A9bastien_Ferjou",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CRFKQ7HQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5HKNMU4B",
+        "ref_PHEWDZUH",
+        "ref_Z7R2WS6S"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Claude Perdriel \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Claude_Perdriel",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3MKCSP9Q",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XSG65U9J"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Bernard Tapie \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bernard_Tapie",
+      "weight": 25
+    },
+    {
+      "ID": "ref_C5NM88BR",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9",
+        "ref_8J956WFM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Matthieu Pigasse \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Matthieu_Pigasse",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SH7ATNIX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Xavier Niel \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Xavier_Niel",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IFH5SJ4K",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Pierre Berg\u00e9 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Pierre_Berg%C3%A9",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SC9XIAHD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6HEZ7QTS"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Fran\u00e7ois Bonnet \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Bonnet",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HEMXTUEN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6HEZ7QTS"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "G\u00e9rard Desportes \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A9rard_Desportes",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RHS5N6J8",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6HEZ7QTS"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Laurent Mauduit \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Laurent_Mauduit",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3XV8ERKN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6HEZ7QTS"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Edwy Plenel \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Edwy_Plenel",
+      "weight": 25
+    },
+    {
+      "ID": "ref_E9HDZWKK",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Philippe Amaury \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Philippe_Amaury",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NM8TS2M4",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Alain Weill \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Alain_Weill",
+      "weight": 25
+    },
+    {
+      "ID": "ref_T3UZZZTT",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Personnes"
+      ],
+      "label": "Arnaud Lagard\u00e8re \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Arnaud_Lagard%C3%A8re",
+      "weight": 25
+    },
+    {
+      "ID": "ref_TBAEE3NH",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5M58BNJW",
+        "ref_BJX4QVRI",
+        "ref_AXPFKSED",
+        "ref_JPDI4IVN",
+        "ref_4FZQEWCP",
+        "ref_JM6V2WVQ",
+        "ref_VAFWJNQ8",
+        "ref_EBX3PBUP"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe TF1 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_TF1",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5A7MMEKE",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5I6Z2D66",
+        "ref_68GK7K7I",
+        "ref_CM5SWTSI",
+        "ref_22IMWM25"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "France M\u00e9dias Monde \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_M%C3%A9dias_Monde",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XGNCMW8D",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_E6S5CTNC",
+        "ref_JUZXSVVF",
+        "ref_VM3MWNCW",
+        "ref_EVK8FG8M",
+        "ref_5ZK7M8QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Vivendi \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Vivendi",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5ZK7M8QC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_KSPC72KW",
+        "ref_XGNCMW8D",
+        "ref_AWM5MU8C",
+        "ref_RR8P9ZBR",
+        "ref_2C9PZWPC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Canal+ \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Canal%2B",
+      "weight": 25
+    },
+    {
+      "ID": "ref_X44Z7XPD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SC9965N",
+        "ref_R6QWHHVU"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Altice \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Altice",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P98T3FUD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_U8WNIWPC",
+        "ref_NGS742ET",
+        "ref_CBRK2GN2"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Amaury \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Amaury",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2SC9965N",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_PAGSWS5C",
+        "ref_T5TVA7QC",
+        "ref_X44Z7XPD"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "SFR Group \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/SFR_Group",
+      "weight": 25
+    },
+    {
+      "ID": "ref_T5TVA7QC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SC9965N",
+        "ref_JMGW2HKD",
+        "ref_6DIUHVIX",
+        "ref_TDZKAWIC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "NextRadioTV \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/NextRadioTV",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P4UT322F",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_MXETEAZA",
+        "ref_RFFK2RQC",
+        "ref_CXMI2RN3",
+        "ref_X8IEG8WS",
+        "ref_QAKXVHIM",
+        "ref_HJHP46XT",
+        "ref_E2EKFH9N",
+        "ref_Q449QF7K",
+        "ref_SA9MD56K",
+        "ref_9RG9HVUJ",
+        "ref_G9N9D7TU"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Lagard\u00e8re Active \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Lagard%C3%A8re_Active",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RSGH975G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_K9QXMK7G",
+        "ref_AC8MIRUR",
+        "ref_74B773J5",
+        "ref_57XQ9QUM",
+        "ref_HTIXN5KQ"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Les \u00c9chos \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Les_%C3%89chos",
+      "weight": 25
+    },
+    {
+      "ID": "ref_57XQ9QUM",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RSGH975G",
+        "ref_Z2F7PWE5",
+        "ref_9S3PNUVP",
+        "ref_VM4ZUBSA",
+        "ref_Z7R2WS6S",
+        "ref_62BFUPBV"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "LVMH - Mo\u00ebt Hennessy Louis Vuitton \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/LVMH_-_Mo%C3%ABt_Hennessy_Louis_Vuitton",
+      "weight": 25
+    },
+    {
+      "ID": "ref_FKQFFRM9",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2ZWEKTK3",
+        "ref_F7C958KJ",
+        "ref_SH7ATNIX",
+        "ref_C5NM88BR",
+        "ref_7BM9QBGS",
+        "ref_BUT8SMNX",
+        "ref_VSIA94BB",
+        "ref_IGZ3XFNV",
+        "ref_V8WTG4S4",
+        "ref_99EMNUBZ",
+        "ref_IFH5SJ4K",
+        "ref_NP6XRR9P"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Le Monde \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Le_Monde",
+      "weight": 25
+    },
+    {
+      "ID": "ref_8J956WFM",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_259E5RQ9",
+        "ref_BUT8SMNX",
+        "ref_H7CK5JBB",
+        "ref_63FGUFA6",
+        "ref_C5NM88BR"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Les Nouvelles \u00c9ditions ind\u00e9pendantes \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Les_Nouvelles_%C3%89ditions_ind%C3%A9pendantes",
+      "weight": 25
+    },
+    {
+      "ID": "ref_V2DX8R2G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ADP4KZVB",
+        "ref_IZHTNN7D"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe industriel Marcel Dassault \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_industriel_Marcel_Dassault",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RN3TP6UB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_MFFRF5TS",
+        "ref_VFRBM9A6",
+        "ref_X9MK8HQ5",
+        "ref_PE37VE3H",
+        "ref_EGJX5RJP",
+        "ref_EHFM5AXC",
+        "ref_G2AQITX6",
+        "ref_28JHSD4J",
+        "ref_4JXHXUIN",
+        "ref_F5QUPGDI",
+        "ref_HDJJDQPN",
+        "ref_E4SZ4UU5",
+        "ref_8EM3AP6P",
+        "ref_HJGKQD27"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Prisma Media \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Prisma_Media",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EVK8FG8M",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XGNCMW8D",
+        "ref_4P5KEZKE",
+        "ref_BTHH7CJQ",
+        "ref_VM3MWNCW"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Bollor\u00e9 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bollor%C3%A9",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AXPFKSED",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ZXH3EHFH",
+        "ref_TBAEE3NH",
+        "ref_ZWNT7B2K",
+        "ref_32JSTM4C",
+        "ref_UT6RDN7H"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Bouygues \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bouygues",
+      "weight": 25
+    },
+    {
+      "ID": "ref_32JSTM4C",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_AXPFKSED"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Bouygues Telecom \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bouygues_Telecom",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZXH3EHFH",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_AXPFKSED"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Bouygues Immobilier \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bouygues_Immobilier",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZWNT7B2K",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_AXPFKSED"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Bouygues Construction \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bouygues_Construction",
+      "weight": 25
+    },
+    {
+      "ID": "ref_7W42I23X",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_NQ9QVRWD",
+        "ref_HJ7JK4JI",
+        "ref_XNEG465X",
+        "ref_6UBX7GQC",
+        "ref_BPTA4ICC",
+        "ref_P3IQ5MAC",
+        "ref_AS4Q682P",
+        "ref_22IMWM25"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Radio France \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Radio_France",
+      "weight": 25
+    },
+    {
+      "ID": "ref_22IMWM25",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X",
+        "ref_5A7MMEKE",
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Agence des participations de l'\u00c9tat \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Agence_des_participations_de_l%27%C3%89tat",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RVNRQZDE",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_3J3WKAKU",
+        "ref_4VT8MWMP",
+        "ref_R8V4E6R9",
+        "ref_VHU5WN5B",
+        "ref_5I6Z2D66",
+        "ref_3MUQUUBD",
+        "ref_CM5SWTSI",
+        "ref_22IMWM25",
+        "ref_GB8V4NFF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "France T\u00e9l\u00e9visions \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_T%C3%A9l%C3%A9visions",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BVE6KNPF",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_CBVT3E6N",
+        "ref_SQA4JEAA",
+        "ref_AJUSEA3H",
+        "ref_J7JBRMGD",
+        "ref_EF3PBPFG",
+        "ref_N9XZKP8U"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "NRJ Group \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/NRJ_Group",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZGKRNU3B",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_Q449QF7K"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Qatar Investment Authority \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Qatar_Investment_Authority",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SA9MD56K",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_IXRR48EN",
+        "ref_UR8MXVUK",
+        "ref_JFEF3CUI",
+        "ref_X8AVSSWN",
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe La D\u00e9p\u00eache \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_La_D%C3%A9p%C3%AAche",
+      "weight": 25
+    },
+    {
+      "ID": "ref_7R99EQCR",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_JBQH4TBN",
+        "ref_EJTVEAPB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Bertelsmann \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Bertelsmann",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EJTVEAPB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7R99EQCR"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Actissia \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Actissia",
+      "weight": 25
+    },
+    {
+      "ID": "ref_QFIXFUEW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_HUEAG6F7",
+        "ref_SWBMG5SQ",
+        "ref_N5CS4D5M",
+        "ref_H72548J3",
+        "ref_IP2H9HEW",
+        "ref_JBQH4TBN"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe M6 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_M6",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JBQH4TBN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_PWCB9329",
+        "ref_66KFEAHH",
+        "ref_QFIXFUEW",
+        "ref_SKIUJ22D",
+        "ref_7R99EQCR"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "RTL Group \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/RTL_Group",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MHE7EQ69",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XHG5ECP8",
+        "ref_CVE35ZBZ"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe La Voix \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_La_Voix",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3VJSKJQQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_PZU2REJA"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Association pour le soutien des principes de la d\u00e9mocratie humaniste \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Association_pour_le_soutien_des_principes_de_la_d%C3%A9mocratie_humaniste",
+      "weight": 25
+    },
+    {
+      "ID": "ref_E6S5CTNC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XGNCMW8D"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Universal Music Group \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Universal_Music_Group",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PAGSWS5C",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_2SC9965N"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Soci\u00e9t\u00e9 fran\u00e7aise du radiot\u00e9l\u00e9phone \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_fran%C3%A7aise_du_radiot%C3%A9l%C3%A9phone",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Q449QF7K",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ZGKRNU3B",
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Lagard\u00e8re (entreprise) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Lagard%C3%A8re_(entreprise)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5HKNMU4B",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_CRFKQ7HQ",
+        "ref_7BM9QBGS",
+        "ref_4HGJ4WBR",
+        "ref_NP6XRR9P"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Perdriel \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Perdriel",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MFFRF5TS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Gruner + Jahr \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Gruner_%2B_Jahr",
+      "weight": 25
+    },
+    {
+      "ID": "ref_S3TJCINM",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ZMGVWUS7"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Kering \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Kering",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9NTT5KHE",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_96D2XDH6"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "L'Or\u00e9al \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "Bettencourt"
+      ],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/L%27Or%C3%A9al",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PZU2REJA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_3VJSKJQQ"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe SIPA - Ouest-France \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_SIPA_-_Ouest-France",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PHEWDZUH",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ZREXT8Z4",
+        "ref_CRFKQ7HQ"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Sophia Publications - Wikipedia, the free encyclopedia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://en.wikipedia.org/wiki/Sophia_Publications",
+      "weight": 25
+    },
+    {
+      "ID": "ref_DVWH7XK6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_6VPB957G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Rossel \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Rossel",
+      "weight": 25
+    },
+    {
+      "ID": "ref_D6Q22Z6G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Les Journaux de Loire \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Les_Journaux_de_Loire",
+      "weight": 25
+    },
+    {
+      "ID": "ref_7KCJWZDJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Hachette Livre \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Hachette_Livre",
+      "weight": 25
+    },
+    {
+      "ID": "ref_GHHRDNH5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Spir Communication \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Spir_Communication",
+      "weight": 25
+    },
+    {
+      "ID": "ref_24U3BUGD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Publihebdos \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Publihebdos",
+      "weight": 25
+    },
+    {
+      "ID": "ref_WEGQVS3P",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Euronews SA \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Euronews_SA",
+      "weight": 25
+    },
+    {
+      "ID": "ref_V3FN6IHU",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Random House \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Random_House",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EJ2MZCMW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "France Loisirs \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Loisirs",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MD44X8RX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe 01 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_01",
+      "weight": 25
+    },
+    {
+      "ID": "ref_87E8GFIX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe L'Express \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_L%27Express",
+      "weight": 25
+    },
+    {
+      "ID": "ref_H2IF3DI3",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Altice Media Group \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Altice_Media_Group",
+      "weight": 25
+    },
+    {
+      "ID": "ref_K92NVFJ7",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Groupes"
+      ],
+      "label": "Groupe Arnault \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Arnault",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BTHH7CJQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_EVK8FG8M"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Direct Soir \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Direct_Soir",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4P5KEZKE",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_EVK8FG8M"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Direct Matin \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Direct_Matin",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EBX3PBUP",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "TV Breizh \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/TV_Breizh",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VAFWJNQ8",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "HD1 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/HD1",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JM6V2WVQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "TMC (cha\u00eene de t\u00e9l\u00e9vision) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/TMC_(cha%C3%AEne_de_t%C3%A9l%C3%A9vision)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_GB8V4NFF",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Arte France \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Arte_France",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RR8P9ZBR",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5ZK7M8QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "CStar \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/CStar",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2C9PZWPC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5ZK7M8QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "C8 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/C8",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HTIXN5KQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RSGH975G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Radio Classique \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Radio_Classique",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Z7R2WS6S",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_57XQ9QUM",
+        "ref_96D2XDH6",
+        "ref_CRFKQ7HQ",
+        "ref_5KSUEKDS"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "L'Opinion (quotidien, 2013) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/L%27Opinion_(quotidien,_2013)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ZREXT8Z4",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_PHEWDZUH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Historia (revue) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Historia_(revue)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4HGJ4WBR",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5HKNMU4B"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Challenges \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Challenges",
+      "weight": 25
+    },
+    {
+      "ID": "ref_7BM9QBGS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5HKNMU4B",
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "L'Obs \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/L%27Obs",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NP6XRR9P",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5HKNMU4B",
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Rue89 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Rue89",
+      "weight": 25
+    },
+    {
+      "ID": "ref_8EM3AP6P",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Prima \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Prima",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ADP4KZVB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_46QG8MQC",
+        "ref_X9FRITHB",
+        "ref_V2DX8R2G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Figaro \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Figaro#Le_groupe_Figaro",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HJGKQD27",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Harvard Business Review \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Harvard_Business_Review",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6HEZ7QTS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_3XV8ERKN",
+        "ref_HEMXTUEN",
+        "ref_SC9XIAHD",
+        "ref_RHS5N6J8"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Mediapart \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Mediapart",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MQSRE2VC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_A4NAFA5B"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Slate (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Slate_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4FZQEWCP",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "NT1 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/NT1",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JPDI4IVN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "La Cha\u00eene Info \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/La_Cha%C3%AEne_Info",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BJX4QVRI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Histoire (cha\u00eene de t\u00e9l\u00e9vision) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Histoire_(cha%C3%AEne_de_t%C3%A9l%C3%A9vision)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5M58BNJW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_TBAEE3NH"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "TF1 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/TF1",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SKIUJ22D",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_JBQH4TBN"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Fun Radio \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Fun_Radio",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5I6Z2D66",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5A7MMEKE",
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France 24 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_24",
+      "weight": 25
+    },
+    {
+      "ID": "ref_68GK7K7I",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5A7MMEKE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Radio France internationale \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Radio_France_internationale",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CM5SWTSI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE",
+        "ref_5A7MMEKE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "TV5 Monde \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/TV5_Monde",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JUZXSVVF",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_XGNCMW8D"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Dailymotion \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Dailymotion",
+      "weight": 25
+    },
+    {
+      "ID": "ref_KSPC72KW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5ZK7M8QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Canal+ \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Canal%2B",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AWM5MU8C",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_5ZK7M8QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "I-T\u00e9l\u00e9 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/I-T%C3%A9l%C3%A9",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NGS742ET",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P98T3FUD"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "V\u00e9lo Magazine \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/V%C3%A9lo_Magazine",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CBRK2GN2",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P98T3FUD"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France Football \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Football",
+      "weight": 25
+    },
+    {
+      "ID": "ref_U8WNIWPC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P98T3FUD"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "L'\u00c9quipe - Wikipedia, the free encyclopedia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://en.wikipedia.org/wiki/L%27%C3%89quipe",
+      "weight": 25
+    },
+    {
+      "ID": "ref_TDZKAWIC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_T5TVA7QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "RMC \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/RMC",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6DIUHVIX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_T5TVA7QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "BFM Business \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/BFM_Business",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JMGW2HKD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_T5TVA7QC"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "BFM TV \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/BFM_TV",
+      "weight": 25
+    },
+    {
+      "ID": "ref_G9N9D7TU",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "T\u00e9l\u00e9 7 jours \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9_7_jours",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9RG9HVUJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Elle (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Elle_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_74B773J5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RSGH975G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Classica \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Classica",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AC8MIRUR",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RSGH975G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Connaissance des arts \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Connaissance_des_arts",
+      "weight": 25
+    },
+    {
+      "ID": "ref_K9QXMK7G",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RSGH975G"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Les \u00c9chos \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Les_%C3%89chos",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VM4ZUBSA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_57XQ9QUM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Parisien Magazine \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Parisien_Magazine",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9S3PNUVP",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_57XQ9QUM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Parisien \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Parisien",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Z2F7PWE5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_57XQ9QUM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Aujourd'hui (quotidien) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Aujourd%27hui_(quotidien)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_46QG8MQC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ADP4KZVB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Figaro Magazine \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Figaro_Magazine",
+      "weight": 25
+    },
+    {
+      "ID": "ref_X9FRITHB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ADP4KZVB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Madame Figaro \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Madame_Figaro",
+      "weight": 25
+    },
+    {
+      "ID": "ref_259E5RQ9",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_8J956WFM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Radio Nova \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Radio_Nova",
+      "weight": 25
+    },
+    {
+      "ID": "ref_H7CK5JBB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_8J956WFM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Les Inrockuptibles \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Les_Inrockuptibles",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BUT8SMNX",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9",
+        "ref_8J956WFM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Huffington Post \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Huffington_Post",
+      "weight": 25
+    },
+    {
+      "ID": "ref_63FGUFA6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_8J956WFM"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Vice (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Vice_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_99EMNUBZ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Mani\u00e8re de voir \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Mani%C3%A8re_de_voir",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IGZ3XFNV",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Monde diplomatique \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Monde_diplomatique",
+      "weight": 25
+    },
+    {
+      "ID": "ref_F7C958KJ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "La Vie \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/La_Vie",
+      "weight": 25
+    },
+    {
+      "ID": "ref_2ZWEKTK3",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "T\u00e9l\u00e9rama \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9rama",
+      "weight": 25
+    },
+    {
+      "ID": "ref_V8WTG4S4",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Courrier international \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Courrier_international",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VSIA94BB",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FKQFFRM9"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Monde \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Monde",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EGJX5RJP",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "T\u00e9l\u00e9 Loisirs \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9_Loisirs",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PE37VE3H",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Femme actuelle \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Femme_actuelle",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HDJJDQPN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Voici \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Voici",
+      "weight": 25
+    },
+    {
+      "ID": "ref_X9MK8HQ5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Neon (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Neon_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_E4SZ4UU5",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Gala (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Gala_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_F5QUPGDI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "National Geographic \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/National_Geographic",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4JXHXUIN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "VSD (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/VSD_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_28JHSD4J",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Management (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Management_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_G2AQITX6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Capital (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Capital_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VFRBM9A6",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "\u00c7a m'int\u00e9resse \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/%C3%87a_m%27int%C3%A9resse",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EHFM5AXC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RN3TP6UB"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "GEO (magazine) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/GEO_(magazine)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AS4Q682P",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Mouv' \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Mouv%27",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P3IQ5MAC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France Info \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Info",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6UBX7GQC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France Culture \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Culture",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NQ9QVRWD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France Inter \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Inter",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BPTA4ICC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France Musique \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Musique",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XNEG465X",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France Bleu \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_Bleu",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HJ7JK4JI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_7W42I23X"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "FIP (radio) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/FIP_(radio)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_R8V4E6R9",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France 5 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_5",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4VT8MWMP",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France 3 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_3",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VHU5WN5B",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France \u00d4 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_%C3%94",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3MUQUUBD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France 4 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_4",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3J3WKAKU",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_RVNRQZDE"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "France 2 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/France_2",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SQA4JEAA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BVE6KNPF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "NRJ 12 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/NRJ_12",
+      "weight": 25
+    },
+    {
+      "ID": "ref_EF3PBPFG",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BVE6KNPF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Ch\u00e9rie FM \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Ch%C3%A9rie_FM",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J7JBRMGD",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BVE6KNPF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "NRJ \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/NRJ",
+      "weight": 25
+    },
+    {
+      "ID": "ref_AJUSEA3H",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BVE6KNPF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Ch\u00e9rie 25 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Ch%C3%A9rie_25",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CBVT3E6N",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_BVE6KNPF"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Nostalgie (radio) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Nostalgie_(radio)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_E2EKFH9N",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "RFM TV \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/RFM_TV",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CXMI2RN3",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Gulli \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Gulli",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MXETEAZA",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Virgin Radio (France) \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Virgin_Radio_(France)",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HJHP46XT",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Europe 1 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Europe_1",
+      "weight": 25
+    },
+    {
+      "ID": "ref_RFFK2RQC",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "RFM \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/RFM",
+      "weight": 25
+    },
+    {
+      "ID": "ref_QAKXVHIM",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Journal du dimanche \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Journal_du_dimanche",
+      "weight": 25
+    },
+    {
+      "ID": "ref_X8IEG8WS",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_P4UT322F"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Paris Match \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Paris_Match",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JFEF3CUI",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_SA9MD56K"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "La Nouvelle R\u00e9publique des Pyr\u00e9n\u00e9es \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/La_Nouvelle_R%C3%A9publique_des_Pyr%C3%A9n%C3%A9es",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IXRR48EN",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_SA9MD56K"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Midi libre \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Midi_libre",
+      "weight": 25
+    },
+    {
+      "ID": "ref_UR8MXVUK",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_SA9MD56K"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "La D\u00e9p\u00eache du Midi \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/La_D%C3%A9p%C3%AAche_du_Midi",
+      "weight": 25
+    },
+    {
+      "ID": "ref_N5CS4D5M",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QFIXFUEW"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Paris Premi\u00e8re \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Paris_Premi%C3%A8re",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SWBMG5SQ",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QFIXFUEW"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "6ter \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/6ter",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HUEAG6F7",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QFIXFUEW"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "W9 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/W9",
+      "weight": 25
+    },
+    {
+      "ID": "ref_IP2H9HEW",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QFIXFUEW"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "M6 \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/M6",
+      "weight": 25
+    },
+    {
+      "ID": "ref_H72548J3",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QFIXFUEW"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "T\u00e9va \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/T%C3%A9va",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XHG5ECP8",
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_MHE7EQ69"
+      ],
+      "dataset": "MEDIAS_FRANCE",
+      "dataset_": "mediasFR",
+      "group": [
+        "Presse"
+      ],
+      "label": "Le Courrier picard \u2014 Wikip\u00e9dia",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://fr.wikipedia.org/wiki/Le_Courrier_picard",
+      "weight": 25
+    },
+    {
+      "ID": "group_1",
+      "category": "group",
+      "color": "#8eba7d",
+      "group": "Personnes",
+      "label": "Personnes",
+      "supertag": true,
+      "tag": "",
+      "type": "group name",
+      "url": "",
+      "weight": 125
+    },
+    {
+      "ID": "group_26",
+      "category": "group",
+      "color": "#8eba7d",
+      "group": "Groupes",
+      "label": "Groupes",
+      "supertag": true,
+      "tag": "",
+      "type": "group name",
+      "url": "",
+      "weight": 125
+    },
+    {
+      "ID": "group_51",
+      "category": "group",
+      "color": "#8eba7d",
+      "group": "Presse",
+      "label": "Presse",
+      "supertag": true,
+      "tag": "",
+      "type": "group name",
+      "url": "",
+      "weight": 125
+    },
+    {
+      "ID": "tag_1",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "Bettencourt",
+      "supertag": false,
+      "tag": "",
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    }
+  ],
+  "stats": {
+    "edges": {
+      "edges number": 329
+    },
+    "nodes": {
+      "groups number": 0,
+      "nodes total number": 179,
+      "refs number": 178,
+      "tags number": 1
+    }
+  }
+}
