@@ -53,7 +53,7 @@
     var svg = d3.select("#containerLayout")
       .append("svg:svg")
       .attr("width" , contWidth - 15)
-      .attr("height", contHeight - 90)
+      .attr("height", contHeight )
       .call(zoom)
       .on("dblclick.zoom", null)
       ;
@@ -62,13 +62,6 @@
     var svg = d3.select("svg"),
       width  = +svg.attr("width"),
       height = +svg.attr("height");
-    
-    //var tip = d3.tip()
-    //  .attr('class', 'd3-tip')
-    //  .offset([-10, 0])
-    //  .html(function(d) {
-    //    return "<strong>" + d.label + "</strong>";
-    //  })
   
     //add the div for the tooltip
     var div = d3.select("body")
@@ -246,7 +239,7 @@
           rulesToHide.push(button.id);
         }			
       }
-      //console.log("rulesToHide :", rulesToHide);
+      //console.log("rulesToHide breakFilter :", rulesToHide);
       
       var tempNodes = [];
       var tempEdges = [];
@@ -272,7 +265,6 @@
       render(tempNodes, tempEdges) ;
       
     }
-
 
 
     // HIDE NODES FROM LAYOUT (but no disappear)
@@ -309,16 +301,16 @@
           rulesToHide.push(button.id);
         }			
       }
-      
-      opacity = this.enabled ? 1 : 0.1 ;
+      console.log("rulesToHide hideFilter:", rulesToHide);
       
       var nodes = vis.selectAll(".node");
-      nodes.filter(function (d, i) {
-        return d.category in rulesToHide | d.group in rulesToHide  ; //| selected in d.tags ;
-        }
-      )
-        .style("opacity", opacity);
-          
+      
+      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1 | rulesToHide.indexOf(d.group) != -1  ; } )
+        .style("opacity", "0.1" );
+      
+      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1 && rulesToHide.indexOf(d.group) == -1  ; } )
+        .style("opacity", "1.0" );
+        
     }
 
 
@@ -497,7 +489,7 @@
       var selectedVal = document.getElementById('search').value;
       var node = vis.selectAll(".node");
       if (selectedVal == "none") {
-        node.style("stroke", "white").style("stroke-width", "1");
+        node.style("stroke", "white").style("stroke-width", "10");
       }
       else {
         var selected = node.filter(function (d, i) {

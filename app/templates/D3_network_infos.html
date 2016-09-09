@@ -33,6 +33,7 @@
         <!--<h5> network </h5>-->
         <!--<hr></hr>-->
   
+        <br></br>
   
         <div class="list-group"> <p> </p> </div>
 
@@ -87,111 +88,98 @@
         
         <!-- TEST FILTERS BREAKING EDGES -->
           <div class="list-group">
-            <!--<label class="text-center list-group-item " >-->
+
             <h4>FILTERS : break links</h4>
-            <!--</label>-->
+
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default breakFilter"
+                      class="btn btn-default btn-sm breakFilter"
                       id="ref-tag"
                       onclick="Update_Node(this.id)">
                 ref-tag
               </button>
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default breakFilter"
+                      class="btn btn-default btn-sm breakFilter"
                       id="ref-group"
                       onclick="Update_Node(this.id)">
                 ref-group
               </button>              
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default breakFilter"
+                      class="btn btn-default btn-sm breakFilter"
                       id="ref-ref"
                       onclick="Update_Node(this.id)">
                 ref-ref
               </button>              
           </div>
           
-          <div> <p></p> </div>
-          
           
           <div class="list-group">
-            <h4>FILTERS : show or hide nodes </h4>
+            <h4>FILTERS : show or hide categories </h4>
 
-              <!--  <label class="text-center list-group-item active" >
-              {{ glob.ns.category }}(-ies)
-            </label>-->
+              <!-- {{ glob.ns.category }}(-ies) -->
             
             <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                    class="btn btn-default hideFilter"
+                    class="btn btn-default btn-sm hideFilter"
                     id="reference"
                     onclick="hideNodes(this.id)">
               references
             </button>
             
-            <br></br>
+            <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                    class="btn btn-default btn-sm hideFilter"
+                    id="group"
+                    onclick="hideNodes(this.id)">
+              groups
+            </button>
             
-            
-            <!--<label class="list-group-item">-->
-            <!--  <input class="checkFilter" type="checkbox" checked value="reference">-->
-            <!--    references-->
-            <!--</label>-->
-            <!--<label class="list-group-item">-->
-            <!--  <input class="checkFilter" type="checkbox" checked value="group">-->
-            <!--    groups-->
-            <!--</label>-->
-            <!--<label class="list-group-item">-->
-            <!--  <input class="checkFilter" type="checkbox" checked value="tag">-->
-            <!--    tags-->
-            <!--</label>-->
+            <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                    class="btn btn-default btn-sm hideFilter"
+                    id="tag"
+                    onclick="hideNodes(this.id)">
+               tags
+             </button>
             
           </div>
           
-          <br>
-  
           <div class="list-group">
-            <label class="text-center list-group-item active" >
-              {{ glob.ns.group }}(s)
-            </label>
+            <h4>FILTERS : show or hide {{ glob.ns.group }}(s) </h4>
+            <!--<label class="text-center list-group-item active" >-->
+            <!--  {{ glob.ns.group }}(s)-->
+            <!--</label>-->
             
             {% for gr in groups %}
-            <label class="list-group-item">
-              <input class="checkFilter" type="checkbox" checked value="{{ gr }}">
-                {{ gr }}
-            </label>
+            
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                       class="btn btn-default btn-xs hideFilter"
+                       id={{ gr }}
+                       onclick="hideNodes(this.id)">
+                 {{ gr }}
+               </button>
+            
             {% endfor %}
+            
           </div>
-          
-          <div> <p></p> </div>
-          
+            
           
           {% if selection == "1camp" %}
-          <div class="list-group">
-            <label class="text-center list-group-item active" >
-              super-{{ glob.ns.tags }}(s)
-            </label>
-            
-            {% for stag in supertags %}
-            <label class="list-group-item">
-              <input class="checkFilter" type="checkbox" checked value="{{ stag }}">
-                {{ stag }}
-            </label>
-            {% endfor %}
-            
-          </div>
-        {% endif %}
+          
+            <div class="list-group">
+              <h4>FILTERS : show or hide super-{{ glob.ns.tags }}(s) </h4>
+              <!--<label class="text-center list-group-item active" >-->
+              <!--  super-{{ glob.ns.tags }}(s)-->
+              <!--</label>-->
+              
+              {% for stag in supertags %}
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                       class="btn btn-default btn-xs hideFilter"
+                       id={{ stag }}
+                       onclick="hideNodes(this.id)">
+                 {{ stag }}
+               </button>
+              {% endfor %}
+              
+            </div>
+          {% endif %}
   
-
-        
-        
-        <!-- display tags  
-        <div class="list-group">
-            <a class="list-group-item active " type="button" > 
-              super-{{ glob.ns.tags }}(s)
-            </a >          -->
-          <!-- List tags 
-             {% for stag in supertags %}
-              <button class="list-group-item btn-default " type="button" > {{ stag }} </button>
-            {% endfor %}
-        </div>        -->
         
       </div>
 
@@ -206,9 +194,7 @@
     <!-- space to display contextual node infos  -->  
     <div id="infoNode" class="col-sm-2 col-sm-offset-8">
       <!--<hr></hr>-->
-      
-      
-        
+
       <div class="list-group">
         
         <label class="text-center list-group-item active" >
@@ -220,8 +206,6 @@
         
       </div>
 
-
-        
       <div class="infosNode list-group">
         <label class="text-center list-group-item active" >
               SELECTED NODE
@@ -235,28 +219,9 @@
         <p class="list-group-item">tags :     <a id="nTags"></a></p> <!--still not displaying tags correctly-->
         
       </div>
-      <!--<hr></hr>-->
-
-      <!--<div class="panel panel-info">-->
-      <!--  <h5 class="text-center"><strong>how it works :</strong> </h5>-->
-      <!--</div>-->
-  <!--<h5> <span class="glyphicon glyphicon-menu-right"></span>
-        <strong><em>simple click</em></strong> : select a node and show its infos in this panel
-      </h5>
-      <h5> <span class="glyphicon glyphicon-menu-right"></span>
-        <strong><em>double click</em></strong> : select/unselect a node and show its neighbours
-      </h5>
-      
-      <hr></hr>-->
-      
-      <!---->
-      <!--<div id="nodeInfos">-->
-      <!--<div class="panel panel-info">-->
-      <!--<h5 class="text-center"><strong>infos :</strong> </h5>-->
-      <!--</div>-->
       
  
-      </div>
+    </div>
     
     
     </div>
