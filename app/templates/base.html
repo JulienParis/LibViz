@@ -22,6 +22,13 @@
 		
 		<style>
 			
+			.modal-backdrop{
+				z-index: 1000;
+			}
+			.modal-dialog{
+				z-index: 1040;
+			}
+			
 			.navbar {
 				background-color: rgba(255, 255, 255, 0);
 				border: hidden;
@@ -105,61 +112,7 @@
 						</button>
 					</li>
 			
-					<!-- Modal About -->
-					<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					  <div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							  <h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
-							</div>
-					  
-							<div class="modal-body">
-							  
-							  <h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
-							  <p><em>{{ glob.titleApp }}</em> allows to generate datavisualisations from sets of Zotero references.</p>
-							  <hr></hr>
-							  
-							  <h4 class="text-center"><span class="label label-default"> HISTORY </span></h4>
-							  <p><em>{{ glob.titleApp }}</em> started as a part of <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=start">1.CAMP</a>,
-								  which a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
-								  Julien Bellanger could tell more about this part...
-							  </p>
-							  <hr></hr>
-							  
-							  <h4 class="text-center"><span class="label label-default"> WIKI, SOURCE AND DOCUMENTATION </span></h4>
-							  <p><em>{{ glob.titleApp }}</em> development is documented
-								  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
-								  and on <a target="_blank" href="https://github.com/JulienParis/Ref2net">GitHub</a> or GitLab (as soon as Julien P understands how it works...)
-							  </p>
-							  <hr></hr>
-							  
-							  <h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
-							  <p><em>{{ glob.titleApp }}</em> is powered by
-								  <a target="_blank" href="https://www.python.org/" >Python</a> /
-								  <a target="_blank" href="https://www.zotero.org/" >Zotero</a> /
-								  <a target="_blank" href="http://flask.pocoo.org/" >Flask</a> /
-								  <a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> /
-								  <a target="_blank" href="https://d3js.org/" >d3.js</a>
-							  </p>
-							  <hr></hr>
-							  
-							  <h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
-							  <p>Project by
-								  <a target="_blank" href="http://www.pingbase.net/">PING</a> /
-								  <a target="_blank" href="http://artlabo.org/">ARTLABO</a>
-								  and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>.
-							  </p>
-							  <hr></hr>
-							  
-							  <h4 class="text-center"><span class="label label-default"> LICENCE </span></h4>
-							  <p><em>{{ glob.titleApp }}</em> is an open source project under a Creative Commons licence : BY
-							  </p>
-							
-							</div>
-						</div>
-					  </div>
-					</div><!-- end modal-->
+					
 	    
 	    
 					<!-- Button 'HOW TO' triggering modal -->
@@ -174,60 +127,11 @@
 						</button>
 					</li>
 					
-					<!-- Modal How to -->
-					<div class="modal fade" id="modalHowTo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					  <div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-							  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							  <h3 class="modal-title text-center" id="myModalLabel">How to use {{ glob.titleApp }} </h3>
-							</div>
-					  
-							<div class="modal-body">
-							  
-							  <h4 class="text-center"><span class="label label-primary"> Node infos and neighbours </span></h4>
-								<h5> <span class="glyphicon glyphicon-menu-right"></span>
-									<strong><em>Simple left-click</em></strong>
-									<p>select a node and show its infos in the panel on the right side of the window</p>
-								</h5>
-								<h5> <span class="glyphicon glyphicon-menu-right"></span>
-									<strong><em>Double left-click</em></strong>
-									<p>select/unselect a node and show its neighbours while hiding the others</p>
-								</h5>
-							
-							  <hr></hr>
-							
-							  <h4 class="text-center"><span class="label label-primary"> Zoom and pan graph </span></h4>
-								<h5> <span class="glyphicon glyphicon-menu-right"></span>
-									<strong><em>Zoom graph</em></strong>
-									<p>use your mouse wheel to zoom on the graph</p>
-								</h5>
-								<h5> <span class="glyphicon glyphicon-menu-right"></span>
-									<strong><em>Pan graph</em></strong>
-									<p>left-click and hold to move your graph. If the graph goes out of the window refresh the page. </p>
-								</h5>
-							
-							  <hr></hr>
-							
-							  <h4 class="text-center"><span class="label label-primary"> Filters </span></h4>
-								<h5> <span class="glyphicon glyphicon-menu-right"></span>
-									<strong><em>Select by categories</em></strong>
-									<p>check/uncheck the categories of nodes you want to show/hide</p>
-								</h5>
-								<h5> <span class="glyphicon glyphicon-menu-right"></span>
-									<strong><em>Select by groups </em></strong>
-									<p>check/uncheck the groups of nodes you want to show/hide</p>
-								</h5> 
-							
-							</div>
-						</div>
-					  </div>
-					</div><!-- end modal-->
+					
 				
 					
 					<!-- just one refresh button == to the displayed collection -->
 					{% if data_JSON %}
-					
 					<li>
 						<button type="button"
 							class="btn btn-warning"
@@ -240,48 +144,6 @@
 								<span class="badge"> <span class="glyphicon glyphicon-repeat"></span> </span>
 						</button>
 					</li>
-					
-					<!-- Modal -->
-					<div class="modal fade bs-example-modal-md"
-						 tabindex="-1"
-						 id="modalRefresh"
-						 tabindex="-1"
-						 role="dialog"
-						 aria-labelledby="myModalLabel" >
-						<div class="modal-dialog modal-md" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<h4 class="modal-title" id="myModalLabel">
-										...About refreshing datasets
-									</h4>
-								</div>
-				  
-								<div class="modal-body">
-									<p class="text-justify lead">
-										Refreshing a dataset with {{ glob.titleApp }} calls the Zotero's API,
-										gets the diffents JSONs datas, generates the new nodes/links datas... and then displays the datas in a network graph.
-										So it may take some time to do it properly.
-									</p>
-									<p class="text-justify lead">
-										Please just click once and be patient, and before doing any graph or node manipulation, 
-										please wait a few seconds for the page to completely finish to load...
-									</p>
-								</div>
-								
-								<a href="/refresh/{{ selection }}">
-									<button type="button" class="btn btn-lg btn-block btn-warning">
-										<span class="glyphicon glyphicon-refresh spinning"></span>
-										Understood! Let's refresh "{{ selection }}" !
-									</button>
-								</a>
-								
-							</div>
-						</div>
-					</div>
-					
 					{% endif %}
 					
 					
@@ -333,6 +195,158 @@
 	</div>
 	
 
+	
+	<!-- MODALS -->
+	
+	<!-- Modal About -->
+	<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
+			</div>
+	  
+			<div class="modal-body">
+			  
+			  <h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
+			  <p><em>{{ glob.titleApp }}</em> allows to generate datavisualisations from sets of Zotero references.</p>
+			  <hr></hr>
+			  
+			  <h4 class="text-center"><span class="label label-default"> HISTORY </span></h4>
+			  <p><em>{{ glob.titleApp }}</em> started as a part of <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=start">1.CAMP</a>,
+				  which a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
+				  Julien Bellanger could tell more about this part...
+			  </p>
+			  <hr></hr>
+			  
+			  <h4 class="text-center"><span class="label label-default"> WIKI, SOURCE AND DOCUMENTATION </span></h4>
+			  <p><em>{{ glob.titleApp }}</em> development is documented
+				  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
+				  and on <a target="_blank" href="https://github.com/JulienParis/Ref2net">GitHub</a> or GitLab (as soon as Julien P understands how it works...)
+			  </p>
+			  <hr></hr>
+			  
+			  <h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
+			  <p><em>{{ glob.titleApp }}</em> is powered by
+				  <a target="_blank" href="https://www.python.org/" >Python</a> /
+				  <a target="_blank" href="https://www.zotero.org/" >Zotero</a> /
+				  <a target="_blank" href="http://flask.pocoo.org/" >Flask</a> /
+				  <a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> /
+				  <a target="_blank" href="https://d3js.org/" >d3.js</a>
+			  </p>
+			  <hr></hr>
+			  
+			  <h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
+			  <p>Project by
+				  <a target="_blank" href="http://www.pingbase.net/">PING</a> /
+				  <a target="_blank" href="http://artlabo.org/">ARTLABO</a>
+				  and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>.
+			  </p>
+			  <hr></hr>
+			  
+			  <h4 class="text-center"><span class="label label-default"> LICENCE </span></h4>
+			  <p><em>{{ glob.titleApp }}</em> is an open source project under a Creative Commons licence : BY
+			  </p>
+			
+			</div>
+		</div>
+	  </div>
+	</div><!-- end modal about -->
+	
+	<!-- Modal How to -->
+	<div class="modal fade" id="modalHowTo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <h3 class="modal-title text-center" id="myModalLabel">How to use {{ glob.titleApp }} </h3>
+			</div>
+	  
+			<div class="modal-body">
+			  
+			  <h4 class="text-center"><span class="label label-primary"> Node infos and neighbours </span></h4>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Simple left-click</em></strong>
+					<p>select a node and show its infos in the panel on the right side of the window</p>
+				</h5>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Double left-click</em></strong>
+					<p>select/unselect a node and show its neighbours while hiding the others</p>
+				</h5>
+			
+			  <hr></hr>
+			
+			  <h4 class="text-center"><span class="label label-primary"> Zoom and pan graph </span></h4>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Zoom graph</em></strong>
+					<p>use your mouse wheel to zoom on the graph</p>
+				</h5>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Pan graph</em></strong>
+					<p>left-click and hold to move your graph. If the graph goes out of the window refresh the page. </p>
+				</h5>
+			
+			  <hr></hr>
+			
+			  <h4 class="text-center"><span class="label label-primary"> Filters </span></h4>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Select by categories</em></strong>
+					<p>check/uncheck the categories of nodes you want to show/hide</p>
+				</h5>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Select by groups </em></strong>
+					<p>check/uncheck the groups of nodes you want to show/hide</p>
+				</h5> 
+			
+			</div>
+		</div>
+	  </div>
+	</div><!-- end modal how to-->
+	
+	{% if data_JSON %}
+	<!-- Modal refresh -->
+	<div class="modal fade bs-example-modal-md"
+		 tabindex="-1"
+		 id="modalRefresh"
+		 tabindex="-1"
+		 role="dialog"
+		 aria-labelledby="myModalLabel" >
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-title" id="myModalLabel">
+						...About refreshing datasets
+					</h3>
+				</div>
+  
+				<div class="modal-body">
+					<p class="text-justify lead">
+						Refreshing a dataset with {{ glob.titleApp }} calls the Zotero's API,
+						gets the diffents JSONs datas, generates the new nodes/links datas... and then displays the datas in a network graph.
+						So it may take some time to do it properly.
+					</p>
+					<p class="text-justify lead">
+						Please just click once and be patient, and before doing any graph or node manipulation, 
+						please wait a few seconds for the page to completely finish to load...
+					</p>
+				</div>
+				
+				<a href="/refresh/{{ selection }}">
+					<button type="button" class="btn btn-lg btn-block btn-warning">
+						<span class="glyphicon glyphicon-refresh spinning"></span>
+						Understood! Let's refresh "{{ selection }}" !
+					</button>
+				</a>
+				
+			</div>
+		</div>
+	</div> <!-- end modal refresh -->
+	{% endif %}
+	
     </body>
 
 
