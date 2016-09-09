@@ -44,6 +44,9 @@
       //.scaleExtent([1, 10])
       .on("zoom", zoomed);
 
+    var dft_circle_stroke_w = "1.5px";
+    var dft_line_stroke_w = "1.0px";
+    
       
     // create svg
     var svg = d3.select("#containerLayout")
@@ -164,6 +167,9 @@
     var allEdges = [];
     var allNodes = [];
     
+    
+    var optArray = [];
+
     //initialize graph layout : fill allNodes and allEdges
     d3.json("{{ data_JSON }}",
               function(error, graph) {
@@ -180,16 +186,30 @@
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
                 
+                for (var i = 0; i < allNodes.length - 1; i++) {
+                        //console.log(allNodes[i].label);
+                        optArray.push(allNodes[i].label);  //// PROBLEM WITH optArray : empty /////////////////////////////////////////////// 
+                    } ;
+                    
                 //originalData = graph     ;
                 render(allNodes, allEdges) ;
               }
       )
     ;
+
+    //////////////////// NOT WORKING WELL / autocomplete not working as expected ////////////////////////////
+    /// search bar function
+    //var allNodes = vis.selectAll(".node") ;
+    //var allNodes = nodes ;
+    
+    //optArray = optArray.sort();
+    console.log("optArray : ", optArray); ///////////////////////////
+    
     
     /////////////////////////////////////////////////////////////////////////////////
 
     /// HIDE NODES / BREAK LINKS UPDATE function
-    // adapted from    http://bl.ocks.org/csesivakumar/31e23b875f260622f8f7da3ae380958c
+    // adapted from  :  http://bl.ocks.org/csesivakumar/31e23b875f260622f8f7da3ae380958c
     function Update_Node(buttonId){
       
       
@@ -240,7 +260,7 @@
         var obj = allEdges[i];
         //console.log(obj.group);
         if ( rulesToHide.indexOf(obj.group) == -1 ) {
-          console.log(obj.group);
+          //console.log(obj.group);
           tempEdges.push(obj);
         }
       }
@@ -271,8 +291,8 @@
       link.enter()
           .append("line")
           .attr("class", "link")
-          .attr("stroke-width"    , function(d) { return d.{{glob.es.weight}}    ; } )
-          .attr("stroke-dasharray", function (d) { return d.{{glob.es.dash}} ; } )
+          .attr("stroke-width"    , dft_line_stroke_w ) //function(d) { return d.{{glob.es.weight}} ; } )
+          .attr("stroke-dasharray", function(d) { return d.{{glob.es.dash}}   ; } )
         .merge(link);
       link.exit().remove();
       
@@ -286,6 +306,7 @@
           .append("circle")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
           .style("fill", function (d) { return d.{{glob.ns.color}} ; }) //return color(d.{{glob.ns.type}})
+          .attr("stroke-width"    , dft_circle_stroke_w )
           .attr("class"   , "node")
           .attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
           .attr("id"      , function(d) { return ( d.{{glob.ns.id}}       ) })
@@ -298,9 +319,12 @@
           // normal drag function
           .call(node_normal_drag)
           //.call(node_pin_drag) /// trying pinning down node
-          .on('dblclick', releasenode_)
+          //.on('dblclick', releasenode_)
           .on('click'   , displayInfos)    // display node infos inside right column 
-          .on('dblclick', connectedNodes ) //Added code ... .on('click'
+          .on('dblclick', connectedNodes) //("over") ) //Added code ... .on('click'
+          
+          //.on('mouseover', connectedNodes) //("over") ) //Added code ... .on('click'
+          //.on('mouseout',  connectedNodes) //("out") )
       ;
       
       // add titles for nodes
@@ -318,58 +342,66 @@
       
       
       
-      /// CONNECTED NODES / NOT WORKING ANYMORE !!! ///////////////////////////////////////////////////////////////
+      /// CONNECTED NODES ///////////////////////////////////////////////////////////////
       //Toggle stores whether the highlighting is on
       var toggle = 0;
       //Create an array logging what is connected to what
       var linkedByID = {};
-      for (i = 0; i < nodes.length; i++) {
-          linkedByID[i + "," + i] = 1;
-      };
-      nodes.forEach(function (d) {
-          linkedByID[d.{{glob.ns.id}} + "," + d.{{glob.ns.id}} ] = 1; ////////////
-      });    
-      links.forEach(function (d) {
-          linkedByID[d.source + "," + d.target] = 1; ////////////
-      });
+      // feed linkedById
+      nodes.forEach(function (n) {
+        linkedByID[n.{{glob.ns.id}} + "," + n.{{glob.ns.id}} ] = 1; });    
+      links.forEach(function (e) {
+        //console.log(e);
+        linkedByID[e.source.{{glob.ns.id}} + "," + e.target.{{glob.ns.id}}] = 1; });
+      //console.log(linkedByID); //////////////////////////////////
+      
       //This function looks up whether a pair are neighbours
       function neighboring(a, b) {
-          return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ];
-      }
+        return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ]; }
+
+      var N = vis.selectAll(".node");
+      var L = vis.selectAll(".link");
+      
       // show connected nodes and fade others
-      //node.enter(); link.enter();
       function connectedNodes() {
         
         if (toggle == 0) {
             
           //Reduce the opacity of all but the neighbouring nodes
-          d = d3.select(this).node().__data__;
-          //d = d3.select(this).__data__;
+          d = d3.select(this).node().__data__; 
+          //console.log("d :", d3.select(this).node().__data__ ); // OK
+          //console.log("node selected : ", d );
+          //console.log("node selected / ID : ", d.{{glob.ns.id}});
+
+          N.attr("stroke-width",
+            function (o) { return neighboring(d, o) | neighboring(o, d) ? "2px" : "0px"; } );
           
-          node.style("opacity", function (o) {
-              return neighboring(d, o) | neighboring(o, d)                 ? 1 : 0.1;  ///// "|" means OR
-          });
-          link.style("opacity", function (o) {
-              return d.index == o.source.index | d.index == o.target.index ? 1 : 0.1; //////
-          });
+          N.style("opacity", 
+            function (o) { return neighboring(d, o) | neighboring(o, d) ? 1 : 0.4; } );
+          
+          L.style("opacity",
+            function (o) { return d.index == o.source.index | d.index == o.target.index ? 1 : 0.4; } ); 
+
+          L.attr("stroke-width",
+            function (o) { return d.index == o.source.index | d.index == o.target.index ? "2px" : "0.3px"; } ); 
+          
           //Reduce the opacity
           toggle = 1;
         }
         
         else {
           //Put them back to opacity=1
-          node.style("opacity", 1);
-          link.style("opacity", 1);
+          N.style("opacity", 1);
+          N.attr("stroke-width", dft_circle_stroke_w );
+          
+          L.style("opacity", 1);
+          L.attr("stroke-width", dft_line_stroke_w);
+          
           toggle = 0;
         }
         
       }
 
-      //node.exit() ; link.exit();
-    
-      
-      
-      
       function ticked() {
         d3.select(".links").selectAll(".link")
         //link
@@ -390,18 +422,6 @@
 
 
 
-      
-
-    //////////////////// NOT WORKING WELL / autocomplete not working as expected ////////////////////////////
-    /// search bar function
-    var optArray = [];
-    var allNodes = vis.selectAll(".node")
-    //var allNodes = nodes 
-    for (var i = 0; i < allNodes.length - 1; i++) {
-        optArray.push(allNodes[i].label);  //// PROBLEM WITH optArray : empty /////////////////////////////////////////////// 
-    }
-    optArray = optArray.sort();
-    console.log(optArray);
     
     //$(function () {
     $(document).ready(function () {
@@ -455,31 +475,35 @@
   
     //// NOT COMPLETLY WORKING YET /////////////////////////////////////////////////////
     // checkboxes behaviour
-    
-    function checkFilter() {
-    //document.getElementsByName('checkFilter')
-    d3.selectAll('.checkFilter')
-      .on("change", function() {
-        
-        var selected = this.value ;
-        
-        //window.alert(selected);
-        
-        opacity = this.checked ? 1 : 0.1 ;
-        //display = this.checked ? 'inline' : 'none';
-        
-        var nodes = vis.selectAll(".node");
-        nodes.filter(function (d, i) {
-          return d.category == selected | selected == d.group ; //| selected in d.tags ;
-                })
-        .style("opacity", opacity);
-        //.attr('display', display);
-        
-        }
-      )
+	
+    //$(document).ready( checkFilter() );
+
+    function hideNodes() {
+          
+          var selected = this.value ;
+          //var enabled  = this.enabled ;
+          //window.alert(selected);
+          
+          opacity = this.enabled ? 1 : 0.1 ;
+          //display = this.checked ? 'inline' : 'none';
+          
+          var nodes = vis.selectAll(".node");
+          nodes.filter(function (d, i) {
+            return d.category == selected | selected == d.group ; //| selected in d.tags ;
+            }
+          )
+            .style("opacity", opacity);
+            //.attr('display', display);
+          
     }
 
-    checkFilter()
+    //function checkFilter() {
+    ////document.getElementsByName('checkFilter')
+    //  d3.selectAll('.checkFilter')
+    //    .on("change", hideNodes(this) )
+    //  }
+
+    //checkFilter()
 
   </script>
 

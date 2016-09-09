@@ -88,7 +88,7 @@
         <!-- TEST FILTERS BREAKING EDGES -->
           <div class="list-group">
             <!--<label class="text-center list-group-item " >-->
-            <h4>HIDE FILTERS</h4>
+            <h4>FILTERS : break links</h4>
             <!--</label>-->
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default buttonFilter"
@@ -114,9 +114,22 @@
           
           
           <div class="list-group">
-            <label class="text-center list-group-item active" >
+            <h4>FILTERS : show or hide nodes </h4>
+
+<!--            <label class="text-center list-group-item active" >
               {{ glob.ns.category }}(-ies)
-            </label>
+            </label>-->
+            
+            <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                    class="btn btn-default checkFilter"
+                    id="ref-tag"
+                    value="reference"
+                    onclick="hideNodes()">
+              references
+            </button>
+            
+            <br>
+            
             
             <label class="list-group-item">
               <input class="checkFilter" type="checkbox" checked value="reference">
@@ -132,7 +145,7 @@
             </label>
           </div>
           
-          <div> <p></p> </div>
+          <br>
   
           <div class="list-group">
             <label class="text-center list-group-item active" >
