@@ -38,6 +38,7 @@
         
         .container-layout {
             position: absolute;
+            top: 0px;
             /*padding-right: 15px;*/
             /*padding-left: 15px;*/
             /*margin-right: auto;*/
@@ -46,17 +47,76 @@
             z-index: 0;
         }
         
+        .ui-autocomplete{
+            color: white;
+            background-color: DarkCyan;
+                /*  https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
+                    http://www.w3schools.com/colors/colors_names.asp   
+                */
+            width: 400px;
+            max-height: 200px;
+            overflow-y: auto;
+            overflow-x: hidden; /* prevent horizontal scrollbar */
+            padding-right: 20px; /* add padding to account for vertical scrollbar */
+            z-index: 3;
+        }
+        
         .container-fluid{
             height: 100%;
             z-index: 2;
         }
+    
+        .tooltip {	
+            position: absolute;			
+            text-align: center;			
+            max-width: 250px;					
+            /*height: 28px;					*/
+            padding: 2px;				
+            /*font: 12px sans-serif;		*/
+            background: lightsteelblue;	
+            border-width: 3px;
+            border-color: white;
+            border-radius: 8px;			
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        /*.d3-tip {*/
+        /*    line-height: 1;*/
+        /*    font-weight: bold;*/
+        /*    padding: 12px;*/
+        /*    background: rgba(0, 0, 0, 0.8);*/
+        /*    color: #fff;*/
+        /*    border-radius: 2px;*/
+        /*  }*/
+        /*  */
+        /*  /* Creates a small triangle extender for the tooltip */*/
+        /*  .d3-tip:after {*/
+        /*    box-sizing: border-box;*/
+        /*    display: inline;*/
+        /*    font-size: 10px;*/
+        /*    width: 100%;*/
+        /*    line-height: 1;*/
+        /*    color: rgba(0, 0, 0, 0.8);*/
+        /*    content: "\25BC";*/
+        /*    position: absolute;*/
+        /*    text-align: center;*/
+        /*  }*/
+        /*  */
+        /*  /* Style northward tooltips differently */*/
+        /*  .d3-tip.n:after {*/
+        /*    margin: -1px 0 0 0;*/
+        /*    top: 100%;*/
+        /*    left: 0;*/
+        /*  }*/
+    
     
     </style>
     
 
     
     <!-- start big row for infos and graph -->
-    <div id="graphLayout" class="row" style="min-height: 100%"> <!-- jumbotron for debugging purposes -->
+    <div id="graphLayout" class="row" style="min-height: 100%"> 
     
     {% block D3_infos %}{% endblock %}
 

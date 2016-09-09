@@ -42,7 +42,8 @@
     // zooming / panning function 
     var zoom = d3.zoom()
       //.scaleExtent([1, 10])
-      .on("zoom", zoomed);
+      .on("zoom", zoomed)
+      ;
 
     var dft_circle_stroke_w = "1.5px";
     var dft_line_stroke_w = "1.0px";
@@ -54,12 +55,28 @@
       .attr("width" , contWidth - 15)
       .attr("height", contHeight - 90)
       .call(zoom)
+      .on("dblclick.zoom", null)
       ;
 
     // canvas
     var svg = d3.select("svg"),
       width  = +svg.attr("width"),
       height = +svg.attr("height");
+    
+    //var tip = d3.tip()
+    //  .attr('class', 'd3-tip')
+    //  .offset([-10, 0])
+    //  .html(function(d) {
+    //    return "<strong>" + d.label + "</strong>";
+    //  })
+  
+    //add the div for the tooltip
+    var div = d3.select("body")
+      .append("div")
+      .attr("class", "panel panel-info tooltip")
+      .style("opacity", 0) ;
+    
+    //var div = div.append("a");
     
     // add group for shapes in svg
     var vis = svg
@@ -136,6 +153,7 @@
     //var legendHeight = document.getElementById('legend').clientHeight;
     var legend = d3.select("#legend")
       .append("svg:svg")
+      .attr("background-color", "black")
       .attr("width", legendWidth)
       .attr("height", 100) ;
     
@@ -156,11 +174,10 @@
     // force parameters
     var simulation = d3.forceSimulation()
         .force("link"   , d3.forceLink().id(function(d) { return d.{{glob.es.id}}; })) //identify links relation by common id
-        .force("charge" , d3.forceManyBody())
+        .force("charge" , d3.forceManyBody().strength(-50) )
         .force("center" , d3.forceCenter(width / 2, height / 2))
         .force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2)) // COLLIDE FORCE / WORKING ? ///////////////////
         ;
-    
     
     //////////////////////////////////////////////
     
@@ -175,40 +192,27 @@
               function(error, graph) {
                 if (error) throw error   ;
                 
-                //graph.links.forEach(function(e) { 
-                //  var
-                //  sourceNode = graph.nodes.filter(function(n) { return n.PersonId === e.source; })[0],
-                //  targetNode = graph.nodes.filter(function(n) { return n.PersonId === e.target; })[0]
-                //  ;	    	
-                //  edges.push({source: sourceNode, target: targetNode, PubDate : e.PubDate});
-                // });
-                
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
                 
                 for (var i = 0; i < allNodes.length - 1; i++) {
                         //console.log(allNodes[i].label);
-                        optArray.push(allNodes[i].label);  //// PROBLEM WITH optArray : empty /////////////////////////////////////////////// 
+                        optArray.push(allNodes[i].label);   
                     } ;
-                    
-                //originalData = graph     ;
+                
+                optArray = optArray.sort();
+                //console.log("optArray from start : ", optArray);
+
                 render(allNodes, allEdges) ;
               }
       )
     ;
-
-    //////////////////// NOT WORKING WELL / autocomplete not working as expected ////////////////////////////
-    /// search bar function
-    //var allNodes = vis.selectAll(".node") ;
-    //var allNodes = nodes ;
     
-    //optArray = optArray.sort();
-    console.log("optArray : ", optArray); ///////////////////////////
-    
+    //console.log("optArray : ", optArray); // OK /////////////////////////
     
     /////////////////////////////////////////////////////////////////////////////////
 
-    /// HIDE NODES / BREAK LINKS UPDATE function
+    /// BREAK LINKS & UPDATE function
     // adapted from  :  http://bl.ocks.org/csesivakumar/31e23b875f260622f8f7da3ae380958c
     function Update_Node(buttonId){
       
@@ -228,7 +232,7 @@
       }
       
       // check status for all buttons
-      var buttons = document.getElementsByClassName('buttonFilter');
+      var buttons = document.getElementsByClassName('breakFilter');
       //console.log("buttons :", buttons);
       
       // stores criterias to hide
@@ -268,6 +272,56 @@
       render(tempNodes, tempEdges) ;
       
     }
+
+
+
+    // HIDE NODES FROM LAYOUT (but no disappear)
+    function hideNodes(buttonValue) {
+
+      // get button attributes
+      var Clickbutton = document.getElementById(buttonValue);
+      var status = Clickbutton.getAttribute("Enabled");
+      
+      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
+      if (status =="0"){
+		Clickbutton.setAttribute("Enabled","1");
+		Clickbutton.setAttribute("aria-pressed", "true") ;
+      }
+      if (status =="1"){
+        Clickbutton.setAttribute("Enabled","0");
+        Clickbutton.setAttribute("aria-pressed", "false") ;
+      }
+
+      // check status for all buttons
+      var buttons = document.getElementsByClassName('hideFilter');
+      
+      //var selected = buttonValue ;
+      //console.log("selected :", this);
+      
+      // stores criterias to hide
+      var rulesToHide = [] ;
+      for(var j = 0; j < buttons.length; j++) {
+        //console.log(button);
+		var button = buttons[j];		
+		var status = button.getAttribute("Enabled");
+        // remove nodes and edges if button status is "1"
+		if (status=="1"){ 
+          rulesToHide.push(button.id);
+        }			
+      }
+      
+      opacity = this.enabled ? 1 : 0.1 ;
+      
+      var nodes = vis.selectAll(".node");
+      nodes.filter(function (d, i) {
+        return d.category in rulesToHide | d.group in rulesToHide  ; //| selected in d.tags ;
+        }
+      )
+        .style("opacity", opacity);
+          
+    }
+
+
 
     // main D3 function
     function render (nodes, links) {
@@ -323,19 +377,28 @@
           .on('click'   , displayInfos)    // display node infos inside right column 
           .on('dblclick', connectedNodes) //("over") ) //Added code ... .on('click'
           
+          //alternative
           //.on('mouseover', connectedNodes) //("over") ) //Added code ... .on('click'
           //.on('mouseout',  connectedNodes) //("out") )
+          
+          //adding tooltip in div tooltip
+          //.on("mouseover", tip.show)
+          //.on("mouseout", tip.hide);
+          .on("mouseover", function(d) {		
+            div.transition()		
+              .duration(200)		
+              .style("opacity", .95);		
+            div.html( "<strong> "+ d.{{glob.ns.label}} + " </strong>")	
+              .style("left", (d3.event.pageX + 20) + "px")		
+              .style("top", (d3.event.pageY - 10) + "px");	
+          })					
+          .on("mouseout", function(d) {		
+            div.transition()		
+              .duration(500)		
+              .style("opacity", 0);
+              
+          });
       ;
-      
-      // add titles for nodes
-      //node.select("title")
-      //  .text ( function(d) { return ( d.{{glob.ns.category}} + " / " + d.{{glob.ns.label}} ) } )
-      //// add labels for nodes // WORKING OK
-      //node.append("text")
-      //    .attr("dx", 10)
-      //    .attr("dy", ".35em")
-      //    .text(function(d) { return d.{{glob.ns.id}} })
-      //    .style("stroke", "grey");
       
       
       node.exit().remove();
@@ -423,33 +486,33 @@
 
 
     
-    //$(function () {
+    //launch autocomplete once page loaded
     $(document).ready(function () {
         $("#search").autocomplete({ source: optArray }); 
       });
-    
+
+    /// search bar functions 
     function searchNode() {
-        //find the node
-        var selectedVal = document.getElementById('search').value;
-        var node = vis.selectAll(".node");
-        if (selectedVal == "none") {
-            node.style("stroke", "white").style("stroke-width", "1");
-          }
-        else {
-            var selected = node.filter(function (d, i) {
-                return d.label != selectedVal;
-            });
-            selected.style("opacity", "0.1");
-            
-            var link = vis.selectAll(".links")
-            link.style("opacity", "0");
-            d3.selectAll(".node, .links")
-              .transition()
-              .duration(4000)
-              .style("opacity", 1);
-        }
+      //find the node
+      var selectedVal = document.getElementById('search').value;
+      var node = vis.selectAll(".node");
+      if (selectedVal == "none") {
+        node.style("stroke", "white").style("stroke-width", "1");
+      }
+      else {
+        var selected = node.filter(function (d, i) {
+            return d.label != selectedVal;
+        });
+        selected.style("opacity", "0.2");
+        
+        var link = vis.selectAll(".links")
+        link.style("opacity", "0.2");
+        d3.selectAll(".node, .links")
+          .transition()
+          .duration(4500)
+          .style("opacity", 1);
+      }
     }
-    
     //search bar / run searchNode if enter (aka keyCode==13) is pressed
     function handle(e){
       if(e.keyCode === 13){
@@ -473,37 +536,9 @@
     }
   
   
-    //// NOT COMPLETLY WORKING YET /////////////////////////////////////////////////////
-    // checkboxes behaviour
-	
-    //$(document).ready( checkFilter() );
 
-    function hideNodes() {
-          
-          var selected = this.value ;
-          //var enabled  = this.enabled ;
-          //window.alert(selected);
-          
-          opacity = this.enabled ? 1 : 0.1 ;
-          //display = this.checked ? 'inline' : 'none';
-          
-          var nodes = vis.selectAll(".node");
-          nodes.filter(function (d, i) {
-            return d.category == selected | selected == d.group ; //| selected in d.tags ;
-            }
-          )
-            .style("opacity", opacity);
-            //.attr('display', display);
-          
-    }
 
-    //function checkFilter() {
-    ////document.getElementsByName('checkFilter')
-    //  d3.selectAll('.checkFilter')
-    //    .on("change", hideNodes(this) )
-    //  }
 
-    //checkFilter()
 
   </script>
 

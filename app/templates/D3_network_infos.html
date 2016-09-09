@@ -91,19 +91,19 @@
             <h4>FILTERS : break links</h4>
             <!--</label>-->
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default buttonFilter"
+                      class="btn btn-default breakFilter"
                       id="ref-tag"
                       onclick="Update_Node(this.id)">
                 ref-tag
               </button>
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default buttonFilter"
+                      class="btn btn-default breakFilter"
                       id="ref-group"
                       onclick="Update_Node(this.id)">
                 ref-group
               </button>              
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default buttonFilter"
+                      class="btn btn-default breakFilter"
                       id="ref-ref"
                       onclick="Update_Node(this.id)">
                 ref-ref
@@ -116,33 +116,33 @@
           <div class="list-group">
             <h4>FILTERS : show or hide nodes </h4>
 
-<!--            <label class="text-center list-group-item active" >
+              <!--  <label class="text-center list-group-item active" >
               {{ glob.ns.category }}(-ies)
             </label>-->
             
             <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                    class="btn btn-default checkFilter"
-                    id="ref-tag"
-                    value="reference"
-                    onclick="hideNodes()">
+                    class="btn btn-default hideFilter"
+                    id="reference"
+                    onclick="hideNodes(this.id)">
               references
             </button>
             
-            <br>
+            <br></br>
             
             
-            <label class="list-group-item">
-              <input class="checkFilter" type="checkbox" checked value="reference">
-                references
-            </label>
-            <label class="list-group-item">
-              <input class="checkFilter" type="checkbox" checked value="group">
-                groups
-            </label>
-            <label class="list-group-item">
-              <input class="checkFilter" type="checkbox" checked value="tag">
-                tags
-            </label>
+            <!--<label class="list-group-item">-->
+            <!--  <input class="checkFilter" type="checkbox" checked value="reference">-->
+            <!--    references-->
+            <!--</label>-->
+            <!--<label class="list-group-item">-->
+            <!--  <input class="checkFilter" type="checkbox" checked value="group">-->
+            <!--    groups-->
+            <!--</label>-->
+            <!--<label class="list-group-item">-->
+            <!--  <input class="checkFilter" type="checkbox" checked value="tag">-->
+            <!--    tags-->
+            <!--</label>-->
+            
           </div>
           
           <br>
@@ -218,27 +218,14 @@
         <div ID="legend" class="panel panel-info">
         </div>
         
-         <!--<h5 class="text-center"> 
-          <strong>legend</strong>
-        </h5>-->
       </div>
 
 
-      
-      <!--<h5><strong>NOT SET YET...</strong></h5>-->
-      <!---->
-      <!--    <h6> - references</h6>-->
-      <!--    <h6> - groups</h6>-->
-      <!--    <h6> - supertags</h6>-->
-      <!--<hr></hr>-->
         
-        
-      <div class="list-group">
-      <!--<div class="panel panel-info">-->
+      <div class="infosNode list-group">
         <label class="text-center list-group-item active" >
               SELECTED NODE
         </label>
-        <!--<h4 class="text-center">SELECTED NODE</h4>-->
         
         <p class="list-group-item">label :    <a id="nLabel"></a></p>
         <p class="list-group-item">category : <a id="nCategory"></a></p>
