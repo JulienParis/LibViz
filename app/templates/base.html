@@ -172,6 +172,15 @@
 							<span class="glyphicon glyphicon-fullscreen"></span>
 						</button>
 					</li>
+					<li> <!-- full screen button -->
+						<button type="button"
+							class="btn btn-primary"
+							data-toggle="modal"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							onclick="" > 	
+							<span class="glyphicon glyphicon-save"></span>
+						</button>
+					</li>
 				</ul><!-- end right navbar -->
 				{% endif %}
 				
@@ -267,11 +276,11 @@
 			  
 			  <h4 class="text-center"><span class="label label-primary"> Node infos and neighbours </span></h4>
 				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Simple left-click</em></strong>
+					<strong><em>Simple left-click on a node</em></strong>
 					<p>select a node and show its infos in the panel on the right side of the window</p>
 				</h5>
 				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Double left-click</em></strong>
+					<strong><em>Double left-click on a node</em></strong>
 					<p>select/unselect a node and show its neighbours while hiding the others</p>
 				</h5>
 			
@@ -279,11 +288,11 @@
 			
 			  <h4 class="text-center"><span class="label label-primary"> Zoom and pan graph </span></h4>
 				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Zoom graph</em></strong>
-					<p>use your mouse wheel to zoom on the graph</p>
+					<strong><em>Zoom in the graph</em></strong>
+					<p>use your mouse wheel to zoom / dezoom on the graph</p>
 				</h5>
 				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Pan graph</em></strong>
+					<strong><em>Pan the graph</em></strong>
 					<p>left-click and hold to move your graph. If the graph goes out of the window refresh the page. </p>
 				</h5>
 			
@@ -291,11 +300,15 @@
 			
 			  <h4 class="text-center"><span class="label label-primary"> Filters </span></h4>
 				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Select by categories</em></strong>
+					<strong><em>Break links between nodes</em></strong>
+					<p>check/uncheck the family of links you want to break/relink</p>
+				</h5>
+				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+					<strong><em>Show/hide nodes by categories</em></strong>
 					<p>check/uncheck the categories of nodes you want to show/hide</p>
 				</h5>
 				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Select by groups </em></strong>
+					<strong><em>Show/hide nodes by groups or tags </em></strong>
 					<p>check/uncheck the groups of nodes you want to show/hide</p>
 				</h5> 
 			

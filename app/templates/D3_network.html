@@ -53,7 +53,7 @@
     var svg = d3.select("#containerLayout")
       .append("svg:svg")
       .attr("width" , contWidth - 15)
-      .attr("height", contHeight )
+      .attr("height", contHeight - 15 )
       .call(zoom)
       .on("dblclick.zoom", null)
       ;
@@ -495,10 +495,10 @@
         var selected = node.filter(function (d, i) {
             return d.label != selectedVal;
         });
-        selected.style("opacity", "0.2");
+        selected.style("opacity", "0.1");
         
         var link = vis.selectAll(".links")
-        link.style("opacity", "0.2");
+        link.style("opacity", "0.1");
         d3.selectAll(".node, .links")
           .transition()
           .duration(4500)

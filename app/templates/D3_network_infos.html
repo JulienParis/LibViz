@@ -66,30 +66,12 @@
         
 
         <div class="list-group"> <p></p> </div>
-
         
         
-        <!--<div class="panel panel-info">
-          <h5 class="text-center"><strong>select / hide nodes</strong></h5>
-        </div>-->
-        
-        <!-- display categories -->
-        
-        <!--<div class="btn-group btn-block ">-->
-        <!--  <button type="button" href="#"-->
-        <!--          class="btn btn-block btn-primary dropdown-toggle"-->
-        <!--          data-toggle="dropdown"-->
-        <!--          aria-haspopup="true"-->
-        <!--          aria-expanded="false">-->
-        <!--    {{ glob.ns.category }}(s)-->
-        <!--    <span class="caret"></span>-->
-        <!--  </button>-->
-        
-        
-        <!-- TEST FILTERS BREAKING EDGES -->
+          <!-- FILTERS BREAKING EDGES -->
           <div class="list-group">
 
-            <h4>FILTERS : break links</h4>
+            <h4>break links</h4>
 
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default btn-sm breakFilter"
@@ -111,9 +93,9 @@
               </button>              
           </div>
           
-          
+          <!-- FILTERS SHOW / HIDE NODES -->
           <div class="list-group">
-            <h4>FILTERS : show or hide categories </h4>
+            <h4>show or hide categories </h4>
 
               <!-- {{ glob.ns.category }}(-ies) -->
             
@@ -141,7 +123,7 @@
           </div>
           
           <div class="list-group">
-            <h4>FILTERS : show or hide {{ glob.ns.group }}(s) </h4>
+            <h4>show or hide {{ glob.ns.group }}(s) </h4>
             <!--<label class="text-center list-group-item active" >-->
             <!--  {{ glob.ns.group }}(s)-->
             <!--</label>-->
@@ -163,7 +145,7 @@
           {% if selection == "1camp" %}
           
             <div class="list-group">
-              <h4>FILTERS : show or hide super-{{ glob.ns.tags }}(s) </h4>
+              <h4>show or hide super-{{ glob.ns.tags }}(s) </h4>
               <!--<label class="text-center list-group-item active" >-->
               <!--  super-{{ glob.ns.tags }}(s)-->
               <!--</label>-->
