@@ -47,7 +47,7 @@
           <input id="search"
                  type="text"
                  class="form-control"
-                 placeholder="search a node" 
+                 placeholder="search a node"
                  onKeyPress="handle(event)">
                 
           <span class="input-group-btn">
@@ -84,6 +84,34 @@
         <!--    <span class="caret"></span>-->
         <!--  </button>-->
         
+        
+        <!-- TEST FILTERS BREAKING EDGES -->
+          <div class="list-group">
+            <!--<label class="text-center list-group-item " >-->
+            <h4>HIDE FILTERS</h4>
+            <!--</label>-->
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                      class="btn btn-default buttonFilter"
+                      id="ref-tag"
+                      onclick="Update_Node(this.id)">
+                ref-tag
+              </button>
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                      class="btn btn-default buttonFilter"
+                      id="ref-group"
+                      onclick="Update_Node(this.id)">
+                ref-group
+              </button>              
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                      class="btn btn-default buttonFilter"
+                      id="ref-ref"
+                      onclick="Update_Node(this.id)">
+                ref-ref
+              </button>              
+          </div>
+          
+          <div> <p></p> </div>
+          
           
           <div class="list-group">
             <label class="text-center list-group-item active" >

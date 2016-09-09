@@ -5,7 +5,7 @@
 import os
 
 ### name application
-title    = "REFNET"
+title    = "LIBVIZ" #ideas for a name : "REFNET" - "VIZZOT" - "REF2NET"
 subtitle = "FROM ZOTERO REFERENCES TO NETWORK"
 
 ### default weight

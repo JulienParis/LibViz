@@ -7,46 +7,55 @@
         <meta charset="utf-8">
         <title> {{ glob.titleApp }} - beta version </title>
         
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         
-	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
         <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
-    
+
+		<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
+		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
+		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+
+        <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+        <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+        <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+		
+		<style>
+			
+			body {
+				background-color: black;    
+			}
+			
+			header {
+				background-color: black;    
+			}
+			
+			h4 {
+				color: white;
+			}
+			
+			/*.list-group-item{
+				background-color: black;    
+				color: white;    
+				opacity: .7;
+			}*/
+			
+			.glyphicon.spinning {
+				animation: spin 1s infinite linear;
+				-webkit-animation: spin2 1s infinite linear;
+			}
+			
+			@keyframes spin {
+				from { transform: scale(1) rotate(0deg); }
+				to   { transform: scale(1) rotate(360deg); }
+			}
+			
+			@-webkit-keyframes spin2 {
+				from { -webkit-transform: rotate(0deg); }
+				to   { -webkit-transform: rotate(360deg); }
+			}
 	
-	<style>
-		
-		body {
-            background-color: black;    
-        }
-        
-        header {
-            background-color: black;    
-        }
-		
-		/*.list-group-item{
-            background-color: black;    
-            color: white;    
-			opacity: .7;
-		}*/
-		
-		.glyphicon.spinning {
-			animation: spin 1s infinite linear;
-			-webkit-animation: spin2 1s infinite linear;
-		}
-		
-		@keyframes spin {
-			from { transform: scale(1) rotate(0deg); }
-			to   { transform: scale(1) rotate(360deg); }
-		}
-		
-		@-webkit-keyframes spin2 {
-			from { -webkit-transform: rotate(0deg); }
-			to   { -webkit-transform: rotate(360deg); }
-}
-
-
-
-	</style>
+		</style>
 	
     </head>
 
@@ -290,22 +299,21 @@
 
     </body>
 
-    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
-    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"> </script>
+
+
     
-    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
     <!--  bootstrap callings  -->
     <script type="text/javascript">
-	$(document).ready(
-	    function(){ $(".dropdown-toggle").dropdown() }) ;
-	
-	$(document).ready( checkFilter() );
-	
-	$(function () {
-	    $('[data-toggle="tooltip"]').tooltip()
-	});
+		$(document).ready(
+			function(){ $(".dropdown-toggle").dropdown() }) ;
+		
+		$(document).ready( checkFilter() );
+		
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
     </script>
     
     
