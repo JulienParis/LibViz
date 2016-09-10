@@ -102,6 +102,8 @@ def refresh(selection):
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     supertags      = collection['supertags']
 
+    legend         = [ {"name":k, "color": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
+
     outfileDict    = Z2N_scripts.Outfile_(selection)
     outfile_d3name = outfileDict['of_d3name']
 
@@ -116,6 +118,7 @@ def refresh(selection):
                            #isGraph      = True,
                            selection    = selection,
                            groups       = groups,
+                           legend       = legend,
                            supertags    = supertags,
                            dataSet_name = collection['dataSet_name'],
                            data_JSON    = outfile_d3name,
