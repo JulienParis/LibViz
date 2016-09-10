@@ -8,70 +8,64 @@
       <div class="col-sm-2" >
         
         <!-- which datas -->
+        <br></br>
         
-        <!-- explanation of which dataset is displayed -->
-        <!--<hr></hr>-->
-        <h2 class="text-center">
-          <span class="label label-primary">
-         {{ dataSet_name }}
-          </span>
-        
-          <!--<button type="button"-->
-          <!--    class="btn btn-warning"-->
-          <!--    aria-label="Left Align"-->
-          <!--    data-toggle="modal"-->
-          <!--    data-placement="bottom"-->
-          <!--    title="refresh the {{ selection }} dataset"-->
-          <!--    style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 5px"-->
-          <!--    data-target="#modalRefresh"-->
-          <!--    >-->
-          <!--    <span class="badge"><span class="glyphicon glyphicon-repeat"></span></span>-->
-          <!--</button>-->
-        
-        </h2>
-
-        <!--<h5> network </h5>-->
-        <!--<hr></hr>-->
+        <div role="button"
+            name = "collapser" 
+            data-toggle="collapse"
+            data-target="#collapseInfos" aria-expanded="false" aria-controls="collapseInfos"
+            >
+          
+          <h2 class="text-center" style="color: white"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="show/hide filter options"
+            >
+            <span class="label label-warning">
+              {{ dataSet_name }} <span class="caret"></span>
+            </span>
+          </h2>
+          
+        </div>
   
         <br></br>
-  
-        <div class="list-group"> <p> </p> </div>
 
-        
-        
-        <!-- display search bar -->
-        <!--<hr></hr>-->
-        <!--<div class="panel panel-default">-->
-        <!--  <h5 class="text-center"><strong>research in graph</strong></h5>-->
-        <!--</div>-->
-        <div class="input-group">
+        <div class="collapse in " id="collapseInfos">
+          
           <input id="search"
                  type="text"
                  class="form-control"
-                 placeholder="search a node"
+                 placeholder="search a node and press enter"
                  onKeyPress="handle(event)">
                 
-          <span class="input-group-btn">
-            <button class="btn btn-default"
-                    type="button"
-                    onclick="searchNode()"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="search a node in the dataset"
-                    >
-            Go!
-            </button>
-          </span>
-        </div><!-- /input-group -->
+          <!--<span class="input-group-btn">-->
+          <!--  <button class="btn btn-default"-->
+          <!--          type="button"-->
+          <!--          onclick="searchNode()"-->
+          <!--          data-toggle="tooltip"-->
+          <!--          data-placement="right"-->
+          <!--          title="search a node in the dataset"-->
+          <!--          >-->
+          <!--  Go!-->
+          <!--  </button>-->
+          <!--</span>-->
+        <!--</div><!-- /input-group -->-->
         
-
-        <div class="list-group"> <p></p> </div>
-        
+          <div class="list-group">
+            <h4>LEGEND</h4>
+            <div id="legend" class="legend">
+              <!-- here comes the svg -->
+            </div>
+          </div>
+          
+          <hr></hr>
         
           <!-- FILTERS BREAKING EDGES -->
           <div class="list-group">
-
-            <h4>break links</h4>
+            
+            <h4>FILTERS</h4>
+            
+            <h5 style="color: white">break links</h5>
 
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default btn-sm breakFilter"
@@ -95,7 +89,7 @@
           
           <!-- FILTERS SHOW / HIDE NODES -->
           <div class="list-group">
-            <h4>show or hide categories </h4>
+            <h5 style="color: white">show or hide categories </h5>
 
               <!-- {{ glob.ns.category }}(-ies) -->
             
@@ -123,7 +117,7 @@
           </div>
           
           <div class="list-group">
-            <h4>show or hide {{ glob.ns.group }}(s) </h4>
+            <h5 style="color: white">show or hide {{ glob.ns.group }}(s) </h5>
             <!--<label class="text-center list-group-item active" >-->
             <!--  {{ glob.ns.group }}(s)-->
             <!--</label>-->
@@ -145,7 +139,7 @@
           {% if selection == "1camp" %}
           
             <div class="list-group">
-              <h4>show or hide super-{{ glob.ns.tags }}(s) </h4>
+              <h5 style="color: white">show or hide super-{{ glob.ns.tags }}(s) </h5>
               <!--<label class="text-center list-group-item active" >-->
               <!--  super-{{ glob.ns.tags }}(s)-->
               <!--</label>-->
@@ -162,8 +156,9 @@
             </div>
           {% endif %}
   
+        </div> <!--end collapse -->
         
-      </div>
+      </div> <!--end column-->
 
 
 
@@ -172,36 +167,37 @@
    
    
    
-   
     <!-- space to display contextual node infos  -->  
     <div id="infoNode" class="col-sm-2 col-sm-offset-8">
-      <!--<hr></hr>-->
-
-      <div class="list-group">
-        
-        <label class="text-center list-group-item active" >
-              LEGEND
-        </label>
-        
-        <div ID="legend" class="panel panel-info">
-        </div>
-        
-      </div>
-
-      <div class="infosNode list-group">
-        <label class="text-center list-group-item active" >
-              SELECTED NODE
-        </label>
-        
-        <p class="list-group-item">label :    <a id="nLabel"></a></p>
-        <p class="list-group-item">category : <a id="nCategory"></a></p>
-        <p class="list-group-item">group :    <a id="nGroup"></a></p>
-        <p class="list-group-item">type :     <a id="nType"></a></p>
-        <p class="list-group-item">url :      <a id="nUrl"></a></p>
-        <p class="list-group-item">tags :     <a id="nTags"></a></p> <!--still not displaying tags correctly-->
-        
-      </div>
       
+      <br></br>
+      
+
+        <div class="infosNode list-group" style="opacity: 0">
+          
+          
+          <a role="button"
+            name="collapser"
+            data-toggle="collapse"
+            data-target="#collapseNodeInfos" aria-expanded="false" aria-controls="collapseNodeInfos" >
+            
+            <h4> SELECTED NODE <span class="caret" ></span></h4>
+            
+          </a>
+            
+          
+          <div class="collapse in " id="collapseNodeInfos">
+  
+            <p class="list-group-item">label :    <a id="nLabel"></a></p>
+            <p class="list-group-item">category : <a id="nCategory"></a></p>
+            <p class="list-group-item">group :    <a id="nGroup"></a></p>
+            <p class="list-group-item">type :     <a id="nType"></a></p>
+            <p class="list-group-item">url :      <a id="nUrl"></a></p>
+            <p class="list-group-item">tags :     <a id="nTags"></a></p> <!--still not displaying tags correctly-->
+            
+          </div>
+      
+      </div>
  
     </div>
     

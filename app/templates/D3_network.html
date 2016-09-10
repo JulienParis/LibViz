@@ -76,11 +76,16 @@
       //.append('g')
       ;
     
+
+
     var links_g = vis.append('g')
       .attr("class", "links") ;
 
     var nodes_g = vis.append('g')
       .attr("class", "nodes") ;    
+    
+
+    
     
     function zoomed() {
       //vis.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
@@ -142,27 +147,49 @@
     
     
     // create legend in div #legend on the fly ////////// NOT FINISHED YET //////////////////////////////
+    var spaceX     = 20 ;
+    var interval   = 5 ;
+    var legendR    = 8  ;
+    var legendS    = 2  ; // circle stroke width
+    var legendDiam = (legendR*2) + legendS ;
+    var spaceY     = legendDiam + interval ;
+    
+    var legendColors = {{ legend|tojson  }};
+    console.log(legendColors);
+    legendHeight = 5 + (legendColors.length*spaceY) + 5
+    console.log(legendHeight);
+    
     var legendWidth  = document.getElementById('legend').clientWidth ;
     //var legendHeight = document.getElementById('legend').clientHeight;
-    var legend = d3.select("#legend")
+    var legend = d3.select(".legend")
       .append("svg:svg")
       .attr("background-color", "black")
-      .attr("width", legendWidth)
-      .attr("height", 100) ;
+      .attr("width" , legendWidth)
+      .attr("height", legendHeight) ;
     
     var nodeLegend = legend.append("g")
       .attr("class"   , "nodes_legend") ;
     // add circles for nodes_legend
-    var spaceX  = 20 ;
-    var spaceY  = 20 ;
-    var legendR = 8  ;
-    nodeLegend.append("circle")
-      .attr("cx", spaceX )
-      .attr("cy", spaceY )
-      .attr("r", legendR )
-      .style("fill", "black" ) //return color(d.{{glob.ns.type}})
-    nodeLegend.append("text")
+
+    tempSpaceY = interval + legendR ; 
     
+    for (var i = 0; i <= legendColors.length - 1; i++) {
+      var obj = legendColors[i];
+      nodeLegend.append("circle")
+        .attr("cx", spaceX )
+        .attr("cy", tempSpaceY )
+        .attr("r", legendR )
+        .attr("stroke", "white")
+        .attr("stroke-width", legendS )
+        .style("fill", obj.color ); //return color(d.{{glob.ns.type}})
+      nodeLegend.append("text")
+        .attr("fill", "white")
+        .attr("x", spaceX + legendDiam )
+        .attr("y", tempSpaceY )
+        .attr("dy", ".35em")
+        .text(obj.name);
+      tempSpaceY += spaceY ;
+      }
    
     // force parameters
     var simulation = d3.forceSimulation()
@@ -314,10 +341,17 @@
     }
 
 
-
     // main D3 function
     function render (nodes, links) {
-    
+      
+      //d3.select(window)
+      //  .on("resize", function() {
+      //    var targetWidth = vis.node().getBoundingClientRect().width;
+      //    var targetHeight = vis.node().getBoundingClientRect().height;
+      //    vis.attr("width", targetWidth - 15);
+      //    vis.attr("height", targetHeight - 15);
+      //  });
+      
       // launch force
       simulation
           .nodes(nodes)
@@ -475,9 +509,7 @@
       
     }
 
-
-
-    
+ 
     //launch autocomplete once page loaded
     $(document).ready(function () {
         $("#search").autocomplete({ source: optArray }); 
@@ -515,14 +547,21 @@
     // display node infos in div #nodeInfos 
     function displayInfos() {
       d = d3.select(this).node().__data__;
+      
+      divInfos = d3.select('.infosNode');
+      divInfos.transition()		
+        .duration(200)		
+        .style("opacity", 1.0);	
       d3.select('#nCategory').text(d.category);
       d3.select('#nGroup').text(d.group);
       d3.select('#nLabel').text(d.label);
       d3.select('#nType').text(d.type);
       d3.select('#nUrl')
-      .attr("href", d.url)
-      .attr("target", "_blank")
-      .text(d.url);
+        .attr("href", d.url)
+        .attr("target", "_blank")
+        .text(d.url);
+      
+      console.log(d.tags);
       d3.select('#nTags').text(d.tags); //////////// d.tags NOT WORKING YET ///////////////////////////////////////
                          //.text(for (var i=0; i<d.tags.length; i++) { alert d.tags[i] } ); //
     }

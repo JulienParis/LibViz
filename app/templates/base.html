@@ -165,10 +165,9 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li> <!-- full screen button -->
 						<button type="button"
-							class="btn btn-primary"
-							data-toggle="modal"
+							class="btn btn-primary collapser"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							onclick="" > 	
+							> 	
 							<span class="glyphicon glyphicon-fullscreen"></span>
 						</button>
 					</li>
@@ -205,7 +204,7 @@
 	
 
 	
-	<!-- MODALS -->
+	<!-- MODALS --------------------------------------------------------------------- -->
 	
 	<!-- Modal About -->
 	<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -369,12 +368,29 @@
 
     <!--  bootstrap callings  -->
     <script type="text/javascript">
+		
 		$(document).ready(
 			function(){ $(".dropdown-toggle").dropdown() }) ;
-			
+		
+		/*
+		function hideAll(){
+			var allToHide = document.getElementsByName('collapser')  ;
+			console.log(allToHide);
+			for(var j = 0; j < allToHide.length; j++) {
+				var obj = allToHide[j] ;
+				obj('.collapse').collapse();
+			}
+		}*/
+		
+		//$('.collapser input:last').on('click', function() {
+		//	$('#collapseNodeInfos').collapse('hide');
+		//	$('#collapseInfos').collapse('hide');			
+		//});
+		
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});
+		
     </script>
     
     
