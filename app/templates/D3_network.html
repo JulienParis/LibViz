@@ -371,7 +371,39 @@
           
       simulation.force("link")
           .links(links);
+
+      
+      /////////////////////////////////////////////////
+      // stop / restart animation 
+      function stopLayout()   { simulation.stop(); } ;
+      function restartLayout(){ simulation.restart(); } ;
+      //function restartLayout (){ simulation.stop(); } ;
+
+      // activate play or pause 
+      $(function () {
           
+          var active = true;
+          
+          $('#play-pause').click(function () {
+              if (active) {
+                  active = false;
+                  stopLayout();
+                  $(this).html('<span class="glyphicon glyphicon-play"></span>')
+                    .attr("class", "btn btn-md btn-success")
+                  ;
+              } else {
+                  active = true;
+                  restartLayout();
+                  $(this).html('<span class="glyphicon glyphicon-pause"></span>')
+                    .attr("class", "btn btn-md btn-warning")
+                  ;
+              }
+          });
+          
+      });
+      
+      ///////////////////////////////////////////////////////
+      
       var link = links_g.selectAll(".link").data(links);
       var node = nodes_g.selectAll(".node").data(nodes);
       
@@ -579,7 +611,7 @@
                          //.text(for (var i=0; i<d.tags.length; i++) { alert d.tags[i] } ); //
     }
   
-  
+    
 
 
 

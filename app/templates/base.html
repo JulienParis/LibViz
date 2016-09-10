@@ -175,9 +175,23 @@
 					
 					<li data-toggle="tooltip"
 						data-placement="bottom"
+						title="pause the animation"
+						>
+						<!-- play/pause button -->
+						<button type="button"
+							id="play-pause"
+							class="btn btn-md btn-warning"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							> 	
+							<span class="glyphicon glyphicon-pause"></span>
+						</button>
+					</li>
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
 						title="hide / show all filters and infos"
 						>
-						<!-- full screen button -->
+						<!-- Hide filters and infos -->
 						<button type="button"
 							id="collapseAll"
 							class="btn btn-md btn-primary"
@@ -239,11 +253,11 @@
 					
 					<li data-toggle="tooltip"
 						data-placement="bottom"
-						title="How to use {{ glob.titleApp }}"
+						title="how to use {{ glob.titleApp }}"
 						>
 						<!-- Button 'HOW TO' triggering modal -->
 						<button type="button"
-								class="btn btn-md btn-info"
+								class="btn btn-md btn-d"
 								data-toggle="modal"
 								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 								data-target="#modalHowTo"
@@ -256,11 +270,11 @@
 					
 					<li data-toggle="tooltip"
 						data-placement="bottom"
-						title="About the {{ glob.titleApp }} project"
+						title="about the {{ glob.titleApp }} project"
 						>
 						<!-- Button 'About' triggering modal -->
 						<button type="button"
-							class="btn btn-md btn-info"
+							class="btn btn-md btn-default"
 							data-toggle="modal"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 							data-target="#modalAbout"
@@ -383,8 +397,14 @@
 			  <hr></hr>
 			
 			  <h4 class="text-center"><span class="label label-primary">
-			  Zoom and pan graph
+			  Animation, zoom and pan graph
 			  </span></h4>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-play"></span> <span class="glyphicon glyphicon-pause"></span>
+					</span>
+					<strong><em>Play / pause the animation</em></strong>
+					<p> click to pause or resume the animation</p>
+				</h5>
 				<h5><span class="badge">
 						<span class="glyphicon glyphicon-search"></span>
 					</span>
