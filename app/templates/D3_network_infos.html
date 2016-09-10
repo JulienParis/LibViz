@@ -7,19 +7,21 @@
       <!-- search buttons -->
       <div class="col-sm-2" >
         
-        <!-- which datas -->
         <br></br>
         
+        <!-- button collapser --> 
         <div role="button"
-            name = "collapser" 
+            id = "collapserFilters" 
             data-toggle="collapse"
-            data-target="#collapseInfos" aria-expanded="false" aria-controls="collapseInfos"
+            data-target="#collapsibleFilters"
+            aria-expanded="false"
+            aria-controls="collapsibleFilters"
             >
           
           <h2 class="text-center" style="color: white"
             data-toggle="tooltip"
             data-placement="right"
-            title="show/hide filter options"
+            title="current dataset - show/hide filter options"
             >
             <span class="label label-warning">
               {{ dataSet_name }} <span class="caret"></span>
@@ -28,15 +30,21 @@
           
         </div>
   
-        <br></br>
+        <br></br><br>
 
-        <div class="collapse in " id="collapseInfos">
+        <!-- collapsible filter -->
+        <div class="collapse in " id="collapsibleFilters" >
           
-          <input id="search"
-                 type="text"
-                 class="form-control"
-                 placeholder="search a node and press enter"
-                 onKeyPress="handle(event)">
+          <input  id="search"
+                  type="text"
+                  
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="search a node, select it from the list and press enter"
+                  
+                  class="form-control"
+                  placeholder="search a node and press enter"
+                  onKeyPress="handle(event)">
                 
           <!--<span class="input-group-btn">-->
           <!--  <button class="btn btn-default"-->
@@ -175,18 +183,24 @@
 
         <div class="infosNode list-group" style="opacity: 0">
           
-          
+          <!-- collapser infos -->
           <a role="button"
-            name="collapser"
+            id="collapserInfos"
             data-toggle="collapse"
-            data-target="#collapseNodeInfos" aria-expanded="false" aria-controls="collapseNodeInfos" >
+            data-target="#collapsibleInfos" aria-expanded="false" aria-controls="collapsibleInfos" >
             
-            <h4> SELECTED NODE <span class="caret" ></span></h4>
+            <h4 class="text-center"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="show/hide node infos"
+            >
+              SELECTED NODE <span class="caret" ></span>
+            </h4>
             
           </a>
             
-          
-          <div class="collapse in " id="collapseNodeInfos">
+          <!-- collapsible infos-->
+          <div class="collapse in " id="collapsibleInfos">
   
             <p class="list-group-item">label :    <a id="nLabel"></a></p>
             <p class="list-group-item">category : <a id="nCategory"></a></p>

@@ -69,6 +69,36 @@
 				to   { -webkit-transform: rotate(360deg); }
 			}
 	
+			
+			.tooltip-inner{
+				background-color: grey;
+			}
+			
+			.tooltip.top .tooltip-arrow {
+				border-top-color: grey;
+			  }
+			.tooltip.top-left .tooltip-arrow {
+			  border-top-color: grey;
+			}
+			.tooltip.top-right .tooltip-arrow {
+			  border-top-color: grey;
+			}
+			.tooltip.right .tooltip-arrow {
+			  border-right-color: grey;
+			}
+			.tooltip.left .tooltip-arrow {
+			  border-left-color: grey;
+			}
+			.tooltip.bottom .tooltip-arrow {
+			  border-bottom-color: grey;
+			}
+			.tooltip.bottom-left .tooltip-arrow {
+			  border-bottom-color: grey;
+			}
+			.tooltip.bottom-right .tooltip-arrow {
+			  border-bottom-color: grey;
+			}
+  
 		</style>
 	
     </head>
@@ -99,53 +129,6 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<!-- Button 'About' triggering modal -->
-					<li>
-						<button type="button"
-							class="btn btn-primary"
-							data-toggle="modal"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							data-target="#modalAbout"
-							> 
-						About
-						<!--{{ glob.titleApp }}-->
-						</button>
-					</li>
-			
-					
-	    
-	    
-					<!-- Button 'HOW TO' triggering modal -->
-					<li>
-						<button type="button"
-								class="btn btn-primary"
-								data-toggle="modal"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-								data-target="#modalHowTo"
-								  > 
-						How to use {{ glob.titleApp }}
-						</button>
-					</li>
-					
-					
-				
-					
-					<!-- just one refresh button == to the displayed collection -->
-					{% if data_JSON %}
-					<li>
-						<button type="button"
-							class="btn btn-warning"
-							aria-label="Left Align"
-							data-toggle="modal"
-							data-placement="bottom"
-							title="refresh the {{ selection }} dataset"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							data-target="#modalRefresh">
-								<span class="badge"> <span class="glyphicon glyphicon-repeat"></span> </span>
-						</button>
-					</li>
-					{% endif %}
-					
 					
 					<!-- main buttons according to the length of 'collections_names' -->
 					{% for coll in glob.collections_names %}
@@ -161,27 +144,135 @@
 					
 				</ul> <!-- end left navbar -->
 				
-				{% if data_JSON %}
+				
+				
+				
+				<!-- right side of the navbar -->
+				
 				<ul class="nav navbar-nav navbar-right">
-					<li> <!-- full screen button -->
-						<button type="button"
-							class="btn btn-primary collapser"
+					
+					{% if data_JSON %}
+					
+					<a  href="" 
+						data-toggle="tooltip"
+						data-placement="bottom"
+						title="refresh the view for {{ selection }} dataset"
+						>
+						
+						<!-- just one refresh button == for the current displayed collection -->
+						<button  href=""
+							type="button"
+							class="btn btn-sm btn-info"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							>
+							<!--TEST-->
+								<span class="badge">
+									<span class="glyphicon glyphicon-repeat"></span>
+								</span>
+						
+						</button>
+					</a>
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="hide / show all filters and infos"
+						>
+						<!-- full screen button -->
+						<button type="button"
+							id="collapseAll"
+							class="btn btn-md btn-primary"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							> 	
+							<span class="glyphicon glyphicon-resize-small"></span>
+						</button>
+					</li>
+
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="reset zoom"
+						>
+						<!-- full screen button -->
+						<button type="button"
+							id="collapseAll"
+							class="btn btn-md btn-primary"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							onclick="resetted()"
 							> 	
 							<span class="glyphicon glyphicon-fullscreen"></span>
 						</button>
 					</li>
-					<li> <!-- full screen button -->
+					
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="export the graph to a svg image // NOT WORKING YET "
+						>						
+						<!--  button export svg-->
 						<button type="button"
-							class="btn btn-primary"
-							data-toggle="modal"
+							class="btn btn-md btn-primary"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							onclick="" > 	
+							> 	
 							<span class="glyphicon glyphicon-save"></span>
 						</button>
 					</li>
+					
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="refresh the {{ selection }} dataset"
+						>
+						<!-- just one refresh button == for the current displayed collection -->
+						<button type="button"
+							class="btn btn-sm btn-warning"
+							aria-label="Left Align"
+							data-toggle="modal"
+							data-placement="bottom"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							data-target="#modalRefresh"
+							>
+								<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>
+						</button>
+					</li>
+					
+					{% endif %}
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="How to use {{ glob.titleApp }}"
+						>
+						<!-- Button 'HOW TO' triggering modal -->
+						<button type="button"
+								class="btn btn-md btn-info"
+								data-toggle="modal"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								data-target="#modalHowTo"
+								  >
+							<span class="glyphicon glyphicon-wrench"></span>
+						<!--How to use {{ glob.titleApp }}-->
+						</button>
+					</li>
+					
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="About the {{ glob.titleApp }} project"
+						>
+						<!-- Button 'About' triggering modal -->
+						<button type="button"
+							class="btn btn-md btn-info"
+							data-toggle="modal"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							data-target="#modalAbout"
+							> 
+							<span class="glyphicon glyphicon-info-sign"></span>
+							<!--About-->
+						</button>
+					</li>
+					
+					
 				</ul><!-- end right navbar -->
-				{% endif %}
+				
 				
 			</div>
 	
@@ -273,43 +364,88 @@
 	  
 			<div class="modal-body">
 			  
-			  <h4 class="text-center"><span class="label label-primary"> Node infos and neighbours </span></h4>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Simple left-click on a node</em></strong>
-					<p>select a node and show its infos in the panel on the right side of the window</p>
+			  <h4 class="text-center"><span class="label label-primary">
+			  Node infos and neighbours
+			  </span></h4>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-menu-right"></span>
+					</span>
+					<strong><em>Simple left-click on a node : show infos</em></strong>
+					<p> select a node and show its infos in the panel on the right side of the window</p>
 				</h5>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
-					<strong><em>Double left-click on a node</em></strong>
-					<p>select/unselect a node and show its neighbours while hiding the others</p>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
+					</span>
+					<strong><em>Double left-click on a node : show neighbours</em></strong>
+					<p> select/unselect a node and show its neighbours while hiding the others</p>
 				</h5>
 			
 			  <hr></hr>
 			
-			  <h4 class="text-center"><span class="label label-primary"> Zoom and pan graph </span></h4>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+			  <h4 class="text-center"><span class="label label-primary">
+			  Zoom and pan graph
+			  </span></h4>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-search"></span>
+					</span>
 					<strong><em>Zoom in the graph</em></strong>
-					<p>use your mouse wheel to zoom / dezoom on the graph</p>
+					<p> use your mouse wheel to zoom / dezoom on the graph</p>
 				</h5>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-move"></span>
+					</span>
 					<strong><em>Pan the graph</em></strong>
-					<p>left-click and hold to move your graph. If the graph goes out of the window refresh the page. </p>
+					<p> left-click and hold to move your graph. If the graph goes out reset the zoom. </p>
 				</h5>
-			
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-fullscreen"></span>
+					</span>
+					<strong><em>Reset the zoom</em></strong>
+					<p> reset the zoom to its original position </p>
+				</h5>
+				
 			  <hr></hr>
 			
-			  <h4 class="text-center"><span class="label label-primary"> Filters </span></h4>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+			  <h4 class="text-center"><span class="label label-primary">
+			  Filters
+			  </span></h4>
+				<h5><span class="badge">
+						ref-group
+					</span>
 					<strong><em>Break links between nodes</em></strong>
-					<p>check/uncheck the family of links you want to break/relink</p>
+					<p> check/uncheck the family of links you want to break/relink</p>
 				</h5>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+				<h5><span class="badge">
+						groups
+					</span>
 					<strong><em>Show/hide nodes by categories</em></strong>
-					<p>check/uncheck the categories of nodes you want to show/hide</p>
+					<p> check/uncheck the categories of nodes you want to show/hide</p>
 				</h5>
-				<h5> <span class="glyphicon glyphicon-menu-right"></span>
+				<h5><span class="badge">
+						name of a specific group
+					</span>
 					<strong><em>Show/hide nodes by groups or tags </em></strong>
-					<p>check/uncheck the groups of nodes you want to show/hide</p>
+					<p> check/uncheck the groups of nodes you want to show/hide</p>
 				</h5> 
+			
+			<hr></hr>
+			
+			  <h4 class="text-center"><span class="label label-primary">
+			  Refresh and reload
+			  </span></h4>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-repeat"></span>
+					</span>
+					<strong><em>Refresh the view</em></strong>
+					<p> refresh the view by reloading the page but not reconstructing the dataset</p>
+				</h5>
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-refresh"></span>
+					</span>
+					<strong><em>Reload dataset from Zotero</em></strong>
+					<p> Reconstruct completely the dataset from Zotero (please wait for the script to finish)</p>
+				</h5>
+
 			
 			</div>
 		</div>
@@ -369,24 +505,42 @@
     <!--  bootstrap callings  -->
     <script type="text/javascript">
 		
+		// activate bootstrap dropdown
 		$(document).ready(
 			function(){ $(".dropdown-toggle").dropdown() }) ;
 		
-		/*
-		function hideAll(){
-			var allToHide = document.getElementsByName('collapser')  ;
-			console.log(allToHide);
-			for(var j = 0; j < allToHide.length; j++) {
-				var obj = allToHide[j] ;
-				obj('.collapse').collapse();
-			}
-		}*/
-		
-		//$('.collapser input:last').on('click', function() {
-		//	$('#collapseNodeInfos').collapse('hide');
-		//	$('#collapseInfos').collapse('hide');			
-		//});
-		
+
+		// full screen function to collapse all infos and filter
+		// from : http://jsfiddle.net/KyleMit/f8ypa/
+		$(function () {
+			
+			var active = false;
+			
+			$('#collapseAll').click(function () {
+				if (active) {
+					active = false;
+					$('#collapsibleFilters').collapse('show');
+					$('#collapsibleInfos').collapse('show');
+					$('#collapserFilters').attr('data-toggle', '');
+					$('#collapserFilters').attr('data-toggle', '');
+					$(this).html('<span class="glyphicon glyphicon-resize-small"></span>');
+				} else {
+					active = true;
+					$('#collapsibleFilters').collapse('hide');
+					$('#collapsibleInfos').collapse('hide');
+					$('#collapserFilters').attr('data-toggle', 'collapse');
+					$('#collapserInfos').attr('data-toggle', 'collapse');
+					$(this).html('<span class="glyphicon glyphicon-resize-full"></span>');
+				}
+			});
+			
+			//$('#accordion').on('show.bs.collapse', function () {
+			//	if (active) $('#accordion .in').collapse('show');
+			//});
+			
+		});
+
+		// activate bootstrap tooltips
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});

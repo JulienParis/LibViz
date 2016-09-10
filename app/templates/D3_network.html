@@ -41,9 +41,16 @@
     
     // zooming / panning function 
     var zoom = d3.zoom()
-      //.scaleExtent([1, 10])
+      .scaleExtent([1/4, 4])
       .on("zoom", zoomed)
       ;
+    
+    // reset zoom to original
+    function resetted() {
+      svg.transition()
+          .duration(750)
+          .call(zoom.transform, d3.zoomIdentity);
+    }
 
     var dft_circle_stroke_w = "1.5px";
     var dft_line_stroke_w = "1.0px";
@@ -66,7 +73,7 @@
     //add the div for the tooltip
     var div = d3.select("body")
       .append("div")
-      .attr("class", "panel panel-info tooltip")
+      .attr("class", "panel panel-info tooltipNode")
       .style("opacity", 0) ;
     
     //var div = div.append("a");
@@ -98,21 +105,24 @@
       .on("start", dragstarted)
       .on("drag" , dragged    )
       .on("end"  , dragended  ) ;
+      
+      //function dragsubject() {
+      //  return simulation.find(d3.event.x, d3.event.y, radius);
+      //}
+      
       function dragstarted(d) {          
-          if (!d3.event.active) simulation.alphaTarget(0.3).restart()
-          //d3.select(this).classed("fixed", d.fixed = true);
-          //simulation.fix(d3.event.subject);
+          if (!d3.event.active) simulation.alphaTarget(0.1).restart()
           d.fx = d.x;
           d.fy = d.y;
       }
+      
       function dragged(d) {
-          //simulation.fix(d3.event.subject, d3.event.x, d3.event.y);
           d.fx = d3.event.x;
           d.fy = d3.event.y;
       }
+      
       function dragended(d) {
           if (!d3.event.active) simulation.alphaTarget(0);
-          //if (!d3.event.subject.fixed) simulation.unfix(d3.event.subject);
           d.fx = null;
           d.fy = null;
       }
@@ -120,27 +130,27 @@
 
     // function drag-pin down nodes ///////////////////////////////
     // from http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/
-    var node_pin_drag = d3.drag()
-            .on("start", dragstart_)
-            .on("drag" , dragmove_)
-            .on("end"  , dragend_);
-      function dragstart_(d, i) {
-          d3.forceSimulation().stop() // stops the force auto positioning before you start dragging
-      }
-      function dragmove_(d, i) {
-          d.px += d3.event.dx;
-          d.py += d3.event.dy;
-          d.x += d3.event.dx;
-          d.y += d3.event.dy;
-      }
-      function dragend_(d, i) {
-          d.fixed = true; // of course set the node to fixed so the force doesn't include the node in its auto positioning stuff
-          d3.forceSimulation().restart();
-      }
-      function releasenode_(d) {
-          d.fixed = false; // of course set the node to fixed so the force doesn't include the node in its auto positioning stuff
-          //force.resume();
-      }
+    //var node_pin_drag = d3.drag()
+    //        .on("start", dragstart_)
+    //        .on("drag" , dragmove_)
+    //        .on("end"  , dragend_);
+    //  function dragstart_(d, i) {
+    //      d3.forceSimulation().stop() // stops the force auto positioning before you start dragging
+    //  }
+    //  function dragmove_(d, i) {
+    //      d.px += d3.event.dx;
+    //      d.py += d3.event.dy;
+    //      d.x += d3.event.dx;
+    //      d.y += d3.event.dy;
+    //  }
+    //  function dragend_(d, i) {
+    //      d.fixed = true; // of course set the node to fixed so the force doesn't include the node in its auto positioning stuff
+    //      d3.forceSimulation().restart();
+    //  }
+    //  function releasenode_(d) {
+    //      d.fixed = false; // of course set the node to fixed so the force doesn't include the node in its auto positioning stuff
+    //      //force.resume();
+    //  }
 
 
     //var color = d3.scaleOrdinal(d3.schemeCategory20);
@@ -155,9 +165,9 @@
     var spaceY     = legendDiam + interval ;
     
     var legendColors = {{ legend|tojson  }};
-    console.log(legendColors);
+    //console.log(legendColors);
     legendHeight = 5 + (legendColors.length*spaceY) + 5
-    console.log(legendHeight);
+    //console.log(legendHeight);
     
     var legendWidth  = document.getElementById('legend').clientWidth ;
     //var legendHeight = document.getElementById('legend').clientHeight;
@@ -191,12 +201,14 @@
       tempSpaceY += spaceY ;
       }
    
+    ///////////////////////////////////////////////////
     // force parameters
     var simulation = d3.forceSimulation()
         .force("link"   , d3.forceLink().id(function(d) { return d.{{glob.es.id}}; })) //identify links relation by common id
         .force("charge" , d3.forceManyBody().strength(-50) )
         .force("center" , d3.forceCenter(width / 2, height / 2))
-        .force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2)) // COLLIDE FORCE / WORKING ? ///////////////////
+        // COLLIDE FORCE // WORKS BUT takes lot of CPU power and slow visualisation /////////////////
+        //.force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2)) 
         ;
     
     //////////////////////////////////////////////
@@ -328,7 +340,7 @@
           rulesToHide.push(button.id);
         }			
       }
-      console.log("rulesToHide hideFilter:", rulesToHide);
+      //console.log("rulesToHide hideFilter:", rulesToHide);
       
       var nodes = vis.selectAll(".node");
       
@@ -546,6 +558,7 @@
 
     // display node infos in div #nodeInfos 
     function displayInfos() {
+      
       d = d3.select(this).node().__data__;
       
       divInfos = d3.select('.infosNode');
@@ -561,8 +574,8 @@
         .attr("target", "_blank")
         .text(d.url);
       
-      console.log(d.tags);
-      d3.select('#nTags').text(d.tags); //////////// d.tags NOT WORKING YET ///////////////////////////////////////
+      console.log("tags " , d.tags);
+      d3.select('#nTags').text(d.tags);         //////////// d.tags NOT WORKING YET ///////////////////////////////////////
                          //.text(for (var i=0; i<d.tags.length; i++) { alert d.tags[i] } ); //
     }
   
