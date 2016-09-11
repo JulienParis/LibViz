@@ -7,7 +7,6 @@
       <!-- search buttons -->
       <div class="col-sm-2" >
         
-        <br></br>
         
         <!-- button collapser --> 
         <div role="button"
@@ -21,7 +20,7 @@
           <h2 class="text-center" style="color: white"
             data-toggle="tooltip"
             data-placement="top"
-            title="current dataset - show/hide filter options"
+            title="show/hide filter options"
             >
             <span class="label label-warning">
               {{ dataSet_name }} <span class="caret"></span>
@@ -166,26 +165,21 @@
         
       </div> <!--end column-->
 
-
-
-
-   {% block D3_graph %}{% endblock %}
    
    
    
     <!-- space to display contextual node infos  -->  
     <div id="infoNode" class="col-sm-3 col-sm-offset-7">
       
-      <br></br>
-      
-
         <div class="infosNode list-group" style="opacity: 0">
           
+          <br>
+            
           <!-- collapser infos -->
           <a role="button"
             id="collapserInfos"
             data-toggle="collapse"
-            data-target="#collapsibleInfos" aria-expanded="false" aria-controls="collapsibleInfos" >
+            data-target="#collapsibleInfos" aria-expanded="false" aria-controls="collapsibleInfos">
             
             <h4 class="text-center"
                 data-toggle="tooltip"
@@ -211,14 +205,16 @@
       
       </div>
  
-    </div>
+    </div> <!-- end column node infos -->
     
     
     </div>
 
 
-
-   {% block D3_js %}{% endblock %}
+  </div> <!-- ./end contents whole row  -->
+  
+    <!-- call graph / JS part --> 
+    {% block D3_js %}{% endblock %}
 
 
   {% endblock %}

@@ -5,8 +5,8 @@
 import os
 
 ### name application
-title    = "LIBVIZ" #ideas for a name : "REFNET" - "VIZZOT" - "REF2NET"
-subtitle = "FROM ZOTERO REFERENCES TO NETWORK"
+title    = "LibViz" #ideas for a name : "REFNET" - "VIZZOT" - "REF2NET"
+subtitle = "FROM ZOTERO REFERENCES TO NETWORKS"
 
 ### default weight
 w_dft      = 25

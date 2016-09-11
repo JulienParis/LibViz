@@ -45,7 +45,8 @@
 			}
 			
 			body {
-				background-color: black;    
+				background-color: black;
+				height: 100%;
 			}
 			
 			header {
@@ -54,6 +55,11 @@
 			
 			h4 {
 				color: white;
+			}
+			
+			.jumbotron{
+				/*color: grey;*/
+				background-color: #f0ad4e;
 			}
 			
 			/*.list-group-item{
@@ -134,18 +140,109 @@
 				  <span class="icon-bar"></span>
 				  <span class="icon-bar"></span>
 				</button>
-				
-				<a class="navbar-brand" href="/"> {{ glob.titleApp }} </a>
+			
+				<!-- logo appli -->
+				<li 
+					>
+					<a class="navbar-brand text-center" href="/"
+					   style="margin-top: -5px; margin-bottom: 10px; height: 44px; margin-right: -5px"
+						>
+						<h4>{{ glob.titleApp }}</h4>
+					</a>
+				</li>
+			
 			
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
 				<ul class="nav navbar-nav">
 					
+					{% if data_JSON %}
+					
+					<li>
+						<div 	class="dropdown"
+								data-toggle="tooltip"
+								data-placement="right"
+								title="list of datasets"
+								>
+						
+						<!-- icon for dropdown -->
+						<button id="collLabels"
+								class="btn btn-default btn-link" 
+								type="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								style=" margin-top: 8px;
+										margin-bottom: 10px;
+										height: 44px;
+										margin-right: 0px">
+								<div style="color: white">
+									<span class="glyphicon glyphicon-th-list"> </span>
+								</div>
+						</button>
+						
+							<!-- list of links to collections -->
+							<ul class="dropdown-menu" aria-labelledby="collLabels">
+							  
+								<li href="/" class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+										<h5 >
+											<a href="/" style="color: black">
+												<span class="glyphicon glyphicon-home"> </span>
+												<strong>HOME</strong>
+											</a>
+										</h5>
+								</li>
+								
+								<hr>
+								
+								<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+									<h5 style="color: black">
+										<span class="glyphicon glyphicon-th-list"> </span>
+										<strong>DATASETS</strong>
+									</h5>
+								</li>
+								
+								<hr>
+								
+								<!-- links according to the length of 'collections_names' -->
+								{% for coll in glob.collections_names %}
+								<li>
+									<a href="/{{ coll[0] }}">
+										<span class="glyphicon glyphicon-th-list"> </span> 
+										{{ coll[1] }}
+									</a>
+									<hr>
+								</li>
+								{% endfor %}
+								
+								
+								<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+									<a 	role="button"
+										class="btn btn-md btn-link"
+										data-toggle="modal"
+										data-target="#modalHowTo"
+										style="color: black"  >
+										<span class="glyphicon glyphicon-wrench"> </span>
+										<strong>How to use {{ glob.titleApp }}</strong>
+									</a>
+								</li>
+								<br>
+									
+							</ul>
+						
+						</div>
+					</li> <!-- end of dropdown -->
+					
+					{% endif %}
+					
+					
+					
 					<!-- main buttons according to the length of 'collections_names' -->
-					{% for coll in glob.collections_names %}
-					<a href="/{{ coll[0] }}">
+					<!--{% for coll in glob.collections_names %}
+					<li><a href="/{{ coll[0] }}">
 						<button type="button"
 							class="btn btn-info"
 							aria-label="Left Align"
@@ -155,11 +252,15 @@
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px">
 						{{ coll[1] }}
 						</button>
-					</a>
-					{% endfor %}
+					</a></li>
+					{% endfor %}-->
+					
+					
+					
+					
+
 					
 				</ul> <!-- end left navbar -->
-				
 				
 				
 				
@@ -181,10 +282,9 @@
 							class="btn btn-sm btn-info"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 							>
-							<!--TEST-->
-								<span class="badge">
-									<span class="glyphicon glyphicon-repeat"></span>
-								</span>
+							<span class="badge">
+								<span class="glyphicon glyphicon-repeat"></span>
+							</span>
 						
 						</button>
 					</a>
@@ -275,13 +375,12 @@
 						>
 						<!-- Button 'HOW TO' triggering modal -->
 						<button type="button"
-								class="btn btn-md btn-d"
+								class="btn btn-md btn-default"
 								data-toggle="modal"
 								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 								data-target="#modalHowTo"
 								  >
 							<span class="glyphicon glyphicon-wrench"></span>
-						<!--How to use {{ glob.titleApp }}-->
 						</button>
 					</li>
 					
@@ -298,7 +397,6 @@
 							data-target="#modalAbout"
 							> 
 							<span class="glyphicon glyphicon-info-sign"></span>
-							<!--About-->
 						</button>
 					</li>
 					
@@ -439,14 +537,25 @@
 					<strong><em>Double left-click on a node : show neighbours</em></strong>
 					<p> select/unselect a node and show its neighbours while hiding the others</p>
 				</h5>
-			
+				<h5><span class="badge">
+						<span class="glyphicon glyphicon-resize-small"></span>
+					</span>
+					<span class="badge">
+						<span class="glyphicon glyphicon-resize-full"></span>
+					</span>
+					<strong><em>Hide or show filters and infos</em></strong>
+					<p> click to expand or retract the filters and the node infos windows</p>
+				</h5>
 			  <hr></hr>
 			
 			  <h4 class="text-center"><span class="label label-primary">
 			  Animation, zoom and pan graph
 			  </span></h4>
 				<h5><span class="badge">
-						<span class="glyphicon glyphicon-play"></span> <span class="glyphicon glyphicon-pause"></span>
+						<span class="glyphicon glyphicon-play"></span>
+					</span>
+					<span class="badge">
+						<span class="glyphicon glyphicon-pause"></span>
 					</span>
 					<strong><em>Play / pause the animation</em></strong>
 					<p> click to pause or resume the animation</p>
@@ -532,8 +641,8 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h3 class="modal-title" id="myModalLabel">
-						...About refreshing datasets
+					<h3 class="modal-title text-center" id="myModalLabel">
+						About refreshing (rebuild) datasets
 					</h3>
 				</div>
   
@@ -567,22 +676,24 @@
 	<div class="footer navbar-fixed-bottom">
 		
 		<div class="col-sm-8 col-sm-offset-4">
-			<h6 class="text-right" style="color: white; opacity: 0.3">
+			
+			<h6 class="text-right" style="color: white; opacity: 0.4">
 				
 					Developped for
 					<a color="black" target="_blank" href="http://www.pingbase.net/">PING</a>
 					by
 					<a color="black" target="_blank" href="https://github.com/JulienParis">Julien P.</a>
-					under CC licence 
+					&nbsp;  
 					<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
-						<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/80x15.png" />
+						<img 	alt="Creative Commons License"
+								style="border-width:0; margin-top: -3px; opacity: 1.0"
+								src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/80x15.png" />
 					</a>
-
 			</h6>
 		</div>
 		<br></br>
 	
-	</div>
+	</div><!-- end of footer-->
 	
     </body>
 

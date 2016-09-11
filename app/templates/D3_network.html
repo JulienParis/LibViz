@@ -1,23 +1,15 @@
 
 {% extends "D3_network_infos.html" %}
 
-{% block D3_graph %}
-  
-    <!-- div graph / dataviz -->
-    <!--<div id="graphLayoutSVG" class="col-sm-8" >-->
-      <!--<svg></svg>-->
-    <!--</div>-->
-
-  
-{% endblock %}
 
 
 
 
 {% block D3_js %}
 
-  </div> <!-- ./end contents whole row  -->
+   
   
+  <!-- only JS scripts here -->
 
     
   <!-- script D3.JS  -->
@@ -59,7 +51,6 @@
     // create svg
     var svg = d3.select("#containerLayout")
       .append("svg:svg")
-      .attr("id", "svgLayout")
       .attr("width" , contWidth - 15)
       .attr("height", contHeight - 15 )
       .call(zoom)
