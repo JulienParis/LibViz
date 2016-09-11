@@ -1,4 +1,4 @@
-# Zot2net a.k.a. Ref2Net
+# Zot2net a.k.a. Ref2Net a.k.a. LibViz
 
 -------------------------------------------------------
 ----------- VERSION IN DEVELOPMENT !!! ----------------
