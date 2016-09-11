@@ -9,7 +9,7 @@ from Z2N_vars import collections, title, subtitle
 from Z2N_vars import node_str_dict as nodeStruct
 from Z2N_vars import edge_str_dict as edgeStruct
 
-from Z2N_vars_app import URLroot_artlabo
+from Z2N_vars_app import URLroot_artlabo, licenceCC
 
 ### place this import after Z2N_vars import to avoid circular reference for 'creatURL' 
 import Z2N_scripts
@@ -39,7 +39,8 @@ global_names = {
 def index():
     print '-'*5 , ' collections_names list: ', collections_names
     return render_template("index.html",
-                           glob   = global_names
+                           glob      = global_names,
+                           licenceCC = licenceCC
                            #isHome = True
                            #titleApp          = title ,
                            #subtitleApp       = subtitle ,
@@ -73,6 +74,7 @@ def data_rendering(selection):
     
     return render_template("D3_network.html",
                            glob         = global_names,
+                           licenceCC    = licenceCC,
                            #isGraph      = True,
                            selection    = selection,
                            groups       = groups,
@@ -115,6 +117,7 @@ def refresh(selection):
 
     return render_template("D3_network.html",
                            glob         = global_names,
+                           licenceCC    = licenceCC,
                            #isGraph      = True,
                            selection    = selection,
                            groups       = groups,

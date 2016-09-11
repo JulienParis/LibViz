@@ -62,6 +62,8 @@
 				opacity: .7;
 			}*/
 			
+			
+			/*custom spinning wheel for refresh dataset*/
 			.glyphicon.spinning {
 				animation: spin 1s infinite linear;
 				-webkit-animation: spin2 1s infinite linear;
@@ -77,7 +79,8 @@
 				to   { -webkit-transform: rotate(360deg); }
 			}
 	
-			
+	
+			/* custom tooltips colors  */
 			.tooltip-inner{
 				background-color: grey;
 			}
@@ -386,8 +389,16 @@
 			  </p>
 			  <hr></hr>
 			  
-			  <h4 class="text-center"><span class="label label-default"> LICENCE </span></h4>
-			  <p><em>{{ glob.titleApp }}</em> is an open source project under a Creative Commons licence : BY
+			  <h4 class="text-center"><span class="label label-default"> LICENCE </span> &nbsp;
+				<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
+					<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/88x31.png" />
+				</a>
+			  </h4>
+			  <p>
+					<em>{{ glob.titleApp }}</em> is licensed under a
+					<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
+						Creative Commons Attribution 4.0 International License
+					</a>.
 			  </p>
 			
 			</div>
@@ -551,10 +562,14 @@
 		<div class="col-sm-8 col-sm-offset-4">
 			<h6 class="text-right" style="color: white; opacity: 0.3">
 				
-					Licence Creative Commons - 2016 - developped for
+					Developped for
 					<a color="black" target="_blank" href="http://www.pingbase.net/">PING</a>
 					by
 					<a color="black" target="_blank" href="https://github.com/JulienParis">Julien P.</a>
+					under CC licence 
+					<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
+						<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/80x15.png" />
+					</a>
 
 			</h6>
 		</div>

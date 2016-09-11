@@ -7,3 +7,5 @@ static_dir  = '/static'        ### for local dev
 
 ### index root for http://artlabo.org/
 URLroot_artlabo = 'flask'
+
+licenceCC = 'by-nc' ## https://creativecommons.org/choose/
