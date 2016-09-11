@@ -20,7 +20,7 @@
           
           <h2 class="text-center" style="color: white"
             data-toggle="tooltip"
-            data-placement="right"
+            data-placement="top"
             title="current dataset - show/hide filter options"
             >
             <span class="label label-warning">
@@ -40,10 +40,10 @@
                   
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="search a node, select it from the list and press enter"
+                  title="search a node, select it from the list and press ENTER"
                   
                   class="form-control"
-                  placeholder="search a node and press enter"
+                  placeholder="search a node and press ENTER"
                   onKeyPress="handle(event)">
                 
           <!--<span class="input-group-btn">-->
@@ -126,9 +126,7 @@
           
           <div class="list-group">
             <h5 style="color: white">show or hide {{ glob.ns.group }}(s) </h5>
-            <!--<label class="text-center list-group-item active" >-->
             <!--  {{ glob.ns.group }}(s)-->
-            <!--</label>-->
             
             {% for gr in groups %}
             
@@ -176,7 +174,7 @@
    
    
     <!-- space to display contextual node infos  -->  
-    <div id="infoNode" class="col-sm-2 col-sm-offset-8">
+    <div id="infoNode" class="col-sm-3 col-sm-offset-7">
       
       <br></br>
       
@@ -191,7 +189,7 @@
             
             <h4 class="text-center"
                 data-toggle="tooltip"
-                data-placement="left"
+                data-placement="top"
                 title="show/hide node infos"
             >
               SELECTED NODE <span class="caret" ></span>

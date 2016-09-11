@@ -59,6 +59,7 @@
     // create svg
     var svg = d3.select("#containerLayout")
       .append("svg:svg")
+      .attr("id", "svgLayout")
       .attr("width" , contWidth - 15)
       .attr("height", contHeight - 15 )
       .call(zoom)
@@ -80,10 +81,10 @@
     
     // add group for shapes in svg
     var vis = svg
+      .attr("style", "background: black")
       //.append('g')
       ;
     
-
 
     var links_g = vis.append('g')
       .attr("class", "links") ;
@@ -91,7 +92,6 @@
     var nodes_g = vis.append('g')
       .attr("class", "nodes") ;    
     
-
     
     
     function zoomed() {
@@ -611,10 +611,42 @@
                          //.text(for (var i=0; i<d.tags.length; i++) { alert d.tags[i] } ); //
     }
   
-    
+  
+  
+    //// export SVG /////////////////////////////////////////////////////////
+    //// from : https://bl.ocks.org/wboykinm/e6e222d71e9b59e8b3053e0c4fe83daf
+    //d3.select("#exportSVG")
+    //  .on("click", writeDownloadLink);
+    //
+    //function writeDownloadLink(){
+    //  try {
+    //      var isFileSaverSupported = !!new Blob();
+    //  } catch (e) {
+    //      alert("blob not supported");
+    //  }
+    //
+    //  var html = d3.select("#svgLayout")
+    //      .attr("title", "{{ dataSet_name }} network - {{ glob.titleApp }}")
+    //      .attr("version", 1.1)
+    //      .attr("xmlns", "http://www.w3.org/2000/svg")
+    //      .node().parentNode.innerHTML;
+    //
+    //  var blob = new Blob([html], {type: "image/svg+xml"});
+    //  saveAs(blob, "{{ dataSet_name }} network - {{ glob.titleApp }}.svg");
+    //};
 
-
-
+    // from : http://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
+    function exportSVG() {
+      var svgData = $("#svgLayout")[0].outerHTML;
+      var svgBlob = new Blob([svgData], {type:"image/svg+xml;charset=utf-8"});
+      var svgUrl = URL.createObjectURL(svgBlob);
+      var downloadLink = document.createElement("a");
+      downloadLink.href = svgUrl;
+      downloadLink.download = "{{ dataSet_name }} network - {{ glob.titleApp }}.svg";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+      }
 
   </script>
 

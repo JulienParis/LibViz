@@ -22,6 +22,14 @@
 		
 		<style>
 			
+			/*html,body{
+				height: 100%
+			}*/
+			
+			a{
+				color: #f0ad4e;	
+			}
+			
 			.modal-backdrop{
 				z-index: 1000;
 			}
@@ -98,6 +106,8 @@
 			.tooltip.bottom-right .tooltip-arrow {
 			  border-bottom-color: grey;
 			}
+			
+
   
 		</style>
 	
@@ -136,6 +146,9 @@
 						<button type="button"
 							class="btn btn-info"
 							aria-label="Left Align"
+							data-toggle="tooltip"
+							data-placement="bottom"
+							title="show the graph for this collection of Zotero references"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px">
 						{{ coll[1] }}
 						</button>
@@ -187,6 +200,22 @@
 						</button>
 					</li>
 					
+					
+					<li data-toggle="tooltip"
+						data-placement="bottom"
+						title="reset zoom"
+						>
+						<!-- full screen button -->
+						<button type="button"
+							class="btn btn-md btn-primary"
+							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							onclick="resetted()"
+							> 	
+							<span class="glyphicon glyphicon-fullscreen"></span>
+						</button>
+					</li>
+					
+					
 					<li data-toggle="tooltip"
 						data-placement="bottom"
 						title="hide / show all filters and infos"
@@ -200,32 +229,18 @@
 							<span class="glyphicon glyphicon-resize-small"></span>
 						</button>
 					</li>
-
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="reset zoom"
-						>
-						<!-- full screen button -->
-						<button type="button"
-							id="collapseAll"
-							class="btn btn-md btn-primary"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							onclick="resetted()"
-							> 	
-							<span class="glyphicon glyphicon-fullscreen"></span>
-						</button>
-					</li>
 					
 					
 					<li data-toggle="tooltip"
 						data-placement="bottom"
-						title="export the graph to a svg image // NOT WORKING YET "
+						title="export the graph to a .svg image "
 						>						
 						<!--  button export svg-->
 						<button type="button"
+							id="exportSVG" 
 							class="btn btn-md btn-primary"
 							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+							onclick="exportSVG()"
 							> 	
 							<span class="glyphicon glyphicon-save"></span>
 						</button>
@@ -309,6 +324,7 @@
 	
 
 	
+	
 	<!-- MODALS --------------------------------------------------------------------- -->
 	
 	<!-- Modal About -->
@@ -323,7 +339,7 @@
 			<div class="modal-body">
 			  
 			  <h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
-			  <p><em>{{ glob.titleApp }}</em> allows to generate datavisualisations from sets of Zotero references.</p>
+			  <p><em>{{ glob.titleApp }}</em> allows to generate data visualisations (graphs) from sets of Zotero references.</p>
 			  <hr></hr>
 			  
 			  <h4 class="text-center"><span class="label label-default"> HISTORY </span></h4>
@@ -331,22 +347,29 @@
 				  which a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
 				  Julien Bellanger could tell more about this part...
 			  </p>
+			  <p>
+				Then other people join the project, wanting some visualisation for their own datasets : other bibliographical references gathered in
+				<a target="_blank" href="https://www.zotero.org/" >Zotero</a>. 
+				So the project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
+			  </p>
 			  <hr></hr>
 			  
 			  <h4 class="text-center"><span class="label label-default"> WIKI, SOURCE AND DOCUMENTATION </span></h4>
 			  <p><em>{{ glob.titleApp }}</em> development is documented
 				  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
-				  and on <a target="_blank" href="https://github.com/JulienParis/Ref2net">GitHub</a> or GitLab (as soon as Julien P understands how it works...)
+				  and on <a target="_blank" href="https://github.com/JulienParis/Ref2net">GitHub</a>.
 			  </p>
 			  <hr></hr>
 			  
 			  <h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
 			  <p><em>{{ glob.titleApp }}</em> is powered by
-				  <a target="_blank" href="https://www.python.org/" >Python</a> /
-				  <a target="_blank" href="https://www.zotero.org/" >Zotero</a> /
-				  <a target="_blank" href="http://flask.pocoo.org/" >Flask</a> /
-				  <a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> /
-				  <a target="_blank" href="https://d3js.org/" >d3.js</a>
+				  <a target="_blank" href="https://www.python.org/" >Python</a> to get the references and create the JSON datasets /
+				  <a target="_blank" href="https://www.zotero.org/" >Zotero</a> to organise bibliographical references /
+				  <a target="_blank" href="http://flask.pocoo.org/" >Flask</a> as backbone of the website /
+				  <a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> for the global aspect website /
+				  <a target="_blank" href="https://d3js.org/" >d3.js</a> by 
+				  <a target="_blank" href="https://bost.ocks.org/mike/" >Mike Bostock</a> 
+				  to create the graph visualisation.
 			  </p>
 			  <hr></hr>
 			  
@@ -355,6 +378,11 @@
 				  <a target="_blank" href="http://www.pingbase.net/">PING</a> /
 				  <a target="_blank" href="http://artlabo.org/">ARTLABO</a>
 				  and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>.
+			  </p>
+			  <p>This application is inspired by a previous work called 
+				  <a href="http://www.laurent-malys.fr/sur-les-epaules-de-darwin/">"Constellations bibliographiques"</a>
+				   developped by 
+				  <a href="http://www.laurent-malys.fr">Laurent Malys</a>.
 			  </p>
 			  <hr></hr>
 			  
@@ -514,6 +542,25 @@
 		</div>
 	</div> <!-- end modal refresh -->
 	{% endif %}
+	
+	
+	<!-- FOOTER --------------------------------------------------------------------- -->
+	
+	<div class="footer navbar-fixed-bottom">
+		
+		<div class="col-sm-8 col-sm-offset-4">
+			<h6 class="text-right" style="color: white; opacity: 0.3">
+				
+					Licence Creative Commons - 2016 - developped for
+					<a color="black" target="_blank" href="http://www.pingbase.net/">PING</a>
+					by
+					<a color="black" target="_blank" href="https://github.com/JulienParis">Julien P.</a>
+
+			</h6>
+		</div>
+		<br></br>
+	
+	</div>
 	
     </body>
 
