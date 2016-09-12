@@ -23,26 +23,21 @@
     var contHeight = document.documentElement.clientHeight;
     //var contHeight = document.getElementById('body').clientHeight;
     
-    // add the width and height attributes to the <svg>
-    //var svg = d3.select("svg")
-    //  .attr("width" , contWidth )
-    //  .attr("height", contHeight )
-    //  //.call(zoom) //////////
-    //  ;
     
-    
-    // zooming / panning function 
+    // ZOOM function /////////////////////////////////////////////
     var zoom = d3.zoom()
       .scaleExtent([1/4, 4])
       .on("zoom", zoomed)
-      ;
-    
-    // reset zoom to original
-    function resetted() {
-      svg.transition()
-          .duration(750)
-          .call(zoom.transform, d3.zoomIdentity);
-    }
+    ;
+      
+
+    //add the div for the tooltip
+    var div = d3.select("body")
+      .append("div")
+      .attr("class", "panel panel-info tooltipNode")
+      .style("opacity", 0) ;
+      
+      
 
     var dft_circle_stroke_w = "1.5px";
     var dft_line_stroke_w = "1.0px";
@@ -53,7 +48,7 @@
       .append("svg:svg")
       .attr("width" , contWidth - 15)
       .attr("height", contHeight - 15 )
-      .call(zoom)
+      //.call(zoom)
       .on("dblclick.zoom", null)
       ;
 
@@ -62,31 +57,58 @@
       width  = +svg.attr("width"),
       height = +svg.attr("height");
   
-    //add the div for the tooltip
-    var div = d3.select("body")
-      .append("div")
-      .attr("class", "panel panel-info tooltipNode")
-      .style("opacity", 0) ;
       
       
     // add group for shapes in svg
     var vis = svg
       .attr("style", "background: black")
+      .on("dblclick.zoom", null)
       //.append('g')
       ;
-    
+
+    ////////////////////////////////////
+    // fake rectangle before links_g and nodes_g (so under them) to adapt the panning to real mouse events
+    var zoomCanvas = svg.append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .style("fill", "none")
+        .style("pointer-events", "all")
+        .call(zoom)
+        .on("dblclick.zoom", null)
+        ;
+        
+        
     var links_g = vis.append('g')
-      .attr("class", "links") ;
+      .attr("class", "links")
+      .on("dblclick.zoom", null)
+      ;
     
     var nodes_g = vis.append('g')
-      .attr("class", "nodes") ;    
+      .attr("class", "nodes")
+      .on("dblclick.zoom", null)
+      ;    
     
-    
-    // ZOOM function //////////////////////////
-    function zoomed() {
-      svg.attr("transform", d3.event.transform );
-    }
 
+
+    ////////////////////////////////////////////////////
+    //// zooming / panning function
+    // from : http://bl.ocks.org/mbostock/4e3925cdc804db257a86fdef3a032a45
+    function zoomed() {
+      links_g.attr("transform", d3.event.transform );
+      nodes_g.attr("transform", d3.event.transform );
+
+    }
+    
+    // reset zoom to original
+    function resetted() {
+      zoomCanvas.transition()
+          .duration(750)
+          .call(zoom.transform, d3.zoomIdentity);
+      //nodes_g.transition()
+      //    .duration(750)
+      //    .call(zoom.transform, d3.zoomIdentity);
+    }
+  
 
 
     // normal drag function /////////////////////////////////////////
@@ -96,7 +118,7 @@
       .on("end"  , dragended  ) ;
       
       function dragstarted(d) {
-          console.log("dragstart",d); // d = Object { ID: "group_1", ...
+          //console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
           d.fx = d.x;
           d.fy = d.y;
@@ -567,8 +589,8 @@
       
       if (d.fixed = false) {
         d.fixed = true; 
-        d.fx = d.x ;
-        d.fy = d.y ;
+        d.fx = d3.event.x ;
+        d.fy = d3.event.y ;
         
       } else {
         d.fixed = false; 
@@ -578,7 +600,10 @@
       
     }
     
-    // release all previously fixed nodes
+    
+    
+    ////////////////////////////////////////////////////////////////////////////////
+    // release all previously fixed nodes /// NOT WORKING YET ///////////////////////
     function releaseAllNodes() {
       
       console.log("release all nodes");
@@ -586,15 +611,27 @@
       //simulation.alphaTarget(0).stop();
       
       // change attribute value
-      d3.select(".nodes").selectAll(".node")
-        .attr("fixed", false)
-        .attr("fx", null)
-        .attr("fy", null)
+      var nodes_ = nodes_g.selectAll(".node");
+      console.log(nodes_);
+      
+      ////////// not working HERE  ////////////////////////////////////
+      for (var i = 0; i <= nodes_.length - 1; i++) { 
+        var n = nodes_[i].node().__data__;
+        n.attr("fixed", "false")
+          .attr("fx", "null")
+          .attr("fy", "null");
+      }
       ;
+      
+      //nodes_.exit();
       
       // restart animation
       //simulation.alphaTarget(0.3).restart();
     }
+    
+    
+    
+    
     
     // display node infos in div #nodeInfos 
     function displayInfos() {

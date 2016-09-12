@@ -356,11 +356,11 @@
 						{% if data_JSON %}
 						
 						
+						<!-- play/pause button -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="pause the animation"
 							>
-							<!-- play/pause button -->
 							<button type="button"
 								id="play-pause"
 								class="btn btn-md btn-warning"
@@ -371,11 +371,11 @@
 						</li>
 						
 						
+						<!-- full screen button -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="reset zoom"
 							>
-							<!-- full screen button -->
 							<button type="button"
 								class="btn btn-md btn-primary"
 								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
@@ -399,6 +399,22 @@
 								<span class="glyphicon glyphicon-resize-small"></span>
 							</button>
 						</li>
+						
+						
+						<!-- release all nodes ///////////////////////////////////// -->
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="release all fixed nodes - NOT WORKING YET"
+							>
+							<button type="button"
+								id="releaseAllNodes"
+								class="btn btn-md btn-danger"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								onclick="releaseAllNodes()"
+								> 	
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</button>
+						</li>						
 						
 						
 						<!--  button export svg-->
@@ -554,9 +570,10 @@
 				  <h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
 				  <p>Project by
 					  <a target="_blank" href="http://www.pingbase.net/">PING</a> /
-					  <a target="_blank" href="http://artlabo.org/">ARTLABO</a>
+					  <a target="_blank" href="http://artlabo.org/">ARTLABO</a> /
+					  <a target="_blank" href="http://labomedia.net/">LABOMEDIA</a> 
 					  and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>
-					  with the precious help of Julien B., Benjamin, Ewen C., Xavier 
+					  with the precious help of Julien Bellanger, Benjamin Cadon, Ewen Chardonnet, et Xavier 
 				  </p>
 				  <p>This application is inspired by a previous work called 
 					  <a href="http://www.laurent-malys.fr/sur-les-epaules-de-darwin/">"Constellations bibliographiques"</a>

@@ -7,6 +7,7 @@ import os
 ### name application
 title    = "LibViz" #ideas for a name : "Bibloom" - "REFNET" - "VIZZOT" - "REF2NET"
 subtitle = "FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
+version  = "2.0" ####
 
 ### default weight
 w_dft      = 25
@@ -51,7 +52,10 @@ edge_str_dict = {
             'dash'   : 'dash'
             }
 
-### collections of Zotero folders/references
+
+####################################################################
+### collections of Zotero folders/references / EXTENDABLE LIST #####
+####################################################################
 collections = {
     
     '1camp': {
