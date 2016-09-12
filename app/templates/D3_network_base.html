@@ -12,30 +12,28 @@
         .links line {
             stroke: white;
             stroke-opacity: 1.0;
-            stroke-width: 0.7px;
+            /*stroke-width: 0.7px;*/
             /*stroke-dasharray: "4 4"*/
         }
-        
-        /*.node text {
-          stroke:#333;
-          cursos:pointer;
-        }*/
         
         .node text {
           pointer-events: none;
           font: 14px sans-serif;
         }
           
-        .node circle {
+        .nodes circle {
           stroke: #fff;
-          stroke-width: 1.0px;
+          /*stroke-width: 1.0px;*/
         }
         
-        
+        .node.fixed {
+          fill: #f00;
+        }
 
         
         .container-layout {
             position: absolute;
+            top: 0px;
             /*padding-right: 15px;*/
             /*padding-left: 15px;*/
             /*margin-right: auto;*/
@@ -44,18 +42,70 @@
             z-index: 0;
         }
         
+        .ui-autocomplete{
+            color: white;
+            background: lightsteelblue;	
+            border-width: 3px;
+            border-color: white;
+            border-radius: 10px;
+                /*
+                 *  https://en.wikipedia.org/wiki/Web_colors#HTML_color_names
+                 *   http://www.w3schools.com/colors/colors_names.asp   
+                */
+            width: 400px;
+            max-height: 200px;
+            overflow-y: auto;
+            overflow-x: hidden; /* prevent horizontal scrollbar */
+            padding-right: 20px; /* add padding to account for vertical scrollbar */
+            z-index: 3;
+        }
+        
+        
+        .btn-default {
+            border : hidden;
+        }
+        
+        .btn-default.active, .btn-default.active:focus {
+            color: white;
+            background-color: grey;
+            border: hidden;
+            /*border-width: 0px;*/
+        }
+        
         .container-fluid{
             height: 100%;
             z-index: 2;
         }
+    
+        .tooltipNode {	
+            position: absolute;			
+            text-align: center;			
+            max-width: 250px;					
+            /*height: 28px;					*/
+            padding: 2px;				
+            /*font: 12px sans-serif;		*/
+            background: lightsteelblue;	
+            border-width: 3px;
+            border-color: white;
+            border-radius: 8px;			
+            pointer-events: none;
+            z-index: 3;
+        }
+    
     
     </style>
     
 
     
     <!-- start big row for infos and graph -->
-    <div id="graphLayout" class="row" style="min-height: 100%"> <!-- jumbotron for debugging purposes -->
+    <div    id="graphLayout"
+            class="row"
+            style="min-height: 100%"
+            /*left=5;*/
+            /*top=5;*/
+            > 
     
+    <!-- call columns for filters and infos + JS scripts -->
     {% block D3_infos %}{% endblock %}
 
 

@@ -9,7 +9,7 @@ from Z2N_vars import collections, title, subtitle
 from Z2N_vars import node_str_dict as nodeStruct
 from Z2N_vars import edge_str_dict as edgeStruct
 
-from Z2N_vars_app import URLroot_artlabo
+from Z2N_vars_app import URLroot_artlabo, licenceCC
 
 ### place this import after Z2N_vars import to avoid circular reference for 'creatURL' 
 import Z2N_scripts
@@ -39,7 +39,8 @@ global_names = {
 def index():
     print '-'*5 , ' collections_names list: ', collections_names
     return render_template("index.html",
-                           glob   = global_names
+                           glob      = global_names,
+                           licenceCC = licenceCC
                            #isHome = True
                            #titleApp          = title ,
                            #subtitleApp       = subtitle ,
@@ -63,16 +64,22 @@ def data_rendering(selection):
     #coll_name      = collections_names
     #selection      = coll_name[0]
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
+    #lineTypes      = [ k for k, g  in collection['edgesDashDict'].items() ]
     supertags      = collection['supertags']
+    
+    legend         = [ {"name":k, "color": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
 
     outfileDict    = Z2N_scripts.Outfile_(selection)
     outfile_d3name = outfileDict['of_d3name']
     
     return render_template("D3_network.html",
                            glob         = global_names,
+                           licenceCC    = licenceCC,
                            #isGraph      = True,
                            selection    = selection,
                            groups       = groups,
+                           legend       = legend,
+                           #lines      = lineTypes,
                            supertags    = supertags,
                            dataSet_name = collection['dataSet_name'],
                            data_JSON    = outfile_d3name,
@@ -97,6 +104,8 @@ def refresh(selection):
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     supertags      = collection['supertags']
 
+    legend         = [ {"name":k, "color": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
+
     outfileDict    = Z2N_scripts.Outfile_(selection)
     outfile_d3name = outfileDict['of_d3name']
 
@@ -108,80 +117,13 @@ def refresh(selection):
 
     return render_template("D3_network.html",
                            glob         = global_names,
+                           licenceCC    = licenceCC,
                            #isGraph      = True,
                            selection    = selection,
                            groups       = groups,
+                           legend       = legend,
                            supertags    = supertags,
                            dataSet_name = collection['dataSet_name'],
                            data_JSON    = outfile_d3name,
                            )
 
-'''
-### automatically creates specific routes for every dataset in collections ### NOT WORKING WELL YET !!!
-for coll_name in collections_names :
-    
-    selection      = coll_name[0]
-    collection     = collections[selection]
-    groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
-    supertags      = collection['supertags']
-    
-    outfileDict    = Z2N_scripts.Outfile_(selection)
-    outfile_d3name = outfileDict['of_d3name']
-    
-    
-    ### render static viz for this collection
-    ## werkzeug routing
-    #route1 = '/'+selection
-    #route2 = '/'+URLroot_artlabo+'/'+selection
-    #app.url_map.add(Rule(route1, endpoint=selection+'1'))
-    #app.url_map.add(Rule(route2, endpoint=selection+'2'))
-    #@app.endpoint(selection+'1')
-    #@app.endpoint(selection+'2')
-
-    ## usual routing
-    @app.route('/<selection>')
-    #@app.route('/'+URLroot_artlabo+'/'+selection) ######
-    def data_rendering(selection):
-        print selection
-        return render_template("D3_network.html",
-                               glob         = global_names,
-                               #isGraph      = True,
-                               selection    = selection,
-                               groups       = groups,
-                               supertags    = supertags,
-                               dataSet_name = collection['dataSet_name'],
-                               data_JSON    = outfile_d3name,
-                               )
-
-
-
-    ### refreshing the dataset / call scrapping script / and render template
-    ## werkzeug routing
-    refresh1 = '/refresh/'+selection
-    #refresh2 = '/'+URLroot_artlabo+'/refresh/'+selection
-    #app.url_map.add(Rule(refresh1, endpoint='refresh_'+selection+'1'))
-    #app.url_map.add(Rule(refresh2, endpoint='refresh_'+selection+'2'))
-    #@app.endpoint('refresh_'+selection+'1')
-    #@app.endpoint('refresh_'+selection+'2')
-    
-    ## usual routing
-    @app.route('/refresh/'+selection)
-    #@app.route('/'+URLroot_artlabo+'/refresh/'+selection)
-    def refresh():
-
-        outfile_name   = outfileDict['of_name']
-        
-        ### rewrites the JSON file for the selection
-        if collection['API'] == 'Zotero':
-            Zotero_2_JSON.refresh_JSON( selection, collection, outfile_name )
-    
-        return render_template("D3_network.html",
-                               glob         = global_names,
-                               #isGraph      = True,
-                               selection    = selection,
-                               groups       = groups,
-                               supertags    = supertags,
-                               dataSet_name = collection['dataSet_name'],
-                               data_JSON    = outfile_d3name,
-                               )
-'''

@@ -1,300 +1,102 @@
 
 {% extends "D3_network_infos.html" %}
 
-{% block D3_graph %}
-  
-    <!-- div graph / dataviz -->
-    <!--<div id="graphLayoutSVG" class="col-sm-8" >-->
-      <!--<svg></svg>-->
-    <!--</div>-->
-
-  
-{% endblock %}
-
-
 
 
 {% block D3_js %}
 
-  </div> <!-- ./end contents whole row  -->
+ 
   
-  
+  <!-- only JS scripts here / can be put in specific file in ./static/js later ? -->
   <!-- script D3.JS  -->
-  <script src="https://d3js.org/d3.v4.min.js"></script>
+  
+  
+  <!-- call global d3.js library here -->
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  
   <script>
       
-      // find width and height of parent html elements
-      var contWidth  = document.getElementById('body').clientWidth;
-      //var contWidth = document.documentElement.clientWidth;
-      //var contHeight = document.getElementById('body').clientHeight;
-      var contHeight = document.documentElement.clientHeight;
-      
-      // add the width and height attributes to the <svg>
-      //var svg = d3.select("svg")
-      //  .attr("width" , contWidth )
-      //  .attr("height", contHeight )
-      //  //.call(zoom) //////////
-      //  ;
-      
-      
-      // zooming / panning function 
-      var zoom = d3.zoom()
-        //.scaleExtent([1, 10])
-        .on("zoom", zoomed);
+    // find width and height of parent html elements
+    var contWidth  = document.getElementById('body').clientWidth;
+    //var contWidth = document.documentElement.clientWidth;
+    
+    var contHeight = document.documentElement.clientHeight;
+    //var contHeight = document.getElementById('body').clientHeight;
+    
+    // add the width and height attributes to the <svg>
+    //var svg = d3.select("svg")
+    //  .attr("width" , contWidth )
+    //  .attr("height", contHeight )
+    //  //.call(zoom) //////////
+    //  ;
+    
+    
+    // zooming / panning function 
+    var zoom = d3.zoom()
+      .scaleExtent([1/4, 4])
+      .on("zoom", zoomed)
+      ;
+    
+    // reset zoom to original
+    function resetted() {
+      svg.transition()
+          .duration(750)
+          .call(zoom.transform, d3.zoomIdentity);
+    }
 
-        
-        
-      // create svg
-      var svg = d3.select("#containerLayout")
-        .append("svg:svg")
-        .attr("width" , contWidth - 15)
-        .attr("height", contHeight - 90)
-        .call(zoom)
-        ;
- 
-      // canvas
-      var svg = d3.select("svg"),
-        width  = +svg.attr("width"),
-        height = +svg.attr("height");
+    var dft_circle_stroke_w = "1.5px";
+    var dft_line_stroke_w = "1.0px";
+    
       
+    // create svg
+    var svg = d3.select("#containerLayout")
+      .append("svg:svg")
+      .attr("width" , contWidth - 15)
+      .attr("height", contHeight - 15 )
+      .call(zoom)
+      .on("dblclick.zoom", null)
+      ;
 
-      
-      var vis = svg
-        .append('g')
-        //.call(d3.zoom().on("zoom", zoomed))
-        //.call(zoom)
-        ;
-      
-      
-      function zoomed() {
-        //vis.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-        svg.attr("transform", d3.event.transform );
-      }
-
-      
-      var color = d3.scaleOrdinal(d3.schemeCategory20);
-      
-      
-      // force parameters
-      var simulation = d3.forceSimulation()
-          .force("link"  , d3.forceLink().id(function(d) { return d.{{glob.es.id}}; })) //identify links relation by common id
-          .force("charge", d3.forceManyBody())
-          .force("center", d3.forceCenter(width / 2, height / 2));
-      
-    // fetch data / JSON
-    d3.json("{{ data_JSON }}", function(error, graph) {
-      if (error) throw error;
-      
-      
-      
-      // create legend in div #legend
-      var legendWidth  = document.getElementById('legend').clientWidth ;
-      //var legendHeight = document.getElementById('legend').clientHeight;
-      var legend = d3.select("#legend")
-        .append("svg:svg")
-        .attr("width", legendWidth)
-        .attr("height", 100) ;
-      
-      var nodeLegend = legend.append("g")
-          .attr("class"   , "nodes_legend") ;
-      // add circles for nodes_legend
-      nodeLegend.append("circle")
-          .attr("cx", "20" )
-          .attr("cy", "20" )
-          .attr("r", "8" )
-          .style("fill", "black" ) //return color(d.{{glob.ns.type}})
-      nodeLegend.append("text")
-      
-      
-      
-      
-      // create lines for links
-      var link = vis.append("g")
-          .attr("class", "links")
-          .selectAll("line")
-              .data(graph.links)
-              .enter().append("line")
-              .attr("stroke-width", function(d) { return d.{{glob.es.weight}} ; })
-              .attr("stroke-dasharray", function (d) { return d.{{glob.es.dash}} ; } );
-      
-      // create node group for nodes
-      var node = vis.append("g")
-          .attr("class", "nodes")
-          
-          .selectAll(".node")
-          .data(graph.nodes)
-            .enter().append("g")
-            .attr("class"   , "node")
-            .attr("label"   , function(d) { return ( d.{{glob.ns.label}} ) })
-            .attr("id"      , function(d) { return ( d.{{glob.ns.id}} ) })
-            .attr("group"   , function(d) { return ( d.{{glob.ns.group}} ) })
-            .attr("category", function(d) { return ( d.{{glob.ns.category}} ) })
-            .attr("url"     , function(d) { return ( d.{{glob.ns.url}} ) })
-            .attr("type"    , function(d) { return ( d.{{glob.ns.type}} ) })
-            .attr("tags"    , function(d) { return ( d.{{glob.ns.tags}} ) })
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag" , dragged)
-                .on("end"  , dragended))
-            .on('click'   , displayInfos)
-            .on('dblclick', connectedNodes); //Added code ... .on('click'
-      // add circles for nodes
-      node.append("circle")
-          .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
-          .style("fill", function (d) { return d.{{glob.ns.color}} ; }) //return color(d.{{glob.ns.type}})
-      // add titles for nodes
-      node.append("title")
-          .text ( function(d) { return ( d.{{glob.ns.category}} + " / " + d.{{glob.ns.label}} ) } )
-      //// add labels for nodes // WORKING
-      //node.append("text")
-      //    .attr("dx", 10)
-      //    .attr("dy", ".35em")
-      //    .text(function(d) { return d.{{glob.ns.id}} })
-      //    .style("stroke", "grey");
+    // canvas
+    var svg = d3.select("svg"),
+      width  = +svg.attr("width"),
+      height = +svg.attr("height");
   
-  
-  
-  
-      ///////////////////// NOT WORKING WELL YET ////////////////////////////////////////////
-      // collision detection    
-      var padding = 5, // separation between circles
-          radius=60
-          ;
-      function collide(alpha) {
-          var quadtree = d3.quadtree(graph.nodes);
-          return function(d) {
-              var rb = d.weight*3 + padding,
-                  nx1 = d.x - rb,
-                  nx2 = d.x + rb,
-                  ny1 = d.y - rb,
-                  ny2 = d.y + rb;
-              quadtree.visit(function(quad, x1, y1, x2, y2) {
-              if (quad.point && (quad.point !== d)) {
-                var x = d.x - quad.point.x,
-                  y = d.y - quad.point.y,
-                  l = Math.sqrt(x * x + y * y);
-                if (l < rb) {
-                l = (l - rb) / l * alpha;
-                d.x -= x *= l;
-                d.y -= y *= l;
-                quad.point.x += x;
-                quad.point.y += y;
-              }
-            }
-          return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-          });
-        };
-      }
-  
-  
-  
-  
-      ///////////////////////////////////////////////////////////////////
-      //Toggle stores whether the highlighting is on
-      var toggle = 0;
+    //add the div for the tooltip
+    var div = d3.select("body")
+      .append("div")
+      .attr("class", "panel panel-info tooltipNode")
+      .style("opacity", 0) ;
       
-      //Create an array logging what is connected to what
-      var linkedByID = {};
-      //for (i = 0; i < graph.nodes.length; i++) {
-      //    linkedByID[i + "," + i] = 1;
-      //};
-  
-      graph.nodes.forEach(function (d) {
-          linkedByID[d.{{glob.ns.id}} + "," + d.{{glob.ns.id}} ] = 1; ////////////
-      });    
-      graph.links.forEach(function (d) {
-          linkedByID[d.source + "," + d.target] = 1; ////////////
-      });
-        
-      //This function looks up whether a pair are neighbours
-      function neighboring(a, b) {
-          return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ];
-      }
       
-      // show connected nodes and fade others
-      function connectedNodes() {
-        if (toggle == 0) {
-            
-          //Reduce the opacity of all but the neighbouring nodes
-          d = d3.select(this).node().__data__;
-          
-          node.style("opacity", function (o) {
-              return neighboring(d, o) | neighboring(o, d)             ? 1 : 0.2;  ///// "|" means OR
-          });
-          link.style("opacity", function (o) {
-              return d.index==o.source.index | d.index==o.target.index ? 1 : 0.05; //////
-          });
-          
-          //Reduce the opacity
-          toggle = 1;
-        
-        } else {
-          //Put them back to opacity=1
-          node.style("opacity", 1);
-          link.style("opacity", 1);
-          toggle = 0;
-          }
-      }
+    // add group for shapes in svg
+    var vis = svg
+      .attr("style", "background: black")
+      //.append('g')
+      ;
+    
+    var links_g = vis.append('g')
+      .attr("class", "links") ;
+    
+    var nodes_g = vis.append('g')
+      .attr("class", "nodes") ;    
+    
+    
+    // ZOOM function //////////////////////////
+    function zoomed() {
+      svg.attr("transform", d3.event.transform );
+    }
 
 
-    //function hideNode() {
-    //    //find the node
-    //    var selectedVal = document.getElementById('search').value;
-    //    var node = svg.selectAll(".node");
-    //    if (selectedVal == "none") {
-    //        node.style("stroke", "white").style("stroke-width", "1");
-    //    } else {
-    //        var selected = node.filter(function (d, i) {
-    //            return d.label != selectedVal;
-    //        });
-    //        selected.style("opacity", "0.1");
-    //        var link = svg.selectAll(".links")
-    //        link.style("opacity", "0");
-    //        d3.selectAll(".node, .links").transition()
-    //            .duration(4000)
-    //            .style("opacity", 1);
-    //    }
-    //}
 
-  
-      // tick function for force
-      simulation
-          .nodes(graph.nodes)
-          .on("tick", ticked);
-      simulation.force("link")
-          .links(graph.links);
-        
-      function ticked() {
-          link
-              .attr("x1", function(d) { return d.source.x; })
-              .attr("y1", function(d) { return d.source.y; })
-              .attr("x2", function(d) { return d.target.x; })
-              .attr("y2", function(d) { return d.target.y; });
+    // normal drag function /////////////////////////////////////////
+    var node_normal_drag = d3.drag()
+      .on("start", dragstarted)
+      .on("drag" , dragged    )
+      .on("end"  , dragended  ) ;
       
-          //node
-          //    .attr("cx", function(d) { return d.x; })
-          //    .attr("cy", function(d) { return d.y; });
-      
-          //var all_nodes = d3.selectAll(".node") ;
-      
-          d3.selectAll(".node").selectAll("circle")
-              .attr("cx", function (d) { return d.x;})
-              .attr("cy", function (d) { return d.y; })
-              .each(collide(0.9))
-              ;
-          d3.selectAll("text")
-              .attr("x", function (d) { return d.x;})
-              .attr("y", function (d) { return d.y;})
-              //.each(collide(0.7))
-              ;
-  
-          //node.each(collide(0.7)); //Added 
-              
-        }
-      });
-
-
       function dragstarted(d) {
+          console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
           d.fx = d.x;
           d.fy = d.y;
@@ -307,47 +109,447 @@
       
       function dragended(d) {
           if (!d3.event.active) simulation.alphaTarget(0);
-          d.fx = null;
-          d.fy = null;
-      };
-  
-  
-    /// search bar function
-    var optArray = [];
-    //for (var i = 0; i < node.length - 1; i++) {
-    //    optArray.push(node[i].label);
-    //}
-    //////////////////// autocomplete not working as expected
-    var allNodes = d3.selectAll('.node')
-    for (var i = 0; i < allNodes.length - 1; i++) {
-        optArray.push(allNodes[i].label);
-    }
-    optArray = optArray.sort();
-    $(function () {
-        $("#search").autocomplete({ source: optArray });
-      });
-    function searchNode() {
-        //find the node
-        var selectedVal = document.getElementById('search').value;
-        var node = vis.selectAll(".node");
-        if (selectedVal == "none") {
-            node.style("stroke", "white").style("stroke-width", "1");
+          if (d.fixed = true) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+          } else {
+            d.fx = null;
+            d.fy = null;
           }
-        else {
-            var selected = node.filter(function (d, i) {
-                return d.label != selectedVal;
-            });
-            selected.style("opacity", "0.1");
-            
-            var link = vis.selectAll(".links")
-            link.style("opacity", "0");
-            d3.selectAll(".node, .links")
-              .transition()
-              .duration(4000)
-              .style("opacity", 1);
+      }
+      ;
+      
+      
+      
+      
+    //var color = d3.scaleOrdinal(d3.schemeCategory20);
+    
+    /////////////////////////////////////////////////////////////
+    // create legend in div #legend on the fly 
+    var spaceX     = 20 ;
+    var interval   = 5 ;
+    var legendR    = 8  ;
+    var legendS    = 2  ; // circle stroke width
+    var legendDiam = (legendR*2) + legendS ;
+    var spaceY     = legendDiam + interval ;
+    
+    var legendColors = {{ legend|tojson  }};
+    //console.log(legendColors);
+    legendHeight = 5 + (legendColors.length*spaceY) + 5
+    //console.log(legendHeight);
+    
+    var legendWidth  = document.getElementById('legend').clientWidth ;
+    //var legendHeight = document.getElementById('legend').clientHeight;
+    var legend = d3.select(".legend")
+      .append("svg:svg")
+      .attr("background-color", "black")
+      .attr("width" , legendWidth)
+      .attr("height", legendHeight) ;
+    
+    var nodeLegend = legend.append("g")
+      .attr("class"   , "nodes_legend") ;
+    // add circles for nodes_legend
+
+    tempSpaceY = interval + legendR ; 
+    
+    for (var i = 0; i <= legendColors.length - 1; i++) {
+      var obj = legendColors[i];
+      nodeLegend.append("circle")
+        .attr("cx", spaceX )
+        .attr("cy", tempSpaceY )
+        .attr("r", legendR )
+        .attr("stroke", "white")
+        .attr("stroke-width", legendS )
+        .style("fill", obj.color ); //return color(d.{{glob.ns.type}})
+      nodeLegend.append("text")
+        .attr("fill", "white")
+        .attr("x", spaceX + legendDiam )
+        .attr("y", tempSpaceY )
+        .attr("dy", ".35em")
+        .text(obj.name);
+      tempSpaceY += spaceY ;
+      }
+   
+    ///////////////////////////////////////////////////
+    // force parameters
+    var simulation = d3.forceSimulation()
+        .force("link"   , d3.forceLink().id(function(d) { return d.{{glob.es.id}}; })) //identify links relation by common id
+        .force("charge" , d3.forceManyBody().strength(-50) )
+        .force("center" , d3.forceCenter(width / 2, height / 2))
+        // COLLIDE FORCE // WORKS BUT takes lot of CPU power and slow visualisation ////////////////////////////////
+        //.force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2)) 
+        ;
+    
+    //////////////////////////////////////////////
+    
+    var allEdges = [];
+    var allNodes = [];
+    
+    var optArray = [];
+
+    //initialize graph layout : fill allNodes and allEdges
+    d3.json("{{ data_JSON }}",
+              function(error, graph) {
+                if (error) throw error   ;
+                
+                allNodes = graph.nodes ;
+                allEdges = graph.links ;
+                
+                for (var i = 0; i < allNodes.length - 1; i++) {
+                        //console.log(allNodes[i].label);
+                        optArray.push(allNodes[i].label);   
+                    } ;
+                
+                optArray = optArray.sort();
+                //console.log("optArray from start : ", optArray);
+                
+                render(allNodes, allEdges) ;
+              }
+      )
+    ;
+    
+    //console.log("optArray : ", optArray); // OK /////////////////////////
+    
+    /////////////////////////////////////////////////////////////////////////////////
+
+    /// BREAK LINKS & UPDATE function
+    // adapted from  :  http://bl.ocks.org/csesivakumar/31e23b875f260622f8f7da3ae380958c
+    function Update_Node(buttonId){
+      
+      
+      // get button attributes
+      var Clickbutton = document.getElementById(buttonId);
+      var status = Clickbutton.getAttribute("Enabled");
+      
+      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
+      if (status =="0"){
+		Clickbutton.setAttribute("Enabled","1");
+		Clickbutton.setAttribute("aria-pressed", "true") ;
+      }
+      if (status =="1"){
+        Clickbutton.setAttribute("Enabled","0");
+        Clickbutton.setAttribute("aria-pressed", "false") ;
+      }
+      
+      // check status for all buttons
+      var buttons = document.getElementsByClassName('breakFilter');
+      //console.log("buttons :", buttons);
+      
+      // stores criterias to hide
+      var rulesToHide = [] ;
+      for(var j = 0; j < buttons.length; j++) {
+        //console.log(button);
+		var button = buttons[j];		
+		var status = button.getAttribute("Enabled");
+        // remove nodes and edges if button status is "1"
+		if (status=="1"){ 
+          rulesToHide.push(button.id);
+        }			
+      }
+      //console.log("rulesToHide breakFilter :", rulesToHide);
+      
+      var tempNodes = [];
+      var tempEdges = [];
+      
+      // filter nodes
+      for (var i = 0 ; i < allNodes.length; i++ ) {
+        var obj = allNodes[i];
+        if ( rulesToHide.indexOf(obj.category) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array 
+          tempNodes.push(obj) ;
         }
+      }
+      
+      // filter edges
+      for (var i = 0 ; i < allEdges.length; i++ ) {
+        var obj = allEdges[i];
+        //console.log(obj.group);
+        if ( rulesToHide.indexOf(obj.group) == -1 ) {
+          //console.log(obj.group);
+          tempEdges.push(obj);
+        }
+      }
+      
+      render(tempNodes, tempEdges) ;
+      
     }
 
+
+    // HIDE NODES FROM LAYOUT (but no disappear)
+    function hideNodes(buttonValue) {
+
+      // get button attributes
+      var Clickbutton = document.getElementById(buttonValue);
+      var status = Clickbutton.getAttribute("Enabled");
+      
+      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
+      if (status =="0"){
+		Clickbutton.setAttribute("Enabled","1");
+		Clickbutton.setAttribute("aria-pressed", "true") ;
+      }
+      if (status =="1"){
+        Clickbutton.setAttribute("Enabled","0");
+        Clickbutton.setAttribute("aria-pressed", "false") ;
+      }
+
+      // check status for all buttons
+      var buttons = document.getElementsByClassName('hideFilter');
+      
+      //var selected = buttonValue ;
+      //console.log("selected :", this);
+      
+      // stores criterias to hide
+      var rulesToHide = [] ;
+      for(var j = 0; j < buttons.length; j++) {
+        //console.log(button);
+		var button = buttons[j];		
+		var status = button.getAttribute("Enabled");
+        // remove nodes and edges if button status is "1"
+		if (status=="1"){ 
+          rulesToHide.push(button.id);
+        }			
+      }
+      //console.log("rulesToHide hideFilter:", rulesToHide);
+      
+      var nodes = vis.selectAll(".node");
+      
+      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1 | rulesToHide.indexOf(d.group) != -1  ; } )
+        .style("opacity", "0.1" );
+      
+      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1 && rulesToHide.indexOf(d.group) == -1  ; } )
+        .style("opacity", "1.0" );
+        
+    }
+
+    //////////////////////////////////////////////////////////////////////////////
+    // main D3 function
+    function render (nodes, links) {
+      
+      //d3.select(window)
+      //  .on("resize", function() {
+      //    var targetWidth = vis.node().getBoundingClientRect().width;
+      //    var targetHeight = vis.node().getBoundingClientRect().height;
+      //    vis.attr("width", targetWidth - 15);
+      //    vis.attr("height", targetHeight - 15);
+      //  });
+      
+      simulation.alphaTarget(0.25).restart() ;
+      
+      // launch force
+      simulation
+          .nodes(nodes)
+          .on("tick", ticked);
+          
+      simulation.force("link")
+          .links(links);
+
+      
+      /////////////////////////////////////////////////
+      // stop / restart animation 
+      function stopLayout()   { simulation.stop(); } ;
+      function restartLayout(){ simulation.restart(); } ;
+      
+      
+      // activate play or pause 
+      $(function () {
+          
+          var active = true;
+          
+          $('#play-pause').click(function () {
+              if (active) {
+                  active = false;
+                  stopLayout();
+                  $(this).html('<span class="glyphicon glyphicon-play"></span>')
+                    .attr("class", "btn btn-md btn-success")
+                  ;
+              } else {
+                  active = true;
+                  restartLayout();
+                  $(this).html('<span class="glyphicon glyphicon-pause"></span>')
+                    .attr("class", "btn btn-md btn-warning")
+                  ;
+              }
+          });
+          
+      });
+      
+      ///////////////////////////////////////////////////////
+      
+      var link = links_g.selectAll(".link").data(links);
+      var node = nodes_g.selectAll(".node").data(nodes);
+      
+      // create lines for links
+      //var link = vis.append("g")
+      //  .attr("class", "links")
+      //  .selectAll("line")
+      //  .data(links).enter()
+      link.enter()
+          .append("line")
+          .attr("class", "link")
+          .attr("stroke-width"    , dft_line_stroke_w ) //function(d) { return d.{{glob.es.weight}} ; } )
+          .attr("stroke-dasharray", function(d) { return d.{{glob.es.dash}}   ; } )
+        .merge(link);
+      link.exit().remove();
+      
+      
+      // create node group for nodes
+      //var node = vis.append("g")
+      //  .attr("class", "nodes")
+      //  .selectAll(".node")
+      //  .data(nodes)
+      node.enter() 
+          .append("circle")
+          .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
+          .style("fill", function (d) { return d.{{glob.ns.color}} ; }) //return color(d.{{glob.ns.type}})
+          .attr("stroke-width"    , dft_circle_stroke_w )
+          .attr("class"   , "node")
+          .attr("fixed"   , "false")
+          //.attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
+          //.attr("id"      , function(d) { return ( d.{{glob.ns.id}}       ) })
+          //.attr("group"   , function(d) { return ( d.{{glob.ns.group}}    ) })
+          //.attr("category", function(d) { return ( d.{{glob.ns.category}} ) })
+          //.attr("url"     , function(d) { return ( d.{{glob.ns.url}}      ) })
+          //.attr("type"    , function(d) { return ( d.{{glob.ns.type}}     ) })
+          //.attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) }) /////////// ????? 
+          
+          
+          // normal drag function
+          .call(node_normal_drag)
+          //.call(node_pindrag) /// trying pinning down node
+          //.on('dblclick', releasenode_)
+          .on('click'      , displayInfos )    // display node infos inside right column
+          //.on('contextmenu', pinNode)
+          .on('dblclick'   , connectedNodes ) //("over") ) //Added code ... .on('click'
+          
+          //alternative
+          //.on('mouseover', connectedNodes) //("over") ) //Added code ... .on('click'
+          //.on('mouseout',  connectedNodes) //("out") )
+          
+          //adding tooltip in div tooltip
+          .on("mouseover", function(d) {		
+            div.transition()		
+              .duration(200)		
+              .style("opacity", .95);		
+            div.html( "<strong> "+ d.{{glob.ns.label}} + " </strong>")	
+              .style("left", (d3.event.pageX + 20) + "px")		
+              .style("top", (d3.event.pageY - 10) + "px");	
+          })					
+          .on("mouseout", function(d) {		
+            div.transition()		
+              .duration(500)		
+              .style("opacity", 0);
+              
+          });
+      ;
+      
+      node.exit().remove();
+      
+      
+      
+      /// CONNECTED NODES ///////////////////////////////////////////////////////////////
+      //Toggle stores whether the highlighting is on
+      var toggle = 0;
+      //Create an array logging what is connected to what
+      var linkedByID = {};
+      // feed linkedById
+      nodes.forEach(function (n) {
+        linkedByID[n.{{glob.ns.id}} + "," + n.{{glob.ns.id}} ] = 1; });    
+      links.forEach(function (e) {
+        //console.log(e);
+        linkedByID[e.source.{{glob.ns.id}} + "," + e.target.{{glob.ns.id}}] = 1; });
+      //console.log(linkedByID); //////////////////////////////////
+      
+      //This function looks up whether a pair are neighbours
+      function neighboring(a, b) {
+        return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ]; }
+
+      var N = vis.selectAll(".node");
+      var L = vis.selectAll(".link");
+      
+      // show connected nodes and fade others
+      function connectedNodes() {
+        
+        if (toggle == 0) {
+            
+          //Reduce the opacity of all but the neighbouring nodes
+          d = d3.select(this).node().__data__; 
+          //console.log("d :", d3.select(this).node().__data__ ); // OK
+          //console.log("node selected : ", d );
+          //console.log("node selected / ID : ", d.{{glob.ns.id}});
+
+          N.attr("stroke-width",
+            function (o) { return neighboring(d, o) | neighboring(o, d) ? "2px" : "0px"; } );
+          
+          N.style("opacity", 
+            function (o) { return neighboring(d, o) | neighboring(o, d) ? 1 : 0.4; } );
+          
+          L.style("opacity",
+            function (o) { return d.index == o.source.index | d.index == o.target.index ? 1 : 0.4; } ); 
+
+          L.attr("stroke-width",
+            function (o) { return d.index == o.source.index | d.index == o.target.index ? "2px" : "0.3px"; } ); 
+          
+          //Reduce the opacity
+          toggle = 1;
+        }
+        
+        else {
+          //Put them back to opacity=1
+          N.style("opacity", 1);
+          N.attr("stroke-width", dft_circle_stroke_w );
+          
+          L.style("opacity", 1);
+          L.attr("stroke-width", dft_line_stroke_w);
+          
+          toggle = 0;
+        }
+        
+      }
+
+      function ticked() {
+        d3.select(".links").selectAll(".link")
+          .attr("x1", function(d) { return d.source.x; })
+          .attr("y1", function(d) { return d.source.y; })
+          .attr("x2", function(d) { return d.target.x; })
+          .attr("y2", function(d) { return d.target.y; })
+        ;
+    
+        d3.select(".nodes").selectAll(".node")
+            .attr("cx", function (d) { return !d.fixed ? d.x : d.fx; })
+            .attr("cy", function (d) { return !d.fixed ? d.y : d.fy; })
+        ;
+      
+      }
+      
+    }
+
+ 
+    //launch autocomplete once page loaded
+    $(document).ready(function () {
+        $("#search").autocomplete({ source: optArray }); 
+      });
+
+    /// search bar functions 
+    function searchNode() {
+      //find the node
+      var selectedVal = document.getElementById('search').value;
+      var node = vis.selectAll(".node");
+      if (selectedVal == "none") {
+        node.style("stroke", "white").style("stroke-width", "10");
+      }
+      else {
+        var selected = node.filter(function (d, i) {
+            return d.label != selectedVal;
+        });
+        selected.style("opacity", "0.1");
+        
+        var link = vis.selectAll(".links")
+        link.style("opacity", "0.1");
+        d3.selectAll(".node, .links")
+          .transition()
+          .duration(4500)
+          .style("opacity", 1);
+      }
+    }
     //search bar / run searchNode if enter (aka keyCode==13) is pressed
     function handle(e){
       if(e.keyCode === 13){
@@ -355,47 +557,89 @@
         }
     }
 
-    // display node infos in div #nodeInfos
-    function displayInfos() {
-      d = d3.select(this).node().__data__;
-      d3.select('#nCategory').text(d.category);
-      d3.select('#nGroup').text(d.group);
-      d3.select('#nLabel').text(d.label);
-      d3.select('#nType').text(d.type);
-      d3.select('#nUrl')
-      .attr("href", d.url)
-      .attr("target", "_blank")
-      .text(d.url);
-      d3.select('#nTags').text(d.tags); //////////// NOT WORKING YET
-                         //.text(for (var i=0; i<d.tags.length; i++) { alert d.tags[i] } ); //
-    }
-    
-    //// NOT WORKING YET /////////////////////////////////////////////////////
-    // checkboxes behaviour
-    
-    function checkFilter() {
-    //document.getElementsByName('checkFilter')
-    d3.selectAll('.checkFilter')
-      .on("change", function() {
-        
-        var selected = this.value ;
-        //window.alert(selected);
-        opacity = this.checked ? 1 : 0.1 ;
-        //display = this.checked ? 'inline' : 'none';
-        
-        var nodes = vis.selectAll(".node");
-        //svg.selectAll('.node')
-        nodes.filter(function (d, i) {
-          return d.category == selected | selected == d.group ; //| selected in d.tags ;
-                })
-        .style("opacity", opacity);
-        //.attr('display', display);
-        
-        }
-      )
-    }
 
-    checkFilter()
+    // pin down nodes 
+    // inspired from : https://github.com/d3/d3-force/issues/35
+    function pinNode(d) {
+      
+      console.log("pinning / d :", d);
+      console.log("pinning / d.fixed :", d.fixed);
+      
+      if (d.fixed = false) {
+        d.fixed = true; 
+        d.fx = d.x ;
+        d.fy = d.y ;
+        
+      } else {
+        d.fixed = false; 
+        d.fx = null;
+        d.fy = null;
+      }
+      
+    }
+    
+    // release all previously fixed nodes
+    function releaseAllNodes() {
+      
+      console.log("release all nodes");
+      
+      //simulation.alphaTarget(0).stop();
+      
+      // change attribute value
+      d3.select(".nodes").selectAll(".node")
+        .attr("fixed", false)
+        .attr("fx", null)
+        .attr("fy", null)
+      ;
+      
+      // restart animation
+      //simulation.alphaTarget(0.3).restart();
+    }
+    
+    // display node infos in div #nodeInfos 
+    function displayInfos() {
+      
+      
+      n = d3.select(this).node().__data__;
+      //console.log("node DATAS :", n);
+      
+      // call function to pin nodes
+      pinNode(n);
+      
+      divInfos = d3.select('.infosNode');
+      divInfos.transition()		
+        .duration(200)		
+        .style("opacity", 1.0);	
+      d3.select('#nCategory').text(n.category);
+      d3.select('#nGroup').text(n.group);
+      d3.select('#nLabel').text(n.label);
+      d3.select('#nType').text(n.type);
+      d3.select('#nUrl')
+        .attr("href", n.url)
+        .attr("target", "_blank")
+        .text(n.url);
+      
+      //console.log("d :"    , d);
+      //console.log("tags :" , d.tag);
+      
+      d3.select('#nTags').text(n.tag);      
+
+    }
+  
+
+    // export SVG file //////////////////////////////////////
+    // from : http://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
+    function exportSVG() {
+      var svgData = $("#svgLayout")[0].outerHTML;
+      var svgBlob = new Blob([svgData], {type:"image/svg+xml;charset=utf-8"});
+      var svgUrl = URL.createObjectURL(svgBlob);
+      var downloadLink = document.createElement("a");
+      downloadLink.href = svgUrl;
+      downloadLink.download = "{{ dataSet_name }} network - {{ glob.titleApp }}.svg";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+      }
 
   </script>
 

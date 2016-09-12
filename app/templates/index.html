@@ -4,25 +4,47 @@
 
 {% block content %}
 
+    <div    id="graphLayout"
+            class="row"
+            style="min-height: 100%"
+            > 
+
     <!-- subtitle of the app only in homepage -->
-    <div class="col-lg-3"></div>
-    <div class="jumbotron col-lg-6">
-	<h3> {{ glob.titleApp }} : {{ glob.subtitleApp }} </h3>
-	<h4> fetch a Zotero library and connect references by their tags, their groups or folders, and their connex references </h4>
-	
-	<!-- to display : images/href to datavisualizations -->
-	<div class="list-group">
-	    
-	    <p> </p>
-	    <!--<li class="divider" role="seperator"></li>-->
-	    <p>select a Zotero dataset to see its corresponding network</p>
-	    
-	    {% for set in glob.collections_names %}
-	    <a href="/{{ set[0] }}" class="list-group-item col-md-10">
-		{{ set[1] }}
-	    </a>
-	    {% endfor %}
-	</div>
+	<br>
+    <div class="jumbotron col-lg-4 col-lg-offset-4">
+		
+		<h1 class="text-center"> {{ glob.titleApp }} </h1>
+		
+		<br>
+		
+		<hr></hr>
+		
+		<h4 class="text-center"> {{ glob.subtitleApp }} </h3>
+		<!--<h4>-->
+		<!--	fetch a Zotero library and connect references by their tags, their groups or folders, and their connex references...-->
+		<!--	and make a graph-->
+		<!--</h4>-->
+		
+		
+		<!-- to display : images/href to datavisualizations -->
+		<div class="list-group">
+			
+			<hr></hr>
+
+			<p class="text-center">
+				select a Zotero dataset 
+			</p>
+			
+			{% for set in glob.collections_names %}
+				<a href="/{{ set[0] }}"
+				   class="list-group-item col-lg-8 col-lg-offset-2"
+				   >
+					&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
+					<strong> {{ set[1] }} </strong>
+				</a>
+			{% endfor %}
+			
+		</div>
     </div>
 
 {% endblock %}
