@@ -16,6 +16,8 @@
 		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
 		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
 
+		<!--<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>-->
+
         <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
         <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
         <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
@@ -333,6 +335,20 @@
 						</button>
 					</li>
 					
+					<!--<li data-toggle="tooltip"-->
+					<!--	data-placement="bottom"-->
+					<!--	title="release all previously fixed nodes"-->
+					<!--	>						-->
+					<!--	<!--  button release all fixed nodes svg-->-->
+					<!--	<button type="button"-->
+					<!--		id="releaseAllNodes" -->
+					<!--		class="btn btn-md btn-primary"-->
+					<!--		style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"-->
+					<!--		onclick="releaseAllNodes()"-->
+					<!--		> 	-->
+					<!--		<span class="glyphicon glyphicon-asterisk"></span>-->
+					<!--	</button>-->
+					<!--</li>-->
 					
 					<li data-toggle="tooltip"
 						data-placement="bottom"
@@ -528,13 +544,15 @@
 				<h5><span class="badge">
 						<span class="glyphicon glyphicon-menu-right"></span>
 					</span>
-					<strong><em>Simple left-click on a node : show infos</em></strong>
-					<p> select a node and show its infos in the panel on the right side of the window</p>
+					<strong><em>Simple click on a node : show infos and pin down</em></strong>
+					<p> Select a node and show its infos in the panel on the right side of the window.
+						You can drag your node wherever you want, it will be fixed once you've finished.
+						If you want to free the node, click on it again.</p>
 				</h5>
 				<h5><span class="badge">
 						<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
 					</span>
-					<strong><em>Double left-click on a node : show neighbours</em></strong>
+					<strong><em>Double click on a node : show neighbours</em></strong>
 					<p> select/unselect a node and show its neighbours while hiding the others</p>
 				</h5>
 				<h5><span class="badge">
@@ -683,7 +701,7 @@
 					<a color="black" target="_blank" href="http://www.pingbase.net/">PING</a>
 					by
 					<a color="black" target="_blank" href="https://github.com/JulienParis">Julien P.</a>
-					&nbsp;  
+					 (2016) &nbsp; 
 					<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
 						<img 	alt="Creative Commons License"
 								style="border-width:0; margin-top: -3px; opacity: 1.0"

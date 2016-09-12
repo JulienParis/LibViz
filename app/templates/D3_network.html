@@ -84,20 +84,19 @@
     
     // ZOOM function //////////////////////////
     function zoomed() {
-      //vis.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
       svg.attr("transform", d3.event.transform );
     }
 
+
+
     // normal drag function /////////////////////////////////////////
     var node_normal_drag = d3.drag()
-      //.subject(dragsubject) /// sticky function not working ////////////////////////////////
       .on("start", dragstarted)
       .on("drag" , dragged    )
       .on("end"  , dragended  ) ;
       
-
-      
-      function dragstarted(d) {          
+      function dragstarted(d) {
+          console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
           d.fx = d.x;
           d.fy = d.y;
@@ -109,28 +108,16 @@
       }
       
       function dragended(d) {
-          d3.select(this).classed("fixed", d.fixed = true);
-          //if (!d3.event.active) simulation.alphaTarget(0);
-          //d.fx = null;
-          //d.fy = null;
+          if (!d3.event.active) simulation.alphaTarget(0);
+          if (d.fixed = true) {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+          } else {
+            d.fx = null;
+            d.fy = null;
+          }
       }
       ;
-
-    
-    
-    
-      // from : http://bl.ocks.org/mbostock/3750558
-      //var node_pindrag = d3.drag()
-      //  .on("start", dragstart_);
-      //
-      //function dblclick_(d) {
-      //  d3.select(this).classed("fixed", d.fixed = false);
-      //}
-      //
-      //function dragstart_(d) {
-      //  d3.select(this).classed("fixed", d.fixed = true);
-      //  
-      //}
       
       
       
@@ -345,6 +332,8 @@
       //    vis.attr("height", targetHeight - 15);
       //  });
       
+      simulation.alphaTarget(0.25).restart() ;
+      
       // launch force
       simulation
           .nodes(nodes)
@@ -413,20 +402,23 @@
           .style("fill", function (d) { return d.{{glob.ns.color}} ; }) //return color(d.{{glob.ns.type}})
           .attr("stroke-width"    , dft_circle_stroke_w )
           .attr("class"   , "node")
-          .attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
-          .attr("id"      , function(d) { return ( d.{{glob.ns.id}}       ) })
-          .attr("group"   , function(d) { return ( d.{{glob.ns.group}}    ) })
-          .attr("category", function(d) { return ( d.{{glob.ns.category}} ) })
-          .attr("url"     , function(d) { return ( d.{{glob.ns.url}}      ) })
-          .attr("type"    , function(d) { return ( d.{{glob.ns.type}}     ) })
-          .attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) }) /////////// ????? 
+          .attr("fixed"   , "false")
+          //.attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
+          //.attr("id"      , function(d) { return ( d.{{glob.ns.id}}       ) })
+          //.attr("group"   , function(d) { return ( d.{{glob.ns.group}}    ) })
+          //.attr("category", function(d) { return ( d.{{glob.ns.category}} ) })
+          //.attr("url"     , function(d) { return ( d.{{glob.ns.url}}      ) })
+          //.attr("type"    , function(d) { return ( d.{{glob.ns.type}}     ) })
+          //.attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) }) /////////// ????? 
+          
           
           // normal drag function
           .call(node_normal_drag)
           //.call(node_pindrag) /// trying pinning down node
           //.on('dblclick', releasenode_)
-          .on('click'   , displayInfos)    // display node infos inside right column 
-          .on('dblclick', connectedNodes) //("over") ) //Added code ... .on('click'
+          .on('click'      , displayInfos )    // display node infos inside right column
+          //.on('contextmenu', pinNode)
+          .on('dblclick'   , connectedNodes ) //("over") ) //Added code ... .on('click'
           
           //alternative
           //.on('mouseover', connectedNodes) //("over") ) //Added code ... .on('click'
@@ -515,7 +507,6 @@
 
       function ticked() {
         d3.select(".links").selectAll(".link")
-        //link
           .attr("x1", function(d) { return d.source.x; })
           .attr("y1", function(d) { return d.source.y; })
           .attr("x2", function(d) { return d.target.x; })
@@ -523,8 +514,8 @@
         ;
     
         d3.select(".nodes").selectAll(".node")
-            .attr("cx", function (d) { return d.x;})
-            .attr("cy", function (d) { return d.y; })
+            .attr("cx", function (d) { return !d.fixed ? d.x : d.fx; })
+            .attr("cy", function (d) { return !d.fixed ? d.y : d.fy; })
         ;
       
       }
@@ -566,31 +557,77 @@
         }
     }
 
+
+    // pin down nodes 
+    // inspired from : https://github.com/d3/d3-force/issues/35
+    function pinNode(d) {
+      
+      console.log("pinning / d :", d);
+      console.log("pinning / d.fixed :", d.fixed);
+      
+      if (d.fixed = false) {
+        d.fixed = true; 
+        d.fx = d.x ;
+        d.fy = d.y ;
+        
+      } else {
+        d.fixed = false; 
+        d.fx = null;
+        d.fy = null;
+      }
+      
+    }
+    
+    // release all previously fixed nodes
+    function releaseAllNodes() {
+      
+      console.log("release all nodes");
+      
+      //simulation.alphaTarget(0).stop();
+      
+      // change attribute value
+      d3.select(".nodes").selectAll(".node")
+        .attr("fixed", false)
+        .attr("fx", null)
+        .attr("fy", null)
+      ;
+      
+      // restart animation
+      //simulation.alphaTarget(0.3).restart();
+    }
+    
     // display node infos in div #nodeInfos 
     function displayInfos() {
       
-      d = d3.select(this).node().__data__;
+      
+      n = d3.select(this).node().__data__;
+      //console.log("node DATAS :", n);
+      
+      // call function to pin nodes
+      pinNode(n);
       
       divInfos = d3.select('.infosNode');
       divInfos.transition()		
         .duration(200)		
         .style("opacity", 1.0);	
-      d3.select('#nCategory').text(d.category);
-      d3.select('#nGroup').text(d.group);
-      d3.select('#nLabel').text(d.label);
-      d3.select('#nType').text(d.type);
+      d3.select('#nCategory').text(n.category);
+      d3.select('#nGroup').text(n.group);
+      d3.select('#nLabel').text(n.label);
+      d3.select('#nType').text(n.type);
       d3.select('#nUrl')
-        .attr("href", d.url)
+        .attr("href", n.url)
         .attr("target", "_blank")
-        .text(d.url);
+        .text(n.url);
       
-      console.log("tags " , d.tags);
-      d3.select('#nTags').text(d.tags);         //////////// d.tags NOT WORKING YET ///////////////////////////////////////
-                         //.text(for (var i=0; i<d.tags.length; i++) { alert d.tags[i] } ); //
+      //console.log("d :"    , d);
+      //console.log("tags :" , d.tag);
+      
+      d3.select('#nTags').text(n.tag);      
+
     }
   
-  
 
+    // export SVG file //////////////////////////////////////
     // from : http://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
     function exportSVG() {
       var svgData = $("#svgLayout")[0].outerHTML;
