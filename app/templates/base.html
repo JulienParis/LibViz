@@ -128,303 +128,369 @@
 
     <header>
 	
-	
-	<nav class="navbar navbar-default">
-		
-		<div class = "container-fluid">
+		<nav class="navbar navbar-default">
 			
-			<!-- main logo / title / nav bar -->
-			<div class="navbar-header">
+			<div class = "container-fluid">
 				
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				  <span class="sr-only">Toggle navigation</span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				</button>
-			
-				<!-- logo appli -->
-				<li 
-					>
-					<a class="navbar-brand text-center" href="/"
-					   style="margin-top: -5px; margin-bottom: 10px; height: 44px; margin-right: -5px"
+				<!-- main logo / title / nav bar -->
+				<div class="navbar-header">
+					
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+				
+					<!-- logo appli -->
+					<li 
 						>
-						<h4>{{ glob.titleApp }}</h4>
-					</a>
-				</li>
-			
-			
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<a class="navbar-brand text-center" href="/"
+						   style="margin-top: -5px; margin-bottom: 10px; height: 44px; margin-right: -5px"
+							>
+							<h4>{{ glob.titleApp }}</h4>
+						</a>
+					</li>
 				
-				<ul class="nav navbar-nav">
+				
+				</div>
+	
+				
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					
+					
+					<ul class="nav navbar-nav">
+						
+						
+						{% if data_JSON %}
+						
+						<li>
+							
+							<div>
+							
+								<!-- menu / icon for dropdown -->
+								<button id="collLabels"
+										class="btn btn-link" 
+										type="button"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
+										style=" margin-top: 8px;
+												margin-bottom: 10px;
+												height: 44px;
+												margin-right: 0px">
+										<div style="color: white">
+											<span class="glyphicon glyphicon-th-list"> </span>
+											menu
+											<span class="caret"> </span>
+										</div>
+								</button>
+								
+								
+								<!-- list of links to collections -->
+								<ul class="dropdown-menu" aria-labelledby="collLabels">
+								  
+									<li href="/" class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+											<h5 >
+												<a href="/" style="color: black">
+													<span class="glyphicon glyphicon-home"> </span>
+													<strong>HOME</strong>
+												</a>
+											</h5>
+									</li>
+									
+									<hr>
+									
+									<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+										<h5 style="color: black">
+											<span class="glyphicon glyphicon-th-list"> </span>
+											<strong>DATASETS</strong>
+										</h5>
+									</li>
+									
+									<hr>
+									
+									<!-- links according to the length of 'collections_names' -->
+									{% for coll in glob.collections_names %}
+									<li>
+										<a href="/{{ coll[0] }}">
+											<span class="glyphicon glyphicon-th-list"> </span> 
+											{{ coll[1] }}
+										</a>
+										<hr>
+									</li>
+									{% endfor %}
+									
+									
+									<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+										<a 	role="button"
+											class="btn btn-md btn-link"
+											data-toggle="modal"
+											data-target="#modalHowTo"
+											style="color: black"  >
+											<span class="glyphicon glyphicon-wrench"> </span>
+											<strong>How to use {{ glob.titleApp }}</strong>
+										</a>
+									</li>
+									<br>
+										
+								</ul>
+							
+							</div>
+						</li> <!-- end of dropdown -->
+						
+						
+						
+						
+						<!-- dataset name -->
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="show/hide filter options"
+							> 
+							<!-- button collapser --> 
+							<div role="button"
+								id = "collapserFilters" 
+								data-toggle="collapse"
+								data-target="#collapsibleFilters"
+								aria-expanded="false"
+								aria-controls="collapsibleFilters"
+								style=" margin-top: -5px;
+										margin-bottom: 19px;
+										height: 30px;
+										margin-right: 0px"
+								>
+							  
+							  <h3 class="text-center" style="color: white">
+								<span class="label label-warning">
+									{{ dataSet_name }} <span class="caret"></span>
+								</span>
+							  </h3>
+							  
+							</div>
+						</li>
+						
+						
+						<!-- just one refresh button == for the current displayed collection -->
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="refresh the view for {{ selection }} dataset"
+							>
+							<a  href="" 
+								style=" margin-top: 5px;
+										margin-bottom: 19px;
+										margin-left: -5px;
+										height: 30px;
+										margin-right: 0px"
+								>
+								<span class="badge">
+									<span class="glyphicon glyphicon-repeat"></span>
+								</span>
+								
+							</a>
+						</li>
+						
+						{% endif %}
+						
+					</ul> <!-- end left navbar -->
+					
+					
 					
 					{% if data_JSON %}
 					
-					<li>
-						<div 	class="dropdown"
-								data-toggle="tooltip"
-								data-placement="right"
-								title="list of datasets"
-								>
-						
-						<!-- icon for dropdown -->
-						<button id="collLabels"
-								class="btn btn-default btn-link" 
-								type="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-								style=" margin-top: 8px;
-										margin-bottom: 10px;
-										height: 44px;
-										margin-right: 0px">
-								<div style="color: white">
-									<span class="glyphicon glyphicon-th-list"> </span>
-								</div>
-						</button>
-						
-							<!-- list of links to collections -->
-							<ul class="dropdown-menu" aria-labelledby="collLabels">
-							  
-								<li href="/" class="text-center" style="margin-top: 10px; margin-bottom: -5px">
-										<h5 >
-											<a href="/" style="color: black">
-												<span class="glyphicon glyphicon-home"> </span>
-												<strong>HOME</strong>
-											</a>
-										</h5>
-								</li>
-								
-								<hr>
-								
-								<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
-									<h5 style="color: black">
-										<span class="glyphicon glyphicon-th-list"> </span>
-										<strong>DATASETS</strong>
-									</h5>
-								</li>
-								
-								<hr>
-								
-								<!-- links according to the length of 'collections_names' -->
-								{% for coll in glob.collections_names %}
-								<li>
-									<a href="/{{ coll[0] }}">
-										<span class="glyphicon glyphicon-th-list"> </span> 
-										{{ coll[1] }}
-									</a>
-									<hr>
-								</li>
-								{% endfor %}
-								
-								
-								<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
-									<a 	role="button"
-										class="btn btn-md btn-link"
-										data-toggle="modal"
-										data-target="#modalHowTo"
-										style="color: black"  >
-										<span class="glyphicon glyphicon-wrench"> </span>
-										<strong>How to use {{ glob.titleApp }}</strong>
-									</a>
-								</li>
-								<br>
-									
-							</ul>
-						
-						</div>
-					</li> <!-- end of dropdown -->
-					
-					{% endif %}
-					
-					
-					
-					<!-- main buttons according to the length of 'collections_names' -->
-					<!--{% for coll in glob.collections_names %}
-					<li><a href="/{{ coll[0] }}">
-						<button type="button"
-							class="btn btn-info"
-							aria-label="Left Align"
+					<!-- search node bar -->
+					<form 	class="navbar-form navbar-left"
 							data-toggle="tooltip"
 							data-placement="bottom"
-							title="show the graph for this collection of Zotero references"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px">
-						{{ coll[1] }}
-						</button>
-					</a></li>
-					{% endfor %} -->
-					
-					
-					
-					
-
-					
-				</ul> <!-- end left navbar -->
-				
-				
-				
-				<!-- right side of the navbar -->
-				
-				<ul class="nav navbar-nav navbar-right">
-					
-					{% if data_JSON %}
-					
-					<a  href="" 
-						data-toggle="tooltip"
-						data-placement="bottom"
-						title="refresh the view for {{ selection }} dataset"
-						>
-						
-						<!-- just one refresh button == for the current displayed collection -->
-						<button  href=""
-							type="button"
-							class="btn btn-sm btn-info"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							>
-							<span class="badge">
-								<span class="glyphicon glyphicon-repeat"></span>
-							</span>
-						
-						</button>
-					</a>
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="pause the animation"
-						>
-						<!-- play/pause button -->
-						<button type="button"
-							id="play-pause"
-							class="btn btn-md btn-warning"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							> 	
-							<span class="glyphicon glyphicon-pause"></span>
-						</button>
-					</li>
-					
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="reset zoom"
-						>
-						<!-- full screen button -->
-						<button type="button"
-							class="btn btn-md btn-primary"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							onclick="resetted()"
-							> 	
-							<span class="glyphicon glyphicon-fullscreen"></span>
-						</button>
-					</li>
-					
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="hide / show all filters and infos"
-						>
-						<!-- Hide filters and infos -->
-						<button type="button"
-							id="collapseAll"
-							class="btn btn-md btn-primary"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							> 	
-							<span class="glyphicon glyphicon-resize-small"></span>
-						</button>
-					</li>
-					
-					<!--<li data-toggle="tooltip"-->
-					<!--	data-placement="bottom"-->
-					<!--	title="release all previously fixed nodes"-->
-					<!--	>						-->
-						<!--  button release all fixed nodes svg-->
-					<!--	<button type="button"-->
-					<!--		id="releaseAllNodes" -->
-					<!--		class="btn btn-md btn-primary"-->
-					<!--		style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"-->
-					<!--		onclick="releaseAllNodes()"-->
-					<!--		> 	-->
-					<!--		<span class="glyphicon glyphicon-asterisk"></span>-->
-					<!--	</button>-->
-					<!--</li>-->
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="export the graph to a .svg image "
-						>						
-						<!--  button export svg-->
-						<button type="button"
-							id="exportSVG" 
-							class="btn btn-md btn-primary"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							onclick="exportSVG()"
-							> 	
-							<span class="glyphicon glyphicon-save"></span>
-						</button>
-					</li>
-					
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="refresh the {{ selection }} dataset"
-						>
-						<!-- just one refresh button == for the current displayed collection -->
-						<button type="button"
-							class="btn btn-sm btn-warning"
-							aria-label="Left Align"
-							data-toggle="modal"
-							data-placement="bottom"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							data-target="#modalRefresh"
-							>
-								<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>
-						</button>
-					</li>
+							title="search a node, select it from the list and press ENTER"	 >
+						<div 	class="form-group"
+								style="	margin-top: 9px;
+										margin-bottom: 12px;
+										margin-right: 10px;
+										margin-left: -10px;"
+								>				
+							
+							<div 	class="input-group">
+								<input  id="search"
+										type="text"							
+										class="form-control"
+										placeholder="search..."
+										onKeyPress="handle(event)"
+										style="border: hidden; height: 30px; "
+										>
+								<span class="input-group-btn">
+									<button class="btn btn-primary"
+											type="button"
+											onclick="searchNode()"
+											style="	border-color: white;
+													background-color: white;
+													color: grey;
+													height: 30px;"
+													>
+										<span class="glyphicon glyphicon-search"
+											  style="margin-top: -10px;"
+										>
+											
+										</span>
+									</button>
+								</span>
+							</div>
+							
+						</div>
+					</form>
 					
 					{% endif %}
 					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="how to use {{ glob.titleApp }}"
-						>
-						<!-- Button 'HOW TO' triggering modal -->
-						<button type="button"
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- right side of the navbar -->
+					
+					<ul class="nav navbar-nav navbar-right">
+						
+						{% if data_JSON %}
+						
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="pause the animation"
+							>
+							<!-- play/pause button -->
+							<button type="button"
+								id="play-pause"
+								class="btn btn-md btn-warning"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								> 	
+								<span class="glyphicon glyphicon-pause"></span>
+							</button>
+						</li>
+						
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="reset zoom"
+							>
+							<!-- full screen button -->
+							<button type="button"
+								class="btn btn-md btn-primary"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								onclick="resetted()"
+								> 	
+								<span class="glyphicon glyphicon-fullscreen"></span>
+							</button>
+						</li>
+						
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="hide / show all filters and infos"
+							>
+							<!-- Hide filters and infos -->
+							<button type="button"
+								id="collapseAll"
+								class="btn btn-md btn-primary"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								> 	
+								<span class="glyphicon glyphicon-resize-small"></span>
+							</button>
+						</li>
+						
+						<!--<li data-toggle="tooltip"-->
+						<!--	data-placement="bottom"-->
+						<!--	title="release all previously fixed nodes"-->
+						<!--	>						-->
+							<!--  button release all fixed nodes svg-->
+						<!--	<button type="button"-->
+						<!--		id="releaseAllNodes" -->
+						<!--		class="btn btn-md btn-primary"-->
+						<!--		style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"-->
+						<!--		onclick="releaseAllNodes()"-->
+						<!--		> 	-->
+						<!--		<span class="glyphicon glyphicon-asterisk"></span>-->
+						<!--	</button>-->
+						<!--</li>-->
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="export the graph to a .svg image "
+							>						
+							<!--  button export svg-->
+							<button type="button"
+								id="exportSVG" 
+								class="btn btn-md btn-primary"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								onclick="exportSVG()"
+								> 	
+								<span class="glyphicon glyphicon-save"></span>
+							</button>
+						</li>
+						
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="refresh the {{ selection }} dataset"
+							>
+							<!-- just one refresh button == for the current displayed collection -->
+							<button type="button"
+								class="btn btn-sm btn-warning"
+								aria-label="Left Align"
+								data-toggle="modal"
+								data-placement="bottom"
+								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								data-target="#modalRefresh"
+								>
+									<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>
+							</button>
+						</li>
+						
+						{% endif %}
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="how to use {{ glob.titleApp }}"
+							>
+							<!-- Button 'HOW TO' triggering modal -->
+							<button type="button"
+									class="btn btn-md btn-default"
+									data-toggle="modal"
+									style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+									data-target="#modalHowTo"
+									  >
+								<span class="glyphicon glyphicon-wrench"></span>
+							</button>
+						</li>
+						
+						
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							title="about the {{ glob.titleApp }} project"
+							>
+							<!-- Button 'About' triggering modal -->
+							<button type="button"
 								class="btn btn-md btn-default"
 								data-toggle="modal"
 								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-								data-target="#modalHowTo"
-								  >
-							<span class="glyphicon glyphicon-wrench"></span>
-						</button>
-					</li>
+								data-target="#modalAbout"
+								> 
+								<span class="glyphicon glyphicon-info-sign"></span>
+							</button>
+						</li>
+						
+						
+					</ul> <!-- end right navbar -->
 					
-					
-					<li data-toggle="tooltip"
-						data-placement="bottom"
-						title="about the {{ glob.titleApp }} project"
-						>
-						<!-- Button 'About' triggering modal -->
-						<button type="button"
-							class="btn btn-md btn-default"
-							data-toggle="modal"
-							style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
-							data-target="#modalAbout"
-							> 
-							<span class="glyphicon glyphicon-info-sign"></span>
-						</button>
-					</li>
-					
-					
-				</ul> <!-- end right navbar -->
 				
+				</div>
 				
 			</div>
-	
-		</div>
-	
-	</nav>
+		
+		</nav>
 	
     </header>
 
