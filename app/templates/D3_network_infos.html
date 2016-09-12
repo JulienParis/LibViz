@@ -4,60 +4,17 @@
 
   {% block D3_infos %}
   
-      <!-- search buttons -->
+      <!-- legend + filter column -->
       <div class="col-sm-2" >
         
-        
-        <!-- button collapser --> 
-        <!--<div role="button"
-            id = "collapserFilters" 
-            data-toggle="collapse"
-            data-target="#collapsibleFilters"
-            aria-expanded="false"
-            aria-controls="collapsibleFilters"
-            >
-          
-          <h2 class="text-center" style="color: white"
-            data-toggle="tooltip"
-            data-placement="top"
-            title="show/hide filter options"
-            >
-            <span class="label label-warning">
-              {{ dataSet_name }} <span class="caret"></span>
-            </span>
-          </h2>
-          
-        </div>-->
-  
         <br>
-
-        <!-- collapsible filter -->
-        <div class="collapse in " id="collapsibleFilters" >
-          
-          <!--<input  id="search"
-                  type="text"
-                  
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="search a node, select it from the list and press ENTER"
-                  
-                  class="form-control"
-                  placeholder="search a node and press ENTER"
-                  onKeyPress="handle(event)">-->
-                
-          <!--<span class="input-group-btn">-->
-          <!--  <button class="btn btn-default"-->
-          <!--          type="button"-->
-          <!--          onclick="searchNode()"-->
-          <!--          data-toggle="tooltip"-->
-          <!--          data-placement="right"-->
-          <!--          title="search a node in the dataset"-->
-          <!--          >-->
-          <!--  Go!-->
-          <!--  </button>-->
-          <!--</span>-->
-        <!--</div><!-- /input-group -->-->
         
+        <!-- collapsible div -->
+        <div class="collapse in " id="collapsibleFilters" >
+        
+        
+        
+          <!-- LEGEND -->
           <div class="list-group">
             <h4>LEGEND</h4>
             <div id="legend" class="legend">
@@ -65,9 +22,9 @@
             </div>
           </div>
           
-          <!--<hr></hr>-->
           
           <br>
+          
           
           <!-- FILTERS BREAKING EDGES -->
           <div class="list-group">
@@ -75,7 +32,7 @@
             <h4>FILTERS</h4>
             
             <h5 style="color: white">break links</h5>
-
+              
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default btn-sm breakFilter"
                       id="ref-tag"
@@ -96,11 +53,12 @@
               </button>              
           </div>
           
+          
+          
           <!-- FILTERS SHOW / HIDE NODES -->
           <div class="list-group">
             <h5 style="color: white">show or hide categories </h5>
-
-              <!-- {{ glob.ns.category }}(-ies) -->
+            
             
             <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                     class="btn btn-default btn-sm hideFilter"
@@ -127,7 +85,6 @@
           
           <div class="list-group">
             <h5 style="color: white">show or hide {{ glob.ns.group }}(s) </h5>
-            <!--  {{ glob.ns.group }}(s)-->
             
             {% for gr in groups %}
             
@@ -147,9 +104,6 @@
           
             <div class="list-group">
               <h5 style="color: white">show or hide super-{{ glob.ns.tags }}(s) </h5>
-              <!--<label class="text-center list-group-item active" >-->
-              <!--  super-{{ glob.ns.tags }}(s)-->
-              <!--</label>-->
               
               {% for stag in supertags %}
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
@@ -170,7 +124,7 @@
    
    
    
-    <!-- space to display contextual node infos  -->  
+    <!-- NODE INFOS on different column -->  
     <div id="infoNode" class="col-sm-3 col-sm-offset-7">
       
         <div class="infosNode list-group" style="opacity: 0">

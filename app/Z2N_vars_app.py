@@ -2,7 +2,7 @@
 
 ### local static dir name
 ### NOT WORKING WELL YET
-static_dir  = '/static'        ### for local dev
+static_dir  = '/static'          ### for local dev
 #static_dir  = '/flask_static'   ### for server on artlabo.org
 
 ### index root for http://artlabo.org/
