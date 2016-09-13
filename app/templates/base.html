@@ -401,14 +401,14 @@
 						</li>
 						
 						
-						<!-- release all nodes ///////////////////////////////////// -->
+						<!-- release all nodes -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
-							title="release all fixed nodes - NOT WORKING YET"
+							title="release all fixed nodes"
 							>
 							<button type="button"
 								id="releaseAllNodes"
-								class="btn btn-md btn-danger"
+								class="btn btn-md btn-primary"
 								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 								onclick="releaseAllNodes()"
 								> 	
@@ -487,7 +487,6 @@
 						
 					</ul> <!-- end right navbar -->
 					
-				
 				
 				</div><!-- end of collapse navbar-collapse -->
 				
@@ -660,13 +659,19 @@
 							<span class="glyphicon glyphicon-move"></span>
 						</span>
 						<strong><em>Pan the graph</em></strong>
-						<p> left-click and hold to move your graph. If the graph goes out reset the zoom. </p>
+						<p> click and hold to move your graph. If the graph goes out reset the zoom. </p>
 					</h5>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-fullscreen"></span>
 						</span>
 						<strong><em>Reset the zoom</em></strong>
 						<p> reset the zoom to its original position </p>
+					</h5>
+					<h5><span class="badge">
+							<span class="glyphicon glyphicon-asterisk"></span>
+						</span>
+						<strong><em>Release all nodes</em></strong>
+						<p> release all the pinned nodes </p>
 					</h5>
 					
 				  <hr></hr>
@@ -781,9 +786,11 @@
 					
 						Developped for
 						<a color="black" target="_blank" href="http://www.pingbase.net/">PING</a>
+						and 
+						<a color="black" target="_blank" href="http://www.artlabo.org/">ARTLABO</a>
 						by
 						<a color="black" target="_blank" href="https://github.com/JulienParis">Julien P.</a>
-						 (2016) &nbsp; 
+						 - 2016 &nbsp; 
 						<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
 							<img 	alt="Creative Commons License"
 									style="border-width:0; margin-top: -3px; opacity: 1.0"

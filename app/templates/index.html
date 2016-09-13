@@ -19,20 +19,20 @@
 		
 		<hr></hr>
 		
-		<h4 class="text-center"> {{ glob.subtitleApp }} </h3>
+		<!--<h4 class="text-center"> {{ glob.subtitleApp }} </h4>-->
+		<h6 class="text-center lead" style="color:white;"> Make graphs you can play with </h6>
 		<!--<h4>-->
 		<!--	fetch a Zotero library and connect references by their tags, their groups or folders, and their connex references...-->
 		<!--	and make a graph-->
 		<!--</h4>-->
 		
+		<hr></hr>
 		
 		<!-- to display : images/href to datavisualizations -->
 		<div class="list-group">
 			
-			<hr></hr>
-
 			<p class="text-center">
-				select a Zotero dataset 
+				select a dataset 
 			</p>
 			
 			{% for set in glob.collections_names %}
@@ -44,7 +44,10 @@
 				</a>
 			{% endfor %}
 			
-		</div>
+			
+		</div>		
+		
+		
     </div>
 
 {% endblock %}

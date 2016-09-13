@@ -115,11 +115,13 @@
     var node_normal_drag = d3.drag()
       .on("start", dragstarted)
       .on("drag" , dragged    )
-      .on("end"  , dragended  ) ;
+      .on("end"  , dragended  )
+      ;
       
       function dragstarted(d) {
           //console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+          d3.select(this).classed("fixed", d.fixed = true);
           d.fx = d.x;
           d.fy = d.y;
       }
@@ -131,7 +133,7 @@
       
       function dragended(d) {
           if (!d3.event.active) simulation.alphaTarget(0);
-          if (d.fixed = true) {
+          if (d.fixed == true) {
             d.fx = d3.event.x;
             d.fy = d3.event.y;
           } else {
@@ -424,7 +426,7 @@
           .style("fill", function (d) { return d.{{glob.ns.color}} ; }) //return color(d.{{glob.ns.type}})
           .attr("stroke-width"    , dft_circle_stroke_w )
           .attr("class"   , "node")
-          .attr("fixed"   , "false")
+          //.attr("fixed"   , "false")
           //.attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
           //.attr("id"      , function(d) { return ( d.{{glob.ns.id}}       ) })
           //.attr("group"   , function(d) { return ( d.{{glob.ns.group}}    ) })
@@ -491,7 +493,7 @@
       function connectedNodes() {
         
         if (toggle == 0) {
-            
+          
           //Reduce the opacity of all but the neighbouring nodes
           d = d3.select(this).node().__data__; 
           //console.log("d :", d3.select(this).node().__data__ ); // OK
@@ -500,13 +502,11 @@
 
           N.attr("stroke-width",
             function (o) { return neighboring(d, o) | neighboring(o, d) ? "2px" : "0px"; } );
-          
           N.style("opacity", 
             function (o) { return neighboring(d, o) | neighboring(o, d) ? 1 : 0.4; } );
           
           L.style("opacity",
             function (o) { return d.index == o.source.index | d.index == o.target.index ? 1 : 0.4; } ); 
-
           L.attr("stroke-width",
             function (o) { return d.index == o.source.index | d.index == o.target.index ? "2px" : "0.3px"; } ); 
           
@@ -555,8 +555,10 @@
       //find the node
       var selectedVal = document.getElementById('search').value;
       var node = vis.selectAll(".node");
+      
       if (selectedVal == "none") {
-        node.style("stroke", "white").style("stroke-width", "10");
+        node.style("stroke", "white")
+        .style("stroke-width", "10");
       }
       else {
         var selected = node.filter(function (d, i) {
@@ -566,6 +568,7 @@
         
         var link = vis.selectAll(".links")
         link.style("opacity", "0.1");
+        
         d3.selectAll(".node, .links")
           .transition()
           .duration(4500)
@@ -580,69 +583,69 @@
     }
 
 
+
+    ////////////////////////////////////////////////////////////////////////////////
+
     // pin down nodes 
     // inspired from : https://github.com/d3/d3-force/issues/35
+    // sticky force http://bl.ocks.org/mbostock/3750558
     function pinNode(d) {
       
-      console.log("pinning / d :", d);
-      console.log("pinning / d.fixed :", d.fixed);
+      //console.log("pinning / d :", d);
+      //console.log("pinning / d.fixed :", d.fixed);
       
-      if (d.fixed = false) {
-        d.fixed = true; 
-        d.fx = d3.event.x ;
-        d.fy = d3.event.y ;
+      if (d.fixed == true) {
+        d.fixed = false; 
+        d.fx = null ;
+        d.fy = null ;
         
       } else {
-        d.fixed = false; 
-        d.fx = null;
-        d.fy = null;
+        //d3.select(this).classed("fixed", d.fixed = true);
+        d.fixed == true; 
+        d.fx = d3.event.x;
+        d.fy = d3.event.x;
       }
       
     }
     
     
-    
-    ////////////////////////////////////////////////////////////////////////////////
-    // release all previously fixed nodes /// NOT WORKING YET ///////////////////////
+    // release all previously fixed nodes ///////////////////////
     function releaseAllNodes() {
       
-      console.log("release all nodes");
+      //console.log("release all nodes");
+      //console.log(nodes_);
       
-      //simulation.alphaTarget(0).stop();
+      var N = d3.selectAll(".node").filter(function (d, i) {
+            return d.fixed == true;
+      });
+
+      //console.log(N);
+
+      N.each( function(d,i) { return d.fixed = false } );
+      N.each( function(d,i) { return d.fx = null } );
+      N.each( function(d,i) { return d.fy = null } );
       
-      // change attribute value
-      var nodes_ = nodes_g.selectAll(".node");
-      console.log(nodes_);
-      
-      ////////// not working HERE  ////////////////////////////////////
-      for (var i = 0; i <= nodes_.length - 1; i++) { 
-        var n = nodes_[i].node().__data__;
-        n.attr("fixed", "false")
-          .attr("fx", "null")
-          .attr("fy", "null");
-      }
-      ;
-      
-      //nodes_.exit();
       
       // restart animation
-      //simulation.alphaTarget(0.3).restart();
+      simulation.alphaTarget(0.3).restart();
     }
-    
-    
     
     
     
     // display node infos in div #nodeInfos 
     function displayInfos() {
       
-      
       n = d3.select(this).node().__data__;
-      //console.log("node DATAS :", n);
+      console.log("node DATAS :", n);
+      
+      ////// PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY IT
+      //n_ = d3.select(this).classed("fixed", d.fixed = true);
+      //console.log("node DATAS_ :", n_);
       
       // call function to pin nodes
       pinNode(n);
       
+      // display 
       divInfos = d3.select('.infosNode');
       divInfos.transition()		
         .duration(200)		
