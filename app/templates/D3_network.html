@@ -5,7 +5,6 @@
 
 {% block D3_js %}
 
- 
   
   <!-- only JS scripts here / can be put in specific file in ./static/js later ? -->
   <!-- script D3.JS  -->
@@ -14,6 +13,8 @@
   <!-- call global d3.js library here -->
   <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
   
+  
+  <!-- main d3.js function for {{ glob.titleApp }}  -->
   <script>
       
     // find width and height of parent html elements
@@ -104,14 +105,11 @@
       zoomCanvas.transition()
           .duration(750)
           .call(zoom.transform, d3.zoomIdentity);
-      //nodes_g.transition()
-      //    .duration(750)
-      //    .call(zoom.transform, d3.zoomIdentity);
     }
   
 
 
-    // normal drag function /////////////////////////////////////////
+    // drag/pin function /////////////////////////////////////////
     var node_normal_drag = d3.drag()
       .on("start", dragstarted)
       .on("drag" , dragged    )
@@ -348,15 +346,7 @@
     // main D3 function
     function render (nodes, links) {
       
-      //d3.select(window)
-      //  .on("resize", function() {
-      //    var targetWidth = vis.node().getBoundingClientRect().width;
-      //    var targetHeight = vis.node().getBoundingClientRect().height;
-      //    vis.attr("width", targetWidth - 15);
-      //    vis.attr("height", targetHeight - 15);
-      //  });
-      
-      simulation.alphaTarget(0.25).restart() ;
+      //simulation.alphaTarget(0.25).restart() ;
       
       // launch force
       simulation
@@ -402,10 +392,7 @@
       var node = nodes_g.selectAll(".node").data(nodes);
       
       // create lines for links
-      //var link = vis.append("g")
-      //  .attr("class", "links")
-      //  .selectAll("line")
-      //  .data(links).enter()
+
       link.enter()
           .append("line")
           .attr("class", "link")
@@ -415,11 +402,6 @@
       link.exit().remove();
       
       
-      // create node group for nodes
-      //var node = vis.append("g")
-      //  .attr("class", "nodes")
-      //  .selectAll(".node")
-      //  .data(nodes)
       node.enter() 
           .append("circle")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
@@ -433,18 +415,15 @@
           //.attr("category", function(d) { return ( d.{{glob.ns.category}} ) })
           //.attr("url"     , function(d) { return ( d.{{glob.ns.url}}      ) })
           //.attr("type"    , function(d) { return ( d.{{glob.ns.type}}     ) })
-          //.attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) }) /////////// ????? 
+          //.attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) })
           
           
           // normal drag function
           .call(node_normal_drag)
-          //.call(node_pindrag) /// trying pinning down node
-          //.on('dblclick', releasenode_)
           .on('click'      , displayInfos )    // display node infos inside right column
-          //.on('contextmenu', pinNode)
           .on('dblclick'   , connectedNodes ) //("over") ) //Added code ... .on('click'
           
-          //alternative
+          //alternative to show connections
           //.on('mouseover', connectedNodes) //("over") ) //Added code ... .on('click'
           //.on('mouseout',  connectedNodes) //("out") )
           
@@ -480,6 +459,7 @@
       links.forEach(function (e) {
         //console.log(e);
         linkedByID[e.source.{{glob.ns.id}} + "," + e.target.{{glob.ns.id}}] = 1; });
+      
       //console.log(linkedByID); //////////////////////////////////
       
       //This function looks up whether a pair are neighbours
@@ -638,7 +618,7 @@
       n = d3.select(this).node().__data__;
       console.log("node DATAS :", n);
       
-      ////// PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY IT
+      ////// PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY __DATA__
       //n_ = d3.select(this).classed("fixed", d.fixed = true);
       //console.log("node DATAS_ :", n_);
       
@@ -651,18 +631,18 @@
         .duration(200)		
         .style("opacity", 1.0);	
       d3.select('#nCategory').text(n.category);
-      d3.select('#nGroup').text(n.group);
-      d3.select('#nLabel').text(n.label);
-      d3.select('#nType').text(n.type);
+      d3.select('#nGroup').text(n.group); // need to be blank if none ////////
+      d3.select('#nLabel').text(n.label); 
+      d3.select('#nType').text(n.type); // need to be blank if none ////////
       d3.select('#nUrl')
         .attr("href", n.url)
         .attr("target", "_blank")
-        .text(n.url);
+        .text("Go to reference if any..."); // need to be blank if none ////////
       
       //console.log("d :"    , d);
       //console.log("tags :" , d.tag);
       
-      d3.select('#nTags').text(n.tag);      
+      d3.select('#nTags').text(n.tag); // need to be blank if none // + function to tags to create //
 
     }
   
@@ -670,10 +650,10 @@
     // export SVG file //////////////////////////////////////
     // from : http://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
     function exportSVG() {
-      var svgData = $("#svgLayout")[0].outerHTML;
-      var svgBlob = new Blob([svgData], {type:"image/svg+xml;charset=utf-8"});
-      var svgUrl = URL.createObjectURL(svgBlob);
-      var downloadLink = document.createElement("a");
+      var svgData       = $("#svgLayout")[0].outerHTML;
+      var svgBlob       = new Blob([svgData], {type:"image/svg+xml;charset=utf-8"});
+      var svgUrl        = URL.createObjectURL(svgBlob);
+      var downloadLink  = document.createElement("a");
       downloadLink.href = svgUrl;
       downloadLink.download = "{{ dataSet_name }} network - {{ glob.titleApp }}.svg";
       document.body.appendChild(downloadLink);
