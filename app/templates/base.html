@@ -40,7 +40,7 @@
 			}
 			
 			.navbar {
-				background-color: rgba(255, 255, 255, 0);
+				background-color: rgba(0, 0, 0, 0.4);
 				border: hidden;
 				margin-bottom: 5px;
 				z-index: 1;
@@ -118,7 +118,13 @@
 			  border-bottom-color: grey;
 			}
 			
-
+			.btn-navbar {
+				margin-top: 16px;
+				margin-bottom: 5px;
+				height: 30px;
+				margin-left: 5px;
+				margin-right: 0px;
+			}
   
 		</style>
 	
@@ -231,7 +237,7 @@
 											data-target="#modalHowTo"
 											style="color: black"  >
 											<span class="glyphicon glyphicon-wrench"> </span>
-											<strong>How to use {{ glob.titleApp }}</strong>
+											<strong>HOW TO USE {{ glob.titleApp }}</strong>
 										</a>
 									</li>
 									<br>
@@ -244,7 +250,7 @@
 						
 						
 						
-						<!-- dataset name -->
+						<!-- BUTTON DATASET NAME -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="show/hide filter options"
@@ -272,24 +278,41 @@
 						</li>
 						
 						
-						<!-- just one refresh button == for the current displayed collection -->
+						
+						<!-- button INFOS on dataset  -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
-							title="refresh the view for {{ selection }} dataset"
+							title="infos on {{ dataSet_name }}"
 							>
-							<a  href="" 
-								style=" margin-top: 5px;
-										margin-bottom: 19px;
-										margin-left: -5px;
-										height: 30px;
-										margin-right: 0px"
-								>
-								<span class="badge">
-									<span class="glyphicon glyphicon-repeat"></span>
-								</span>
-								
-							</a>
+							<button type="button"
+									class="btn btn-md btn-default btn-navbar"
+									data-toggle="modal"
+									data-target="#modalInfos"
+									  >
+								<span class="glyphicon glyphicon-info-sign"></span>
+							</button>
 						</li>
+						
+						
+						
+						
+						<!-- REFRESH PAGE == for the current displayed collection -->
+						<li data-toggle="tooltip"
+							data-placement="bottom"
+							id={{ dataSet_url }}
+							title="refresh the view for {{ dataSet_name }}" 
+							onclick="refreshPage(this.id)"
+							>
+							<button type="button"
+									id = "refresh_page"
+									class="btn btn-md btn-default btn-navbar"
+									  >
+								<span class="glyphicon glyphicon-repeat"></span>
+							</button>
+						</li>
+						
+						
+						
 						
 						{% endif %}
 						
@@ -356,15 +379,14 @@
 						{% if data_JSON %}
 						
 						
-						<!-- play/pause button -->
+						<!-- PLAY/PAUSE button -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="pause the animation"
 							>
 							<button type="button"
 								id="play-pause"
-								class="btn btn-md btn-warning"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								class="btn btn-md btn-warning btn-navbar"
 								> 	
 								<span class="glyphicon glyphicon-pause"></span>
 							</button>
@@ -377,8 +399,7 @@
 							title="reset zoom"
 							>
 							<button type="button"
-								class="btn btn-md btn-primary"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								class="btn btn-md btn-default btn-navbar"
 								onclick="resetted()"
 								> 	
 								<span class="glyphicon glyphicon-fullscreen"></span>
@@ -393,23 +414,21 @@
 							>
 							<button type="button"
 								id="collapseAll"
-								class="btn btn-md btn-primary"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								class="btn btn-md btn-default btn-navbar"
 								> 	
 								<span class="glyphicon glyphicon-resize-small"></span>
 							</button>
 						</li>
 						
 						
-						<!-- release all nodes -->
+						<!-- RELEASE all nodes -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="release all fixed nodes"
 							>
 							<button type="button"
 								id="releaseAllNodes"
-								class="btn btn-md btn-primary"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								class="btn btn-md btn-default btn-navbar"
 								onclick="releaseAllNodes()"
 								> 	
 								<span class="glyphicon glyphicon-asterisk"></span>
@@ -417,15 +436,14 @@
 						</li>						
 						
 						
-						<!--  button export svg-->
+						<!--  button EXPORT SVG -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="export the graph to a .svg image "
 							>						
 							<button type="button"
 								id="exportSVG" 
-								class="btn btn-md btn-primary"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
+								class="btn btn-md btn-default btn-navbar"
 								onclick="exportSVG()"
 								> 	
 								<span class="glyphicon glyphicon-save"></span>
@@ -433,17 +451,16 @@
 						</li>
 						
 						
-						<!-- recreate dataset / python script -->
+						<!-- REBUILD dataset / python script -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="refresh the {{ selection }} dataset"
 							>
 							<button type="button"
-								class="btn btn-sm btn-warning"
+								class="btn btn-sm btn-warning btn-navbar"
 								aria-label="Left Align"
 								data-toggle="modal"
 								data-placement="bottom"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 								data-target="#modalRefresh"
 								>
 									<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>
@@ -459,9 +476,8 @@
 							title="how to use {{ glob.titleApp }}"
 							>
 							<button type="button"
-									class="btn btn-md btn-default"
+									class="btn btn-md btn-default btn-navbar"
 									data-toggle="modal"
-									style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 									data-target="#modalHowTo"
 									  >
 								<span class="glyphicon glyphicon-wrench"></span>
@@ -475,9 +491,8 @@
 							title="about the {{ glob.titleApp }} project"
 							>
 							<button type="button"
-								class="btn btn-md btn-default"
+								class="btn btn-md btn-default btn-navbar"
 								data-toggle="modal"
-								style="margin-top: 10px; margin-bottom: 10px; height: 44px; margin-right: 10px"
 								data-target="#modalAbout"
 								> 
 								<span class="glyphicon glyphicon-info-sign"></span>
@@ -513,7 +528,7 @@
 	
 		<!-- MODALS --------------------------------------------------------------------- -->
 		
-		<!-- Modal About -->
+		<!-- Modal About {{ glob.titleApp }} -->
 		<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -522,7 +537,7 @@
 				  <h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
 				  <h6 class="text-center" style="margin-top: 0px;"> Making graphs you can play with from Zotero libraries...</h6>
 				</div>
-		  
+				
 				<div class="modal-body">
 				  
 				  <h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
@@ -598,10 +613,12 @@
 		  </div>
 		</div><!-- end modal about -->
 		
+		
+		
 		<!-- Modal How to -->
 		<div class="modal fade" id="modalHowTo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog" role="document">
-			<div class="modal-content">
+		  <div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content modal-sm">
 				<div class="modal-header">
 				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				  <h3 class="modal-title text-center" id="myModalLabel">How to use {{ glob.titleApp }} </h3>
@@ -612,10 +629,11 @@
 				  <h4 class="text-center"><span class="label label-primary">
 				  Node infos and neighbours
 				  </span></h4>
+				  <br>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-menu-right"></span>
 						</span>
-						<strong><em>Simple click on a node : show infos or/and release the node</em></strong>
+						<em>Simple click on a node : show infos or/and release the node</em>
 						<!--<p> Select a node and show its infos in the panel on the right side of the window.-->
 						<!--	You can drag your node wherever you want, it will be fixed once you've finished.-->
 						<!--	If you want to free the node, click on it again.</p>-->
@@ -623,7 +641,7 @@
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
 						</span>
-						<strong><em>Double click on a node : show neighbours</em></strong>
+						<em>Double click on a node : show neighbours</em>
 						<!--<p> select/unselect a node and show its neighbours while hiding the others</p>-->
 					</h5>
 					<h5><span class="badge">
@@ -632,7 +650,7 @@
 						<span class="badge">
 							<span class="glyphicon glyphicon-resize-full"></span>
 						</span>
-						<strong><em>Hide or show all filters and infos</em></strong>
+						<em>Hide or show all filters and infos</em>
 						<!--<p> click to expand or retract the filters and the node infos windows</p>-->
 					</h5>
 				  <hr></hr>
@@ -640,37 +658,38 @@
 				  <h4 class="text-center"><span class="label label-primary">
 				  Animation, zoom and pan graph
 				  </span></h4>
-					<h5><span class="badge">
+				  <br>
+				  <h5><span class="badge">
 							<span class="glyphicon glyphicon-play"></span>
 						</span>
 						<span class="badge">
 							<span class="glyphicon glyphicon-pause"></span>
 						</span>
-						<strong><em>Play / pause the animation</em></strong>
+						<em>Play / pause the animation</em>
 						<!--<p> click to pause or resume the animation</p>-->
 					</h5>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-search"></span>
 						</span>
-						<strong><em>Zoom in the graph</em></strong>
+						<em>Zoom in the graph</em>
 						<!--<p> use your mouse wheel to zoom / dezoom on the graph</p>-->
 					</h5>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-move"></span>
 						</span>
-						<strong><em>Pan the graph</em></strong>
+						<em>Pan the graph</em>
 						<!--<p> click and hold to move your graph. If the graph goes out reset the zoom. </p>-->
 					</h5>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-fullscreen"></span>
 						</span>
-						<strong><em>Reset the zoom</em></strong>
+						<em>Reset the zoom</em>
 						<!--<p> reset the zoom to its original position </p>-->
 					</h5>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-asterisk"></span>
 						</span>
-						<strong><em>Release all pinned nodes</em></strong>
+						<em>Release all pinned nodes</em>
 						<!--<p> release all the pinned nodes </p>-->
 					</h5>
 					
@@ -679,22 +698,23 @@
 				  <h4 class="text-center"><span class="label label-primary">
 				  Filters
 				  </span></h4>
+				  <br>
 					<h5><span class="badge">
 							ref-group
 						</span>
-						<strong><em>Break links between nodes</em></strong>
+						<em>Break links between nodes</em>
 						<!--<p> check/uncheck the family of links you want to break/relink</p>-->
 					</h5>
 					<h5><span class="badge">
 							groups
 						</span>
-						<strong><em>Show/hide nodes by categories</em></strong>
+						<em>Show/hide nodes by categories</em>
 						<!--<p> check/uncheck the categories of nodes you want to show/hide</p>-->
 					</h5>
 					<h5><span class="badge">
 							name of a specific group
 						</span>
-						<strong><em>Show/hide nodes by groups or tags </em></strong>
+						<em>Show/hide nodes by groups or tags </em>
 						<!--<p> check/uncheck the groups of nodes you want to show/hide</p>-->
 					</h5> 
 				
@@ -703,16 +723,17 @@
 				  <h4 class="text-center"><span class="label label-primary">
 				  Refresh and reload
 				  </span></h4>
+				  <br>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-repeat"></span>
 						</span>
-						<strong><em>Refresh the view</em></strong>
+						<em>Refresh the view</em>
 						<!--<p> refresh the view by reloading the page but not reconstructing the dataset</p>-->
 					</h5>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-refresh"></span>
 						</span>
-						<strong><em>Reload dataset from Zotero</em></strong>
+						<em>Reload dataset from Zotero</em>
 						<!--<p> Reconstruct completely the dataset from Zotero (please wait for the script to finish)</p>-->
 					</h5>
 	
@@ -726,13 +747,15 @@
 		
 		{% if data_JSON %}
 		
-		<!-- Modal refresh -->
+		
+		<!-- Modal infos dataset -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
-			 id="modalRefresh"
+			 id="modalInfos"
 			 tabindex="-1"
 			 role="dialog"
-			 aria-labelledby="myModalLabel" >
+			 aria-labelledby="myModalLabel"
+			 >
 			<div class="modal-dialog modal-md" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -740,7 +763,71 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 						<h3 class="modal-title text-center" id="myModalLabel">
-							About refreshing (rebuild) datasets
+							{{ dataSet_name }}
+						</h3>
+					</div>
+					
+					<div class="modal-body">
+						
+						<h4 class="text-center"><span class="label label-default">
+						Presentation
+						</span></h4>
+						  <h5>
+							 {{ dataSet_infos.presentation }} 
+						  </h5>
+						
+						<hr>
+							
+						<h4 class="text-center"><span class="label label-default">
+						Methodology 
+						</span></h4>
+						  <h5>
+							 {{ dataSet_infos.methodology }} 
+						  </h5>
+						  
+						<hr>
+							
+						<h4 class="text-center"><span class="label label-default">
+						Authors
+						</span></h4>
+						  <h5>
+							 {{ dataSet_infos.authors }} 
+						  </h5>
+						
+						<hr>
+							
+						<h4 class="text-center"><span class="label label-default">
+						Credits
+						</span></h4>
+						  <h5>
+							 {{ dataSet_infos.credits }} 
+						  </h5>
+						
+					</div>
+					
+					
+				</div>
+			</div>
+		</div> <!-- end modal infos dataset -->
+		
+		
+		
+		<!-- Modal refresh -->
+		<div class="modal fade bs-example-modal-md"
+			 tabindex="-1"
+			 id="modalRefresh"
+			 tabindex="-1"
+			 role="dialog"
+			 aria-labelledby="myModalLabel"
+			 >
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="modal-title text-center" id="myModalLabel">
+							Warning about refreshing (rebuild) datasets
 						</h3>
 					</div>
 					
@@ -751,8 +838,8 @@
 							gets the diffents JSONs datas, generates the new nodes/links datas... and then displays the datas in a network graph.
 						</p>
 
-						<p class="text-justify lead">
-							So it may take some time to do it properly.
+						<p class="text-center lead">
+							<strong>So it may take some time to do it properly.</strong>
 						</p>
 						
 						<p class="text-justify lead">
@@ -760,18 +847,85 @@
 							please wait a few seconds for the page to completely finish to load...
 						</p>
 						
+						<button type="button"
+							id="/refresh/{{ selection }}"
+							class="btn btn-lg btn-warning btn-block"
+							data-dismiss="modal"
+							aria-label="Close"
+							data-toggle="modal"
+							data-target="#modalLoading"
+							onclick="rebuildDataset(this.id)"
+							>
+							
+							<span class="badge">
+								<span class="glyphicon glyphicon-refresh"></span>
+							</span>
+							
+							<strong>REBUILD {{ selection }} DATASET</strong>
+
+							<span class="badge">
+								<span class="glyphicon glyphicon-refresh"></span>
+							</span>
+							
+						</button>
+						
+						
+							
 					</div>
 					
-					<a href="/refresh/{{ selection }}">
+					<!--<a href="/refresh/{{ selection }}">
 						<button type="button" class="btn btn-lg btn-block btn-warning">
 							<span class="glyphicon glyphicon-refresh spinning"></span>
 							Understood! Let's refresh "{{ selection }}" !
 						</button>
-					</a>
+					</a>-->
 					
 				</div>
 			</div>
 		</div> <!-- end modal refresh -->
+		
+		
+		<div class="modal fade bs-example-modal-md"
+			 tabindex="-1"
+			 id="modalLoading"
+			 tabindex="-1"
+			 role="dialog"
+			 aria-labelledby="myModalLabel"
+			 >
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+				<!-- <div class="modal-header">
+						<h3 class="modal-title text-center" id="myModalLabel">
+							LOADING PAGE... PLEASE WAIT
+						</h3>
+					</div>-->
+					
+					<div class="modal-header">
+						
+						<p class="lead text-center">
+							
+							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
+							<em>Please wait while rebuilding {{ selection }} dataset... </em>
+							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
+						</p>
+						
+						<div class="progress">
+							<div class="progress-bar progress-bar-warning progress-bar-striped active"
+								 role="progressbar"
+								 aria-valuenow="100"
+								 aria-valuemin="0"
+								 aria-valuemax="100"
+								 style="width: 100%">
+							  <!--<span class="sr-only"></span>-->
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div> <!-- end modal refresh -->
+		
 		
 		{% endif %}
 		
@@ -815,7 +969,7 @@
 		// activate bootstrap dropdown
 		$(document).ready(
 			function(){ $(".dropdown-toggle").dropdown() }) ;
-		
+	
 
 		// full screen function to collapse all infos and filter
 		// from : http://jsfiddle.net/KyleMit/f8ypa/
@@ -827,16 +981,16 @@
 				if (active) {
 					active = false;
 					$('#collapsibleFilters').collapse('show');
-					$('#collapsibleInfos').collapse('show');
+					$('#collapsibleInfosCol').collapse('show');
 					$('#collapserFilters').attr('data-toggle', '');
-					$('#collapserFilters').attr('data-toggle', '');
+					$('#collapserInfosCol').attr('data-toggle', '');
 					$(this).html('<span class="glyphicon glyphicon-resize-small"></span>');
 				} else {
 					active = true;
 					$('#collapsibleFilters').collapse('hide');
-					$('#collapsibleInfos').collapse('hide');
+					$('#collapsibleInfosCol').collapse('hide');
 					$('#collapserFilters').attr('data-toggle', 'collapse');
-					$('#collapserInfos').attr('data-toggle', 'collapse');
+					$('#collapserInfosCol').attr('data-toggle', 'collapse');
 					$(this).html('<span class="glyphicon glyphicon-resize-full"></span>');
 				}
 			});
@@ -847,6 +1001,19 @@
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});
+		
+	
+		// refresh view
+		function refreshPage (href){
+			console.log(href);
+			window.location = href ;
+		};
+	
+		// rebuild dataset
+		function rebuildDataset (href){
+			console.log(href);
+			window.location = href ;
+		};
 		
     </script>
     

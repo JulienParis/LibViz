@@ -4823,7 +4823,7 @@
         "ref_R2CJAPG9",
         "ref_KWCZEPB3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4842,9 +4842,9 @@
     {
       "ID": "ref_ZRGXS2AU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#b8d39a",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4866,7 +4866,7 @@
         "ref_R2C4XPZ6",
         "ref_D2F3EV45"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4888,7 +4888,7 @@
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4911,7 +4911,7 @@
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4933,7 +4933,7 @@
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4955,7 +4955,7 @@
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4977,7 +4977,7 @@
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -4999,7 +4999,7 @@
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -5018,9 +5018,9 @@
     {
       "ID": "ref_SA9KIXZR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#b8d39a",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -5040,7 +5040,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -5060,7 +5060,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "antagonistic organisations"
@@ -5076,9 +5076,9 @@
     {
       "ID": "ref_MCTWXRVB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5094,9 +5094,9 @@
     {
       "ID": "ref_VD2FQ9N7",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5116,7 +5116,7 @@
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5132,11 +5132,11 @@
     {
       "ID": "ref_UKVJBHFK",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_KRKZMBVN"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5157,7 +5157,7 @@
         "ref_4QTKV4F3",
         "ref_5XMDQ4DB"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5182,7 +5182,7 @@
         "ref_29KDURAI",
         "ref_R2CJAPG9"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5214,7 +5214,7 @@
         "ref_29KDURAI",
         "ref_GKZF99UV"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5232,11 +5232,11 @@
     {
       "ID": "ref_98Z7TCVD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_4QTKV4F3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5254,12 +5254,12 @@
     {
       "ID": "ref_M5QEJF28",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_EKP8WW36",
         "ref_WQE98M5C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5275,11 +5275,11 @@
     {
       "ID": "ref_2AESEHNM",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5295,11 +5295,11 @@
     {
       "ID": "ref_IPQA558U",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5315,11 +5315,11 @@
     {
       "ID": "ref_FRXS4W6P",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5335,11 +5335,11 @@
     {
       "ID": "ref_NRT5AEZ3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#61835a",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5372,7 +5372,7 @@
         "ref_V34SNSTA",
         "ref_FXWCGUE5"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5395,7 +5395,7 @@
         "ref_2SJJ2VPQ",
         "ref_WQE98M5C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5418,7 +5418,7 @@
         "ref_2SJJ2VPQ",
         "ref_WQE98M5C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5438,7 +5438,7 @@
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5460,7 +5460,7 @@
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5482,7 +5482,7 @@
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5506,7 +5506,7 @@
         "ref_DPB3QX84",
         "ref_WQE98M5C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5526,7 +5526,7 @@
       "connex": [
         "ref_PJXWJ4C7"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects",
@@ -5549,7 +5549,7 @@
       "connex": [
         "ref_XEPKQQJ6"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5572,7 +5572,7 @@
         "ref_693CMK6S",
         "ref_D2F3EV45"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5596,7 +5596,7 @@
         "ref_ECED5A2P",
         "ref_V96FMVV8"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5618,7 +5618,7 @@
       "connex": [
         "ref_EH78XNAN"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5638,7 +5638,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5658,7 +5658,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5678,7 +5678,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5698,7 +5698,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5718,7 +5718,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5738,7 +5738,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5758,7 +5758,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5778,7 +5778,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5798,7 +5798,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "controversial organisations"
@@ -5818,7 +5818,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles",
@@ -5843,7 +5843,7 @@
         "ref_Z2II5B9C",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals"
@@ -5867,7 +5867,7 @@
         "ref_4QTKV4F3",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals",
@@ -5891,7 +5891,7 @@
         "ref_4QTKV4F3",
         "ref_WQE98M5C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals"
@@ -5914,7 +5914,7 @@
         "ref_WQE98M5C",
         "ref_4QTKV4F3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals"
@@ -5937,7 +5937,7 @@
         "ref_Z2II5B9C",
         "ref_IUXJINVH"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals",
@@ -5963,7 +5963,7 @@
         "ref_D2F3EV45",
         "ref_HC8GACUB"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals"
@@ -5987,7 +5987,7 @@
         "ref_R2C4XPZ6",
         "ref_HC8GACUB"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals"
@@ -6007,7 +6007,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6023,12 +6023,12 @@
     {
       "ID": "ref_KRKZMBVN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#608b32",
       "connex": [
         "ref_UKVJBHFK",
         "ref_NUU5PF9G"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6052,7 +6052,7 @@
         "ref_VMQ2292C",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6074,7 +6074,7 @@
       "connex": [
         "ref_VW8VK693"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6099,7 +6099,7 @@
         "ref_ZXNPQ6M6",
         "ref_VW8VK693"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6120,7 +6120,7 @@
         "ref_VW8VK693",
         "ref_HP285AHE"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6143,7 +6143,7 @@
         "ref_VW8VK693",
         "ref_BUTFISXP"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6167,7 +6167,7 @@
         "ref_B48D5GJU",
         "ref_7IK9XS5H"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6192,7 +6192,7 @@
         "ref_VM68J6X4",
         "ref_R5E7TDEI"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6215,7 +6215,7 @@
         "ref_VW8VK693",
         "ref_K5AMB3T6"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6242,7 +6242,7 @@
         "ref_XCJUNCJC",
         "ref_KWCZEPB3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6280,7 +6280,7 @@
         "ref_M5QEJF28",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6306,7 +6306,7 @@
         "ref_FTWW88JB",
         "ref_53HBW8NV"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6324,7 +6324,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6342,7 +6342,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6360,7 +6360,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6378,7 +6378,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6396,7 +6396,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6412,12 +6412,12 @@
     {
       "ID": "ref_AV94Z86F",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#608b32",
       "connex": [
         "ref_MCBUW3AM",
         "ref_865S3AFP"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6438,7 +6438,7 @@
         "ref_E632NUJP",
         "ref_HC8GACUB"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6456,7 +6456,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6477,7 +6477,7 @@
         "ref_E632NUJP",
         "ref_M5QEJF28"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6504,7 +6504,7 @@
         "ref_WTJ5389C",
         "ref_4QTKV4F3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6539,7 +6539,7 @@
         "ref_V34SNSTA",
         "ref_FXWCGUE5"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6561,7 +6561,7 @@
       "connex": [
         "ref_SWHBHDW4"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6591,7 +6591,7 @@
         "ref_2AESEHNM",
         "ref_EDBBFUMN"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6613,7 +6613,7 @@
       "connex": [
         "ref_IQMWHNFG"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6633,7 +6633,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6653,7 +6653,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6674,7 +6674,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "substances"
@@ -6692,11 +6692,11 @@
     {
       "ID": "ref_NUU5PF9G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#67d863",
       "connex": [
         "ref_KRKZMBVN"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6716,7 +6716,7 @@
       "connex": [
         "ref_ZXNPQ6M6"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6740,7 +6740,7 @@
         "ref_SRKQ6UNC",
         "ref_HT8Q6DES"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6762,7 +6762,7 @@
       "connex": [
         "ref_7V5CXIAQ"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6780,11 +6780,11 @@
     {
       "ID": "ref_46SKN4ZM",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#67d863",
       "connex": [
         "ref_7PNPXX2B"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6800,7 +6800,7 @@
     {
       "ID": "ref_HC8GACUB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#67d863",
       "connex": [
         "ref_87AWUGXR",
         "ref_B48D5GJU",
@@ -6812,7 +6812,7 @@
         "ref_QGHT3W5V",
         "ref_2EQESATT"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6828,13 +6828,13 @@
     {
       "ID": "ref_QP8H4B8A",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#67d863",
       "connex": [
         "ref_5DITVSB3",
         "ref_B48D5GJU",
         "ref_HC8GACUB"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6850,13 +6850,13 @@
     {
       "ID": "ref_5DITVSB3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#67d863",
       "connex": [
         "ref_QC4SATBA",
         "ref_B48D5GJU",
         "ref_QP8H4B8A"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6872,11 +6872,11 @@
     {
       "ID": "ref_QN5HTR6H",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#67d863",
       "connex": [
         "ref_DU2MWS4D"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6909,7 +6909,7 @@
         "ref_T3BZJESJ",
         "ref_99RQ5HRF"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6933,7 +6933,7 @@
         "ref_Q57Z25WP",
         "ref_VMQ2292C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6955,7 +6955,7 @@
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -6980,7 +6980,7 @@
         "ref_BUTPXX4M",
         "ref_VPR2282D"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -7004,7 +7004,7 @@
         "ref_5WTZF8QX",
         "ref_BUTFISXP"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -7027,7 +7027,7 @@
         "ref_AV94Z86F",
         "ref_MCBUW3AM"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -7047,7 +7047,7 @@
       "connex": [
         "ref_PJXWJ4C7"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects",
@@ -7068,7 +7068,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -7088,7 +7088,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "effects"
@@ -7106,12 +7106,12 @@
     {
       "ID": "ref_XXSZN2K5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#96d6a3",
       "connex": [
         "ref_WQE98M5C",
         "ref_XI2ZU336"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7127,9 +7127,9 @@
     {
       "ID": "ref_FMXFUZMG",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#96d6a3",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7151,7 +7151,7 @@
         "ref_4QTKV4F3",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals",
@@ -7178,7 +7178,7 @@
         "ref_ARWF9DRD",
         "ref_WQE98M5C"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7219,7 +7219,7 @@
         "ref_P8F2SBCX",
         "ref_VP7F4N2M"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7265,7 +7265,7 @@
         "ref_PJXWJ4C7",
         "ref_F7T48F3S"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7295,7 +7295,7 @@
       "connex": [
         "ref_ARWF9DRD"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7318,7 +7318,7 @@
         "ref_Z2II5B9C",
         "ref_IUXJINVH"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scandals",
@@ -7338,7 +7338,7 @@
     {
       "ID": "ref_B48D5GJU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#96d6a3",
       "connex": [
         "ref_5DITVSB3",
         "ref_IUXJINVH",
@@ -7346,7 +7346,7 @@
         "ref_QP8H4B8A",
         "ref_HC8GACUB"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7362,11 +7362,11 @@
     {
       "ID": "ref_7PNPXX2B",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#96d6a3",
       "connex": [
         "ref_46SKN4ZM"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7382,12 +7382,12 @@
     {
       "ID": "ref_QC4SATBA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#96d6a3",
       "connex": [
         "ref_WQE98M5C",
         "ref_5DITVSB3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7430,13 +7430,13 @@
     {
       "ID": "ref_DU2MWS4D",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#96d6a3",
       "connex": [
         "ref_WQE98M5C",
         "ref_XI2ZU336",
         "ref_QN5HTR6H"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7473,7 +7473,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7494,7 +7494,7 @@
         "ref_865S3AFP",
         "ref_AV94Z86F"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7526,7 +7526,7 @@
         "ref_WQE98M5C",
         "ref_V6UER4T3"
       ],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7565,7 +7565,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7585,7 +7585,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7605,7 +7605,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7625,7 +7625,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7646,7 +7646,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7664,7 +7664,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7687,7 +7687,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7709,7 +7709,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7731,7 +7731,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles",
@@ -7752,7 +7752,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7773,7 +7773,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7795,7 +7795,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7817,7 +7817,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7839,7 +7839,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7863,7 +7863,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7886,7 +7886,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7909,7 +7909,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7931,7 +7931,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7951,7 +7951,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7971,7 +7971,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -7991,7 +7991,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8012,7 +8012,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8033,7 +8033,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8054,7 +8054,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8075,7 +8075,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8096,7 +8096,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8117,7 +8117,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8138,7 +8138,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8159,7 +8159,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8180,7 +8180,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8201,7 +8201,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8222,7 +8222,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8242,7 +8242,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8262,7 +8262,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8282,7 +8282,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8302,7 +8302,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8324,7 +8324,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8345,7 +8345,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8366,7 +8366,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8388,7 +8388,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8409,7 +8409,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8430,7 +8430,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8451,7 +8451,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8472,7 +8472,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8493,7 +8493,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8514,7 +8514,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8536,7 +8536,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8557,7 +8557,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8577,7 +8577,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8597,7 +8597,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8617,7 +8617,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8648,7 +8648,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8666,7 +8666,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8686,7 +8686,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8706,7 +8706,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8726,7 +8726,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8746,7 +8746,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8766,7 +8766,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8786,7 +8786,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8804,7 +8804,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"
@@ -8822,7 +8822,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "ALIENS_IN_GREEN",
+      "dataset": "ALIENS IN GREEN",
       "dataset_": "aliens_in_green",
       "group": [
         "scientific articles"

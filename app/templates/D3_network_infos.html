@@ -9,115 +9,177 @@
         
         <br>
         
-        <!-- collapsible div -->
-        <div class="collapse in " id="collapsibleFilters" >
-        
-        
-        
+        <!-- collapsible all filters column -->
+        <div  class="collapse in "
+              id="collapsibleFilters" >
+            
+            
+            
           <!-- LEGEND -->
-          <div class="list-group">
-            <h4>LEGEND</h4>
-            <div id="legend" class="legend">
+          <!-- collapser legend only -->
+          <a  role="button"
+              id="collapserLegend"
+              data-toggle="collapse"
+              data-target="#collapsibleLegend"
+              aria-expanded="true"
+              aria-controls="collapsibleLegend">
+            
+            <h4 data-toggle="tooltip"
+                data-placement="top"
+                title="show/hide legend"
+                >
+              LEGEND <span class="caret" ></span>
+            </h4>
+            
+          </a>
+        
+          
+          <!-- collapsible legend only -->
+          <div  class="list-group collapse in"
+                id="collapsibleLegend"
+                >
+            
+            <div  id="legend"
+                  class="legend"
+                  >
               <!-- here comes the svg -->
             </div>
-          </div>
           
           
-          <br>
+          </div> <!-- end collapsible legend only -->
+          
+          
+          
+          
           
           
           <!-- FILTERS BREAKING EDGES -->
-          <div class="list-group">
+          
+          <!-- collapser filters only -->
+          <a  role="button"
+              id="collapserFilt"
+              data-toggle="collapse"
+              data-target="#collapsibleFilt"
+              aria-expanded="true"
+              aria-controls="collapsibleFilt">
             
-            <h4>FILTERS</h4>
+            <h4 data-toggle="tooltip"
+                data-placement="top"
+                title="show/hide filters"
+                >
+              FILTERS <span class="caret" ></span>
+            </h4>
             
-            <h5 style="color: white">break links</h5>
+          </a>
+          
+          <!-- collapsible filters only -->
+          <div  class="collapse in"
+                id="collapsibleFilt"
+                style="; margin-top: 20px"
+                >
+            
+            
+            <!-- FILTERS BREAK LINKS -->
+            <div class="list-group">  
               
-              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm breakFilter"
-                      id="ref-tag"
-                      onclick="Update_Node(this.id)">
-                ref-tag
-              </button>
-              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm breakFilter"
-                      id="ref-group"
-                      onclick="Update_Node(this.id)">
-                ref-group
-              </button>              
-              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm breakFilter"
-                      id="ref-ref"
-                      onclick="Update_Node(this.id)">
-                ref-ref
-              </button>              
-          </div>
-          
-          
-          
-          <!-- FILTERS SHOW / HIDE NODES -->
-          <div class="list-group">
-            <h5 style="color: white">show or hide categories </h5>
+              <h5 style="color: white">
+                <em>break links</em>
+              </h5>
+                
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        id="ref-tag"
+                        onclick="Update_Node(this.id)">
+                  ref-tag
+                </button>
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        id="ref-group"
+                        onclick="Update_Node(this.id)">
+                  ref-group
+                </button>              
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        id="ref-ref"
+                        onclick="Update_Node(this.id)">
+                  ref-ref
+                </button>              
+            </div>
             
             
-            <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                    class="btn btn-default btn-sm hideFilter"
-                    id="reference"
-                    onclick="hideNodes(this.id)">
-              references
-            </button>
             
-            <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                    class="btn btn-default btn-sm hideFilter"
-                    id="group"
-                    onclick="hideNodes(this.id)">
-              groups
-            </button>
-            
-            <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                    class="btn btn-default btn-sm hideFilter"
-                    id="tag"
-                    onclick="hideNodes(this.id)">
-               tags
-             </button>
-            
-          </div>
-          
-          <div class="list-group">
-            <h5 style="color: white">show or hide {{ glob.ns.group }}(s) </h5>
-            
-            {% for gr in groups %}
-            
-              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                       class="btn btn-default btn-xs hideFilter"
-                       id={{ gr }}
-                       onclick="hideNodes(this.id)">
-                 {{ gr }}
-               </button>
-            
-            {% endfor %}
-            
-          </div>
-            
-          
-          {% if selection == "1camp" %}
-          
+            <!-- FILTERS SHOW / HIDE NODES -->
             <div class="list-group">
-              <h5 style="color: white">show or hide super-{{ glob.ns.tags }}(s) </h5>
+              <h5 style="color: white"
+                  >
+                <em>show / hide categories </em>
+              </h5>
               
-              {% for stag in supertags %}
+              
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                       class="btn btn-default btn-xs hideFilter"
-                       id={{ stag }}
-                       onclick="hideNodes(this.id)">
-                 {{ stag }}
+                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      id="reference"
+                      onclick="hideNodes(this.id)">
+                references
+              </button>
+              
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      id="group"
+                      onclick="hideNodes(this.id)">
+                groups
+              </button>
+              
+              <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      id="tag"
+                      onclick="hideNodes(this.id)">
+                 tags
                </button>
+              
+            </div>
+            
+            <div class="list-group">
+              <h5 style="color: white">
+                <em>show / hide {{ glob.ns.group }}(s) </em>
+              </h5>
+              
+              {% for gr in groups %}
+              
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                         class="btn btn-default btn-xs hideFilter btn-filter"
+                         id={{ gr }}
+                         onclick="hideNodes(this.id)">
+                   {{ gr }}
+                 </button>
+              
               {% endfor %}
               
             </div>
-          {% endif %}
+              
+            
+            {% if selection == "1camp" %}
+            
+              <div class="list-group">
+                <h5 style="color: white">
+                  <em>show or hide super-{{ glob.ns.tags }}(s) </em>
+                </h5>
+                
+                {% for stag in supertags %}
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                         class="btn btn-default btn-xs hideFilter btn-filter"
+                         id={{ stag }}
+                         onclick="hideNodes(this.id)">
+                   {{ stag }}
+                 </button>
+                {% endfor %}
+                
+              </div>
+            {% endif %}
+          
+          </div> <!--end collapse filters only -->
   
-        </div> <!--end collapse -->
+        </div> <!--end collapse column-->
         
       </div> <!--end column-->
 
@@ -125,17 +187,28 @@
    
    
     <!-- NODE INFOS on different column -->  
-    <div id="infoNode" class="col-sm-2 col-sm-offset-8">
+    <div  class="col-sm-2 col-sm-offset-8"
+          id = "collapserInfosCol" 
+          data-toggle=""
+          data-target="#collapsibleInfosCol"
+          aria-expanded="false"
+          aria-controls="collapsibleInfosCol"
+         >
       
-        <div class="infosNode list-group" style="opacity: 0">
+      
+        <div  class="collapse in list-group"
+              id="collapsibleInfosCol" 
+              >
           
           <br>
             
           <!-- collapser infos -->
-          <a role="button"
-            id="collapserInfos"
-            data-toggle="collapse"
-            data-target="#collapsibleInfos" aria-expanded="false" aria-controls="collapsibleInfos">
+          <a  role="button"
+              id="collapserInfos"
+              data-toggle="collapse"
+              data-target="#collapsibleInfos"
+              aria-expanded="true"
+              aria-controls="collapsibleInfos">
             
             <h4 class="text-center"
                 data-toggle="tooltip"
@@ -146,9 +219,12 @@
             </h4>
             
           </a>
+           
+           
             
           <!-- collapsible infos-->
-          <div class="collapse in " id="collapsibleInfos">
+          <div  class="collapse"
+                id="collapsibleInfos">
   
             <p class="list-group-item">label :    <a id="nLabel"></a></p>
             <p class="list-group-item">category : <a id="nCategory"></a></p>

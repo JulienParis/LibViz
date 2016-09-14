@@ -155,9 +155,12 @@
     var legendDiam = (legendR*2) + legendS ;
     var spaceY     = legendDiam + interval ;
     
-    var legendColors = {{ legend|tojson  }};
-    //console.log(legendColors);
-    legendHeight = 5 + (legendColors.length*spaceY) + 5
+    var legendColorsGroups = {{ legendGroups|tojson  }};
+    console.log(legendColorsGroups);
+    var legendColorsRefTag = {{ legend|tojson  }};
+    console.log(legendColorsRefTag);
+    
+    legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
     //console.log(legendHeight);
     
     var legendWidth  = document.getElementById('legend').clientWidth ;
@@ -174,23 +177,29 @@
 
     tempSpaceY = interval + legendR ; 
     
-    for (var i = 0; i <= legendColors.length - 1; i++) {
-      var obj = legendColors[i];
-      nodeLegend.append("circle")
-        .attr("cx", spaceX )
-        .attr("cy", tempSpaceY )
-        .attr("r", legendR )
-        .attr("stroke", "white")
-        .attr("stroke-width", legendS )
-        .style("fill", obj.color ); //return color(d.{{glob.ns.type}})
-      nodeLegend.append("text")
-        .attr("fill", "white")
-        .attr("x", spaceX + legendDiam )
-        .attr("y", tempSpaceY )
-        .attr("dy", ".35em")
-        .text(obj.name);
-      tempSpaceY += spaceY ;
-      }
+    function makeLegend(coll, margin) {
+      for (var i = 0; i <= coll.length - 1; i++) {
+        var obj = coll[i];
+        nodeLegend.append("circle")
+          .attr("cx", spaceX + margin )
+          .attr("cy", tempSpaceY )
+          .attr("r", legendR )
+          .attr("stroke", "white")
+          .attr("stroke-width", legendS )
+          .style("fill", obj.hex ); //return color(d.{{glob.ns.type}})
+        nodeLegend.append("text")
+          .attr("fill", "white")
+          .attr("x", spaceX + legendDiam + margin  )
+          .attr("y", tempSpaceY )
+          .attr("dy", ".35em")
+          .text(obj.name);
+        tempSpaceY += spaceY ;
+        }
+      };
+      
+      makeLegend(legendColorsRefTag, 0);
+      makeLegend(legendColorsGroups, interval*4);
+      
    
     ///////////////////////////////////////////////////
     // force parameters
@@ -346,7 +355,7 @@
     // main D3 function
     function render (nodes, links) {
       
-      //simulation.alphaTarget(0.25).restart() ;
+      simulation.alphaTarget(0.4).restart() ;
       
       // launch force
       simulation
@@ -373,13 +382,13 @@
                   active = false;
                   stopLayout();
                   $(this).html('<span class="glyphicon glyphicon-play"></span>')
-                    .attr("class", "btn btn-md btn-success")
+                    .attr("class", "btn btn-md btn-success btn-navbar")
                   ;
               } else {
                   active = true;
                   restartLayout();
                   $(this).html('<span class="glyphicon glyphicon-pause"></span>')
-                    .attr("class", "btn btn-md btn-warning")
+                    .attr("class", "btn btn-md btn-warning btn-navbar")
                   ;
               }
           });
@@ -405,7 +414,8 @@
       node.enter() 
           .append("circle")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
-          .style("fill", function (d) { return d.{{glob.ns.color}} ; }) //return color(d.{{glob.ns.type}})
+          .style("fill", function (d) { return d.{{glob.ns.color}} ; })
+          
           .attr("stroke-width"    , dft_circle_stroke_w )
           .attr("class"   , "node")
           //.attr("fixed"   , "false")
@@ -607,7 +617,7 @@
       
       
       // restart animation
-      simulation.alphaTarget(0.3).restart();
+      simulation.alphaTarget(0.5).restart();
     }
     
     
@@ -625,11 +635,14 @@
       // call function to pin nodes
       pinNode(n);
       
-      // display 
-      divInfos = d3.select('.infosNode');
-      divInfos.transition()		
-        .duration(200)		
-        .style("opacity", 1.0);	
+      // display  collapsibleInfosCol
+      //divInfos = d3.select('.collapsibleInfosCol');
+      //divInfos.transition()		
+      //  .duration(200)		
+      //  .style("opacity", 1.0);
+      $('#collapsibleInfosCol').collapse('show');
+      $('#collapsibleInfos').collapse('show');
+        
       d3.select('#nCategory').text(n.category);
       d3.select('#nGroup').text(n.group); // need to be blank if none ////////
       d3.select('#nLabel').text(n.label); 

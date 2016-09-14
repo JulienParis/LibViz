@@ -3197,11 +3197,11 @@
     {
       "ID": "ref_ZMGVWUS7",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_5XEHR84K"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3219,11 +3219,11 @@
     {
       "ID": "ref_UT6RDN7H",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_AXPFKSED"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3241,11 +3241,11 @@
     {
       "ID": "ref_E9HDZWKK",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_P98T3FUD"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3261,12 +3261,12 @@
     {
       "ID": "ref_T3UZZZTT",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_7KCJWZDJ",
         "ref_Q449QF7K"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3284,13 +3284,13 @@
     {
       "ID": "ref_R6QWHHVU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_X44Z7XPD",
         "ref_PAGSWS5C",
         "ref_2SC9965N"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3308,11 +3308,11 @@
     {
       "ID": "ref_NM8TS2M4",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_T5TVA7QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3330,11 +3330,11 @@
     {
       "ID": "ref_N9XZKP8U",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_BVE6KNPF"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3352,11 +3352,11 @@
     {
       "ID": "ref_5KSUEKDS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_Z7R2WS6S"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3372,11 +3372,11 @@
     {
       "ID": "ref_6VPB957G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_DVWH7XK6"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3392,12 +3392,12 @@
     {
       "ID": "ref_VM3MWNCW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_XGNCMW8D",
         "ref_EVK8FG8M"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3415,11 +3415,11 @@
     {
       "ID": "ref_A4NAFA5B",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_MQSRE2VC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3437,11 +3437,11 @@
     {
       "ID": "ref_IZHTNN7D",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_V2DX8R2G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3459,12 +3459,12 @@
     {
       "ID": "ref_96D2XDH6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_Z7R2WS6S",
         "ref_9NTT5KHE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3482,12 +3482,12 @@
     {
       "ID": "ref_62BFUPBV",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_57XQ9QUM",
         "ref_K92NVFJ7"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3505,11 +3505,11 @@
     {
       "ID": "ref_X8AVSSWN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_SA9MD56K"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3525,13 +3525,13 @@
     {
       "ID": "ref_CRFKQ7HQ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_5HKNMU4B",
         "ref_PHEWDZUH",
         "ref_Z7R2WS6S"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3549,12 +3549,12 @@
     {
       "ID": "ref_3MKCSP9Q",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_XSG65U9J",
         "ref_M5MF2Q7F"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3572,12 +3572,12 @@
     {
       "ID": "ref_SH7ATNIX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_FKQFFRM9",
         "ref_PJGRT6IU"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3595,11 +3595,11 @@
     {
       "ID": "ref_IFH5SJ4K",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3617,12 +3617,12 @@
     {
       "ID": "ref_C5NM88BR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_FKQFFRM9",
         "ref_8J956WFM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3638,11 +3638,11 @@
     {
       "ID": "ref_SC9XIAHD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_6HEZ7QTS"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3658,11 +3658,11 @@
     {
       "ID": "ref_HEMXTUEN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_6HEZ7QTS"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3678,11 +3678,11 @@
     {
       "ID": "ref_RHS5N6J8",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_6HEZ7QTS"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3698,11 +3698,11 @@
     {
       "ID": "ref_3XV8ERKN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#54b992",
       "connex": [
         "ref_6HEZ7QTS"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Personnes"
@@ -3718,16 +3718,16 @@
     {
       "ID": "ref_DVWH7XK6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_7H9E2FC2",
         "ref_MHE7EQ69",
         "ref_6VPB957G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Rossel \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3740,15 +3740,15 @@
     {
       "ID": "ref_MFFRF5TS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_7R99EQCR",
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Gruner + Jahr \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3761,14 +3761,14 @@
     {
       "ID": "ref_FPAQGHFJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_W3KM26M5"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Caisse des d\u00e9p\u00f4ts et consignations \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3783,15 +3783,15 @@
     {
       "ID": "ref_W3KM26M5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_V2DX8R2G",
         "ref_FPAQGHFJ"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Veolia \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3804,14 +3804,14 @@
     {
       "ID": "ref_MGVSE9PG",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_V2DX8R2G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Artcurial \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3824,14 +3824,14 @@
     {
       "ID": "ref_XW8X827D",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_JUI3NGQX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Dassault Falcon Service \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3844,15 +3844,15 @@
     {
       "ID": "ref_DVSFB3DR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_JUI3NGQX",
         "ref_22IMWM25"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Thales \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3865,14 +3865,14 @@
     {
       "ID": "ref_XE9T6E2I",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_V2DX8R2G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Dassault Syst\u00e8mes \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3885,16 +3885,16 @@
     {
       "ID": "ref_JUI3NGQX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_V2DX8R2G",
         "ref_DVSFB3DR",
         "ref_XW8X827D"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Dassault Aviation \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3907,16 +3907,16 @@
     {
       "ID": "ref_K92NVFJ7",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_62BFUPBV",
         "ref_57XQ9QUM",
         "ref_B3N2BN6P"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Arnault \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3929,14 +3929,14 @@
     {
       "ID": "ref_N6RS96RB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_5XEHR84K"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "L'Agefi (France) \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3949,14 +3949,14 @@
     {
       "ID": "ref_S3TJCINM",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_5XEHR84K"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Kering \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3969,16 +3969,16 @@
     {
       "ID": "ref_5XEHR84K",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_ZMGVWUS7",
         "ref_S3TJCINM",
         "ref_N6RS96RB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Art\u00e9mis (holding) \u2014 Wikip\u00e9dia",
       "note": "",
@@ -3991,7 +3991,7 @@
     {
       "ID": "ref_87E8GFIX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_ZSBSEF82",
         "ref_CIQWHIUB",
@@ -4003,10 +4003,10 @@
         "ref_42V5P4IP",
         "ref_VGW5GT59"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe L'Express \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4019,7 +4019,7 @@
     {
       "ID": "ref_V2DX8R2G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_ADP4KZVB",
         "ref_IZHTNN7D",
@@ -4028,10 +4028,10 @@
         "ref_XE9T6E2I",
         "ref_W3KM26M5"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe industriel Marcel Dassault \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4044,14 +4044,14 @@
     {
       "ID": "ref_MD44X8RX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_T5TVA7QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe 01 \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4064,14 +4064,14 @@
     {
       "ID": "ref_EJ2MZCMW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_EJTVEAPB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "France Loisirs \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4084,14 +4084,14 @@
     {
       "ID": "ref_PJGRT6IU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_SH7ATNIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Free (entreprise) \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4104,7 +4104,7 @@
     {
       "ID": "ref_RVNRQZDE",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_3J3WKAKU",
         "ref_4VT8MWMP",
@@ -4115,10 +4115,10 @@
         "ref_CM5SWTSI",
         "ref_22IMWM25"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "France T\u00e9l\u00e9visions \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4133,16 +4133,16 @@
     {
       "ID": "ref_H2IF3DI3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_87E8GFIX",
         "ref_2SC9965N",
         "ref_P3VV5XZ9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Altice Media Group \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4155,17 +4155,17 @@
     {
       "ID": "ref_PZU2REJA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_EQ6MIQXX",
         "ref_7H9E2FC2",
         "ref_D6Q22Z6G",
         "ref_3VJSKJQQ"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe SIPA - Ouest-France \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4178,17 +4178,17 @@
     {
       "ID": "ref_D6Q22Z6G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_6ZGWXGJS",
         "ref_KHHFAPPA",
         "ref_FGUGPVIR",
         "ref_PZU2REJA"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Les Journaux de Loire \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4201,7 +4201,7 @@
     {
       "ID": "ref_TBAEE3NH",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_5M58BNJW",
         "ref_BJX4QVRI",
@@ -4212,10 +4212,10 @@
         "ref_VAFWJNQ8",
         "ref_EBX3PBUP"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe TF1 \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4228,17 +4228,17 @@
     {
       "ID": "ref_5A7MMEKE",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_5I6Z2D66",
         "ref_68GK7K7I",
         "ref_CM5SWTSI",
         "ref_22IMWM25"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "France M\u00e9dias Monde \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4253,7 +4253,7 @@
     {
       "ID": "ref_XGNCMW8D",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_E6S5CTNC",
         "ref_JUZXSVVF",
@@ -4261,10 +4261,10 @@
         "ref_EVK8FG8M",
         "ref_5ZK7M8QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Vivendi \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4277,7 +4277,7 @@
     {
       "ID": "ref_5ZK7M8QC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_KSPC72KW",
         "ref_XGNCMW8D",
@@ -4285,10 +4285,10 @@
         "ref_RR8P9ZBR",
         "ref_2C9PZWPC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Canal+ \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4301,16 +4301,16 @@
     {
       "ID": "ref_X44Z7XPD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_2SC9965N",
         "ref_R6QWHHVU",
         "ref_P3VV5XZ9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Altice \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4323,17 +4323,17 @@
     {
       "ID": "ref_P98T3FUD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_U8WNIWPC",
         "ref_NGS742ET",
         "ref_CBRK2GN2",
         "ref_E9HDZWKK"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Amaury \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4346,7 +4346,7 @@
     {
       "ID": "ref_2SC9965N",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_PAGSWS5C",
         "ref_T5TVA7QC",
@@ -4356,10 +4356,10 @@
         "ref_H2IF3DI3",
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "SFR Group \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4372,7 +4372,7 @@
     {
       "ID": "ref_T5TVA7QC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_2SC9965N",
         "ref_JMGW2HKD",
@@ -4381,10 +4381,10 @@
         "ref_NM8TS2M4",
         "ref_MD44X8RX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "NextRadioTV \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4397,7 +4397,7 @@
     {
       "ID": "ref_P4UT322F",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_MXETEAZA",
         "ref_RFFK2RQC",
@@ -4411,10 +4411,10 @@
         "ref_9RG9HVUJ",
         "ref_G9N9D7TU"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Lagard\u00e8re Active \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4427,7 +4427,7 @@
     {
       "ID": "ref_RSGH975G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_K9QXMK7G",
         "ref_AC8MIRUR",
@@ -4436,10 +4436,10 @@
         "ref_HTIXN5KQ",
         "ref_RGFHIKQP"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Les \u00c9chos \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4452,7 +4452,7 @@
     {
       "ID": "ref_57XQ9QUM",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_RSGH975G",
         "ref_Z2F7PWE5",
@@ -4462,10 +4462,10 @@
         "ref_62BFUPBV",
         "ref_K92NVFJ7"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "LVMH - Mo\u00ebt Hennessy Louis Vuitton \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4478,7 +4478,7 @@
     {
       "ID": "ref_FKQFFRM9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_2ZWEKTK3",
         "ref_F7C958KJ",
@@ -4493,10 +4493,10 @@
         "ref_IFH5SJ4K",
         "ref_NP6XRR9P"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Le Monde \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4509,7 +4509,7 @@
     {
       "ID": "ref_8J956WFM",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_259E5RQ9",
         "ref_BUT8SMNX",
@@ -4517,10 +4517,10 @@
         "ref_63FGUFA6",
         "ref_C5NM88BR"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Les Nouvelles \u00c9ditions ind\u00e9pendantes \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4533,7 +4533,7 @@
     {
       "ID": "ref_RN3TP6UB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_MFFRF5TS",
         "ref_VFRBM9A6",
@@ -4550,10 +4550,10 @@
         "ref_8EM3AP6P",
         "ref_HJGKQD27"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Prisma Media \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4566,17 +4566,17 @@
     {
       "ID": "ref_EVK8FG8M",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_XGNCMW8D",
         "ref_4P5KEZKE",
         "ref_BTHH7CJQ",
         "ref_VM3MWNCW"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Bollor\u00e9 \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4589,7 +4589,7 @@
     {
       "ID": "ref_AXPFKSED",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_ZXH3EHFH",
         "ref_TBAEE3NH",
@@ -4597,10 +4597,10 @@
         "ref_32JSTM4C",
         "ref_UT6RDN7H"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Bouygues \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4613,14 +4613,14 @@
     {
       "ID": "ref_32JSTM4C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_AXPFKSED"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Bouygues Telecom \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4633,14 +4633,14 @@
     {
       "ID": "ref_ZXH3EHFH",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_AXPFKSED"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Bouygues Immobilier \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4653,14 +4653,14 @@
     {
       "ID": "ref_ZWNT7B2K",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_AXPFKSED"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Bouygues Construction \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4673,7 +4673,7 @@
     {
       "ID": "ref_7W42I23X",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_NQ9QVRWD",
         "ref_HJ7JK4JI",
@@ -4684,10 +4684,10 @@
         "ref_AS4Q682P",
         "ref_22IMWM25"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Radio France \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4702,7 +4702,7 @@
     {
       "ID": "ref_22IMWM25",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_7W42I23X",
         "ref_5A7MMEKE",
@@ -4710,10 +4710,10 @@
         "ref_GB8V4NFF",
         "ref_DVSFB3DR"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Agence des participations de l'\u00c9tat \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4728,7 +4728,7 @@
     {
       "ID": "ref_BVE6KNPF",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_CBVT3E6N",
         "ref_SQA4JEAA",
@@ -4737,10 +4737,10 @@
         "ref_EF3PBPFG",
         "ref_N9XZKP8U"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "NRJ Group \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4753,14 +4753,14 @@
     {
       "ID": "ref_ZGKRNU3B",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_Q449QF7K"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Qatar Investment Authority \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4773,7 +4773,7 @@
     {
       "ID": "ref_SA9MD56K",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_IXRR48EN",
         "ref_UR8MXVUK",
@@ -4781,10 +4781,10 @@
         "ref_X8AVSSWN",
         "ref_P4UT322F"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe La D\u00e9p\u00eache \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4797,16 +4797,16 @@
     {
       "ID": "ref_7R99EQCR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_JBQH4TBN",
         "ref_EJTVEAPB",
         "ref_MFFRF5TS"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Bertelsmann \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4819,15 +4819,15 @@
     {
       "ID": "ref_EJTVEAPB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_7R99EQCR",
         "ref_EJ2MZCMW"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Actissia \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4840,7 +4840,7 @@
     {
       "ID": "ref_QFIXFUEW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_HUEAG6F7",
         "ref_SWBMG5SQ",
@@ -4849,10 +4849,10 @@
         "ref_IP2H9HEW",
         "ref_JBQH4TBN"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe M6 \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4865,7 +4865,7 @@
     {
       "ID": "ref_JBQH4TBN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_PWCB9329",
         "ref_66KFEAHH",
@@ -4873,10 +4873,10 @@
         "ref_SKIUJ22D",
         "ref_7R99EQCR"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "RTL Group \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4889,7 +4889,7 @@
     {
       "ID": "ref_MHE7EQ69",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_XHG5ECP8",
         "ref_CVE35ZBZ",
@@ -4897,10 +4897,10 @@
         "ref_BIAG8EKC",
         "ref_DVWH7XK6"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe La Voix \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4913,14 +4913,14 @@
     {
       "ID": "ref_3VJSKJQQ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_PZU2REJA"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Association pour le soutien des principes de la d\u00e9mocratie humaniste \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4933,7 +4933,7 @@
     {
       "ID": "ref_5HKNMU4B",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_CRFKQ7HQ",
         "ref_7BM9QBGS",
@@ -4941,10 +4941,10 @@
         "ref_NP6XRR9P",
         "ref_TU5RHJTW"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Groupe Perdriel \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4957,16 +4957,16 @@
     {
       "ID": "ref_Q449QF7K",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_ZGKRNU3B",
         "ref_P4UT322F",
         "ref_T3UZZZTT"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Lagard\u00e8re (entreprise) \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4979,14 +4979,14 @@
     {
       "ID": "ref_7KCJWZDJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_T3UZZZTT"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Hachette Livre \u2014 Wikip\u00e9dia",
       "note": "",
@@ -4999,15 +4999,15 @@
     {
       "ID": "ref_PAGSWS5C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_2SC9965N",
         "ref_R6QWHHVU"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Soci\u00e9t\u00e9 fran\u00e7aise du radiot\u00e9l\u00e9phone \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5020,14 +5020,14 @@
     {
       "ID": "ref_9NTT5KHE",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_96D2XDH6"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "L'Or\u00e9al \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5040,14 +5040,14 @@
     {
       "ID": "ref_E6S5CTNC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_XGNCMW8D"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Universal Music Group \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5060,15 +5060,15 @@
     {
       "ID": "ref_PHEWDZUH",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [
         "ref_ZREXT8Z4",
         "ref_CRFKQ7HQ"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Sophia Publications - Wikipedia, the free encyclopedia",
       "note": "",
@@ -5081,12 +5081,12 @@
     {
       "ID": "ref_GHHRDNH5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Spir Communication \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5099,12 +5099,12 @@
     {
       "ID": "ref_24U3BUGD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Publihebdos \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5117,12 +5117,12 @@
     {
       "ID": "ref_WEGQVS3P",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Euronews SA \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5135,12 +5135,12 @@
     {
       "ID": "ref_V3FN6IHU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#325d58",
       "connex": [],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
-        "Groupes"
+        "Groupes industriels/media"
       ],
       "label": "Random House \u2014 Wikip\u00e9dia",
       "note": "",
@@ -5153,11 +5153,11 @@
     {
       "ID": "ref_TU5RHJTW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5HKNMU4B"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5173,11 +5173,11 @@
     {
       "ID": "ref_RGFHIKQP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RSGH975G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5193,9 +5193,9 @@
     {
       "ID": "ref_H488HQSI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5211,11 +5211,11 @@
     {
       "ID": "ref_BIAG8EKC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_MHE7EQ69"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5231,11 +5231,11 @@
     {
       "ID": "ref_JWP6SSMG",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_MHE7EQ69"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5251,11 +5251,11 @@
     {
       "ID": "ref_M5MF2Q7F",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_3MKCSP9Q"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5271,11 +5271,11 @@
     {
       "ID": "ref_GB8V4NFF",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_22IMWM25"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5293,13 +5293,13 @@
     {
       "ID": "ref_P3VV5XZ9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_2SC9965N",
         "ref_X44Z7XPD",
         "ref_H2IF3DI3"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5315,11 +5315,11 @@
     {
       "ID": "ref_HSKUX9W3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5335,11 +5335,11 @@
     {
       "ID": "ref_42V5P4IP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5355,11 +5355,11 @@
     {
       "ID": "ref_VGW5GT59",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5375,11 +5375,11 @@
     {
       "ID": "ref_BTHH7CJQ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_EVK8FG8M"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5395,11 +5395,11 @@
     {
       "ID": "ref_4P5KEZKE",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_EVK8FG8M"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5415,11 +5415,11 @@
     {
       "ID": "ref_EBX3PBUP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5435,11 +5435,11 @@
     {
       "ID": "ref_VAFWJNQ8",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5455,11 +5455,11 @@
     {
       "ID": "ref_JM6V2WVQ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5475,11 +5475,11 @@
     {
       "ID": "ref_RR8P9ZBR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5ZK7M8QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5495,11 +5495,11 @@
     {
       "ID": "ref_2C9PZWPC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5ZK7M8QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5515,11 +5515,11 @@
     {
       "ID": "ref_HTIXN5KQ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RSGH975G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5535,14 +5535,14 @@
     {
       "ID": "ref_Z7R2WS6S",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_57XQ9QUM",
         "ref_96D2XDH6",
         "ref_CRFKQ7HQ",
         "ref_5KSUEKDS"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5558,11 +5558,11 @@
     {
       "ID": "ref_ZREXT8Z4",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_PHEWDZUH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5578,11 +5578,11 @@
     {
       "ID": "ref_4HGJ4WBR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5HKNMU4B"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5598,12 +5598,12 @@
     {
       "ID": "ref_7BM9QBGS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5HKNMU4B",
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5619,12 +5619,12 @@
     {
       "ID": "ref_NP6XRR9P",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5HKNMU4B",
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5640,11 +5640,11 @@
     {
       "ID": "ref_8EM3AP6P",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5660,13 +5660,13 @@
     {
       "ID": "ref_ADP4KZVB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_46QG8MQC",
         "ref_X9FRITHB",
         "ref_V2DX8R2G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5682,11 +5682,11 @@
     {
       "ID": "ref_HJGKQD27",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5702,14 +5702,14 @@
     {
       "ID": "ref_6HEZ7QTS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_3XV8ERKN",
         "ref_HEMXTUEN",
         "ref_SC9XIAHD",
         "ref_RHS5N6J8"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5725,11 +5725,11 @@
     {
       "ID": "ref_MQSRE2VC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_A4NAFA5B"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5745,11 +5745,11 @@
     {
       "ID": "ref_4FZQEWCP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5765,11 +5765,11 @@
     {
       "ID": "ref_JPDI4IVN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5785,11 +5785,11 @@
     {
       "ID": "ref_BJX4QVRI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5805,11 +5805,11 @@
     {
       "ID": "ref_5M58BNJW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_TBAEE3NH"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5825,11 +5825,11 @@
     {
       "ID": "ref_SKIUJ22D",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_JBQH4TBN"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5845,11 +5845,11 @@
     {
       "ID": "ref_R8V4E6R9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RVNRQZDE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5867,11 +5867,11 @@
     {
       "ID": "ref_4VT8MWMP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RVNRQZDE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5889,12 +5889,12 @@
     {
       "ID": "ref_5I6Z2D66",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5A7MMEKE",
         "ref_RVNRQZDE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5912,11 +5912,11 @@
     {
       "ID": "ref_P3IQ5MAC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5934,11 +5934,11 @@
     {
       "ID": "ref_6UBX7GQC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5956,11 +5956,11 @@
     {
       "ID": "ref_NQ9QVRWD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5978,9 +5978,9 @@
     {
       "ID": "ref_48W4WK3C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -5998,11 +5998,11 @@
     {
       "ID": "ref_VHU5WN5B",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RVNRQZDE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6020,11 +6020,11 @@
     {
       "ID": "ref_3MUQUUBD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RVNRQZDE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6042,11 +6042,11 @@
     {
       "ID": "ref_3J3WKAKU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RVNRQZDE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6064,11 +6064,11 @@
     {
       "ID": "ref_BPTA4ICC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6086,11 +6086,11 @@
     {
       "ID": "ref_XNEG465X",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6108,11 +6108,11 @@
     {
       "ID": "ref_HJ7JK4JI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6130,11 +6130,11 @@
     {
       "ID": "ref_X9FRITHB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_ADP4KZVB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6150,11 +6150,11 @@
     {
       "ID": "ref_46QG8MQC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_ADP4KZVB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6170,11 +6170,11 @@
     {
       "ID": "ref_AQBN6VAW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6190,11 +6190,11 @@
     {
       "ID": "ref_CIQWHIUB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6210,11 +6210,11 @@
     {
       "ID": "ref_ZSBSEF82",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6230,11 +6230,11 @@
     {
       "ID": "ref_SI3SMXE2",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_87E8GFIX"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6250,12 +6250,12 @@
     {
       "ID": "ref_7H9E2FC2",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_PZU2REJA",
         "ref_DVWH7XK6"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6271,11 +6271,11 @@
     {
       "ID": "ref_6ZGWXGJS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_D6Q22Z6G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6291,11 +6291,11 @@
     {
       "ID": "ref_KHHFAPPA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_D6Q22Z6G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6311,11 +6311,11 @@
     {
       "ID": "ref_FGUGPVIR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_D6Q22Z6G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6331,11 +6331,11 @@
     {
       "ID": "ref_EQ6MIQXX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_PZU2REJA"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6351,11 +6351,11 @@
     {
       "ID": "ref_68GK7K7I",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5A7MMEKE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6371,12 +6371,12 @@
     {
       "ID": "ref_CM5SWTSI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RVNRQZDE",
         "ref_5A7MMEKE"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6392,11 +6392,11 @@
     {
       "ID": "ref_JUZXSVVF",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_XGNCMW8D"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6412,11 +6412,11 @@
     {
       "ID": "ref_KSPC72KW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5ZK7M8QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6432,11 +6432,11 @@
     {
       "ID": "ref_AWM5MU8C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_5ZK7M8QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6452,11 +6452,11 @@
     {
       "ID": "ref_NGS742ET",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_P98T3FUD"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6472,11 +6472,11 @@
     {
       "ID": "ref_CBRK2GN2",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_P98T3FUD"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6492,11 +6492,11 @@
     {
       "ID": "ref_U8WNIWPC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_P98T3FUD"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6512,11 +6512,11 @@
     {
       "ID": "ref_TDZKAWIC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_T5TVA7QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6532,11 +6532,11 @@
     {
       "ID": "ref_6DIUHVIX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_T5TVA7QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6552,11 +6552,11 @@
     {
       "ID": "ref_JMGW2HKD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_T5TVA7QC"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6572,11 +6572,11 @@
     {
       "ID": "ref_G9N9D7TU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_P4UT322F"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6592,11 +6592,11 @@
     {
       "ID": "ref_9RG9HVUJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_P4UT322F"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6612,11 +6612,11 @@
     {
       "ID": "ref_74B773J5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RSGH975G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6632,11 +6632,11 @@
     {
       "ID": "ref_AC8MIRUR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RSGH975G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6652,11 +6652,11 @@
     {
       "ID": "ref_K9QXMK7G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RSGH975G"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6672,11 +6672,11 @@
     {
       "ID": "ref_VM4ZUBSA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_57XQ9QUM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6692,11 +6692,11 @@
     {
       "ID": "ref_9S3PNUVP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_57XQ9QUM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6712,11 +6712,11 @@
     {
       "ID": "ref_Z2F7PWE5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_57XQ9QUM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6732,11 +6732,11 @@
     {
       "ID": "ref_259E5RQ9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_8J956WFM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6752,11 +6752,11 @@
     {
       "ID": "ref_H7CK5JBB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_8J956WFM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6772,12 +6772,12 @@
     {
       "ID": "ref_BUT8SMNX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9",
         "ref_8J956WFM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6793,11 +6793,11 @@
     {
       "ID": "ref_63FGUFA6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_8J956WFM"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6813,11 +6813,11 @@
     {
       "ID": "ref_99EMNUBZ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6833,11 +6833,11 @@
     {
       "ID": "ref_IGZ3XFNV",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6853,11 +6853,11 @@
     {
       "ID": "ref_F7C958KJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6873,11 +6873,11 @@
     {
       "ID": "ref_2ZWEKTK3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6893,11 +6893,11 @@
     {
       "ID": "ref_V8WTG4S4",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6913,11 +6913,11 @@
     {
       "ID": "ref_VSIA94BB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_FKQFFRM9"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6933,11 +6933,11 @@
     {
       "ID": "ref_EGJX5RJP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6953,11 +6953,11 @@
     {
       "ID": "ref_PE37VE3H",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6973,11 +6973,11 @@
     {
       "ID": "ref_HDJJDQPN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -6993,11 +6993,11 @@
     {
       "ID": "ref_X9MK8HQ5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7013,11 +7013,11 @@
     {
       "ID": "ref_E4SZ4UU5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7033,11 +7033,11 @@
     {
       "ID": "ref_F5QUPGDI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7053,11 +7053,11 @@
     {
       "ID": "ref_4JXHXUIN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7073,11 +7073,11 @@
     {
       "ID": "ref_28JHSD4J",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7093,11 +7093,11 @@
     {
       "ID": "ref_G2AQITX6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7113,11 +7113,11 @@
     {
       "ID": "ref_VFRBM9A6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7133,11 +7133,11 @@
     {
       "ID": "ref_EHFM5AXC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_RN3TP6UB"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7153,11 +7153,11 @@
     {
       "ID": "ref_AS4Q682P",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_7W42I23X"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7173,11 +7173,11 @@
     {
       "ID": "ref_SQA4JEAA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#66aec2",
       "connex": [
         "ref_BVE6KNPF"
       ],
-      "dataset": "MEDIAS_FRANCE",
+      "dataset": "MEDIAS OWNERS - FRANCE",
       "dataset_": "mediasFR",
       "group": [
         "Presse"
@@ -7206,8 +7206,8 @@
       "ID": "group_26",
       "category": "group",
       "color": "#8eba7d",
-      "group": "Groupes",
-      "label": "Groupes",
+      "group": "Groupes industriels/media",
+      "label": "Groupes industriels/media",
       "supertag": true,
       "tag": "",
       "type": "group name",

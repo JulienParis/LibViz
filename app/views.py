@@ -60,6 +60,8 @@ def data_rendering(selection):
     
     collection     = collections[selection]
     print 'collection :', collection
+    shortName         = "/"+selection
+    print 'shortName :', shortName
     
     #coll_name      = collections_names
     #selection      = coll_name[0]
@@ -67,22 +69,26 @@ def data_rendering(selection):
     #lineTypes      = [ k for k, g  in collection['edgesDashDict'].items() ]
     supertags      = collection['supertags']
     
-    legend         = [ {"name":k, "color": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
+    legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
+    legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]
 
     outfileDict    = Z2N_scripts.Outfile_(selection)
     outfile_d3name = outfileDict['of_d3name']
     
     return render_template("D3_network.html",
-                           glob         = global_names,
-                           licenceCC    = licenceCC,
-                           #isGraph      = True,
-                           selection    = selection,
-                           groups       = groups,
-                           legend       = legend,
-                           #lines      = lineTypes,
-                           supertags    = supertags,
-                           dataSet_name = collection['dataSet_name'],
-                           data_JSON    = outfile_d3name,
+                           glob          = global_names,
+                           licenceCC     = licenceCC,
+                           #isGraph     = True,
+                           selection     = selection,
+                           groups        = groups,
+                           legend        = legend,
+                           legendGroups  = legendGroups,
+                           #lines       = lineTypes,
+                           supertags     = supertags,
+                           dataSet_name  = collection['dataSet_name'],
+                           dataSet_url   = shortName,
+                           dataSet_infos = collection['dataSet_infos'],
+                           data_JSON     = outfile_d3name,
                            )
 
 
@@ -98,32 +104,42 @@ def refresh(selection):
     
     collection     = collections[selection]
     print 'collection :', collection
-    
+    shortName         = "/"+selection
+    print 'shortName :', shortName
+
     #coll_name      = collections_names
     #selection      = coll_name[0]
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     supertags      = collection['supertags']
 
-    legend         = [ {"name":k, "color": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
+    legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
+    legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]
 
     outfileDict    = Z2N_scripts.Outfile_(selection)
     outfile_d3name = outfileDict['of_d3name']
 
     outfile_name   = outfileDict['of_name']
     
+    
+    
     ### rewrites the JSON file for the selection
     if collection['API'] == 'Zotero':
         Zotero_2_JSON.refresh_JSON( selection, collection, outfile_name )
 
+
+
     return render_template("D3_network.html",
-                           glob         = global_names,
-                           licenceCC    = licenceCC,
-                           #isGraph      = True,
-                           selection    = selection,
-                           groups       = groups,
-                           legend       = legend,
-                           supertags    = supertags,
-                           dataSet_name = collection['dataSet_name'],
-                           data_JSON    = outfile_d3name,
+                           glob          = global_names,
+                           licenceCC     = licenceCC,
+                           #isGraph     = True,
+                           selection     = selection,
+                           groups        = groups,
+                           legend        = legend,
+                           legendGroups  = legendGroups,
+                           supertags     = supertags,
+                           dataSet_name  = collection['dataSet_name'],
+                           dataSet_url   = shortName,
+                           dataSet_infos = collection['dataSet_infos'],
+                           data_JSON     = outfile_d3name,
                            )
 

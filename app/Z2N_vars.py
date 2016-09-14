@@ -53,23 +53,31 @@ edge_str_dict = {
             }
 
 
-####################################################################
-### collections of Zotero folders/references / EXTENDABLE LIST #####
-####################################################################
+###########################################################################
+####### collections of Zotero folders/references / EXTENDABLE LIST ########
+###########################################################################
+### color gradient hue : http://tools.medialab.sciences-po.fr/iwanthue/ ###
+
 collections = {
     
     '1camp': {
         
         'API'           : 'Zotero',
         'dataSet_name'  : '[1.CAMP]',
+        'dataSet_infos' : {
+                            'presentation' : 'Presentation ...',
+                            'authors'      : 'Authors...',
+                            'methodology'  : 'Methodology...',
+                            'credits'      : 'Credits / link to Zotero group...',
+                        },
         'dataSet_key'   : '336106',
         'url_ROOT'      : createURL('336106'),
         'urlsDict'      : {
-                            'F22AUXTI'  : {'name' : 'annuaire' , 'len' : 0},
-                            'A3IIWJG7'  : {'name' : 'lexique'  , 'len' : 0},
-                            'G2P8TN8H'  : {'name' : 'veille'   , 'len' : 0},
-                            'Q74J8B7H'  : {'name' : 'activites', 'len' : 0},
-                            'FMMA8WPK'  : {'name' : 'lectures' , 'len' : 0}  
+                            'F22AUXTI'  : {'name' : 'annuaire' , 'len' : 0, 'hex' : '#f7ffad'},
+                            'A3IIWJG7'  : {'name' : 'lexique'  , 'len' : 0, 'hex' : '#4b5731'},
+                            'G2P8TN8H'  : {'name' : 'veille'   , 'len' : 0, 'hex' : '#ffd617'},
+                            'Q74J8B7H'  : {'name' : 'activites', 'len' : 0, 'hex' : '#abdbb6'},
+                            'FMMA8WPK'  : {'name' : 'lectures' , 'len' : 0, 'hex' : '#01b617'}  
                         },
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
@@ -91,16 +99,22 @@ collections = {
     'aliens_in_green' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'ALIENS_IN_GREEN',
+        'dataSet_name'  : 'ALIENS IN GREEN',
+        'dataSet_infos' : {
+                            'presentation' : 'Presentation ...',
+                            'authors'      : 'Authors...',
+                            'methodology'  : 'Methodology...',
+                            'credits'      : 'Credits / link to Zotero group...',
+                        },
         'dataSet_key'   : '506887', ### aka group key
         'url_ROOT'      : createURL('506887'),
         'urlsDict'      : {
-                            'N8IKC3JJ'  : {'name' : 'antagonistic organisations'  , 'len' : 0},
-                            'VMXEDTC2'  : {'name' : 'controversial organisations' , 'len' : 0},
-                            '4VTS6RH6'  : {'name' : 'effects'                     , 'len' : 0},
-                            'W64DR56S'  : {'name' : 'scandals'                    , 'len' : 0},
-                            'DRTKSWNF'  : {'name' : 'scientific articles'         , 'len' : 0},  
-                            '7VQU2DSV'  : {'name' : 'substances'                  , 'len' : 0}  
+                            'N8IKC3JJ'  : {'name' : 'antagonistic organisations'  , 'len' : 0, 'hex' : '#b8d39a'},
+                            'VMXEDTC2'  : {'name' : 'controversial organisations' , 'len' : 0, 'hex' : '#61835a'},
+                            '4VTS6RH6'  : {'name' : 'effects'                     , 'len' : 0, 'hex' : '#67d863'},
+                            'W64DR56S'  : {'name' : 'scandals'                    , 'len' : 0, 'hex' : '#c5ce6c'},
+                            'DRTKSWNF'  : {'name' : 'scientific articles'         , 'len' : 0, 'hex' : '#96d6a3'},  
+                            '7VQU2DSV'  : {'name' : 'substances'                  , 'len' : 0, 'hex' : '#608b32'}  
                         },
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
@@ -122,11 +136,17 @@ collections = {
     'oestrogens' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'OESTROGENS',
+        'dataSet_name'  : 'SUBSTANCES & CONTROVERSY',
+        'dataSet_infos' : {
+                            'presentation' : 'Presentation ...',
+                            'authors'      : 'Authors...',
+                            'methodology'  : 'Methodology...',
+                            'credits'      : 'Credits / link to Zotero group...',
+                        },
         'dataSet_key'   : '506887', ### aka group key
         'url_ROOT'      : createURL('506887'),
         'urlsDict'      : {
-                            '9EXBK2DP'  : {'name' : 'OESTROGENS'  , 'len' : 0}
+                            '9EXBK2DP'  : {'name' : 'OESTROGENS'  , 'len' : 0, 'hex' : '#502c81'}
                         },
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
@@ -134,7 +154,7 @@ collections = {
                 node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
                         },
         'edgesDashDict' : {
-                'ref-ref'  : '10 1',
+                'ref-ref'  : '1',
                 'ref-tag'  : '2 1 2',
                 'ref-group': '3 3'
                         },
@@ -150,21 +170,27 @@ collections = {
     'mediasFR' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'MEDIAS_FRANCE',
+        'dataSet_name'  : 'MEDIAS OWNERS - FRANCE',
+        'dataSet_infos' : {
+                            'presentation' : 'Presentation ...',
+                            'authors'      : 'Authors...',
+                            'methodology'  : 'Methodology...',
+                            'credits'      : 'Credits / link to Zotero group...',
+                        },
         'dataSet_key'   : '680968', ### aka group key
         'url_ROOT'      : createURL('680968'),
         'urlsDict'      : {
-                            '3BAX9FGR'  : {'name' : 'Groupes'   , 'len' : 0},
-                            'ZBZBM9H7'  : {'name' : 'Personnes' , 'len' : 0},
-                            'NUBA9JCC'  : {'name' : 'Presse'    , 'len' : 0}
+                            '3BAX9FGR'  : {'name' : 'Groupes industriels/media' , 'len' : 0, 'hex' : '#325d58'},
+                            'ZBZBM9H7'  : {'name' : 'Personnes'                 , 'len' : 0, 'hex' : '#54b992'},
+                            'NUBA9JCC'  : {'name' : 'Presse'                    , 'len' : 0, 'hex' : '#66aec2'}
                         },
         'nodesColorsDict' : {
-                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
+                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
                 node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
                 node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
                         },
         'edgesDashDict' : {
-                'ref-ref'  : '10 1',
+                'ref-ref'  : '1',
                 'ref-tag'  : '2 1 2',
                 'ref-group': '3 3'
                         },

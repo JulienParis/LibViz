@@ -2789,11 +2789,11 @@
     {
       "ID": "ref_EDBBFUMN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2811,9 +2811,9 @@
     {
       "ID": "ref_BT6Z63QZ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2829,11 +2829,11 @@
     {
       "ID": "ref_V96FMVV8",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2851,11 +2851,11 @@
     {
       "ID": "ref_R5E7TDEI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_HDK7XA7K"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2871,12 +2871,12 @@
     {
       "ID": "ref_T3BZJESJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_3M2S2E7R"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2895,11 +2895,11 @@
     {
       "ID": "ref_H4RCQ7ZI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2915,11 +2915,11 @@
     {
       "ID": "ref_ECED5A2P",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2937,11 +2937,11 @@
     {
       "ID": "ref_GDAJ28UW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_9GN5KSGZ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2959,9 +2959,9 @@
     {
       "ID": "ref_94M492SB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -2977,11 +2977,11 @@
     {
       "ID": "ref_9GN5KSGZ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GDAJ28UW"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3000,9 +3000,9 @@
     {
       "ID": "ref_G9UPMX5V",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3021,9 +3021,9 @@
     {
       "ID": "ref_NNAGUC3R",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3041,9 +3041,9 @@
     {
       "ID": "ref_8CPECCSN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3059,9 +3059,9 @@
     {
       "ID": "ref_2URM4FU2",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3077,11 +3077,11 @@
     {
       "ID": "ref_3M2S2E7R",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_T3BZJESJ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3099,9 +3099,9 @@
     {
       "ID": "ref_JZ3UJ6C9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3119,9 +3119,9 @@
     {
       "ID": "ref_T9V87MN6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3139,14 +3139,14 @@
     {
       "ID": "ref_UVXJWBI2",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_99RQ5HRF",
         "ref_AT9489PS",
         "ref_UGNB96A6"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3164,13 +3164,13 @@
     {
       "ID": "ref_AT9489PS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_99RQ5HRF",
         "ref_UVXJWBI2"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3188,13 +3188,13 @@
     {
       "ID": "ref_99RQ5HRF",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_AT9489PS",
         "ref_UVXJWBI2"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3212,7 +3212,7 @@
     {
       "ID": "ref_VW8VK693",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_IQMWHNFG",
         "ref_IUXJINVH",
@@ -3223,7 +3223,7 @@
         "ref_P8F2SBCX",
         "ref_ARWF9DRD"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3241,7 +3241,7 @@
     {
       "ID": "ref_ARWF9DRD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693",
         "ref_4QTKV4F3",
@@ -3249,7 +3249,7 @@
         "ref_VMQ2292C",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3267,11 +3267,11 @@
     {
       "ID": "ref_554SE76H",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3289,14 +3289,14 @@
     {
       "ID": "ref_P8F2SBCX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XCJUNCJC",
         "ref_KWCZEPB3",
         "ref_ZXNPQ6M6",
         "ref_VW8VK693"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3312,12 +3312,12 @@
     {
       "ID": "ref_XGRA2BDU",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693",
         "ref_HP285AHE"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3335,12 +3335,12 @@
     {
       "ID": "ref_DPB3QX84",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693",
         "ref_BUTFISXP"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3358,13 +3358,13 @@
     {
       "ID": "ref_IUXJINVH",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693",
         "ref_B48D5GJU",
         "ref_7IK9XS5H"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3382,14 +3382,14 @@
     {
       "ID": "ref_HDK7XA7K",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693",
         "ref_PV9WRXUW",
         "ref_VM68J6X4",
         "ref_R5E7TDEI"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3407,11 +3407,11 @@
     {
       "ID": "ref_VM68J6X4",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_HDK7XA7K"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3427,11 +3427,11 @@
     {
       "ID": "ref_PV9WRXUW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_HDK7XA7K"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3454,13 +3454,13 @@
     {
       "ID": "ref_ZXNPQ6M6",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_DFH3EE7E",
         "ref_P8F2SBCX"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3482,11 +3482,11 @@
     {
       "ID": "ref_DFH3EE7E",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_ZXNPQ6M6"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3504,12 +3504,12 @@
     {
       "ID": "ref_HT8Q6DES",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_VP7F4N2M"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3527,9 +3527,9 @@
     {
       "ID": "ref_UXI9WQTF",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3545,12 +3545,12 @@
     {
       "ID": "ref_IQMWHNFG",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_VW8VK693",
         "ref_K5AMB3T6"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3566,12 +3566,12 @@
     {
       "ID": "ref_5XMDQ4DB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_GKZF99UV"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3587,13 +3587,13 @@
     {
       "ID": "ref_R2CJAPG9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_Z2II5B9C",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3611,7 +3611,7 @@
     {
       "ID": "ref_Z2II5B9C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_BFBE9FRR",
         "ref_R2C4XPZ6",
@@ -3621,7 +3621,7 @@
         "ref_R2CJAPG9",
         "ref_KWCZEPB3"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3640,13 +3640,13 @@
     {
       "ID": "ref_KWCZEPB3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_Z2II5B9C",
         "ref_P8F2SBCX"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3662,7 +3662,7 @@
     {
       "ID": "ref_GQ64BDW2",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_4QTKV4F3",
         "ref_MG5S4ZCE",
@@ -3673,7 +3673,7 @@
         "ref_XCJUNCJC",
         "ref_KWCZEPB3"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3691,11 +3691,11 @@
     {
       "ID": "ref_VBCAKZ9H",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_WQE98M5C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3713,12 +3713,12 @@
     {
       "ID": "ref_GKZF99UV",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_4QTKV4F3",
         "ref_5XMDQ4DB"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3736,12 +3736,12 @@
     {
       "ID": "ref_W2IS79KX",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_WQE98M5C",
         "ref_4QTKV4F3"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3759,13 +3759,13 @@
     {
       "ID": "ref_29KDURAI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_4QTKV4F3",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3783,14 +3783,14 @@
     {
       "ID": "ref_MG5S4ZCE",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_4QTKV4F3",
         "ref_29KDURAI",
         "ref_R2CJAPG9"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3808,7 +3808,7 @@
     {
       "ID": "ref_4QTKV4F3",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_EH78XNAN",
         "ref_WQE98M5C",
@@ -3822,7 +3822,7 @@
         "ref_29KDURAI",
         "ref_GKZF99UV"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3840,12 +3840,12 @@
     {
       "ID": "ref_VBBWD2V8",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_4QTKV4F3",
         "ref_WQE98M5C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3863,12 +3863,12 @@
     {
       "ID": "ref_EDI68INT",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_WQE98M5C",
         "ref_4QTKV4F3"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3886,7 +3886,7 @@
     {
       "ID": "ref_SRKQ6UNC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_2SJJ2VPQ",
@@ -3894,7 +3894,7 @@
         "ref_ARWF9DRD",
         "ref_WQE98M5C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3929,13 +3929,13 @@
     {
       "ID": "ref_VP7F4N2M",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XCJUNCJC",
         "ref_SRKQ6UNC",
         "ref_HT8Q6DES"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3953,13 +3953,13 @@
     {
       "ID": "ref_XCJUNCJC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_P8F2SBCX",
         "ref_VP7F4N2M"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -3999,13 +3999,13 @@
     {
       "ID": "ref_VMQ2292C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_ARWF9DRD",
         "ref_PJXWJ4C7",
         "ref_F7T48F3S"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4031,11 +4031,11 @@
     {
       "ID": "ref_9KPGME85",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_ARWF9DRD"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4053,12 +4053,12 @@
     {
       "ID": "ref_7IK9XS5H",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_Z2II5B9C",
         "ref_IUXJINVH"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4077,13 +4077,13 @@
     {
       "ID": "ref_FXWCGUE5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_V34SNSTA",
         "ref_R2C4XPZ6",
         "ref_D2F3EV45"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4101,7 +4101,7 @@
     {
       "ID": "ref_V34SNSTA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_AQMUA2M4",
         "ref_Z2II5B9C",
@@ -4109,7 +4109,7 @@
         "ref_D2F3EV45",
         "ref_FXWCGUE5"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4127,11 +4127,11 @@
     {
       "ID": "ref_ZQG84XQW",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_7V5CXIAQ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4149,13 +4149,13 @@
     {
       "ID": "ref_4GAUANX5",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_R2C4XPZ6",
         "ref_D2F3EV45",
         "ref_AQMUA2M4"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4174,13 +4174,13 @@
     {
       "ID": "ref_BFBE9FRR",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_R2C4XPZ6",
         "ref_D2F3EV45",
         "ref_Z2II5B9C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4199,14 +4199,14 @@
     {
       "ID": "ref_2EQESATT",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_R2C4XPZ6",
         "ref_AQMUA2M4",
         "ref_D2F3EV45",
         "ref_HC8GACUB"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4224,14 +4224,14 @@
     {
       "ID": "ref_RNP48896",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_R2C4XPZ6",
         "ref_D2F3EV45",
         "ref_HC8GACUB",
         "ref_AQMUA2M4"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4249,14 +4249,14 @@
     {
       "ID": "ref_QGHT3W5V",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_D2F3EV45",
         "ref_AQMUA2M4",
         "ref_R2C4XPZ6",
         "ref_HC8GACUB"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4275,13 +4275,13 @@
     {
       "ID": "ref_HZ86AXNV",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_D2F3EV45",
         "ref_AQMUA2M4",
         "ref_R2C4XPZ6"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4300,7 +4300,7 @@
     {
       "ID": "ref_AQMUA2M4",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_R2C4XPZ6",
         "ref_D2F3EV45",
@@ -4311,7 +4311,7 @@
         "ref_RNP48896",
         "ref_4GAUANX5"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4329,11 +4329,11 @@
     {
       "ID": "ref_53HBW8NV",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4352,13 +4352,13 @@
     {
       "ID": "ref_CZVTI8Z9",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_R2C4XPZ6",
         "ref_D2F3EV45",
         "ref_HC8GACUB"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4376,11 +4376,11 @@
     {
       "ID": "ref_24925MUH",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4398,13 +4398,13 @@
     {
       "ID": "ref_Q7SFACDB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_D2F3EV45",
         "ref_R2C4XPZ6",
         "ref_HC8GACUB"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4422,7 +4422,7 @@
     {
       "ID": "ref_D2F3EV45",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XEPKQQJ6",
         "ref_R2C4XPZ6",
@@ -4439,7 +4439,7 @@
         "ref_V34SNSTA",
         "ref_FXWCGUE5"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4457,11 +4457,11 @@
     {
       "ID": "ref_URRSHA4G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4479,11 +4479,11 @@
     {
       "ID": "ref_IEPBII8A",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4501,12 +4501,12 @@
     {
       "ID": "ref_33V8E7JS",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_2SJJ2VPQ",
         "ref_WQE98M5C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4524,12 +4524,12 @@
     {
       "ID": "ref_6W34KJJN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_2SJJ2VPQ",
         "ref_WQE98M5C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4545,7 +4545,7 @@
     {
       "ID": "ref_WQE98M5C",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_NG9J8T6J",
         "ref_5WTZF8QX",
@@ -4565,7 +4565,7 @@
         "ref_M5QEJF28",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4583,11 +4583,11 @@
     {
       "ID": "ref_AEX984EM",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4605,11 +4605,11 @@
     {
       "ID": "ref_ZMUS8ZBK",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4627,11 +4627,11 @@
     {
       "ID": "ref_EATV8CAD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4649,7 +4649,7 @@
     {
       "ID": "ref_2SJJ2VPQ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_EATV8CAD",
         "ref_ZMUS8ZBK",
@@ -4658,7 +4658,7 @@
         "ref_AEX984EM",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4676,7 +4676,7 @@
     {
       "ID": "ref_F7T48F3S",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_XDZVQMF4",
         "ref_Z2II5B9C",
@@ -4693,7 +4693,7 @@
         "ref_T3BZJESJ",
         "ref_99RQ5HRF"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4711,11 +4711,11 @@
     {
       "ID": "ref_RR492BZJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4733,11 +4733,11 @@
     {
       "ID": "ref_XDZVQMF4",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4755,11 +4755,11 @@
     {
       "ID": "ref_DIZNN8PJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4777,12 +4777,12 @@
     {
       "ID": "ref_6B77HX4N",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_E632NUJP",
         "ref_2WQZTAAI"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4800,11 +4800,11 @@
     {
       "ID": "ref_2WQZTAAI",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_6B77HX4N"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4822,11 +4822,11 @@
     {
       "ID": "ref_WHSXAMBF",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_EH78XNAN"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4844,11 +4844,11 @@
     {
       "ID": "ref_IX2N69XV",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4866,9 +4866,9 @@
     {
       "ID": "ref_CV34JIMD",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4884,11 +4884,11 @@
     {
       "ID": "ref_FTWW88JB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4907,11 +4907,11 @@
     {
       "ID": "ref_5W2N5P3G",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4930,13 +4930,13 @@
     {
       "ID": "ref_PJXWJ4C7",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_ZPCINRKG",
         "ref_Q57Z25WP",
         "ref_VMQ2292C"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4954,7 +4954,7 @@
     {
       "ID": "ref_Q57Z25WP",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_F8Q923UA",
         "ref_PJXWJ4C7",
@@ -4962,7 +4962,7 @@
         "ref_FTWW88JB",
         "ref_53HBW8NV"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4978,9 +4978,9 @@
     {
       "ID": "ref_GBFB22CN",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -4996,9 +4996,9 @@
     {
       "ID": "ref_HPTTCTAJ",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5014,11 +5014,11 @@
     {
       "ID": "ref_F8Q923UA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5036,9 +5036,9 @@
     {
       "ID": "ref_X7N6ATKC",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5054,9 +5054,9 @@
     {
       "ID": "ref_42BD9C79",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5072,12 +5072,12 @@
     {
       "ID": "ref_DJJXKBEB",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_6IQEWV38",
         "ref_E632NUJP"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5093,13 +5093,13 @@
     {
       "ID": "ref_8PX73DAA",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_E632NUJP",
         "ref_6IQEWV38",
         "ref_VPR2282D"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5115,13 +5115,13 @@
     {
       "ID": "ref_VPR2282D",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_E632NUJP",
         "ref_6IQEWV38",
         "ref_8PX73DAA"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"
@@ -5137,12 +5137,12 @@
     {
       "ID": "ref_BUTPXX4M",
       "category": "reference",
-      "color": "#c57753",
+      "color": "#502c81",
       "connex": [
         "ref_E632NUJP",
         "ref_6IQEWV38"
       ],
-      "dataset": "OESTROGENS",
+      "dataset": "SUBSTANCES & CONTROVERSY",
       "dataset_": "oestrogens",
       "group": [
         "OESTROGENS"

@@ -42,7 +42,9 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         dataSet_name    = collection['dataSet_name']
         url_ROOT        = collection['url_ROOT']
         urlsDict        = collection['urlsDict']
-        nodesColorsDict = collection['nodesColorsDict']
+        listed_groups   = urlsDict.keys()
+        nodesColorsDict = collection['nodesColorsDict']  ### colors by default
+        ##refColorsDict   = collection['urlsDict']['hex']  ### colors references depending on their group
         edgesDashDict   = collection['edgesDashDict']
         
         try :
@@ -141,18 +143,25 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                         #print 'ref :', id_, '/ connex : ', c_rel_
                         connex_.append(c_rel_)
                 print
-                
+            
+            ### groups and colors 
             group_id  = ref[u'data'][u'collections'] #[0] ######## !!!! sometimes one ref is in several collections/groups
+            print "group_id:", group_id
+            
             ### fetch group name from group_id
             group_ = []
             for id_gr in group_id :
-                listed_groups = urlsDict.keys()
                 if id_gr in listed_groups :
                         group_.append( urlsDict[id_gr]['name']) ###############
+            print "group_ :", group_ ###########
             
-            #if group_ not in groupsList :
-            #    groupsList.append(group_)
+            ### attribute color depending on group
+            if len(group_id) == 1 and group_id[0] in listed_groups : ### default color for group if ref in several groups
+                colorRef = urlsDict[group_id[0]][switch_color]
+            else : ### color of the group
+                colorRef = nodesColorsDict['reference'][switch_color]
                 
+            ### fetch tags
             tags_raw  = ref[u'data'][u'tags']
             tags_    = []
             for tag in tags_raw :
@@ -162,6 +171,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                     tagsDict[t] = {'weight' : 1}
                 else :
                     tagsDict[t]['weight'] += 1
+            
+            ### create ref datas
             ref_dict = {
                          ns['id']       : id_.encode('UTF-8') ,
                          ns['label']    : title_,
@@ -174,7 +185,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                          ns['category'] : 'reference',
                          ns['supertag'] : False,
                          ns['weight']   : w_dft,
-                         ns['color']    : nodesColorsDict['reference'][switch_color],
+                         ns['color']    : colorRef, ###############
+                         #ns['color']    : nodesColorsDict['reference'][switch_color], ###############
                          ns['dataset']  : dataSet_name,
                          ns['dataset_'] : selection
                          }
@@ -203,7 +215,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                           ns['category'] : 'group',
                           ns['supertag'] : True,
                           ns['weight']   : w_dft*w_biggroup ,
-                          ns['color']    : nodesColorsDict['group'][switch_color] 
+                          ns['color']    : nodesColorsDict['group'][switch_color]  #####################
                          }
             
             nodesList.append(group_dict)
