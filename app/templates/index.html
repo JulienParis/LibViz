@@ -11,7 +11,9 @@
 
     <!-- subtitle of the app only in homepage -->
 	<br>
-    <div class="jumbotron col-lg-4 col-lg-offset-4">
+	<br>
+	<br><br>
+    <div class="jumbotron col-sm-3 col-sm-offset-1">
 		
 		<h1 class="text-center"> {{ glob.titleApp }} </h1>
 		
@@ -36,12 +38,15 @@
 			</p>
 			
 			{% for set in glob.collections_names %}
-				<a href="/{{ set[0] }}"
-				   class="list-group-item col-lg-8 col-lg-offset-2"
-				   >
-					&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
-					<strong> {{ set[1] }} </strong>
-				</a>
+				<!--<h6>-->
+					<a 	href="/{{ set[0] }}"
+						class="list-group-item col-xs"
+						>
+						&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
+						<strong> {{ set[1] }} </strong>
+					</a>
+				<!--</h6>-->
+				
 			{% endfor %}
 			
 			

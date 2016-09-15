@@ -62,14 +62,20 @@
 				z-index: 1;
 			}
 			
+			header {
+				/*opacity: 0.3;*/
+				background-color: rgba(0, 0, 0, 0.4) ;
+			}
+			/*.navbar-header :after{
+				opacity: 1;
+				
+			}*/
+			
 			body {
 				background-color: black;
 				height: 100%;
 			}
 			
-			header {
-				background-color: black;    
-			}
 			
 			h4 {
 				color: white;
@@ -78,6 +84,17 @@
 			.jumbotron{
 				/*color: grey;*/
 				background-color: #f0ad4e;
+
+			}
+			
+			body.index_bckgrd {
+				background: url( {{ url_for('static', filename='images/index_background.png') }} ) no-repeat center center fixed;
+				/*background-size: 100%, 100%;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;*/
+				background-size: cover;
+				
 			}
 			
 			/*.list-group-item{
@@ -305,7 +322,7 @@
 									data-toggle="modal"
 									data-target="#modalInfos"
 									  >
-								<span class="glyphicon glyphicon-info-sign"></span>
+								<span class="glyphicon glyphicon-question-sign"></span>
 							</button>
 						</li>
 						
@@ -530,7 +547,8 @@
 
 
 
-    <body id="body">
+    
+	<body id="body" {% if index %} class="index_bckgrd" {% endif %} >
 		
 		<!-- contents -->
 		<div class="container-layout" id="containerLayout" ></div>

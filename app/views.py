@@ -40,7 +40,8 @@ def index():
     print '-'*5 , ' collections_names list: ', collections_names
     return render_template("index.html",
                            glob      = global_names,
-                           licenceCC = licenceCC
+                           licenceCC = licenceCC,
+                           index     = "index"
                            #isHome = True
                            #titleApp          = title ,
                            #subtitleApp       = subtitle ,
