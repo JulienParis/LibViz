@@ -5,13 +5,17 @@
   {% block D3_infos %}
   
       <!-- legend + filter column -->
-      <div class="col-sm-2" >
+      <div  class="col-sm-2"
+            >
         
         <br>
         
         <!-- collapsible all filters column -->
         <div  class="collapse in "
-              id="collapsibleFilters" >
+              id="collapsibleFilters"
+              style=" background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 15px;
+                    padding: 5px">
             
             
             
@@ -80,7 +84,7 @@
             
             
             <!-- FILTERS BREAK LINKS -->
-            <div class="list-group">  
+            <div class="list-group" id="break_list">  
               
               <h5 style="color: white">
                 <em>break links</em>
@@ -109,7 +113,7 @@
             
             
             <!-- FILTERS SHOW / HIDE NODES -->
-            <div class="list-group">
+            <div class="list-group" id="hide_list">
               <h5 style="color: white"
                   >
                 <em>show / hide categories </em>
@@ -226,12 +230,12 @@
           <div  class="collapse"
                 id="collapsibleInfos">
   
-            <p class="list-group-item">label :    <a id="nLabel"></a></p>
-            <p class="list-group-item">category : <a id="nCategory"></a></p>
-            <p class="list-group-item">group :    <a id="nGroup"></a></p>
-            <p class="list-group-item">type :     <a id="nType"></a></p>
+            <p class="list-group-item">label :    <a class="nohref" id="nLabel"></a></p>
+            <p class="list-group-item">category : <a class="nohref" id="nCategory"></a></p>
+            <p class="list-group-item">group :    <a class="nohref" id="nGroup"></a></p>
+            <p class="list-group-item">type :     <a class="nohref" id="nType"></a></p>
             <p class="list-group-item">url :      <a id="nUrl"></a></p>
-            <p class="list-group-item">tags :     <a id="nTags"></a></p> <!--still not displaying tags correctly-->
+            <p class="list-group-item">tags :     <a class="nohref" id="nTags"></a></p> <!--still not displaying tags correctly-->
             
           </div>
       

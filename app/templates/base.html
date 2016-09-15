@@ -28,8 +28,24 @@
 				height: 100%
 			}*/
 			
-			a{
-				color: #f0ad4e;	
+			a {
+				color: #f0ad4e;
+				text-decoration: none ;
+			}
+			
+			a:hover {
+				color: #d1513b;
+				text-decoration: none ;
+			};
+			
+			a:focus {
+				color: #d1513b;
+				text-decoration: none;
+			}
+			
+			a.nohref {
+				color: #f0ad4e ;
+				text-decoration: none;
 			}
 			
 			.modal-backdrop{
@@ -329,7 +345,7 @@
 							data-placement="bottom"
 							title="search a node, select it from the list and press ENTER"	 >
 						<div 	class="form-group"
-								style="	margin-top: 9px;
+								style="	margin-top: 8px;
 										margin-bottom: 12px;
 										margin-right: 10px;
 										margin-left: -10px;"
@@ -346,7 +362,7 @@
 								<span class="input-group-btn">
 									<button class="btn btn-primary"
 											type="button"
-											onclick="searchNode()"
+											onclick="getSearchBarValue()"
 											style="	border-color: white;
 													background-color: white;
 													color: grey;
@@ -388,7 +404,7 @@
 								id="play-pause"
 								class="btn btn-md btn-warning btn-navbar"
 								> 	
-								<span class="glyphicon glyphicon-pause"></span>
+								<span class="glyphicon glyphicon-pause" style="margin-top: -5px;"></span>
 							</button>
 						</li>
 						
@@ -568,17 +584,32 @@
 					  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
 					  and on <a target="_blank" href="https://github.com/JulienParis/{{ glob.titleApp }}">GitHub</a>.
 				  </p>
-				  <p><em>{{ glob.titleApp }}</em> is powered by :
-					<ul>
-						<li><a target="_blank" href="https://www.python.org/" >Python</a> to get the references and create the JSON datasets </li>
-						<li><a target="_blank" href="https://www.zotero.org/" >Zotero</a> to organise bibliographical references</li>
-						<li><a target="_blank" href="http://flask.pocoo.org/" >Flask</a> as backbone of the website</li>
-						<li><a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> for the global aspect website</li>
-						<li><a target="_blank" href="https://d3js.org/" >d3.js</a> by 
-						<li><a target="_blank" href="https://bost.ocks.org/mike/" >Mike Bostock</a>
-							to create the graph visualisation </li>
-					</ul>
-				  </p>
+				  
+				  <a 	role="button"
+						id="collapserHood"
+						data-toggle="collapse"
+						data-target="#collapsibleHood"
+						aria-expanded="false"
+						aria-controls="collapsibleHood"
+					  >
+					<em>{{ glob.titleApp }}</em> is powered by <span class="caret"></span>
+				  </a>
+					<div class="collapse  list-group"
+						id="collapsibleHood" 
+						>
+						<ul>
+							<li><a target="_blank" href="https://www.python.org/" >Python</a> to get the references and create the JSON datasets </li>
+							<li><a target="_blank" href="https://www.zotero.org/" >Zotero</a> to organise bibliographical references</li>
+							<li><a target="_blank" href="http://flask.pocoo.org/" >Flask</a> as backbone of the website</li>
+							<li><a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> for the global aspect website</li>
+							<li><a target="_blank" href="https://d3js.org/" >d3.js</a> by 
+							<li><a target="_blank" href="https://bost.ocks.org/mike/" >Mike Bostock</a>
+								to create the graph visualisation </li>
+						</ul>
+					</div>
+				  
+				  
+				  
 				  <hr></hr>
 				  
 				  <h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
@@ -626,10 +657,11 @@
 		  
 				<div class="modal-body">
 				  
-				  <h4 class="text-center"><span class="label label-primary">
-				  Node infos and neighbours
-				  </span></h4>
-				  <br>
+				  <h4 class="text-center" style="margin-bottom: 15px">
+					<span class="label label-warning">
+					Node infos and neighbours
+					</span>
+				  </h4>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-menu-right"></span>
 						</span>
@@ -655,10 +687,11 @@
 					</h5>
 				  <hr></hr>
 				
-				  <h4 class="text-center"><span class="label label-primary">
-				  Animation, zoom and pan graph
-				  </span></h4>
-				  <br>
+				  <h4 class="text-center" style="margin-bottom: 15px">
+					<span class="label label-warning">
+					Animation, zoom and pan graph
+					</span>
+				  </h4>
 				  <h5><span class="badge">
 							<span class="glyphicon glyphicon-play"></span>
 						</span>
@@ -695,10 +728,11 @@
 					
 				  <hr></hr>
 				
-				  <h4 class="text-center"><span class="label label-primary">
-				  Filters
-				  </span></h4>
-				  <br>
+				  <h4 class="text-center" style="margin-bottom: 15px">
+					<span class="label label-warning">
+					Filters
+					</span>
+				  </h4>
 					<h5><span class="badge">
 							ref-group
 						</span>
@@ -720,10 +754,11 @@
 				
 				<hr></hr>
 				
-				  <h4 class="text-center"><span class="label label-primary">
-				  Refresh and reload
-				  </span></h4>
-				  <br>
+				  <h4 class="text-center" style="margin-bottom: 15px">
+					<span class="label label-warning">
+					Refresh and reload
+					</span>
+				  </h4>
 					<h5><span class="badge">
 							<span class="glyphicon glyphicon-repeat"></span>
 						</span>

@@ -133,10 +133,10 @@ collections = {
 
     ,
     
-    'oestrogens' : {
+    'substances' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'SUBSTANCES & CONTROVERSY',
+        'dataSet_name'  : 'SUBSTANCES / CONTROVERSIES',
         'dataSet_infos' : {
                             'presentation' : 'Presentation ...',
                             'authors'      : 'Authors...',
@@ -163,8 +163,6 @@ collections = {
     
         }
         
-    
-    
     ,
     
     'mediasFR' : {

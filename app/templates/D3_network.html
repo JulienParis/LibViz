@@ -35,7 +35,7 @@
     //add the div for the tooltip
     var div = d3.select("body")
       .append("div")
-      .attr("class", "panel panel-info tooltipNode")
+      .attr("class", "tooltipNode")
       .style("opacity", 0) ;
       
       
@@ -156,9 +156,9 @@
     var spaceY     = legendDiam + interval ;
     
     var legendColorsGroups = {{ legendGroups|tojson  }};
-    console.log(legendColorsGroups);
+    //console.log("legendColorsGroups :", legendColorsGroups);
     var legendColorsRefTag = {{ legend|tojson  }};
-    console.log(legendColorsRefTag);
+    //console.log("legendColorsRefTag :", legendColorsRefTag);
     
     legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
     //console.log(legendHeight);
@@ -166,39 +166,56 @@
     var legendWidth  = document.getElementById('legend').clientWidth ;
     //var legendHeight = document.getElementById('legend').clientHeight;
     var legend = d3.select(".legend")
-      .append("svg:svg")
-      .attr("background-color", "black")
+      .append("svg:svg");
+    legend.attr("background-color", "black")
       .attr("width" , legendWidth)
-      .attr("height", legendHeight) ;
+      .attr("height", legendHeight)
+      .attr("class", "svg_legend");
     
     var nodeLegend = legend.append("g")
-      .attr("class"   , "nodes_legend") ;
+      .attr("id"   , "nodes_legend") ;
     // add circles for nodes_legend
 
     tempSpaceY = interval + legendR ; 
     
+    
     function makeLegend(coll, margin) {
+      
       for (var i = 0; i <= coll.length - 1; i++) {
-        var obj = coll[i];
-        nodeLegend.append("circle")
+      var obj = coll[i]; 
+        var lgd_ = nodeLegend.append('g')
+          .attr("class", "nodeLgd")
+          .attr("id", obj.name)
+          ;
+        lgd_.append("circle")
           .attr("cx", spaceX + margin )
           .attr("cy", tempSpaceY )
           .attr("r", legendR )
           .attr("stroke", "white")
           .attr("stroke-width", legendS )
-          .style("fill", obj.hex ); //return color(d.{{glob.ns.type}})
-        nodeLegend.append("text")
+          .style("fill", obj.hex ) //return color(d.{{glob.ns.type}})
+          //.attr("id", obj.name)
+          ; 
+        lgd_.append("text")
           .attr("fill", "white")
           .attr("x", spaceX + legendDiam + margin  )
           .attr("y", tempSpaceY )
           .attr("dy", ".35em")
-          .text(obj.name);
+          .text( obj.name );
+        
         tempSpaceY += spaceY ;
-        }
+        };
+        
       };
       
-      makeLegend(legendColorsRefTag, 0);
-      makeLegend(legendColorsGroups, interval*4);
+    makeLegend(legendColorsRefTag, 0);
+    makeLegend(legendColorsGroups, interval*4);
+    
+
+    d3.select("#nodes_legend").selectAll("g")
+      .attr("clickable", "yes")
+      .on("click", getLegendValue ) 
+      ;
       
    
     ///////////////////////////////////////////////////
@@ -239,7 +256,8 @@
       )
     ;
     
-    //console.log("optArray : ", optArray); // OK /////////////////////////
+    
+    //console.log("optArray : ", optArray); // OK 
     
     /////////////////////////////////////////////////////////////////////////////////
 
@@ -307,46 +325,65 @@
 
     // HIDE NODES FROM LAYOUT (but no disappear)
     function hideNodes(buttonValue) {
-
-      // get button attributes
-      var Clickbutton = document.getElementById(buttonValue);
-      var status = Clickbutton.getAttribute("Enabled");
       
-      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
-      if (status =="0"){
-		Clickbutton.setAttribute("Enabled","1");
-		Clickbutton.setAttribute("aria-pressed", "true") ;
-      }
-      if (status =="1"){
-        Clickbutton.setAttribute("Enabled","0");
-        Clickbutton.setAttribute("aria-pressed", "false") ;
-      }
-
-      // check status for all buttons
+      console.log("buttonValue", buttonValue); // example : 'group'
+      
+      // get all 'hideFilter' buttons
       var buttons = document.getElementsByClassName('hideFilter');
       
-      //var selected = buttonValue ;
-      //console.log("selected :", this);
-      
-      // stores criterias to hide
+      // empty containers
       var rulesToHide = [] ;
+      var Clickbutton = null ;
+      var buttonStatus = null;
+      
+      // get button attributes
       for(var j = 0; j < buttons.length; j++) {
-        //console.log(button);
+		var button = buttons[j];		
+        // use as clickbutton if : id == buttonValue
+        var id = button.getAttribute("id");
+		if (id == buttonValue){ 
+          Clickbutton = button ;
+          buttonStatus = button.getAttribute("Enabled");
+        }
+      };
+     
+      console.log("Clickbutton", Clickbutton); 
+      console.log("buttonStatus", buttonStatus); 
+      
+      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
+      
+      if (buttonStatus =="0"){
+        Clickbutton.setAttribute("enabled","1");
+        Clickbutton.setAttribute("aria-pressed", "true") ;
+      };
+      if (buttonStatus =="1"){
+        Clickbutton.setAttribute("enabled","0");
+        Clickbutton.setAttribute("aria-pressed", "false") ;
+      };
+      
+      
+      // stores criterias to hide 
+      for(var j = 0; j < buttons.length; j++) {
 		var button = buttons[j];		
 		var status = button.getAttribute("Enabled");
-        // remove nodes and edges if button status is "1"
 		if (status=="1"){ 
           rulesToHide.push(button.id);
         }			
       }
-      //console.log("rulesToHide hideFilter:", rulesToHide);
+      console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
       
       var nodes = vis.selectAll(".node");
       
-      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1 | rulesToHide.indexOf(d.group) != -1  ; } )
+      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1
+                                            || rulesToHide.indexOf(d.group) != -1
+                                            || rulesToHide.indexOf(d.tag)   != -1
+                                            ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
         .style("opacity", "0.1" );
       
-      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1 && rulesToHide.indexOf(d.group) == -1  ; } )
+      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1
+                                            && rulesToHide.indexOf(d.group) == -1
+                                            && rulesToHide.indexOf(d.tag)   == -1
+                                            ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
         .style("opacity", "1.0" );
         
     }
@@ -365,6 +402,7 @@
       simulation.force("link")
           .links(links);
 
+      //console.log("nodes in render : ", nodes);
       
       /////////////////////////////////////////////////
       // stop / restart animation 
@@ -442,7 +480,7 @@
             div.transition()		
               .duration(200)		
               .style("opacity", .95);		
-            div.html( "<strong> "+ d.{{glob.ns.label}} + " </strong>")	
+            div.html( "<strong> "+ d.{{glob.ns.label}} + " </strong>" + " <br>(<em>" + d.{{glob.ns.category}} + "</em>)" )	
               .style("left", (d3.event.pageX + 20) + "px")		
               .style("top", (d3.event.pageY - 10) + "px");	
           })					
@@ -537,40 +575,95 @@
  
     //launch autocomplete once page loaded
     $(document).ready(function () {
-        $("#search").autocomplete({ source: optArray }); 
+        $("#search").autocomplete({ source: optArray });
+        
       });
+    
+    
+    
+    // get search value from legend
+    function getLegendValue () {
+      
+      var from = "legend";
+      
+      var selectedVal = d3.select(this).node().id;
+      
+      //console.log("selectedVal from getLegendValue : ", d3.select(this) );
+      //console.log("selectedVal from getLegendValue : ", d3.select(this).node() );
+      //console.log("selectedVal from getLegendValue : ", d3.select(this).node().id );
+      searchNode( selectedVal, from )
+    };
+    
+    // get search value from searchbar
+    function getSearchBarValue () {
+      
+      var from = "searchbar" ;
+      console.log("selectedVal from getSearchBarValue : ", document.getElementById('search') )
+      
+      var selectedVal = document.getElementById('search').value;
+      console.log("selectedVal from getSearchBarValue : ", selectedVal )
+      
+      searchNode( selectedVal, from )
+    };
+    
+    
 
     /// search bar functions 
-    function searchNode() {
-      //find the node
-      var selectedVal = document.getElementById('search').value;
+    function searchNode(value, from) {
+      
       var node = vis.selectAll(".node");
       
-      if (selectedVal == "none") {
+      if (value == "none") {
         node.style("stroke", "white")
-        .style("stroke-width", "10");
+          .style("stroke-width", "10");
       }
+      
       else {
-        var selected = node.filter(function (d, i) {
-            return d.label != selectedVal;
-        });
+        
+        // if value from search bar
+        if (from == "searchbar") {
+          var selected = node.filter(function (d, i) { return d.label != value ; } );
+        }
+        else {
+          var selected = node.filter(function (d, i) { return d.group != value    & d.tags != value    & d.category != value ; } );
+          //console.log("selected : ", selected)
+        };
+        
         selected.style("opacity", "0.1");
         
-        var link = vis.selectAll(".links")
+        var link = vis.selectAll(".links");
         link.style("opacity", "0.1");
+        
+        
+         // reset all 'hideFilter' buttons
+        var buttons = document.getElementsByClassName('hideFilter');
+        for(var j = 0; j < buttons.length; j++) {
+          var button = buttons[j];
+          var buttonStatus = button.getAttribute("enabled") ;
+          if (buttonStatus =="1"){
+            button.setAttribute("enabled","0");
+            button.setAttribute("aria-pressed", "false") ;
+            button.setAttribute("class", "btn btn-default btn-sm hideFilter btn-filter") ;
+          }
+        };
+        
         
         d3.selectAll(".node, .links")
           .transition()
-          .duration(4500)
+          .duration(4000)
           .style("opacity", 1);
-      }
-    }
+        }
+        
+       
+        
+    };
+    
     //search bar / run searchNode if enter (aka keyCode==13) is pressed
     function handle(e){
       if(e.keyCode === 13){
-        searchNode();
+        getSearchBarValue();
         }
-    }
+    };
 
 
 
@@ -626,9 +719,9 @@
     function displayInfos() {
       
       n = d3.select(this).node().__data__;
-      console.log("node DATAS :", n);
+      console.log("displayInfos / node DATAS before __data__ :", d3.select(this).node());
       
-      ////// PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY __DATA__
+      ////// I STILL HAVE A PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY __DATA__
       //n_ = d3.select(this).classed("fixed", d.fixed = true);
       //console.log("node DATAS_ :", n_);
       
@@ -650,7 +743,7 @@
       d3.select('#nUrl')
         .attr("href", n.url)
         .attr("target", "_blank")
-        .text("Go to reference if any..."); // need to be blank if none ////////
+        .text("Weblink"); // need to be blank if none ////////
       
       //console.log("d :"    , d);
       //console.log("tags :" , d.tag);
