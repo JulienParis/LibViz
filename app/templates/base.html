@@ -649,94 +649,133 @@
 				role="dialog"
 				aria-labelledby="myModalLabel"
 				>
-		  <div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				  <h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
-				  <h6 class="text-center" style="margin-top: 0px;"> Making graphs you can play with from Zotero libraries...</h6>
-				</div>
-				
-				<div class="modal-body">
-				  
-				  <h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
-				  <p><em>{{ glob.titleApp }}</em> allows to generate data visualisations (graphs) from sets of Zotero references.</p>
-				  <hr></hr>
-				  
-				  <h4 class="text-center"><span class="label label-default"> HISTORY </span></h4>
-				  <p><em>{{ glob.titleApp }}</em> started as a part of <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=start">1.CAMP</a>,
-					  which a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
-					  Julien Bellanger could tell more about this part...
-				  </p>
-				  <p>
-					Then other people join the project, wanting some visualisation for their own datasets : other bibliographical references gathered in
-					<a target="_blank" href="https://www.zotero.org/" >Zotero</a>. 
-					So the project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
-				  </p>
-				  <hr></hr>
-				  
-				  <h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
-				  <p><em>{{ glob.titleApp }}</em> development is documented
-					  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
-					  and on <a target="_blank" href="https://github.com/JulienParis/{{ glob.titleApp }}">GitHub</a>.
-				  </p>
-				  
-				  <a 	role="button"
-						id="collapserHood"
-						data-toggle="collapse"
-						data-target="#collapsibleHood"
-						aria-expanded="false"
-						aria-controls="collapsibleHood"
-					  >
-					<em>{{ glob.titleApp }}</em> is powered by <span class="caret"></span>
-				  </a>
-					<div class="collapse  list-group"
-						id="collapsibleHood" 
-						>
-						<ul>
-							<li><a target="_blank" href="https://www.python.org/" >Python</a> to get the references and create the JSON datasets </li>
-							<li><a target="_blank" href="https://www.zotero.org/" >Zotero</a> to organise bibliographical references</li>
-							<li><a target="_blank" href="http://flask.pocoo.org/" >Flask</a> as backbone of the website</li>
-							<li><a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> for the global aspect website</li>
-							<li><a target="_blank" href="https://d3js.org/" >d3.js</a> library by 
-								<a target="_blank" href="https://bost.ocks.org/mike/" >Mike Bostock</a>
-								to create the graphic interactive visualisation </li>
-						</ul>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
+						<!--<h6 class="text-center" style="margin-top: 0px;"> Making graphs you can play with from Zotero libraries...</h6>-->
 					</div>
-				  
-				  
-				  <hr></hr>
-				  
-				  <h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
-				  <p>Project by
-					  <a target="_blank" href="http://www.pingbase.net/">PING</a> /
-					  <a target="_blank" href="http://artlabo.org/">ARTLABO</a> /
-					  <a target="_blank" href="http://labomedia.net/">LABOMEDIA</a> 
-					  and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>
-					  with the precious help of Julien Bellanger, Benjamin Cadon, Ewen Chardonnet, et Xavier 
-				  </p>
-				  <p>This application is inspired by a previous work called 
-					  <a href="http://www.laurent-malys.fr/sur-les-epaules-de-darwin/">"Constellations bibliographiques"</a>
-					   developped by 
-					  <a href="http://www.laurent-malys.fr">Laurent Malys</a>.
-				  </p>
-				  <hr></hr>
-				  
-				  <h4 class="text-center"><span class="label label-default"> LICENCE </span> &nbsp;
-					<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
-						<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/88x31.png" />
-					</a>
-				  </h4>
-				  <p>
-						<em>{{ glob.titleApp }}</em> is licensed under a
-						<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
-							Creative Commons Attribution 4.0 International License
-						</a>.
-				  </p>
-				
+					
+					<div class="modal-body">
+					  
+						<h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
+						<p class="lead">
+							<em>{{ glob.titleApp }}</em> allows to generate interactive data visualisations (graphs) from sets of
+							<a target="_blank" href="https://www.zotero.org/" >Zotero</a>
+							bibliographic references.
+						
+							<br>
+							<a	class=""
+								role="button"
+								id="collapserPres"
+								data-toggle="collapse"
+								data-target="#collapsiblePres"
+								aria-expanded="false"
+								aria-controls="collapsiblePres"
+								>
+							  <small>...read more</small> <span class="caret"></span>
+							</a>
+						</p>
+						
+						<div class="collapse"
+							id="collapsiblePres" 
+							>
+							<p>
+								<a target="_blank" href="https://www.zotero.org/" >Zotero</a> is a tool allowing to bookmark webpages and to organise them in folders, add tags, comments, and so on.  
+								But such references are almost always interlinked : an article in a magazine, a webpage, a story you heard, or a book often refers to other books, page, etc...
+								If you try to draw the network references of every book in a library this could quickly become really complex, the map of interelations becomes a huuuge maze. 
+							</p>
+							<p>
+								With, <em>{{ glob.titleApp }}</em> we tried to make visible such networks, but foremost to make networks of interlinked references you can navigate in and manipulate.
+								The graphs are generated from public <a target="_blank" href="https://www.zotero.org/" >Zotero</a> sets of references such as
+								<a target="_blank" href="https://www.zotero.org/groups/1.camp/items">this one</a>
+							</p>
+							<p class="text-center">
+								so in short <em>{{ glob.titleApp }}</em> is...
+								'making graphs you can play with...'
+							</p>
+						</div>
+						
+						<hr></hr>
+						
+						<h4 class="text-center"><span class="label label-default"> HISTORY </span></h4>
+						<p><em>{{ glob.titleApp }}</em> started as a part of <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=start">1.CAMP</a>,
+							which is a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
+							<br>Julien Bellanger could tell more about this part...
+						</p>
+						<p>
+							Then other people join the project, wanting some visualisation for their own datasets : other bibliographical references gathered in
+							<a target="_blank" href="https://www.zotero.org/" >Zotero</a>. 
+							So the project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
+						</p>
+						<hr></hr>
+						
+						<h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
+						<p><em>{{ glob.titleApp }}</em> development is documented
+							<a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
+							and on <a target="_blank" href="https://github.com/JulienParis/{{ glob.titleApp }}">GitHub</a>.
+						</p>
+						
+						
+						
+						<a 	role="button"
+							id="collapserHood"
+							data-toggle="collapse"
+							data-target="#collapsibleHood"
+							aria-expanded="false"
+							aria-controls="collapsibleHood"
+							>
+						  <em>{{ glob.titleApp }}</em> is powered by <span class="caret"></span>
+						</a>
+						<div class="collapse  list-group"
+							id="collapsibleHood" 
+							>
+							<br>
+							<ul>
+								<li><a target="_blank" href="https://www.python.org/" >Python</a> to get the references and create the JSON datasets </li>
+								<li><a target="_blank" href="https://www.zotero.org/" >Zotero</a> to organise bibliographical references</li>
+								<li><a target="_blank" href="http://flask.pocoo.org/" >Flask</a> as backbone of the website</li>
+								<li><a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> for the global aspect website</li>
+								<li><a target="_blank" href="https://d3js.org/" >d3.js</a> library by 
+									<a target="_blank" href="https://bost.ocks.org/mike/" >Mike Bostock</a>
+									to create the graphic interactive visualisation </li>
+							</ul>
+						</div>
+					  
+					  
+						<hr></hr>
+						
+						<h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
+						<p>Project by
+							<a target="_blank" href="http://www.pingbase.net/">PING</a> /
+							<a target="_blank" href="http://artlabo.org/">ARTLABO</a> /
+							<a target="_blank" href="http://labomedia.net/">LABOMEDIA</a> 
+							and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>
+							with the precious help of Julien Bellanger, Benjamin Cadon, Ewen Chardonnet, et Xavier 
+						</p>
+						<p>This application is inspired by a previous work called 
+							<a href="http://www.laurent-malys.fr/sur-les-epaules-de-darwin/">"Constellations bibliographiques"</a>
+							developped by 
+							<a href="http://www.laurent-malys.fr">Laurent Malys</a>.
+						</p>
+						<hr></hr>
+						
+						<h4 class="text-center"><span class="label label-default"> LICENCE </span> &nbsp;
+						  <a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
+							  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/88x31.png" />
+						  </a>
+						</h4>
+						<p>
+							<em>{{ glob.titleApp }}</em> is licensed under a
+							<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
+							  Creative Commons Attribution 4.0 International License
+							</a>.
+						</p>
+					
+					</div>
 				</div>
 			</div>
-		  </div>
 		</div><!-- end modal about -->
 		
 		
@@ -762,24 +801,24 @@
 						Node infos and neighbours
 						</span>
 					</h4>
-						<h5><span class="badge">
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-menu-right"></span>
 							</span>
-							<em>Simple click on a node : show infos or/and release the node</em>
-						</h5>
-						<h5><span class="badge">
+							<em>Simple click on a node : <br>show infos or/and release the node</em>
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
 							</span>
-							<em>Double click on a node : show neighbours</em>
-						</h5>
-						<h5><span class="badge">
+							<em>Double click on a node : <br> show neighbours</em>
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-resize-small"></span>
 							</span>
 							<span class="badge">
 								<span class="glyphicon glyphicon-resize-full"></span>
 							</span>
 							<em>Hide or show all filters and infos</em>
-						</h5>
+						</h6>
 					<hr></hr>
 					
 					
@@ -788,34 +827,34 @@
 						Animation, zoom and pan graph
 						</span>
 					</h4>
-					<h5><span class="badge">
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-play"></span>
-						</span>
+							</span>
 							<span class="badge">
 								<span class="glyphicon glyphicon-pause"></span>
 							</span>
 							<em>Play / pause the animation</em>
-						</h5>
-						<h5><span class="badge">
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-search"></span>
 							</span>
 							<em>Zoom in the graph</em>
-						</h5>
-						<h5><span class="badge">
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-move"></span>
 							</span>
 							<em>Pan the graph</em>
-						</h5>
-						<h5><span class="badge">
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-fullscreen"></span>
 							</span>
 							<em>Reset the zoom</em>
 						</h5>
-						<h5><span class="badge">
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-asterisk"></span>
 							</span>
 							<em>Release all pinned nodes</em>
-						</h5>
+						</h6>
 					  <hr></hr>
 					
 					
@@ -824,21 +863,21 @@
 						Filters
 						</span>
 					</h4>
-						<h5><span class="badge">
+						<h6><span class="badge">
 								ref-group
 							</span>
 							<em>Break links between nodes</em>
-						</h5>
-						<h5><span class="badge">
+						</h6>
+						<h6><span class="badge">
 								groups
 							</span>
 							<em>Show/hide nodes by categories</em>
-						</h5>
-						<h5><span class="badge">
-								group/tag name
+						</h6>
+						<h6><span class="badge">
+								group/tag
 							</span>
-							<em>Show/hide nodes by groups or tags </em>
-						</h5> 
+							<em>Show/hide nodes by group/tag </em>
+						</h6>
 					
 					<hr></hr>
 	
@@ -848,16 +887,16 @@
 						Radial fixing
 						</span>
 					</h4>
-						<h5><span class="badge">
+						<h6><span class="badge">
 								tag
 							</span>
 							<em>Click to create radial layout</em>
-						</h5>
-						<h5><span class="badge">
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-asterisk"></span>
 							</span>
 							<em>Click to release all nodes</em>
-						</h5>
+						</h6>
 					<hr></hr>
 					  
 					  
@@ -867,16 +906,16 @@
 						Refresh and reload
 						</span>
 					</h4>
-						<h5><span class="badge">
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-repeat"></span>
 							</span>
 							<em>Refresh the view</em>
-						</h5>
-						<h5><span class="badge">
+						</h6>
+						<h6><span class="badge">
 								<span class="glyphicon glyphicon-refresh"></span>
 							</span>
 							<em>Reload dataset from Zotero</em>
-						</h5>
+						</h6>
 	
 				
 				</div>
