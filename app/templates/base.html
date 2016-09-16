@@ -215,6 +215,11 @@
 				background-size: cover;
 				-moz-background-size: cover;
 			}
+			.carousel .nine {
+				background: url( {{ url_for('static', filename='images/index_background_09.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
 			.carousel .active.left {
 				left:0;
 				opacity:0;
@@ -242,6 +247,7 @@
 				<div class="item six"></div>
 				<div class="item seven"></div>
 				<div class="item eight"></div>
+				<div class="item nine"></div>
 			</div>
 		</div>
 		{% endif %}
