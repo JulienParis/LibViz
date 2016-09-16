@@ -653,20 +653,22 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }} </h3>
-						<!--<h6 class="text-center" style="margin-top: 0px;"> Making graphs you can play with from Zotero libraries...</h6>-->
+						<h3 class="modal-title text-center" id="myModalLabel">About {{ glob.titleApp }}
+							<br><small> version {{ glob.version }} </small>
+						</h3>
 					</div>
 					
 					<div class="modal-body">
 					  
 						<h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
-						<p class="lead">
+						<p  class="text-center lead">
 							<em>{{ glob.titleApp }}</em> allows to generate interactive data visualisations (graphs) from sets of
 							<a target="_blank" href="https://www.zotero.org/" >Zotero</a>
 							bibliographic references.
-						
-							<br>
-							<a	class=""
+						</p>
+						<p 	class="text-center"
+							style="margin-top: -15px">
+							<a	class="nohref" style="color:grey"
 								role="button"
 								id="collapserPres"
 								data-toggle="collapse"
@@ -674,7 +676,7 @@
 								aria-expanded="false"
 								aria-controls="collapsiblePres"
 								>
-							  <small>...read more</small> <span class="caret"></span>
+							  <span class="caret"></span> read more <span class="caret"></span>
 							</a>
 						</p>
 						
@@ -691,9 +693,9 @@
 								The graphs are generated from public <a target="_blank" href="https://www.zotero.org/" >Zotero</a> sets of references such as
 								<a target="_blank" href="https://www.zotero.org/groups/1.camp/items">this one</a>
 							</p>
-							<p class="text-center">
-								so in short <em>{{ glob.titleApp }}</em> is...
-								'making graphs you can play with...'
+							<p class="text-center lead">
+								so in short, <em>{{ glob.titleApp }}</em> :
+								{{ glob.subtitleApp }}
 							</p>
 						</div>
 						
@@ -705,9 +707,11 @@
 							<br>Julien Bellanger could tell more about this part...
 						</p>
 						<p>
-							Then other people join the project, wanting some visualisation for their own datasets : other bibliographical references gathered in
-							<a target="_blank" href="https://www.zotero.org/" >Zotero</a>. 
-							So the project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
+							Then other people - namely Ewen Chardonnet and Xavier - joined the project, wanting some visualisation for their own datasets :
+							their other bibliographical references gathered in
+							<a target="_blank" href="https://www.zotero.org/" >Zotero</a>.
+							Considering all datas had the same root (i.e. Zotero) we thought about making an application able to display those different datasets from one and only place.
+							The <em>{{ glob.titleApp }}</em> project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
 						</p>
 						<hr></hr>
 						
@@ -719,14 +723,15 @@
 						
 						
 						
-						<a 	role="button"
+						<a  class="nohref"
+							role="button"
 							id="collapserHood"
 							data-toggle="collapse"
 							data-target="#collapsibleHood"
 							aria-expanded="false"
 							aria-controls="collapsibleHood"
 							>
-						  <em>{{ glob.titleApp }}</em> is powered by <span class="caret"></span>
+						  <em>{{ glob.titleApp }}</em> is powered by... <span class="caret"></span>
 						</a>
 						<div class="collapse  list-group"
 							id="collapsibleHood" 

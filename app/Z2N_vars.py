@@ -6,8 +6,8 @@ import os
 
 ### name application
 title    = "LibViz" #ideas for a name : "Bibloom" - "REFNET" - "VIZZOT" - "REF2NET"
-subtitle = "FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
-version  = "2.0" ####
+subtitle = "make graphs you can play with" #"FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
+version  = "beta 2.0" ####
 
 ### default weight
 w_dft      = 25
