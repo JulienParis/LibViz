@@ -144,7 +144,7 @@
       
       
       
-    //var color = d3.scaleOrdinal(d3.schemeCategory20);
+    //var color = d3.scaleOrdinal(d3.schemeCategory20); // 
     
     /////////////////////////////////////////////////////////////
     // create legend in div #legend on the fly 
@@ -155,10 +155,12 @@
     var legendDiam = (legendR*2) + legendS ;
     var spaceY     = legendDiam + interval ;
     
+    
     var legendColorsGroups = {{ legendGroups|tojson  }};
     //console.log("legendColorsGroups :", legendColorsGroups);
     var legendColorsRefTag = {{ legend|tojson  }};
     //console.log("legendColorsRefTag :", legendColorsRefTag);
+    
     
     legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
     //console.log(legendHeight);
@@ -207,17 +209,119 @@
         };
         
       };
-      
+    
+    
+    // MAKE THE SAME FOR TAGS THAN GROUPS ///////////////////////////////////////////////////   
     makeLegend(legendColorsRefTag, 0);
     makeLegend(legendColorsGroups, interval*4);
     
-
+    // attribute function to nodes in legend 
     d3.select("#nodes_legend").selectAll("g")
       .attr("clickable", "yes")
       .on("click", getLegendValue ) 
       ;
       
-   
+    
+    
+    
+    
+    ///////////////////////////////////////////////////
+    // Radial functions : put selected nodes around a circle
+    // adapted from : http://bl.ocks.org/vlandham/5087480 
+    D2R = Math.PI / 180 ; // degrees to radians
+    
+    // center svg canvas
+    var centerX = width/2 ;
+    var centerY = height/2;
+    var radius  = 250 ; /// radius circle / HERE TO CHANGE : choose a different radius
+
+    // compute radial location
+    function radial(totalNodes, node, index) {
+      
+      //console.log("radial +    : ", totalNodes) ;
+      //console.log("radial ++   : ", radius) ;
+      //console.log("radial +++  : ", node) ;
+      //console.log("radial ++++ : ", index) ;
+      
+      
+      var clickAngle          = 360 / totalNodes   ; // angle in degrees for circle divisions
+      var currentAngle        = clickAngle * index ; // angle in degrees for current node
+      var currentAngleRadians = currentAngle * D2R ; // convert to radians
+      //console.log("radial -   : ", clickAngle) ;
+      //console.log("radial --  : ", currentAngle) ;
+      //console.log("radial --- : ", currentAngleRadians) ;
+      
+      // basic trigonometry ///////////////////////////////////
+      var radialPoint = {  
+        x : centerX + radius * Math.cos(currentAngleRadians),
+        y : centerY + radius * Math.sin(currentAngleRadians)
+      }
+      
+      //console.log("radial 2/ : ", radialPoint) ;
+      //console.log("radial 3/ : ", node.fixed) ;
+      //console.log("radial 4/ : ", node.x) ;
+      //console.log("radial 5/ : ", node.fx) ;
+      
+      // affect x and y coordinates to node
+      node.fixed = true ;
+      //node.x  += (radialPoint.x - node.x ) ; 
+      //node.y  += (radialPoint.y - node.y ) ; 
+      //node.fx += (radialPoint.x - node.x ) ; 
+      //node.fy += (radialPoint.y - node.y ) ;
+      node.x  = radialPoint.x  ; 
+      node.y  = radialPoint.y  ; 
+      node.fx = radialPoint.x  ; 
+      node.fy = radialPoint.y  ;
+      
+      //console.log("radial 3// : ", node.fixed) ;
+      //console.log("radial 4// : ", node.x) ;
+      //console.log("radial 5// : ", node.fx) ;
+      
+    };
+    
+    // actually move and fix selected nodes positions in space 
+    function moveToRadial (selectedNodes) {
+      
+      console.log("moveToRadial 1/ : ", selectedNodes) ;
+      
+      var totalNodes = selectedNodes.size() ; ///////////////////////////////////////
+      console.log("moveToRadial 2/ : ", totalNodes) ;
+
+      // put radial coordinates datas into node.__data__ (not DOM)
+      selectedNodes.each( function(d,i) { radial( totalNodes, d, i ) } );
+      
+      // give back attribute to circle
+      selectedNodes
+        .attr("cx", function(d) { return d.x } )
+        .attr("cy", function(d) { return d.y } )
+        ;
+      //selectedNodes.each( function(d,i) { return d.fixed = true } );
+      //selectedNodes.each( function(d,i) { return d.fx = null } );
+      //selectedNodes.each( function(d,i) { return d.fy = null } );
+    };
+    
+    // activate radial positionning depending on button value
+    function moveItToRadial(value) {
+      
+      console.log("moveItToRadial 1/ : ", value) ;
+      
+      // here unfix position for everybody 
+      releaseAllNodes();
+      
+      // select nodes corresponding to value
+      var nodes = d3.selectAll(".node");   
+      var selected = nodes.filter(function (d, i) {
+        return d.group == value  ||  d.tag == value || d.category == value ;    ;
+        } );
+      
+      moveToRadial(selected, radius)
+
+    }
+    
+    
+    
+    
+    
     ///////////////////////////////////////////////////
     // force parameters
     var simulation = d3.forceSimulation()
@@ -326,7 +430,7 @@
     // HIDE NODES FROM LAYOUT (but no disappear)
     function hideNodes(buttonValue) {
       
-      console.log("buttonValue", buttonValue); // example : 'group'
+      //console.log("buttonValue", buttonValue); // example : 'group'
       
       // get all 'hideFilter' buttons
       var buttons = document.getElementsByClassName('hideFilter');
@@ -347,8 +451,8 @@
         }
       };
      
-      console.log("Clickbutton", Clickbutton); 
-      console.log("buttonStatus", buttonStatus); 
+      //console.log("Clickbutton", Clickbutton); 
+      //console.log("buttonStatus", buttonStatus); 
       
       // change button status on click event / Enabled="0" -> not clicked ; 1 = 
       
@@ -370,7 +474,7 @@
           rulesToHide.push(button.id);
         }			
       }
-      console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
+      //console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
       
       var nodes = vis.selectAll(".node");
       
@@ -625,7 +729,7 @@
           var selected = node.filter(function (d, i) { return d.label != value ; } );
         }
         else {
-          var selected = node.filter(function (d, i) { return d.group != value    & d.tags != value    & d.category != value ; } );
+          var selected = node.filter(function (d, i) { return d.group != value  & d.tag != value  & d.category != value ; } );
           //console.log("selected : ", selected)
         };
         
@@ -699,7 +803,7 @@
       //console.log(nodes_);
       
       var N = d3.selectAll(".node").filter(function (d, i) {
-            return d.fixed == true;
+        return d.fixed == true;
       });
 
       //console.log(N);
@@ -715,11 +819,13 @@
     
     
     
+    
+    
     // display node infos in div #nodeInfos 
     function displayInfos() {
       
       n = d3.select(this).node().__data__;
-      console.log("displayInfos / node DATAS before __data__ :", d3.select(this).node());
+      //console.log("displayInfos / node DATAS before __data__ :", d3.select(this).node());
       
       ////// I STILL HAVE A PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY __DATA__
       //n_ = d3.select(this).classed("fixed", d.fixed = true);
@@ -736,10 +842,12 @@
       $('#collapsibleInfosCol').collapse('show');
       $('#collapsibleInfos').collapse('show');
         
+      d3.select('#nLabel').text(n.label); 
+      d3.select('#nAbstract').text(' " ' + n.abstractNote + ' " ');
+      //console.log(n, n.abstractNote);
+      d3.select('#nType').text(n.type); // need to be blank if none ////////
       d3.select('#nCategory').text(n.category);
       d3.select('#nGroup').text(n.group); // need to be blank if none ////////
-      d3.select('#nLabel').text(n.label); 
-      d3.select('#nType').text(n.type); // need to be blank if none ////////
       d3.select('#nUrl')
         .attr("href", n.url)
         .attr("target", "_blank")

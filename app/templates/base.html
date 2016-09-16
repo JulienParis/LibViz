@@ -44,7 +44,7 @@
 			}
 			
 			a.nohref {
-				color: #f0ad4e ;
+				color: black ;
 				text-decoration: none;
 			}
 			
@@ -83,12 +83,15 @@
 			
 			.jumbotron{
 				/*color: grey;*/
+				/*border-color: black;*/
+				/*border-bottom-width: 10px;*/
 				background-color: #f0ad4e;
 
 			}
 			
 			body.index_bckgrd {
-				background: url( {{ url_for('static', filename='images/index_background.png') }} ) no-repeat center center fixed;
+				/*background: url( {{ url_for('static', filename='images/index_background.png') }} ) no-repeat center center fixed;*/
+				background-color: black;
 				/*background-size: 100%, 100%;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
@@ -158,15 +161,73 @@
 				margin-left: 5px;
 				margin-right: 0px;
 			}
-  
+			
+			
+			
+			.carousel { z-index: -99; } /* keeps this behind all content */
+			.carousel .item {
+				position: fixed; 
+				width: 100%; height: 100%;
+				-webkit-transition: opacity 1s;
+				-moz-transition: opacity 1s;
+				-ms-transition: opacity 1s;
+				-o-transition: opacity 1s;
+				transition: opacity 1s;
+			
+			}
+			.carousel .one {
+				background: url( {{ url_for('static', filename='images/index_background_01.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
+			.carousel .two {
+				background: url( {{ url_for('static', filename='images/index_background_02.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
+			.carousel .three {
+				background: url( {{ url_for('static', filename='images/index_background_03.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
+			.carousel .four {
+				background: url( {{ url_for('static', filename='images/index_background_04.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
+			.carousel .five {
+				background: url( {{ url_for('static', filename='images/index_background_05.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
+			.carousel .active.left {
+				left:0;
+				opacity:0;
+				z-index:2;
+			}
+			
 		</style>
-	
+		
+
+		
     </head>
 
 	
 
     <header>
-	
+		
+		{% if index %}
+		<div id="myCarousel" class="carousel container slide">
+			<div class="carousel-inner">
+				<div class="active item one"></div>
+				<div class="item two"></div>
+				<div class="item three"></div>
+				<div class="item four"></div>
+				<div class="item five"></div>
+			</div>
+		</div>
+		{% endif %}
+		
 		<nav class="navbar navbar-default">
 			
 			<div class = "container-fluid">
@@ -199,7 +260,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					
 					
-					
+					<!-- NAVBAR - left side of the navbar --> 
 					<ul class="nav navbar-nav">
 						
 						
@@ -356,7 +417,7 @@
 					
 					{% if data_JSON %}
 					
-					<!-- search node bar -->
+					<!-- NAVBAR - left side of the navbar / search node bar -->
 					<form 	class="navbar-form navbar-left"
 							data-toggle="tooltip"
 							data-placement="bottom"
@@ -405,7 +466,7 @@
 					
 					
 					
-					<!-- right side of the navbar -->
+					<!-- NAVBAR - right side of the navbar -->
 					
 					<ul class="nav navbar-nav navbar-right">
 						
@@ -455,7 +516,7 @@
 						
 						
 						<!-- RELEASE all nodes -->
-						<li data-toggle="tooltip"
+						<!--<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="release all fixed nodes"
 							>
@@ -466,7 +527,7 @@
 								> 	
 								<span class="glyphicon glyphicon-asterisk"></span>
 							</button>
-						</li>						
+						</li>-->						
 						
 						
 						<!--  button EXPORT SVG -->
@@ -550,20 +611,26 @@
     
 	<body id="body" {% if index %} class="index_bckgrd" {% endif %} >
 		
+		
 		<!-- contents -->
 		<div class="container-layout" id="containerLayout" ></div>
 	
 		<div class="container-fluid">
 			{% block content %}{% endblock %}
 		</div>
-	
+		
 
 	
 	
 		<!-- MODALS --------------------------------------------------------------------- -->
 		
 		<!-- Modal About {{ glob.titleApp }} -->
-		<div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div 	class="modal fade"
+				id="modalAbout"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="myModalLabel"
+				>
 		  <div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -589,13 +656,6 @@
 					So the project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
 				  </p>
 				  <hr></hr>
-				  
-				  <!--<h4 class="text-center"><span class="label label-default"> WIKI, SOURCE AND DOCUMENTATION </span></h4>
-				  <p><em>{{ glob.titleApp }}</em> development is documented
-					  <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
-					  and on <a target="_blank" href="https://github.com/JulienParis/Ref2net">GitHub</a>.
-				  </p>
-				  <hr></hr>-->
 				  
 				  <h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
 				  <p><em>{{ glob.titleApp }}</em> development is documented
@@ -625,7 +685,6 @@
 								to create the graph visualisation </li>
 						</ul>
 					</div>
-				  
 				  
 				  
 				  <hr></hr>
@@ -665,7 +724,12 @@
 		
 		
 		<!-- Modal How to -->
-		<div class="modal fade" id="modalHowTo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div 	class="modal fade"
+				id="modalHowTo"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="myModalLabel"
+				>
 		  <div class="modal-dialog modal-sm" role="document">
 			<div class="modal-content modal-sm">
 				<div class="modal-header">
@@ -675,120 +739,126 @@
 		  
 				<div class="modal-body">
 				  
-				  <h4 class="text-center" style="margin-bottom: 15px">
-					<span class="label label-warning">
-					Node infos and neighbours
-					</span>
-				  </h4>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-menu-right"></span>
+					<h4 class="text-center" style="margin-bottom: 15px">
+						<span class="label label-warning">
+						Node infos and neighbours
 						</span>
-						<em>Simple click on a node : show infos or/and release the node</em>
-						<!--<p> Select a node and show its infos in the panel on the right side of the window.-->
-						<!--	You can drag your node wherever you want, it will be fixed once you've finished.-->
-						<!--	If you want to free the node, click on it again.</p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
-						</span>
-						<em>Double click on a node : show neighbours</em>
-						<!--<p> select/unselect a node and show its neighbours while hiding the others</p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-resize-small"></span>
-						</span>
-						<span class="badge">
-							<span class="glyphicon glyphicon-resize-full"></span>
-						</span>
-						<em>Hide or show all filters and infos</em>
-						<!--<p> click to expand or retract the filters and the node infos windows</p>-->
-					</h5>
-				  <hr></hr>
-				
-				  <h4 class="text-center" style="margin-bottom: 15px">
-					<span class="label label-warning">
-					Animation, zoom and pan graph
-					</span>
-				  </h4>
-				  <h5><span class="badge">
-							<span class="glyphicon glyphicon-play"></span>
-						</span>
-						<span class="badge">
-							<span class="glyphicon glyphicon-pause"></span>
-						</span>
-						<em>Play / pause the animation</em>
-						<!--<p> click to pause or resume the animation</p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-search"></span>
-						</span>
-						<em>Zoom in the graph</em>
-						<!--<p> use your mouse wheel to zoom / dezoom on the graph</p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-move"></span>
-						</span>
-						<em>Pan the graph</em>
-						<!--<p> click and hold to move your graph. If the graph goes out reset the zoom. </p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-fullscreen"></span>
-						</span>
-						<em>Reset the zoom</em>
-						<!--<p> reset the zoom to its original position </p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-asterisk"></span>
-						</span>
-						<em>Release all pinned nodes</em>
-						<!--<p> release all the pinned nodes </p>-->
-					</h5>
+					</h4>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-menu-right"></span>
+							</span>
+							<em>Simple click on a node : show infos or/and release the node</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
+							</span>
+							<em>Double click on a node : show neighbours</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-resize-small"></span>
+							</span>
+							<span class="badge">
+								<span class="glyphicon glyphicon-resize-full"></span>
+							</span>
+							<em>Hide or show all filters and infos</em>
+						</h5>
+					<hr></hr>
 					
-				  <hr></hr>
-				
-				  <h4 class="text-center" style="margin-bottom: 15px">
-					<span class="label label-warning">
-					Filters
-					</span>
-				  </h4>
-					<h5><span class="badge">
-							ref-group
+					
+					<h4 class="text-center" style="margin-bottom: 15px">
+						<span class="label label-warning">
+						Animation, zoom and pan graph
 						</span>
-						<em>Break links between nodes</em>
-						<!--<p> check/uncheck the family of links you want to break/relink</p>-->
-					</h5>
+					</h4>
 					<h5><span class="badge">
-							groups
+								<span class="glyphicon glyphicon-play"></span>
 						</span>
-						<em>Show/hide nodes by categories</em>
-						<!--<p> check/uncheck the categories of nodes you want to show/hide</p>-->
-					</h5>
-					<h5><span class="badge">
-							name of a specific group
+							<span class="badge">
+								<span class="glyphicon glyphicon-pause"></span>
+							</span>
+							<em>Play / pause the animation</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-search"></span>
+							</span>
+							<em>Zoom in the graph</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-move"></span>
+							</span>
+							<em>Pan the graph</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-fullscreen"></span>
+							</span>
+							<em>Reset the zoom</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</span>
+							<em>Release all pinned nodes</em>
+						</h5>
+					  <hr></hr>
+					
+					
+					<h4 class="text-center" style="margin-bottom: 15px">
+						<span class="label label-warning">
+						Filters
 						</span>
-						<em>Show/hide nodes by groups or tags </em>
-						<!--<p> check/uncheck the groups of nodes you want to show/hide</p>-->
-					</h5> 
-				
-				<hr></hr>
-				
-				  <h4 class="text-center" style="margin-bottom: 15px">
-					<span class="label label-warning">
-					Refresh and reload
-					</span>
-				  </h4>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-repeat"></span>
+					</h4>
+						<h5><span class="badge">
+								ref-group
+							</span>
+							<em>Break links between nodes</em>
+						</h5>
+						<h5><span class="badge">
+								groups
+							</span>
+							<em>Show/hide nodes by categories</em>
+						</h5>
+						<h5><span class="badge">
+								group/tag name
+							</span>
+							<em>Show/hide nodes by groups or tags </em>
+						</h5> 
+					
+					<hr></hr>
+	
+						
+					<h4 class="text-center" style="margin-bottom: 15px">
+						<span class="label label-warning">
+						Radial fixing
 						</span>
-						<em>Refresh the view</em>
-						<!--<p> refresh the view by reloading the page but not reconstructing the dataset</p>-->
-					</h5>
-					<h5><span class="badge">
-							<span class="glyphicon glyphicon-refresh"></span>
+					</h4>
+						<h5><span class="badge">
+								tag
+							</span>
+							<em>Click to create radial layout</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-asterisk"></span>
+							</span>
+							<em>Click to release all nodes</em>
+						</h5>
+					<hr></hr>
+					  
+					  
+					  
+					<h4 class="text-center" style="margin-bottom: 15px">
+						<span class="label label-warning">
+						Refresh and reload
 						</span>
-						<em>Reload dataset from Zotero</em>
-						<!--<p> Reconstruct completely the dataset from Zotero (please wait for the script to finish)</p>-->
-					</h5>
+					</h4>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-repeat"></span>
+							</span>
+							<em>Refresh the view</em>
+						</h5>
+						<h5><span class="badge">
+								<span class="glyphicon glyphicon-refresh"></span>
+							</span>
+							<em>Reload dataset from Zotero</em>
+						</h5>
 	
 				
 				</div>
@@ -801,7 +871,7 @@
 		{% if data_JSON %}
 		
 		
-		<!-- Modal infos dataset -->
+		<!-- Modal INFOS DATASET -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
 			 id="modalInfos"
@@ -858,14 +928,13 @@
 						
 					</div>
 					
-					
 				</div>
 			</div>
 		</div> <!-- end modal infos dataset -->
 		
 		
 		
-		<!-- Modal refresh -->
+		<!-- Modal REFRESH -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
 			 id="modalRefresh"
@@ -890,7 +959,7 @@
 							Refreshing a dataset with {{ glob.titleApp }} calls the Zotero's API,
 							gets the diffents JSONs datas, generates the new nodes/links datas... and then displays the datas in a network graph.
 						</p>
-
+						
 						<p class="text-center lead">
 							<strong>So it may take some time to do it properly.</strong>
 						</p>
@@ -907,7 +976,7 @@
 							aria-label="Close"
 							data-toggle="modal"
 							data-target="#modalLoading"
-							onclick="rebuildDataset(this.id)"
+							onclick="refreshPage(this.id)"
 							>
 							
 							<span class="badge">
@@ -915,7 +984,7 @@
 							</span>
 							
 							<strong>REBUILD {{ selection }} DATASET</strong>
-
+							
 							<span class="badge">
 								<span class="glyphicon glyphicon-refresh"></span>
 							</span>
@@ -923,21 +992,14 @@
 						</button>
 						
 						
-							
 					</div>
-					
-					<!--<a href="/refresh/{{ selection }}">
-						<button type="button" class="btn btn-lg btn-block btn-warning">
-							<span class="glyphicon glyphicon-refresh spinning"></span>
-							Understood! Let's refresh "{{ selection }}" !
-						</button>
-					</a>-->
 					
 				</div>
 			</div>
 		</div> <!-- end modal refresh -->
 		
 		
+		<!-- modal WAIT RELOAD -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
 			 id="modalLoading"
@@ -947,11 +1009,6 @@
 			 >
 			<div class="modal-dialog modal-md" role="document">
 				<div class="modal-content">
-				<!-- <div class="modal-header">
-						<h3 class="modal-title text-center" id="myModalLabel">
-							LOADING PAGE... PLEASE WAIT
-						</h3>
-					</div>-->
 					
 					<div class="modal-header">
 						
@@ -977,7 +1034,7 @@
 					
 				</div>
 			</div>
-		</div> <!-- end modal refresh -->
+		</div> <!-- end modal WAIT RELOAD  -->
 		
 		
 		{% endif %}
@@ -1019,10 +1076,9 @@
     <!--  bootstrap callings  -->
     <script type="text/javascript">
 		
-		// activate bootstrap dropdown
-		$(document).ready(
-			function(){ $(".dropdown-toggle").dropdown() }) ;
-	
+		// activate bootstrap dropdown and carousel
+		$(document).ready( function(){ $(".dropdown-toggle").dropdown() } ) ;
+		$(document).ready(function() { $('.carousel').carousel({interval: 7000}); });
 
 		// full screen function to collapse all infos and filter
 		// from : http://jsfiddle.net/KyleMit/f8ypa/
@@ -1058,15 +1114,15 @@
 	
 		// refresh view
 		function refreshPage (href){
-			console.log(href);
+			//console.log(href);
 			window.location = href ;
 		};
 	
-		// rebuild dataset
-		function rebuildDataset (href){
-			console.log(href);
-			window.location = href ;
-		};
+		//// rebuild dataset
+		//function rebuildDataset (href){
+		//	//console.log(href);
+		//	window.location = href ;
+		//};
 		
     </script>
     

@@ -117,7 +117,10 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                 note_ = '' 
             url_      = ref[u'data'][u'url']
             itemType_ = ref[u'data'][u'itemType']
-        
+            try : 
+                abstract_ = ref[u'data'][u'abstractNote']
+            except :
+                abstract_ = ''
             #read connex references
             connex_ = []
             connex_raw = ref[u'data'][u'relations']
@@ -174,21 +177,22 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             
             ### create ref datas
             ref_dict = {
-                         ns['id']       : id_.encode('UTF-8') ,
-                         ns['label']    : title_,
-                         ns['note']     : note_,
-                         ns['url']      : url_.encode('UTF-8') ,
-                         ns['type']     : itemType_.encode('UTF-8') ,
-                         ns['group']    : group_, #.encode('UTF-8') ,
-                         ns['tags']     : tags_,
-                         ns['connex']   : connex_ , 
-                         ns['category'] : 'reference',
-                         ns['supertag'] : False,
-                         ns['weight']   : w_dft,
-                         ns['color']    : colorRef, ###############
+                         ns['id']           : id_.encode('UTF-8') ,
+                         ns['label']        : title_,
+                         ns['note']         : note_,
+                         ns['abstractNote'] : abstract_.encode('UTF-8'),
+                         ns['url']          : url_.encode('UTF-8') ,
+                         ns['type']         : itemType_.encode('UTF-8') ,
+                         ns['group']        : group_, #.encode('UTF-8') ,
+                         ns['tags']         : tags_,
+                         ns['connex']       : connex_ , 
+                         ns['category']     : 'reference',
+                         ns['supertag']     : False,
+                         ns['weight']       : w_dft,
+                         ns['color']        : colorRef, ###############
                          #ns['color']    : nodesColorsDict['reference'][switch_color], ###############
-                         ns['dataset']  : dataSet_name,
-                         ns['dataset_'] : selection
+                         ns['dataset']      : dataSet_name,
+                         ns['dataset_']     : selection
                          }
             
             nodesList.append(ref_dict)

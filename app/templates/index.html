@@ -15,7 +15,7 @@
 	<br><br>
     <div class="jumbotron col-sm-3 col-sm-offset-1">
 		
-		<h1 class="text-center"> {{ glob.titleApp }} </h1>
+		<h1 class="text-center" style="color: white"> {{ glob.titleApp }} </h1>
 		
 		<br>
 		
@@ -34,9 +34,39 @@
 		<div class="list-group">
 			
 			<p class="text-center">
-				select a dataset 
-			</p>
 			
+				<!-- Button 'HOW TO' triggering modal -->
+				<a  data-toggle="tooltip"
+					data-placement="top"
+					title="how to use {{ glob.titleApp }}"
+					>
+					<button type="button"
+							class="btn btn-link"
+							data-toggle="modal"
+							data-target="#modalHowTo"
+							  >
+						<span class="glyphicon glyphicon-wrench" style="color:white;"></span>
+					</button>
+				</a>
+				
+				select a dataset 			
+
+				<!-- Button 'ABOUT' triggering modal -->
+				<a  data-toggle="tooltip"
+					data-placement="top"
+					title="about the {{ glob.titleApp }} project"
+					>
+					<button type="button"
+						class="btn btn-link"
+						data-toggle="modal"
+						data-target="#modalAbout"
+						> 
+						<span class="glyphicon glyphicon-info-sign" style="color:white;"></span>
+					</button>
+				</a>
+
+			</p>
+
 			{% for set in glob.collections_names %}
 				<!--<h6>-->
 					<a 	href="/{{ set[0] }}"

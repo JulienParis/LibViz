@@ -5820,6 +5820,7 @@
   "nodes": [
     {
       "ID": "ref_Z44JETXD",
+      "abstractNote": "",
       "category": "reference",
       "color": "#01b617",
       "connex": [],
@@ -5842,6 +5843,7 @@
     },
     {
       "ID": "ref_5764XAD7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#01b617",
       "connex": [],
@@ -5864,6 +5866,7 @@
     },
     {
       "ID": "ref_TUEZD6T5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#01b617",
       "connex": [],
@@ -5886,6 +5889,7 @@
     },
     {
       "ID": "ref_7F76IRNG",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -5909,6 +5913,7 @@
     },
     {
       "ID": "ref_FBH256E9",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -5931,6 +5936,7 @@
     },
     {
       "ID": "ref_NTHDFJXJ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -5953,6 +5959,7 @@
     },
     {
       "ID": "ref_U926TUS5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -5974,6 +5981,7 @@
     },
     {
       "ID": "ref_P4JGJE42",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -5996,6 +6004,7 @@
     },
     {
       "ID": "ref_HG4BGPKE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6019,6 +6028,7 @@
     },
     {
       "ID": "ref_39UBP5CS",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6041,6 +6051,7 @@
     },
     {
       "ID": "ref_PWEAT86K",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6062,6 +6073,7 @@
     },
     {
       "ID": "ref_RB3ZIJIG",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6084,6 +6096,7 @@
     },
     {
       "ID": "ref_QPUBFQEC",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6106,6 +6119,7 @@
     },
     {
       "ID": "ref_7R46AJ29",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6126,6 +6140,7 @@
     },
     {
       "ID": "ref_BPMUX6MW",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6146,6 +6161,7 @@
     },
     {
       "ID": "ref_AVN6QA8N",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6166,6 +6182,7 @@
     },
     {
       "ID": "ref_UGR48MUZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#4b5731",
       "connex": [],
@@ -6186,6 +6203,7 @@
     },
     {
       "ID": "ref_HCJNHZEP",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [
@@ -6215,6 +6233,7 @@
     },
     {
       "ID": "ref_9MVX58AZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [
@@ -6242,6 +6261,7 @@
     },
     {
       "ID": "ref_4E5KWSD7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6266,6 +6286,7 @@
     },
     {
       "ID": "ref_STRTWA7F",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6290,6 +6311,7 @@
     },
     {
       "ID": "ref_GW3CPK5B",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [
@@ -6317,6 +6339,7 @@
     },
     {
       "ID": "ref_JCGXRANV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6341,6 +6364,7 @@
     },
     {
       "ID": "ref_4MWEZEI4",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6364,6 +6388,7 @@
     },
     {
       "ID": "ref_QISP86NZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [
@@ -6388,6 +6413,7 @@
     },
     {
       "ID": "ref_6F3ZR99T",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6412,6 +6438,7 @@
     },
     {
       "ID": "ref_AJXMTNTG",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6436,6 +6463,7 @@
     },
     {
       "ID": "ref_QNARJVEI",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6461,6 +6489,7 @@
     },
     {
       "ID": "ref_PPEMXIVN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#abdbb6",
       "connex": [],
@@ -6485,6 +6514,7 @@
     },
     {
       "ID": "ref_BAK3BFF6",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [
@@ -6510,6 +6540,7 @@
     },
     {
       "ID": "ref_T6VQZQIX",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6532,6 +6563,7 @@
     },
     {
       "ID": "ref_VVR9W9XV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6554,6 +6586,7 @@
     },
     {
       "ID": "ref_H2VK336X",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6576,6 +6609,7 @@
     },
     {
       "ID": "ref_X3REES2B",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6599,6 +6633,7 @@
     },
     {
       "ID": "ref_48ZFJD9D",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6621,6 +6656,7 @@
     },
     {
       "ID": "ref_NKDMXKI7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6643,6 +6679,7 @@
     },
     {
       "ID": "ref_QEDBD6QB",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6666,6 +6703,7 @@
     },
     {
       "ID": "ref_FU9M3N83",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6689,6 +6727,7 @@
     },
     {
       "ID": "ref_BQ3QEPF2",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6710,6 +6749,7 @@
     },
     {
       "ID": "ref_D6SBSQB6",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6731,6 +6771,7 @@
     },
     {
       "ID": "ref_5PEA2BI7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6754,6 +6795,7 @@
     },
     {
       "ID": "ref_6CBZWV72",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6777,6 +6819,7 @@
     },
     {
       "ID": "ref_8XQ538ZG",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6800,6 +6843,7 @@
     },
     {
       "ID": "ref_MTB8JHBN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6824,6 +6868,7 @@
     },
     {
       "ID": "ref_K5DW45WE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6847,6 +6892,7 @@
     },
     {
       "ID": "ref_VIE79EBN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6870,6 +6916,7 @@
     },
     {
       "ID": "ref_RD7MF6PE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6894,6 +6941,7 @@
     },
     {
       "ID": "ref_BM79CQRU",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6919,6 +6967,7 @@
     },
     {
       "ID": "ref_8DNIH2EU",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6941,6 +6990,7 @@
     },
     {
       "ID": "ref_QCW3698U",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6964,6 +7014,7 @@
     },
     {
       "ID": "ref_T9C75UCV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -6987,6 +7038,7 @@
     },
     {
       "ID": "ref_R4T59TKK",
+      "abstractNote": "",
       "category": "reference",
       "color": "#f7ffad",
       "connex": [],
@@ -7010,6 +7062,7 @@
     },
     {
       "ID": "ref_AHDM3STZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7031,6 +7084,7 @@
     },
     {
       "ID": "ref_Q6C83S49",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7052,6 +7106,7 @@
     },
     {
       "ID": "ref_AQ9ICAJP",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7072,6 +7127,7 @@
     },
     {
       "ID": "ref_PUUE3N7Q",
+      "abstractNote": "Embargoed for Release: 1:15 p.m. EDT, Tuesday, 14 June 2016 Life's First Handshake: Chiral Molecule Detected in Interstellar Space Like a pair of huma...",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7094,6 +7150,7 @@
     },
     {
       "ID": "ref_74G3QG56",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7118,6 +7175,7 @@
     },
     {
       "ID": "ref_DIQ9IAX4",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7144,6 +7202,7 @@
     },
     {
       "ID": "ref_JQWKSFUR",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7171,6 +7230,7 @@
     },
     {
       "ID": "ref_45XDZCSF",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7196,6 +7256,7 @@
     },
     {
       "ID": "ref_NTA6M2JW",
+      "abstractNote": "Yona Friedman: \"Comment habiter la terre\"\nCe petit livre, paru \u00e0 l\u2019origine sous forme ron\u00e9ot\u00e9e, sommairement broch\u00e9 et avec une couverture en papier kraft, a \u00e9t\u00e9 publi\u00e9 pour le premi\u00e8re fois en 1976, en version bilingue fran\u00e7ais-anglais, \u00e0 l\u2019occasion de la Premi\u00e8re Conf\u00e9rence Internationale sur l\u2019Habitat Humain (Vancouver), \u00e0 partir d\u2019un manuel \u00e9crit et dessin\u00e9 par Yona Friedman dans le courant des ann\u00e9es 60.\nQuarante ans plus tard, dans un contexte de crise non plus durable ni temporaire, mais endog\u00e8ne, nous le reproposons aux lectrices et lecteurs de ce nouveau si\u00e8cle qui pourront constater que les probl\u00e8mes alors \u00e9voqu\u00e9s par Friedman, comme les solutions qu\u2019il proposait, sont tr\u00e8s exactement ceux auxquels nous sommes confront\u00e9s encore aujourd\u2019hui, et celles que, sous d\u2019autres formes peut-\u00eatre, il serait urgent de prendre en compte si l\u2019on veut continuer d\u2019habiter la terre.",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7222,6 +7283,7 @@
     },
     {
       "ID": "ref_2K93C37A",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7251,6 +7313,7 @@
     },
     {
       "ID": "ref_RWG57SV2",
+      "abstractNote": "noise sound of ocean",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7276,6 +7339,7 @@
     },
     {
       "ID": "ref_7GJ68ECP",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7302,6 +7366,7 @@
     },
     {
       "ID": "ref_ZBXZKFXG",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7325,6 +7390,7 @@
     },
     {
       "ID": "ref_28THFEGU",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7349,6 +7415,7 @@
     },
     {
       "ID": "ref_6CKE599P",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7376,6 +7443,7 @@
     },
     {
       "ID": "ref_R94GZXM6",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7402,6 +7470,7 @@
     },
     {
       "ID": "ref_CHXVTEJQ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7428,6 +7497,7 @@
     },
     {
       "ID": "ref_8Q63894N",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7452,6 +7522,7 @@
     },
     {
       "ID": "ref_CA8PA357",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7477,6 +7548,7 @@
     },
     {
       "ID": "ref_FQ7UUWP8",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7500,6 +7572,7 @@
     },
     {
       "ID": "ref_XEUUA4DE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -7525,6 +7598,7 @@
     },
     {
       "ID": "ref_A3TZFU5B",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7546,6 +7620,7 @@
     },
     {
       "ID": "ref_5X8CX5MU",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7566,6 +7641,7 @@
     },
     {
       "ID": "ref_DSWPGUB4",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7589,6 +7665,7 @@
     },
     {
       "ID": "ref_S6MZV9C5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7612,6 +7689,7 @@
     },
     {
       "ID": "ref_SWICVWWJ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7635,6 +7713,7 @@
     },
     {
       "ID": "ref_IZKZDZIU",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7658,6 +7737,7 @@
     },
     {
       "ID": "ref_5586EWEE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7681,6 +7761,7 @@
     },
     {
       "ID": "ref_N6I4RGDB",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7704,6 +7785,7 @@
     },
     {
       "ID": "ref_3K874G3X",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7728,6 +7810,7 @@
     },
     {
       "ID": "ref_A2M29CG3",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7752,6 +7835,7 @@
     },
     {
       "ID": "ref_7XXRZFRD",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7775,6 +7859,7 @@
     },
     {
       "ID": "ref_BT4IH8BQ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7798,6 +7883,7 @@
     },
     {
       "ID": "ref_FZU47TI7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7821,6 +7907,7 @@
     },
     {
       "ID": "ref_RGQBFDP6",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7844,6 +7931,7 @@
     },
     {
       "ID": "ref_CP9P27U5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7866,6 +7954,7 @@
     },
     {
       "ID": "ref_8DCSTUHT",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7889,6 +7978,7 @@
     },
     {
       "ID": "ref_PFCIJGHA",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7912,6 +8002,7 @@
     },
     {
       "ID": "ref_4MVDAQBZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7936,6 +8027,7 @@
     },
     {
       "ID": "ref_PN9Z54UM",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7960,6 +8052,7 @@
     },
     {
       "ID": "ref_2EI5A8X7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -7982,6 +8075,7 @@
     },
     {
       "ID": "ref_ZT7NENMQ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8006,6 +8100,7 @@
     },
     {
       "ID": "ref_ZZ4EE48G",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8028,6 +8123,7 @@
     },
     {
       "ID": "ref_R6JMDKIR",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8051,6 +8147,7 @@
     },
     {
       "ID": "ref_KQVECWXG",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8074,6 +8171,7 @@
     },
     {
       "ID": "ref_9IIAAPIS",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8098,6 +8196,7 @@
     },
     {
       "ID": "ref_HPZKW6A2",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8121,6 +8220,7 @@
     },
     {
       "ID": "ref_QPRB6XIE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8144,6 +8244,7 @@
     },
     {
       "ID": "ref_XUHVTPUR",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8167,6 +8268,7 @@
     },
     {
       "ID": "ref_CEWZSKRI",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8190,6 +8292,7 @@
     },
     {
       "ID": "ref_MRHS5FUS",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8214,6 +8317,7 @@
     },
     {
       "ID": "ref_ZMDRPARV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8237,6 +8341,7 @@
     },
     {
       "ID": "ref_Z3T5FZZR",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8260,6 +8365,7 @@
     },
     {
       "ID": "ref_X74V8JCP",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8278,6 +8384,7 @@
     },
     {
       "ID": "ref_WNXFCBC5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8302,6 +8409,7 @@
     },
     {
       "ID": "ref_WFNGXD37",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8324,6 +8432,7 @@
     },
     {
       "ID": "ref_VNKINMKQ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8347,6 +8456,7 @@
     },
     {
       "ID": "ref_UMXX74D2",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8370,6 +8480,7 @@
     },
     {
       "ID": "ref_TWUH3RGN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8394,6 +8505,7 @@
     },
     {
       "ID": "ref_SSSF36MB",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8421,6 +8533,7 @@
     },
     {
       "ID": "ref_NPMWKXFE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8443,6 +8556,7 @@
     },
     {
       "ID": "ref_MUMG3I3D",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8466,6 +8580,7 @@
     },
     {
       "ID": "ref_JS8DHTJH",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8489,6 +8604,7 @@
     },
     {
       "ID": "ref_DX626WIK",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8511,6 +8627,7 @@
     },
     {
       "ID": "ref_83SRDHAZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8534,6 +8651,7 @@
     },
     {
       "ID": "ref_7QA55QV7",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8557,6 +8675,7 @@
     },
     {
       "ID": "ref_6XI4QA84",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8581,6 +8700,7 @@
     },
     {
       "ID": "ref_635UWNC5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8605,6 +8725,7 @@
     },
     {
       "ID": "ref_5Q33HNCD",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8628,6 +8749,7 @@
     },
     {
       "ID": "ref_4BFWUQM5",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8649,6 +8771,7 @@
     },
     {
       "ID": "ref_3T64WBGN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8672,6 +8795,7 @@
     },
     {
       "ID": "ref_XWD9B9NV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8695,6 +8819,7 @@
     },
     {
       "ID": "ref_XBZ6NXFC",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8717,6 +8842,7 @@
     },
     {
       "ID": "ref_TDMXDRAH",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8740,6 +8866,7 @@
     },
     {
       "ID": "ref_P26HJBEB",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8763,6 +8890,7 @@
     },
     {
       "ID": "ref_JAWUNSTQ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8786,6 +8914,7 @@
     },
     {
       "ID": "ref_GAGWE47Q",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8809,6 +8938,7 @@
     },
     {
       "ID": "ref_DNMI4B5K",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8832,6 +8962,7 @@
     },
     {
       "ID": "ref_DCWEBN58",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8854,6 +8985,7 @@
     },
     {
       "ID": "ref_AI5BSKM2",
+      "abstractNote": "Read an excerpt from \"Dark Ecology: For a Logic of Future Coexistence,\" by Timothy Morton",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8877,6 +9009,7 @@
     },
     {
       "ID": "ref_ADSX6DWB",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8900,6 +9033,7 @@
     },
     {
       "ID": "ref_7ENUXFQD",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8922,6 +9056,7 @@
     },
     {
       "ID": "ref_4DSBQK85",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -8945,6 +9080,7 @@
     },
     {
       "ID": "ref_2IJZW7JA",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -8969,6 +9105,7 @@
     },
     {
       "ID": "ref_524UT2KI",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [
@@ -8995,6 +9132,7 @@
     },
     {
       "ID": "ref_77QJMB5B",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9017,6 +9155,7 @@
     },
     {
       "ID": "ref_6ZFS8W3X",
+      "abstractNote": "Recent research has highlighted risks associated with the use of climate engineering as a method of stabilizing global temperatures, including the possibility of rapid climate warming in the case of abrupt removal of engineered radiative forcing. In this study, we have used a simple climate model to estimate the likely range of temperature changes associated with implementation and removal of climate engineering. In the absence of climate engineering, maximum annual rates of warming ranged from 0.015 to 0.07 degrees C/year, depending on the model's climate sensitivity. Climate engineering resulted in much higher rates of warming, with the temperature change in the year following the removal of climate engineering ranging from 0.13 to 0.76 degrees C. High rates of temperature change were sustained for two decades following the removal of climate engineering; rates of change of 0.5 (0.3, 0.1)degrees C/decade were exceeded over a 20 year period with 15% (75%, 100%) likelihood. Many ecosystems could be negatively affected by these rates of temperature change; our results suggest that climate engineering in the absence of deep emissions cuts could arguably constitute increased risk of dangerous anthropogenic interference in the climate system under the criteria laid out in the United Nations Framework Convention on Climate Change.",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9045,6 +9184,7 @@
     },
     {
       "ID": "ref_6V6JFRIV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9067,6 +9207,7 @@
     },
     {
       "ID": "ref_4HIPCD7C",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9089,6 +9230,7 @@
     },
     {
       "ID": "ref_4BXF4B2Q",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9112,6 +9254,7 @@
     },
     {
       "ID": "ref_46TDJNVS",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9134,6 +9277,7 @@
     },
     {
       "ID": "ref_3INRHDXG",
+      "abstractNote": "Policy makers have generally agreed that the average global temperature rise caused by greenhouse gas emissions should not exceed 2 \u00b0C above the average global temperature of pre-industrial times. It has been estimated that to have at least a 50 per cent chance of keeping warming below 2 \u00b0C throughout the twenty-first century, the cumulative carbon emissions between 2011 and 2050 need to be limited to around 1,100 gigatonnes of carbon dioxide (Gt CO2). However, the greenhouse gas emissions contained in present estimates of global fossil fuel reserves are around three times higher than this, and so the unabated use of all current fossil fuel reserves is incompatible with a warming limit of 2 \u00b0C. Here we use a single integrated assessment model that contains estimates of the quantities, locations and nature of the world/'s oil, gas and coal reserves and resources, and which is shown to be consistent with a wide variety of modelling approaches with different assumptions, to explore the implications of this emissions limit for fossil fuel production in different regions. Our results suggest that, globally, a third of oil reserves, half of gas reserves and over 80 per cent of current coal reserves should remain unused from 2010 to 2050 in order to meet the target of 2 \u00b0C. We show that development of resources in the Arctic and any increase in unconventional oil production are incommensurate with efforts to limit average global warming to 2 \u00b0C. Our results show that policy makers/' instincts to exploit rapidly and completely their territorial fossil fuels are, in aggregate, inconsistent with their commitments to this temperature limit. Implementation of this policy commitment would also render unnecessary continued substantial expenditure on fossil fuel exploration, because any new discoveries could not lead to increased aggregate production.",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9154,6 +9298,7 @@
     },
     {
       "ID": "ref_NCF7ZM4M",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9177,6 +9322,7 @@
     },
     {
       "ID": "ref_MF73F3QI",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9200,6 +9346,7 @@
     },
     {
       "ID": "ref_F7JJKZ2G",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9222,6 +9369,7 @@
     },
     {
       "ID": "ref_RI66MVPC",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9245,6 +9393,7 @@
     },
     {
       "ID": "ref_888A5KAP",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9263,6 +9412,7 @@
     },
     {
       "ID": "ref_ATDXRG2T",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9281,6 +9431,7 @@
     },
     {
       "ID": "ref_MXTBPU37",
+      "abstractNote": "",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9304,6 +9455,7 @@
     },
     {
       "ID": "ref_MM5X28JA",
+      "abstractNote": "What do new technologies taste like? A growing number of contemporary artists are working with food, live materials and scientific processes, in order to explore and challenge the ways in which manipulation of biological materials informs our cooking and eating. 'Bioart', or biological art, uses biotech methods to manipulate living systems, from tissues to ecologies. While most critiques of bioart emphasise the influences of new media, digital media, and genetics, this book takes a bold, alternative approach. Bioart Kitchen explores a wide spectrum of seemingly unconnected subjects, which, when brought together, offer a more inclusive, expansive history of bioart, namely: home economics; the feminist art of the 1970s; tissue culture methodologies; domestic computing; and contemporary artistic engagements with biotechnology.",
       "category": "reference",
       "color": "#ffd617",
       "connex": [],
@@ -9334,7 +9486,7 @@
       "tag": "",
       "type": "group name",
       "url": "",
-      "weight": 125
+      "weight": 50
     },
     {
       "ID": "group_26",
@@ -9346,7 +9498,7 @@
       "tag": "",
       "type": "group name",
       "url": "",
-      "weight": 125
+      "weight": 50
     },
     {
       "ID": "group_51",
@@ -9358,7 +9510,7 @@
       "tag": "",
       "type": "group name",
       "url": "",
-      "weight": 125
+      "weight": 50
     },
     {
       "ID": "group_76",
@@ -9370,7 +9522,7 @@
       "tag": "",
       "type": "group name",
       "url": "",
-      "weight": 125
+      "weight": 50
     },
     {
       "ID": "group_101",
@@ -9382,7 +9534,7 @@
       "tag": "",
       "type": "group name",
       "url": "",
-      "weight": 125
+      "weight": 50
     },
     {
       "ID": "tag_1",

@@ -18,6 +18,14 @@
     },
     {
       "ID": "edge_3",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_BT6Z63QZ",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_4",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_BT6Z63QZ",
@@ -25,43 +33,35 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_4",
+      "ID": "edge_5",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_V96FMVV8",
-      "target": "tag_426",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_5",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_V96FMVV8",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_6",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_R5E7TDEI",
+      "source": "ref_V96FMVV8",
       "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_7",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_R5E7TDEI",
-      "target": "ref_HDK7XA7K",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_8",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_T3BZJESJ",
-      "target": "tag_276",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_R5E7TDEI",
+      "target": "ref_HDK7XA7K",
       "weight": 1.0
     },
     {
@@ -69,23 +69,23 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_T3BZJESJ",
-      "target": "tag_1251",
+      "target": "tag_276",
       "weight": 1.0
     },
     {
       "ID": "edge_10",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_T3BZJESJ",
-      "target": "group_1",
+      "target": "tag_1251",
       "weight": 1.0
     },
     {
       "ID": "edge_11",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_T3BZJESJ",
-      "target": "ref_F7T48F3S",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -93,11 +93,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_T3BZJESJ",
-      "target": "ref_3M2S2E7R",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
       "ID": "edge_13",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_T3BZJESJ",
+      "target": "ref_3M2S2E7R",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_14",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_H4RCQ7ZI",
@@ -105,31 +113,31 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_14",
+      "ID": "edge_15",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ECED5A2P",
-      "target": "tag_426",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_15",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_ECED5A2P",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_16",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_GDAJ28UW",
-      "target": "tag_426",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ECED5A2P",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_17",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_GDAJ28UW",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_18",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_GDAJ28UW",
@@ -137,7 +145,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_18",
+      "ID": "edge_19",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_GDAJ28UW",
@@ -145,7 +153,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_19",
+      "ID": "edge_20",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_94M492SB",
@@ -153,7 +161,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_20",
+      "ID": "edge_21",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_9GN5KSGZ",
@@ -161,7 +169,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_21",
+      "ID": "edge_22",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_9GN5KSGZ",
@@ -169,19 +177,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_22",
+      "ID": "edge_23",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_9GN5KSGZ",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_23",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_G9UPMX5V",
-      "target": "tag_276",
       "weight": 1.0
     },
     {
@@ -189,11 +189,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_G9UPMX5V",
-      "target": "tag_1251",
+      "target": "tag_276",
       "weight": 1.0
     },
     {
       "ID": "edge_25",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_G9UPMX5V",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_26",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_G9UPMX5V",
@@ -201,7 +209,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_26",
+      "ID": "edge_27",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_NNAGUC3R",
@@ -209,18 +217,10 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_27",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_NNAGUC3R",
-      "target": "group_1",
-      "weight": 1.0
-    },
-    {
       "ID": "edge_28",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_8CPECCSN",
+      "source": "ref_NNAGUC3R",
       "target": "group_1",
       "weight": 1.0
     },
@@ -228,12 +228,20 @@
       "ID": "edge_29",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_2URM4FU2",
+      "source": "ref_8CPECCSN",
       "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_30",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_2URM4FU2",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_31",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_3M2S2E7R",
@@ -241,7 +249,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_31",
+      "ID": "edge_32",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_3M2S2E7R",
@@ -249,31 +257,31 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_32",
+      "ID": "edge_33",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_JZ3UJ6C9",
       "target": "tag_276",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_33",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_JZ3UJ6C9",
-      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_34",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_T9V87MN6",
-      "target": "tag_276",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JZ3UJ6C9",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_35",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_T9V87MN6",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_36",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_T9V87MN6",
@@ -281,7 +289,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_36",
+      "ID": "edge_37",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_UVXJWBI2",
@@ -289,19 +297,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_37",
+      "ID": "edge_38",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_UVXJWBI2",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_38",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_UVXJWBI2",
-      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -309,7 +309,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_UVXJWBI2",
-      "target": "ref_99RQ5HRF",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -317,11 +317,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_UVXJWBI2",
-      "target": "ref_AT9489PS",
+      "target": "ref_99RQ5HRF",
       "weight": 1.0
     },
     {
       "ID": "edge_41",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_UVXJWBI2",
+      "target": "ref_AT9489PS",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_42",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_AT9489PS",
@@ -329,19 +337,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_42",
+      "ID": "edge_43",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_AT9489PS",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_43",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_AT9489PS",
-      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -349,11 +349,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_AT9489PS",
-      "target": "ref_99RQ5HRF",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
       "ID": "edge_45",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_AT9489PS",
+      "target": "ref_99RQ5HRF",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_46",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_99RQ5HRF",
@@ -361,7 +369,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_46",
+      "ID": "edge_47",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_99RQ5HRF",
@@ -369,7 +377,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_47",
+      "ID": "edge_48",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_99RQ5HRF",
@@ -377,7 +385,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_48",
+      "ID": "edge_49",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VW8VK693",
@@ -385,19 +393,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_49",
+      "ID": "edge_50",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VW8VK693",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_50",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_VW8VK693",
-      "target": "ref_IQMWHNFG",
       "weight": 1.0
     },
     {
@@ -405,7 +405,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_IUXJINVH",
+      "target": "ref_IQMWHNFG",
       "weight": 1.0
     },
     {
@@ -413,7 +413,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_DPB3QX84",
+      "target": "ref_IUXJINVH",
       "weight": 1.0
     },
     {
@@ -421,7 +421,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_554SE76H",
+      "target": "ref_DPB3QX84",
       "weight": 1.0
     },
     {
@@ -429,7 +429,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_HDK7XA7K",
+      "target": "ref_554SE76H",
       "weight": 1.0
     },
     {
@@ -437,7 +437,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_XGRA2BDU",
+      "target": "ref_HDK7XA7K",
       "weight": 1.0
     },
     {
@@ -445,7 +445,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_P8F2SBCX",
+      "target": "ref_XGRA2BDU",
       "weight": 1.0
     },
     {
@@ -453,31 +453,31 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VW8VK693",
-      "target": "ref_ARWF9DRD",
+      "target": "ref_P8F2SBCX",
       "weight": 1.0
     },
     {
       "ID": "edge_58",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_ARWF9DRD",
-      "target": "tag_701",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_VW8VK693",
+      "target": "ref_ARWF9DRD",
       "weight": 1.0
     },
     {
       "ID": "edge_59",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_ARWF9DRD",
-      "target": "group_1",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
       "ID": "edge_60",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_ARWF9DRD",
-      "target": "ref_4QTKV4F3",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -485,7 +485,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_ARWF9DRD",
-      "target": "ref_9KPGME85",
+      "target": "ref_4QTKV4F3",
       "weight": 1.0
     },
     {
@@ -493,7 +493,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_ARWF9DRD",
-      "target": "ref_VMQ2292C",
+      "target": "ref_9KPGME85",
       "weight": 1.0
     },
     {
@@ -501,39 +501,39 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_ARWF9DRD",
-      "target": "ref_SRKQ6UNC",
+      "target": "ref_VMQ2292C",
       "weight": 1.0
     },
     {
       "ID": "edge_64",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_554SE76H",
-      "target": "tag_701",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_ARWF9DRD",
+      "target": "ref_SRKQ6UNC",
       "weight": 1.0
     },
     {
       "ID": "edge_65",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_554SE76H",
-      "target": "group_1",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
       "ID": "edge_66",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_P8F2SBCX",
+      "source": "ref_554SE76H",
       "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_67",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_P8F2SBCX",
-      "target": "ref_XCJUNCJC",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -541,7 +541,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_P8F2SBCX",
-      "target": "ref_KWCZEPB3",
+      "target": "ref_XCJUNCJC",
       "weight": 1.0
     },
     {
@@ -549,19 +549,27 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_P8F2SBCX",
-      "target": "ref_ZXNPQ6M6",
+      "target": "ref_KWCZEPB3",
       "weight": 1.0
     },
     {
       "ID": "edge_70",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_XGRA2BDU",
-      "target": "tag_701",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_P8F2SBCX",
+      "target": "ref_ZXNPQ6M6",
       "weight": 1.0
     },
     {
       "ID": "edge_71",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XGRA2BDU",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_72",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_XGRA2BDU",
@@ -569,31 +577,31 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_72",
+      "ID": "edge_73",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_DPB3QX84",
-      "target": "tag_701",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_73",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_DPB3QX84",
-      "target": "group_1",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
       "ID": "edge_74",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_IUXJINVH",
-      "target": "tag_701",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_DPB3QX84",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_75",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_IUXJINVH",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_76",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_IUXJINVH",
@@ -601,7 +609,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_76",
+      "ID": "edge_77",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_IUXJINVH",
@@ -609,27 +617,19 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_77",
+      "ID": "edge_78",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_HDK7XA7K",
-      "target": "tag_701",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_78",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_HDK7XA7K",
-      "target": "group_1",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
       "ID": "edge_79",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_HDK7XA7K",
-      "target": "ref_PV9WRXUW",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -637,11 +637,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_HDK7XA7K",
-      "target": "ref_VM68J6X4",
+      "target": "ref_PV9WRXUW",
       "weight": 1.0
     },
     {
       "ID": "edge_81",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_HDK7XA7K",
+      "target": "ref_VM68J6X4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_82",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VM68J6X4",
@@ -649,19 +657,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_82",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_PV9WRXUW",
-      "target": "tag_1276",
-      "weight": 1.0
-    },
-    {
       "ID": "edge_83",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_PV9WRXUW",
-      "target": "tag_551",
+      "target": "tag_1276",
       "weight": 1.0
     },
     {
@@ -669,7 +669,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_PV9WRXUW",
-      "target": "tag_426",
+      "target": "tag_551",
       "weight": 1.0
     },
     {
@@ -677,7 +677,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_PV9WRXUW",
-      "target": "tag_501",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
@@ -685,7 +685,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_PV9WRXUW",
-      "target": "tag_976",
+      "target": "tag_501",
       "weight": 1.0
     },
     {
@@ -693,11 +693,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_PV9WRXUW",
-      "target": "tag_1326",
+      "target": "tag_976",
       "weight": 1.0
     },
     {
       "ID": "edge_88",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_PV9WRXUW",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_89",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_PV9WRXUW",
@@ -705,7 +713,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_89",
+      "ID": "edge_90",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZXNPQ6M6",
@@ -713,7 +721,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_90",
+      "ID": "edge_91",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZXNPQ6M6",
@@ -721,7 +729,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_91",
+      "ID": "edge_92",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZXNPQ6M6",
@@ -729,7 +737,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_92",
+      "ID": "edge_93",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZXNPQ6M6",
@@ -737,7 +745,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_93",
+      "ID": "edge_94",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZXNPQ6M6",
@@ -745,19 +753,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_94",
+      "ID": "edge_95",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_ZXNPQ6M6",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_95",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_ZXNPQ6M6",
-      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
@@ -765,11 +765,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_ZXNPQ6M6",
-      "target": "ref_DFH3EE7E",
+      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
       "ID": "edge_97",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_ZXNPQ6M6",
+      "target": "ref_DFH3EE7E",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_98",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_DFH3EE7E",
@@ -777,7 +785,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_98",
+      "ID": "edge_99",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_DFH3EE7E",
@@ -785,27 +793,19 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_99",
+      "ID": "edge_100",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_HT8Q6DES",
-      "target": "tag_426",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_100",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_HT8Q6DES",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_101",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_HT8Q6DES",
-      "target": "ref_GQ64BDW2",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -813,11 +813,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_HT8Q6DES",
-      "target": "ref_VP7F4N2M",
+      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
       "ID": "edge_103",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_HT8Q6DES",
+      "target": "ref_VP7F4N2M",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_104",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_UXI9WQTF",
@@ -825,7 +833,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_104",
+      "ID": "edge_105",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_IQMWHNFG",
@@ -833,19 +841,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_105",
+      "ID": "edge_106",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_5XMDQ4DB",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_106",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_5XMDQ4DB",
-      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
@@ -853,11 +853,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_5XMDQ4DB",
-      "target": "ref_GKZF99UV",
+      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
       "ID": "edge_108",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_5XMDQ4DB",
+      "target": "ref_GKZF99UV",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_109",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_R2CJAPG9",
@@ -865,19 +873,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_109",
+      "ID": "edge_110",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_R2CJAPG9",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_110",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_R2CJAPG9",
-      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
@@ -885,7 +885,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_R2CJAPG9",
-      "target": "ref_Z2II5B9C",
+      "target": "ref_GQ64BDW2",
       "weight": 1.0
     },
     {
@@ -893,15 +893,15 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_R2CJAPG9",
-      "target": "ref_MG5S4ZCE",
+      "target": "ref_Z2II5B9C",
       "weight": 1.0
     },
     {
       "ID": "edge_113",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_Z2II5B9C",
-      "target": "tag_276",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_R2CJAPG9",
+      "target": "ref_MG5S4ZCE",
       "weight": 1.0
     },
     {
@@ -909,23 +909,23 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_Z2II5B9C",
-      "target": "tag_1251",
+      "target": "tag_276",
       "weight": 1.0
     },
     {
       "ID": "edge_115",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_Z2II5B9C",
-      "target": "group_1",
+      "target": "tag_1251",
       "weight": 1.0
     },
     {
       "ID": "edge_116",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_Z2II5B9C",
-      "target": "ref_BFBE9FRR",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -933,7 +933,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_Z2II5B9C",
-      "target": "ref_F7T48F3S",
+      "target": "ref_BFBE9FRR",
       "weight": 1.0
     },
     {
@@ -941,7 +941,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_Z2II5B9C",
-      "target": "ref_V34SNSTA",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -949,7 +949,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_Z2II5B9C",
-      "target": "ref_7IK9XS5H",
+      "target": "ref_V34SNSTA",
       "weight": 1.0
     },
     {
@@ -957,11 +957,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_Z2II5B9C",
-      "target": "ref_KWCZEPB3",
+      "target": "ref_7IK9XS5H",
       "weight": 1.0
     },
     {
       "ID": "edge_121",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_Z2II5B9C",
+      "target": "ref_KWCZEPB3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_122",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_KWCZEPB3",
@@ -969,7 +977,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_122",
+      "ID": "edge_123",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_KWCZEPB3",
@@ -977,27 +985,19 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_123",
+      "ID": "edge_124",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_GQ64BDW2",
-      "target": "tag_701",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_124",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_GQ64BDW2",
-      "target": "group_1",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
       "ID": "edge_125",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_GQ64BDW2",
-      "target": "ref_4QTKV4F3",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -1005,7 +1005,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_GQ64BDW2",
-      "target": "ref_MG5S4ZCE",
+      "target": "ref_4QTKV4F3",
       "weight": 1.0
     },
     {
@@ -1013,11 +1013,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_GQ64BDW2",
-      "target": "ref_XCJUNCJC",
+      "target": "ref_MG5S4ZCE",
       "weight": 1.0
     },
     {
       "ID": "edge_128",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_GQ64BDW2",
+      "target": "ref_XCJUNCJC",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_129",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VBCAKZ9H",
@@ -1025,7 +1033,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_129",
+      "ID": "edge_130",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VBCAKZ9H",
@@ -1033,7 +1041,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_130",
+      "ID": "edge_131",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VBCAKZ9H",
@@ -1041,7 +1049,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_131",
+      "ID": "edge_132",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_GKZF99UV",
@@ -1049,7 +1057,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_132",
+      "ID": "edge_133",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_GKZF99UV",
@@ -1057,7 +1065,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_133",
+      "ID": "edge_134",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_GKZF99UV",
@@ -1065,7 +1073,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_134",
+      "ID": "edge_135",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_W2IS79KX",
@@ -1073,19 +1081,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_135",
+      "ID": "edge_136",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_W2IS79KX",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_136",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_W2IS79KX",
-      "target": "ref_WQE98M5C",
       "weight": 1.0
     },
     {
@@ -1093,11 +1093,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_W2IS79KX",
-      "target": "ref_4QTKV4F3",
+      "target": "ref_WQE98M5C",
       "weight": 1.0
     },
     {
       "ID": "edge_138",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_W2IS79KX",
+      "target": "ref_4QTKV4F3",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_139",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_29KDURAI",
@@ -1105,19 +1113,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_139",
+      "ID": "edge_140",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_29KDURAI",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_140",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_29KDURAI",
-      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -1125,7 +1125,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_29KDURAI",
-      "target": "ref_4QTKV4F3",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -1133,11 +1133,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_29KDURAI",
-      "target": "ref_MG5S4ZCE",
+      "target": "ref_4QTKV4F3",
       "weight": 1.0
     },
     {
       "ID": "edge_143",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_29KDURAI",
+      "target": "ref_MG5S4ZCE",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_144",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_MG5S4ZCE",
@@ -1145,7 +1153,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_144",
+      "ID": "edge_145",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_MG5S4ZCE",
@@ -1153,7 +1161,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_145",
+      "ID": "edge_146",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_MG5S4ZCE",
@@ -1161,7 +1169,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_146",
+      "ID": "edge_147",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_4QTKV4F3",
@@ -1169,19 +1177,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_147",
+      "ID": "edge_148",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_4QTKV4F3",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_148",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_4QTKV4F3",
-      "target": "ref_WQE98M5C",
       "weight": 1.0
     },
     {
@@ -1189,7 +1189,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_4QTKV4F3",
-      "target": "ref_EDI68INT",
+      "target": "ref_WQE98M5C",
       "weight": 1.0
     },
     {
@@ -1197,19 +1197,27 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_4QTKV4F3",
-      "target": "ref_VBBWD2V8",
+      "target": "ref_EDI68INT",
       "weight": 1.0
     },
     {
       "ID": "edge_151",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_VBBWD2V8",
-      "target": "tag_1001",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_4QTKV4F3",
+      "target": "ref_VBBWD2V8",
       "weight": 1.0
     },
     {
       "ID": "edge_152",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_VBBWD2V8",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_153",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VBBWD2V8",
@@ -1217,7 +1225,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_153",
+      "ID": "edge_154",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VBBWD2V8",
@@ -1225,7 +1233,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_154",
+      "ID": "edge_155",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_EDI68INT",
@@ -1233,7 +1241,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_155",
+      "ID": "edge_156",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_EDI68INT",
@@ -1241,19 +1249,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_156",
+      "ID": "edge_157",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_EDI68INT",
       "target": "ref_WQE98M5C",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_157",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_SRKQ6UNC",
-      "target": "tag_126",
       "weight": 1.0
     },
     {
@@ -1261,7 +1261,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1276",
+      "target": "tag_126",
       "weight": 1.0
     },
     {
@@ -1269,7 +1269,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1051",
+      "target": "tag_1276",
       "weight": 1.0
     },
     {
@@ -1277,7 +1277,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_776",
+      "target": "tag_1051",
       "weight": 1.0
     },
     {
@@ -1285,7 +1285,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_476",
+      "target": "tag_776",
       "weight": 1.0
     },
     {
@@ -1293,7 +1293,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_826",
+      "target": "tag_476",
       "weight": 1.0
     },
     {
@@ -1301,7 +1301,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1076",
+      "target": "tag_826",
       "weight": 1.0
     },
     {
@@ -1309,7 +1309,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1301",
+      "target": "tag_1076",
       "weight": 1.0
     },
     {
@@ -1317,7 +1317,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1176",
+      "target": "tag_1301",
       "weight": 1.0
     },
     {
@@ -1325,7 +1325,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1226",
+      "target": "tag_1176",
       "weight": 1.0
     },
     {
@@ -1333,7 +1333,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_1126",
+      "target": "tag_1226",
       "weight": 1.0
     },
     {
@@ -1341,7 +1341,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_751",
+      "target": "tag_1126",
       "weight": 1.0
     },
     {
@@ -1349,7 +1349,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_951",
+      "target": "tag_751",
       "weight": 1.0
     },
     {
@@ -1357,7 +1357,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_251",
+      "target": "tag_951",
       "weight": 1.0
     },
     {
@@ -1365,7 +1365,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_376",
+      "target": "tag_251",
       "weight": 1.0
     },
     {
@@ -1373,7 +1373,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_426",
+      "target": "tag_376",
       "weight": 1.0
     },
     {
@@ -1381,7 +1381,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_601",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
@@ -1389,23 +1389,23 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "tag_301",
+      "target": "tag_601",
       "weight": 1.0
     },
     {
       "ID": "edge_175",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_SRKQ6UNC",
-      "target": "group_1",
+      "target": "tag_301",
       "weight": 1.0
     },
     {
       "ID": "edge_176",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_SRKQ6UNC",
-      "target": "ref_F7T48F3S",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -1413,7 +1413,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_SRKQ6UNC",
-      "target": "ref_2SJJ2VPQ",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
@@ -1421,7 +1421,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_SRKQ6UNC",
-      "target": "ref_VP7F4N2M",
+      "target": "ref_2SJJ2VPQ",
       "weight": 1.0
     },
     {
@@ -1429,11 +1429,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_SRKQ6UNC",
-      "target": "ref_WQE98M5C",
+      "target": "ref_VP7F4N2M",
       "weight": 1.0
     },
     {
       "ID": "edge_180",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_SRKQ6UNC",
+      "target": "ref_WQE98M5C",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_181",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VP7F4N2M",
@@ -1441,7 +1449,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_181",
+      "ID": "edge_182",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VP7F4N2M",
@@ -1449,7 +1457,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_182",
+      "ID": "edge_183",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VP7F4N2M",
@@ -1457,7 +1465,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_183",
+      "ID": "edge_184",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1465,7 +1473,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_184",
+      "ID": "edge_185",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1473,7 +1481,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_185",
+      "ID": "edge_186",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1481,7 +1489,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_186",
+      "ID": "edge_187",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1489,7 +1497,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_187",
+      "ID": "edge_188",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1497,7 +1505,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_188",
+      "ID": "edge_189",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1505,7 +1513,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_189",
+      "ID": "edge_190",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1513,7 +1521,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_190",
+      "ID": "edge_191",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
@@ -1521,19 +1529,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_191",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_XCJUNCJC",
-      "target": "tag_1226",
-      "weight": 1.0
-    },
-    {
       "ID": "edge_192",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_526",
+      "target": "tag_1226",
       "weight": 1.0
     },
     {
@@ -1541,7 +1541,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_1101",
+      "target": "tag_526",
       "weight": 1.0
     },
     {
@@ -1549,7 +1549,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_1126",
+      "target": "tag_1101",
       "weight": 1.0
     },
     {
@@ -1557,7 +1557,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_51",
+      "target": "tag_1126",
       "weight": 1.0
     },
     {
@@ -1565,7 +1565,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_201",
+      "target": "tag_51",
       "weight": 1.0
     },
     {
@@ -1573,7 +1573,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_951",
+      "target": "tag_201",
       "weight": 1.0
     },
     {
@@ -1581,7 +1581,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_876",
+      "target": "tag_951",
       "weight": 1.0
     },
     {
@@ -1589,7 +1589,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_926",
+      "target": "tag_876",
       "weight": 1.0
     },
     {
@@ -1597,7 +1597,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_1026",
+      "target": "tag_926",
       "weight": 1.0
     },
     {
@@ -1605,7 +1605,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_326",
+      "target": "tag_1026",
       "weight": 1.0
     },
     {
@@ -1613,7 +1613,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_426",
+      "target": "tag_326",
       "weight": 1.0
     },
     {
@@ -1621,7 +1621,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_151",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
@@ -1629,7 +1629,7 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_726",
+      "target": "tag_151",
       "weight": 1.0
     },
     {
@@ -1637,11 +1637,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XCJUNCJC",
-      "target": "tag_26",
+      "target": "tag_726",
       "weight": 1.0
     },
     {
       "ID": "edge_206",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_XCJUNCJC",
+      "target": "tag_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_207",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_XCJUNCJC",
@@ -1649,7 +1657,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_207",
+      "ID": "edge_208",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1657,7 +1665,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_208",
+      "ID": "edge_209",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1665,7 +1673,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_209",
+      "ID": "edge_210",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1673,7 +1681,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_210",
+      "ID": "edge_211",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1681,7 +1689,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_211",
+      "ID": "edge_212",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1689,7 +1697,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_212",
+      "ID": "edge_213",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1697,7 +1705,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_213",
+      "ID": "edge_214",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1705,7 +1713,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_214",
+      "ID": "edge_215",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1713,7 +1721,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_215",
+      "ID": "edge_216",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_VMQ2292C",
@@ -1721,19 +1729,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_216",
+      "ID": "edge_217",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VMQ2292C",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_217",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_VMQ2292C",
-      "target": "ref_PJXWJ4C7",
       "weight": 1.0
     },
     {
@@ -1741,31 +1741,31 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_VMQ2292C",
-      "target": "ref_F7T48F3S",
+      "target": "ref_PJXWJ4C7",
       "weight": 1.0
     },
     {
       "ID": "edge_219",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_9KPGME85",
-      "target": "tag_426",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_VMQ2292C",
+      "target": "ref_F7T48F3S",
       "weight": 1.0
     },
     {
       "ID": "edge_220",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_9KPGME85",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_221",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_7IK9XS5H",
-      "target": "tag_1001",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9KPGME85",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -1773,11 +1773,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_7IK9XS5H",
-      "target": "tag_426",
+      "target": "tag_1001",
       "weight": 1.0
     },
     {
       "ID": "edge_223",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_7IK9XS5H",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_224",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_7IK9XS5H",
@@ -1785,7 +1793,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_224",
+      "ID": "edge_225",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_FXWCGUE5",
@@ -1793,19 +1801,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_225",
+      "ID": "edge_226",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_FXWCGUE5",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_226",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_FXWCGUE5",
-      "target": "ref_V34SNSTA",
       "weight": 1.0
     },
     {
@@ -1813,11 +1813,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_FXWCGUE5",
-      "target": "ref_D2F3EV45",
+      "target": "ref_V34SNSTA",
       "weight": 1.0
     },
     {
       "ID": "edge_228",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_FXWCGUE5",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_229",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_V34SNSTA",
@@ -1825,19 +1833,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_229",
+      "ID": "edge_230",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_V34SNSTA",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_230",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_V34SNSTA",
-      "target": "ref_AQMUA2M4",
       "weight": 1.0
     },
     {
@@ -1845,11 +1845,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_V34SNSTA",
-      "target": "ref_D2F3EV45",
+      "target": "ref_AQMUA2M4",
       "weight": 1.0
     },
     {
       "ID": "edge_232",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_V34SNSTA",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_233",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZQG84XQW",
@@ -1857,19 +1865,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_233",
+      "ID": "edge_234",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_ZQG84XQW",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_234",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_4GAUANX5",
-      "target": "tag_1001",
       "weight": 1.0
     },
     {
@@ -1877,23 +1877,23 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_4GAUANX5",
-      "target": "tag_426",
+      "target": "tag_1001",
       "weight": 1.0
     },
     {
       "ID": "edge_236",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_4GAUANX5",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_237",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_4GAUANX5",
-      "target": "ref_D2F3EV45",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -1901,15 +1901,15 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_4GAUANX5",
-      "target": "ref_AQMUA2M4",
+      "target": "ref_D2F3EV45",
       "weight": 1.0
     },
     {
       "ID": "edge_239",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_BFBE9FRR",
-      "target": "tag_1001",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_4GAUANX5",
+      "target": "ref_AQMUA2M4",
       "weight": 1.0
     },
     {
@@ -1917,11 +1917,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_BFBE9FRR",
-      "target": "tag_426",
+      "target": "tag_1001",
       "weight": 1.0
     },
     {
       "ID": "edge_241",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_BFBE9FRR",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_242",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_BFBE9FRR",
@@ -1929,7 +1937,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_242",
+      "ID": "edge_243",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_BFBE9FRR",
@@ -1937,27 +1945,19 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_243",
+      "ID": "edge_244",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_2EQESATT",
-      "target": "tag_426",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_244",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_2EQESATT",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_245",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_2EQESATT",
-      "target": "ref_AQMUA2M4",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -1965,11 +1965,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_2EQESATT",
-      "target": "ref_D2F3EV45",
+      "target": "ref_AQMUA2M4",
       "weight": 1.0
     },
     {
       "ID": "edge_247",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_2EQESATT",
+      "target": "ref_D2F3EV45",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_248",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_RNP48896",
@@ -1977,19 +1985,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_248",
+      "ID": "edge_249",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_RNP48896",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_249",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_RNP48896",
-      "target": "ref_D2F3EV45",
       "weight": 1.0
     },
     {
@@ -1997,15 +1997,15 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_RNP48896",
-      "target": "ref_AQMUA2M4",
+      "target": "ref_D2F3EV45",
       "weight": 1.0
     },
     {
       "ID": "edge_251",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_QGHT3W5V",
-      "target": "tag_1001",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_RNP48896",
+      "target": "ref_AQMUA2M4",
       "weight": 1.0
     },
     {
@@ -2013,23 +2013,23 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_QGHT3W5V",
-      "target": "tag_426",
+      "target": "tag_1001",
       "weight": 1.0
     },
     {
       "ID": "edge_253",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_QGHT3W5V",
-      "target": "group_1",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_254",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_QGHT3W5V",
-      "target": "ref_D2F3EV45",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -2037,15 +2037,15 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_QGHT3W5V",
-      "target": "ref_AQMUA2M4",
+      "target": "ref_D2F3EV45",
       "weight": 1.0
     },
     {
       "ID": "edge_256",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_HZ86AXNV",
-      "target": "tag_276",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_QGHT3W5V",
+      "target": "ref_AQMUA2M4",
       "weight": 1.0
     },
     {
@@ -2053,23 +2053,23 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_HZ86AXNV",
-      "target": "tag_1001",
+      "target": "tag_276",
       "weight": 1.0
     },
     {
       "ID": "edge_258",
-      "dash": "3 3",
-      "group": "ref-group",
+      "dash": "2 1 2",
+      "group": "ref-tag",
       "source": "ref_HZ86AXNV",
-      "target": "group_1",
+      "target": "tag_1001",
       "weight": 1.0
     },
     {
       "ID": "edge_259",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_HZ86AXNV",
-      "target": "ref_D2F3EV45",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -2077,11 +2077,19 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_HZ86AXNV",
-      "target": "ref_AQMUA2M4",
+      "target": "ref_D2F3EV45",
       "weight": 1.0
     },
     {
       "ID": "edge_261",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_HZ86AXNV",
+      "target": "ref_AQMUA2M4",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_262",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_AQMUA2M4",
@@ -2089,7 +2097,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_262",
+      "ID": "edge_263",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_AQMUA2M4",
@@ -2097,19 +2105,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_263",
+      "ID": "edge_264",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_AQMUA2M4",
       "target": "ref_D2F3EV45",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_264",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_53HBW8NV",
-      "target": "tag_276",
       "weight": 1.0
     },
     {
@@ -2117,11 +2117,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_53HBW8NV",
-      "target": "tag_1001",
+      "target": "tag_276",
       "weight": 1.0
     },
     {
       "ID": "edge_266",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_53HBW8NV",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_267",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_53HBW8NV",
@@ -2129,7 +2137,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_267",
+      "ID": "edge_268",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_53HBW8NV",
@@ -2137,7 +2145,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_268",
+      "ID": "edge_269",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_CZVTI8Z9",
@@ -2145,7 +2153,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_269",
+      "ID": "edge_270",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_CZVTI8Z9",
@@ -2153,7 +2161,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_270",
+      "ID": "edge_271",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_CZVTI8Z9",
@@ -2161,7 +2169,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_271",
+      "ID": "edge_272",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_24925MUH",
@@ -2169,7 +2177,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_272",
+      "ID": "edge_273",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_24925MUH",
@@ -2177,7 +2185,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_273",
+      "ID": "edge_274",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_24925MUH",
@@ -2185,7 +2193,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_274",
+      "ID": "edge_275",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_Q7SFACDB",
@@ -2193,7 +2201,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_275",
+      "ID": "edge_276",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_Q7SFACDB",
@@ -2201,7 +2209,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_276",
+      "ID": "edge_277",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_Q7SFACDB",
@@ -2209,31 +2217,31 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_277",
+      "ID": "edge_278",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_D2F3EV45",
       "target": "tag_1251",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_278",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_D2F3EV45",
-      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_279",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_URRSHA4G",
-      "target": "tag_1251",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_D2F3EV45",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_280",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_URRSHA4G",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_281",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_URRSHA4G",
@@ -2241,23 +2249,23 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_281",
+      "ID": "edge_282",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_IEPBII8A",
       "target": "tag_1251",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_282",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_IEPBII8A",
-      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_283",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_IEPBII8A",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_284",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_33V8E7JS",
@@ -2265,19 +2273,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_284",
+      "ID": "edge_285",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_33V8E7JS",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_285",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_33V8E7JS",
-      "target": "ref_2SJJ2VPQ",
       "weight": 1.0
     },
     {
@@ -2285,23 +2285,23 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_33V8E7JS",
-      "target": "ref_WQE98M5C",
+      "target": "ref_2SJJ2VPQ",
       "weight": 1.0
     },
     {
       "ID": "edge_287",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_6W34KJJN",
-      "target": "group_1",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_33V8E7JS",
+      "target": "ref_WQE98M5C",
       "weight": 1.0
     },
     {
       "ID": "edge_288",
-      "dash": "1",
-      "group": "ref-ref",
+      "dash": "3 3",
+      "group": "ref-group",
       "source": "ref_6W34KJJN",
-      "target": "ref_2SJJ2VPQ",
+      "target": "group_1",
       "weight": 1.0
     },
     {
@@ -2309,19 +2309,27 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_6W34KJJN",
-      "target": "ref_WQE98M5C",
+      "target": "ref_2SJJ2VPQ",
       "weight": 1.0
     },
     {
       "ID": "edge_290",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_WQE98M5C",
-      "target": "tag_701",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_6W34KJJN",
+      "target": "ref_WQE98M5C",
       "weight": 1.0
     },
     {
       "ID": "edge_291",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_WQE98M5C",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_292",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_WQE98M5C",
@@ -2329,23 +2337,23 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_292",
+      "ID": "edge_293",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_AEX984EM",
       "target": "tag_1251",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_293",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_AEX984EM",
-      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_294",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_AEX984EM",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_295",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_AEX984EM",
@@ -2353,23 +2361,23 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_295",
+      "ID": "edge_296",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_ZMUS8ZBK",
       "target": "tag_1251",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_296",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_ZMUS8ZBK",
-      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_297",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ZMUS8ZBK",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_298",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_ZMUS8ZBK",
@@ -2377,7 +2385,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_298",
+      "ID": "edge_299",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_EATV8CAD",
@@ -2385,7 +2393,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_299",
+      "ID": "edge_300",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_EATV8CAD",
@@ -2393,7 +2401,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_300",
+      "ID": "edge_301",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_EATV8CAD",
@@ -2401,15 +2409,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_301",
+      "ID": "edge_302",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_2SJJ2VPQ",
-      "target": "tag_701",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
-      "ID": "edge_302",
+      "ID": "edge_303",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_2SJJ2VPQ",
@@ -2417,7 +2425,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_303",
+      "ID": "edge_304",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_F7T48F3S",
@@ -2425,19 +2433,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_304",
+      "ID": "edge_305",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_F7T48F3S",
       "target": "group_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_305",
-      "dash": "1",
-      "group": "ref-ref",
-      "source": "ref_F7T48F3S",
-      "target": "ref_XDZVQMF4",
       "weight": 1.0
     },
     {
@@ -2445,7 +2445,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_F7T48F3S",
-      "target": "ref_DIZNN8PJ",
+      "target": "ref_XDZVQMF4",
       "weight": 1.0
     },
     {
@@ -2453,7 +2453,7 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_F7T48F3S",
-      "target": "ref_RR492BZJ",
+      "target": "ref_DIZNN8PJ",
       "weight": 1.0
     },
     {
@@ -2461,19 +2461,27 @@
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_F7T48F3S",
-      "target": "ref_IX2N69XV",
+      "target": "ref_RR492BZJ",
       "weight": 1.0
     },
     {
       "ID": "edge_309",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_RR492BZJ",
-      "target": "tag_276",
+      "dash": "1",
+      "group": "ref-ref",
+      "source": "ref_F7T48F3S",
+      "target": "ref_IX2N69XV",
       "weight": 1.0
     },
     {
       "ID": "edge_310",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_RR492BZJ",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_311",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_RR492BZJ",
@@ -2481,23 +2489,23 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_311",
+      "ID": "edge_312",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_XDZVQMF4",
       "target": "tag_276",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_312",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_XDZVQMF4",
-      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_313",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XDZVQMF4",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_314",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_DIZNN8PJ",
@@ -2505,7 +2513,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_314",
+      "ID": "edge_315",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_DIZNN8PJ",
@@ -2513,15 +2521,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_315",
+      "ID": "edge_316",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_6B77HX4N",
-      "target": "tag_701",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
-      "ID": "edge_316",
+      "ID": "edge_317",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_6B77HX4N",
@@ -2529,7 +2537,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_317",
+      "ID": "edge_318",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_6B77HX4N",
@@ -2537,7 +2545,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_318",
+      "ID": "edge_319",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_2WQZTAAI",
@@ -2545,7 +2553,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_319",
+      "ID": "edge_320",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_2WQZTAAI",
@@ -2553,15 +2561,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_320",
+      "ID": "edge_321",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_WHSXAMBF",
-      "target": "tag_701",
+      "target": "tag_426",
       "weight": 1.0
     },
     {
-      "ID": "edge_321",
+      "ID": "edge_322",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_WHSXAMBF",
@@ -2569,7 +2577,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_322",
+      "ID": "edge_323",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_IX2N69XV",
@@ -2577,7 +2585,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_323",
+      "ID": "edge_324",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_IX2N69XV",
@@ -2585,7 +2593,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_324",
+      "ID": "edge_325",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_CV34JIMD",
@@ -2593,7 +2601,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_325",
+      "ID": "edge_326",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_FTWW88JB",
@@ -2601,7 +2609,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_326",
+      "ID": "edge_327",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_FTWW88JB",
@@ -2609,7 +2617,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_327",
+      "ID": "edge_328",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_FTWW88JB",
@@ -2617,19 +2625,11 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_328",
+      "ID": "edge_329",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_FTWW88JB",
       "target": "ref_Q57Z25WP",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_329",
-      "dash": "2 1 2",
-      "group": "ref-tag",
-      "source": "ref_5W2N5P3G",
-      "target": "tag_1001",
       "weight": 1.0
     },
     {
@@ -2637,11 +2637,19 @@
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_5W2N5P3G",
-      "target": "tag_426",
+      "target": "tag_1001",
       "weight": 1.0
     },
     {
       "ID": "edge_331",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_5W2N5P3G",
+      "target": "tag_701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_332",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_5W2N5P3G",
@@ -2649,7 +2657,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_332",
+      "ID": "edge_333",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_5W2N5P3G",
@@ -2657,7 +2665,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_333",
+      "ID": "edge_334",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_PJXWJ4C7",
@@ -2665,7 +2673,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_334",
+      "ID": "edge_335",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_PJXWJ4C7",
@@ -2673,7 +2681,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_335",
+      "ID": "edge_336",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_PJXWJ4C7",
@@ -2681,7 +2689,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_336",
+      "ID": "edge_337",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_Q57Z25WP",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_338",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_Q57Z25WP",
@@ -2689,7 +2705,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_337",
+      "ID": "edge_339",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_Q57Z25WP",
@@ -2697,7 +2713,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_338",
+      "ID": "edge_340",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_GBFB22CN",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_341",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_GBFB22CN",
@@ -2705,7 +2729,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_339",
+      "ID": "edge_342",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_HPTTCTAJ",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_343",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_HPTTCTAJ",
@@ -2713,7 +2745,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_340",
+      "ID": "edge_344",
       "dash": "2 1 2",
       "group": "ref-tag",
       "source": "ref_F8Q923UA",
@@ -2721,7 +2753,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_341",
+      "ID": "edge_345",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_F8Q923UA",
@@ -2729,7 +2761,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_342",
+      "ID": "edge_346",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_X7N6ATKC",
@@ -2737,7 +2769,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_343",
+      "ID": "edge_347",
+      "dash": "2 1 2",
+      "group": "ref-tag",
+      "source": "ref_42BD9C79",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_348",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_42BD9C79",
@@ -2745,7 +2785,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_344",
+      "ID": "edge_349",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_DJJXKBEB",
@@ -2753,7 +2793,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_345",
+      "ID": "edge_350",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_8PX73DAA",
@@ -2761,7 +2801,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_346",
+      "ID": "edge_351",
       "dash": "1",
       "group": "ref-ref",
       "source": "ref_8PX73DAA",
@@ -2769,7 +2809,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_347",
+      "ID": "edge_352",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_VPR2282D",
@@ -2777,7 +2817,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_348",
+      "ID": "edge_353",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_BUTPXX4M",
@@ -2788,12 +2828,13 @@
   "nodes": [
     {
       "ID": "ref_EDBBFUMN",
+      "abstractNote": "L\u2019UFC-Que Choisir dit avoir d\u00e9cel\u00e9 lors de tests des phtalates dans des crayons de couleur et \u00e0 papier, du formald\u00e9hyde dans un b\u00e2tonnet de colle ou des impuret\u00e9s canc\u00e9rog\u00e8nes dans des encres.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2810,10 +2851,11 @@
     },
     {
       "ID": "ref_BT6Z63QZ",
+      "abstractNote": "Dihydrotestosterone (commonly abbreviated to DHT), or 5\u03b1-dihydrotestosterone (5\u03b1-DHT), also known as 5\u03b1-androstan-17\u03b2-ol-3-one, is a sex steroid and androgen hormone. The enzyme 5\u03b1-reductase synthesizes DHT from testosterone in the prostate, testes, hair follicles, and adrenal glands. This enzyme reduces the 4,5 double-bond of the testosterone. Relative to testosterone, DHT is much more potent as an agonist of the androgen receptor.\nDHT is also known as androstanolone (INN) and stanolone (BAN), and is used clinically under brand names including Anabolex, Anaprotin, Andractim, Androlone, Gelovit, Neoprol, Pesomax, and Stanaprol as an androgen and anabolic steroid. Unlike testosterone and some anabolic steroids, DHT cannot be aromatized, and hence, has no risk of estrogenic side effects such as gynecomastia.",
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2821,19 +2863,22 @@
       "label": "Dihydrotestosterone (DHT, andogenous androgen)",
       "note": "",
       "supertag": false,
-      "tag": [],
+      "tag": [
+        "SUBSTANCES"
+      ],
       "type": "encyclopediaArticle",
       "url": "https://en.wikipedia.org/w/index.php?title=Dihydrotestosterone&oldid=730625611",
       "weight": 25
     },
     {
       "ID": "ref_V96FMVV8",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2850,12 +2895,13 @@
     },
     {
       "ID": "ref_R5E7TDEI",
+      "abstractNote": "Ce num\u00e9ro du BEH pr\u00e9sente plusieurs \u00e9tudes relatives aux effets possibles sur la sant\u00e9 de la pollution par le chlord\u00e9cone mise en \u00e9vidence en 1999 en Martinique et en Guadeloupe, ainsi qu\u2019\u00e0, entre autres, la gestion des risques sanitaires aff\u00e9rentsp Cette pollution par un pesticide organochlor\u00e9, utilis\u00e9 dans les bananeraies aux Antilles jusqu\u2019\u00e0 son interdiction en 1993, a fait l\u2019objet d\u2019actions des pouvoirs publics d\u00e8s son identification, en vue d\u2019en caract\u00e9riser l\u2019\u00e9tendue, d\u2019en conna\u00eetre les dangers, d\u2019en \u00e9valuer les risques et d\u2019en ma\u00eetriser les impactsp Le plan d\u2019action interminist\u00e9riel chlord\u00e9cone 2008-2010 a permis de structurer et de renforcer les actions mises en \u0153uvre ; \u00e0 ce titre, la situation g\u00e9r\u00e9e aux Antilles est source d\u2019enseignementsp",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_HDK7XA7K"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2870,13 +2916,14 @@
     },
     {
       "ID": "ref_T3BZJESJ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_F7T48F3S",
         "ref_3M2S2E7R"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2894,12 +2941,13 @@
     },
     {
       "ID": "ref_H4RCQ7ZI",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2914,12 +2962,13 @@
     },
     {
       "ID": "ref_ECED5A2P",
+      "abstractNote": "This publication is an update of the scientific knowledge, including main conclusions and key concerns, on endocrine disruptors, to address concerns about the potential adverse health effects of chemicals on humans and wildlife.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_IVGUCIJJ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2936,12 +2985,13 @@
     },
     {
       "ID": "ref_GDAJ28UW",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_9GN5KSGZ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2958,10 +3008,11 @@
     },
     {
       "ID": "ref_94M492SB",
+      "abstractNote": "Perturbateurs endocriniens (PEs) et cancers. Analyse des risques et des m\u00e9canismes, propositions pratiques.",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2976,12 +3027,13 @@
     },
     {
       "ID": "ref_9GN5KSGZ",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_GDAJ28UW"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -2999,10 +3051,11 @@
     },
     {
       "ID": "ref_G9UPMX5V",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3020,10 +3073,11 @@
     },
     {
       "ID": "ref_NNAGUC3R",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3040,10 +3094,11 @@
     },
     {
       "ID": "ref_8CPECCSN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3058,10 +3113,11 @@
     },
     {
       "ID": "ref_2URM4FU2",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3076,12 +3132,13 @@
     },
     {
       "ID": "ref_3M2S2E7R",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_T3BZJESJ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3098,10 +3155,11 @@
     },
     {
       "ID": "ref_JZ3UJ6C9",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3118,10 +3176,11 @@
     },
     {
       "ID": "ref_T9V87MN6",
+      "abstractNote": "Liste perturbateur endocrinien et cancer, perturbateurs endocriniens cosm\u00e9tique | Cancer et environnement",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3138,6 +3197,7 @@
     },
     {
       "ID": "ref_UVXJWBI2",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -3146,7 +3206,7 @@
         "ref_AT9489PS",
         "ref_UGNB96A6"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3163,6 +3223,7 @@
     },
     {
       "ID": "ref_AT9489PS",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -3170,7 +3231,7 @@
         "ref_99RQ5HRF",
         "ref_UVXJWBI2"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3187,6 +3248,7 @@
     },
     {
       "ID": "ref_99RQ5HRF",
+      "abstractNote": "Le Monde.fr version mobile - L\u2019Endocrine Society, soci\u00e9t\u00e9 savante d\u2019origine am\u00e9ricaine, estime que la future l\u00e9gislation ne prot\u00e8ge pas la sant\u00e9 publique.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -3194,7 +3256,7 @@
         "ref_AT9489PS",
         "ref_UVXJWBI2"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3211,6 +3273,7 @@
     },
     {
       "ID": "ref_VW8VK693",
+      "abstractNote": "Stockholm Convention on Persistent Organic Pollutants is an international environmental treaty, signed in 2001 and effective from May 2004, that aims to eliminate or restrict the production and use of persistent organic pollutants (POPs).",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -3223,7 +3286,7 @@
         "ref_P8F2SBCX",
         "ref_ARWF9DRD"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3240,6 +3303,7 @@
     },
     {
       "ID": "ref_ARWF9DRD",
+      "abstractNote": "Endosulfan is an off-patent organochlorine insecticide and acaricide that is being phased out globally. The two isomers, endo and exo, are known popularly as I and II. Endosulfan sulfate is a product of oxidation containing one extra O atom attached to the S atom. Endosulfan became a highly controversial agrichemical due to its acute toxicity, potential for bioaccumulation, and role as an endocrine disruptor. Because of its threats to human health and the environment, a global ban on the manufacture and use of endosulfan was negotiated under the Stockholm Convention in April 2011. The ban will take effect in mid-2012, with certain uses exempted for five additional years. More than 80 countries, including the European Union, Australia, New Zealand, several West African nations, the United States, Brazil, and Canada had already banned it or announced phase-outs by the time the Stockholm Convention ban was agreed upon. It is still used extensively in India, China, and few other countries. It is produced by Makhteshim Agan and several manufacturers in India and China.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3249,7 +3313,7 @@
         "ref_VMQ2292C",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3266,12 +3330,13 @@
     },
     {
       "ID": "ref_554SE76H",
+      "abstractNote": "Anti-oestrogenic effects. Lindane, also known as gamma-hexachlorocyclohexane, (\u03b3-HCH), gammaxene, Gammallin and sometimes incorrectly called benzene hexachloride (BHC), is an organochlorine chemical variant of hexachlorocyclohexane that has been used both as an agricultural insecticide and as a pharmaceutical treatment for lice and scabies.\nLindane is a neurotoxin that interferes with GABA neurotransmitter function by interacting with the GABAA receptor-chloride channel complex at the picrotoxin binding site. In humans, lindane affects the nervous system, liver and kidneys, and may well be a carcinogen. It is unclear whether lindane is an endocrine disruptor.\nThe World Health Organization classifies lindane as \"Moderately Hazardous,\" and its international trade is restricted and regulated under the Rotterdam Convention on Prior Informed Consent. In 2009, the production and agricultural use of lindane was banned under the Stockholm Convention on persistent organic pollutants. A specific exemption to that ban allows it to continue to be used as a second-line pharmaceutical treatment for lice and scabies.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_VW8VK693"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3288,6 +3353,7 @@
     },
     {
       "ID": "ref_P8F2SBCX",
+      "abstractNote": "Perfluorooctanesulfonic acid (conjugate base perfluorooctanesulfonate) (PFOS) is an anthropogenic fluorosurfactant and global pollutant. PFOS was the key ingredient in Scotchgard, a fabric protector made by 3M, and numerous stain repellents. It was added to Annex B of the Stockholm Convention on Persistent Organic Pollutants in May 2009. PFOS can be synthesized in industrial production or result from the degradation of precursors. PFOS levels that have been detected in wildlife are considered high enough to affect health parameters, and recently higher serum levels of PFOS were found to be associated with increased risk of chronic kidney disease in the general US population. \"This association was independent of confounders such as age, sex, race/ethnicity, body mass index, diabetes, hypertension, and serum cholesterol level.\"",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3296,7 +3362,7 @@
         "ref_ZXNPQ6M6",
         "ref_VW8VK693"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3311,13 +3377,14 @@
     },
     {
       "ID": "ref_XGRA2BDU",
+      "abstractNote": "2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD) is a polychlorinated dibenzo-p-dioxin (sometimes shortened, though inaccurately, to simply \"dioxin\") with the chemical formula C\n12H\n4Cl\n4O\n2. TCDD is a colorless solid with no distinguishable odor at room temperature. It is usually formed as a side product in organic synthesis and burning of organic materials.\nTCDD is the most potent compound (congener) of its series (polychlorinated dibenzodioxins, known as PCDDs or simply dioxins) and became known as a contaminant in Agent Orange, an herbicide used in the Vietnam War. TCDD was released into the environment in the Seveso disaster. It is a persistent environmental contaminant usually present in a complex mixture of dioxin-like compounds, and is a carcinogen.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_VW8VK693",
         "ref_HP285AHE"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3334,13 +3401,14 @@
     },
     {
       "ID": "ref_DPB3QX84",
+      "abstractNote": "A polychlorinated biphenyl (PCB) is an organic chlorine compound with the formula C12H10\u2212xClx. Polychlorinated biphenyls were once widely deployed as dielectric and coolant fluids in electrical apparatus, carbonless copy paper and in heat transfer fluids. Because of their longevity, PCBs are still widely in use, even though their manufacture has declined drastically since the 1960s, when a host of problems were identified. Because of PCBs' environmental toxicity and classification as a persistent organic pollutant, PCB production was banned by the United States Congress in 1979 and by the Stockholm Convention on Persistent Organic Pollutants in 2001. The International Research Agency on Cancer (IRAC), rendered PCBs as definite carcinogens in humans. According to the U.S. Environmental Protection Agency (EPA), PCBs cause cancer in animals and are probable human carcinogens. Many rivers and buildings including schools, parks, and other sites are contaminated with PCBs, and there have been contaminations of food supplies with the toxins.\nSome PCBs share a structural similarity and toxic mode of action with dioxin. Other toxic effects such as endocrine disruption (notably blocking of thyroid system functioning) and neurotoxicity are known. The maximum allowable contaminant level in drinking water in the United States is set at zero, but because of water treatment technologies, a level of 0.5 parts per billion is the de facto level.\nThe bromine analogues of PCBs are polybrominated biphenyls (PBBs), which have analogous applications and environmental concerns.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_VW8VK693",
         "ref_BUTFISXP"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3357,6 +3425,7 @@
     },
     {
       "ID": "ref_IUXJINVH",
+      "abstractNote": "DDT (dichlorodiphenyltrichloroethane) is a colorless, crystalline, tasteless and almost odorless organochlorine known for its insecticidal properties and environmental impacts. DDT has been formulated in multiple forms, including solutions in xylene or petroleum distillates, emulsifiable concentrates, water-wettable powders, granules, aerosols, smoke candles and charges for vaporizers and lotions.\nFirst synthesized in 1874, DDT's insecticidal action was discovered by the Swiss chemist Paul Hermann M\u00fcller in 1939. It was used in the second half of World War II to control malaria and typhus among civilians and troops. After the war, DDT was also used as an agricultural insecticide and its production and use duly increased. M\u00fcller was awarded the Nobel Prize in Physiology or Medicine \"for his discovery of the high efficiency of DDT as a contact poison against several arthropods\" in 1948.\nIn 1962, Rachel Carson's book Silent Spring was published. It cataloged the environmental impacts of widespread DDT spraying in the United States and questioned the logic of releasing large amounts of potentially dangerous chemicals into the environment without understanding their effects on the environment or human health. The book claimed that DDT and other pesticides had been shown to cause cancer and that their agricultural use was a threat to wildlife, particularly birds. Its publication was a seminal event for the environmental movement and resulted in a large public outcry that eventually led, in 1972, to a ban on DDT's agricultural use in the United States. A worldwide ban on agricultural use was formalized under the Stockholm Convention on Persistent Organic Pollutants, but its limited and still-controversial use in disease vector control continues, because of its effectiveness in reducing malarial infections, balanced by environmental and other health concerns.\nAlong with the passage of the Endangered Species Act, the United States ban on DDT is cited by scientists as a major factor in the comeback of the bald eagle (the national bird of the United States) and the peregrine falcon from near-extinction in the contiguous United States.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3364,7 +3433,7 @@
         "ref_B48D5GJU",
         "ref_7IK9XS5H"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3381,6 +3450,7 @@
     },
     {
       "ID": "ref_HDK7XA7K",
+      "abstractNote": "Kepone, also known as chlordecone, is an organochlorine compound and a colourless solid. This compound is a controversial insecticide related to Mirex and DDT. Its use was so disastrous that it is now prohibited in the western world, but only after many millions of kilograms had been produced. Kepone is a known persistent organic pollutants (POP), classified among the \"dirty dozen\" and banned globally by the Stockholm Convention on Persistent Organic Pollutants as of 2011.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3389,7 +3459,7 @@
         "ref_VM68J6X4",
         "ref_R5E7TDEI"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3406,12 +3476,13 @@
     },
     {
       "ID": "ref_VM68J6X4",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_HDK7XA7K"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3426,12 +3497,13 @@
     },
     {
       "ID": "ref_PV9WRXUW",
+      "abstractNote": "La Martinique est actuellement en proie un taux de ch\u00f4mage chronique \u00e9lev\u00e9 et une augmentation constante du co\u00fbt de la nourriture et des autres produits essentiels. La catastrophe \u00e9cologique s\u2019ajoute \u00e0 ce probl\u00e8me soci\u00e9tal avec la contamination par la chlord\u00e9cone d'environ un tiers de la surface de la terre et les eaux environnantes de cette \u00eele. La chlord\u00e9cone est extr\u00eamement toxique et r\u00e9calcitrante, son utilisation fut interdite aux Etats-Unis d\u00e8s 1979 mais elle fut utilis\u00e9e continuellement jusqu'en 1993. L\u2019agriculture alternative est un moyen pratique pour att\u00e9nuer le malaise social profond r\u00e9sultant d\u2019un taux de ch\u00f4mage chroniquement \u00e9lev\u00e9 et d\u2019une d\u00e9pendance totale envers les couteuses importations alimentaires de la France m\u00e9tropolitaine. L'un des objectifs de base de cette approche serait de ne pas utiliser de produits chimiques. La culture de certaines plantes solanac\u00e9es comestibles, comme le poivron, semble \u00eatre possible dans cet environnement avec l\u2019installation de serres semi-ouvertes, dans lesquelles la lumi\u00e8re naturelle, les pr\u00e9cipitations et les temp\u00e9ratures chaudes toute l'ann\u00e9e sont abondantes. Dans cette perspective, l'empreinte carbone de telles productions r\u00e9alis\u00e9es en Martinique pourraient \u00eatre livr\u00e9es au Royaume-Uni avec une empreinte carbone sensiblement inf\u00e9rieure \u00e0 celle de poivrons cultiv\u00e9s dans des serres chauff\u00e9es autonomes d\u2019Europe.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_HDK7XA7K"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3453,6 +3525,7 @@
     },
     {
       "ID": "ref_ZXNPQ6M6",
+      "abstractNote": "BACKGROUND Perfluorooctanoate (PFOA) and perfluorooctane sulfonate (PFOS) are ubiquitous man-made compounds that are possible hormonal disruptors. We examined whether exposure to these compounds may decrease fecundity in humans.\nMETHODS Plasma levels of PFOS and PFOA were measured at weeks 4\u201314 of pregnancy among 1240 women from the Danish National Birth Cohort recruited from 1996 to 2002. For this pregnancy, women reported time to pregnancy (TTP) in five categories (<1, 1\u20132, 3\u20135, 6\u201312 and >12 months). Infertility was defined as having a TTP of >12 months or received infertility treatment to establish this pregnancy.\nRESULTS Longer TTP was associated with higher maternal levels of PFOA and PFOS (P < 0.001). Compared with women in the lowest exposure quartile, the adjusted odds of infertility increased by 70\u2013134 and 60\u2013154% among women in the higher three quartiles of PFOS and PFOA, respectively. Fecundity odds ratios (FORs) were also estimated using Cox discrete-time models. The adjusted FORs were virtually identical for women in the three highest exposure groups of PFOS (FOR = 0.70, 0.67 and 0.74, respectively) compared with the lowest quartile. A linear-like trend was observed for PFOA (FOR = 0.72, 0.73 and 0.60 for three highest quartiles versus lowest quartile). When all quartiles were included in a likelihood ratio test, the trends were significant for PFOS and PFOA (P = 0.002 and P < 0.001, respectively).\nCONCLUSIONS These findings suggest that PFOA and PFOS exposure at plasma levels seen in the general population may reduce fecundity; such exposure levels are common in developed countries.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -3460,7 +3533,7 @@
         "ref_DFH3EE7E",
         "ref_P8F2SBCX"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3481,12 +3554,13 @@
     },
     {
       "ID": "ref_DFH3EE7E",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_ZXNPQ6M6"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3503,13 +3577,14 @@
     },
     {
       "ID": "ref_HT8Q6DES",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_VP7F4N2M"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3526,10 +3601,11 @@
     },
     {
       "ID": "ref_UXI9WQTF",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3544,13 +3620,14 @@
     },
     {
       "ID": "ref_IQMWHNFG",
+      "abstractNote": "Aldrin is an organochlorine insecticide that was widely used until the 1970s, when it was banned in most countries. It is a colourless solid. Before the ban, it was heavily used as a pesticide to treat seed and soil. Aldrin and related \"cyclodiene\" pesticides (a term for pesticides derived from Hexachlorocyclopentadiene) became notorious as persistent organic pollutants.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_VW8VK693",
         "ref_K5AMB3T6"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3565,13 +3642,14 @@
     },
     {
       "ID": "ref_5XMDQ4DB",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_GQ64BDW2",
         "ref_GKZF99UV"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3586,6 +3664,7 @@
     },
     {
       "ID": "ref_R2CJAPG9",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3593,7 +3672,7 @@
         "ref_Z2II5B9C",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3610,6 +3689,7 @@
     },
     {
       "ID": "ref_Z2II5B9C",
+      "abstractNote": "Background information on concerns regarding endocrine disruptors.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3621,7 +3701,7 @@
         "ref_R2CJAPG9",
         "ref_KWCZEPB3"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3639,6 +3719,7 @@
     },
     {
       "ID": "ref_KWCZEPB3",
+      "abstractNote": "PFOA and PFOS Drinking Water Health Advisories",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -3646,7 +3727,7 @@
         "ref_Z2II5B9C",
         "ref_P8F2SBCX"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3661,6 +3742,7 @@
     },
     {
       "ID": "ref_GQ64BDW2",
+      "abstractNote": "Perfluorooctanoic acid (PFOA) (conjugate base perfluorooctanoate), also known as C8, is a synthetic perfluorinated carboxylic acid and fluorosurfactant. One industrial application is as a surfactant in the emulsion polymerization of fluoropolymers. It has been used in the manufacture of such prominent consumer goods as polytetrafluoroethylene (commercially known as Teflon). PFOA has been manufactured since the 1940s in industrial quantities. It is also formed by the degradation of precursors such as some fluorotelomers.\nPFOA persists indefinitely in the environment. It is a toxicant and carcinogen in animals. PFOA has been detected in the blood of more than 98% of the general US population in the low and sub-parts per billion range, and levels are higher in chemical plant employees and surrounding subpopulations. How general populations are exposed to PFOA is not completely understood. PFOA has been detected in industrial waste, stain resistant carpets, carpet cleaning liquids, house dust, microwave popcorn bags, water, food, some cookware and PTFE such as Teflon.\nAs a result of a class-action lawsuit and community settlement with DuPont, three epidemiologists conducted studies on the population surrounding a chemical plant that was exposed to PFOA at levels greater than in the general population. The studies concluded that there was probably an association between PFOA exposure and six health outcomes: kidney cancer, testicular cancer, ulcerative colitis, thyroid disease, hypercholesterolemia (high cholesterol), and pregnancy-induced hypertension.\nThe primary manufacturer of PFOs \u2013 3M (known as Minnesota Mining and Manufacturing Company from 1902 to 2002) \u2013 began a production phase-out in 2002 in response to concerns by the United States Environmental Protection Agency (USEPA also known as EPA) and eight other companies agreed to gradually phase them out by 2015.\nBy 2014 the USEPA had listed PFOA \u2013 free acid and PFOS -potassium salt \u2013 emergent contaminants.\n\n\"[PFOA and PFOS] are \"extremely persistent in the environment and resistant to typical environmental degradation processes. They are widely distributed across the higher trophic levels and are found in soil, air and groundwater at sites across the United States. The toxicity, mobility and bioaccumulation potential of PFOS and PFOA pose potential adverse effects for the environment and human health\"",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3673,7 +3755,7 @@
         "ref_XCJUNCJC",
         "ref_KWCZEPB3"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3690,12 +3772,13 @@
     },
     {
       "ID": "ref_VBCAKZ9H",
+      "abstractNote": "NIEHS-supported Bisphenol A Research Articles",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_WQE98M5C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3712,13 +3795,14 @@
     },
     {
       "ID": "ref_GKZF99UV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_4QTKV4F3",
         "ref_5XMDQ4DB"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3735,13 +3819,14 @@
     },
     {
       "ID": "ref_W2IS79KX",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_WQE98M5C",
         "ref_4QTKV4F3"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3758,6 +3843,7 @@
     },
     {
       "ID": "ref_29KDURAI",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3765,7 +3851,7 @@
         "ref_4QTKV4F3",
         "ref_MG5S4ZCE"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3782,6 +3868,7 @@
     },
     {
       "ID": "ref_MG5S4ZCE",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3790,7 +3877,7 @@
         "ref_29KDURAI",
         "ref_R2CJAPG9"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3807,6 +3894,7 @@
     },
     {
       "ID": "ref_4QTKV4F3",
+      "abstractNote": "The world's leading FDA consultants, providing expert regulatory affairs, compliance, biotech, medical device and pharmaceutical consulting services.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3822,7 +3910,7 @@
         "ref_29KDURAI",
         "ref_GKZF99UV"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3839,13 +3927,14 @@
     },
     {
       "ID": "ref_VBBWD2V8",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_4QTKV4F3",
         "ref_WQE98M5C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3862,13 +3951,14 @@
     },
     {
       "ID": "ref_EDI68INT",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_WQE98M5C",
         "ref_4QTKV4F3"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3885,6 +3975,7 @@
     },
     {
       "ID": "ref_SRKQ6UNC",
+      "abstractNote": "This article reviews previous studies and presents new data on pesticide exposure in order to provide some indications of the extent and significance of childhood exposure to xenoestrogens, including pesticides, epoxy resins, and polycarbonates. After more than four decades of pesticide use, little is known about their adverse effects on health. There is a need to address the potential risks associated with the current contamination of water, soils, and foods in many agricultural areas. In southeastern Spain, along the Mediterranean coast, extensive areas alongside residential zones are devoted to intensive farming in plastic greenhouses, with the use of large amounts of pesticides. Human tissue samples have been investigated for pesticide residues. Samples of fat from children living in farm areas contained a total of 14 pesticides, including lindane, HCH, heptachlor, aldrin, dieldrin, endrin, endosulfan, o,p'-DDE, and o,p'-DDD, among others. Of the 113 samples studied, 43 were positive for one or more pesticides, some of which have estrogenic activity. The number of new substances that mimic the action of endogenous estrogens is increasing rapidly. These endocrine-disrupting chemicals are not restricted to pesticides. Several different compounds used in the food industry, in plasticizers, and in dental restorations are also estrogenic. The few studies that have investigated their effects in humans all indicate that concerns are warranted. If there is indeed an association between zexposure to substances with hormone-disruptive activity and certain disorders of sexual maturation, the incidence of such disorders should be greater in areas where exposure to agents with this activity is high. We used a spatial ecological design to search for variations in orchidopexy rates and to analyze relationships between these differences and geographical variations in exposure to pesticides. Our results are compatible with a hypothetical association between exposure to hormone-disruptive chemicals and the induction of cryptorchidism. Several methodological limitations in the study design make it necessary to evaluate the results with caution. In conclusion, a closer scrutiny is required to determine whether epoxy resins and polycarbonates contribute, together with estrogenic pesticides, to the exposure of human consumers, especially children, to xenoestrogens.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3894,7 +3985,7 @@
         "ref_ARWF9DRD",
         "ref_WQE98M5C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3928,6 +4019,7 @@
     },
     {
       "ID": "ref_VP7F4N2M",
+      "abstractNote": "Puberty is described as delayed puberty with exceptions when an organism has passed the usual age of onset of puberty with no physical or hormonal signs that it is beginning. Puberty may be delayed for several years and still occur normally, in which case it is considered constitutional delay, a variation of healthy physical development. Delay of puberty may also occur due to malnutrition, many forms of systemic disease, or to defects of the reproductive system (hypogonadism) or the body's responsiveness to sex hormones.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3935,7 +4027,7 @@
         "ref_SRKQ6UNC",
         "ref_HT8Q6DES"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3952,6 +4044,7 @@
     },
     {
       "ID": "ref_XCJUNCJC",
+      "abstractNote": "Animal studies suggest that perfluorocarbons (PFCs) may alter sexual maturation. Relationships of human PFC exposure with puberty are not clear. We conducted a cross-sectional study to investigate whether perfluorooctanoic acid (PFOA) and perfluorooctane sulfonate (PFOS) were associated with indicators of sexual maturation in a 2005-2006 survey of residents with PFOA water contamination from the Mid-Ohio Valley. Participants were 3076 boys and 2931 girls aged 8-18 years. They were classified as having reached puberty based on either hormone levels (total >50 ng/dL and free >5 pg/mL testosterone in boys and estradiol >20 pg/mL in girls) or onset of menarche. We estimated the odds of having reached puberty classified by these criteria and the fitted median age of reaching puberty in relation to serum PFOA and PFOS concentrations measured when puberty status was assigned. For boys, there was a relationship of reduced odds of reached puberty (raised testosterone) with increasing PFOS (delay of 190 days between the highest and lowest quartile). For girls, higher concentrations of PFOA or PFOS were associated with reduced odds of postmenarche (130 and 138 days of delay, respectively). In conclusion, our study showed a later age of puberty in this population correlated with PFC concentrations.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -3959,7 +4052,7 @@
         "ref_P8F2SBCX",
         "ref_VP7F4N2M"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -3998,6 +4091,7 @@
     },
     {
       "ID": "ref_VMQ2292C",
+      "abstractNote": "INTRODUCTION: Prenatal exposure to some pesticides can adversely affect male reproductive health in animals. We investigated a possible human association between maternal exposure to 27 organochlorine compounds used as pesticides and cryptorchidism among male children.\nDESIGN: Within a prospective birth cohort, we performed a case-control study; 62 milk samples from mothers of cryptorchid boys and 68 from mothers of healthy boys were selected. Milk was collected as individual pools between 1 and 3 months postpartum and analyzed for 27 organochlorine pesticides.\nRESULTS: Eight organochlorine pesticides were measurable in all samples (medians; nanograms per gram lipid) for cases/controls: 1,1-dichloro-2,2-bis(4-chlorophenyl) ethylene (p,p -DDE) : 97.3/83.8; beta-hexachlorocyclohexane (beta-HCH) : 13.6/12.3; hexachlorobenzene (HCB) : 10.6/8.8; alpha-endosulfan: 7.0/6.7; oxychlordane: 4.5/4.1; 1,1,1-trichloro-2,2-bis(4-chlorophenyl) ethane (p,p -DDT) : 4.6/4.0; dieldrin: 4.1/3.1 ; cis-heptachloroepoxide (cis-HE) : 2.5/2.2. Five compounds [octachlorostyrene (OCS); pentachlorobenzene, 1,1-dichloro-2,2-bis(4-chlorophenyl) ethane(p,p -DDD) ; o,p -DDT ; mirex] were measurable in most samples (detection rates 90.8-99.2%) but in lower concentrations. For methoxychlor, cis-chlordane, pentachloroanisole (PCA), gamma-HCH, 1,1-dichloro-2-(2-chlorophenyl) -2,2(4-chlorophenyl) ethane, trans-chlordane, alpha-HCH, and o,p -DDE, both concentrations and detection rates were low (26.5-71.5%). Heptachlor, HCH (lc delta, epsilon), aldrin, beta-endosulfan and trans-heptachloroepoxide were detected at negligible concentrations and low detection rates and were not analyzed further. Seventeen of 21 organochlorine pesticides [p,p -DDT, p,p-DDE, p,p-DDD, o,p-DDT, HCH (alpha, beta, gamma), HCB, PCA, alpha-endosulfan, cis-HE, chlordane (cis-, trans-) oxychlordane, methoxychlor, OCS, and dieldrin] were measured in higher median concentrations in case milk than in control milk. Apart from trans-chlordane (p = 0.012), there were no significant differences between cryptorchid and healthy boys for individual chemicals. However, combined statistical analysis of the eight most abundant persistent pesticides showed that pesticide levels in breast milk were significantly higher in boys with cryptorchidism (p = 0.032).\nCONCLUSION: The association between congenital cryptorchidism and some persistent pesticides in breast milk as a proxy for maternal exposure suggests that testicular descent in the fetus may be adversely affected.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4005,7 +4099,7 @@
         "ref_PJXWJ4C7",
         "ref_F7T48F3S"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4030,12 +4124,13 @@
     },
     {
       "ID": "ref_9KPGME85",
+      "abstractNote": "There is experimental evidence of adverse effects of endosulfan on the male reproductive system, but there are no human data. Therefore, we undertook a study to examine the relationship between environmental endosulfan exposure and reproductive development in male children and adolescents. The study population was composed of 117 male schoolchildren (10-19 years of age) of a village situated at the foothills of cashew plantations, where endosulfan had been aerially sprayed for more than 20 years, and 90 comparable controls with no such exposure history. The study parameters included recording of clinical history, physical examination, sexual maturity rating (SMR) according to Tanner stages, and estimation of serum levels of testosterone, luteinizing hormone (LH), follicle-stimulating hormone, and endosulfan residues (70 study and 47 control subjects). Mean +/- SE serum endosulfan levels in the study group (7.47 +/- 1.19 ppb) were significantly higher (p < 0.001) than in controls (1.37 +/- 0.40 ppb). Multiple regression analysis showed that SMR scoring for development of pubic hair, testes, penis, and serum testosterone level was positively related to age and negatively related to aerial exposure to endosulfan (AEE; p < 0.01). Serum LH levels were significantly positively related to AEE after controlling for age (p < 0.01). The prevalence of congenital abnormalities related to testicular descent (congenital hydrocele, undescended testis, and congenital inguinal hernia) among study and controls subjects was 5.1% and 1.1%, respectively, but the differences were statistically nonsignificant. Our study results suggest that endosulfan exposure in male children may delay sexual maturity and interfere with sex hormone synthesis. Our study is limited by small sample size and nonparticipation.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_ARWF9DRD"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4052,13 +4147,14 @@
     },
     {
       "ID": "ref_7IK9XS5H",
+      "abstractNote": "Silent Spring is a 1962 environmental science book by Rachel Carson. The book documented the detrimental effects on the environment\u2014particularly on birds\u2014of the indiscriminate use of pesticides. Carson accused the chemical industry of spreading disinformation and public officials of accepting industry claims unquestioningly.\nIn the late 1950s, Carson turned her attention to conservation, especially environmental problems that she believed were caused by synthetic pesticides. The result was Silent Spring (1962), which brought environmental concerns to the American public. Silent Spring was met with fierce opposition by chemical companies, but it spurred a reversal in national pesticide policy, led to a nationwide ban on DDT for agricultural uses, and inspired an environmental movement that led to the creation of the U.S. Environmental Protection Agency.\nIn 1996, a follow-up book, Beyond Silent Spring, co-written by H.F. van Emden and David Peakall, was published. In 2006, Silent Spring was named one of the 25 greatest science books of all time by the editors of Discover Magazine.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_Z2II5B9C",
         "ref_IUXJINVH"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4076,6 +4172,7 @@
     },
     {
       "ID": "ref_FXWCGUE5",
+      "abstractNote": "Building a better future",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4083,7 +4180,7 @@
         "ref_R2C4XPZ6",
         "ref_D2F3EV45"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4100,6 +4197,7 @@
     },
     {
       "ID": "ref_V34SNSTA",
+      "abstractNote": "Syngenta agreed to pay $105 million to settle a lawsuit by several Midwestern water companies related to its weedkiller atrazine.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4109,7 +4207,7 @@
         "ref_D2F3EV45",
         "ref_FXWCGUE5"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4126,12 +4224,13 @@
     },
     {
       "ID": "ref_ZQG84XQW",
+      "abstractNote": "Environmental racism is placement of low-income or minority communities in proximity of environmentally hazardous or degraded environments, such as toxic waste, pollution and urban decay. While there are competing views as to an exact definition, the interplay between environmental issues and social indicators are key to its understanding.\nThe primary contention issue in the definition is intent. Some definitions hold that only intentional discrimination against minorities in issues regarding the environment is what constitutes environmental racism, while others focus on the presence of unfavorable environmental conditions for minorities, intentional or not. A significant factor in creation of effective environmental segregation is the fact that low-income communities lack the organization and political power to resist introduction of dangerous technologies, as well as greater mobility of richer citizens away from areas falling into industrial and environmental decline.\nHistorically, the term is tied to the environmental justice movement that took place in the 1970s and 80s in the United States. There is much discourse on environmental racism in the U.S., and while many of its cases are documented in great detail, focus on cases from other countries is important to have and should be highlighted as well.\nOn the international level, policies that have been described as environmental racism included first world corporations exporting dirty technologies, dangerous chemicals or waste materials banned by the domestic laws to developing countries, with lax environmental policies and safety practices (pollution havens).",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_7V5CXIAQ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4148,6 +4247,7 @@
     },
     {
       "ID": "ref_4GAUANX5",
+      "abstractNote": "New  research  suggests  that  the  herbicide atrazine does not act as an endocrine disrupter in Xenopus laevis, the lab rat of frog species. The results mark the latest development  in  a  fierce  debate  over  the  potential  environmental and human-health effects of this widely used herbicide and the data used to back opposing claims.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4155,7 +4255,7 @@
         "ref_D2F3EV45",
         "ref_AQMUA2M4"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4173,6 +4273,7 @@
     },
     {
       "ID": "ref_BFBE9FRR",
+      "abstractNote": "Debate and controversy exists concerning the potential for the herbicide atrazine to cause gonadal malformations in developing Xenopus laevis. Following review of the existing literature the U.S. Environmental Protection Agency required a rigorous investigation conducted under standardized procedures. X. laevis tadpoles were exposed to atrazine at concentrations of 0.01, 0.1, 1, 25, or 100 \u03bcg/l from day 8 postfertilization (dpf) until completion of metamorphosis or dpf 83, whichever came first. Nearly identical experiments were performed in two independent laboratories: experiment 1 at Wildlife International, Ltd. and experiment 2 at the Leibniz-Institute of Freshwater Ecology and Inland Fisheries (IGB). Both experiments employed optimized animal husbandry procedures and environmental conditions in validated flow-through exposure systems. The two experiments demonstrated consistent survival, growth, and development of X. laevis tadpoles, and all measured parameters were within the expected ranges and were comparable in negative control and atrazine-treated groups. Atrazine, at concentrations up to 100 \u03bcg/l, had no effect in either experiment on the percentage of males or the incidence of mixed sex as determined by histological evaluation. In contrast, exposure of larval X. laevis to 0.2 \u03bcg 17\u03b2-estradiol/l as the positive control resulted in gonadal feminization. Instead of an even distribution of male and female phenotypes, percentages of males:females:mixed sex were 19:75:6 and 22:60:18 in experiments 1 and 2, respectively. These studies demonstrate that long-term exposure of larval X. laevis to atrazine at concentrations ranging from 0.01 to 100 \u03bcg/l does not affect growth, larval development, or sexual differentiation.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4180,7 +4281,7 @@
         "ref_D2F3EV45",
         "ref_Z2II5B9C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4198,6 +4299,7 @@
     },
     {
       "ID": "ref_2EQESATT",
+      "abstractNote": "The herbicide atrazine is one of the most commonly applied pesticides in the world. As a result, atrazine is the most commonly detected pesticide contaminant of ground, surface, and drinking water. Atrazine is also a potent endocrine disruptor that is active at low, ecologically relevant concentrations. Previous studies showed that atrazine adversely affects amphibian larval development. The present study demonstrates the reproductive consequences of atrazine exposure in adult amphibians. Atrazine-exposed males were both demasculinized (chemically castrated) and completely feminized as adults. Ten percent of the exposed genetic males developed into functional females that copulated with unexposed males and produced viable eggs. Atrazine-exposed males suffered from depressed testosterone, decreased breeding gland size, demasculinized/feminized laryngeal development, suppressed mating behavior, reduced spermatogenesis, and decreased fertility. These data are consistent with effects of atrazine observed in other vertebrate classes. The present findings exemplify the role that atrazine and other endocrine-disrupting pesticides likely play in global amphibian declines.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4206,7 +4308,7 @@
         "ref_D2F3EV45",
         "ref_HC8GACUB"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4223,6 +4325,7 @@
     },
     {
       "ID": "ref_RNP48896",
+      "abstractNote": "When biologist Tyrone Hayes discovered that a top-selling herbicide messes with sex hormones, its manufacturer went into battle mode. Thus began one of the weirdest feuds in the history of science.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4231,7 +4334,7 @@
         "ref_HC8GACUB",
         "ref_AQMUA2M4"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4248,6 +4351,7 @@
     },
     {
       "ID": "ref_QGHT3W5V",
+      "abstractNote": "Water-borne herbicide threatens amphibian populations in parts of the United States.\nAtrazine is the most commonly used herbicide in the United States and probably in the world. Here we investigate the effects of exposure to water-borne atrazine contamination on wild leopard frogs (Rana pipiens) in different regions of the United States and find that 10\u201392% of males show gonadal abnormalities such as retarded development and hermaphroditism. These results are supported by laboratory observations, which together highlight concerns over the biological effects of environmental atrazine on amphibians.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4256,7 +4360,7 @@
         "ref_R2C4XPZ6",
         "ref_HC8GACUB"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4274,6 +4378,7 @@
     },
     {
       "ID": "ref_HZ86AXNV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4281,7 +4386,7 @@
         "ref_AQMUA2M4",
         "ref_R2C4XPZ6"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4299,6 +4404,7 @@
     },
     {
       "ID": "ref_AQMUA2M4",
+      "abstractNote": "Tyrone B. Hayes (born July 29, 1967) is an American biologist and professor of Integrative Biology at University of California, Berkeley known for his research findings concluding that the herbicide atrazine is an endocrine disruptor that demasculinizes and feminizes male frogs. He is also an advocate for critical review and regulation of pesticides and other chemicals that may cause adverse health effects. He has presented hundreds of papers, talks, and seminars on his conclusions that environmental chemical contaminants have played a role in global amphibian declines and in the health disparities that occur in minority and low income populations. His work has been contested by Syngenta, the Swiss manufacturer of atrazine and the Australian Pesticides and Veterinary Medicines Authority. It was used as the basis for the settlement of a multimillion-dollar class-action lawsuit against Syngenta.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4311,7 +4417,7 @@
         "ref_RNP48896",
         "ref_4GAUANX5"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4328,12 +4434,13 @@
     },
     {
       "ID": "ref_53HBW8NV",
+      "abstractNote": "DES Daughters are defined as women born between 1938 and 1971 who were exposed to DES before birth (in the womb).",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4351,6 +4458,7 @@
     },
     {
       "ID": "ref_CZVTI8Z9",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4358,7 +4466,7 @@
         "ref_D2F3EV45",
         "ref_HC8GACUB"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4375,12 +4483,13 @@
     },
     {
       "ID": "ref_24925MUH",
+      "abstractNote": "P\u00e9titions pour obtenir l'interdiction \u00e0 terme l'exposition humaine et environnementale \u00e0 tous les perturbateurs endocriniens (bisph\u00e9nols, phtalates, parab\u00e8nes, perfluor\u00e9s, et certains pesticides)",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4397,6 +4506,7 @@
     },
     {
       "ID": "ref_Q7SFACDB",
+      "abstractNote": "Hayes has devoted the past fifteen years to studying atrazine, a widely used herbicide made by Syngenta. The company\u2019s notes reveal that it struggled to make sense of him, and plotted ways to discredit him.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4404,7 +4514,7 @@
         "ref_R2C4XPZ6",
         "ref_HC8GACUB"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4421,6 +4531,7 @@
     },
     {
       "ID": "ref_D2F3EV45",
+      "abstractNote": "Syngenta AG is a global Swiss agribusiness that produces agrochemicals and seeds. As a biotechnology company, it conducts genomic research. It was formed in 2000 by the merger of Novartis Agribusiness and Zeneca Agrochemicals. As of 2014 Syngenta was the world\u2019s largest crop chemical producer, strongest in Europe. As of 2009 it ranked third in seeds and biotechnology sales. Sales in 2015 were approximately US$13.4 billion, over half of which were in emerging markets.\nIn February 2016, ChemChina agreed a $43 billion bid for Swiss seeds and pesticides group Syngenta, the largest ever foreign purchase by a Chinese firm. The deal is awaiting approval by the Committee on Foreign Investment in the United States (CFIUS) and European government panels, citing food safety and security concerns. In June 2016, both companies refiled the transaction for CFIUS approval, forcing them to restart the application process.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4439,7 +4550,7 @@
         "ref_V34SNSTA",
         "ref_FXWCGUE5"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4456,12 +4567,13 @@
     },
     {
       "ID": "ref_URRSHA4G",
+      "abstractNote": "Global special trade with chemicals, raw earth elements, raw materials for research, development and production \u2013 without warehousing or own production \u2013 more than 180.000 products",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4478,12 +4590,13 @@
     },
     {
       "ID": "ref_IEPBII8A",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_XI2ZU336"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4500,13 +4613,14 @@
     },
     {
       "ID": "ref_33V8E7JS",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_2SJJ2VPQ",
         "ref_WQE98M5C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4523,13 +4637,14 @@
     },
     {
       "ID": "ref_6W34KJJN",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_2SJJ2VPQ",
         "ref_WQE98M5C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4544,6 +4659,7 @@
     },
     {
       "ID": "ref_WQE98M5C",
+      "abstractNote": "Bisphenol A (BPA) is an organic synthetic compound with the chemical formula (CH3)2C(C6H4OH)2 belonging to the group of diphenylmethane derivatives and bisphenols, with two hydroxyphenyl groups. It is a colorless solid that is soluble in organic solvents, but poorly soluble in water. It has been in commercial use since 1957.\nBPA is employed to make certain plastics and epoxy resins. BPA-based plastic is clear and tough, and is made into a variety of common consumer goods, such as water bottles, sports equipment, CDs, and DVDs. Epoxy resins containing BPA are used to line water pipes, as coatings on the inside of many food and beverage cans and in making thermal paper such as that used in sales receipts. In 2011, an estimated 10 billion pounds of BPA chemical were produced for manufacturing polycarbonate plastic, making it one of the highest volume of chemicals produced worldwide.\nBPA exhibits hormone-like properties that raise concern about its suitability in some consumer products and food containers. Since 2008, several governments have investigated its safety, which prompted some retailers to withdraw polycarbonate products. The FDA has ended its authorization of the use of BPA in baby bottles and infant formula packaging, based on market abandonment, not safety. The European Union and Canada have banned BPA use in baby bottles.\nThe FDA states \"BPA is safe at the current levels occurring in foods\" based on extensive research, including two more studies issued by the agency in early 2014. The European Food Safety Authority (EFSA) reviewed new scientific information on BPA in 2008, 2009, 2010, 2011 and 2015: EFSA\u2019s experts concluded on each occasion that they could not identify any new evidence which would lead them to revise their opinion that the known level of exposure to BPA is safe; however, the EFSA does recognize some uncertainties, and will continue to investigate them.\nIn February 2016, France announced that it intends to propose BPA as a REACH Regulation candidate substance of very high concern (SVHC).",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4565,7 +4681,7 @@
         "ref_M5QEJF28",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4582,12 +4698,13 @@
     },
     {
       "ID": "ref_AEX984EM",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4604,12 +4721,13 @@
     },
     {
       "ID": "ref_ZMUS8ZBK",
+      "abstractNote": "As a worldwide operating manufacturer and distributor of specialty chemicals, Connect Chemicals is dedicated to excellence in every area of its business - using knowledge, technology and communication to provide our customers superior consumer understanding with the highest quality products and service.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4626,12 +4744,13 @@
     },
     {
       "ID": "ref_EATV8CAD",
+      "abstractNote": "Sigma-Aldrich is a leading Life Science and High Technology company. Our products are used worldwide to enable science that improves the quality of life.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_2SJJ2VPQ"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4648,6 +4767,7 @@
     },
     {
       "ID": "ref_2SJJ2VPQ",
+      "abstractNote": "Bisphenol S (BPS) is an organic compound with the formula (HOC6H4)2SO2. It has two phenol functional groups on either side of a sulfonyl group. It is commonly used in curing fast-drying epoxy resin adhesives. It is a bisphenol, and a close analog of bisphenol A (BPA) in which the dimethylmethylene group (C(CH3)2) is replaced with a sulfone group (SO2).",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -4658,7 +4778,7 @@
         "ref_AEX984EM",
         "ref_SRKQ6UNC"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4675,6 +4795,7 @@
     },
     {
       "ID": "ref_F7T48F3S",
+      "abstractNote": "Endocrine disruptors are chemicals that, at certain doses, can interfere with endocrine (or hormone) systems. These disruptions can cause cancerous tumors, birth defects, and other developmental disorders. Any system in the body controlled by hormones can be derailed by hormone disruptors. Specifically, endocrine disruptors may be associated with the development of learning disabilities, severe attention deficit disorder, cognitive and brain development problems; deformations of the body (including limbs); breast cancer, prostate cancer, thyroid and other cancers; sexual development problems such as feminizing of males or masculinizing effects on females, etc. Recently The Endocrine Society released a statement on Endocrine-Disrupting Chemicals (EDCs) specifically listing obesity, diabetes, female reproduction, male reproduction, hormone-sensitive cancers in females, prostate cancer in males, thyroid, and neurodevelopment and neuroendocrine systems as being affected biological aspects of being exposed to EDCs. The critical period of development for most organisms is between the transition from a fertilized egg into a fully formed infant. As the cells begin to grow and differentiate, there are critical balances of hormones and protein changes that must occur. Therefore, a dose of disrupting chemicals may do substantial damage to a developing fetus. The same dose may not significantly affect adult mothers.\nThere has been controversy over endocrine disruptors, with some groups calling for swift action by regulators to remove them from the market, and regulators and other scientists calling for further study. Some endocrine disruptors have been identified and removed from the market (for example, a drug called diethylstilbestrol), but it is uncertain whether some endocrine disruptors on the market actually harm humans and wildlife at the doses to which wildlife and humans are exposed. Additionally, a key scientific paper, published in the journal Science, which helped launch the movement of those opposed to endocrine disruptors, was retracted and its author found to have committed scientific misconduct.\nFound in many household and industrial products, endocrine disruptors are substances that \"interfere with the synthesis, secretion, transport, binding, action, or elimination of natural hormones in the body that are responsible for development, behavior, fertility, and maintenance of homeostasis (normal cell metabolism).\" They are sometimes also referred to as hormonally active agents, endocrine disrupting chemicals, or endocrine disrupting compounds.\nStudies in cells and laboratory animals have shown that EDCs can cause adverse biological effects in animals, and low-level exposures may also cause similar effects in human beings. The term endocrine disruptor is often used as synonym for xenohormone although the latter can mean any naturally occurring or artificially produced compound showing hormone-like properties (usually binding to certain hormonal receptors). EDCs in the environment may also be related to reproductive and infertility problems in wildlife and bans and restrictions on their use has been associated with a reduction in health problems and the recovery of some wildlife populations.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4693,7 +4814,7 @@
         "ref_T3BZJESJ",
         "ref_99RQ5HRF"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4710,12 +4831,13 @@
     },
     {
       "ID": "ref_RR492BZJ",
+      "abstractNote": "L\u2019industrie et la technologie ont profond\u00e9ment transform\u00e9 nos demeures et la vie domestique. Elles nous facilitent certes la vie, mais introduisent par la m\u00eame occasion, dans nos maisons, dans notre alimentation et m\u00eame dans notre garde-robe, des substances nocives. On appelle ces substances perturbateurs endocriniens du fait qu\u2019elles provoquent des d\u00e9sordres hormonaux et envoient des signaux n\u00e9fastes \u00e0 l\u2019organisme. D\u00e8s lors, la vie des g\u00e9n\u00e9rations futures pourrait s\u2019en trouver transform\u00e9e, mais de bien mauvaise fa\u00e7on.\n\nPeut-on \u00e9viter les perturbateurs endocriniens ? Quels sont leurs effets sur la sant\u00e9 et la reproduction de l\u2019esp\u00e8ce humaine ? O\u00f9 les trouve-t-on ? Sommes-nous prot\u00e9g\u00e9s par les lois et r\u00e8glements en place ? Autant de questions auxquelles ce site tente de r\u00e9pondre.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4732,12 +4854,13 @@
     },
     {
       "ID": "ref_XDZVQMF4",
+      "abstractNote": "Endocrine Disrupting Chemicals (EDCs) are synthetic chemicals that interfere with naturally produced hormones, the body's chemical messengers, that control how an organism develops and functions.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4754,12 +4877,13 @@
     },
     {
       "ID": "ref_DIZNN8PJ",
+      "abstractNote": "Endocrine disruptors and human health.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4776,13 +4900,14 @@
     },
     {
       "ID": "ref_6B77HX4N",
+      "abstractNote": "An estrogen ester is an ester of an endogenous, steroidal estrogen, generally estradiol but also estrone or estriol. Esterification renders these drugs into metabolically-resistant prohormones of their respective parent estrogen, improving oral bioavailability, increasing lipophilicity, and extending half-life (which necessitates less frequent administration). In addition, with intramuscular injection, they are absorbed more slowly into the body, further improving half-life.\nEstrogen esters are used in hormone replacement therapy and as hormonal contraceptives, among other indications.\nThe first estrogen ester to be marketed was estradiol benzoate in 1936, which was quickly followed by many more.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_E632NUJP",
         "ref_2WQZTAAI"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4799,12 +4924,13 @@
     },
     {
       "ID": "ref_2WQZTAAI",
+      "abstractNote": "Hormone replacement therapy (HRT) is any form of hormone therapy wherein the patient, in the course of medical treatment, receives hormones, either to supplement a lack of naturally occurring hormones, or to substitute other hormones for naturally occurring hormones. Common forms of hormone replacement therapy include:\nHormone replacement therapy for menopause is based on the idea that the treatment may prevent discomfort caused by diminished circulating estrogen and progesterone hormones, or in the case of the surgically or prematurely menopausal, that it may prolong life and may reduce incidence of dementia. It involves the use of one or more of a group of medications designed to artificially boost hormone levels. The main types of hormones involved are estrogens, progesterone or progestins, and sometimes testosterone. It is often referred to as \"treatment\" rather than therapy.\nHormone replacement therapy for transgender people introduces hormones associated with the gender that the patient identifies with (notably testosterone for trans men and estrogen for trans women). Some intersex people may also receive HRT. Cross-sex hormone treatment for transgender individuals is divided into two main types: hormone replacement therapy (female-to-male) and hormone replacement therapy (male-to-female).\nAndrogen replacement therapy (andropausal and ergogenic use) is a hormone treatment often prescribed to counter the effects of male hypogonadism. It is also prescribed to lessen the effects or delay the onset of normal male aging. Additionally, androgen replacement therapy is used for men who have lost their testicular function to disease, cancer, or other causes.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_6B77HX4N"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4821,12 +4947,13 @@
     },
     {
       "ID": "ref_WHSXAMBF",
+      "abstractNote": "Mycoestrogens are estrogens produced by fungi. Among important mycoestrogens are zearalenone, zearalenol and zearalanol Although all of these can be produced by various Fusarium species, zearalenol and zearalanol may also be produced endogenously in ruminants that have ingested zearalenone. Alpha-zearalanol is also produced semisynthetically, for veterinary use; such use is prohibited in the European Union.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_EH78XNAN"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4843,12 +4970,13 @@
     },
     {
       "ID": "ref_IX2N69XV",
+      "abstractNote": "",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_F7T48F3S"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4865,10 +4993,11 @@
     },
     {
       "ID": "ref_CV34JIMD",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4883,12 +5012,13 @@
     },
     {
       "ID": "ref_FTWW88JB",
+      "abstractNote": "We identify, educate, empower and advocate for DES-exposed individuals.",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4906,12 +5036,13 @@
     },
     {
       "ID": "ref_5W2N5P3G",
+      "abstractNote": "Adenocarcinoma of the vagina in young women had been recorded rarely before the report of several cases treated at the Vincent Memorial Hospital between 1966 and 1969. The unusual occurrence of this tumor in eight patients born in New England hospitals between 1946 and 1951 led us to conduct a retrospective investigation in search of factors that might be associated with tumor appearance. Four matched controls were established for each patient; data were obtained by personal interview. Results show maternal bleeding during the current pregnancy and previous pregnancy loss were more common in the study group. Most significantly, seven of the eight mothers of patients with carcinoma had been treated with diethylstilbestrol started during the first trimester. None in the control group were so treated (p less than 0.00001). Maternal ingestion of stilbestrol during early pregnancy appears to have enhanced the risk of vaginal adenocarcinoma developing years later in the offspring exposed.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4929,6 +5060,7 @@
     },
     {
       "ID": "ref_PJXWJ4C7",
+      "abstractNote": "Cryptorchidism is the absence of one or both testes from the scrotum. It is the most common birth defect of the male genitals",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4936,7 +5068,7 @@
         "ref_Q57Z25WP",
         "ref_VMQ2292C"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4953,6 +5085,7 @@
     },
     {
       "ID": "ref_Q57Z25WP",
+      "abstractNote": "Diethylstilbestrol (DES) (INN, USAN, BAN), also known formerly and inappropriately as stilboestrol (BAN), is a synthetic, non-steroidal estrogen of the stilbestrol group that was first synthesized in 1938. It is also classified as an endocrine disruptor. Human exposure to DES occurred through diverse sources, such as dietary ingestion from supplemented cattle feed and medical treatment for certain conditions, including breast and prostate cancers. From about 1940 to 1971, DES was given to pregnant women in the mistaken belief it would reduce the risk of pregnancy complications and losses.\nIn 1971, DES was shown to cause clear cell carcinoma, a rare vaginal tumor in girls and women who had been exposed to this drug in utero. The United States Food and Drug Administration subsequently withdrew DES from use in pregnant women. Follow-up studies have indicated that DES also has the potential to cause a variety of significant adverse medical complications during the lifetimes of those exposed. The United States National Cancer Institute recommends women born to mothers who took DES undergo special medical exams on a regular basis to screen for complications as a result of the drug. Individuals who were exposed to DES during their mothers' pregnancies are commonly referred to as \"DES daughters\" and \"DES sons\".",
       "category": "reference",
       "color": "#c57753",
       "connex": [
@@ -4962,7 +5095,7 @@
         "ref_FTWW88JB",
         "ref_53HBW8NV"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4970,17 +5103,20 @@
       "label": "Diethylstilbestrol (DES)",
       "note": "",
       "supertag": false,
-      "tag": [],
+      "tag": [
+        "SUBSTANCES"
+      ],
       "type": "encyclopediaArticle",
       "url": "https://en.wikipedia.org/w/index.php?title=Diethylstilbestrol&oldid=729279977",
       "weight": 25
     },
     {
       "ID": "ref_GBFB22CN",
+      "abstractNote": "\u03944-Androstenedione (abbreviated as \u03944-dione), commonly referred to simply as androstenedione, and also known as androst-4-ene-3,17-dione or 17-ketotestosterone, is an endogenous androgen steroid hormone and intermediate in the biosynthesis of testosterone from dehydroepiandrosterone (DHEA). In turn, \u03944-dione is also a precursor of dihydrotestosterone (DHT), estrogens such as estradiol and estrone, and the neurosteroid 3\u03b1-androstanediol.",
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -4988,17 +5124,20 @@
       "label": "4-Androstenedione (andogenous androgen)",
       "note": "",
       "supertag": false,
-      "tag": [],
+      "tag": [
+        "SUBSTANCES"
+      ],
       "type": "encyclopediaArticle",
       "url": "https://en.wikipedia.org/w/index.php?title=4-Androstenedione&oldid=730201204",
       "weight": 25
     },
     {
       "ID": "ref_HPTTCTAJ",
+      "abstractNote": "Testosterone is a steroid hormone from the androgen group and is found in humans and other vertebrates. In humans and other mammals, testosterone is secreted primarily by the testicles of males and, to a lesser extent, the ovaries of females. Small amounts are also secreted by the adrenal glands. It is the principal male sex hormone and an anabolic steroid.\nIn men, testosterone plays a key role in the development of male reproductive tissues such as the testis and prostate, as well as promoting secondary sexual characteristics such as increased muscle and bone mass, and the growth of body hair. In addition, testosterone is essential for health and well-being, and for the prevention of osteoporosis.\nOn average, in adult males, levels of testosterone are about 7\u20138 times as great as in adult females. As the metabolic consumption of testosterone in males is greater, the daily production is about 20 times greater in men. Females are also more sensitive to the hormone. Testosterone is observed in most vertebrates. Fish make a slightly different form called 11-ketotestosterone. Its counterpart in insects is ecdysone. These ubiquitous steroids suggest that sex hormones have an ancient evolutionary history.\nTestosterone is on the WHO Model List of Essential Medicines, the most important medications needed in a basic health system.",
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5006,19 +5145,22 @@
       "label": "Testosterone (andogenous androgen)",
       "note": "",
       "supertag": false,
-      "tag": [],
+      "tag": [
+        "SUBSTANCES"
+      ],
       "type": "encyclopediaArticle",
       "url": "https://en.wikipedia.org/w/index.php?title=Testosterone&oldid=731376180",
       "weight": 25
     },
     {
       "ID": "ref_F8Q923UA",
+      "abstractNote": "",
       "category": "reference",
       "color": "#c57753",
       "connex": [
         "ref_Q57Z25WP"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5035,10 +5177,11 @@
     },
     {
       "ID": "ref_X7N6ATKC",
+      "abstractNote": "Stilbestrol, or stilboestrol, also known as 4,4'-dihydroxystilbene or 4,4'-stilbenediol, is a stilbenoid and the parent compound of a group of non-steroidal estrogens that includes, most notably, diethylstilbestrol. The term \"stilbestrol\" is often used incorrectly to refer to diethylstilbestrol, but they are not the same compound.\nThe stilbestrol estrogens include diethylstilbestrol, diethylstilbestrol dipropionate, benzestrol, dienestrol, dienestrol acetate, dimestrol (dianisylhexene, diethylstilbestrol dimethyl ether, dimethoxydiethylstilbene), fosfestrol (diethylstilbestrol diphosphate), furostilbestrol, hexestrol (dihydrodiethylstilbestrol), hexestrol diacetate, hexestrol dicaprylate, hexestrol diphosphate, hexestrol dipropionate, mestilbol (diethylstilbestrol monomethyl ether), methestrol (promethestrol; dimethylhexestrol), methestrol dipropionate (promethestrol dipropionate), among others. The stilbestrol estrogens bind with high affinity to both ER\u03b1 and ER\u03b2.\nResveratrol is a stilbenoid with estrogenic properties that is not a silbestrol derivative (it is 3,4',5-stilbenetriol).",
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5053,10 +5196,11 @@
     },
     {
       "ID": "ref_42BD9C79",
+      "abstractNote": "Estriol (E3), or oestriol, is one of the three main estrogens produced by the human body.",
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5064,20 +5208,23 @@
       "label": "Estriol (E3, andogenous estrogen)",
       "note": "",
       "supertag": false,
-      "tag": [],
+      "tag": [
+        "SUBSTANCES"
+      ],
       "type": "encyclopediaArticle",
       "url": "https://en.wikipedia.org/w/index.php?title=Estriol&oldid=727680433",
       "weight": 25
     },
     {
       "ID": "ref_DJJXKBEB",
+      "abstractNote": "Global Climate Change may be showing us that it is possible to have too many people on the Earth itself. Part of its message may be that with freedom to reproduce comes responsibility to limit reproduction, so as not to overwhelm global ecological services or create a world that is solely a reflection of ourselves.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_6IQEWV38",
         "ref_E632NUJP"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5092,6 +5239,7 @@
     },
     {
       "ID": "ref_8PX73DAA",
+      "abstractNote": "Contraception is almost five times cheaper than conventional green technologies as a means of combating climate change, according to research published this week(Wednesday 9 September).\n\nEach $7 (\u00a34) spent on basic family planning over the next four decades would reduce global CO2 emissions by more than a tonne found Thomas Wire, a postgraduate student in Operational Research at the London School of Economics and Political Science (LSE). To achieve the same result with low-carbon technologies would cost a minimum of $32 (\u00a319). The UN estimates that 40 per cent of all pregnancies worldwide are unintended.\n\nThe report, Fewer Emitters, Lower Emissions, Less Cost, was commissioned by the Optimum Population Trust. The study, based on the principle that 'fewer people will emit fewer tonnes of carbon dioxide', models the consequences of meeting all 'unmet need' for family planning, defined as the number of women who wish to delay or terminate childbearing but who are not using contraception\n\nIt concludes that 'considered purely as a method of reducing future CO2 emissions', family planning is more cost-effective than leading low-carbon technologies. It recommends that family planning should be seen as one of the primary methods of emissions reduction.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -5099,7 +5247,7 @@
         "ref_6IQEWV38",
         "ref_VPR2282D"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5114,6 +5262,7 @@
     },
     {
       "ID": "ref_VPR2282D",
+      "abstractNote": "Reducing future carbon emissions by investing in family planning.\n\nThe study found that each $7 spent on basic family planning (2009 US$) would reduce CO2 emissions by more than one tonne (meeting all unmet need between 2010 and 2050). By comparison, a one tonne reduction in CO2 emissions is predicted in Project Catalyst to cost a minimum of $32 using low-carbon technologies (Project Catalyst 10): $25 more per abated tonne of CO2 than family planning. This study also found that meeting all unmet need would prevent the emission of at least 34 Gt of CO2 (gigatonnes of CO2 ) between 2010 and 2050 making the assumption that demand for family planning is not stimulated by family planning proposals.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
@@ -5121,7 +5270,7 @@
         "ref_6IQEWV38",
         "ref_8PX73DAA"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5136,13 +5285,14 @@
     },
     {
       "ID": "ref_BUTPXX4M",
+      "abstractNote": "Increasing access to contraception, including birth control pills, can be an effective strategy for climate change mitigation as well as adaptation.",
       "category": "reference",
       "color": "#502c81",
       "connex": [
         "ref_E632NUJP",
         "ref_6IQEWV38"
       ],
-      "dataset": "SUBSTANCES / CONTROVERSIES",
+      "dataset": "ENDOCRINE DISRUPTION",
       "dataset_": "substances",
       "group": [
         "OESTROGENS"
@@ -5165,7 +5315,7 @@
       "tag": "",
       "type": "group name",
       "url": "",
-      "weight": 125
+      "weight": 50
     },
     {
       "ID": "tag_1",
@@ -5376,7 +5526,7 @@
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "SCIENTIFIC ARTICLES",
+      "label": "SUBSTANCES",
       "supertag": false,
       "tag": "",
       "type": "tag name",
@@ -5508,7 +5658,7 @@
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "SUBSTANCES",
+      "label": "SCIENTIFIC ARTICLES",
       "supertag": false,
       "tag": "",
       "type": "tag name",
@@ -5818,7 +5968,7 @@
   ],
   "stats": {
     "edges": {
-      "edges number": 348
+      "edges number": 353
     },
     "nodes": {
       "groups number": 0,

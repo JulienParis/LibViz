@@ -54,7 +54,81 @@
           
           
           
+          <!-- RADIAL LAYOUTS -->
           
+          <!-- collapser filters only -->
+          <a  role="button"
+              id="collapserRadial"
+              data-toggle="collapse"
+              data-target="#collapsibleRadial"
+              aria-expanded="true"
+              aria-controls="collapsibleRadial">
+            
+            <h4 data-toggle="tooltip"
+                data-placement="top"
+                title="show/hide radial layouts"
+                >
+              RADIAL FIXING <span class="caret" ></span>
+            </h4>
+            
+          </a>
+          
+          <!-- collapsible radial only -->
+          <div  class="collapse in"
+                id="collapsibleRadial"
+                style="; margin-top: 20px"
+                >
+            
+            <!-- RADIAL LAYOUT - TAGS button -->
+            <div class="list-group" id="radial_list">  
+                
+                <!-- radial references -->
+                <button type="button" 
+                    id="radial_refs"
+                    name = "reference"
+                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    onclick="moveItToRadial(this.name)"
+                    > 	
+                    references.
+                </button>
+                
+                 <!-- radial groups -->
+                <button type="button"  
+                    id="radial_groups"
+                    name = "group"
+                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    onclick="moveItToRadial(this.name)"
+                    > 	
+                    groups
+                </button>
+                
+                <!-- radial tags -->
+                <button type="button" 
+                    id="radial_tags"
+                    name = "tag"
+                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    onclick="moveItToRadial(this.name)"
+                    > 	
+                    tags 
+                </button>
+                
+                <!-- RELEASE all nodes -->
+                <button type="button"
+                        data-toggle="tooltip"
+                        data-placement="right"
+                        title="release all fixed nodes"
+                        id="releaseAllNodes"
+                        class="btn btn-default btn-sm radialFilter btn-filter"
+                        onclick="releaseAllNodes()"
+                    > 	
+                    <span class="glyphicon glyphicon-asterisk"></span>
+                </button>
+                
+                <br><br>
+                  
+            </div>
+            
+          </div>
           
           
           <!-- FILTERS BREAKING EDGES -->
@@ -81,6 +155,7 @@
                 id="collapsibleFilt"
                 style="; margin-top: 20px"
                 >
+            
             
             
             <!-- FILTERS BREAK LINKS -->
@@ -191,7 +266,7 @@
    
    
     <!-- NODE INFOS on different column -->  
-    <div  class="col-sm-2 col-sm-offset-8"
+    <div  class="col-sm-3 col-sm-offset-7"
           id = "collapserInfosCol" 
           data-toggle=""
           data-target="#collapsibleInfosCol"
@@ -214,28 +289,53 @@
               aria-expanded="true"
               aria-controls="collapsibleInfos">
             
-            <h4 class="text-center"
+            <h4 class="text-right"
                 data-toggle="tooltip"
                 data-placement="top"
                 title="show/hide node infos"
             >
-              SELECTED NODE <span class="caret" ></span>
+              <span class="caret"></span> SELECTED NODE 
             </h4>
             
           </a>
            
-           
+          <br>
             
           <!-- collapsible infos-->
           <div  class="collapse"
-                id="collapsibleInfos">
-  
-            <p class="list-group-item">label :    <a class="nohref" id="nLabel"></a></p>
-            <p class="list-group-item">category : <a class="nohref" id="nCategory"></a></p>
-            <p class="list-group-item">group :    <a class="nohref" id="nGroup"></a></p>
-            <p class="list-group-item">type :     <a class="nohref" id="nType"></a></p>
-            <p class="list-group-item">url :      <a id="nUrl"></a></p>
-            <p class="list-group-item">tags :     <a class="nohref" id="nTags"></a></p> <!--still not displaying tags correctly-->
+                id="collapsibleInfos"
+                >
+            
+                <!--data-toggle="tooltip"
+                data-placement="left"
+                title="show/hide abstract"-->
+            
+            <p  class="infoN list-group-item text-center"
+                role="button"
+                id="collapserAbstract"
+                data-toggle="collapse"
+                data-target="#nAbstract"
+                aria-expanded="true"
+                aria-controls="nAbstract"
+                >
+
+                <a class="nohref lead" id="nLabel"></a>
+                <br><span class="caret" ></span> abstract 
+            </p>
+            
+            <p  class="infoN list-group-item collapse" >
+              <a class="nohref collapse" id="nAbstract"></a>
+            </p>
+              
+            <p class="infoN list-group-item">
+              category / <a class="nohref" id="nCategory"></a><br>
+              group    / <a class="nohref" id="nGroup"></a><br>
+              type     / <a class="nohref" id="nType"></a>
+            </p>
+            
+            <p class="infoN list-group-item">tags     / <a class="nohref" id="nTags"></a></p> <!--still not displaying tags correctly-->
+            <p class="infoN list-group-item"></p>
+            <p class="infoN list-group-item">source   / <a id="nUrl"></a></p>
             
           </div>
       

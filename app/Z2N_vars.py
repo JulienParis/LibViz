@@ -12,7 +12,7 @@ version  = "2.0" ####
 ### default weight
 w_dft      = 25
 w_bigtag   = 4
-w_biggroup = 5
+w_biggroup = 2
 
 #### routing to urls in Zotero's API
 url_API_Zotero   = 'https://api.zotero.org/groups/' #336106/collections/'
@@ -30,6 +30,7 @@ node_str_dict = {
             'reference': 'reference',
             'label'    : 'label',
             'note'     : 'note',
+            'abstractNote' : 'abstractNote',
             'url'      : 'url',
             'type'     : 'type' ,
             'group'    : 'group',
@@ -136,7 +137,7 @@ collections = {
     'substances' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'SUBSTANCES / CONTROVERSIES',
+        'dataSet_name'  : 'ENDOCRINE DISRUPTION',
         'dataSet_infos' : {
                             'presentation' : 'Presentation ...',
                             'authors'      : 'Authors...',
@@ -170,9 +171,9 @@ collections = {
         'API'           : 'Zotero',
         'dataSet_name'  : 'MEDIAS OWNERS - FRANCE',
         'dataSet_infos' : {
-                            'presentation' : 'Presentation ...',
-                            'authors'      : 'Authors...',
-                            'methodology'  : 'Methodology...',
+                            'presentation' : 'Based on a previous work published in "Le Monde Diplomatique" this dataset represents the structure of french medias ownership : from the few main wealthy families owning major industrial groups to almost every french press organisation ',
+                            'authors'      : 'Datas gathered by Julien Paris from layout by Jeremie Fabre & Marie Beyer',
+                            'methodology'  : 'All references are picked from Wikipedia and then referenced in Zotero in three different groups : "persons" (owning majority of the media/industrial groups) / "industrial groups" / press (newspaper, tv channels, internet newspaper)',
                             'credits'      : 'Credits / link to Zotero group...',
                         },
         'dataSet_key'   : '680968', ### aka group key
