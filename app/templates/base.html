@@ -200,6 +200,11 @@
 				background-size: cover;
 				-moz-background-size: cover;
 			}
+			.carousel .six {
+				background: url( {{ url_for('static', filename='images/index_background_06.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
 			.carousel .active.left {
 				left:0;
 				opacity:0;
@@ -224,6 +229,7 @@
 				<div class="item three"></div>
 				<div class="item four"></div>
 				<div class="item five"></div>
+				<div class="item six"></div>
 			</div>
 		</div>
 		{% endif %}
@@ -433,7 +439,7 @@
 								<input  id="search"
 										type="text"							
 										class="form-control"
-										placeholder="search..."
+										placeholder="search a node..."
 										onKeyPress="handle(event)"
 										style="border: hidden; height: 30px; "
 										>
