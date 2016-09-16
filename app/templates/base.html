@@ -205,6 +205,11 @@
 				background-size: cover;
 				-moz-background-size: cover;
 			}
+			.carousel .seven {
+				background: url( {{ url_for('static', filename='images/index_background_07.png') }} ) no-repeat center center fixed;
+				background-size: cover;
+				-moz-background-size: cover;
+			}
 			.carousel .active.left {
 				left:0;
 				opacity:0;
@@ -230,6 +235,7 @@
 				<div class="item four"></div>
 				<div class="item five"></div>
 				<div class="item six"></div>
+				<div class="item seven"></div>
 			</div>
 		</div>
 		{% endif %}
@@ -289,7 +295,7 @@
 												margin-right: 0px">
 										<div style="color: white">
 											<span class="glyphicon glyphicon-th-list"> </span>
-											menu
+											<!--menu-->
 											<span class="caret"> </span>
 										</div>
 								</button>
@@ -370,7 +376,7 @@
 							  
 							  <h3 class="text-center" style="color: white">
 								<span class="label label-warning">
-									{{ dataSet_name }} <span class="caret"></span>
+									<span class="caret"></span> {{ dataSet_name }} <span class="caret"></span>
 								</span>
 							  </h3>
 							  
@@ -963,15 +969,16 @@
 						
 						<p class="text-justify lead">
 							Refreshing a dataset with {{ glob.titleApp }} calls the Zotero's API,
-							gets the diffents JSONs datas, generates the new nodes/links datas... and then displays the datas in a network graph.
+							gets the references, generates the new nodes/links datas...
+							and then displays the datas in a network graph within the page.
 						</p>
 						
 						<p class="text-center lead">
-							<strong>So it may take some time to do it properly.</strong>
+							<strong>So it may take some time to do it properly</strong>
 						</p>
 						
 						<p class="text-justify lead">
-							Please just click once and be patient, and before doing any graph or node manipulation, 
+							Please just click once and be patient, and before doing any manipulation, 
 							please wait a few seconds for the page to completely finish to load...
 						</p>
 						
@@ -1014,6 +1021,7 @@
 			 aria-labelledby="myModalLabel"
 			 >
 			<div class="modal-dialog modal-md" role="document">
+				<br><br><br>
 				<div class="modal-content">
 					
 					<div class="modal-header">
@@ -1021,7 +1029,7 @@
 						<p class="lead text-center">
 							
 							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
-							<em>Please wait while rebuilding {{ selection }} dataset... </em>
+							<em>Please wait while rebuilding <br>{{ dataSet_name }} dataset... </em>
 							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
 						</p>
 						

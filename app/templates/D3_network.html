@@ -39,9 +39,10 @@
       .style("opacity", 0) ;
       
       
-
-    var dft_circle_stroke_w = "1.5px";
-    var dft_line_stroke_w = "1.0px";
+    // default variable
+    var dft_circle_stroke_w   = 1.5;
+    var fixed_circle_stroke_w = 4;
+    var dft_line_stroke_w     = 1;
     
       
     // create svg
@@ -151,7 +152,7 @@
     var spaceX     = 20 ;
     var interval   = 5 ;
     var legendR    = 8  ;
-    var legendS    = 2  ; // circle stroke width
+    var legendS    = dft_circle_stroke_w  ; // circle stroke width
     var legendDiam = (legendR*2) + legendS ;
     var spaceY     = legendDiam + interval ;
     
@@ -230,10 +231,10 @@
     // adapted from : http://bl.ocks.org/vlandham/5087480 
     D2R = Math.PI / 180 ; // degrees to radians
     
-    // center svg canvas
+    // center svg canvas + variables 
     var centerX = width/2 ;
     var centerY = height/2;
-    var radius  = 250 ; /// radius circle / HERE TO CHANGE : choose a different radius
+    var radius  = 300 ; /// radius circle / HERE TO CHANGE : choose a different radius
 
     // compute radial location
     function radial(totalNodes, node, index) {
@@ -314,8 +315,8 @@
         return d.group == value  ||  d.tag == value || d.category == value ;    ;
         } );
       
-      moveToRadial(selected, radius)
-
+      moveToRadial(selected, radius);
+      resetted();
     }
     
     
@@ -553,7 +554,7 @@
       link.exit().remove();
       
       
-      node.enter() 
+      node.enter()
           .append("circle")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
           .style("fill", function (d) { return d.{{glob.ns.color}} ; })
@@ -666,10 +667,12 @@
           .attr("x2", function(d) { return d.target.x; })
           .attr("y2", function(d) { return d.target.y; })
         ;
-    
+        
+        //console.log(d3.select(".nodes").selectAll(".node").fixed    ) ;
         d3.select(".nodes").selectAll(".node")
             .attr("cx", function (d) { return !d.fixed ? d.x : d.fx; })
             .attr("cy", function (d) { return !d.fixed ? d.y : d.fy; })
+            .attr("stroke-width", function(d) {  return !d.fixed ? dft_circle_stroke_w : fixed_circle_stroke_w ; } )
         ;
       
       }
@@ -778,7 +781,7 @@
     // sticky force http://bl.ocks.org/mbostock/3750558
     function pinNode(d) {
       
-      //console.log("pinning / d :", d);
+      console.log("pinning / d :", d);
       //console.log("pinning / d.fixed :", d.fixed);
       
       if (d.fixed == true) {
@@ -787,7 +790,7 @@
         d.fy = null ;
         
       } else {
-        //d3.select(this).classed("fixed", d.fixed = true);
+        //d.classed("fixed", d.fixed = true);
         d.fixed == true; 
         d.fx = d3.event.x;
         d.fy = d3.event.x;
@@ -832,7 +835,10 @@
       //console.log("node DATAS_ :", n_);
       
       // call function to pin nodes
+      
+      //simulation.stop();
       pinNode(n);
+      //simulation.restart();
       
       // display  collapsibleInfosCol
       //divInfos = d3.select('.collapsibleInfosCol');
