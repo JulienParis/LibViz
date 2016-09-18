@@ -64,6 +64,8 @@ def data_rendering(selection):
     print 'collection :', collection
     shortName         = "/"+selection
     print 'shortName :', shortName
+
+    ZoteroURL      = collection['url_WEB']
     
     #coll_name      = collections_names
     #selection      = coll_name[0]
@@ -82,6 +84,7 @@ def data_rendering(selection):
                            licenceCC     = licenceCC,
                            #isGraph     = True,
                            selection     = selection,
+                           ZoteroURL     = ZoteroURL,
                            groups        = groups,
                            legend        = legend,
                            legendGroups  = legendGroups,
@@ -109,6 +112,8 @@ def refresh(selection):
     shortName         = "/"+selection
     print 'shortName :', shortName
 
+    ZoteroURL      = collection['url_WEB']
+
     #coll_name      = collections_names
     #selection      = coll_name[0]
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
@@ -135,6 +140,7 @@ def refresh(selection):
                            licenceCC     = licenceCC,
                            #isGraph     = True,
                            selection     = selection,
+                           ZoteroURL     = ZoteroURL,
                            groups        = groups,
                            legend        = legend,
                            legendGroups  = legendGroups,

@@ -147,80 +147,6 @@
       
     //var color = d3.scaleOrdinal(d3.schemeCategory20); // 
     
-    /////////////////////////////////////////////////////////////
-    // create legend in div #legend on the fly 
-    var spaceX     = 20 ;
-    var interval   = 5 ;
-    var legendR    = 8  ;
-    var legendS    = dft_circle_stroke_w  ; // circle stroke width
-    var legendDiam = (legendR*2) + legendS ;
-    var spaceY     = legendDiam + interval ;
-    
-    
-    var legendColorsGroups = {{ legendGroups|tojson  }};
-    //console.log("legendColorsGroups :", legendColorsGroups);
-    var legendColorsRefTag = {{ legend|tojson  }};
-    //console.log("legendColorsRefTag :", legendColorsRefTag);
-    
-    
-    legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
-    //console.log(legendHeight);
-    
-    var legendWidth  = document.getElementById('legend').clientWidth ;
-    //var legendHeight = document.getElementById('legend').clientHeight;
-    var legend = d3.select(".legend")
-      .append("svg:svg");
-    legend.attr("background-color", "black")
-      .attr("width" , legendWidth)
-      .attr("height", legendHeight)
-      .attr("class", "svg_legend");
-    
-    var nodeLegend = legend.append("g")
-      .attr("id"   , "nodes_legend") ;
-    // add circles for nodes_legend
-
-    tempSpaceY = interval + legendR ; 
-    
-    
-    function makeLegend(coll, margin) {
-      
-      for (var i = 0; i <= coll.length - 1; i++) {
-      var obj = coll[i]; 
-        var lgd_ = nodeLegend.append('g')
-          .attr("class", "nodeLgd")
-          .attr("id", obj.name)
-          ;
-        lgd_.append("circle")
-          .attr("cx", spaceX + margin )
-          .attr("cy", tempSpaceY )
-          .attr("r", legendR )
-          .attr("stroke", "white")
-          .attr("stroke-width", legendS )
-          .style("fill", obj.hex ) //return color(d.{{glob.ns.type}})
-          //.attr("id", obj.name)
-          ; 
-        lgd_.append("text")
-          .attr("fill", "white")
-          .attr("x", spaceX + legendDiam + margin  )
-          .attr("y", tempSpaceY )
-          .attr("dy", ".35em")
-          .text( obj.name );
-        
-        tempSpaceY += spaceY ;
-        };
-        
-      };
-    
-    
-    // MAKE THE SAME FOR TAGS THAN GROUPS ///////////////////////////////////////////////////   
-    makeLegend(legendColorsRefTag, 0);
-    makeLegend(legendColorsGroups, interval*4);
-    
-    // attribute function to nodes in legend 
-    d3.select("#nodes_legend").selectAll("g")
-      .attr("clickable", "yes")
-      .on("click", getLegendValue ) 
-      ;
       
     
     
@@ -337,9 +263,11 @@
     
     var allEdges = [];
     var allNodes = [];
-    var stats    = [];
+    var allStats = [];
     
     var optArray = [];
+
+
 
     //initialize graph layout : fill allNodes and allEdges
     d3.json("{{ data_JSON }}",
@@ -349,12 +277,31 @@
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
                 allStats = graph.stats ;
+
+                console.log("graph.nodes : ", allNodes); //
+                console.log("graph.links : ", allEdges); //                
+                console.log("graph.stats : ", allStats); //
+                console.log("graph.stats.groups_names : ", allStats.groups_names); //
+                console.log("graph.stats.tags_names   : ", allStats.tags_names); //
                 
+                
+                
+                
+                
+                
+                // push names and labels into autocomplete array
                 for (var i = 0; i < allNodes.length - 1; i++) {
                         //console.log(allNodes[i].label);
                         optArray.push(allNodes[i].label);   
                     } ;
-                
+                for (var i = 0; i < allStats.groups_names.length - 1; i++) {
+                        //console.log(allNodes[i].label);
+                        optArray.push(allStats.groups_names[i]);   
+                    } ;
+                for (var i = 0; i < allStats.tags_names.length - 1; i++) {
+                        //console.log(allNodes[i].label);
+                        optArray.push(allStats.tags_names[i]);   
+                    } ;
                 optArray = optArray.sort();
                 //console.log("optArray from start : ", optArray);
                 
@@ -363,7 +310,87 @@
       )
     ;
     
-    console.log("graph.stats : ", stats); // OK 
+    
+    
+    
+    
+    /////////////////////////////////////////////////////////////
+    // create legend in div #legend on the fly 
+    var spaceX     = 20 ;
+    var interval   = 5 ;
+    var legendR    = 8  ;
+    var legendS    = dft_circle_stroke_w  ; // circle stroke width
+    var legendDiam = (legendR*2) + legendS ;
+    var spaceY     = legendDiam + interval ;
+    
+    
+    var legendColorsGroups = {{ legendGroups|tojson  }};
+    //console.log("legendColorsGroups :", legendColorsGroups);
+    var legendColorsRefTag = {{ legend|tojson  }};
+    //console.log("legendColorsRefTag :", legendColorsRefTag);
+    
+    
+    legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
+    //console.log(legendHeight);
+    
+    var legendWidth  = document.getElementById('legend').clientWidth ;
+    //var legendHeight = document.getElementById('legend').clientHeight;
+    var legend = d3.select(".legend")
+      .append("svg:svg");
+    legend.attr("background-color", "black")
+      .attr("width" , legendWidth)
+      .attr("height", legendHeight)
+      .attr("class", "svg_legend");
+    
+    var nodeLegend = legend.append("g")
+      .attr("id"   , "nodes_legend") ;
+    // add circles for nodes_legend
+
+    tempSpaceY = interval + legendR ; 
+    
+    
+    function makeLegend(coll, margin) {
+      
+      for (var i = 0; i <= coll.length - 1; i++) {
+      var obj = coll[i]; 
+        var lgd_ = nodeLegend.append('g')
+          .attr("class", "nodeLgd")
+          .attr("id", obj.name)
+          ;
+        lgd_.append("circle")
+          .attr("cx", spaceX + margin )
+          .attr("cy", tempSpaceY )
+          .attr("r", legendR )
+          .attr("stroke", "white")
+          .attr("stroke-width", legendS )
+          .style("fill", obj.hex ) //return color(d.{{glob.ns.type}})
+          //.attr("id", obj.name)
+          ; 
+        lgd_.append("text")
+          .attr("fill", "white")
+          .attr("x", spaceX + legendDiam + margin  )
+          .attr("y", tempSpaceY )
+          .attr("dy", ".35em")
+          .text( obj.name );
+        
+        tempSpaceY += spaceY ;
+        };
+        
+      };
+    
+    
+    // MAKE THE SAME FOR TAGS THAN GROUPS ///////////////////////////////////////////////////   
+    makeLegend(legendColorsRefTag, 0);
+    makeLegend(legendColorsGroups, interval*4);
+    
+    
+    // attribute function to nodes in legend 
+    d3.select("#nodes_legend").selectAll("g")
+      .attr("clickable", "yes")
+      .on("click", getLegendValue ) 
+      ;
+
+
     
     //console.log("optArray : ", optArray); // OK 
     
@@ -547,7 +574,7 @@
       var node  = nodes_g.selectAll(".node").data(nodes);
       
       // create legend for tags ///////////////////////////////////////////////////////////////
-      console.log("render / node : ", node)
+      //console.log("render / node : ", node)
       
       
       

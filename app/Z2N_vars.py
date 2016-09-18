@@ -18,11 +18,12 @@ w_biggroup = 2
 
 #### routing to urls in Zotero's API
 url_API_Zotero   = 'https://api.zotero.org/groups/' #336106/collections/'
+url_WEB_Zotero   = 'https://www.zotero.org/groups/' #336106/collections/'
 items_API_Zotero = '/items/top?start=0&limit=1000'
 
 ### this import is placed after to avoid circular reference problem
 ### when calling 'url_API_Zotero' in createURL
-from Z2N_scripts import createURL
+from Z2N_scripts import create_API_URL, create_WEB_URL ## create zotero api/web url
 
 
 ### JSON outfile graph structure
@@ -76,7 +77,8 @@ collections = {
                             'credits'      : 'Credits / link to Zotero group...',
                         },
         'dataSet_key'   : '336106',
-        'url_ROOT'      : createURL('336106'),
+        'url_ROOT'      : create_API_URL('336106'),
+        'url_WEB'       : create_WEB_URL('336106'),
         'urlsDict'      : {
                             'F22AUXTI'  : {'name' : 'annuaire' , 'len' : 0, 'hex' : '#f7ffad'},
                             'A3IIWJG7'  : {'name' : 'lexique'  , 'len' : 0, 'hex' : '#4b5731'},
@@ -112,7 +114,8 @@ collections = {
                             'credits'      : 'Credits / link to Zotero group...',
                         },
         'dataSet_key'   : '506887', ### aka group key
-        'url_ROOT'      : createURL('506887'),
+        'url_ROOT'      : create_API_URL('506887'),
+        'url_WEB'       : create_WEB_URL('506887'),
         'urlsDict'      : {
                             'N8IKC3JJ'  : {'name' : 'antagonistic organisations'  , 'len' : 0, 'hex' : '#b8d39a'},
                             'VMXEDTC2'  : {'name' : 'controversial organisations' , 'len' : 0, 'hex' : '#61835a'},
@@ -149,7 +152,8 @@ collections = {
                             'credits'      : 'Credits / link to Zotero group...',
                         },
         'dataSet_key'   : '506887', ### aka group key
-        'url_ROOT'      : createURL('506887'),
+        'url_ROOT'      : create_API_URL('506887'),
+        'url_WEB'       : create_WEB_URL('506887'),
         'urlsDict'      : {
                             '9EXBK2DP'  : {'name' : 'OESTROGENS'  , 'len' : 0, 'hex' : '#502c81'}
                         },
@@ -181,7 +185,8 @@ collections = {
                             'credits'      : 'Credits / link to Zotero group...',
                         },
         'dataSet_key'   : '680968', ### aka group key
-        'url_ROOT'      : createURL('680968'),
+        'url_ROOT'      : create_API_URL('680968'),
+        'url_WEB'       : create_WEB_URL('680968'),
         'urlsDict'      : {
                             '3BAX9FGR'  : {'name' : 'Groupes industriels/media' , 'len' : 0, 'hex' : '#325d58'},
                             'ZBZBM9H7'  : {'name' : 'Personnes'                 , 'len' : 0, 'hex' : '#54b992'},

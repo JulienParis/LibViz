@@ -7439,14 +7439,19 @@
     }
   ],
   "stats": {
-    "edges": {
-      "edges number": 399
-    },
-    "nodes": {
-      "groups number": 0,
-      "nodes total number": 189,
-      "refs number": 187,
-      "tags number": 2
-    }
+    "edges_number": 399,
+    "groups_names": [
+      "Personnes",
+      "Groupes industriels/media",
+      "Presse"
+    ],
+    "groups_number": 3,
+    "nodes_number": 192,
+    "refs_number": 187,
+    "tags_names": [
+      "Etat",
+      "500 grandes fortunes"
+    ],
+    "tags_number": 2
   }
 }

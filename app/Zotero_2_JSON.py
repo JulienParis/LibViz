@@ -43,6 +43,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         url_ROOT        = collection['url_ROOT']
         urlsDict        = collection['urlsDict']
         listed_groups   = urlsDict.keys()
+        listed_groups_  = [ i["name"] for k,i in urlsDict.items() ]
         nodesColorsDict = collection['nodesColorsDict']  ### colors by default
         ##refColorsDict   = collection['urlsDict']['hex']  ### colors references depending on their group
         edgesDashDict   = collection['edgesDashDict']
@@ -378,24 +379,21 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         ### generate JSON file / nodes + edges
         l_refs = len(data)
         l_grps = len(listed_groups)
-        n_grps = listed_groups
+        n_grps = listed_groups_
         l_tags = len(tagsDict)
         n_tags = [ k for k, v in  tagsDict.items() ]
         print " -- print n_grps :", n_grps
         print " -- print n_tags :", n_tags
 
         
-        network_ = {"stats" : {"nodes": {
-                               "refs number"   : l_refs,
-                               "groups number" : l_grps,
-                               "groups names"  : n_grps,
-                               "tags number"   : l_tags,
-                               "tags names"    : n_tags,
-                               "nodes total number" : l_refs + l_grps + l_tags
-                                   },
-                               "edges" : {
-                                        "edges number"  : len(edgesList)
-                                        }
+        network_ = {"stats" : {
+                                "refs_number"   : l_refs,
+                                "groups_number" : l_grps,
+                                "groups_names"  : n_grps,
+                                "tags_number"   : l_tags,
+                                "tags_names"    : n_tags,
+                                "nodes_number"  : l_refs + l_grps + l_tags, 
+                                "edges_number"  : len(edgesList)
                                 },
                     "nodes" : nodesList,
                     "links" : edgesList
@@ -427,5 +425,5 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         print " -- end of script --"
         for key, infos in urlsDict.items() :
                 print " -- refs in : ", infos['name'], ":", infos['len']
-        print " -- stats : ", network_['stats']['edges']
+        print " -- stats : ", network_['stats']
         print 
