@@ -42,6 +42,26 @@ Project by PING / ARTLABO and developped by Julien P with the precious help of J
 This application is inspired by a previous work called "Constellations bibliographiques" developped by Laurent Malys.
 
 -------------------------------------------------------
+APACHE CONFIGURATION
+-------------------------------------------------------
+
+To deploy this application with Apache2, you have to install `mod_wsgi` (available in Debian in the `libapache2-mod-wsgi` package). You can then add the following snippet in your VirtualHost’s configuration:
+
+    WSGIDaemonProcess libviz user=artlabo group=artlabo threads=5 python-home=/home/artlabo/www/libviz.artlabo.org/LibViz/venv python-path=/home/artlabo/www/libviz.artlabo.org/LibViz/
+    WSGIScriptAlias / /home/artlabo/www/libviz.artlabo.org/LibViz/libviz.wsgi
+
+    <Directory /home/artlabo/www/libviz.artlabo.org/LibViz/>
+        WSGIProcessGroup libviz
+        WSGIApplicationGroup %{GLOBAL}
+        Order deny,allow
+        Allow from all
+    </Directory>
+
+This configuration requires to install a Python “virtualenv” in `/home/artlabo/www/libviz.artlabo.org/LibViz/venv`.
+
+Apache server should be reloaded after each code change.
+
+-------------------------------------------------------
 LICENCE   Creative Commons License
 -------------------------------------------------------
 
