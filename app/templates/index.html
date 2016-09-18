@@ -21,7 +21,6 @@
 		
 		<hr></hr>
 		
-		<!--<h4 class="text-center"> {{ glob.subtitleApp }} </h4>-->
 		<h6 class="text-center lead" style="color:white;"> {{ glob.subtitleApp }} </h6>
 		<!--<h4>-->
 		<!--	fetch a Zotero library and connect references by their tags, their groups or folders, and their connex references...-->
@@ -33,7 +32,7 @@
 		<!-- to display : images/href to datavisualizations -->
 		<div class="list-group">
 			
-			<p class="text-center">
+			<p class="text-center" style="color:grey">
 			
 				<!-- Button 'HOW TO' triggering modal -->
 				<a  data-toggle="tooltip"
@@ -49,7 +48,7 @@
 					</button>
 				</a>
 				
-				select a dataset 			
+				<small>select a dataset</small> <!-- ------- CREATE A DROPDOWN HERE !!! ------- -->	
 
 				<!-- Button 'ABOUT' triggering modal -->
 				<a  data-toggle="tooltip"
@@ -69,12 +68,12 @@
 
 			{% for set in glob.collections_names %}
 				<!--<h6>-->
-					<a 	href="/{{ set[0] }}"
-						class="list-group-item col-xs"
-						>
-						&nbsp;&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
-						 {{ set[1] }}
-					</a>
+				<a 	href="/{{ set[0] }}"
+					class="list-group-item col-xs"
+					>
+					&nbsp;&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
+					 {{ set[1] }}
+				</a>
 				<!--</h6>-->
 				
 			{% endfor %}

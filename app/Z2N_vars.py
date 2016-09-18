@@ -6,8 +6,10 @@ import os
 
 ### name application
 title    = "LibViz" #ideas for a name : "Bibloom" - "REFNET" - "VIZZOT" - "REF2NET"
-subtitle = "make graphs you can play with" #"FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
-version  = "beta 2.0" ####
+subtitle = "make graphs you can play with"
+            #"FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
+            #"what your library looks like"
+version  = "beta 0.2" ####
 
 ### default weight
 w_dft      = 25
@@ -26,29 +28,29 @@ from Z2N_scripts import createURL
 ### JSON outfile graph structure
 ### allows simultaneous global changes in : HTML / JS / PY
 node_str_dict = {
-            'id'       : 'ID',
-            'reference': 'reference',
-            'label'    : 'label',
-            'note'     : 'note',
-            'abstractNote' : 'abstractNote',
-            'url'      : 'url',
-            'type'     : 'type' ,
-            'group'    : 'group',
-            'tags'     : 'tag',
-            'connex'   : 'connex',
-            'category' : 'category',
-            'supertag' : 'supertag',
-            'weight'   : 'weight',
-            'color'    : 'color',
-            'dataset'  : 'dataset',
-            'dataset_' : 'dataset_'
+            'id'            : 'ID',
+            'reference'     : 'reference',
+            'label'         : 'label',
+            'note'          : 'note',
+            'abstractNote'  : 'abstractNote',
+            'url'           : 'url',
+            'type'          : 'type' ,
+            'group'         : 'group',
+            'tags'          : 'tag',
+            'connex'        : 'connex',
+            'category'      : 'category',
+            'supertag'      : 'supertag',
+            'weight'        : 'weight',
+            'color'         : 'color',
+            'dataset'       : 'dataset',
+            'dataset_'      : 'dataset_'
             }
 edge_str_dict = {
             'id'     : node_str_dict['id'],
             'source' : 'source' ,
             'target' : 'target' ,
-            'label'  : node_str_dict['label'] ,
-            'group'  : node_str_dict['group'],
+            'label'  : node_str_dict['label'] , ### optional
+            'group'  : node_str_dict['group'],  
             'weight' : node_str_dict['weight'],
             'dash'   : 'dash'
             }
@@ -57,8 +59,10 @@ edge_str_dict = {
 ###########################################################################
 ####### collections of Zotero folders/references / EXTENDABLE LIST ########
 ###########################################################################
+### 
 ### color gradient hue : http://tools.medialab.sciences-po.fr/iwanthue/ ###
 
+### main collection list / should be stocked in mongo or SQL database to able user interaction (add collection for instance)
 collections = {
     
     '1camp': {
@@ -172,7 +176,7 @@ collections = {
         'dataSet_name'  : 'MEDIAS OWNERS - FRANCE',
         'dataSet_infos' : {
                             'presentation' : 'Based on a previous work published in "Le Monde Diplomatique" this dataset represents the structure of french medias ownership : from the few main wealthy families owning major industrial groups to almost every french press organisation ',
-                            'authors'      : 'Datas gathered by Julien Paris from layout by Jeremie Fabre & Marie Beyer',
+                            'authors'      : 'Datas gathered in Zotero by Julien Paris from layout by Jeremie Fabre & Marie Beyer',
                             'methodology'  : 'All references are picked from Wikipedia and then referenced in Zotero in three different groups : "persons" (owning majority of the media/industrial groups) / "industrial groups" / press (newspaper, tv channels, internet newspaper)',
                             'credits'      : 'Credits / link to Zotero group...',
                         },
