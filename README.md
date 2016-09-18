@@ -42,6 +42,18 @@ Project by PING / ARTLABO and developped by Julien P with the precious help of J
 This application is inspired by a previous work called "Constellations bibliographiques" developped by Laurent Malys.
 
 -------------------------------------------------------
+VIRTUALENV CONFIGURATION
+-------------------------------------------------------
+
+To develop & test this application, you can use a Python “virtualenv”. To proceed, just install the Debian package `python-virtualenv`, create a new “virtualenv”, activate it and then install the required dependencies:
+
+    $ sudo apt install python-virtualenv
+    $ virtualenv venv
+    $ source venv/bin/activate
+    $ pip install -r requirements.txt
+    $ FLASK_APP=run.py flask run
+
+-------------------------------------------------------
 APACHE CONFIGURATION
 -------------------------------------------------------
 
