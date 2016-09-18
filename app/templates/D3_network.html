@@ -283,10 +283,10 @@
     // actually move and fix selected nodes positions in space 
     function moveToRadial (selectedNodes) {
       
-      console.log("moveToRadial 1/ : ", selectedNodes) ;
+      //console.log("moveToRadial 1/ : ", selectedNodes) ;
       
       var totalNodes = selectedNodes.size() ; ///////////////////////////////////////
-      console.log("moveToRadial 2/ : ", totalNodes) ;
+      //console.log("moveToRadial 2/ : ", totalNodes) ;
 
       // put radial coordinates datas into node.__data__ (not DOM)
       selectedNodes.each( function(d,i) { radial( totalNodes, d, i ) } );
@@ -304,7 +304,7 @@
     // activate radial positionning depending on button value
     function moveItToRadial(value) {
       
-      console.log("moveItToRadial 1/ : ", value) ;
+      //console.log("moveItToRadial 1/ : ", value) ;
       
       // here unfix position for everybody 
       releaseAllNodes();
@@ -337,6 +337,7 @@
     
     var allEdges = [];
     var allNodes = [];
+    var stats    = [];
     
     var optArray = [];
 
@@ -347,6 +348,7 @@
                 
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
+                allStats = graph.stats ;
                 
                 for (var i = 0; i < allNodes.length - 1; i++) {
                         //console.log(allNodes[i].label);
@@ -361,6 +363,7 @@
       )
     ;
     
+    console.log("graph.stats : ", stats); // OK 
     
     //console.log("optArray : ", optArray); // OK 
     
@@ -539,9 +542,19 @@
       });
       
       ///////////////////////////////////////////////////////
+      // enter json datas 
+      var link  = links_g.selectAll(".link").data(links);
+      var node  = nodes_g.selectAll(".node").data(nodes);
       
-      var link = links_g.selectAll(".link").data(links);
-      var node = nodes_g.selectAll(".node").data(nodes);
+      // create legend for tags ///////////////////////////////////////////////////////////////
+      console.log("render / node : ", node)
+      
+      
+      
+      
+      
+      
+      
       
       // create lines for links
 

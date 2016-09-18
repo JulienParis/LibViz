@@ -377,12 +377,20 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         
         ### generate JSON file / nodes + edges
         l_refs = len(data)
-        l_grps = len(groupsList)
+        l_grps = len(listed_groups)
+        n_grps = listed_groups
         l_tags = len(tagsDict)
+        n_tags = [ k for k, v in  tagsDict.items() ]
+        print " -- print n_grps :", n_grps
+        print " -- print n_tags :", n_tags
+
+        
         network_ = {"stats" : {"nodes": {
                                "refs number"   : l_refs,
                                "groups number" : l_grps,
+                               "groups names"  : n_grps,
                                "tags number"   : l_tags,
+                               "tags names"    : n_tags,
                                "nodes total number" : l_refs + l_grps + l_tags
                                    },
                                "edges" : {
@@ -392,7 +400,10 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                     "nodes" : nodesList,
                     "links" : edgesList
                     }
-        network_JSON = json.dumps(network_ , sort_keys = True,
+        print "-- network_['stats']", network_["stats"]
+        
+        network_JSON = json.dumps(network_ ,
+                                  sort_keys = True,
                                   indent = 2,
                                   #ensure_ascii=False,
                                   #encoding='utf8',
@@ -402,7 +413,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         print " -- print network_JSON as it is --"
         print " -- outfile_name : ", outfile_name
         print 
-        print network_JSON[0:100], " ... "
+        print network_JSON[0:200], " ... "
         print
         outfile = open(outfile_name, 'w')
         outfile.write(network_JSON)

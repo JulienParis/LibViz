@@ -42,7 +42,7 @@ def index():
     return render_template("index.html",
                            glob      = global_names,
                            licenceCC = licenceCC,
-                           index     = "index"
+                           index     = True
                            #isHome = True
                            #titleApp          = title ,
                            #subtitleApp       = subtitle ,
