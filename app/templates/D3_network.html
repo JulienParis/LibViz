@@ -278,29 +278,32 @@
                 allEdges = graph.links ;
                 allStats = graph.stats ;
 
-                console.log("graph.nodes : ", allNodes); //
-                console.log("graph.links : ", allEdges); //                
+                //console.log("graph.nodes : ", allNodes); //
+                //console.log("graph.links : ", allEdges); //                
                 console.log("graph.stats : ", allStats); //
-                console.log("graph.stats.groups_names : ", allStats.groups_names); //
-                console.log("graph.stats.tags_names   : ", allStats.tags_names); //
+                //console.log("graph.stats.groups_names : ", allStats.groups_names); //
+                //console.log("graph.stats.tags_names   : ", allStats.tags_names); //
                 
                 
                 
-                
-                
-                
-                // push names and labels into autocomplete array
+                // push group & tag names & nodes labels into autocomplete array
                 for (var i = 0; i < allNodes.length - 1; i++) {
                         //console.log(allNodes[i].label);
                         optArray.push(allNodes[i].label);   
                     } ;
                 for (var i = 0; i < allStats.groups_names.length - 1; i++) {
                         //console.log(allNodes[i].label);
-                        optArray.push(allStats.groups_names[i]);   
+                        var label_group = allStats.groups_name[i];
+                        if ( optArray.indexOf(label_group) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array 
+                          optArray.push(label_group);
+                        }
                     } ;
                 for (var i = 0; i < allStats.tags_names.length - 1; i++) {
                         //console.log(allNodes[i].label);
-                        optArray.push(allStats.tags_names[i]);   
+                        var label_tag = allStats.tags_names[i];
+                        if (optArray.indexOf(label_tag) == -1 ) {
+                          optArray.push(label_tag);
+                        }
                     } ;
                 optArray = optArray.sort();
                 //console.log("optArray from start : ", optArray);
@@ -323,13 +326,15 @@
     var legendDiam = (legendR*2) + legendS ;
     var spaceY     = legendDiam + interval ;
     
-    
+    console.log("graph.stats.groups_names : ", allStats.groups_names); ////////////////
+    console.log("graph.stats.tags_names   : ", allStats.tags_names); /////////////////////////
+                
     var legendColorsGroups = {{ legendGroups|tojson  }};
     //console.log("legendColorsGroups :", legendColorsGroups);
     var legendColorsRefTag = {{ legend|tojson  }};
     //console.log("legendColorsRefTag :", legendColorsRefTag);
     
-    
+    /////////////////////////////////////////////////
     legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
     //console.log(legendHeight);
     
