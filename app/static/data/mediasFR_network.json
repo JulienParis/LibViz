@@ -7439,6 +7439,20 @@
     }
   ],
   "stats": {
+    "dfltColorsDict": [
+      {
+        "hex": "#a57eb7",
+        "name": "tag"
+      },
+      {
+        "hex": "#8eba7d",
+        "name": "group"
+      },
+      {
+        "hex": "#c57753",
+        "name": "reference"
+      }
+    ],
     "edges_number": 399,
     "groups_names": [
       "Personnes",
@@ -7446,6 +7460,20 @@
       "Presse"
     ],
     "groups_number": 3,
+    "grpsColorsDict": [
+      {
+        "hex": "#54b992",
+        "name": "Personnes"
+      },
+      {
+        "hex": "#325d58",
+        "name": "Groupes industriels/media"
+      },
+      {
+        "hex": "#66aec2",
+        "name": "Presse"
+      }
+    ],
     "nodes_number": 192,
     "refs_number": 187,
     "tags_names": [

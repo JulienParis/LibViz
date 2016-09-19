@@ -10639,6 +10639,20 @@
     }
   ],
   "stats": {
+    "dfltColorsDict": [
+      {
+        "hex": "#a57eb7",
+        "name": "tag"
+      },
+      {
+        "hex": "#8eba7d",
+        "name": "group"
+      },
+      {
+        "hex": "#c57753",
+        "name": "reference"
+      }
+    ],
     "edges_number": 606,
     "groups_names": [
       "antagonistic organisations",
@@ -10649,6 +10663,32 @@
       "scientific articles"
     ],
     "groups_number": 6,
+    "grpsColorsDict": [
+      {
+        "hex": "#b8d39a",
+        "name": "antagonistic organisations"
+      },
+      {
+        "hex": "#61835a",
+        "name": "controversial organisations"
+      },
+      {
+        "hex": "#c5ce6c",
+        "name": "scandals"
+      },
+      {
+        "hex": "#608b32",
+        "name": "substances"
+      },
+      {
+        "hex": "#67d863",
+        "name": "effects"
+      },
+      {
+        "hex": "#96d6a3",
+        "name": "scientific articles"
+      }
+    ],
     "nodes_number": 309,
     "refs_number": 178,
     "tags_names": [

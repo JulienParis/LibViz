@@ -280,11 +280,18 @@
 
                 //console.log("graph.nodes : ", allNodes); //
                 //console.log("graph.links : ", allEdges); //                
-                console.log("graph.stats : ", allStats); //
+                //console.log("in json : ", allStats); //
                 //console.log("graph.stats.groups_names : ", allStats.groups_names); //
                 //console.log("graph.stats.tags_names   : ", allStats.tags_names); //
+      
+                // add stats in presentation modal
+                d3.select('#stats_nodes').text(allStats.nodes_number);
+                d3.select('#stats_refs').text(allStats.refs_number);
+                d3.select('#stats_groups').text(allStats.groups_number);
+                d3.select('#stats_tags').text(allStats.tags_number);
+                d3.select('#stats_edges').text(allStats.edges_number);
                 
-                
+                packLegend();
                 
                 // push group & tag names & nodes labels into autocomplete array
                 for (var i = 0; i < allNodes.length - 1; i++) {
@@ -293,7 +300,7 @@
                     } ;
                 for (var i = 0; i < allStats.groups_names.length - 1; i++) {
                         //console.log(allNodes[i].label);
-                        var label_group = allStats.groups_name[i];
+                        var label_group = allStats.groups_names[i];
                         if ( optArray.indexOf(label_group) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array 
                           optArray.push(label_group);
                         }
@@ -314,7 +321,7 @@
     ;
     
     
-    
+    //console.log("after d3.json", allStats);
     
     
     /////////////////////////////////////////////////////////////
@@ -325,35 +332,45 @@
     var legendS    = dft_circle_stroke_w  ; // circle stroke width
     var legendDiam = (legendR*2) + legendS ;
     var spaceY     = legendDiam + interval ;
+    var tempSpaceY = interval + legendR ;
     
-    console.log("graph.stats.groups_names : ", allStats.groups_names); ////////////////
-    console.log("graph.stats.tags_names   : ", allStats.tags_names); /////////////////////////
-                
-    var legendColorsGroups = {{ legendGroups|tojson  }};
-    //console.log("legendColorsGroups :", legendColorsGroups);
-    var legendColorsRefTag = {{ legend|tojson  }};
-    //console.log("legendColorsRefTag :", legendColorsRefTag);
+    var legendHeight            = 0 ;
+    var legendWidth             = 0 ;
+    var legend                  = null;
+    var nodeLegend              = null;
+    //var legendColorsGroups      = null;
+    //var legendColorsRefGroupTag = null;
+    //console.log("graph.stats.groups_names : ", allStats.groups_names); ////////////////
+    //console.log("graph.stats.tags_names   : ", allStats.tags_names); /////////////////////////
+   
+   
+
     
     /////////////////////////////////////////////////
-    legendHeight = 5 + (legendColorsRefTag.length*spaceY) + (legendColorsGroups.length*spaceY) + 5
-    //console.log(legendHeight);
     
-    var legendWidth  = document.getElementById('legend').clientWidth ;
-    //var legendHeight = document.getElementById('legend').clientHeight;
-    var legend = d3.select(".legend")
-      .append("svg:svg");
-    legend.attr("background-color", "black")
-      .attr("width" , legendWidth)
-      .attr("height", legendHeight)
-      .attr("class", "svg_legend");
-    
-    var nodeLegend = legend.append("g")
-      .attr("id"   , "nodes_legend") ;
-    // add circles for nodes_legend
+    function setLegend(len_ref_group_tag, len_groups, len_tags) {
+      
+      legendHeight = 5 + (len_ref_group_tag*spaceY) + (len_groups*spaceY) + (len_tags*spaceY) + 5
+      //console.log(legendHeight);
+      
+      legendWidth  = document.getElementById('legend').clientWidth ;
+      //var legendHeight = document.getElementById('legend').clientHeight;
+      legend = d3.select(".legend")
+        .append("svg:svg");
+      legend.attr("background-color", "black")
+        .attr("width" , legendWidth)
+        .attr("height", legendHeight)
+        .attr("class", "svg_legend");
+      
+      nodeLegend = legend.append("g")
+        .attr("id"   , "nodes_legend") ;
+      // add circles for nodes_legend
 
-    tempSpaceY = interval + legendR ; 
+    }
     
     
+    
+    // insert nodes into legend svg div
     function makeLegend(coll, margin) {
       
       for (var i = 0; i <= coll.length - 1; i++) {
@@ -385,15 +402,40 @@
     
     
     // MAKE THE SAME FOR TAGS THAN GROUPS ///////////////////////////////////////////////////   
-    makeLegend(legendColorsRefTag, 0);
-    makeLegend(legendColorsGroups, interval*4);
+    //setLegend() ;
+    //makeLegend(legendColorsRefTag, 0);
+    //makeLegend(legendColorsGroups, interval*4);
     
-    
-    // attribute function to nodes in legend 
-    d3.select("#nodes_legend").selectAll("g")
-      .attr("clickable", "yes")
-      .on("click", getLegendValue ) 
+    function packLegend() {
+
+      //console.log("packLegend /stats", allStats);
+
+      // get ref & groups & tags colors from stats in graph
+      legendColors_groups = allStats.grpsColorsDict;
+      //console.log("packLegend /grpsColorsDict", allStats.grpsColorsDict);
+      //legendColorsGroups =  legendGroups|tojson  ; // tojson un jinja
+      console.log("packLegend / legendColorsGroups :", legendColors_groups);
+      
+      legendColors_RefGroupTag = allStats.dfltColorsDict;
+      //console.log("packLegend /dfltColorsDict", allStats.dfltColorsDict);
+      //legendColorsRefGroupTag =  legend|tojson  ; // tojson in jinja
+      console.log("packLegend / legendColorsRefTag :", legendColors_RefGroupTag);
+      
+      legendColors_tags = allStats.tags_names;
+      console.log("packLegend / legendColors_tags :", legendColors_tags);
+      
+      setLegend(legendColors_groups.length, legendColors_RefGroupTag.length, 0 ); //legendColors_tags.length) ;
+      
+      makeLegend(legendColors_RefGroupTag, 0);
+      makeLegend(legendColors_groups, interval*4);
+      //makeLegend(legendColors_tags, interval*4);
+      
+      // attribute function to nodes in legend 
+      d3.select("#nodes_legend").selectAll("g")
+        .attr("clickable", "yes")
+        .on("click", getLegendValue ) 
       ;
+    }
 
 
     
@@ -502,7 +544,7 @@
       };
       
       
-      // stores criterias to hide 
+      // stores all criterias to hide 
       for(var j = 0; j < buttons.length; j++) {
 		var button = buttons[j];		
 		var status = button.getAttribute("Enabled");
@@ -510,21 +552,34 @@
           rulesToHide.push(button.id);
         }			
       }
-      //console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
+      console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
       
       var nodes = vis.selectAll(".node");
       
-      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1
-                                            || rulesToHide.indexOf(d.group) != -1
-                                            || rulesToHide.indexOf(d.tag)   != -1
-                                            ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
-        .style("opacity", "0.1" );
+      nodes.style("opacity", "1" );
       
-      nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1
-                                            && rulesToHide.indexOf(d.group) == -1
-                                            && rulesToHide.indexOf(d.tag)   == -1
+      
+      var n_hidden = nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1
+                                            || rulesToHide.indexOf(d.group)  != -1 ///// here group too for references !!!! ////////
+                                            //|| rulesToHide.indexOf(d.tag) != -1
+                                            ///// must iterate through d.tag ARRAY ???
+                                            //|| function (d, i) { ////////////////////
+                                            //    var bool = false ;
+                                            //    for (var i = 0 ; i< d.tag.length ; i++)
+                                            //        { if (rulesToHide.indexOf(d.tag[i]) != -1)
+                                            //          { bool = true }
+                                            //        };
+                                            //    return bool ;
+                                            //    }
                                             ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
-        .style("opacity", "1.0" );
+      //console.log(n_hidden);
+      
+      //var n_showed = nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1
+      //                                      && rulesToHide.indexOf(d.group)  == -1
+      //                                      && rulesToHide.indexOf(d.tag)    == -1
+      //                                      ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
+      n_hidden.style("opacity", "0.1" );
+      //n_showed.style("opacity", "1.0" );
         
     }
 
@@ -578,18 +633,16 @@
       var link  = links_g.selectAll(".link").data(links);
       var node  = nodes_g.selectAll(".node").data(nodes);
       
-      // create legend for tags ///////////////////////////////////////////////////////////////
       //console.log("render / node : ", node)
       
+      //console.log("graph.stats : ", allStats); //
+      //console.log("graph.stats.groups_names : ", allStats.groups_names); //
+      //console.log("graph.stats.tags_names   : ", allStats.tags_names); //
       
-      
-      
-      
-      
+
       
       
       // create lines for links
-
       link.enter()
           .append("line")
           .attr("class", "link")
@@ -598,7 +651,7 @@
         .merge(link);
       link.exit().remove();
       
-      
+      // create circles for nodes
       node.enter()
           .append("circle")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
@@ -729,6 +782,10 @@
     $(document).ready(function () {
         $("#search").autocomplete({ source: optArray });
         
+        //console.log("doc ready /stats", allStats); // empty here
+        // create legend
+        
+        
       });
     
     
@@ -744,6 +801,7 @@
       //console.log("selectedVal from getLegendValue : ", d3.select(this).node() );
       //console.log("selectedVal from getLegendValue : ", d3.select(this).node().id );
       searchNode( selectedVal, from )
+      
     };
     
     // get search value from searchbar
@@ -759,7 +817,6 @@
     };
     
     
-
     /// search bar functions 
     function searchNode(value, from) {
       
@@ -776,8 +833,12 @@
         if (from == "searchbar") {
           var selected = node.filter(function (d, i) { return d.label != value ; } );
         }
+        // if value from legend
         else {
-          var selected = node.filter(function (d, i) { return d.group != value  & d.tag != value  & d.category != value ; } );
+          var selected = node.filter(function (d, i) { return d.group      != value
+                                                              & d.tag      != value
+                                                              & d.category != value
+                                                              & d.label    != value ; } );
           //console.log("selected : ", selected)
         };
         
@@ -866,11 +927,8 @@
     }
     
     
-    
-    
-    
     // display node infos in div #nodeInfos 
-    function displayInfos() {
+    function displayInfos(d) {
       
       n = d3.select(this).node().__data__;
       //console.log("displayInfos / node DATAS before __data__ :", d3.select(this).node());

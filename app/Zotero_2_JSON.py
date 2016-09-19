@@ -393,7 +393,9 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                                 "tags_number"   : l_tags,
                                 "tags_names"    : n_tags,
                                 "nodes_number"  : l_refs + l_grps + l_tags, 
-                                "edges_number"  : len(edgesList)
+                                "edges_number"  : len(edgesList),
+                                "dfltColorsDict": [ {"name" : k,         "hex" : v['hex'] }  for k, v in nodesColorsDict.items() ] ,
+                                "grpsColorsDict": [ {"name" : v["name"], "hex" : v['hex'] } for k, v in urlsDict.items() ]
                                 },
                     "nodes" : nodesList,
                     "links" : edgesList

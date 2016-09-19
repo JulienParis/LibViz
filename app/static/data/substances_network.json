@@ -5967,11 +5967,31 @@
     }
   ],
   "stats": {
+    "dfltColorsDict": [
+      {
+        "hex": "#a57eb7",
+        "name": "tag"
+      },
+      {
+        "hex": "#8eba7d",
+        "name": "group"
+      },
+      {
+        "hex": "#c57753",
+        "name": "reference"
+      }
+    ],
     "edges_number": 353,
     "groups_names": [
       "OESTROGENS"
     ],
     "groups_number": 1,
+    "grpsColorsDict": [
+      {
+        "hex": "#502c81",
+        "name": "OESTROGENS"
+      }
+    ],
     "nodes_number": 155,
     "refs_number": 100,
     "tags_names": [

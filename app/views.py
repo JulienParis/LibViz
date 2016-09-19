@@ -34,6 +34,7 @@ global_names = {
         'es'                : edgeStruct         # integrate Jinja global es in J
     }
 
+
 @app.route('/')
 @app.route('/index')
 @app.route('/'+URLroot_artlabo)
@@ -86,8 +87,8 @@ def data_rendering(selection):
                            selection     = selection,
                            ZoteroURL     = ZoteroURL,
                            groups        = groups,
-                           legend        = legend,
-                           legendGroups  = legendGroups,
+                           #legend        = legend,
+                           #legendGroups  = legendGroups,
                            #lines       = lineTypes,
                            supertags     = supertags,
                            dataSet_name  = collection['dataSet_name'],
@@ -142,8 +143,8 @@ def refresh(selection):
                            selection     = selection,
                            ZoteroURL     = ZoteroURL,
                            groups        = groups,
-                           legend        = legend,
-                           legendGroups  = legendGroups,
+                           #legend        = legend,
+                           #legendGroups  = legendGroups,
                            supertags     = supertags,
                            dataSet_name  = collection['dataSet_name'],
                            dataSet_url   = shortName,
