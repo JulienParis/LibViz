@@ -120,25 +120,30 @@
       function dragstarted(d) {
           //console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-          d3.select(this).classed("fixed", d.fixed = true);
+          
           d.fx = d.x;
           d.fy = d.y;
       }
       
       function dragged(d) {
+          d3.select(this).classed("fixed", d.fixed = true);
           d.fx = d3.event.x;
           d.fy = d3.event.y;
       }
       
       function dragended(d) {
           if (!d3.event.active) simulation.alphaTarget(0);
+          
           if (d.fixed == true) {
             d.fx = d3.event.x;
             d.fy = d3.event.y;
-          } else {
-            d.fx = null;
-            d.fy = null;
+            //displayInfos() ; ////////////////////
+            // pin tooltip here ??? ///////////////////
           }
+          //else {
+          //  d.fx = null;
+          //  d.fy = null;
+          //}
       }
       ;
       
@@ -369,7 +374,6 @@
     }
     
     
-    
     // insert nodes into legend svg div
     function makeLegend(coll, margin) {
       
@@ -401,11 +405,6 @@
       };
     
     
-    // MAKE THE SAME FOR TAGS THAN GROUPS ///////////////////////////////////////////////////   
-    //setLegend() ;
-    //makeLegend(legendColorsRefTag, 0);
-    //makeLegend(legendColorsGroups, interval*4);
-    
     function packLegend() {
 
       //console.log("packLegend /stats", allStats);
@@ -426,6 +425,7 @@
       
       setLegend(legendColors_groups.length, legendColors_RefGroupTag.length, 0 ); //legendColors_tags.length) ;
       
+      // actually make legends
       makeLegend(legendColors_RefGroupTag, 0);
       makeLegend(legendColors_groups, interval*4);
       //makeLegend(legendColors_tags, interval*4);
@@ -562,14 +562,19 @@
       var n_hidden = nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1
                                             || rulesToHide.indexOf(d.group)  != -1 ///// here group too for references !!!! ////////
                                             //|| rulesToHide.indexOf(d.tag) != -1
-                                            ///// must iterate through d.tag ARRAY ???
-                                            //|| function (d, i) { ////////////////////
-                                            //    var bool = false ;
-                                            //    for (var i = 0 ; i< d.tag.length ; i++)
-                                            //        { if (rulesToHide.indexOf(d.tag[i]) != -1)
-                                            //          { bool = true }
-                                            //        };
-                                            //    return bool ;
+                                            /// must iterate through d.tag ARRAY ???
+                                            //|| function (d) { ////////////////////////////////////////////////////////
+                                            //      var bool = false ;
+                                            //      if (d.tag.length >= 2) {
+                                            //        for (var j = 0 ; j< d.tag.length ; j++)
+                                            //            { if (rulesToHide.indexOf(d.tag[j]) != -1)
+                                            //              { bool = true }
+                                            //            };
+                                            //        //return bool ;
+                                            //      } else {
+                                            //        bool = rulesToHide.indexOf(d.tag) != -1
+                                            //      }
+                                            //      return bool
                                             //    }
                                             ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
       //console.log(n_hidden);
@@ -653,6 +658,7 @@
       
       // create circles for nodes
       node.enter()
+          //.classed("fixed", function(d) { return d.fixed = false } )
           .append("circle")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
           .style("fill", function (d) { return d.{{glob.ns.color}} ; })
@@ -887,21 +893,36 @@
     // sticky force http://bl.ocks.org/mbostock/3750558
     function pinNode(d) {
       
-      console.log("pinning / d :", d);
-      //console.log("pinning / d.fixed :", d.fixed);
+      //console.log("pinning / d :", d);
+      console.log("pinning / d.fixed :", d.fixed);
       
-      if (d.fixed == true) {
-        d.fixed = false; 
-        d.fx = null ;
-        d.fy = null ;
-        
-      } else {
-        //d.classed("fixed", d.fixed = true);
-        d.fixed == true; 
-        d.fx = d3.event.x;
-        d.fy = d3.event.x;
+      //if (!d3.event.active) simulation.alphaTarget(0).restart();
+      
+      //simulation.stop();
+      //d3.select(this).classed("fixed", d.fixed = true);
+      
+      console.log("pinNode / d3.select(this)", d3.select(this));
+      
+      if (d.fixed == undefined ) {
+        //console.log("pinning / d.fixed :", d.fixed);
+          d3.select(this).classed("fixed", d.fixed = true);
+          d.fx = d.x ;
+          d.fy = d.y ;
+        }
+      
+      else if (d.fixed == false ) {
+        d.fixed = true; 
+        d.fx = d.x ;
+        d.fy = d.y ;  
       }
       
+      else {
+        d.fixed = false; 
+        d.fx = null;
+        d.fy = null;
+      }
+      
+      //simulation.alphaTarget(0.3).restart();
     }
     
     
@@ -937,17 +958,7 @@
       //n_ = d3.select(this).classed("fixed", d.fixed = true);
       //console.log("node DATAS_ :", n_);
       
-      // call function to pin nodes
-      
-      //simulation.stop();
-      pinNode(n);
-      //simulation.restart();
-      
       // display  collapsibleInfosCol
-      //divInfos = d3.select('.collapsibleInfosCol');
-      //divInfos.transition()		
-      //  .duration(200)		
-      //  .style("opacity", 1.0);
       $('#collapsibleInfosCol').collapse('show');
       $('#collapsibleInfos').collapse('show');
         
@@ -967,6 +978,10 @@
       
       d3.select('#nTags').text(n.tag); // need to be blank if none // + function to tags to create //
 
+      // call function to pin nodes
+      pinNode(n);
+
+      
     }
   
 
