@@ -120,7 +120,7 @@
       function dragstarted(d) {
           //console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-          
+          //d3.select(this).classed("fixed", d.fixed = null);
           d.fx = d.x;
           d.fy = d.y;
       }
@@ -559,8 +559,27 @@
       nodes.style("opacity", "1" );
       
       
-      var n_hidden = nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) != -1
-                                            || rulesToHide.indexOf(d.group)  != -1 ///// here group too for references !!!! ////////
+      var n_hidden = nodes.filter(function (d, i) {
+                                            
+                                            bool = false;
+                                            
+                                            for (var j = 0 ; j< d.tag.length ; j++)
+                                              { if (rulesToHide.indexOf(d.tag[j]) != -1 )
+                                                { bool = true }
+                                            }
+                                            ;
+                                            
+                                            for (var j = 0 ; j< d.group.length ; j++)
+                                              { if (rulesToHide.indexOf(d.group[j]) != -1 )
+                                                { bool = true }
+                                            }
+                                            ;
+                                            
+                                            if (rulesToHide.indexOf(d.category) != -1 ) {
+                                              bool = true
+                                            }
+                                            //|| rulesToHide.indexOf(d.group)  != -1 ///// here group too for references !!!! ////////
+                                            
                                             //|| rulesToHide.indexOf(d.tag) != -1
                                             /// must iterate through d.tag ARRAY ???
                                             //|| function (d) { ////////////////////////////////////////////////////////
@@ -576,6 +595,8 @@
                                             //      }
                                             //      return bool
                                             //    }
+                                            return bool;
+                                            
                                             ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
       //console.log(n_hidden);
       
@@ -658,13 +679,12 @@
       
       // create circles for nodes
       node.enter()
-          //.classed("fixed", function(d) { return d.fixed = false } )
+          //.append("g")
           .append("circle")
+          .attr("class"   , "node")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
           .style("fill", function (d) { return d.{{glob.ns.color}} ; })
-          
           .attr("stroke-width"    , dft_circle_stroke_w )
-          .attr("class"   , "node")
           //.attr("fixed"   , "false")
           //.attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
           //.attr("id"      , function(d) { return ( d.{{glob.ns.id}}       ) })
@@ -673,6 +693,11 @@
           //.attr("url"     , function(d) { return ( d.{{glob.ns.url}}      ) })
           //.attr("type"    , function(d) { return ( d.{{glob.ns.type}}     ) })
           //.attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) })
+          
+          //.append("text")
+          //.attr("dx", 10)
+          //.attr("dy", ".35em")
+          //.text(function(d) { return d.label })
           
           
           // normal drag function
@@ -903,14 +928,14 @@
       
       console.log("pinNode / d3.select(this)", d3.select(this));
       
-      if (d.fixed == undefined ) {
+      if (d.fixed == undefined  ) {
         //console.log("pinning / d.fixed :", d.fixed);
           d3.select(this).classed("fixed", d.fixed = true);
           d.fx = d.x ;
           d.fy = d.y ;
         }
       
-      else if (d.fixed == false ) {
+      else if (d.fixed == false | d.fixed == null ) {
         d.fixed = true; 
         d.fx = d.x ;
         d.fy = d.y ;  
@@ -978,6 +1003,8 @@
       
       d3.select('#nTags').text(n.tag); // need to be blank if none // + function to tags to create //
 
+      
+      
       // call function to pin nodes
       pinNode(n);
 
