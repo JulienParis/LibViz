@@ -32,6 +32,7 @@ node_str_dict = {
             'id'            : 'ID',
             'reference'     : 'reference',
             'label'         : 'label',
+            'authors'       : 'authors',
             'note'          : 'note',
             'abstractNote'  : 'abstractNote',
             'url'           : 'url',

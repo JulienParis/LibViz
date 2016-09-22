@@ -86,17 +86,17 @@
                 <button type="button" 
                     id="radial_refs"
                     name = "reference"
-                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    class="btn btn-default btn-sm radialFilter btn-filter small"
                     onclick="moveItToRadial(this.name)"
                     > 	
-                    references.
+                    references
                 </button>
                 
                  <!-- radial groups -->
                 <button type="button"  
-                    id="radial_groups"
+                    id="radial_groups" 
                     name = "group"
-                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    class="btn btn-default btn-sm radialFilter btn-filter small"
                     onclick="moveItToRadial(this.name)"
                     > 	
                     groups
@@ -106,11 +106,17 @@
                 <button type="button" 
                     id="radial_tags"
                     name = "tag"
-                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    class="btn btn-default btn-sm radialFilter btn-filter small"
                     onclick="moveItToRadial(this.name)"
                     > 	
                     tags 
                 </button>
+                
+                
+                
+                
+                
+                
                 
                 <!-- RELEASE all nodes -->
                 <button type="button"
@@ -324,10 +330,12 @@
             </p>
             
             <p  class="infoN list-group-item collapse" >
-              <a class="nohref collapse" id="nAbstract"></a>
+              <a class="nohref collapse in small" id="nAbstract"></a>
             </p>
               
-            <p class="infoN list-group-item">
+            <p class="infoN list-group-item small">
+              authors &nbsp;
+              <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nAuthors"></a><br>
               category
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nCategory"></a><br>
               group  &nbsp;&nbsp;&nbsp;&nbsp;
@@ -336,12 +344,12 @@
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nType"></a>
             </p>
             
-            <p class="infoN list-group-item">tags &nbsp;&nbsp;
+            <p class="infoN list-group-item small">tags &nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nTags"></a>
             </p> <!--still not displaying tags correctly-->
             
-            <p class="infoN list-group-item"></p>
-            <p class="infoN list-group-item">source
+            <p class="infoN list-group-item small"></p>
+            <p class="infoN list-group-item small">source
               <span class="glyphicon glyphicon-menu-right"></span> <a id="nUrl"></a>
             </p>
             

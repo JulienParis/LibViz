@@ -112,6 +112,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             refIdsList.append(id_)
             
             title_    = ref[u'data'][u'title'] ### == label
+            authors_  = ref[u'data'][u'creators'] ### == authors
             try :
                 note_ = ref[u'data'][u'note']
             except :
@@ -180,6 +181,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             ref_dict = {
                          ns['id']           : id_.encode('UTF-8') ,
                          ns['label']        : title_,
+                         ns['authors']      : authors_,
                          ns['note']         : note_,
                          ns['abstractNote'] : abstract_.encode('UTF-8'),
                          ns['url']          : url_.encode('UTF-8') ,
