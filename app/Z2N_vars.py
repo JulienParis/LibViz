@@ -105,44 +105,44 @@ collections = {
     
     ,
     
-    'aliens_in_green' : {
-        
-        'API'           : 'Zotero',
-        'dataSet_name'  : 'ALIENS IN GREEN',
-        'dataSet_infos' : {
-                            'presentation' : 'Presentation ...',
-                            'authors'      : 'Authors...',
-                            'methodology'  : 'Methodology...',
-                            'credits'      : 'Credits / link to Zotero group...',
-                        },
-        'dataSet_key'   : '506887', ### aka group key
-        'url_ROOT'      : create_API_URL('506887'),
-        'url_WEB'       : create_WEB_URL('506887'),
-        'urlsDict'      : {
-                            'N8IKC3JJ'  : {'name' : 'antagonistic organisations'  , 'len' : 0, 'hex' : '#b8d39a'},
-                            'VMXEDTC2'  : {'name' : 'controversial organisations' , 'len' : 0, 'hex' : '#61835a'},
-                            '4VTS6RH6'  : {'name' : 'effects'                     , 'len' : 0, 'hex' : '#67d863'},
-                            'W64DR56S'  : {'name' : 'scandals'                    , 'len' : 0, 'hex' : '#c5ce6c'},
-                            'DRTKSWNF'  : {'name' : 'scientific articles'         , 'len' : 0, 'hex' : '#96d6a3'},  
-                            '7VQU2DSV'  : {'name' : 'substances'                  , 'len' : 0, 'hex' : '#608b32'}  
-                        },
-        'nodesColorsDict' : {
-                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
-                node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
-                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
-                        },
-        'edgesDashDict' : {
-                'ref-ref'  : '5',
-                'ref-tag'  : '4 4',
-                'ref-group': '3 3'
-                        },
-        'switch_color'  : 'hex',
-        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
-        'supertags'     : []
-    
-        }
-
-    ,
+    #'aliens_in_green' : {
+    #    
+    #    'API'           : 'Zotero',
+    #    'dataSet_name'  : 'ALIENS IN GREEN',
+    #    'dataSet_infos' : {
+    #                        'presentation' : 'Presentation ...',
+    #                        'authors'      : 'Authors...',
+    #                        'methodology'  : 'Methodology...',
+    #                        'credits'      : 'Credits / link to Zotero group...',
+    #                    },
+    #    'dataSet_key'   : '506887', ### aka group key
+    #    'url_ROOT'      : create_API_URL('506887'),
+    #    'url_WEB'       : create_WEB_URL('506887'),
+    #    'urlsDict'      : {
+    #                        'N8IKC3JJ'  : {'name' : 'antagonistic organisations'  , 'len' : 0, 'hex' : '#b8d39a'},
+    #                        'VMXEDTC2'  : {'name' : 'controversial organisations' , 'len' : 0, 'hex' : '#61835a'},
+    #                        '4VTS6RH6'  : {'name' : 'effects'                     , 'len' : 0, 'hex' : '#67d863'},
+    #                        'W64DR56S'  : {'name' : 'scandals'                    , 'len' : 0, 'hex' : '#c5ce6c'},
+    #                        'DRTKSWNF'  : {'name' : 'scientific articles'         , 'len' : 0, 'hex' : '#96d6a3'},  
+    #                        '7VQU2DSV'  : {'name' : 'substances'                  , 'len' : 0, 'hex' : '#608b32'}  
+    #                    },
+    #    'nodesColorsDict' : {
+    #            node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
+    #            node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+    #            node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+    #                    },
+    #    'edgesDashDict' : {
+    #            'ref-ref'  : '5',
+    #            'ref-tag'  : '4 4',
+    #            'ref-group': '3 3'
+    #                    },
+    #    'switch_color'  : 'hex',
+    #    'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+    #    'supertags'     : []
+    #
+    #    }
+    #
+    #,
     
     'substances' : {
         
@@ -166,7 +166,7 @@ collections = {
                 node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#000000' }
                         },
         'edgesDashDict' : {
-                'ref-ref'  : '1',
+                'ref-ref'  : '1 50',
                 'ref-tag'  : '2 1 2',
                 'ref-group': '3 3'
                         },

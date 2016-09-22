@@ -228,21 +228,21 @@
               
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="reference"
                       onclick="hideNodes(this.id)">
                 references
               </button>
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="group"
                       onclick="hideNodes(this.id)">
                 groups
               </button>
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="tag"
                       onclick="hideNodes(this.id)">
                  tags
@@ -250,7 +250,7 @@
               
             </div>
             
-            <div class="list-group">
+            <div class="list-group" id="hide_list_tags">
               <h5 class="small" style="color: white">
                 <em>show / hide {{ glob.ns.group }}(s) </em>
               </h5>
@@ -356,7 +356,7 @@
             </p>
             
             <p  class="infoN list-group-item collapse" >
-              <a class="nohref collapse in small" id="nAbstract"></a>
+              <a class="nohref collapse small" id="nAbstract"></a>
             </p>
               
             <p class="infoN list-group-item small">

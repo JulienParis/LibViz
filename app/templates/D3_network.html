@@ -40,10 +40,10 @@
       
       
     // default variable
-    var dft_circle_stroke_w   = 1.5;
+    var dft_circle_stroke_w   = 1.2;
     var fixed_circle_stroke_w = 4;
-    var dft_line_stroke_w     = 1;
-    
+    var dft_line_stroke_w     = 0.5;
+    var radiusFactor          = 1.2;
       
     // create svg
     var svg = d3.select("#containerLayout")
@@ -275,8 +275,6 @@
               .attr("onclick", "moveItToRadial(this.name)")
               .text(tag);
       } ;
-      
-      
     
     }
     
@@ -337,8 +335,11 @@
                 // create legend
                 packLegend();
                 
-                // add radial buttons for tags
+                // add radial buttons for each tag
                 addTagRadial(allStats.tags_names);
+                
+                // add hide buttons for each tag
+                addTagHide(allStats.tags_names)
                 
                 // push group & tag names & nodes labels into autocomplete array
                 for (var i = 0; i < allNodes.length - 1; i++) {
@@ -676,6 +677,36 @@
     }
 
 
+    // add radial function button to all tag names
+    function addTagHide(tagsNames) {
+      
+      //console.log("addTagRadial : tagsNames (list) :", tagsNames);
+      
+      div_radial_buttons = d3.select("#hide_list_tags") ;
+      
+      for (i=0; i<tagsNames.length ; i++) {
+        var tag = tagsNames[i] ;
+        //console.log("addTagRadial / tag name : ", tag)
+        var button = div_radial_buttons.append("button");
+        button.attr("class", "btn btn-default btn-sm hideFilter btn-filter small")
+              .attr("type", "button")
+              .attr("enabled", "0")
+              .attr("aria-pressed", "false")
+              .attr("id", tag)
+              .attr("onclick", "hideNodes(this.id)")
+              .text(tag);
+      } ;
+      
+      //<button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+      //                class="btn btn-default btn-sm hideFilter btn-filter"
+      //                id="reference"
+      //                onclick="hideNodes(this.id)">
+      //          references
+      //        </button>
+    
+    }
+
+
     function selectColor(node) {
       
       // default color from json 
@@ -797,7 +828,7 @@
           //.append("g")
           .append("circle")
           .attr("class"   , "node")
-          .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
+          .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*radiusFactor} )
           
           .style("fill", function (d) { return selectColor(d) ; })// return d.{{glob.ns.color}} ; })
           

@@ -11,13 +11,11 @@
 
     <!-- subtitle of the app only in homepage -->
 	<br>
-	<br>
 	<br><br>
     <div class="jumbotron col-sm-3 col-sm-offset-1">
 		
 		<h1 class="text-center" style="color: white"> {{ glob.titleApp }} </h1>
 		
-		<br>
 		
 		<hr></hr>
 		
@@ -69,7 +67,7 @@
 			{% for set in glob.collections_names %}
 				<!--<h6>-->
 				<a 	href="/{{ set[0] }}"
-					class="list-group-item col-xs"
+					class="list-group-item col-xs small"
 					>
 					&nbsp;&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
 					 {{ set[1] }}
