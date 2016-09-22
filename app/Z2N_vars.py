@@ -70,7 +70,7 @@ collections = {
     '1camp': {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : '[1.CAMP]',
+        'dataSet_name'  : '[1.camp]',
         'dataSet_infos' : {
                             'presentation' : 'Presentation ...',
                             'authors'      : 'Authors...',
@@ -147,7 +147,7 @@ collections = {
     'substances' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'ENDOCRINE DISRUPTION',
+        'dataSet_name'  : 'endocrine disruption',
         'dataSet_infos' : {
                             'presentation' : 'Presentation ...',
                             'authors'      : 'Authors...',
@@ -166,8 +166,8 @@ collections = {
                 node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#000000' }
                         },
         'edgesDashDict' : {
-                'ref-ref'  : '1 50',
-                'ref-tag'  : '2 1 2',
+                'ref-ref'  : '1',
+                'ref-tag'  : '1 3',
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
@@ -181,7 +181,7 @@ collections = {
     'mediasFR' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'MEDIAS OWNERS - FRANCE',
+        'dataSet_name'  : 'media owners in France',
         'dataSet_infos' : {
                             'presentation' : 'Based on a previous work published in "Le Monde Diplomatique" this dataset represents the structure of french medias ownership : from the few main wealthy families owning major industrial groups to almost every french press organisation ',
                             'authors'      : 'Datas gathered in Zotero by Julien Paris from layout by Jeremie Fabre & Marie Beyer',

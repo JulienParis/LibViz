@@ -56,7 +56,7 @@
 			}
 			
 			.navbar {
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: rgba(0, 0, 0, 0.5);
 				border: hidden;
 				margin-bottom: 5px;
 				z-index: 1;
@@ -90,6 +90,7 @@
 
 			}
 			
+			
 			body.index_bckgrd {
 				/*background: url( {{ url_for('static', filename='images/index_background.png') }} ) no-repeat center center fixed;*/
 				background-color: black;
@@ -106,6 +107,14 @@
 				color: white;    
 				opacity: .7;
 			}*/
+			
+			.btn-navbar {
+				margin-top: 16px;
+				margin-bottom: 5px;
+				height: 30px;
+				margin-left: 5px;
+				margin-right: 0px;
+			}
 			
 			
 			/*custom spinning wheel for refresh dataset*/
@@ -153,14 +162,6 @@
 			}
 			.tooltip.bottom-right .tooltip-arrow {
 			  border-bottom-color: grey;
-			}
-			
-			.btn-navbar {
-				margin-top: 16px;
-				margin-bottom: 5px;
-				height: 30px;
-				margin-left: 5px;
-				margin-right: 0px;
 			}
 			
 			
@@ -253,7 +254,7 @@
 		</div>
 		{% endif %}
 		
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			
 			<div class = "container-fluid">
 				
@@ -317,48 +318,56 @@
 								<!-- list of links to collections -->
 								<ul class="dropdown-menu" aria-labelledby="collLabels">
 								  
-									<li href="/" class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+									<li href="/" class="text-left" style="margin-top: 0; margin-bottom: 0">
+										<a href="/" style="color: black">
 											<h5 >
-												<a href="/" style="color: black">
-													<span class="glyphicon glyphicon-home"> </span>
-													<strong>HOME</strong>
-												</a>
+												<span class="glyphicon glyphicon-home"> </span>
+												&nbsp;<strong>HOME</strong>
 											</h5>
-									</li>
-									
-									<hr>
-									
-									<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
-										<h5 style="color: black">
-											<span class="glyphicon glyphicon-th-list"> </span>
-											<strong>DATASETS</strong>
-										</h5>
-									</li>
-									
-									<hr>
-									
-									<!-- links according to the length of 'collections_names' -->
-									{% for coll in glob.collections_names %}
-									<li>
-										<a href="/{{ coll[0] }}">
-											<span class="glyphicon glyphicon-th-list"> </span> 
-											{{ coll[1] }}
 										</a>
-										<hr>
 									</li>
-									{% endfor %}
 									
+									<!--<hr>-->
 									
-									<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+									<li class="text-left" style="margin-top: 3px; margin-bottom: -3px">
 										<a 	role="button"
 											class="btn btn-md btn-link"
 											data-toggle="modal"
 											data-target="#modalHowTo"
 											style="color: black"  >
-											<span class="glyphicon glyphicon-wrench"> </span>
-											<strong>HOW TO USE {{ glob.titleApp }}</strong>
+											<h5 class="text-left">
+												<span class="glyphicon glyphicon-wrench"> </span>
+												&nbsp;<strong>TUTORIAL</strong>
+											</h5>
 										</a>
 									</li>
+									
+									<!--<hr>-->
+										
+									<li class="text-left" style="margin-top: 3px; margin-bottom: -3px">
+										<a>
+											<h5 style="color: black">
+												<span class="glyphicon glyphicon-th-list"> </span>
+												&nbsp;<strong>DATASETS</strong><span class="caret"> </span>
+											</h5>
+										</a>
+									</li>
+									
+									<!--<hr>-->
+									
+									<!-- links according to the length of 'collections_names' -->
+									{% for coll in glob.collections_names %}
+									<li>
+										<a href="/{{ coll[0] }}">
+											<span class="glyphicon glyphicon-minus"> </span> 
+											{{ coll[1] }}
+										</a>
+										
+									</li>
+									{% endfor %}
+									
+									
+									
 									<br>
 										
 								</ul>
@@ -381,7 +390,7 @@
 								data-target="#collapsibleFilters"
 								aria-expanded="false"
 								aria-controls="collapsibleFilters"
-								style=" margin-top: -5px;
+								style=" margin-top: -4px;
 										margin-bottom: 19px;
 										height: 30px;
 										margin-right: 0px"

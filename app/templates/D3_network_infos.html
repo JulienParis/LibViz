@@ -5,8 +5,7 @@
   {% block D3_infos %}
   
       <!-- legend + filter column -->
-      <div  class="col-sm-3"
-            >
+      <div  class="col-sm-3 padded" >
         
         <br>
         
@@ -32,7 +31,7 @@
                 data-placement="top"
                 title="show/hide legend"
                 >
-              LEGEND <span class="caret" ></span>
+              legend <span class="caret" ></span>
             </h4>
             
           </a>
@@ -68,7 +67,7 @@
                 data-placement="top"
                 title="show/hide radial layouts"
                 >
-              RADIAL FIXING <span class="caret" ></span>
+              radial fixing <span class="caret" ></span>
             </h4>
             
           </a>
@@ -177,7 +176,7 @@
                 data-placement="top"
                 title="show/hide filters"
                 >
-              FILTERS <span class="caret" ></span>
+              filters <span class="caret" ></span>
             </h4>
             
           </a>
@@ -250,24 +249,50 @@
               
             </div>
             
-            <div class="list-group" id="hide_list_tags">
-              <h5 class="small" style="color: white">
-                <em>show / hide {{ glob.ns.group }}(s) </em>
+            
+            <a  role="button"
+                id="collapserHideTags"
+                data-toggle="collapse"
+                data-target="#collapsibleHideTags"
+                aria-expanded="true"
+                aria-controls="collapsibleHideTags">
+              
+              <h5 data-toggle="tooltip"
+                  data-placement="top"
+                  style="color:white"
+                  title="show/hide radial layouts"
+                  class="small"
+                  >
+                <em>more hiding choices </em><span class="caret" ></span>
               </h5>
               
-              {% for gr in groups %}
+            </a>
+            
+            <!-- collapsible radial only -->
+            <div  class="collapse in"
+                  id="collapsibleHideTags"
+                  style="; margin-top: 20px"
+                  >
+        
+              <div class="list-group" id="hide_list_tags">
+                <!--<h5 class="small" style="color: white">
+                  <em>show / hide {{ glob.ns.group }}(s) </em>
+                </h5>-->
+                
+                {% for gr in groups %}
+                
+                  <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                           class="btn btn-default btn-xs hideFilter btn-filter"
+                           id="{{ gr }}"
+                           onclick="hideNodes(this.id)">
+                     {{ gr }}
+                   </button>
+                
+                {% endfor %}
+                
+              </div>
               
-                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                         class="btn btn-default btn-xs hideFilter btn-filter"
-                         id="{{ gr }}"
-                         onclick="hideNodes(this.id)">
-                   {{ gr }}
-                 </button>
-              
-              {% endfor %}
-              
-            </div>
-              
+            </div> <!-- end collapsible -->
             
             {% if selection == "1camp" %}
             
@@ -298,7 +323,7 @@
    
    
     <!-- NODE INFOS on different column -->  
-    <div  class="col-sm-3 col-sm-offset-6"
+    <div  class="col-sm-3 col-sm-offset-6 padded"
           id = "collapserInfosCol" 
           data-toggle=""
           data-target="#collapsibleInfosCol"
@@ -326,7 +351,7 @@
                 data-placement="top"
                 title="show/hide node infos"
             >
-              <span class="caret"></span> SELECTED NODE 
+              <span class="caret"></span> selected node 
             </h4>
             
           </a>
@@ -351,8 +376,9 @@
                 aria-controls="nAbstract"
                 >
 
-                <a class="nohref lead" id="nLabel"></a>
-                <br><span class="caret" ></span> abstract <span class="caret" ></span>
+                <a class="nohref" id="nLabel"></a>
+                <br>
+                <a class="small"><span class="caret" ></span> abstract <span class="caret" ></span></a>
             </p>
             
             <p  class="infoN list-group-item collapse" >
