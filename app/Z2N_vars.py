@@ -98,6 +98,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
+        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
         'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
         
         }
@@ -136,7 +137,8 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
+        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+        'supertags'     : []
     
         }
 
@@ -169,7 +171,8 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
+        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+        'supertags'     : []
     
         }
         
@@ -204,7 +207,8 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
+        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+        'supertags'     : []
     
         }
         

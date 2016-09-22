@@ -244,14 +244,13 @@
       var nodes    = d3.selectAll(".node");   
       var selected = nodes.filter(function (d, i) {
         
-        ///////////////////////////////////////////////////////////////////////
         //return d.group == value  ||  d.tag == value || d.category == value ;    ;
         bool = false;
         for  (j = 0; j<d.tag.length; j++)
           { if (d.tag[j]==value) { bool = true } };
         for  (k = 0; k<d.group.length; k++)
           { if (d.group[k]==value) { bool = true } };
-        if (d.category == value) { bool = true  };
+        if (d.category == value | d.group == value ) { bool = true  };
         return bool
         } );
       
@@ -265,17 +264,17 @@
       
       console.log("addTagRadial : tagsNames (list) :", tagsNames);
       
-      div_radial_buttons = d3.select("#radial_list") ;
+      div_radial_buttons = d3.select("#radial_list_tags") ;
       
       for (i=0; i<tagsNames.length ; i++) {
         var tag = tagsNames[i] ;
-        console.log("addTagRadial / tag name : ", tag)
+        //console.log("addTagRadial / tag name : ", tag)
         var button = div_radial_buttons.append("button");
         button.attr("class", "btn btn-default btn-sm radialFilter btn-filter small")
               .attr("type", "button")
               .attr("name", tag)
               .attr("onclick", "moveItToRadial(this.name)")
-              .text(tag)
+              .text(tag);
       } ;
       
       
@@ -298,6 +297,8 @@
     var allEdges = [];
     var allNodes = [];
     var allStats = [];
+    
+    var colorsRange = [];
     
     var optArray = [];
 
@@ -324,6 +325,11 @@
                 d3.select('#stats_groups').text(allStats.groups_number);
                 d3.select('#stats_tags').text(allStats.tags_number);
                 d3.select('#stats_edges').text(allStats.edges_number);
+                
+                // create colors range for tags
+                colorsRange = d3.scaleOrdinal()
+                                .domain(allStats.tags_names)
+                                .range(["#FF0000","#009933"]);
                 
                 // create legend
                 packLegend();
@@ -408,7 +414,7 @@
     
     
     // insert nodes into legend svg div
-    function makeLegend(coll, margin) {
+    function makeLegend(coll, id, margin) {
       
       for (var i = 0; i <= coll.length - 1; i++) {
       var obj = coll[i]; 
@@ -430,7 +436,7 @@
           .attr("x", spaceX + legendDiam + margin  )
           .attr("y", tempSpaceY )
           .attr("dy", ".35em")
-          .text( obj.name );
+          .text( id + obj.name );
         
         tempSpaceY += spaceY ;
         };
@@ -443,25 +449,45 @@
       //console.log("packLegend /stats", allStats);
 
       // get ref & groups & tags colors from stats in graph
-      legendColors_groups = allStats.grpsColorsDict;
+      legendColors_Groups = allStats.grpsColorsDict;
       //console.log("packLegend /grpsColorsDict", allStats.grpsColorsDict);
       //legendColorsGroups =  legendGroups|tojson  ; // tojson un jinja
-      console.log("packLegend / legendColorsGroups :", legendColors_groups);
+      console.log("packLegend / legendColorsGroups :", legendColors_Groups);
       
       legendColors_RefGroupTag = allStats.dfltColorsDict;
       //console.log("packLegend /dfltColorsDict", allStats.dfltColorsDict);
       //legendColorsRefGroupTag =  legend|tojson  ; // tojson in jinja
       console.log("packLegend / legendColorsRefTag :", legendColors_RefGroupTag);
       
-      legendColors_tags = allStats.tags_names;
-      console.log("packLegend / legendColors_tags :", legendColors_tags);
       
-      setLegend(legendColors_groups.length, legendColors_RefGroupTag.length, 0 ); //legendColors_tags.length) ;
+      var legendColors_Refs = [] ; // [{"name" : "reference", "hex": "grey"}];
+      for (i=0; i<legendColors_RefGroupTag.length; i++) {
+        if (legendColors_RefGroupTag[i].name == "reference") {
+          legendColors_Refs.push(legendColors_RefGroupTag[i])
+        }
+      };
+      console.log("packLegend / legendColors_Refs :", legendColors_Refs);
+      
+      var legend_tags      = allStats.tags_names;
+      console.log("packLegend / legendColors_tags :", legend_tags);
+      
+      var legendColors_Tags = [];
+      
+      for (i=0; i<legend_tags.length ; i++){
+        var tag     = new Object() ;
+        var tName   = legend_tags[i];
+        tag["name"] = tName;
+        tag["hex"]  = colorsRange[i] ;
+        legendColors_Tags.push(tag)
+      }
+      
+      setLegend(legendColors_Groups.length, legendColors_Refs.length, legendColors_Tags.length ); //legendColors_tags.length) ;
       
       // actually make legends
-      makeLegend(legendColors_RefGroupTag, 0);
-      makeLegend(legendColors_groups, interval*4);
-      //makeLegend(legendColors_tags, interval*4);
+      //makeLegend(legendColors_RefGroupTag, 0);
+      makeLegend(legendColors_Refs, "",  interval*0)
+      makeLegend(legendColors_Groups, "group / ", interval*0);
+      makeLegend(legendColors_Tags, "tag / ", interval*0);
       
       // attribute function to nodes in legend 
       d3.select("#nodes_legend").selectAll("g")
@@ -1024,18 +1050,22 @@
       console.log("displayInfos / tags : ", n.tag);
       console.log("displayInfos / authors : ", n.authors);
       
-      authors = ""
-      for (i=0; i < d.authors.length ; i++){
-        var auth  = d.authors[i];
-        var fName = auth['firstName'];
-        var lName = auth['lastName'];
-        var fullName = fName + " " + lName + "; ";
-        authors += fullName;
-      }
+      authors = null;
+      if (d.author != undefined) {
+        for (i=0; i < d.authors.length ; i++){
+          var auth  = d.authors[i];
+          var fName = auth['firstName'];
+          var lName = auth['lastName'];
+          var fullName = fName + " " + lName + "; ";
+          authors += fullName;
+        }
+      };
       
       
-      d3.select('#nLabel').text(n.label); 
-      d3.select('#nAuthors').text(authors); 
+      d3.select('#nLabel').text(n.label);
+      /////////////////////////////////////////////////////////////
+      if (authors != null ) { d3.select('#nAuthors').text(authors); }
+      
       d3.select('#nAbstract').text(' " ' + n.abstractNote + ' " ');
       //console.log(n, n.abstractNote);
       d3.select('#nType').text(n.type); // need to be blank if none ////////

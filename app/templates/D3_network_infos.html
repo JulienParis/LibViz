@@ -113,11 +113,6 @@
                 </button>
                 
                 
-                
-                
-                
-                
-                
                 <!-- RELEASE all nodes -->
                 <button type="button"
                         data-toggle="tooltip"
@@ -130,8 +125,39 @@
                     <span class="glyphicon glyphicon-asterisk"></span>
                 </button>
                 
-                <br><br>
+                <!--<br><br>-->
+                
+                <a  role="button"
+                    id="collapserRadialTags"
+                    data-toggle="collapse"
+                    data-target="#collapsibleRadialTags"
+                    aria-expanded="true"
+                    aria-controls="collapsibleRadialTags">
                   
+                  <h5 data-toggle="tooltip"
+                      data-placement="top"
+                      style="color:white"
+                      title="show/hide radial layouts"
+                      class="small"
+                      >
+                    <em>more radial fixing </em><span class="caret" ></span>
+                  </h5>
+                  
+                </a>
+                
+                <!-- collapsible radial only -->
+                <div  class="collapse in"
+                      id="collapsibleRadialTags"
+                      style="; margin-top: 20px"
+                      >
+                
+                  <!-- RADIAL LAYOUT - TAGS button -->
+                  <div class="list-group" id="radial_list_tags">  
+                  
+                  </div>
+                </div> 
+                
+                 
             </div>
             
           </div>
@@ -167,7 +193,7 @@
             <!-- FILTERS BREAK LINKS -->
             <div class="list-group" id="break_list">  
               
-              <h5 style="color: white">
+              <h5 class="small" style="color: white">
                 <em>break links</em>
               </h5>
                 
@@ -195,7 +221,7 @@
             
             <!-- FILTERS SHOW / HIDE NODES -->
             <div class="list-group" id="hide_list">
-              <h5 style="color: white"
+              <h5 class="small" style="color: white"
                   >
                 <em>show / hide categories </em>
               </h5>
@@ -225,7 +251,7 @@
             </div>
             
             <div class="list-group">
-              <h5 style="color: white">
+              <h5 class="small" style="color: white">
                 <em>show / hide {{ glob.ns.group }}(s) </em>
               </h5>
               
@@ -246,7 +272,7 @@
             {% if selection == "1camp" %}
             
               <div class="list-group">
-                <h5 style="color: white">
+                <h5 class="small" style="color: white">
                   <em>show or hide super-{{ glob.ns.tags }}(s) </em>
                 </h5>
                 
@@ -334,6 +360,7 @@
             </p>
               
             <p class="infoN list-group-item small">
+              
               authors &nbsp;
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nAuthors"></a><br>
               category
@@ -342,6 +369,7 @@
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nGroup"></a><br>
               type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nType"></a>
+            
             </p>
             
             <p class="infoN list-group-item small">tags &nbsp;&nbsp;

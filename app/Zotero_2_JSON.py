@@ -192,8 +192,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                          ns['category']     : 'reference',
                          ns['supertag']     : False,
                          ns['weight']       : w_dft,
-                         ns['color']        : colorRef, ###############
-                         #ns['color']    : nodesColorsDict['reference'][switch_color], ###############
+                         #ns['color']        : colorRef, ###############
+                         ns['color']        : nodesColorsDict['reference'][switch_color], ###############
                          ns['dataset']      : dataSet_name,
                          ns['dataset_']     : selection
                          }
@@ -211,7 +211,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             id_       = 'group_'+ str(counter_groups)
             url_      = ''
             itemType_ = 'group name'
-        
+            colorGrp  = group['hex']
+            
             group_dict = {
                           ns['id']       : id_.encode('UTF-8') ,
                           ns['label']    : gr_,
@@ -222,7 +223,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                           ns['category'] : 'group',
                           ns['supertag'] : True,
                           ns['weight']   : w_dft*w_biggroup ,
-                          ns['color']    : nodesColorsDict['group'][switch_color]  #####################
+                          #ns['color']    : nodesColorsDict['group'][switch_color]  #####################
+                          ns['color']    : colorGrp  #####################
                          }
             
             nodesList.append(group_dict)
