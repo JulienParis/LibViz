@@ -7,7 +7,7 @@ from pprint import pprint
 #import os
 
 ### import global variables for Z2N
-from Z2N_vars import w_dft, w_bigtag, w_biggroup, items_API_Zotero
+from Z2N_vars import w_dft, w_bigtag, w_biggroup, items_API_Zotero #items_API_Zotero = '/items/top?start=0&limit=1000'
 from Z2N_vars import node_str_dict as ns
 from Z2N_vars import edge_str_dict as es
 
@@ -66,17 +66,44 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         ### load JSON from url / Zotero API
         data = [ ]
         #for url in urls :
+        
+        getZotItems_01    = '/items/top?start='
+        getZotItems_02    = '&limit='
+        getZotItems_start = 0
+        getZotItems_load  = 100
+        
+        def createURL_Zot (start) :
+                url = getZotItems_01 + str(getZotItems_start) + getZotItems_02 + str(getZotItems_load)
+                return url
+        
         for key, infos in urlsDict.items() :
-                url = url_ROOT + key + items_API_Zotero 
-                print " --- from url : %s / %s " %(key, infos['name'])
-                print " "*15, url
-                response = urllib2.urlopen(url)
-                data_    = json.load(response)
                 
-                print " "*15, 'len data_ : ', len(data_)
-                print 
-                infos['len'] = len(data_)
-                data.extend(data_)
+                finished = False
+                
+                while finished == False :
+                        
+                        lastPartUrl = createURL_Zot(getZotItems_start)
+                        url         = url_ROOT + key + lastPartUrl               #items_API_Zotero = '/items/top?start=0&limit=1000'
+                        
+                        print " --- from url : %s / %s " %(key, infos['name'])
+                        print " "*15, url
+                        
+                        response = urllib2.urlopen(url)
+                        data_    = json.load(response)
+                        
+                        if len(data_) == 0 :
+                                print " "*15, 'len data_ : ', len(data_)
+                                print
+                                finished = True
+                                getZotItems_start = 0
+                        
+                        else :      
+                                print " "*15, 'len data_ : ', len(data_)
+                                print 
+                                infos['len'] = len(data_)
+                                data.extend(data_)
+                                getZotItems_start += (getZotItems_load + 1)
+                                
         
         print                               
         print "-"*50
@@ -218,8 +245,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                           ns['label']    : gr_,
                           ns['url']      : url_.encode('UTF-8') ,
                           ns['type']     : itemType_.encode('UTF-8') ,
-                          ns['group']    : gr_.encode('UTF-8') ,
-                          ns['tags']     : '',
+                          ns['group']    : [gr_], #.encode('UTF-8') ,
+                          ns['tags']     : [gr_],
                           ns['category'] : 'group',
                           ns['supertag'] : True,
                           ns['weight']   : w_dft*w_biggroup ,
@@ -252,7 +279,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                          ns['url']      : url_.encode('UTF-8') ,
                          ns['type']     : itemType_,
                          ns['group']    : '' ,
-                         ns['tags']     : '',
+                         ns['tags']     : [tag],
                          ns['category'] : 'tag',
                          ns['supertag'] : is_supertag,
                          #ns['weight']   : wgt_['weight']*w_dft,

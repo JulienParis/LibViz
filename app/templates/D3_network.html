@@ -149,7 +149,6 @@
       
       
       
-      
     //var color = d3.scaleOrdinal(d3.schemeCategory20); // 
     
       
@@ -164,8 +163,8 @@
     
     // center svg canvas + variables 
     var centerX = width/2 ;
-    var centerY = height/2;
-    var radius  = 300 ; /// radius circle / HERE TO CHANGE : choose a different radius
+    var centerY = (height/2) + 45;
+    var radius  = 250 ; /// radius circle / HERE TO CHANGE : choose a different radius
 
     // compute radial location
     function radial(totalNodes, node, index) {
@@ -262,7 +261,7 @@
     // add radial function button to all tag names
     function addTagRadial(tagsNames) {
       
-      console.log("addTagRadial : tagsNames (list) :", tagsNames);
+      //console.log("addTagRadial : tagsNames (list) :", tagsNames);
       
       div_radial_buttons = d3.select("#radial_list_tags") ;
       
@@ -298,7 +297,8 @@
     var allNodes = [];
     var allStats = [];
     
-    var colorsRange = [];
+    var colorsRange = []; // for tags
+    var legendColors_Groups = null ;
     
     var optArray = [];
 
@@ -328,8 +328,11 @@
                 
                 // create colors range for tags
                 colorsRange = d3.scaleOrdinal()
-                                .domain(allStats.tags_names)
-                                .range(["#FF0000","#009933"]);
+                                //.domain(allStats.tags_names)
+                                //.range(["#FF0000","#009933"]);
+                                .range(d3.schemeCategory20);
+                console.log("d3.json / colorsRange : ", colorsRange(1));
+                
                 
                 // create legend
                 packLegend();
@@ -370,13 +373,14 @@
     
     /////////////////////////////////////////////////////////////
     // create legend in div #legend on the fly 
-    var spaceX     = 20 ;
-    var interval   = 5 ;
-    var legendR    = 8  ;
-    var legendS    = dft_circle_stroke_w  ; // circle stroke width
-    var legendDiam = (legendR*2) + legendS ;
-    var spaceY     = legendDiam + interval ;
-    var tempSpaceY = interval + legendR ;
+    var spaceX         = 20 ;
+    var interval       = 3 ;
+    var legendR        = 6  ;
+    var legendS        = dft_circle_stroke_w  ; // circle stroke width
+    var legendDiam     = (legendR*2) + legendS ;
+    var spaceY         = legendDiam + interval ;
+    var tempSpaceY     = interval + legendR ;
+    var legendFontSize = "11px";
     
     var legendHeight            = 0 ;
     var legendWidth             = 0 ;
@@ -433,6 +437,7 @@
           ; 
         lgd_.append("text")
           .attr("fill", "white")
+          .attr("font-size", legendFontSize)
           .attr("x", spaceX + legendDiam + margin  )
           .attr("y", tempSpaceY )
           .attr("dy", ".35em")
@@ -457,7 +462,7 @@
       legendColors_RefGroupTag = allStats.dfltColorsDict;
       //console.log("packLegend /dfltColorsDict", allStats.dfltColorsDict);
       //legendColorsRefGroupTag =  legend|tojson  ; // tojson in jinja
-      console.log("packLegend / legendColorsRefTag :", legendColors_RefGroupTag);
+      //console.log("packLegend / legendColorsRefTag :", legendColors_RefGroupTag);
       
       
       var legendColors_Refs = [] ; // [{"name" : "reference", "hex": "grey"}];
@@ -468,24 +473,26 @@
       };
       console.log("packLegend / legendColors_Refs :", legendColors_Refs);
       
-      var legend_tags      = allStats.tags_names;
-      console.log("packLegend / legendColors_tags :", legend_tags);
+      //var legend_tags      = null;
       
       var legendColors_Tags = [];
       
-      for (i=0; i<legend_tags.length ; i++){
+      for (i=0; i<allStats.tags_names.length ; i++){
         var tag     = new Object() ;
-        var tName   = legend_tags[i];
+        var tName   = allStats.tags_names[i];
         tag["name"] = tName;
-        tag["hex"]  = colorsRange[i] ;
+        tag["hex"]  = colorsRange(i) ;
+        console.log("packLegend / legendColors_Tags + tag: ", tag);
         legendColors_Tags.push(tag)
       }
+      console.log("packLegend / legendColors_Tags :", legendColors_Tags);
       
       setLegend(legendColors_Groups.length, legendColors_Refs.length, legendColors_Tags.length ); //legendColors_tags.length) ;
       
       // actually make legends
       //makeLegend(legendColors_RefGroupTag, 0);
-      makeLegend(legendColors_Refs, "",  interval*0)
+      
+      //makeLegend(legendColors_Refs, "",  interval*0)
       makeLegend(legendColors_Groups, "group / ", interval*0);
       makeLegend(legendColors_Tags, "tag / ", interval*0);
       
@@ -668,6 +675,55 @@
         
     }
 
+
+    function selectColor(node) {
+      
+      // default color from json 
+      var colorNode = node.color;
+      
+      // change color to d3 scale ordinal if tag or reference
+      if ( node.tag.length == 1) {
+        
+        tagSelected = node.tag[0];
+        
+        // find corresponding i in list of tags
+        tagIndex = allStats.tags_names.indexOf(tagSelected); 
+        
+        // retrieve corresponding color from colorsRange
+        colorNode = colorsRange(tagIndex) ;
+      
+      }
+      
+      else if ( node.tag.length != 1  &&  node.group.length == 1 ) {
+        
+        groupSelectec = node.group[0];
+        
+        // retrieve corresponding color from legendColors_Groups
+        for (i = 0; i< legendColors_Groups.length ; i++ ) {
+          var grp_ = legendColors_Groups[i];
+          if (grp_.name == groupSelectec ) {
+            colorNode = grp_.hex ;
+          }
+        }
+      }
+      
+      else if ( node.category == "group" ) {
+        
+        groupSelectec = node.group[0];
+        
+        // retrieve corresponding color from legendColors_Groups
+        for (i = 0; i< legendColors_Groups.length ; i++ ) {
+          var grp_ = legendColors_Groups[i];
+          if (grp_.name == groupSelectec ) {
+            colorNode = grp_.hex ;
+          }      
+        }
+      }
+      
+      return colorNode ;
+    } ;
+    
+    
     //////////////////////////////////////////////////////////////////////////////
     // main D3 function
     function render (nodes, links) {
@@ -742,7 +798,9 @@
           .append("circle")
           .attr("class"   , "node")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*1.5 } )
-          .style("fill", function (d) { return d.{{glob.ns.color}} ; })
+          
+          .style("fill", function (d) { return selectColor(d) ; })// return d.{{glob.ns.color}} ; })
+          
           .attr("stroke-width"    , dft_circle_stroke_w )
           //.attr("fixed"   , "false")
           //.attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
@@ -1103,6 +1161,11 @@
       downloadLink.click();
       document.body.removeChild(downloadLink);
       }
+
+    // click presetted buttons 
+    //$(document).ready(function () {
+    //
+    //}
 
   </script>
 

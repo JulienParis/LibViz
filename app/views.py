@@ -73,6 +73,7 @@ def data_rendering(selection):
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     #lineTypes      = [ k for k, g  in collection['edgesDashDict'].items() ]
     supertags      = collection['supertags']
+    presetsFilters = collection['presetsFilters']
     
     legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
     legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]
@@ -81,20 +82,21 @@ def data_rendering(selection):
     outfile_d3name = outfileDict['of_d3name']
     
     return render_template("D3_network.html",
-                           glob          = global_names,
-                           licenceCC     = licenceCC,
+                           glob           = global_names,
+                           licenceCC      = licenceCC,
                            #isGraph     = True,
-                           selection     = selection,
-                           ZoteroURL     = ZoteroURL,
-                           groups        = groups,
+                           selection      = selection,
+                           ZoteroURL      = ZoteroURL,
+                           groups         = groups,
                            #legend        = legend,
                            #legendGroups  = legendGroups,
                            #lines       = lineTypes,
-                           supertags     = supertags,
-                           dataSet_name  = collection['dataSet_name'],
-                           dataSet_url   = shortName,
-                           dataSet_infos = collection['dataSet_infos'],
-                           data_JSON     = outfile_d3name,
+                           presetsFilters = presetsFilters,
+                           supertags      = supertags,
+                           dataSet_name   = collection['dataSet_name'],
+                           dataSet_url    = shortName,
+                           dataSet_infos  = collection['dataSet_infos'],
+                           data_JSON      = outfile_d3name,
                            )
 
 
@@ -119,6 +121,7 @@ def refresh(selection):
     #selection      = coll_name[0]
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     supertags      = collection['supertags']
+    presetsFilters = collection['presetsFilters']
 
     legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
     legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]
@@ -137,18 +140,19 @@ def refresh(selection):
 
 
     return render_template("D3_network.html",
-                           glob          = global_names,
-                           licenceCC     = licenceCC,
+                           glob           = global_names,
+                           licenceCC      = licenceCC,
                            #isGraph     = True,
-                           selection     = selection,
-                           ZoteroURL     = ZoteroURL,
-                           groups        = groups,
+                           selection      = selection,
+                           ZoteroURL      = ZoteroURL,
+                           groups         = groups,
                            #legend        = legend,
                            #legendGroups  = legendGroups,
-                           supertags     = supertags,
-                           dataSet_name  = collection['dataSet_name'],
-                           dataSet_url   = shortName,
-                           dataSet_infos = collection['dataSet_infos'],
-                           data_JSON     = outfile_d3name,
+                           presetsFilters = presetsFilters,
+                           supertags      = supertags,
+                           dataSet_name   = collection['dataSet_name'],
+                           dataSet_url    = shortName,
+                           dataSet_infos  = collection['dataSet_infos'],
+                           data_JSON      = outfile_d3name,
                            )
 

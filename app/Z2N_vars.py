@@ -163,7 +163,7 @@ collections = {
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
                 node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
-                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#000000' }
                         },
         'edgesDashDict' : {
                 'ref-ref'  : '1',
