@@ -16,7 +16,8 @@
   
   <!-- main d3.js function for {{ glob.titleApp }}  -->
   <script>
-      
+    
+    
     // find width and height of parent html elements
     var contWidth  = document.getElementById('body').clientWidth;
     //var contWidth = document.documentElement.clientWidth;
@@ -25,7 +26,7 @@
     //var contHeight = document.getElementById('body').clientHeight;
     
     
-    // ZOOM function /////////////////////////////////////////////
+    //// ZOOMING / PANNING function 1
     var zoom = d3.zoom()
       .scaleExtent([1/5, 4])
       .on("zoom", zoomed)
@@ -69,7 +70,7 @@
       //.append('g')
       ;
 
-    ////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////
     // fake rectangle before links_g and nodes_g (so under them) to adapt the panning to real mouse events
     var zoomCanvas = svg.append("rect")
         .attr("width", width)
@@ -94,7 +95,7 @@
 
 
     ////////////////////////////////////////////////////
-    //// zooming / panning function
+    //// ZOOMING / PANNING CALLING function 2
     // from : http://bl.ocks.org/mbostock/4e3925cdc804db257a86fdef3a032a45
     function zoomed() {
       links_g.attr("transform", d3.event.transform );
@@ -108,9 +109,7 @@
           .duration(750)
           .call(zoom.transform, d3.zoomIdentity);
     }
-  
-
-
+    
     // drag/pin function /////////////////////////////////////////
     var node_normal_drag = d3.drag()
       .on("start", dragstarted)
@@ -146,19 +145,12 @@
           //  d.fy = null;
           //}
       }
-      ;
-      
-      
-      
-    //var color = d3.scaleOrdinal(d3.schemeCategory20); // 
-    
-      
+      ;    
     
     
     
-    
-    ///////////////////////////////////////////////////
-    // Radial functions : put selected nodes around a circle
+    ////////////////////////////////////////////////////////////
+    // RADIAL FUNCTIONS : put selected nodes around a circle
     // adapted from : http://bl.ocks.org/vlandham/5087480 
     D2R = Math.PI / 180 ; // degrees to radians
     
@@ -292,6 +284,7 @@
         ;
     
     //////////////////////////////////////////////
+    // read JSON graph 
     
     var allEdges = [];
     var allNodes = [];
@@ -301,8 +294,6 @@
     var legendColors_Groups = null ;
     
     var optArray = [];
-
-
 
     //initialize graph layout : fill allNodes and allEdges
     d3.json("{{ data_JSON }}",
@@ -369,13 +360,14 @@
               }
       )
     ;
-    
-    
     //console.log("after d3.json", allStats);
+   
+   
     
+    /////////////////////////////////////////////////
+    // LEGEND
+    // create legend in div #legend on the fly
     
-    /////////////////////////////////////////////////////////////
-    // create legend in div #legend on the fly 
     var spaceX         = 20 ;
     var interval       = 3 ;
     var legendR        = 6  ;
@@ -393,12 +385,8 @@
     //var legendColorsRefGroupTag = null;
     //console.log("graph.stats.groups_names : ", allStats.groups_names); ////////////////
     //console.log("graph.stats.tags_names   : ", allStats.tags_names); /////////////////////////
-   
-   
-
     
-    /////////////////////////////////////////////////
-    
+    // set the svg parameters in column filters 
     function setLegend(len_ref_group_tag, len_groups, len_tags) {
       
       legendHeight = 5 + (len_ref_group_tag*spaceY) + (len_groups*spaceY) + (len_tags*spaceY) + 5
@@ -418,7 +406,6 @@
       // add circles for nodes_legend
 
     }
-    
     
     // insert nodes into legend svg div
     function makeLegend(coll, id, margin) {
@@ -451,7 +438,7 @@
         
       };
     
-    
+    // create whole legend
     function packLegend() {
 
       //console.log("packLegend /stats", allStats);
@@ -459,8 +446,8 @@
       // get ref & groups & tags colors from stats in graph
       legendColors_Groups = allStats.grpsColorsDict;
       //console.log("packLegend /grpsColorsDict", allStats.grpsColorsDict);
-      //legendColorsGroups =  legendGroups|tojson  ; // tojson un jinja
-      console.log("packLegend / legendColorsGroups :", legendColors_Groups);
+      //legendColorsGroups =  legendGroups|tojson  ; // tojson in jinja
+      //console.log("packLegend / legendColorsGroups :", legendColors_Groups);
       
       legendColors_RefGroupTag = allStats.dfltColorsDict;
       //console.log("packLegend /dfltColorsDict", allStats.dfltColorsDict);
@@ -474,7 +461,7 @@
           legendColors_Refs.push(legendColors_RefGroupTag[i])
         }
       };
-      console.log("packLegend / legendColors_Refs :", legendColors_Refs);
+      //console.log("packLegend / legendColors_Refs :", legendColors_Refs);
       
       //var legend_tags      = null;
       
@@ -485,10 +472,10 @@
         var tName   = allStats.tags_names[i];
         tag["name"] = tName;
         tag["hex"]  = colorsRange(i) ;
-        console.log("packLegend / legendColors_Tags + tag: ", tag);
+        //console.log("packLegend / legendColors_Tags + tag: ", tag);
         legendColors_Tags.push(tag)
       }
-      console.log("packLegend / legendColors_Tags :", legendColors_Tags);
+      //console.log("packLegend / legendColors_Tags :", legendColors_Tags);
       
       setLegend(legendColors_Groups.length, 0, legendColors_Tags.length ); //legendColors_Refs.length  legendColors_tags.length) ;
       
@@ -505,13 +492,10 @@
         .on("click", getLegendValue ) 
       ;
     }
-
-
     
-    //console.log("optArray : ", optArray); // OK 
+    
     
     /////////////////////////////////////////////////////////////////////////////////
-
     /// BREAK LINKS & UPDATE function
     // adapted from  :  http://bl.ocks.org/csesivakumar/31e23b875f260622f8f7da3ae380958c
     function Update_Node(buttonId){
@@ -962,14 +946,16 @@
       
     }
 
- 
+    
+    var presets = presetsFilters|tojson;
+    
     //launch autocomplete once page loaded
     $(document).ready(function () {
         $("#search").autocomplete({ source: optArray });
         
-        //console.log("doc ready /stats", allStats); // empty here
-        // create legend
+        // load presetsFilters
         
+        console.log("document ready : ", presets )
         
       });
     

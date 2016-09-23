@@ -74,6 +74,7 @@ def data_rendering(selection):
     #lineTypes      = [ k for k, g  in collection['edgesDashDict'].items() ]
     supertags      = collection['supertags']
     presetsFilters = collection['presetsFilters']
+    print "presetsFilters", presetsFilters
     
     legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
     legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]

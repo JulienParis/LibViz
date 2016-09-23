@@ -171,7 +171,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+        'presetsFilters': {"radial": ["SUBSTANCES"], "hide" : ["groups", "tags"] , "breakLinks" : ["ref-group", "ref-tag"] },
         'supertags'     : []
     
         }
