@@ -35,7 +35,7 @@
             </h4>
             
           </a>
-        
+          
           
           <!-- collapsible legend only -->
           <div  class="list-group collapse in"
@@ -52,6 +52,59 @@
           </div> <!-- end collapsible legend only -->
           
           
+          
+          <!-- FILTERS BREAKING EDGES -->
+          
+          <!-- collapser filters only -->
+          <a  role="button"
+              id="collapserBreakLinks"
+              data-toggle="collapse"
+              data-target="#collapsibleBreakLinks"
+              aria-expanded="true"
+              aria-controls="collapsibleBreakLinks">
+            
+            <h4 data-toggle="tooltip"
+                data-placement="top"
+                title="breaks links between nodes"
+                >
+              break links <span class="caret" ></span>
+            </h4>
+            
+          </a>
+          
+          <!-- collapsible filters only -->
+          <div  class="collapse in"
+                id="collapsibleBreakLinks"
+                style="; margin-top: 20px"
+                >
+            
+            <!-- FILTERS BREAK LINKS -->
+            <div class="list-group" id="break_list">  
+              
+              <!--<h5 class="small" style="color: white">
+                <em>break links</em>
+              </h5>-->
+                
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        id="ref-tag"
+                        onclick="Update_Node(this.id)">
+                  ref-tag
+                </button>
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        id="ref-group"
+                        onclick="Update_Node(this.id)">
+                  ref-group
+                </button>              
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        id="ref-ref"
+                        onclick="Update_Node(this.id)">
+                  ref-ref
+                </button>              
+            </div>
+          </div>
           
           <!-- RADIAL LAYOUTS -->
           
@@ -139,7 +192,7 @@
                       title="show/hide radial layouts"
                       class="small"
                       >
-                    <em>more radial fixing </em><span class="caret" ></span>
+                    <em>&nbsp;... more radial fixing </em><span class="caret" ></span>
                   </h5>
                   
                 </a>
@@ -176,7 +229,7 @@
                 data-placement="top"
                 title="show/hide filters"
                 >
-              filters <span class="caret" ></span>
+              show / hide nodes <span class="caret" ></span>
             </h4>
             
           </a>
@@ -190,7 +243,7 @@
             
             
             <!-- FILTERS BREAK LINKS -->
-            <div class="list-group" id="break_list">  
+            <!--<div class="list-group" id="break_list">  
               
               <h5 class="small" style="color: white">
                 <em>break links</em>
@@ -214,16 +267,16 @@
                         onclick="Update_Node(this.id)">
                   ref-ref
                 </button>              
-            </div>
+            </div>-->
             
             
             
             <!-- FILTERS SHOW / HIDE NODES -->
             <div class="list-group" id="hide_list">
-              <h5 class="small" style="color: white"
+              <!--<h5 class="small" style="color: white"
                   >
                 <em>show / hide categories </em>
-              </h5>
+              </h5>-->
               
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
@@ -263,7 +316,7 @@
                   title="show/hide radial layouts"
                   class="small"
                   >
-                <em>more hiding choices </em><span class="caret" ></span>
+                <em>&nbsp;... more hiding choices </em><span class="caret" ></span>
               </h5>
               
             </a>
@@ -329,6 +382,7 @@
           data-target="#collapsibleInfosCol"
           aria-expanded="false"
           aria-controls="collapsibleInfosCol"
+          
          >
       
       

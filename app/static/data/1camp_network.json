@@ -6929,7 +6929,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lectures"
@@ -6953,7 +6953,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lectures"
@@ -6977,7 +6977,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lectures"
@@ -7001,7 +7001,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7026,7 +7026,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7050,7 +7050,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7074,7 +7074,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7097,7 +7097,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7121,7 +7121,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7146,7 +7146,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7170,7 +7170,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7193,7 +7193,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7217,7 +7217,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7241,7 +7241,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7263,7 +7263,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7285,7 +7285,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7307,7 +7307,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "lexique"
@@ -7333,7 +7333,7 @@
         "ref_GW3CPK5B",
         "ref_9MVX58AZ"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7362,7 +7362,7 @@
       "connex": [
         "ref_HCJNHZEP"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7389,7 +7389,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7415,7 +7415,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7443,7 +7443,7 @@
       "connex": [
         "ref_HCJNHZEP"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7470,7 +7470,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7496,7 +7496,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7523,7 +7523,7 @@
       "connex": [
         "ref_HCJNHZEP"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7547,7 +7547,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7573,7 +7573,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7599,7 +7599,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7626,7 +7626,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "activites"
@@ -7654,7 +7654,7 @@
       "connex": [
         "ref_PQS823MT"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7679,7 +7679,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7703,7 +7703,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7727,7 +7727,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7751,7 +7751,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7776,7 +7776,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7800,7 +7800,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7824,7 +7824,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7849,7 +7849,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7874,7 +7874,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7897,7 +7897,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7920,7 +7920,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7945,7 +7945,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7970,7 +7970,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -7995,7 +7995,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8021,7 +8021,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8046,7 +8046,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8071,7 +8071,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8097,7 +8097,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8124,7 +8124,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8148,7 +8148,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8173,7 +8173,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8198,7 +8198,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "annuaire"
@@ -8223,7 +8223,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8246,7 +8246,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8269,7 +8269,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8293,7 +8293,7 @@
       "connex": [
         "ref_M7MHTMTM"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8317,7 +8317,7 @@
       "connex": [
         "ref_XB5HFU8S"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8343,7 +8343,7 @@
       "connex": [
         "ref_E7KZ9RTK"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8371,7 +8371,7 @@
       "connex": [
         "ref_RXSFAZ9K"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8400,7 +8400,7 @@
       "connex": [
         "ref_V4SB4UBG"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8433,7 +8433,7 @@
       "connex": [
         "ref_PE7ZJC3I"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8461,7 +8461,7 @@
       "connex": [
         "ref_H6HB9C28"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8492,7 +8492,7 @@
       "connex": [
         "ref_AXBCNSQT"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8519,7 +8519,7 @@
       "connex": [
         "ref_EA9R2CZG"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8547,7 +8547,7 @@
       "connex": [
         "ref_ARHXJMKS"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8572,7 +8572,7 @@
       "connex": [
         "ref_BNIRBM95"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8598,7 +8598,7 @@
       "connex": [
         "ref_RRQ7X9XR"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8627,7 +8627,7 @@
       "connex": [
         "ref_GCNXW9IC"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8655,7 +8655,7 @@
       "connex": [
         "ref_3MNAQR9S"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8683,7 +8683,7 @@
       "connex": [
         "ref_M5IKZDWG"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8709,7 +8709,7 @@
       "connex": [
         "ref_DJFFKWT6"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8734,7 +8734,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8761,7 +8761,7 @@
       "connex": [
         "ref_2IJZW7JA"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8786,7 +8786,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8809,7 +8809,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8837,7 +8837,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8868,7 +8868,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8899,7 +8899,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8930,7 +8930,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8961,7 +8961,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -8992,7 +8992,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9023,7 +9023,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9055,7 +9055,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9087,7 +9087,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9112,7 +9112,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9137,7 +9137,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9162,7 +9162,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9187,7 +9187,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9211,7 +9211,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9236,7 +9236,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9261,7 +9261,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9287,7 +9287,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9313,7 +9313,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9337,7 +9337,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9363,7 +9363,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9387,7 +9387,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9412,7 +9412,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9437,7 +9437,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9463,7 +9463,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9488,7 +9488,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9513,7 +9513,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9538,7 +9538,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9563,7 +9563,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9589,7 +9589,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9614,7 +9614,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9639,7 +9639,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9659,7 +9659,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9685,7 +9685,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9709,7 +9709,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9734,7 +9734,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9759,7 +9759,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9785,7 +9785,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9814,7 +9814,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9838,7 +9838,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9863,7 +9863,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9888,7 +9888,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9912,7 +9912,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9937,7 +9937,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9962,7 +9962,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -9988,7 +9988,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10014,7 +10014,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10039,7 +10039,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10062,7 +10062,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10087,7 +10087,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10112,7 +10112,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10136,7 +10136,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10161,7 +10161,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10186,7 +10186,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10211,7 +10211,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10236,7 +10236,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10261,7 +10261,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10285,7 +10285,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10310,7 +10310,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10335,7 +10335,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10359,7 +10359,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10386,7 +10386,7 @@
       "connex": [
         "ref_XEUUA4DE"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10412,7 +10412,7 @@
       "connex": [
         "ref_JRRTT87M"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10438,7 +10438,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10473,7 +10473,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10509,7 +10509,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10538,7 +10538,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10568,7 +10568,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10593,7 +10593,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10628,7 +10628,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10656,7 +10656,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10681,7 +10681,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10712,7 +10712,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10742,7 +10742,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10773,7 +10773,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10793,7 +10793,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10813,7 +10813,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10844,7 +10844,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10868,7 +10868,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10892,7 +10892,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10917,7 +10917,7 @@
       "connex": [
         "ref_JU5XBBIE"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10943,7 +10943,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10969,7 +10969,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -10999,7 +10999,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11024,7 +11024,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11059,7 +11059,7 @@
       "connex": [
         "ref_V8C8R4DD"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11083,7 +11083,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11105,7 +11105,7 @@
       "connex": [
         "ref_AZNTSBUB"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11137,7 +11137,7 @@
       "connex": [
         "ref_TT6MQA8W"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11169,7 +11169,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11194,7 +11194,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11224,7 +11224,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11248,7 +11248,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11268,7 +11268,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11409,7 +11409,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11469,7 +11469,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11509,7 +11509,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11548,7 +11548,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11593,7 +11593,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11622,7 +11622,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11648,7 +11648,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11719,7 +11719,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11749,7 +11749,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11769,7 +11769,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11789,7 +11789,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11814,7 +11814,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11845,7 +11845,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11870,7 +11870,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11899,7 +11899,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11925,7 +11925,7 @@
       "connex": [
         "ref_524UT2KI"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11952,7 +11952,7 @@
       "connex": [
         "ref_JXMVX9P5"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -11978,7 +11978,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -12012,7 +12012,7 @@
       "connex": [
         "ref_NMMQFX3S"
       ],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"
@@ -12037,7 +12037,7 @@
       "category": "reference",
       "color": "#c57753",
       "connex": [],
-      "dataset": "[1.CAMP]",
+      "dataset": "[1.camp]",
       "dataset_": "1camp",
       "group": [
         "veille"

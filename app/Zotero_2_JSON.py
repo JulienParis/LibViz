@@ -102,7 +102,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                                 print 
                                 infos['len'] = len(data_)
                                 data.extend(data_)
-                                getZotItems_start += (getZotItems_load + 1)
+                                getZotItems_start += (getZotItems_load ) #+1)
                                 
         
         print                               
