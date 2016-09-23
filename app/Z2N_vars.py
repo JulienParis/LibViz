@@ -98,7 +98,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+        'presetsFilters': {"radialFilter": [], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
         
         }
@@ -238,7 +238,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {".radialFilter": [], ".hideFilter" : [] , ".breakFilter" : [] }, ## selection by .class and by .id !!!
+        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : []
     
         }

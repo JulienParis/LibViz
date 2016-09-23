@@ -43,7 +43,7 @@
     // default variable
     var dft_circle_stroke_w   = 0;
     var fixed_circle_stroke_w = 2;
-    var dft_line_stroke_w     = 0.5;
+    var dft_line_stroke_w     = 0.7;
     var radiusFactor          = 1.3;
     var hiddenOpacity         = "0.1";
     
@@ -380,8 +380,6 @@
     var presets = {{ presetsFilters|tojson }};
     //console.log("clickPresets : ", presets )
     
-    var selectedButtons = [] ;
-    
     // click presets 
     function clickPresets() {
       
@@ -396,7 +394,7 @@
         
         if (values.length > 0 ) {
           
-          // trigger corresponding functions
+          // trigger corresponding preset functions
           for (i = 0; i < values.length ; i++) {
             
             var value = values[i];
@@ -985,13 +983,16 @@
       function neighboring(a, b) {
         return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ]; }
       
+      
       var toggle = 0 ; // for connectedNodes
-      var N      = vis.selectAll(".node");
-      var L      = vis.selectAll(".link");
+
       
       // show connected nodes and fade others
       function connectedNodes() {
-        
+      
+        var N      = vis.selectAll(".node");
+        var L      = vis.selectAll(".link");
+      
         if (toggle == 0) {
           
           //Reduce the opacity of all but the neighbouring nodes
@@ -1006,7 +1007,7 @@
             function (o) { return neighboring(d, o) | neighboring(o, d) ? "1" : hiddenOpacity; } );
           
           L.style("opacity",
-            function (o) { return d.index == o.source.index | d.index == o.target.index ? "1" : hiddenOpacity; } ); 
+            function (o) { return d.index == o.source.index | d.index == o.target.index ? "1" : hiddenOpacity; } );  ///////////////////////
           L.attr("stroke-width",
             function (o) { return d.index == o.source.index | d.index == o.target.index ? "2px" : "0.3px"; } ); 
           
@@ -1040,6 +1041,7 @@
             .attr("cx", function (d) { return !d.fixed ? d.x : d.fx; })
             .attr("cy", function (d) { return !d.fixed ? d.y : d.fy; })
             .attr("stroke-width", function(d) {  return !d.fixed ? dft_circle_stroke_w : fixed_circle_stroke_w ; } )
+            //// add bigger radius if fixed ? /////////////////////
         ;
       
       }
