@@ -238,7 +238,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+        'presetsFilters': {"radialFilter": ["tag"], "hideFilter" : ["group"] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
         'supertags'     : []
     
         }
