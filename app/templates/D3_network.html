@@ -25,8 +25,8 @@
     var contHeight = document.documentElement.clientHeight;
     //var contHeight = document.getElementById('body').clientHeight;
     
-    
-    //// ZOOMING / PANNING function 1
+    //////////////////////////////////////////////////////////////////////////
+    //// ZOOMING / PANNING SETTINGS functions 1
     var zoom = d3.zoom()
       .scaleExtent([1/5, 4])
       .on("zoom", zoomed)
@@ -60,7 +60,6 @@
     var svg = d3.select("svg"),
       width  = +svg.attr("width"),
       height = +svg.attr("height");
-  
       
       
     // add group for shapes in svg
@@ -250,7 +249,6 @@
       resetted();
     }
     
-    
     // add radial function button to all tag names
     function addTagRadial(tagsNames) {
       
@@ -293,12 +291,18 @@
     var colorsRange = []; // for tags
     var legendColors_Groups = null ;
     
-    var optArray = [];
+    var optArray = []; // for autocomplete
+    //var toggle   = 0 ; // for connectedNodes
 
     //initialize graph layout : fill allNodes and allEdges
-    d3.json("{{ data_JSON }}",
+    
+    function initD3() {
+      d3.json("{{ data_JSON }}",
+              
               function(error, graph) {
                 if (error) throw error   ;
+                
+                console.log("---- initD3 ----" );
                 
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
@@ -322,7 +326,7 @@
                                 //.domain(allStats.tags_names)
                                 //.range(["#FF0000","#009933"]);
                                 .range(d3.schemeCategory20);
-                console.log("d3.json / colorsRange : ", colorsRange(1));
+                //console.log("d3.json / colorsRange : ", colorsRange(1));
                 
                 
                 // create legend
@@ -356,13 +360,99 @@
                 optArray = optArray.sort();
                 //console.log("optArray from start : ", optArray);
                 
+                // first rendering
                 render(allNodes, allEdges) ;
+                
+                // click presets
+                clickPresets();
+                
               }
       )
+    }
     ;
     //console.log("after d3.json", allStats);
    
    
+    ////////////////////////////////////////////////////
+    // PRESETTINGS CLICKS FROM COLLECTION
+    
+    // load presetsFilters
+    var presets = {{ presetsFilters|tojson }};
+    //console.log("clickPresets : ", presets )
+    
+    var selectedButtons = [] ;
+    
+    // click presets 
+    function clickPresets() {
+      
+      var values_toPress = [];
+      
+      // iterate through preset : radial / hide / break 
+      for (var key in presets ) {
+        
+        // example : 'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
+        values              = presets[key] ; // example : key = ".radialFilter" ... presets[key] = Array["ref-group", "ref-tag"]
+        console.log("clickPresets / presets : ", key, presets[key] ); 
+        
+        if (values.length > 0 ) {
+          
+          // trigger corresponding functions
+          for (i = 0; i < values.length ; i++) {
+            
+            var value = values[i];
+            console.log("clickPresets / value : ", value );
+            
+            if (key == "radialFilter") {
+              moveItToRadial(value) ;
+              console.log("clickPresets / triggering moveItToRadial : ", value );
+            }
+            
+            else if (key == "hideFilter" ) {
+              hideNodes(value);
+              console.log("clickPresets / triggering hideNodes : ", value );
+              values_toPress.push(value);
+            }
+            
+            else if (key == "breakFilter" ) {
+              Update_Node(value);
+              console.log("clickPresets / triggering Update_Node : ", value );
+              values_toPress.push(value);
+            }
+            
+          }
+          
+        }
+        
+        // 'press' buttons from hideFilter and breakFilter
+        buttons_toPress = []
+        buttons_hide    = document.getElementsByClassName("hideFilter");
+        buttons_break   = document.getElementsByClassName("breakFilter");
+        for (i=0; i< buttons_hide.length; i++) {
+              var button_ = buttons_hide[i];
+              if (values_toPress.indexOf(button_.name) != -1 ) {
+                buttons_toPress.push(button_);
+              }
+        }
+        for (i=0; i< buttons_break.length; i++) {
+              var button_ = buttons_break[i];
+              if (values_toPress.indexOf(button_.name) != -1 ) {
+                buttons_toPress.push(button_);
+              }
+        }
+        
+        for (i=0; i<buttons_toPress.length ; i++) {
+          var button_toPress = buttons_toPress[i];
+          button_toPress.setAttribute("enabled","1");
+          button_toPress.setAttribute("aria-pressed", "true");
+          button_toPress.className += " active";
+        }
+        
+        
+      };
+      
+    };
+    
+    
     
     /////////////////////////////////////////////////
     // LEGEND
@@ -415,6 +505,8 @@
         var lgd_ = nodeLegend.append('g')
           .attr("class", "nodeLgd")
           .attr("id", obj.name)
+          .attr("name", obj.name)
+          //.attr("onclick", "moveItToRadial(this.name)")
           ;
         lgd_.append("circle")
           .attr("cx", spaceX + margin )
@@ -423,7 +515,8 @@
           .attr("stroke", "white")
           .attr("stroke-width", legendS )
           .style("fill", obj.hex ) //return color(d.{{glob.ns.type}})
-          //.attr("id", obj.name)
+          //.attr("name", obj.name)
+          //.attr("onclick", "moveItToRadial(this.name)")
           ; 
         lgd_.append("text")
           .attr("fill", "white")
@@ -463,8 +556,6 @@
       };
       //console.log("packLegend / legendColors_Refs :", legendColors_Refs);
       
-      //var legend_tags      = null;
-      
       var legendColors_Tags = [];
       
       for (i=0; i<allStats.tags_names.length ; i++){
@@ -489,7 +580,9 @@
       // attribute function to nodes in legend 
       d3.select("#nodes_legend").selectAll("g")
         .attr("clickable", "yes")
-        .on("click", getLegendValue ) 
+        //.on("click", "moveItToRadial(this.name)" )
+        .on("click", getLegendValue )
+        //.attr("onclick", "moveItToRadial(this.name)")
       ;
     }
     
@@ -605,7 +698,7 @@
           rulesToHide.push(button.id);
         }			
       }
-      console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
+      //console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
       
       var nodes = vis.selectAll(".node");
       
@@ -680,6 +773,7 @@
               .attr("enabled", 0)
               .attr("aria-pressed", "false")
               .attr("id", tag)
+              .attr("name", tag)
               .attr("onclick", "hideNodes(this.id)")
               .text(tag);
       } ;
@@ -694,6 +788,8 @@
     }
 
 
+    //////////////////////////////////////////////////////////////////////////////
+    // SELECT COLOR
     function selectColor(node) {
       
       // default color from json 
@@ -742,11 +838,11 @@
     } ;
     
     
-    var toggle = 0;
     
     //////////////////////////////////////////////////////////////////////////////
-    // main D3 function
+    // MAIN D3.JS RENDERING function
     function render (nodes, links) {
+      
       
       simulation.alphaTarget(0.4).restart() ;
       
@@ -868,6 +964,9 @@
       
       
       
+      
+      
+      /// !!!! PROBLEM HERE : NOT UNCLICKING !!!!!!!
       /// CONNECTED NODES ///////////////////////////////////////////////////////////////
       //Toggle stores whether the highlighting is on
       //var toggle = 0;
@@ -885,9 +984,10 @@
       //This function looks up whether a pair are neighbours
       function neighboring(a, b) {
         return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ]; }
-
-      var N = vis.selectAll(".node");
-      var L = vis.selectAll(".link");
+      
+      var toggle = 0 ; // for connectedNodes
+      var N      = vis.selectAll(".node");
+      var L      = vis.selectAll(".link");
       
       // show connected nodes and fade others
       function connectedNodes() {
@@ -946,16 +1046,15 @@
       
     }
 
-    
-    var presets = presetsFilters|tojson;
-    
+
+
+    /////////////////////////////////////////////////////////////////////////
     //launch autocomplete once page loaded
     $(document).ready(function () {
         $("#search").autocomplete({ source: optArray });
         
-        // load presetsFilters
+        initD3(); 
         
-        console.log("document ready : ", presets )
         
       });
     
@@ -1052,8 +1151,7 @@
 
 
     ////////////////////////////////////////////////////////////////////////////////
-
-    // pin down nodes 
+    // PINNING NODES (FIX NODES)
     // inspired from : https://github.com/d3/d3-force/issues/35
     // sticky force http://bl.ocks.org/mbostock/3750558
     function pinNode(d) {

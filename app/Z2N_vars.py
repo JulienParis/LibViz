@@ -72,10 +72,10 @@ collections = {
         'API'           : 'Zotero',
         'dataSet_name'  : '[1.camp]',
         'dataSet_infos' : {
-                            'presentation' : 'Presentation ...',
-                            'authors'      : 'Authors...',
-                            'methodology'  : 'Methodology...',
-                            'credits'      : 'Credits / link to Zotero group...',
+                            'presentation' : """Presentation ...""",
+                            'authors'      : """Authors...""",
+                            'methodology'  : """Methodology...""",
+                            'credits'      : """Credits / link to Zotero group...""",
                         },
         'dataSet_key'   : '336106',
         'url_ROOT'      : create_API_URL('336106'),
@@ -149,10 +149,39 @@ collections = {
         'API'           : 'Zotero',
         'dataSet_name'  : 'endocrine disruption',
         'dataSet_infos' : {
-                            'presentation' : 'Presentation ...',
-                            'authors'      : 'Authors...',
-                            'methodology'  : 'Methodology...',
-                            'credits'      : 'Credits / link to Zotero group...',
+                            'presentation' : """Data base ENDOCRINE DISRUPTION shows 'substances' disrupting endocrinian system in human (males and females) and also in non humans,
+                                                with their <<biological effects>> and 'societal effects' on them. \
+                                                It shows 'controversial organisations' producing endocrine disruptors and 'antagonist organisations' which struggle against them.
+                                                \
+                                                Through the database it is possible to watch a large set of 'scientific articles' in order to evaluate ways of action of endocrine disruptors.
+                                                \
+                                                Pathways to investigate the different sets of datas, their structure and relationships :
+                                                a /// Recognizing the tags - Please click in LEGEND . See the different COLORS of each tag, and learn to make distinction.
+                                                b /// Hierarchising the tags ? Please click the tag SUBSTANCE + RADIAL.
+                                                \
+                                                You see a circle with the different substances indexed in the database.
+                                                You can add all the BIOLOGICAL AND SOCIETAL EFFECTS directly connected with these SUBSTANCES.
+                                                And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
+                                                and organisation which produce conflicts with the controversial organisations and uses.
+                                                """, 
+                            'authors'      : """The different persons involved in the collective group Aliens in green, mostly the artist group Bureau d??tudes and the writer Ewen Chardronnet,
+                                                have contributed to collect datas and to put them in the Zotero database. The support of Ping and specially Julien Bellanger,
+                                                the support of Labomedia and mostly Benjamin Cadon give us the understanding of the tools than we decide to use for this project :
+                                                the use of Zotero database and the transcription in a D3JS visualisation.
+                                                \
+                                                The work of transcription from Zotero to D3JS, the machinery and the graphic design of the dataviz is produced by Julien Paris.
+                                                """,
+                            'methodology'  : """The first moment of the project was the indexation of scientific articles related to hormones and specifically xeno-hormones and endocrine disruptors
+                                                in a Zotero data base. From this scientific corpus it was possible to create a matrix of potential inquiries interconnecting substances,
+                                                biological and societal effects, organisations and scandals related to the diffusion and effects of substances on humans and non humans organisms.
+                                                \
+                                                This dataviz is a tool for the conception of argumentations and narratives relative to endocrine disruptors but also the power and interests related to them.
+                                                """,
+                            'credits'      : """Contact dataviz : jparis.py-at-gmail.com
+                                                \Contact Aliens in green : bureaudetudes-at-gmail.com, e.chardronnet-at-gmail.com
+                                                \Administrative support of the conception : association Champ des possibles, 03210 Saint Menoux (France)
+                                                \Co-financement for the development : CNC-Dicream
+                                                """,
                         },
         'dataSet_key'   : '506887', ### aka group key
         'url_ROOT'      : create_API_URL('506887'),
@@ -171,7 +200,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radial": ["SUBSTANCES"], "hide" : ["groups", "tags"] , "breakLinks" : ["ref-group", "ref-tag"] },
+        'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
         'supertags'     : []
     
         }
@@ -183,10 +212,12 @@ collections = {
         'API'           : 'Zotero',
         'dataSet_name'  : 'media owners in France',
         'dataSet_infos' : {
-                            'presentation' : 'Based on a previous work published in "Le Monde Diplomatique" this dataset represents the structure of french medias ownership : from the few main wealthy families owning major industrial groups to almost every french press organisation ',
-                            'authors'      : 'Datas gathered in Zotero by Julien Paris from layout by Jeremie Fabre & Marie Beyer',
-                            'methodology'  : 'All references are picked from Wikipedia and then referenced in Zotero in three different groups : "persons" (owning majority of the media/industrial groups) / "industrial groups" / press (newspaper, tv channels, internet newspaper)',
-                            'credits'      : 'Credits / link to Zotero group...',
+                            'presentation' : """Based on a previous work published in "Le Monde Diplomatique" this dataset represents the structure of french medias ownership :
+                                                from the few main wealthy families owning major industrial groups to almost every french press organisation """,
+                            'authors'      : """Datas gathered in Zotero by Julien Paris from layout by Jeremie Fabre & Marie Beyer""",
+                            'methodology'  : """All references are picked from Wikipedia and then referenced in Zotero in three different groups :
+                                                "persons" (owning majority of the media/industrial groups) / "industrial groups" / press (newspaper, tv channels, internet newspaper)""",
+                            'credits'      : """Credits / link to Zotero group...""",
                         },
         'dataSet_key'   : '680968', ### aka group key
         'url_ROOT'      : create_API_URL('680968'),
@@ -207,7 +238,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radial": [], "hide" : [] , "breakLinks" : [] },
+        'presetsFilters': {".radialFilter": [], ".hideFilter" : [] , ".breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : []
     
         }

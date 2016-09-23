@@ -87,18 +87,21 @@
                 
                 <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                         class="btn btn-default btn-sm breakFilter btn-filter"
+                        name="ref-tag"
                         id="ref-tag"
                         onclick="Update_Node(this.id)">
                   ref-tag
                 </button>
                 <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                         class="btn btn-default btn-sm breakFilter btn-filter"
+                        name="ref-group"
                         id="ref-group"
                         onclick="Update_Node(this.id)">
                   ref-group
                 </button>              
                 <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                         class="btn btn-default btn-sm breakFilter btn-filter"
+                        name="ref-ref"
                         id="ref-ref"
                         onclick="Update_Node(this.id)">
                   ref-ref
@@ -284,6 +287,7 @@
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="reference"
+                      name="reference"
                       onclick="hideNodes(this.id)">
                 references
               </button>
@@ -291,6 +295,7 @@
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="group"
+                      name="group"
                       onclick="hideNodes(this.id)">
                 groups
               </button>
@@ -298,6 +303,7 @@
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
                       class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="tag"
+                      name="tag"
                       onclick="hideNodes(this.id)">
                  tags
                </button>
@@ -434,11 +440,11 @@
 
                 <a class="nohref" id="nLabel"></a>
                 <br>
-                <a class="small"><span class="caret" ></span> abstract <span class="caret" ></span></a>
+                <a class="small nohref"><span class="caret" ></span> abstract <span class="caret" ></span></a>
             </p>
             
             <p  class="infoN list-group-item collapse" >
-              <a class="nohref collapse small" id="nAbstract"></a>
+              <a class="nohref collapse in small" id="nAbstract"></a>
             </p>
               
             <p class="infoN list-group-item small">
