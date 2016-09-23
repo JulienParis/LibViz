@@ -36,6 +36,11 @@ def create_API_URL (dataSet_key) : ### generates Zotero API url from a dataset c
     url = url_API_Zotero + dataSet_key + '/collections/'
     return url
 
+def create_API_URL_noColl (dataSet_key) : ### generates Zotero API url from a dataset collection key
+    
+    url = url_API_Zotero + dataSet_key 
+    return url
+
 def create_WEB_URL (dataSet_key) : ### generates Zotero WEB url from a dataset collection key
     
     url = url_WEB_Zotero + dataSet_key + '/items/'

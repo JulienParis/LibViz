@@ -6,10 +6,10 @@ import os
 
 ### name application
 title    = "LibViz" #ideas for a name : "Bibloom" - "REFNET" - "VIZZOT" - "REF2NET"
-subtitle = "make graphs you can play with"
+subtitle = "explore and play with references"
             #"FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
             #"what your library looks like"
-version  = "beta 0.2" ####
+version  = "beta 0.3" ####
 
 ### default weight
 w_dft      = 25
@@ -23,7 +23,7 @@ items_API_Zotero = '/items/top?start=0&limit=1000'
 
 ### this import is placed after to avoid circular reference problem
 ### when calling 'url_API_Zotero' in createURL
-from Z2N_scripts import create_API_URL, create_WEB_URL ## create zotero api/web url
+from Z2N_scripts import create_API_URL, create_API_URL_noColl, create_WEB_URL ## create zotero api/web url
 
 
 ### JSON outfile graph structure
@@ -243,7 +243,117 @@ collections = {
     
         }
         
+        ,
         
+        'openSource_lib' : {
+        
+        'API'           : 'Zotero',
+        'dataSet_name'  : 'free and open source softwares',
+        'dataSet_infos' : {
+                            'presentation' : """Free/Libre and Open Source Software and Libraries Bibliography """,
+                            'authors'      : """... """,
+                            'methodology'  : """... """,
+                            'credits'      : """...""",
+                        },
+        'dataSet_key'   : '10885', ### aka group key
+        'url_ROOT'      : create_API_URL_noColl('10885'),
+        'url_WEB'       : create_WEB_URL('10885'),
+        'urlsDict'      : {
+                            ''  : {'name' : 'library' , 'len' : 0, 'hex' : '#325d58'},
+                        },
+        'nodesColorsDict' : {
+                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
+                node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                        },
+        'edgesDashDict' : {
+                'ref-ref'  : '1',
+                'ref-tag'  : '1 1',
+                'ref-group': '3 3'
+                        },
+        'switch_color'  : 'hex',
+        'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : ["group"] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
+        'supertags'     : []
+    
+        }
+        
+        ,
+        
+        'open_eval' : {
+        
+        'API'           : 'Zotero',
+        'dataSet_name'  : 'evaluation institutionnelle et open access',
+        'dataSet_infos' : {
+                            'presentation' : """Bibliographie Zotero partagee realisee dans le cadre du colloque "Open Access et evaluation de la recherche : vers un nouvel ecosysteme ?" (13-14 octobre 2016, Toulouse, France).""",
+                            'authors'      : """... """,
+                            'methodology'  : """... """,
+                            'credits'      : """...""",
+                        },
+        'dataSet_key'   : '696651', ### aka group key
+        'url_ROOT'      : create_API_URL('696651'),
+        'url_WEB'       : create_WEB_URL('696651'),
+        'urlsDict'      : {
+                            'SNVCAAHC'  : {'name' : 'eval. institutionnelle'    , 'len' : 0, 'hex' : '#325d58'},
+                            'W3ZT48XZ'  : {'name' : 'eval. ouverte'             , 'len' : 0, 'hex' : '#325d58'},
+                            'UPHW9G8J'  : {'name' : 'e-reputation'              , 'len' : 0, 'hex' : '#325d58'},
+                            'EXTZ9QIE'  : {'name' : 'eval. instit. en question' , 'len' : 0, 'hex' : '#325d58'},
+                        },
+        'nodesColorsDict' : {
+                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
+                node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                        },
+        'edgesDashDict' : {
+                'ref-ref'  : '1',
+                'ref-tag'  : '1 1',
+                'ref-group': '3 3'
+                        },
+        'switch_color'  : 'hex',
+        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+        'supertags'     : []
+    
+        }
+
+        ,
+        
+        'bcn_smart_city_commons' : {
+        
+        'API'           : 'Zotero',
+        'dataSet_name'  : 'BCN Smart City Commons',
+        'dataSet_infos' : {
+                            'presentation' : """Mappeig d'actors, activitats i programes municipals dins del context de "ciutat intelligent" amb orientacio commons.""",
+                            'authors'      : """... """,
+                            'methodology'  : """... """,
+                            'credits'      : """...""",
+                        },
+        'dataSet_key'   : '457033', ### aka group key
+        'url_ROOT'      : create_API_URL('457033'),
+        'url_WEB'       : create_WEB_URL('457033'),
+        'urlsDict'      : {
+                            'GPE7XPCR'  : {'name' : 'activitats'                 , 'len' : 0, 'hex' : '#325d58'},
+                            '789A3ZB5'  : {'name' : 'actors'                     , 'len' : 0, 'hex' : '#325d58'},
+                            'EF62A2WJ'  : {'name' : 'comunicacio'                , 'len' : 0, 'hex' : '#325d58'},
+                            'X6PFG7BT'  : {'name' : 'comuns'                     , 'len' : 0, 'hex' : '#325d58'},
+                            '2RWEV6NZ'  : {'name' : 'literatura'                 , 'len' : 0, 'hex' : '#325d58'},
+                            'QNKDR957'  : {'name' : 'mecanismes'                 , 'len' : 0, 'hex' : '#325d58'},
+                            'P7JR797V'  : {'name' : 'referenciels internacionals', 'len' : 0, 'hex' : '#325d58'},
+                        },
+        'nodesColorsDict' : {
+                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
+                node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                        },
+        'edgesDashDict' : {
+                'ref-ref'  : '1',
+                'ref-tag'  : '1 1',
+                'ref-group': '3 3'
+                        },
+        'switch_color'  : 'hex',
+        'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+        'supertags'     : []
+    
+        }
+
 
     ### it should be possible to extend this list ...
 

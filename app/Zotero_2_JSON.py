@@ -73,7 +73,10 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         getZotItems_load  = 100
         
         def createURL_Zot (start) :
+                
+                ### url like : 
                 url = getZotItems_01 + str(getZotItems_start) + getZotItems_02 + str(getZotItems_load)
+                
                 return url
         
         for key, infos in urlsDict.items() :
@@ -139,7 +142,10 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             refIdsList.append(id_)
             
             title_    = ref[u'data'][u'title'] ### == label
-            authors_  = ref[u'data'][u'creators'] ### == authors
+            try : 
+                authors_  = ref[u'data'][u'creators'] ### == authors
+            except :
+                authors_  = '' 
             try :
                 note_ = ref[u'data'][u'note']
             except :
