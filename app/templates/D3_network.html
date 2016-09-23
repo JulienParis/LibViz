@@ -41,7 +41,7 @@
       
     // default variable
     var dft_circle_stroke_w   = 0;
-    var fixed_circle_stroke_w = 3;
+    var fixed_circle_stroke_w = 2;
     var dft_line_stroke_w     = 0.5;
     var radiusFactor          = 1.3;
     var hiddenOpacity         = "0.1";
@@ -758,6 +758,8 @@
     } ;
     
     
+    var toggle = 0;
+    
     //////////////////////////////////////////////////////////////////////////////
     // main D3 function
     function render (nodes, links) {
@@ -884,7 +886,7 @@
       
       /// CONNECTED NODES ///////////////////////////////////////////////////////////////
       //Toggle stores whether the highlighting is on
-      var toggle = 0;
+      //var toggle = 0;
       //Create an array logging what is connected to what
       var linkedByID = {};
       // feed linkedById
