@@ -25,6 +25,7 @@
     var contHeight = document.documentElement.clientHeight;
     //var contHeight = document.getElementById('body').clientHeight;
     
+    
     //////////////////////////////////////////////////////////////////////////
     //// ZOOMING / PANNING SETTINGS functions 1
     var zoom = d3.zoom()
@@ -33,14 +34,16 @@
     ;
       
 
-    //add the div for the tooltip
+    //////////////////////////////////////////////////////////////////////////
+    //TOOLTIPS - add the div for the tooltip
     var div = d3.select("body")
       .append("div")
       .attr("class", "tooltipNode")
       .style("opacity", 0) ;
       
       
-    // default variable
+    //////////////////////////////////////////////////////////////////////////
+    // DEFAULT VARIABLES
     var dft_circle_stroke_w   = 0;
     var fixed_circle_stroke_w = 2.5;
     var dft_line_stroke_w     = 0.7;
@@ -48,11 +51,12 @@
     var pinnedNodeFactor      = 1.3;
     var hiddenOpacity         = "0.1";
     
-    // create svg
+    //////////////////////////////////////////////////////////////////////////
+    // create svg for graph
     var svg = d3.select("#containerLayout")
       .append("svg:svg")
       //.attr("class", "svg-graph")
-      //.attr("preserveAspectRatio", "xMinYMin")    // trying to make SVG responsive to window size
+      //.attr("preserveAspectRatio", "xMinYMin")    // trying to make SVG responsive to window size //////////////////////////
       .attr("width" , contWidth - 20)  // trying to make SVG responsive to window size
       .attr("height", contHeight - 1 ) // trying to make SVG responsive to window size
       .call(zoom)
@@ -72,7 +76,6 @@
       //.append('g')
       ;
 
-    ///////////////////////////////////////////////////////////////////////
     // fake rectangle before links_g and nodes_g (so under them) to adapt the panning to real mouse events
     var zoomCanvas = svg.append("rect")
         .attr("width", width)
@@ -112,7 +115,8 @@
           .call(zoom.transform, d3.zoomIdentity);
     }
     
-    // drag/pin function /////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
+    // DRAG + pin function 
     var node_normal_drag = d3.drag()
       .on("start", dragstarted)
       .on("drag" , dragged    )
@@ -148,7 +152,6 @@
           //}
       }
       ;    
-    
     
     
     ////////////////////////////////////////////////////////////
@@ -284,6 +287,7 @@
         //.force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2)) 
         ;
     
+    
     //////////////////////////////////////////////
     // read JSON graph 
     
@@ -298,7 +302,6 @@
     //var toggle   = 0 ; // for connectedNodes
 
     //initialize graph layout : fill allNodes and allEdges
-    
     function initD3() {
       d3.json("{{ data_JSON }}",
               
@@ -455,7 +458,6 @@
       };
       
     };
-    
     
     
     /////////////////////////////////////////////////
@@ -656,6 +658,7 @@
     }
 
 
+    //////////////////////////////////////////////////////////////////////////
     // HIDE NODES FROM LAYOUT (but no disappear)
     function hideNodes(buttonValue) {
       
@@ -761,6 +764,7 @@
     }
 
 
+    //////////////////////////////////////////////////////////////////////////
     // add radial function button to all tag names
     function addTagHide(tagsNames) {
       
@@ -846,6 +850,7 @@
     
     //////////////////////////////////////////////////////////////////////////////
     // MAIN D3.JS RENDERING function
+    //////////////////////////////////////////////////////////////////////////
     function render (nodes, links) {
       
       
@@ -866,8 +871,8 @@
       function stopLayout()   { simulation.stop(); } ;
       function restartLayout(){ simulation.restart(); } ;
       
-      
-      // activate play or pause 
+      //////////////////////////////////////////////////////////////////////////
+      // PLAY / PAUSE BUTTON - FUNCTIONS 
       $(function () {
           
           var active = true;
@@ -901,7 +906,6 @@
       //console.log("graph.stats.groups_names : ", allStats.groups_names); //
       //console.log("graph.stats.tags_names   : ", allStats.tags_names); //
       
-
       
       
       // create lines for links
@@ -970,8 +974,7 @@
       
       
       
-      
-      /// !!!! PROBLEM HERE : NOT UNCLICKING !!!!!!!
+      //////////////////////////////////////////////////////////////////////////
       /// CONNECTED NODES ///////////////////////////////////////////////////////////////
       //Toggle stores whether the highlighting is on
       //var toggle = 0;
@@ -1034,7 +1037,9 @@
         }
         
       }
-
+        
+      //////////////////////////////////////////////////////////////////////////
+      // TICKING FUNCTION FOR D3
       function ticked() {
         d3.select(".links").selectAll(".link")
           .attr("x1", function(d) { return d.source.x; })
@@ -1047,9 +1052,12 @@
         d3.select(".nodes").selectAll(".node")
             .attr("cx", function (d) { return !d.fixed ? d.x : d.fx; })
             .attr("cy", function (d) { return !d.fixed ? d.y : d.fy; })
+            
+            //change node's stroke-width if node is fixed
             .attr("stroke-width", function(d) {  return !d.fixed ? dft_circle_stroke_w : fixed_circle_stroke_w ; } )
+            
+            //change node's radius if node is fixed
             .attr("r", function(d) {  return !d.fixed ? Math.sqrt(d.{{glob.ns.weight}} )*radiusFactor : Math.sqrt(d.{{glob.ns.weight}} )*radiusFactor*pinnedNodeFactor ; } )
-            //// add bigger radius if fixed ? /////////////////////
         ;
       
       }
@@ -1059,18 +1067,17 @@
 
 
     /////////////////////////////////////////////////////////////////////////
-    //launch autocomplete once page loaded
+    //DOC READY - launch autocomplete once page loaded / initialize D3.JS
     $(document).ready(function () {
         $("#search").autocomplete({ source: optArray });
         
         initD3(); 
         
-        
       });
     
     
-    
-    // get search value from legend
+    //////////////////////////////////////////////////////////////////////////
+    // SEARCH BAR - get search value from legend
     function getLegendValue () {
       
       var from = "legend";
@@ -1096,7 +1103,6 @@
       searchNode( selectedVal, from )
     };
     
-    
     /// search bar functions 
     function searchNode(value, from) {
       
@@ -1111,12 +1117,12 @@
         
         // if value from search bar
         if (from == "searchbar") {
-          var selected = node.filter(function (d, i) { return d.label != value ; } );
+          var selected = node.filter(function (d, i) { return d.label      != value ; } );
         }
-        // if value from legend
+        // if value from legend or else
         else {
-          var selected = node.filter(function (d, i) { return d.group      != value
-                                                              & d.tag      != value
+          var selected = node.filter(function (d, i) { return d.group      != value ////////// !d.group.indexOf(value) !== -1?
+                                                              & d.tag      != value ////////// !d.tag.indexOf(value)   !== -1?
                                                               & d.category != value
                                                               & d.label    != value ; } );
           //console.log("selected : ", selected)
@@ -1159,9 +1165,8 @@
     };
 
 
-
     ////////////////////////////////////////////////////////////////////////////////
-    // PINNING NODES (FIX NODES)
+    // PINNING NODES (FIX NODES) / RELEASE NODES
     // inspired from : https://github.com/d3/d3-force/issues/35
     // sticky force http://bl.ocks.org/mbostock/3750558
     function pinNode(d) {
@@ -1198,7 +1203,6 @@
       //simulation.alphaTarget(0.3).restart();
     }
     
-    
     // release all previously fixed nodes ///////////////////////
     function releaseAllNodes() {
       
@@ -1221,7 +1225,8 @@
     }
     
     
-    // display node infos in div #nodeInfos 
+    //////////////////////////////////////////////////////////////////////////
+    // DISPLAY INFOS - display node infos in div #nodeInfos 
     function displayInfos(d) {
       
       n = d3.select(this).node().__data__;
@@ -1259,17 +1264,33 @@
         authors_ = "na"
       };
       
+      // categ_
+      categ_ = '<a id="'+n.category+'" class="search_call" role="button" >' + n.category + '</a> '; 
+      
       // tags_ 
       tags_ = "";
       if (n.tag != undefined && n.tag != [] && n.tag != "" ) {
         for (i=0; i < n.tag.length ; i++){
           var tag  = n.tag[i];
-          var tag_ = tag + ", ";
+          var tag_ = '<a id="'+tag+'" class="search_call" role="button" >' + tag + '</a>, ';
           tags_ += tag_;
         }
       }
       else {
-        tags_ = "untagged reference"
+        tags_ = "<a>untagged reference<a>"
+      };
+      
+      // groups_ 
+      groups_ = "";
+      if (n.group != undefined && n.group != [] && n.group != "" ) {
+        for (i=0; i < n.group.length ; i++){
+          var group  = n.group[i];
+          var group_ = '<a id="'+group+'" class="search_call" role="button" >' + group + '</a>, ';
+          groups_ += group_;
+        }
+      }
+      else {
+        groups_ = "<a>no group<a>"
       };
       
       
@@ -1281,8 +1302,10 @@
       //d3.select('#nAbstract').text(' " ' + n.abstractNote + ' " ');
       //console.log(n, n.abstractNote);
       d3.select('#nType').text(n.type); // need to be blank if none ////////
-      d3.select('#nCategory').text(n.category);
-      d3.select('#nGroup').text(n.group); // need to be blank if none ////////
+      d3.select('#nCategory').html(categ_);
+      
+      d3.select('#nGroup').html(groups_); // need to be blank if none ////////
+      
       d3.select('#nUrl')
         .attr("href", n.url)
         .attr("target", "_blank")
@@ -1291,8 +1314,12 @@
       //console.log("d :"    , d);
       //console.log("tags :" , d.tag);
       
-      d3.select('#nTags').text(tags_); // need to be blank if none // + function to tags to create //
+      d3.select('#nTags')
+        .html(tags_)
+        ; // need to be blank if none // + function to tags to create //
       
+      d3.selectAll('.search_call')
+        .attr("onclick", "searchNode(this.id)");
       
       // call function to pin nodes
       pinNode(n);
@@ -1301,7 +1328,8 @@
     }
   
 
-    // export SVG file //////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
+    // EXPORT SVG file /// STILL A LOT TO DO HERE ///////////////////////////////////
     // from : http://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an
     function exportSVG() {
       var svgData       = $("#svgLayout")[0].outerHTML;
@@ -1315,10 +1343,6 @@
       document.body.removeChild(downloadLink);
       }
 
-    // click presetted buttons 
-    //$(document).ready(function () {
-    //
-    //}
 
   </script>
 

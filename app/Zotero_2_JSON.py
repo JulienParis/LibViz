@@ -315,6 +315,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         connex_sets = []
         
         for n in nodesList:
+                
+                ### only loop through references
                 if n['category'] == 'reference':
                         #print 'n:', n
                         
@@ -367,7 +369,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                                 edgesList.append(edge_dict)
                                 counter_edges += 1
                         
-                        ### ref-ref / connexes edges ############### PROBLEM NOT RESOLVED YET ####
+                        ### ref-ref / connexes edges 
                         if n[ns['connex']] != '' and n[ns['connex']] != [] :
                             src_    = n[ns['id']]
                             for conn_ in n[ns['connex']]:
