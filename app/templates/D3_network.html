@@ -51,9 +51,11 @@
     // create svg
     var svg = d3.select("#containerLayout")
       .append("svg:svg")
-      .attr("width" , contWidth - 20)
-      .attr("height", contHeight - 1 )
-      //.call(zoom)
+      //.attr("class", "svg-graph")
+      //.attr("preserveAspectRatio", "xMinYMin")    // trying to make SVG responsive to window size
+      .attr("width" , contWidth - 20)  // trying to make SVG responsive to window size
+      .attr("height", contHeight - 1 ) // trying to make SVG responsive to window size
+      .call(zoom)
       .on("dblclick.zoom", null)
       ;
 
@@ -308,6 +310,9 @@
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
                 allStats = graph.stats ;
+                
+                //sort tags names in alphabetical order
+                allStats.tags_names = allStats.tags_names.sort(); //////////////////////////////////////////////
 
                 //console.log("graph.nodes : ", allNodes); //
                 //console.log("graph.links : ", allEdges); //                
@@ -537,6 +542,7 @@
 
       // get ref & groups & tags colors from stats in graph
       legendColors_Groups = allStats.grpsColorsDict;
+      ////legendColors_Groups = legendColors_Groups.sort();
       //console.log("packLegend /grpsColorsDict", allStats.grpsColorsDict);
       //legendColorsGroups =  legendGroups|tojson  ; // tojson in jinja
       //console.log("packLegend / legendColorsGroups :", legendColors_Groups);
@@ -1232,23 +1238,47 @@
       console.log("displayInfos / tags : ", n.tag);
       console.log("displayInfos / authors : ", n.authors);
       
-      authors = "";
-      if (d.authors != undefined) {
-        for (i=0; i < d.authors.length ; i++){
-          var auth  = d.authors[i];
+      //abstract
+      abstract_ = "";
+      if (n.abstractNote != undefined && n.abstractNote != [] && n.abstractNote != "" ) {
+        abstract_ = ' " ' + n.abstractNote + ' " '
+      };
+      
+      // authors 
+      authors_ = "";
+      if (n.authors != undefined && n.authors != [] && n.authors != "" ) {
+        for (i=0; i < n.authors.length ; i++){
+          var auth  = n.authors[i];
           var fName = auth['firstName'];
           var lName = auth['lastName'];
           var fullName = fName + " " + lName + "; ";
-          authors += fullName;
+          authors_ += fullName;
         }
+      }
+      else {
+        authors_ = "na"
+      };
+      
+      // tags_ 
+      tags_ = "";
+      if (n.tag != undefined && n.tag != [] && n.tag != "" ) {
+        for (i=0; i < n.tag.length ; i++){
+          var tag  = n.tag[i];
+          var tag_ = tag + ", ";
+          tags_ += tag_;
+        }
+      }
+      else {
+        tags_ = "untagged reference"
       };
       
       
       d3.select('#nLabel').text(n.label);
       /////////////////////////////////////////////////////////////
-      d3.select('#nAuthors').text(authors); 
+      d3.select('#nAuthors').text(authors_); 
+      d3.select('#nAbstract').text(abstract_);
       
-      d3.select('#nAbstract').text(' " ' + n.abstractNote + ' " ');
+      //d3.select('#nAbstract').text(' " ' + n.abstractNote + ' " ');
       //console.log(n, n.abstractNote);
       d3.select('#nType').text(n.type); // need to be blank if none ////////
       d3.select('#nCategory').text(n.category);
@@ -1261,8 +1291,7 @@
       //console.log("d :"    , d);
       //console.log("tags :" , d.tag);
       
-      d3.select('#nTags').text(n.tag); // need to be blank if none // + function to tags to create //
-
+      d3.select('#nTags').text(tags_); // need to be blank if none // + function to tags to create //
       
       
       // call function to pin nodes

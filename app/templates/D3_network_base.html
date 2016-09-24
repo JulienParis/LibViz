@@ -107,6 +107,23 @@
         .infoN {
             color : grey;
         }
+        
+        /* responsive SVG ??? */
+        .svg-container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; 
+            vertical-align: middle; 
+            overflow: hidden;     
+        }
+        
+        .svg-graph {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     
     </style>
     
@@ -115,9 +132,7 @@
     <!-- start big row for infos and graph -->
     <div    id="graphLayout"
             class="row"
-            style="min-height: 100%"
-            /*left=5;*/
-            /*top=5;*/
+
             > 
     
     <!-- call columns for filters and infos + JS scripts -->

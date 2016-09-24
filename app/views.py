@@ -22,6 +22,7 @@ collections_names = [ ]
 for key, coll in collections.items():
     coll_list = [ key, coll['dataSet_name'] ]
     collections_names.append( coll_list )
+collections_names.sort()
 print 'collections_names :', collections_names
 
 ### global entries and structures from Z2N_vars.py

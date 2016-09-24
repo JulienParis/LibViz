@@ -147,7 +147,7 @@ collections = {
     'substances' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'endocrine disruption',
+        'dataSet_name'  : 'substances & endocrine disruption',
         'dataSet_infos' : {
                             'presentation' : """Data base ENDOCRINE DISRUPTION shows 'substances' disrupting endocrinian system in human (males and females) and also in non humans,
                                                 with their <<biological effects>> and 'societal effects' on them. \
@@ -243,9 +243,9 @@ collections = {
     
         }
         
-        ,
+    ,
         
-        'openSource_lib' : {
+    'free_openSource_lib' : {
         
         'API'           : 'Zotero',
         'dataSet_name'  : 'free and open source softwares',
@@ -277,9 +277,9 @@ collections = {
     
         }
         
-        ,
-        
-        'open_eval' : {
+    ,
+    
+    'eval_instit_open' : {
         
         'API'           : 'Zotero',
         'dataSet_name'  : 'evaluation institutionnelle et open access',
@@ -314,9 +314,9 @@ collections = {
     
         }
 
-        ,
-        
-        'bcn_smart_city_commons' : {
+    ,
+    
+    'bcn_smart_city_commons' : {
         
         'API'           : 'Zotero',
         'dataSet_name'  : 'BCN Smart City Commons',
