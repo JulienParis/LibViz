@@ -10,6 +10,7 @@ subtitle = "explore and play with references"
             #"FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
             #"what your library looks like"
 version  = "beta 0.3" ####
+metas    = """dataviz,zotero,graph,force layout,force directed layout,PING,artlabo,opensource,open source,open data,creative commons,d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap"""
 
 ### default weight
 w_dft      = 25
@@ -150,9 +151,9 @@ collections = {
         'dataSet_name'  : 'Substances & endocrine disruption',
         'dataSet_infos' : {
                             'presentation' : """Data base ENDOCRINE DISRUPTION shows 'substances' disrupting endocrinian system in human (males and females) and also in non humans,
-                                                with their <<biological effects>> and 'societal effects' on them. \
+                                                with their 'biological effects' and 'societal effects' on them. \
                                                 It shows 'controversial organisations' producing endocrine disruptors and 'antagonist organisations' which struggle against them.
-                                                \
+                                                <br>
                                                 Through the database it is possible to watch a large set of 'scientific articles' in order to evaluate ways of action of endocrine disruptors.
                                                 \
                                                 Pathways to investigate the different sets of datas, their structure and relationships :
@@ -164,7 +165,7 @@ collections = {
                                                 And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
                                                 and organisation which produce conflicts with the controversial organisations and uses.
                                                 """, 
-                            'authors'      : """The different persons involved in the collective group Aliens in green, mostly the artist group Bureau d??tudes and the writer Ewen Chardronnet,
+                            'authors'      : """The different persons involved in the collective group Aliens in green, mostly the artist group Bureau d'etudes and the writer Ewen Chardronnet,
                                                 have contributed to collect datas and to put them in the Zotero database. The support of Ping and specially Julien Bellanger,
                                                 the support of Labomedia and mostly Benjamin Cadon give us the understanding of the tools than we decide to use for this project :
                                                 the use of Zotero database and the transcription in a D3JS visualisation.

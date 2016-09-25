@@ -8,7 +8,9 @@
         <title> {{ glob.titleApp }} - {{ glob.version }} </title>
         
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <meta name="keywords" content="{{ glob.metas }}">
+		<meta name="author"   content="Julien Paris">
+			
 		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
 
