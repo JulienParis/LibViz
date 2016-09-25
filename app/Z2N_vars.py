@@ -147,7 +147,7 @@ collections = {
     'substances' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'substances & endocrine disruption',
+        'dataSet_name'  : 'Substances & endocrine disruption',
         'dataSet_infos' : {
                             'presentation' : """Data base ENDOCRINE DISRUPTION shows 'substances' disrupting endocrinian system in human (males and females) and also in non humans,
                                                 with their <<biological effects>> and 'societal effects' on them. \
@@ -210,7 +210,7 @@ collections = {
     'mediasFR' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'media owners in France',
+        'dataSet_name'  : 'Media owners in France',
         'dataSet_infos' : {
                             'presentation' : """Based on a previous work published in "Le Monde Diplomatique" this dataset represents the structure of french medias ownership :
                                                 from the few main wealthy families owning major industrial groups to almost every french press organisation """,
@@ -248,7 +248,7 @@ collections = {
     'free_openSource_lib' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'free and open source softwares',
+        'dataSet_name'  : 'Free and open source softwares',
         'dataSet_infos' : {
                             'presentation' : """Free/Libre and Open Source Software and Libraries Bibliography """,
                             'authors'      : """... """,
@@ -256,7 +256,7 @@ collections = {
                             'credits'      : """...""",
                         },
         'dataSet_key'   : '10885', ### aka group key
-        'url_ROOT'      : create_API_URL_noColl('10885'),
+        'url_ROOT'      : create_API_URL_noColl('10885'), ######## !! no collection inside library
         'url_WEB'       : create_WEB_URL('10885'),
         'urlsDict'      : {
                             ''  : {'name' : 'library' , 'len' : 0, 'hex' : '#325d58'},
@@ -282,7 +282,7 @@ collections = {
     'eval_instit_open' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'evaluation institutionnelle et open access',
+        'dataSet_name'  : 'Evaluation institutionnelle et open access',
         'dataSet_infos' : {
                             'presentation' : """Bibliographie Zotero partagee realisee dans le cadre du colloque "Open Access et evaluation de la recherche : vers un nouvel ecosysteme ?" (13-14 octobre 2016, Toulouse, France).""",
                             'authors'      : """... """,
@@ -319,7 +319,7 @@ collections = {
     'bcn_smart_city_commons' : {
         
         'API'           : 'Zotero',
-        'dataSet_name'  : 'BCN Smart City Commons',
+        'dataSet_name'  : 'Barcelona Smart City Commons',
         'dataSet_infos' : {
                             'presentation' : """Mappeig d'actors, activitats i programes municipals dins del context de "ciutat intelligent" amb orientacio commons.""",
                             'authors'      : """... """,
@@ -350,6 +350,60 @@ collections = {
                         },
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+        'supertags'     : []
+    
+        }
+
+
+    ,
+    
+    'urbanmedialabwaste' : {
+        
+        'API'           : 'Zotero',
+        'dataSet_name'  : 'Urban Media Lab Waste',
+        'dataSet_infos' : {
+                            'presentation' : """This is the digital reference library for URBAN MEDIA LAB: WASTE, a graduate-level seminar in the School of Media Studies at The New School taught by Jessica Blaustein, Spring 2014.""",
+                            'authors'      : """... """,
+                            'methodology'  : """... """,
+                            'credits'      : """...""",
+                        },
+        'dataSet_key'   : '242813', ### aka group key
+        'url_ROOT'      : create_API_URL('242813'),
+        'url_WEB'       : create_WEB_URL('242813'),
+        'urlsDict'      : {
+                            'PB2V5ETU'  : {'name' : '0 introduction'               , 'len' : 0, 'hex' : '#325d58'},
+                            'WV4H35NE'  : {'name' : '1 material'                   , 'len' : 0, 'hex' : '#325d58'},
+                            'T8PUQ74G'  : {'name' : '2 manufacture'                , 'len' : 0, 'hex' : '#325d58'},
+                            'JD88R4KW'  : {'name' : '3 package'                    , 'len' : 0, 'hex' : '#325d58'},
+                            '64K6XTKQ'  : {'name' : '4 data'                       , 'len' : 0, 'hex' : '#325d58'},
+                            '7BSJDJZS'  : {'name' : '5 information management'     , 'len' : 0, 'hex' : '#325d58'},
+                            '8PHFX4IE'  : {'name' : '6 disposal'                   , 'len' : 0, 'hex' : '#325d58'},
+                            'G6XPS2XM'  : {'name' : '6a e-waste'                   , 'len' : 0, 'hex' : '#325d58'},
+                            '6XJB3GFF'  : {'name' : '6b e-use'                     , 'len' : 0, 'hex' : '#325d58'},
+                            'D59XD5DQ'  : {'name' : '6c solid waste'               , 'len' : 0, 'hex' : '#325d58'},
+
+                            'WBEDT88F'  : {'name' : 'industry sources'             , 'len' : 0, 'hex' : '#325d58'},
+                            'IFVE38TS'  : {'name' : 'methodology'                  , 'len' : 0, 'hex' : '#325d58'},
+                            'P6TPRZ6J'  : {'name' : 'data gathering'               , 'len' : 0, 'hex' : '#325d58'},
+                            'APGKQF3E'  : {'name' : 'projects'                     , 'len' : 0, 'hex' : '#325d58'},
+                        
+                            'N434BTWU'  : {'name' : 'architecture & land use'      , 'len' : 0, 'hex' : '#325d58'},
+                            'IZ3EW62R'  : {'name' : 'informal cities'              , 'len' : 0, 'hex' : '#325d58'},
+                            'SNWGKNTA'  : {'name' : 'litterature'                  , 'len' : 0, 'hex' : '#325d58'},
+                            '5GS332CS'  : {'name' : 'theoretical backgrounds'      , 'len' : 0, 'hex' : '#325d58'},                        
+                        },
+        'nodesColorsDict' : {
+                node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
+                node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                        },
+        'edgesDashDict' : {
+                'ref-ref'  : '1',
+                'ref-tag'  : '1 1',
+                'ref-group': '3 3'
+                        },
+        'switch_color'  : 'hex',
+        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : []
     
         }

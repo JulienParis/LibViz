@@ -100,6 +100,15 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                                 finished = True
                                 getZotItems_start = 0
                         
+                        elif len(data_) < 100 :
+                                print " "*15, 'len data_ : ', len(data_)
+                                print 
+                                infos['len'] = len(data_)
+                                data.extend(data_)
+                                finished = True
+                                getZotItems_start = 0
+                                #getZotItems_start += (getZotItems_load ) #+1)
+                                
                         else :      
                                 print " "*15, 'len data_ : ', len(data_)
                                 print 
