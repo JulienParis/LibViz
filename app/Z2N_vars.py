@@ -403,7 +403,7 @@ collections = {
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : ["ref-tag"] }, ## selection by .class and by .id !!!
         'supertags'     : []
     
         }

@@ -41,12 +41,17 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         #print 'collection :', collection
         dataSet_name    = collection['dataSet_name']
         url_ROOT        = collection['url_ROOT']
-        urlsDict        = collection['urlsDict']
+
+        urlsDict        = collection['urlsDict'] ### colors groups by default
+        nodesColorsDict = collection['nodesColorsDict']  ### colors by default
+
         listed_groups   = urlsDict.keys()
         listed_groups_  = [ i["name"] for k,i in urlsDict.items() ]
-        nodesColorsDict = collection['nodesColorsDict']  ### colors by default
         ##refColorsDict   = collection['urlsDict']['hex']  ### colors references depending on their group
         edgesDashDict   = collection['edgesDashDict']
+        
+        
+
         
         try :
                 switch_color = collection['switch_color']    ### must be optional
@@ -427,12 +432,22 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         ### generate JSON file / nodes + edges
         l_refs = len(data)
         l_grps = len(listed_groups)
-        n_grps = listed_groups_
+        
+        n_grps = listed_groups_     #.sort()
+        
         l_tags = len(tagsDict)
         n_tags = [ k for k, v in  tagsDict.items() ]
         print " -- print n_grps :", n_grps
         print " -- print n_tags :", n_tags
-
+        print " -- print n_tags.sort() :", n_tags.sort()
+        
+        
+        dfltColorsDict = [ {"name" : k,         "hex" : v['hex'] } for k, v in nodesColorsDict.items() ]
+        dfltColorsDict = sorted(dfltColorsDict, key=lambda k: k['name']) 
+        
+        grpsColorsDict = [ {"name" : v["name"], "hex" : v['hex'] } for k, v in urlsDict.items() ]
+        grpsColorsDict = sorted(grpsColorsDict, key=lambda k: k['name'])
+        print " -- print grpsColorsDict : ", grpsColorsDict
         
         network_ = {"stats" : {
                                 "refs_number"   : l_refs,
@@ -442,8 +457,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                                 "tags_names"    : n_tags,
                                 "nodes_number"  : l_refs + l_grps + l_tags, 
                                 "edges_number"  : len(edgesList),
-                                "dfltColorsDict": [ {"name" : k,         "hex" : v['hex'] }  for k, v in nodesColorsDict.items() ] ,
-                                "grpsColorsDict": [ {"name" : v["name"], "hex" : v['hex'] } for k, v in urlsDict.items() ]
+                                "dfltColorsDict": dfltColorsDict,
+                                "grpsColorsDict": grpsColorsDict
                                 },
                     "nodes" : nodesList,
                     "links" : edgesList

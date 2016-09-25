@@ -19549,16 +19549,16 @@
   "stats": {
     "dfltColorsDict": [
       {
-        "hex": "#a57eb7",
-        "name": "tag"
-      },
-      {
         "hex": "#8eba7d",
         "name": "group"
       },
       {
         "hex": "#000000",
         "name": "reference"
+      },
+      {
+        "hex": "#a57eb7",
+        "name": "tag"
       }
     ],
     "edges_number": 1148,
@@ -19575,13 +19575,13 @@
     "nodes_number": 320,
     "refs_number": 312,
     "tags_names": [
+      "ANTAGONISTIC ORGANISATIONS",
+      "BIOLOGICAL EFFECTS",
+      "CONTROVERSIAL ORGANISATIONS",
       "SCANDALS",
       "SCIENTIFIC ARTICLES",
-      "SUBSTANCES",
-      "ANTAGONISTIC ORGANISATIONS",
       "SOCIETAL EFFECTS",
-      "CONTROVERSIAL ORGANISATIONS",
-      "BIOLOGICAL EFFECTS"
+      "SUBSTANCES"
     ],
     "tags_number": 7
   }

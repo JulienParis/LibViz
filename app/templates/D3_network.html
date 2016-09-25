@@ -164,7 +164,7 @@
     var centerY = (height/2) + 45;
     var radius  = 250 ; /// radius circle / HERE TO CHANGE : choose a different radius
 
-    // compute radial location
+    // compute radial location to nodes and corresponding circles
     function radial(totalNodes, node, index) {
       
       //console.log("radial +    : ", totalNodes) ;
@@ -211,11 +211,15 @@
     // actually move and fix selected nodes positions in space 
     function moveToRadial (selectedNodes) {
       
-      //console.log("moveToRadial 1/ : ", selectedNodes) ;
+      console.log("moveToRadial 1/ : ", selectedNodes) ;
       
-      var totalNodes = selectedNodes.size() ; ///////////////////////////////////////
+      var totalNodes = selectedNodes.size() ; 
       //console.log("moveToRadial 2/ : ", totalNodes) ;
-
+      
+      // sort alphabetically here to display nicely in radial (which depends on index value)
+      selectedNodes = selectedNodes.sort(function(a,b){ return a.label.toLowerCase().localeCompare(b.label.toLowerCase()); });
+      
+      
       // put radial coordinates datas into node.__data__ (not DOM)
       selectedNodes.each( function(d,i) { radial( totalNodes, d, i ) } );
       
@@ -315,8 +319,10 @@
                 allStats = graph.stats ;
                 
                 //sort tags names in alphabetical order
-                allStats.tags_names = allStats.tags_names.sort(); //////////////////////////////////////////////
-
+                if (allStats.tags_names.length != 0 | allStats.tags_names != null ) {
+                  allStats.tags_names = allStats.tags_names.sort(); //////////////////////////////////////////////
+                };
+                
                 //console.log("graph.nodes : ", allNodes); //
                 //console.log("graph.links : ", allEdges); //                
                 //console.log("in json : ", allStats); //
@@ -507,7 +513,8 @@
     function makeLegend(coll, id, margin) {
       
       for (var i = 0; i <= coll.length - 1; i++) {
-      var obj = coll[i]; 
+      var obj = coll[i];
+        //console.log(obj);
         var lgd_ = nodeLegend.append('g')
           .attr("class", "nodeLgd")
           .attr("id", obj.name)
@@ -547,7 +554,7 @@
       ////legendColors_Groups = legendColors_Groups.sort();
       //console.log("packLegend /grpsColorsDict", allStats.grpsColorsDict);
       //legendColorsGroups =  legendGroups|tojson  ; // tojson in jinja
-      //console.log("packLegend / legendColorsGroups :", legendColors_Groups);
+      console.log("packLegend / legendColorsGroups :", legendColors_Groups);
       
       legendColors_RefGroupTag = allStats.dfltColorsDict;
       //console.log("packLegend /dfltColorsDict", allStats.dfltColorsDict);
@@ -582,7 +589,7 @@
       
       //makeLegend(legendColors_Refs, "",  interval*0)
       makeLegend(legendColors_Groups, "group / ", interval*0);
-      makeLegend(legendColors_Tags, "tag / ", interval*0);
+      makeLegend(legendColors_Tags  , "tag / "  , interval*0);
       
       // attribute function to nodes in legend 
       d3.select("#nodes_legend").selectAll("g")
@@ -1121,8 +1128,8 @@
         }
         // if value from legend or else
         else {
-          var selected = node.filter(function (d, i) { return d.group.indexOf(value) == -1    /// d.group      != value ////////// 
-                                                              & d.tag.indexOf(value) == -1    /// d.tag      != value
+          var selected = node.filter(function (d, i) { return d.group.indexOf(value) == -1    /// d.group != value ////////// 
+                                                              & d.tag.indexOf(value) == -1    /// d.tag   != value
                                                               & d.category != value
                                                               & d.label    != value ; } );
           //console.log("selected : ", selected)
