@@ -5,12 +5,15 @@
 import os
 
 ### name application
-title    = "LibViz" #ideas for a name : "Bibloom" - "REFNET" - "VIZZOT" - "REF2NET"
-subtitle = "explore and play with references"
+title       = "LibViz" #ideas for a name : "Bibloom" - "REFNET" - "VIZZOT" - "REF2NET"
+subtitle    = "explore and play with references"
             #"FROM ZOTERO REFERENCES TO NETWORKS" # alternative : "make graphs to play with from references"
             #"what your library looks like"
-version  = "beta 0.3" ####
-metas    = """dataviz,zotero,graph,force layout,force directed layout,PING,artlabo,opensource,open source,open data,creative commons,d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap"""
+version     = "beta 0.3" ####
+metas       = """dataviz,data visualisation,zotero,graph,bilography,bibliographic references,force layout,force directed layout,
+PING,artlabo,opensource,open source,open data,creative commons,
+d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap"""
+description = "make interactive graphs from Zotero references"
 
 ### default weight
 w_dft      = 25

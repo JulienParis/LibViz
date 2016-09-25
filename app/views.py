@@ -5,7 +5,7 @@ from werkzeug.routing import Rule
 #app = Flask(__name__)
 
 ### import global variables for Z2N
-from Z2N_vars import collections, title, subtitle, version, metas
+from Z2N_vars import collections, title, subtitle, version, metas, description
 from Z2N_vars import node_str_dict as nodeStruct
 from Z2N_vars import edge_str_dict as edgeStruct
 
@@ -30,6 +30,7 @@ global_names = {
         'titleApp'          : title,             # name/brand of the app
         'subtitleApp'       : subtitle,          # explanation of what the app does
         'metas'             : metas,             # meta for referencing
+        'description'       : description,
         'version'           : version,           # explanation of what the app does
         'collections_names' : collections_names, # list of collections with their keys, ids, ... 
         'ns'                : nodeStruct,        # integrate Jinja global ns in JS calling inside HTML/JS
