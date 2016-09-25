@@ -1121,8 +1121,8 @@
         }
         // if value from legend or else
         else {
-          var selected = node.filter(function (d, i) { return d.group      != value ////////// !d.group.indexOf(value) != -1?
-                                                              & d.tag      != value ////////// !d.tag.indexOf(value)   != -1?
+          var selected = node.filter(function (d, i) { return d.group.indexOf(value) == -1    /// d.group      != value ////////// 
+                                                              & d.tag.indexOf(value) == -1    /// d.tag      != value
                                                               & d.category != value
                                                               & d.label    != value ; } );
           //console.log("selected : ", selected)
