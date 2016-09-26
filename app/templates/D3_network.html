@@ -17,6 +17,14 @@
   <!-- main d3.js function for {{ glob.titleApp }}  -->
   <script>
     
+    var dataSet = {{ dataSet_infos|tojson }};
+    
+    // put dataset clean html infos in modalInfos : /////////////////////////////////////////////
+    //d3.select("#dataset_presentation").html( dataSet.presentation );
+    //d3.select("#dataset_authors").html( dataSet.authors );
+    //d3.select("#dataset_credits").html( dataSet.credits );
+    //d3.select("#dataset_methodology").html( dataSet.methodology );
+    
     
     // find width and height of parent html elements
     var contWidth  = document.getElementById('body').clientWidth;

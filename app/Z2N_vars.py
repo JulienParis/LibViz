@@ -13,7 +13,7 @@ version     = "beta 0.3" ####
 metas       = """dataviz,data visualisation,zotero,graph,bilography,bibliographic references,force layout,force directed layout,
 PING,artlabo,opensource,open source,open data,creative commons,
 d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap"""
-description = "make interactive graphs from Zotero references"
+description = "make interactive graphs from Zotero bibliographic references"
 
 ### default weight
 w_dft      = 25
@@ -153,21 +153,22 @@ collections = {
         'API'           : 'Zotero',
         'dataSet_name'  : 'Substances & endocrine disruption',
         'dataSet_infos' : {
-                            'presentation' : """Data base ENDOCRINE DISRUPTION shows 'substances' disrupting endocrinian system in human (males and females) and also in non humans,
-                                                with their 'biological effects' and 'societal effects' on them. \
-                                                It shows 'controversial organisations' producing endocrine disruptors and 'antagonist organisations' which struggle against them.
-                                                <br>
-                                                Through the database it is possible to watch a large set of 'scientific articles' in order to evaluate ways of action of endocrine disruptors.
-                                                \
-                                                Pathways to investigate the different sets of datas, their structure and relationships :
-                                                a /// Recognizing the tags - Please click in LEGEND . See the different COLORS of each tag, and learn to make distinction.
-                                                b /// Hierarchising the tags ? Please click the tag SUBSTANCE + RADIAL.
-                                                \
-                                                You see a circle with the different substances indexed in the database.
-                                                You can add all the BIOLOGICAL AND SOCIETAL EFFECTS directly connected with these SUBSTANCES.
-                                                And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
-                                                and organisation which produce conflicts with the controversial organisations and uses.
-                                                """, 
+                            'presentation' : """
+Database ENDOCRINE DISRUPTION shows -substances- disrupting endocrinian system in human (males and females) and also in non humans, with their -biological effects- and -societal effects- on them.
+It shows -controversial organisations- producing endocrine disruptors and -antagonist organisations- which struggle against them.
+<br>
+Through the database it is possible to watch a large set of -scientific articles- in order to evaluate ways of action of endocrine disruptors.
+\n
+Pathways to investigate the different sets of datas, their structure and relationships :
+a - Recognizing the tags ? Please click in LEGEND . See the different COLORS of each tag, and learn to make distinction.
+b - Hierarchising the tags ? Please click the tag SUBSTANCE + RADIAL.
+
+You see a circle with the different substances indexed in the database
+You can add all the BIOLOGICAL AND SOCIETAL EFFECTS directly connected with these SUBSTANCES.
+And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
+and organisation which produce conflicts with the controversial organisations and uses.
+                                                """
+                                                , 
                             'authors'      : """The different persons involved in the collective group Aliens in green, mostly the artist group Bureau d'etudes and the writer Ewen Chardronnet,
                                                 have contributed to collect datas and to put them in the Zotero database. The support of Ping and specially Julien Bellanger,
                                                 the support of Labomedia and mostly Benjamin Cadon give us the understanding of the tools than we decide to use for this project :

@@ -980,8 +980,8 @@
 						<h4 class="text-center"><span class="label label-default">
 						Presentation
 						</span></h4>
-						  <p>
-							 {{ dataSet_infos.presentation }} 
+						  <p id="dataset_presentation" > <!-- better calling via d3.js -->
+							{{ dataSet_infos.presentation|e }}
 						  </p>
 						
 						<hr>
@@ -989,7 +989,7 @@
 						<h4 class="text-center"><span class="label label-default">
 						Methodology 
 						</span></h4>
-						  <p>
+						  <p id="dataset_methodology" > <!-- better calling via d3.js -->
 							 {{ dataSet_infos.methodology }} 
 						  </p>
 						  
@@ -998,7 +998,7 @@
 						<h4 class="text-center"><span class="label label-default">
 						Authors
 						</span></h4>
-						  <p>
+						  <p id="dataset_authors" > <!-- better calling via d3.js -->
 							 {{ dataSet_infos.authors }} 
 						  </p>
 						
@@ -1007,8 +1007,8 @@
 						<h4 class="text-center"><span class="label label-default">
 						Credits
 						</span></h4>
-						  <p>
-							 {{ dataSet_infos.credits }} 
+						  <p id="dataset_credits" >
+							 {{ dataSet_infos.credits }}  <!-- better calling via d3.js -->
 						  </p>
 						  <h5> original collection :
 							<a target="_blank" href="{{ ZoteroURL }}" >
