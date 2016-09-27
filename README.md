@@ -42,6 +42,48 @@ Project by PING / ARTLABO and developped by Julien P with the precious help of J
 This application is inspired by a previous work called "Constellations bibliographiques" developped by Laurent Malys.
 
 -------------------------------------------------------
+VIRTUALENV CONFIGURATION
+-------------------------------------------------------
+
+To develop & test this application, you can use a Python “virtualenv”. To proceed, just install the Debian package `python-virtualenv`, create a new “virtualenv”, activate it and then install the required dependencies:
+
+    $ sudo apt install python-virtualenv
+    $ cd LibViz
+    $ virtualenv venv
+    $ source venv/bin/activate
+    $ pip install -r requirements.txt
+
+-------------------------------------------------------
+APACHE CONFIGURATION
+-------------------------------------------------------
+
+To deploy this application with Apache2, you have to install `mod_wsgi` (available in Debian in the `libapache2-mod-wsgi` package). You can then add the following snippet in your VirtualHost’s configuration:
+
+    DocumentRoot "/home/artlabo/www/libviz.artlabo.org/LibViz"
+
+    WSGIDaemonProcess libviz user=artlabo group=artlabo threads=5 python-home=/home/artlabo/www/libviz.artlabo.org/LibViz/venv python-pat$
+    WSGIScriptAlias / /home/artlabo/www/libviz.artlabo.org/LibViz/libviz.wsgi
+
+    <Directory /home/artlabo/www/libviz.artlabo.org/LibViz/>
+            WSGIProcessGroup libviz
+            WSGIApplicationGroup %{GLOBAL}
+            Require all granted
+            AllowOverride All
+            #Order deny,allow
+            #Allow from all
+    </Directory>
+
+This configuration requires to install a Python “virtualenv” in `/home/artlabo/www/libviz.artlabo.org/LibViz/venv`.
+
+Apache server should be reloaded after each code change.
+
+-------------------------------------------------------
+START LIBVIZ (Flask)
+-------------------------------------------------------
+
+LibViz uses [Flask](http://flask.pocoo.org/) to work. With the above configuration, restarting apache will start Flask and so the LibViz app.
+
+-------------------------------------------------------
 LICENCE   Creative Commons License
 -------------------------------------------------------
 
