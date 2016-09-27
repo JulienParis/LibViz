@@ -8,9 +8,12 @@
         <title> {{ glob.titleApp }} - {{ glob.version }} </title>
         
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <meta name="keywords" content="{{ glob.metas }}">
+		<meta name="author"   content="Julien Paris">
+		<meta name="description" content="{{ glob.description }}">
+			
 		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-        <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
 
 		<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
 		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
@@ -24,9 +27,6 @@
 		
 		<style>
 			
-			/*html,body{
-				height: 100%
-			}*/
 			
 			a {
 				color: #f0ad4e;
@@ -56,7 +56,7 @@
 			}
 			
 			.navbar {
-				background-color: rgba(0, 0, 0, 0.4);
+				background-color: rgba(0, 0, 0, 0.5);
 				border: hidden;
 				margin-bottom: 5px;
 				z-index: 1;
@@ -86,8 +86,10 @@
 				/*border-color: black;*/
 				/*border-bottom-width: 10px;*/
 				background-color: #f0ad4e;
+				padding: 30px;
 
 			}
+			
 			
 			body.index_bckgrd {
 				/*background: url( {{ url_for('static', filename='images/index_background.png') }} ) no-repeat center center fixed;*/
@@ -105,6 +107,14 @@
 				color: white;    
 				opacity: .7;
 			}*/
+			
+			.btn-navbar {
+				margin-top: 16px;
+				margin-bottom: 5px;
+				height: 30px;
+				margin-left: 5px;
+				margin-right: 0px;
+			}
 			
 			
 			/*custom spinning wheel for refresh dataset*/
@@ -152,14 +162,6 @@
 			}
 			.tooltip.bottom-right .tooltip-arrow {
 			  border-bottom-color: grey;
-			}
-			
-			.btn-navbar {
-				margin-top: 16px;
-				margin-bottom: 5px;
-				height: 30px;
-				margin-left: 5px;
-				margin-right: 0px;
 			}
 			
 			
@@ -252,7 +254,7 @@
 		</div>
 		{% endif %}
 		
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			
 			<div class = "container-fluid">
 				
@@ -316,48 +318,56 @@
 								<!-- list of links to collections -->
 								<ul class="dropdown-menu" aria-labelledby="collLabels">
 								  
-									<li href="/" class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+									<li href="/" class="text-left" style="margin-top: 0; margin-bottom: 0">
+										<a href="/" style="color: black">
 											<h5 >
-												<a href="/" style="color: black">
-													<span class="glyphicon glyphicon-home"> </span>
-													<strong>HOME</strong>
-												</a>
+												<span class="glyphicon glyphicon-home"> </span>
+												&nbsp;<strong>HOME</strong>
 											</h5>
-									</li>
-									
-									<hr>
-									
-									<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
-										<h5 style="color: black">
-											<span class="glyphicon glyphicon-th-list"> </span>
-											<strong>DATASETS</strong>
-										</h5>
-									</li>
-									
-									<hr>
-									
-									<!-- links according to the length of 'collections_names' -->
-									{% for coll in glob.collections_names %}
-									<li>
-										<a href="/{{ coll[0] }}">
-											<span class="glyphicon glyphicon-th-list"> </span> 
-											{{ coll[1] }}
 										</a>
-										<hr>
 									</li>
-									{% endfor %}
 									
+									<!--<hr>-->
 									
-									<li class="text-center" style="margin-top: 10px; margin-bottom: -5px">
+									<li class="text-left" style="margin-top: 3px; margin-bottom: -3px">
 										<a 	role="button"
 											class="btn btn-md btn-link"
 											data-toggle="modal"
 											data-target="#modalHowTo"
 											style="color: black"  >
-											<span class="glyphicon glyphicon-wrench"> </span>
-											<strong>HOW TO USE {{ glob.titleApp }}</strong>
+											<h5 class="text-left">
+												<span class="glyphicon glyphicon-wrench"> </span>
+												&nbsp;<strong>TUTORIAL</strong>
+											</h5>
 										</a>
 									</li>
+									
+									<!--<hr>-->
+										
+									<li class="text-left" style="margin-top: 3px; margin-bottom: -3px">
+										<a>
+											<h5 style="color: black">
+												<span class="glyphicon glyphicon-th-list"> </span>
+												&nbsp;<strong>DATASETS</strong><span class="caret"> </span>
+											</h5>
+										</a>
+									</li>
+									
+									<!--<hr>-->
+									
+									<!-- links according to the length of 'collections_names' -->
+									{% for coll in glob.collections_names %}
+									<li>
+										<a href="/{{ coll[0] }}">
+											<span class="glyphicon glyphicon-option-horizontal"> </span> 
+											{{ coll[1] }}
+										</a>
+										
+									</li>
+									{% endfor %}
+									
+									
+									
 									<br>
 										
 								</ul>
@@ -380,7 +390,7 @@
 								data-target="#collapsibleFilters"
 								aria-expanded="false"
 								aria-controls="collapsibleFilters"
-								style=" margin-top: -5px;
+								style=" margin-top: -4px;
 										margin-bottom: 19px;
 										height: 30px;
 										margin-right: 0px"
@@ -572,7 +582,7 @@
 						<!-- REBUILD dataset / python script -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
-							title="refresh the {{ selection }} dataset"
+							title="rebuild '{{ dataSet_name }}' dataset"
 							>
 							<button type="button"
 								class="btn btn-sm btn-warning btn-navbar"
@@ -956,6 +966,13 @@
 						<h3 class="modal-title text-center" id="myModalLabel">
 							{{ dataSet_name }}
 						</h3>
+						<h6 class="text-center">
+							<a class="nohref" id="stats_nodes"></a> nodes (total) /
+							<a class="nohref" id="stats_refs"></a> references /
+							<a class="nohref" id="stats_groups"></a> collections /
+							<a class="nohref" id="stats_tags"></a> tags /
+							<a class="nohref" id="stats_edges"></a> links 
+						</h6>
 					</div>
 					
 					<div class="modal-body">
@@ -963,35 +980,40 @@
 						<h4 class="text-center"><span class="label label-default">
 						Presentation
 						</span></h4>
-						  <h5 class="lead">
-							 {{ dataSet_infos.presentation }} 
-						  </h5>
+						  <p id="dataset_presentation" > <!-- better calling via d3.js -->
+							{{ dataSet_infos.presentation|e }}
+						  </p>
 						
 						<hr>
 							
 						<h4 class="text-center"><span class="label label-default">
 						Methodology 
 						</span></h4>
-						  <h5>
+						  <p id="dataset_methodology" > <!-- better calling via d3.js -->
 							 {{ dataSet_infos.methodology }} 
-						  </h5>
+						  </p>
 						  
 						<hr>
 							
 						<h4 class="text-center"><span class="label label-default">
 						Authors
 						</span></h4>
-						  <h5>
+						  <p id="dataset_authors" > <!-- better calling via d3.js -->
 							 {{ dataSet_infos.authors }} 
-						  </h5>
+						  </p>
 						
 						<hr>
 							
 						<h4 class="text-center"><span class="label label-default">
 						Credits
 						</span></h4>
-						  <h5>
-							 {{ dataSet_infos.credits }} 
+						  <p id="dataset_credits" >
+							 {{ dataSet_infos.credits }}  <!-- better calling via d3.js -->
+						  </p>
+						  <h5> original collection :
+							<a target="_blank" href="{{ ZoteroURL }}" >
+								link to Zotero
+							</a>
 						  </h5>
 						
 					</div>
@@ -1052,7 +1074,7 @@
 								<span class="glyphicon glyphicon-refresh"></span>
 							</span>
 							
-							<strong>REBUILD {{ selection }} DATASET</strong>
+							rebuild '{{ dataSet_name }}' dataset
 							
 							<span class="badge">
 								<span class="glyphicon glyphicon-refresh"></span>
@@ -1085,7 +1107,7 @@
 						<p class="lead text-center">
 							
 							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
-							<em>Please wait while rebuilding <br>{{ dataSet_name }} dataset... </em>
+							<em>Please wait while rebuilding <br>'{{ dataSet_name }}' dataset... </em>
 							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
 						</p>
 						
@@ -1188,11 +1210,9 @@
 			window.location = href ;
 		};
 	
-		//// rebuild dataset
-		//function rebuildDataset (href){
-		//	//console.log(href);
-		//	window.location = href ;
-		//};
+		
+		
+		
 		
     </script>
     

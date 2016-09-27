@@ -7,7 +7,7 @@ from pprint import pprint
 #import os
 
 ### import global variables for Z2N
-from Z2N_vars import w_dft, w_bigtag, w_biggroup, items_API_Zotero
+from Z2N_vars import w_dft, w_bigtag, w_biggroup, items_API_Zotero #items_API_Zotero = '/items/top?start=0&limit=1000'
 from Z2N_vars import node_str_dict as ns
 from Z2N_vars import edge_str_dict as es
 
@@ -41,11 +41,17 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         #print 'collection :', collection
         dataSet_name    = collection['dataSet_name']
         url_ROOT        = collection['url_ROOT']
-        urlsDict        = collection['urlsDict']
-        listed_groups   = urlsDict.keys()
+
+        urlsDict        = collection['urlsDict'] ### colors groups by default
         nodesColorsDict = collection['nodesColorsDict']  ### colors by default
+
+        listed_groups   = urlsDict.keys()
+        listed_groups_  = [ i["name"] for k,i in urlsDict.items() ]
         ##refColorsDict   = collection['urlsDict']['hex']  ### colors references depending on their group
         edgesDashDict   = collection['edgesDashDict']
+        
+        
+
         
         try :
                 switch_color = collection['switch_color']    ### must be optional
@@ -65,17 +71,56 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         ### load JSON from url / Zotero API
         data = [ ]
         #for url in urls :
-        for key, infos in urlsDict.items() :
-                url = url_ROOT + key + items_API_Zotero 
-                print " --- from url : %s / %s " %(key, infos['name'])
-                print " "*15, url
-                response = urllib2.urlopen(url)
-                data_    = json.load(response)
+        
+        getZotItems_01    = '/items/top?start='
+        getZotItems_02    = '&limit='
+        getZotItems_start = 0
+        getZotItems_load  = 100
+        
+        def createURL_Zot (start) :
                 
-                print " "*15, 'len data_ : ', len(data_)
-                print 
-                infos['len'] = len(data_)
-                data.extend(data_)
+                ### url like : 
+                url = getZotItems_01 + str(getZotItems_start) + getZotItems_02 + str(getZotItems_load)
+                
+                return url
+        
+        for key, infos in urlsDict.items() :
+                
+                finished = False
+                
+                while finished == False :
+                        
+                        lastPartUrl = createURL_Zot(getZotItems_start)
+                        url         = url_ROOT + key + lastPartUrl               #items_API_Zotero = '/items/top?start=0&limit=1000'
+                        
+                        print " --- from url : %s / %s " %(key, infos['name'])
+                        print " "*15, url
+                        
+                        response = urllib2.urlopen(url)
+                        data_    = json.load(response)
+                        
+                        if len(data_) == 0 :
+                                print " "*15, 'len data_ : ', len(data_)
+                                print
+                                finished = True
+                                getZotItems_start = 0
+                        
+                        elif len(data_) < 100 :
+                                print " "*15, 'len data_ : ', len(data_)
+                                print 
+                                infos['len'] = len(data_)
+                                data.extend(data_)
+                                finished = True
+                                getZotItems_start = 0
+                                #getZotItems_start += (getZotItems_load ) #+1)
+                                
+                        else :      
+                                print " "*15, 'len data_ : ', len(data_)
+                                print 
+                                infos['len'] = len(data_)
+                                data.extend(data_)
+                                getZotItems_start += (getZotItems_load ) #+1)
+                                
         
         print                               
         print "-"*50
@@ -111,6 +156,10 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             refIdsList.append(id_)
             
             title_    = ref[u'data'][u'title'] ### == label
+            try : 
+                authors_  = ref[u'data'][u'creators'] ### == authors
+            except :
+                authors_  = '' 
             try :
                 note_ = ref[u'data'][u'note']
             except :
@@ -179,6 +228,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             ref_dict = {
                          ns['id']           : id_.encode('UTF-8') ,
                          ns['label']        : title_,
+                         ns['authors']      : authors_,
                          ns['note']         : note_,
                          ns['abstractNote'] : abstract_.encode('UTF-8'),
                          ns['url']          : url_.encode('UTF-8') ,
@@ -189,8 +239,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                          ns['category']     : 'reference',
                          ns['supertag']     : False,
                          ns['weight']       : w_dft,
-                         ns['color']        : colorRef, ###############
-                         #ns['color']    : nodesColorsDict['reference'][switch_color], ###############
+                         #ns['color']        : colorRef, ###############
+                         ns['color']        : nodesColorsDict['reference'][switch_color], ###############
                          ns['dataset']      : dataSet_name,
                          ns['dataset_']     : selection
                          }
@@ -208,18 +258,20 @@ def refresh_JSON ( selection, collection, outfile_name ) :
             id_       = 'group_'+ str(counter_groups)
             url_      = ''
             itemType_ = 'group name'
-        
+            colorGrp  = group['hex']
+            
             group_dict = {
                           ns['id']       : id_.encode('UTF-8') ,
                           ns['label']    : gr_,
                           ns['url']      : url_.encode('UTF-8') ,
                           ns['type']     : itemType_.encode('UTF-8') ,
-                          ns['group']    : gr_.encode('UTF-8') ,
-                          ns['tags']     : '',
+                          ns['group']    : [gr_], #.encode('UTF-8') ,
+                          ns['tags']     : [gr_],
                           ns['category'] : 'group',
                           ns['supertag'] : True,
                           ns['weight']   : w_dft*w_biggroup ,
-                          ns['color']    : nodesColorsDict['group'][switch_color]  #####################
+                          #ns['color']    : nodesColorsDict['group'][switch_color]  #####################
+                          ns['color']    : colorGrp  #####################
                          }
             
             nodesList.append(group_dict)
@@ -247,7 +299,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                          ns['url']      : url_.encode('UTF-8') ,
                          ns['type']     : itemType_,
                          ns['group']    : '' ,
-                         ns['tags']     : '',
+                         ns['tags']     : [tag],
                          ns['category'] : 'tag',
                          ns['supertag'] : is_supertag,
                          #ns['weight']   : wgt_['weight']*w_dft,
@@ -277,6 +329,8 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         connex_sets = []
         
         for n in nodesList:
+                
+                ### only loop through references
                 if n['category'] == 'reference':
                         #print 'n:', n
                         
@@ -329,7 +383,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
                                 edgesList.append(edge_dict)
                                 counter_edges += 1
                         
-                        ### ref-ref / connexes edges ############### PROBLEM NOT RESOLVED YET ####
+                        ### ref-ref / connexes edges 
                         if n[ns['connex']] != '' and n[ns['connex']] != [] :
                             src_    = n[ns['id']]
                             for conn_ in n[ns['connex']]:
@@ -377,22 +431,42 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         
         ### generate JSON file / nodes + edges
         l_refs = len(data)
-        l_grps = len(groupsList)
+        l_grps = len(listed_groups)
+        
+        n_grps = listed_groups_     #.sort()
+        
         l_tags = len(tagsDict)
-        network_ = {"stats" : {"nodes": {
-                               "refs number"   : l_refs,
-                               "groups number" : l_grps,
-                               "tags number"   : l_tags,
-                               "nodes total number" : l_refs + l_grps + l_tags
-                                   },
-                               "edges" : {
-                                        "edges number"  : len(edgesList)
-                                        }
+        n_tags = [ k for k, v in  tagsDict.items() ]
+        print " -- print n_grps :", n_grps
+        print " -- print n_tags :", n_tags
+        print " -- print n_tags.sort() :", n_tags.sort()
+        
+        
+        dfltColorsDict = [ {"name" : k,         "hex" : v['hex'] } for k, v in nodesColorsDict.items() ]
+        dfltColorsDict = sorted(dfltColorsDict, key=lambda k: k['name']) 
+        
+        grpsColorsDict = [ {"name" : v["name"], "hex" : v['hex'] } for k, v in urlsDict.items() ]
+        grpsColorsDict = sorted(grpsColorsDict, key=lambda k: k['name'])
+        print " -- print grpsColorsDict : ", grpsColorsDict
+        
+        network_ = {"stats" : {
+                                "refs_number"   : l_refs,
+                                "groups_number" : l_grps,
+                                "groups_names"  : n_grps,
+                                "tags_number"   : l_tags,
+                                "tags_names"    : n_tags,
+                                "nodes_number"  : l_refs + l_grps + l_tags, 
+                                "edges_number"  : len(edgesList),
+                                "dfltColorsDict": dfltColorsDict,
+                                "grpsColorsDict": grpsColorsDict
                                 },
                     "nodes" : nodesList,
                     "links" : edgesList
                     }
-        network_JSON = json.dumps(network_ , sort_keys = True,
+        print "-- network_['stats']", network_["stats"]
+        
+        network_JSON = json.dumps(network_ ,
+                                  sort_keys = True,
                                   indent = 2,
                                   #ensure_ascii=False,
                                   #encoding='utf8',
@@ -402,7 +476,7 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         print " -- print network_JSON as it is --"
         print " -- outfile_name : ", outfile_name
         print 
-        print network_JSON[0:100], " ... "
+        print network_JSON[0:200], " ... "
         print
         outfile = open(outfile_name, 'w')
         outfile.write(network_JSON)
@@ -416,5 +490,5 @@ def refresh_JSON ( selection, collection, outfile_name ) :
         print " -- end of script --"
         for key, infos in urlsDict.items() :
                 print " -- refs in : ", infos['name'], ":", infos['len']
-        print " -- stats : ", network_['stats']['edges']
+        print " -- stats : ", network_['stats']
         print 

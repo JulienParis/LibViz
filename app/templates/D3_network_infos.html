@@ -5,8 +5,7 @@
   {% block D3_infos %}
   
       <!-- legend + filter column -->
-      <div  class="col-sm-2"
-            >
+      <div  class="col-sm-2 padded" >
         
         <br>
         
@@ -32,11 +31,11 @@
                 data-placement="top"
                 title="show/hide legend"
                 >
-              LEGEND <span class="caret" ></span>
+              legend <span class="caret" ></span>
             </h4>
             
           </a>
-        
+          
           
           <!-- collapsible legend only -->
           <div  class="list-group collapse in"
@@ -49,10 +48,68 @@
               <!-- here comes the svg -->
             </div>
           
-          
+          <hr>
           </div> <!-- end collapsible legend only -->
           
           
+          
+          <!-- FILTERS BREAKING EDGES -->
+          
+          <!-- collapser filters only -->
+          <a  role="button"
+              id="collapserBreakLinks"
+              data-toggle="collapse"
+              data-target="#collapsibleBreakLinks"
+              aria-expanded="true"
+              aria-controls="collapsibleBreakLinks">
+            
+            <h4 data-toggle="tooltip"
+                data-placement="top"
+                title="breaks links between nodes"
+                >
+              break links <span class="caret" ></span>
+            </h4>
+            
+          </a>
+          
+          <!-- collapsible filters only -->
+          <div  class="collapse in"
+                id="collapsibleBreakLinks"
+                style="; margin-top: 20px"
+                >
+            
+            <!-- FILTERS BREAK LINKS -->
+            <div class="list-group" id="break_list">  
+              
+              <!--<h5 class="small" style="color: white">
+                <em>break links</em>
+              </h5>-->
+                
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        name="ref-tag"
+                        id="ref-tag"
+                        onclick="Update_Node(this.id)">
+                  ref-tag
+                </button>
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        name="ref-group"
+                        id="ref-group"
+                        onclick="Update_Node(this.id)">
+                  ref-group
+                </button>              
+                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                        class="btn btn-default btn-sm breakFilter btn-filter"
+                        name="ref-ref"
+                        id="ref-ref"
+                        onclick="Update_Node(this.id)">
+                  ref-ref
+                </button>              
+            </div>
+          
+          <hr>
+          </div>
           
           <!-- RADIAL LAYOUTS -->
           
@@ -68,7 +125,7 @@
                 data-placement="top"
                 title="show/hide radial layouts"
                 >
-              RADIAL FIXING <span class="caret" ></span>
+              radial fixing <span class="caret" ></span>
             </h4>
             
           </a>
@@ -86,17 +143,17 @@
                 <button type="button" 
                     id="radial_refs"
                     name = "reference"
-                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    class="btn btn-default btn-sm radialFilter btn-filter small"
                     onclick="moveItToRadial(this.name)"
                     > 	
-                    references.
+                    references
                 </button>
                 
                  <!-- radial groups -->
                 <button type="button"  
-                    id="radial_groups"
+                    id="radial_groups" 
                     name = "group"
-                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    class="btn btn-default btn-sm radialFilter btn-filter small"
                     onclick="moveItToRadial(this.name)"
                     > 	
                     groups
@@ -106,11 +163,12 @@
                 <button type="button" 
                     id="radial_tags"
                     name = "tag"
-                    class="btn btn-default btn-sm radialFilter btn-filter"
+                    class="btn btn-default btn-sm radialFilter btn-filter small"
                     onclick="moveItToRadial(this.name)"
                     > 	
                     tags 
                 </button>
+                
                 
                 <!-- RELEASE all nodes -->
                 <button type="button"
@@ -124,10 +182,41 @@
                     <span class="glyphicon glyphicon-asterisk"></span>
                 </button>
                 
-                <br><br>
+                <!--<br><br>-->
+                
+                <a  role="button"
+                    id="collapserRadialTags"
+                    data-toggle="collapse"
+                    data-target="#collapsibleRadialTags"
+                    aria-expanded="true"
+                    aria-controls="collapsibleRadialTags">
                   
+                  <h5 data-toggle="tooltip"
+                      data-placement="right"
+                      style="color:white"
+                      title="show/hide radial layouts"
+                      class="small"
+                      >
+                    <em>&nbsp;... more radial fixing </em><span class="caret" ></span>
+                  </h5>
+                  
+                </a>
+                
+                <!-- collapsible radial tags only -->
+                <div  class="collapse"
+                      id="collapsibleRadialTags"
+                      style="; margin-top: 20px"
+                      >
+                
+                  <!-- RADIAL LAYOUT - TAGS button -->
+                  <div class="list-group" id="radial_list_tags">  
+                  
+                  </div>
+                </div> <!-- end collapsible radial tags -->
+                
+                 
             </div>
-            
+          <hr> 
           </div>
           
           
@@ -145,7 +234,7 @@
                 data-placement="top"
                 title="show/hide filters"
                 >
-              FILTERS <span class="caret" ></span>
+              show / hide nodes <span class="caret" ></span>
             </h4>
             
           </a>
@@ -159,9 +248,9 @@
             
             
             <!-- FILTERS BREAK LINKS -->
-            <div class="list-group" id="break_list">  
+            <!--<div class="list-group" id="break_list">  
               
-              <h5 style="color: white">
+              <h5 class="small" style="color: white">
                 <em>break links</em>
               </h5>
                 
@@ -183,64 +272,93 @@
                         onclick="Update_Node(this.id)">
                   ref-ref
                 </button>              
-            </div>
+            </div>-->
             
             
             
             <!-- FILTERS SHOW / HIDE NODES -->
             <div class="list-group" id="hide_list">
-              <h5 style="color: white"
+              <!--<h5 class="small" style="color: white"
                   >
                 <em>show / hide categories </em>
-              </h5>
+              </h5>-->
               
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="reference"
+                      name="reference"
                       onclick="hideNodes(this.id)">
                 references
               </button>
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="group"
+                      name="group"
                       onclick="hideNodes(this.id)">
                 groups
               </button>
               
               <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                      class="btn btn-default btn-sm hideFilter btn-filter"
+                      class="btn btn-default btn-sm hideFilter btn-filter small"
                       id="tag"
+                      name="tag"
                       onclick="hideNodes(this.id)">
                  tags
                </button>
               
             </div>
             
-            <div class="list-group">
-              <h5 style="color: white">
-                <em>show / hide {{ glob.ns.group }}(s) </em>
+            
+            <a  role="button"
+                id="collapserHideTags"
+                data-toggle="collapse"
+                data-target="#collapsibleHideTags"
+                aria-expanded="true"
+                aria-controls="collapsibleHideTags">
+              
+              <h5 data-toggle="tooltip"
+                  data-placement="right"
+                  style="color:white"
+                  title="show/hide radial layouts"
+                  class="small"
+                  >
+                <em>&nbsp;... more hiding choices </em><span class="caret" ></span>
               </h5>
               
-              {% for gr in groups %}
+            </a>
+            
+            <!-- collapsible radial only -->
+            <div  class="collapse"
+                  id="collapsibleHideTags"
+                  style="; margin-top: 20px"
+                  >
+        
+              <div class="list-group" id="hide_list_tags">
+                <!--<h5 class="small" style="color: white">
+                  <em>show / hide {{ glob.ns.group }}(s) </em>
+                </h5>-->
+                
+                {% for gr in groups %}
+                
+                  <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+                           class="btn btn-default btn-xs hideFilter btn-filter"
+                           id="{{ gr }}"
+                           onclick="hideNodes(this.id)">
+                     {{ gr }}
+                   </button>
+                
+                {% endfor %}
+                
+              </div>
               
-                <button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
-                         class="btn btn-default btn-xs hideFilter btn-filter"
-                         id={{ gr }}
-                         onclick="hideNodes(this.id)">
-                   {{ gr }}
-                 </button>
-              
-              {% endfor %}
-              
-            </div>
-              
+            </div> <!-- end collapsible -->
             
             {% if selection == "1camp" %}
             
               <div class="list-group">
-                <h5 style="color: white">
+                <h5 class="small" style="color: white">
                   <em>show or hide super-{{ glob.ns.tags }}(s) </em>
                 </h5>
                 
@@ -266,12 +384,13 @@
    
    
     <!-- NODE INFOS on different column -->  
-    <div  class="col-sm-3 col-sm-offset-7"
+    <div  class="col-sm-3 col-sm-offset-7 padded"
           id = "collapserInfosCol" 
           data-toggle=""
           data-target="#collapsibleInfosCol"
           aria-expanded="false"
           aria-controls="collapsibleInfosCol"
+          
          >
       
       
@@ -294,7 +413,7 @@
                 data-placement="top"
                 title="show/hide node infos"
             >
-              <span class="caret"></span> SELECTED NODE 
+              <span class="caret"></span> selected node 
             </h4>
             
           </a>
@@ -319,29 +438,39 @@
                 aria-controls="nAbstract"
                 >
 
-                <a class="nohref lead" id="nLabel"></a>
-                <br><span class="caret" ></span> abstract <span class="caret" ></span>
+                <a class="nohref" id="nLabel"></a>
+                <br>
+                <a class="small nohref"><span class="caret" ></span> abstract <span class="caret" ></span></a>
             </p>
             
             <p  class="infoN list-group-item collapse" >
-              <a class="nohref collapse" id="nAbstract"></a>
+              <a class="nohref collapse in small" id="nAbstract"></a>
             </p>
               
-            <p class="infoN list-group-item">
+            <p class="infoN list-group-item small">
+              
+              author(s) 
+              <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nAuthors"></a><br>
+              type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nType"></a><br>
+            
+            </p>
+            
+            <p class="infoN list-group-item small">
               category
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nCategory"></a><br>
               group  &nbsp;&nbsp;&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nGroup"></a><br>
-              type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nType"></a>
-            </p>
             
-            <p class="infoN list-group-item">tags &nbsp;&nbsp;
+            <!--</p>
+            
+            <p class="infoN list-group-item small">-->
+              tags &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <span class="glyphicon glyphicon-menu-right"></span> <a class="nohref" id="nTags"></a>
-            </p> <!--still not displaying tags correctly-->
+            </p> 
             
-            <p class="infoN list-group-item"></p>
-            <p class="infoN list-group-item">source
+            <p class="infoN list-group-item small"></p>
+            <p class="infoN list-group-item small">source
               <span class="glyphicon glyphicon-menu-right"></span> <a id="nUrl"></a>
             </p>
             

@@ -11,17 +11,15 @@
 
     <!-- subtitle of the app only in homepage -->
 	<br>
-	<br>
-	<br><br>
-    <div class="jumbotron col-sm-3 col-sm-offset-1">
+	<br><br><br>
+    <div class="jumbotron col-sm-4 col-md-3 col-sm-offset-1">
 		
 		<h1 class="text-center" style="color: white"> {{ glob.titleApp }} </h1>
 		
-		<br>
 		
 		<hr></hr>
 		
-		<h6 class="text-center lead" style="color:white;"> {{ glob.subtitleApp }} </h6>
+		<h5 class="text-center" style="color:white;"> {{ glob.subtitleApp }} </h5>
 		<!--<h4>-->
 		<!--	fetch a Zotero library and connect references by their tags, their groups or folders, and their connex references...-->
 		<!--	and make a graph-->
@@ -69,9 +67,9 @@
 			{% for set in glob.collections_names %}
 				<!--<h6>-->
 				<a 	href="/{{ set[0] }}"
-					class="list-group-item col-xs"
+					class="list-group-item col-xs small"
 					>
-					&nbsp;&nbsp; <span class="glyphicon glyphicon-th-list"></span> &nbsp;
+					&nbsp;&nbsp; <span class="glyphicon glyphicon-option-horizontal"></span> &nbsp;
 					 {{ set[1] }}
 				</a>
 				<!--</h6>-->

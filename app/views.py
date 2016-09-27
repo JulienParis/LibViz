@@ -1,11 +1,11 @@
 from app import app
-from flask import Flask, render_template
+from flask import Flask, render_template #, Markup
 
 from werkzeug.routing import Rule
 #app = Flask(__name__)
 
 ### import global variables for Z2N
-from Z2N_vars import collections, title, subtitle, version
+from Z2N_vars import collections, title, subtitle, version, metas, description
 from Z2N_vars import node_str_dict as nodeStruct
 from Z2N_vars import edge_str_dict as edgeStruct
 
@@ -22,17 +22,21 @@ collections_names = [ ]
 for key, coll in collections.items():
     coll_list = [ key, coll['dataSet_name'] ]
     collections_names.append( coll_list )
+collections_names.sort()
 print 'collections_names :', collections_names
 
 ### global entries and structures from Z2N_vars.py
 global_names = {
         'titleApp'          : title,             # name/brand of the app
         'subtitleApp'       : subtitle,          # explanation of what the app does
+        'metas'             : metas,             # meta for referencing
+        'description'       : description,
         'version'           : version,           # explanation of what the app does
         'collections_names' : collections_names, # list of collections with their keys, ids, ... 
         'ns'                : nodeStruct,        # integrate Jinja global ns in JS calling inside HTML/JS
         'es'                : edgeStruct         # integrate Jinja global es in J
     }
+
 
 @app.route('/')
 @app.route('/index')
@@ -42,7 +46,7 @@ def index():
     return render_template("index.html",
                            glob      = global_names,
                            licenceCC = licenceCC,
-                           index     = "index"
+                           index     = True
                            #isHome = True
                            #titleApp          = title ,
                            #subtitleApp       = subtitle ,
@@ -64,12 +68,16 @@ def data_rendering(selection):
     print 'collection :', collection
     shortName         = "/"+selection
     print 'shortName :', shortName
+
+    ZoteroURL      = collection['url_WEB']
     
     #coll_name      = collections_names
     #selection      = coll_name[0]
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     #lineTypes      = [ k for k, g  in collection['edgesDashDict'].items() ]
     supertags      = collection['supertags']
+    presetsFilters = collection['presetsFilters']
+    print "presetsFilters", presetsFilters
     
     legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
     legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]
@@ -78,19 +86,21 @@ def data_rendering(selection):
     outfile_d3name = outfileDict['of_d3name']
     
     return render_template("D3_network.html",
-                           glob          = global_names,
-                           licenceCC     = licenceCC,
+                           glob           = global_names,
+                           licenceCC      = licenceCC,
                            #isGraph     = True,
-                           selection     = selection,
-                           groups        = groups,
-                           legend        = legend,
-                           legendGroups  = legendGroups,
+                           selection      = selection,
+                           ZoteroURL      = ZoteroURL,
+                           groups         = groups,
+                           #legend        = legend,
+                           #legendGroups  = legendGroups,
                            #lines       = lineTypes,
-                           supertags     = supertags,
-                           dataSet_name  = collection['dataSet_name'],
-                           dataSet_url   = shortName,
-                           dataSet_infos = collection['dataSet_infos'],
-                           data_JSON     = outfile_d3name,
+                           presetsFilters = presetsFilters,
+                           supertags      = supertags,
+                           dataSet_name   = collection['dataSet_name'],
+                           dataSet_url    = shortName,
+                           dataSet_infos  = collection['dataSet_infos'],
+                           data_JSON      = outfile_d3name,
                            )
 
 
@@ -109,10 +119,13 @@ def refresh(selection):
     shortName         = "/"+selection
     print 'shortName :', shortName
 
+    ZoteroURL      = collection['url_WEB']
+
     #coll_name      = collections_names
     #selection      = coll_name[0]
     groups         = [ g['name'] for k, g  in collection['urlsDict'].items() ]
     supertags      = collection['supertags']
+    presetsFilters = collection['presetsFilters']
 
     legend         = [ {"name":k, "hex": g["hex"] } for k, g  in collection['nodesColorsDict'].items() ]
     legendGroups   = [ {"name":g["name"], "hex": g["hex"] } for k, g  in collection['urlsDict'].items() ]
@@ -131,17 +144,19 @@ def refresh(selection):
 
 
     return render_template("D3_network.html",
-                           glob          = global_names,
-                           licenceCC     = licenceCC,
+                           glob           = global_names,
+                           licenceCC      = licenceCC,
                            #isGraph     = True,
-                           selection     = selection,
-                           groups        = groups,
-                           legend        = legend,
-                           legendGroups  = legendGroups,
-                           supertags     = supertags,
-                           dataSet_name  = collection['dataSet_name'],
-                           dataSet_url   = shortName,
-                           dataSet_infos = collection['dataSet_infos'],
-                           data_JSON     = outfile_d3name,
+                           selection      = selection,
+                           ZoteroURL      = ZoteroURL,
+                           groups         = groups,
+                           #legend        = legend,
+                           #legendGroups  = legendGroups,
+                           presetsFilters = presetsFilters,
+                           supertags      = supertags,
+                           dataSet_name   = collection['dataSet_name'],
+                           dataSet_url    = shortName,
+                           dataSet_infos  = collection['dataSet_infos'],
+                           data_JSON      = outfile_d3name,
                            )
 

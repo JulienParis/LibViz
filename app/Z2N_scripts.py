@@ -4,7 +4,7 @@
 import os
 
 from Z2N_vars_app import static_dir
-from Z2N_vars     import url_API_Zotero, items_API_Zotero
+from Z2N_vars     import url_API_Zotero, url_WEB_Zotero, items_API_Zotero
 
 cwd              = os.getcwd()
 SITE_ROOT        = os.path.realpath(os.path.dirname(__file__))
@@ -31,10 +31,19 @@ def Outfile_(dataset) : ### name and adresses of a json file
         return outfileDict
     
 
-def createURL (dataSet_key) : ### generates Zotero url from a dataset collection key
+def create_API_URL (dataSet_key) : ### generates Zotero API url from a dataset collection key
     
     url = url_API_Zotero + dataSet_key + '/collections/'
     return url
 
+def create_API_URL_noColl (dataSet_key) : ### generates Zotero API url from a dataset collection key
+    
+    url = url_API_Zotero + dataSet_key 
+    return url
+
+def create_WEB_URL (dataSet_key) : ### generates Zotero WEB url from a dataset collection key
+    
+    url = url_WEB_Zotero + dataSet_key + '/items/'
+    return url
 
 
