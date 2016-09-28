@@ -1,8 +1,7 @@
                   
-                  **********
-                *** LibViz ***
-                  **********
-                  
+LibViz // http://libviz.artlabo.org 
+
+
 Making graphs you can play with from Zotero libraries..
 -------------------------------------------------------
 ----------- VERSION IN DEVELOPMENT !!! ----------------
