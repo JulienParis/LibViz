@@ -7,19 +7,26 @@
         <meta charset="utf-8">
         <title> {{ glob.titleApp }} - {{ glob.version }} </title>
         
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="{{ glob.metas }}">
-		<meta name="author"   content="Julien Paris">
-		<meta name="description" content="{{ glob.description }}">
-			
-		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
+	<meta name="author"   content="Julien Paris">
+	<meta name="description" content="{{ glob.description }}">
+		
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
 
-		<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
-		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
-		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+	<!--<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>-->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
 
-		<!--<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>-->
+	<!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>-->
+	<link href="{{ url_for('static', filename='css/jquery-ui.css') }}" rel="stylesheet">
+
+	<!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>-->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.0.min.js') }}"></script>
+
+	
+	
+	<!--<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>-->
 
         <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
         <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
@@ -580,20 +587,20 @@
 						
 						
 						<!-- REBUILD dataset / python script -->
-						<!--<li data-toggle="tooltip"
-							data-placement="bottom"
-							title="rebuild '{{ dataSet_name }}' dataset"
-							>
-							<button type="button"
-								class="btn btn-sm btn-warning btn-navbar"
-								aria-label="Left Align"
-								data-toggle="modal"
-								data-placement="bottom"
-								data-target="#modalRefresh"
-								>
-									<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>
-							</button>
-						</li>-->
+						<!--<li data-toggle="tooltip"-->
+						<!--	data-placement="bottom"-->
+						<!--	title="rebuild '{{ dataSet_name }}' dataset"-->
+						<!--	>-->
+						<!--	<button type="button"-->
+						<!--		class="btn btn-sm btn-warning btn-navbar"-->
+						<!--		aria-label="Left Align"-->
+						<!--		data-toggle="modal"-->
+						<!--		data-placement="bottom"-->
+						<!--		data-target="#modalRefresh"-->
+						<!--		>-->
+						<!--			<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>-->
+						<!--	</button>-->
+						<!--</li>-->
 						
 						{% endif %}
 						
