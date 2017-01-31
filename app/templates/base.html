@@ -1221,17 +1221,26 @@
 		};
 
 
+    var isFullScreen = false ;
+
     //reload page if resize
     $(window).resize(function() {
 
-     console.log('!!!! window was resized');
-     console.log('!!!! window was resized -- > reload() ');
+      console.log('!!!! window was resized');
+      console.log('!!!! window was resized -- > reload() ');
 
-     setTimeout( function () {
-       location.reload();
-       }, 1000 );
-     }
 
+      if ( !window.fullScreen | !isFullScreen ) {
+
+        setTimeout( function () {
+          location.reload();
+          }, 1000 );
+
+        }
+
+      if (window.fullScren) { isFullScreen = true } ;
+
+      }
     );
 
 
