@@ -1168,6 +1168,8 @@
     <!--  bootstrap callings  -->
     <script type="text/javascript">
 
+
+
 		// activate bootstrap dropdown and carousel
 		$(document).ready( function(){ $(".dropdown-toggle").dropdown() } ) ;
 		$(document).ready(function() { $('.carousel').carousel({interval: 7000}); });
@@ -1211,18 +1213,19 @@
 		};
 
 
-    // reload page if resize
+    //reload page if resize
     $(window).resize(function() {
 
-      console.log('!!!! window was resized');
-      console.log('!!!! window was resized -- > reload() ');
+     console.log('!!!! window was resized');
+     console.log('!!!! window was resized -- > reload() ');
 
-      setTimeout( function () {
-        window.location.reload();
-        }, 1000 );
-      };
+     setTimeout( function () {
+       location.reload();
+       }, 1000 );
+     };
 
     );
+
 
 
     </script>
