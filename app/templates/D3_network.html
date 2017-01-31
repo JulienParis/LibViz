@@ -1080,7 +1080,7 @@
     }
 
 
-    
+
 
     /////////////////////////////////////////////////////////////////////////
     //DOC READY - launch autocomplete once page loaded / initialize D3.JS
@@ -1091,12 +1091,11 @@
 
         initD3();
 
-        //// réanimer les points du graph
+        //// reanimate graph every n milliseconds
         window.setInterval(
           function () {
              setInterval( function () {
-                console.log("--- restart auto / setInterval ---");
-                // fonction à relancer toutes les n millisecondes qui s'applique au graph D3 : "restart" de la variable "simulation" avec un alpha de 0.5
+                //console.log("--- restart auto / setInterval ---");
                 simulation.alphaTarget(1.0).restart();
                 //initD3();
              }, 3000);   // time in milliseconds, here every 3 seconds
