@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 
 ### global variables and collections for Z2N ###
 ### to retrieve in Zotero   ###
@@ -76,10 +77,24 @@ collections = {
         'API'           : 'Zotero',
         'dataSet_name'  : '[1.camp]',
         'dataSet_infos' : {
-                            'presentation' : """Presentation ...""",
-                            'authors'      : """Authors...""",
-                            'methodology'  : """Methodology...""",
-                            'credits'      : """Credits / link to Zotero group...""",
+                            'presentation' : u"""
+1.CAMP est programme de recherche-création animé par l'association PING dans le cadre du réseau ARTLABO :                                       
+l'association nantaise PiNG anime ce cycle de recherche-création afin de croiser les regards, les savoirs et les récits autour de notre changement d'ère.
+En 2016, nous avons ainsi invité des artistes, citoyens, activitstes, étudiants et chercheurs à proposer leurs témoignages sur ce vaste sujet.
+Cette exposition vous propose de parcourir leurs explorations, vers de nouvelles voies de compréhension de notre rapport à la nature et de notre société en transition.
+""",
+                            'authors'      : u"""
+Julien Bellanger, Julien Paris, fork d'une réalisation de <a target='_blank' href='http://laurent-malys.fr/'> Laurent Malys </a> pour 0.Camp www.artlabo.org/0
+""",
+                            'methodology'  : u"""
+Réalisation d'une interface web permettant de faire des recherches à la fois sur les activités de 1CAMP www.artlabo.org/1, la veille collective réalisée notamment via un groupe facebook "1.camp", les notes de lecture sur une période d'un an.
+Les objectifs de cette dataviz sont triple : tisser des liens entre les activités et références en les cartographiant - relier ces contenus en utilisant 4 TAG thématiques : #technosciences, #savoirscommuns, #aliens et #territoires - proposer une lecture non linéaire des contenus, croisant les approches ( scientifiques, artistiques, citoyennes, … ) afin d'en faire un moteur de recherche singulier.
+more info : http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1
+""",
+                            'credits'      : u"""Credits /
+PING : www.pingbase.net /
+ARTLABO : www.artlabo.org /
+link to Zotero group...""",
                         },
         'dataSet_key'   : '336106',
         'url_ROOT'      : create_API_URL('336106'),

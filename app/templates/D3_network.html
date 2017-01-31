@@ -5,44 +5,44 @@
 
 {% block D3_js %}
 
-  
+
   <!-- only JS scripts here / can be put in specific file in ./static/js later ? -->
   <!-- script D3.JS  -->
-  
-  
+
+
   <!-- call global d3.js library here -->
-  //<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script> -->
   <script type="text/javascript" src="{{ url_for('static', filename='js/d3.v4.2.7.js') }}"></script>
-  
-  
-  
+
+
+
   <!-- main d3.js function for {{ glob.titleApp }}  -->
   <script>
-    
+
     var dataSet = {{ dataSet_infos|tojson }};
-    
+
     // put dataset clean html infos in modalInfos : /////////////////////////////////////////////
     //d3.select("#dataset_presentation").html( dataSet.presentation );
     //d3.select("#dataset_authors").html( dataSet.authors );
     //d3.select("#dataset_credits").html( dataSet.credits );
     //d3.select("#dataset_methodology").html( dataSet.methodology );
-    
-    
+
+
     // find width and height of parent html elements
     var contWidth  = document.getElementById('body').clientWidth;
     //var contWidth = document.documentElement.clientWidth;
-    
+
     var contHeight = document.documentElement.clientHeight;
     //var contHeight = document.getElementById('body').clientHeight;
-    
-    
+
+
     //////////////////////////////////////////////////////////////////////////
     //// ZOOMING / PANNING SETTINGS functions 1
     var zoom = d3.zoom()
       .scaleExtent([1/5, 4])
       .on("zoom", zoomed)
     ;
-      
+
 
     //////////////////////////////////////////////////////////////////////////
     //TOOLTIPS - add the div for the tooltip
@@ -50,8 +50,8 @@
       .append("div")
       .attr("class", "tooltipNode")
       .style("opacity", 0) ;
-      
-      
+
+
     //////////////////////////////////////////////////////////////////////////
     // DEFAULT VARIABLES
     var dft_circle_stroke_w   = 0;
@@ -60,7 +60,7 @@
     var radiusFactor          = 1.3;
     var pinnedNodeFactor      = 1.3;
     var hiddenOpacity         = "0.1";
-    
+
     //////////////////////////////////////////////////////////////////////////
     // create svg for graph
     var svg = d3.select("#containerLayout")
@@ -77,8 +77,8 @@
     var svg = d3.select("svg"),
       width  = +svg.attr("width"),
       height = +svg.attr("height");
-      
-      
+
+
     // add group for shapes in svg
     var vis = svg
       .attr("style", "background: black")
@@ -95,18 +95,18 @@
         .call(zoom)
         .on("dblclick.zoom", null)
         ;
-        
-        
+
+
     var links_g = vis.append('g')
       .attr("class", "links")
       .on("dblclick.zoom", null)
       ;
-    
+
     var nodes_g = vis.append('g')
       .attr("class", "nodes")
       .on("dblclick.zoom", null)
-      ;    
-    
+      ;
+
 
 
     ////////////////////////////////////////////////////
@@ -117,22 +117,22 @@
       nodes_g.attr("transform", d3.event.transform );
 
     }
-    
+
     // reset zoom to original
     function resetted() {
       zoomCanvas.transition()
           .duration(750)
           .call(zoom.transform, d3.zoomIdentity);
     }
-    
+
     //////////////////////////////////////////////////////////////////////////
-    // DRAG + pin function 
+    // DRAG + pin function
     var node_normal_drag = d3.drag()
       .on("start", dragstarted)
       .on("drag" , dragged    )
       .on("end"  , dragended  )
       ;
-      
+
       function dragstarted(d) {
           //console.log("dragstart",d); // d = Object { ID: "group_1", ...
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
@@ -140,16 +140,16 @@
           d.fx = d.x;
           d.fy = d.y;
       }
-      
+
       function dragged(d) {
           d3.select(this).classed("fixed", d.fixed = true);
           d.fx = d3.event.x;
           d.fy = d3.event.y;
       }
-      
+
       function dragended(d) {
           if (!d3.event.active) simulation.alphaTarget(0);
-          
+
           if (d.fixed == true) {
             d.fx = d3.event.x;
             d.fy = d3.event.y;
@@ -161,78 +161,78 @@
           //  d.fy = null;
           //}
       }
-      ;    
-    
-    
+      ;
+
+
     ////////////////////////////////////////////////////////////
     // RADIAL FUNCTIONS : put selected nodes around a circle
-    // adapted from : http://bl.ocks.org/vlandham/5087480 
+    // adapted from : http://bl.ocks.org/vlandham/5087480
     D2R = Math.PI / 180 ; // degrees to radians
-    
-    // center svg canvas + variables 
+
+    // center svg canvas + variables
     var centerX = width/2 ;
     var centerY = (height/2) + 45;
     var radius  = 250 ; /// radius circle / HERE TO CHANGE : choose a different radius
 
     // compute radial location to nodes and corresponding circles
     function radial(totalNodes, node, index) {
-      
+
       //console.log("radial +    : ", totalNodes) ;
       //console.log("radial ++   : ", radius) ;
       //console.log("radial +++  : ", node) ;
       //console.log("radial ++++ : ", index) ;
-      
-      
+
+
       var clickAngle          = 360 / totalNodes   ; // angle in degrees for circle divisions
       var currentAngle        = clickAngle * index ; // angle in degrees for current node
       var currentAngleRadians = currentAngle * D2R ; // convert to radians
       //console.log("radial -   : ", clickAngle) ;
       //console.log("radial --  : ", currentAngle) ;
       //console.log("radial --- : ", currentAngleRadians) ;
-      
+
       // basic trigonometry ///////////////////////////////////
-      var radialPoint = {  
+      var radialPoint = {
         x : centerX + radius * Math.cos(currentAngleRadians),
         y : centerY + radius * Math.sin(currentAngleRadians)
       }
-      
+
       //console.log("radial 2/ : ", radialPoint) ;
       //console.log("radial 3/ : ", node.fixed) ;
       //console.log("radial 4/ : ", node.x) ;
       //console.log("radial 5/ : ", node.fx) ;
-      
+
       // affect x and y coordinates to node
       node.fixed = true ;
-      //node.x  += (radialPoint.x - node.x ) ; 
-      //node.y  += (radialPoint.y - node.y ) ; 
-      //node.fx += (radialPoint.x - node.x ) ; 
+      //node.x  += (radialPoint.x - node.x ) ;
+      //node.y  += (radialPoint.y - node.y ) ;
+      //node.fx += (radialPoint.x - node.x ) ;
       //node.fy += (radialPoint.y - node.y ) ;
-      node.x  = radialPoint.x  ; 
-      node.y  = radialPoint.y  ; 
-      node.fx = radialPoint.x  ; 
+      node.x  = radialPoint.x  ;
+      node.y  = radialPoint.y  ;
+      node.fx = radialPoint.x  ;
       node.fy = radialPoint.y  ;
-      
+
       //console.log("radial 3// : ", node.fixed) ;
       //console.log("radial 4// : ", node.x) ;
       //console.log("radial 5// : ", node.fx) ;
-      
+
     };
-    
-    // actually move and fix selected nodes positions in space 
+
+    // actually move and fix selected nodes positions in space
     function moveToRadial (selectedNodes) {
-      
+
       console.log("moveToRadial 1/ : ", selectedNodes) ;
-      
-      var totalNodes = selectedNodes.size() ; 
+
+      var totalNodes = selectedNodes.size() ;
       //console.log("moveToRadial 2/ : ", totalNodes) ;
-      
+
       // sort alphabetically here to display nicely in radial (which depends on index value)
       selectedNodes = selectedNodes.sort(function(a,b){ return a.label.toLowerCase().localeCompare(b.label.toLowerCase()); });
-      
-      
+
+
       // put radial coordinates datas into node.__data__ (not DOM)
       selectedNodes.each( function(d,i) { radial( totalNodes, d, i ) } );
-      
+
       // give back attribute to circle
       selectedNodes
         .attr("cx", function(d) { return d.x } )
@@ -242,19 +242,19 @@
       //selectedNodes.each( function(d,i) { return d.fx = null } );
       //selectedNodes.each( function(d,i) { return d.fy = null } );
     };
-    
+
     // activate radial positionning depending on button value
     function moveItToRadial(value) {
-      
+
       //console.log("moveItToRadial 1/ : ", value) ;
-      
-      // here unfix position for everybody 
+
+      // here unfix position for everybody
       releaseAllNodes();
-      
+
       // select nodes corresponding to value
-      var nodes    = d3.selectAll(".node");   
+      var nodes    = d3.selectAll(".node");
       var selected = nodes.filter(function (d, i) {
-        
+
         //return d.group == value  ||  d.tag == value || d.category == value ;    ;
         bool = false;
         for  (j = 0; j<d.tag.length; j++)
@@ -264,18 +264,18 @@
         if (d.category == value | d.group == value ) { bool = true  };
         return bool
         } );
-      
+
       moveToRadial(selected, radius);
       resetted();
     }
-    
+
     // add radial function button to all tag names
     function addTagRadial(tagsNames) {
-      
+
       //console.log("addTagRadial : tagsNames (list) :", tagsNames);
-      
+
       div_radial_buttons = d3.select("#radial_list_tags") ;
-      
+
       for (i=0; i<tagsNames.length ; i++) {
         var tag = tagsNames[i] ;
         //console.log("addTagRadial / tag name : ", tag)
@@ -287,10 +287,10 @@
               .attr("onclick", "moveItToRadial(this.name)")
               .text(tag);
       } ;
-    
+
     }
-    
-    
+
+
     ///////////////////////////////////////////////////
     // force parameters
     var simulation = d3.forceSimulation()
@@ -298,80 +298,80 @@
         .force("charge" , d3.forceManyBody().strength(-50) )
         .force("center" , d3.forceCenter(width / 2, height / 2))
         // COLLIDE FORCE // WORKS BUT takes lot of CPU power and slow visualisation ////////////////////////////////
-        //.force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2)) 
+        //.force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2))
         ;
-    
-    
+
+
     //////////////////////////////////////////////
-    // read JSON graph 
-    
+    // read JSON graph
+
     var allEdges = [];
     var allNodes = [];
     var allStats = [];
-    
+
     var colorsRange = []; // for tags
     var legendColors_Groups = null ;
-    
+
     var optArray = []; // for autocomplete
     //var toggle   = 0 ; // for connectedNodes
 
     //initialize graph layout : fill allNodes and allEdges
     function initD3() {
       d3.json("{{ data_JSON }}",
-              
+
               function(error, graph) {
                 if (error) throw error   ;
-                
+
                 console.log("---- initD3 ----" );
-                
+
                 allNodes = graph.nodes ;
                 allEdges = graph.links ;
                 allStats = graph.stats ;
-                
+
                 //sort tags names in alphabetical order
                 if (allStats.tags_names.length != 0 | allStats.tags_names != null ) {
                   allStats.tags_names = allStats.tags_names.sort(); //////////////////////////////////////////////
                 };
-                
+
                 //console.log("graph.nodes : ", allNodes); //
-                //console.log("graph.links : ", allEdges); //                
+                //console.log("graph.links : ", allEdges); //
                 //console.log("in json : ", allStats); //
                 //console.log("graph.stats.groups_names : ", allStats.groups_names); //
                 //console.log("graph.stats.tags_names   : ", allStats.tags_names); //
-      
+
                 // add stats in presentation modal
                 d3.select('#stats_nodes').text(allStats.nodes_number);
                 d3.select('#stats_refs').text(allStats.refs_number);
                 d3.select('#stats_groups').text(allStats.groups_number);
                 d3.select('#stats_tags').text(allStats.tags_number);
                 d3.select('#stats_edges').text(allStats.edges_number);
-                
+
                 // create colors range for tags
                 colorsRange = d3.scaleOrdinal()
                                 //.domain(allStats.tags_names)
                                 //.range(["#FF0000","#009933"]);
                                 .range(d3.schemeCategory20);
                 //console.log("d3.json / colorsRange : ", colorsRange(1));
-                
-                
+
+
                 // create legend
                 packLegend();
-                
+
                 // add radial buttons for each tag
                 addTagRadial(allStats.tags_names);
-                
+
                 // add hide buttons for each tag
                 addTagHide(allStats.tags_names)
-                
+
                 // push group & tag names & nodes labels into autocomplete array
                 for (var i = 0; i < allNodes.length - 1; i++) {
                         //console.log(allNodes[i].label);
-                        optArray.push(allNodes[i].label);   
+                        optArray.push(allNodes[i].label);
                     } ;
                 for (var i = 0; i < allStats.groups_names.length - 1; i++) {
                         //console.log(allNodes[i].label);
                         var label_group = allStats.groups_names[i];
-                        if ( optArray.indexOf(label_group) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array 
+                        if ( optArray.indexOf(label_group) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array
                           optArray.push(label_group);
                         }
                     } ;
@@ -384,68 +384,69 @@
                     } ;
                 optArray = optArray.sort();
                 //console.log("optArray from start : ", optArray);
-                
+
                 // first rendering
                 render(allNodes, allEdges) ;
-                
+
                 // click presets
                 clickPresets();
-                
+
+
               }
       )
     }
     ;
     //console.log("after d3.json", allStats);
-   
-   
+
+
     ////////////////////////////////////////////////////
     // PRESETTINGS CLICKS FROM COLLECTION
-    
+
     // load presetsFilters
     var presets = {{ presetsFilters|tojson }};
     //console.log("clickPresets : ", presets )
-    
-    // click presets 
+
+    // click presets
     function clickPresets() {
-      
+
       var values_toPress = [];
-      
-      // iterate through preset : radial / hide / break 
+
+      // iterate through preset : radial / hide / break
       for (var key in presets ) {
-        
+
         // example : 'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
         values              = presets[key] ; // example : key = ".radialFilter" ... presets[key] = Array["ref-group", "ref-tag"]
-        console.log("clickPresets / presets : ", key, presets[key] ); 
-        
+        console.log("clickPresets / presets : ", key, presets[key] );
+
         if (values.length > 0 ) {
-          
+
           // trigger corresponding preset functions
           for (i = 0; i < values.length ; i++) {
-            
+
             var value = values[i];
             console.log("clickPresets / value : ", value );
-            
+
             if (key == "radialFilter") {
               moveItToRadial(value) ;
               console.log("clickPresets / triggering moveItToRadial : ", value );
             }
-            
+
             else if (key == "hideFilter" ) {
               hideNodes(value);
               console.log("clickPresets / triggering hideNodes : ", value );
               values_toPress.push(value);
             }
-            
+
             else if (key == "breakFilter" ) {
               Update_Node(value);
               console.log("clickPresets / triggering Update_Node : ", value );
               values_toPress.push(value);
             }
-            
+
           }
-          
+
         }
-        
+
         // 'press' buttons from hideFilter and breakFilter
         buttons_toPress = []
         buttons_hide    = document.getElementsByClassName("hideFilter");
@@ -462,24 +463,24 @@
                 buttons_toPress.push(button_);
               }
         }
-        
+
         for (i=0; i<buttons_toPress.length ; i++) {
           var button_toPress = buttons_toPress[i];
           button_toPress.setAttribute("enabled","1");
           button_toPress.setAttribute("aria-pressed", "true");
           button_toPress.className += " active";
         }
-        
-        
+
+
       };
-      
+
     };
-    
-    
+
+
     /////////////////////////////////////////////////
     // LEGEND
     // create legend in div #legend on the fly
-    
+
     var spaceX         = 20 ;
     var interval       = 3 ;
     var legendR        = 6  ;
@@ -488,7 +489,7 @@
     var spaceY         = legendDiam + interval ;
     var tempSpaceY     = interval + legendR ;
     var legendFontSize = "11px";
-    
+
     var legendHeight            = 0 ;
     var legendWidth             = 0 ;
     var legend                  = null;
@@ -497,13 +498,13 @@
     //var legendColorsRefGroupTag = null;
     //console.log("graph.stats.groups_names : ", allStats.groups_names); ////////////////
     //console.log("graph.stats.tags_names   : ", allStats.tags_names); /////////////////////////
-    
-    // set the svg parameters in column filters 
+
+    // set the svg parameters in column filters
     function setLegend(len_ref_group_tag, len_groups, len_tags) {
-      
+
       legendHeight = 5 + (len_ref_group_tag*spaceY) + (len_groups*spaceY) + (len_tags*spaceY) + 5
       //console.log(legendHeight);
-      
+
       legendWidth  = document.getElementById('legend').clientWidth ;
       //var legendHeight = document.getElementById('legend').clientHeight;
       legend = d3.select(".legend")
@@ -512,16 +513,16 @@
         .attr("width" , legendWidth)
         .attr("height", legendHeight)
         .attr("class", "svg_legend");
-      
+
       nodeLegend = legend.append("g")
         .attr("id"   , "nodes_legend") ;
       // add circles for nodes_legend
 
     }
-    
+
     // insert nodes into legend svg div
     function makeLegend(coll, id, margin) {
-      
+
       for (var i = 0; i <= coll.length - 1; i++) {
       var obj = coll[i];
         //console.log(obj);
@@ -540,7 +541,7 @@
           .style("fill", obj.hex ) //return color(d.{{glob.ns.type}})
           //.attr("name", obj.name)
           //.attr("onclick", "moveItToRadial(this.name)")
-          ; 
+          ;
         lgd_.append("text")
           .attr("fill", "white")
           .attr("font-size", legendFontSize)
@@ -548,12 +549,12 @@
           .attr("y", tempSpaceY )
           .attr("dy", ".35em")
           .text( id + obj.name );
-        
+
         tempSpaceY += spaceY ;
         };
-        
+
       };
-    
+
     // create whole legend
     function packLegend() {
 
@@ -565,13 +566,13 @@
       //console.log("packLegend /grpsColorsDict", allStats.grpsColorsDict);
       //legendColorsGroups =  legendGroups|tojson  ; // tojson in jinja
       console.log("packLegend / legendColorsGroups :", legendColors_Groups);
-      
+
       legendColors_RefGroupTag = allStats.dfltColorsDict;
       //console.log("packLegend /dfltColorsDict", allStats.dfltColorsDict);
       //legendColorsRefGroupTag =  legend|tojson  ; // tojson in jinja
       //console.log("packLegend / legendColorsRefTag :", legendColors_RefGroupTag);
-      
-      
+
+
       var legendColors_Refs = [] ; // [{"name" : "reference", "hex": "grey"}];
       for (i=0; i<legendColors_RefGroupTag.length; i++) {
         if (legendColors_RefGroupTag[i].name == "reference") {
@@ -579,9 +580,9 @@
         }
       };
       //console.log("packLegend / legendColors_Refs :", legendColors_Refs);
-      
+
       var legendColors_Tags = [];
-      
+
       for (i=0; i<allStats.tags_names.length ; i++){
         var tag     = new Object() ;
         var tName   = allStats.tags_names[i];
@@ -591,17 +592,17 @@
         legendColors_Tags.push(tag)
       }
       //console.log("packLegend / legendColors_Tags :", legendColors_Tags);
-      
+
       setLegend(legendColors_Groups.length, 0, legendColors_Tags.length ); //legendColors_Refs.length  legendColors_tags.length) ;
-      
+
       // actually make legends
       //makeLegend(legendColors_RefGroupTag, 0);
-      
+
       //makeLegend(legendColors_Refs, "",  interval*0)
       makeLegend(legendColors_Groups, "group / ", interval*0);
       makeLegend(legendColors_Tags  , "tag / "  , interval*0);
-      
-      // attribute function to nodes in legend 
+
+      // attribute function to nodes in legend
       d3.select("#nodes_legend").selectAll("g")
         .attr("clickable", "yes")
         //.on("click", "moveItToRadial(this.name)" )
@@ -609,20 +610,20 @@
         //.attr("onclick", "moveItToRadial(this.name)")
       ;
     }
-    
-    
-    
+
+
+
     /////////////////////////////////////////////////////////////////////////////////
     /// BREAK LINKS & UPDATE function
     // adapted from  :  http://bl.ocks.org/csesivakumar/31e23b875f260622f8f7da3ae380958c
     function Update_Node(buttonId){
-      
-      
+
+
       // get button attributes
       var Clickbutton = document.getElementById(buttonId);
       var status = Clickbutton.getAttribute("Enabled");
-      
-      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
+
+      // change button status on click event / Enabled="0" -> not clicked ; 1 =
       if (status =="0"){
 		Clickbutton.setAttribute("Enabled","1");
 		Clickbutton.setAttribute("aria-pressed", "true") ;
@@ -631,35 +632,35 @@
         Clickbutton.setAttribute("Enabled","0");
         Clickbutton.setAttribute("aria-pressed", "false") ;
       }
-      
+
       // check status for all buttons
       var buttons = document.getElementsByClassName('breakFilter');
       //console.log("buttons :", buttons);
-      
+
       // stores criterias to hide
       var rulesToHide = [] ;
       for(var j = 0; j < buttons.length; j++) {
         //console.log(button);
-		var button = buttons[j];		
+		var button = buttons[j];
 		var status = button.getAttribute("Enabled");
         // remove nodes and edges if button status is "1"
-		if (status=="1"){ 
+		if (status=="1"){
           rulesToHide.push(button.id);
-        }			
+        }
       }
       //console.log("rulesToHide breakFilter :", rulesToHide);
-      
+
       var tempNodes = [];
       var tempEdges = [];
-      
+
       // filter nodes
       for (var i = 0 ; i < allNodes.length; i++ ) {
         var obj = allNodes[i];
-        if ( rulesToHide.indexOf(obj.category) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array 
+        if ( rulesToHide.indexOf(obj.category) == -1 ) { /// "!= -1" : in array / "== -1" : NOT in array
           tempNodes.push(obj) ;
         }
       }
-      
+
       // filter edges
       for (var i = 0 ; i < allEdges.length; i++ ) {
         var obj = allEdges[i];
@@ -669,42 +670,42 @@
           tempEdges.push(obj);
         }
       }
-      
+
       render(tempNodes, tempEdges) ;
-      
+
     }
 
 
     //////////////////////////////////////////////////////////////////////////
     // HIDE NODES FROM LAYOUT (but no disappear)
     function hideNodes(buttonValue) {
-      
+
       //console.log("buttonValue", buttonValue); // example : 'group'
-      
+
       // get all 'hideFilter' buttons
       var buttons = document.getElementsByClassName('hideFilter');
-      
+
       // empty containers
       var rulesToHide = [] ;
       var Clickbutton = null ;
       var buttonStatus = null;
-      
+
       // get button attributes
       for(var j = 0; j < buttons.length; j++) {
-		var button = buttons[j];		
+		var button = buttons[j];
         // use as clickbutton if : id == buttonValue
         var id = button.getAttribute("id");
-		if (id == buttonValue){ 
+		if (id == buttonValue){
           Clickbutton = button ;
           buttonStatus = button.getAttribute("Enabled");
         }
       };
-     
-      //console.log("Clickbutton", Clickbutton); 
-      //console.log("buttonStatus", buttonStatus); 
-      
-      // change button status on click event / Enabled="0" -> not clicked ; 1 = 
-      
+
+      //console.log("Clickbutton", Clickbutton);
+      //console.log("buttonStatus", buttonStatus);
+
+      // change button status on click event / Enabled="0" -> not clicked ; 1 =
+
       if (buttonStatus =="0"){
         Clickbutton.setAttribute("enabled","1");
         Clickbutton.setAttribute("aria-pressed", "true") ;
@@ -713,44 +714,44 @@
         Clickbutton.setAttribute("enabled","0");
         Clickbutton.setAttribute("aria-pressed", "false") ;
       };
-      
-      
-      // stores all criterias to hide 
+
+
+      // stores all criterias to hide
       for(var j = 0; j < buttons.length; j++) {
-		var button = buttons[j];		
+		var button = buttons[j];
 		var status = button.getAttribute("Enabled");
-		if (status=="1"){ 
+		if (status=="1"){
           rulesToHide.push(button.id);
-        }			
+        }
       }
       //console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
-      
+
       var nodes = vis.selectAll(".node");
-      
+
       nodes.style("opacity", "1" );
-      
-      
+
+
       var n_hidden = nodes.filter(function (d, i) {
-                                            
+
                                             bool = false;
-                                            
+
                                             for (var j = 0 ; j< d.tag.length ; j++)
                                               { if (rulesToHide.indexOf(d.tag[j]) != -1 )
                                                 { bool = true }
                                             }
                                             ;
-                                            
+
                                             for (var j = 0 ; j< d.group.length ; j++)
                                               { if (rulesToHide.indexOf(d.group[j]) != -1 )
                                                 { bool = true }
                                             }
                                             ;
-                                            
+
                                             if (rulesToHide.indexOf(d.category) != -1 ) {
                                               bool = true
                                             }
                                             //|| rulesToHide.indexOf(d.group)  != -1 ///// here group too for references !!!! ////////
-                                            
+
                                             //|| rulesToHide.indexOf(d.tag) != -1
                                             /// must iterate through d.tag ARRAY ???
                                             //|| function (d) { ////////////////////////////////////////////////////////
@@ -767,28 +768,28 @@
                                             //      return bool
                                             //    }
                                             return bool;
-                                            
-                                            ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
+
+                                            ; } ) /// "!= -1" : IN array / "== -1" : NOT in array
       //console.log(n_hidden);
-      
+
       //var n_showed = nodes.filter(function (d, i) { return rulesToHide.indexOf(d.category) == -1
       //                                      && rulesToHide.indexOf(d.group)  == -1
       //                                      && rulesToHide.indexOf(d.tag)    == -1
-      //                                      ; } ) /// "!= -1" : IN array / "== -1" : NOT in array 
+      //                                      ; } ) /// "!= -1" : IN array / "== -1" : NOT in array
       n_hidden.style("opacity", hiddenOpacity );
       //n_showed.style("opacity", "1.0" );
-        
+
     }
 
 
     //////////////////////////////////////////////////////////////////////////
     // add radial function button to all tag names
     function addTagHide(tagsNames) {
-      
+
       //console.log("addTagRadial : tagsNames (list) :", tagsNames);
-      
+
       div_radial_buttons = d3.select("#hide_list_tags") ;
-      
+
       for (i=0; i<tagsNames.length ; i++) {
         var tag = tagsNames[i] ;
         //console.log("addTagRadial / tag name : ", tag)
@@ -803,41 +804,41 @@
               .attr("onclick", "hideNodes(this.id)")
               .text(tag);
       } ;
-      
-      //<button type="button" enabled="0" data-toggle="button"  aria-pressed="false" 
+
+      //<button type="button" enabled="0" data-toggle="button"  aria-pressed="false"
       //                class="btn btn-default btn-sm hideFilter btn-filter"
       //                id="reference"
       //                onclick="hideNodes(this.id)">
       //          references
       //        </button>
-    
+
     }
 
 
     //////////////////////////////////////////////////////////////////////////////
     // SELECT COLOR
     function selectColor(node) {
-      
-      // default color from json 
+
+      // default color from json
       var colorNode = node.color;
-      
+
       // change color to d3 scale ordinal if tag or reference
       if ( node.tag.length == 1) {
-        
+
         tagSelected = node.tag[0];
-        
+
         // find corresponding i in list of tags
-        tagIndex = allStats.tags_names.indexOf(tagSelected); 
-        
+        tagIndex = allStats.tags_names.indexOf(tagSelected);
+
         // retrieve corresponding color from colorsRange
         colorNode = colorsRange(tagIndex) ;
-      
+
       }
-      
+
       else if ( node.tag.length != 1  &&  node.group.length == 1 ) {
-        
+
         groupSelectec = node.group[0];
-        
+
         // retrieve corresponding color from legendColors_Groups
         for (i = 0; i< legendColors_Groups.length ; i++ ) {
           var grp_ = legendColors_Groups[i];
@@ -846,54 +847,57 @@
           }
         }
       }
-      
+
       else if ( node.category == "group" ) {
-        
+
         groupSelectec = node.group[0];
-        
+
         // retrieve corresponding color from legendColors_Groups
         for (i = 0; i< legendColors_Groups.length ; i++ ) {
           var grp_ = legendColors_Groups[i];
           if (grp_.name == groupSelectec ) {
             colorNode = grp_.hex ;
-          }      
+          }
         }
       }
-      
+
       return colorNode ;
     } ;
-    
-    
-    
+
+
+
+
     //////////////////////////////////////////////////////////////////////////////
     // MAIN D3.JS RENDERING function
     //////////////////////////////////////////////////////////////////////////
     function render (nodes, links) {
-      
-      
+
+
       simulation.alphaTarget(0.4).restart() ;
-      
+
+
+
       // launch force
       simulation
           .nodes(nodes)
           .on("tick", ticked);
-          
+
       simulation.force("link")
           .links(links);
 
       //console.log("nodes in render : ", nodes);
-      
+
       /////////////////////////////////////////////////
-      // stop / restart animation 
+      // stop / restart animation
       function stopLayout()   { simulation.stop(); } ;
       function restartLayout(){ simulation.restart(); } ;
-      
+
       //////////////////////////////////////////////////////////////////////////
-      // PLAY / PAUSE BUTTON - FUNCTIONS 
+      // PLAY / PAUSE BUTTON - FUNCTIONS
       $(function () {
-          
+
           var active = true;
-          
+
           $('#play-pause').click(function () {
               if (active) {
                   active = false;
@@ -909,22 +913,22 @@
                   ;
               }
           });
-          
+
       });
-      
+
       ///////////////////////////////////////////////////////
-      // enter json datas 
+      // enter json datas
       var link  = links_g.selectAll(".link").data(links);
       var node  = nodes_g.selectAll(".node").data(nodes);
-      
+
       //console.log("render / node : ", node)
-      
+
       //console.log("graph.stats : ", allStats); //
       //console.log("graph.stats.groups_names : ", allStats.groups_names); //
       //console.log("graph.stats.tags_names   : ", allStats.tags_names); //
-      
-      
-      
+
+
+
       // create lines for links
       link.enter()
           .append("line")
@@ -933,16 +937,16 @@
           .attr("stroke-dasharray", function(d) { return d.{{glob.es.dash}}   ; } )
         .merge(link);
       link.exit().remove();
-      
+
       // create circles for nodes
       node.enter()
           //.append("g")
           .append("circle")
           .attr("class"   , "node")
           .attr("r", function(d) { return Math.sqrt(d.{{glob.ns.weight}} )*radiusFactor} )
-          
+
           .style("fill", function (d) { return selectColor(d) ; })// return d.{{glob.ns.color}} ; })
-          
+
           .attr("stroke-width"    , dft_circle_stroke_w )
           //.attr("fixed"   , "false")
           //.attr("label"   , function(d) { return ( d.{{glob.ns.label}}    ) })
@@ -952,45 +956,45 @@
           //.attr("url"     , function(d) { return ( d.{{glob.ns.url}}      ) })
           //.attr("type"    , function(d) { return ( d.{{glob.ns.type}}     ) })
           //.attr("tags"    , function(d) { return ( d.{{glob.ns.tags}}     ) })
-          
+
           //.append("text")
           //.attr("dx", 10)
           //.attr("dy", ".35em")
           //.text(function(d) { return d.label })
-          
-          
+
+
           // normal drag function
           .call(node_normal_drag)
           .on('click'      , displayInfos )    // display node infos inside right column
           .on('dblclick'   , connectedNodes ) //("over") ) //Added code ... .on('click'
-          
+
           //alternative to show connections
           //.on('mouseover', connectedNodes) //("over") ) //Added code ... .on('click'
           //.on('mouseout',  connectedNodes) //("out") )
-          
+
           //adding tooltip in div tooltip
-          .on("mouseover", function(d) {		
+          .on("mouseover", function(d) {
             //displayInfos;
-            div.transition()		
-              .duration(200)		
-              .style("opacity", .95);		
-            div.html( "<strong> "+ d.{{glob.ns.label}} + " </strong><br>( <small><em>" + d.{{glob.ns.category}} + " - " + d.{{glob.ns.tags}} + "</em></small> )" )	
-              .style("left", (d3.event.pageX + 20) + "px")		
-              .style("top", (d3.event.pageY - 10) + "px");	
-          })					
-          .on("mouseout", function(d) {		
-            div.transition()		
-              .duration(500)		
+            div.transition()
+              .duration(200)
+              .style("opacity", .95);
+            div.html( "<strong> "+ d.{{glob.ns.label}} + " </strong><br>( <small><em>" + d.{{glob.ns.category}} + " - " + d.{{glob.ns.tags}} + "</em></small> )" )
+              .style("left", (d3.event.pageX + 20) + "px")
+              .style("top", (d3.event.pageY - 10) + "px");
+          })
+          .on("mouseout", function(d) {
+            div.transition()
+              .duration(500)
               .style("opacity", 0);
-              
+
           });
       ;
-      
+
       node.exit().remove();
-      
-      
-      
-      
+
+
+
+
       //////////////////////////////////////////////////////////////////////////
       /// CONNECTED NODES ///////////////////////////////////////////////////////////////
       //Toggle stores whether the highlighting is on
@@ -999,62 +1003,62 @@
       var linkedByID = {};
       // feed linkedById
       nodes.forEach(function (n) {
-        linkedByID[n.{{glob.ns.id}} + "," + n.{{glob.ns.id}} ] = 1; });    
+        linkedByID[n.{{glob.ns.id}} + "," + n.{{glob.ns.id}} ] = 1; });
       links.forEach(function (e) {
         //console.log(e);
         linkedByID[e.source.{{glob.ns.id}} + "," + e.target.{{glob.ns.id}}] = 1; });
-      
+
       //console.log(linkedByID); //////////////////////////////////
-      
+
       //This function looks up whether a pair are neighbours
       function neighboring(a, b) {
         return linkedByID[a.{{glob.ns.id}} + "," + b.{{glob.ns.id}} ]; }
-      
-      
+
+
       var toggle = 0 ; // for connectedNodes
 
-      
+
       // show connected nodes and fade others
       function connectedNodes() {
-      
+
         var N      = vis.selectAll(".node");
         var L      = vis.selectAll(".link");
-      
+
         if (toggle == 0) {
-          
+
           //Reduce the opacity of all but the neighbouring nodes
-          d = d3.select(this).node().__data__; 
+          d = d3.select(this).node().__data__;
           //console.log("d :", d3.select(this).node().__data__ ); // OK
           //console.log("node selected : ", d );
           //console.log("node selected / ID : ", d.{{glob.ns.id}});
 
           N.attr("stroke-width",
             function (o) { return neighboring(d, o) | neighboring(o, d) ? "2px" : "0px"; } );
-          N.style("opacity", 
+          N.style("opacity",
             function (o) { return neighboring(d, o) | neighboring(o, d) ? "1" : hiddenOpacity; } );
-          
+
           L.style("opacity",
             function (o) { return d.index == o.source.index | d.index == o.target.index ? "1" : hiddenOpacity; } );  ///////////////////////
           L.attr("stroke-width",
-            function (o) { return d.index == o.source.index | d.index == o.target.index ? "2px" : "0.3px"; } ); 
-          
+            function (o) { return d.index == o.source.index | d.index == o.target.index ? "2px" : "0.3px"; } );
+
           //Reduce the opacity
           toggle = 1;
         }
-        
+
         else {
           //Put them back to opacity=1
           N.style("opacity", "1");
           N.attr("stroke-width", dft_circle_stroke_w );
-          
+
           L.style("opacity", "1");
           L.attr("stroke-width", dft_line_stroke_w);
-          
+
           toggle = 0;
         }
-        
+
       }
-        
+
       //////////////////////////////////////////////////////////////////////////
       // TICKING FUNCTION FOR D3
       function ticked() {
@@ -1064,93 +1068,146 @@
           .attr("x2", function(d) { return d.target.x; })
           .attr("y2", function(d) { return d.target.y; })
         ;
-        
+
         //console.log(d3.select(".nodes").selectAll(".node").fixed    ) ;
         d3.select(".nodes").selectAll(".node")
             .attr("cx", function (d) { return !d.fixed ? d.x : d.fx; })
             .attr("cy", function (d) { return !d.fixed ? d.y : d.fy; })
-            
+
             //change node's stroke-width if node is fixed
             .attr("stroke-width", function(d) {  return !d.fixed ? dft_circle_stroke_w : fixed_circle_stroke_w ; } )
-            
+
             //change node's radius if node is fixed
             .attr("r", function(d) {  return !d.fixed ? Math.sqrt(d.{{glob.ns.weight}} )*radiusFactor : Math.sqrt(d.{{glob.ns.weight}} )*radiusFactor*pinnedNodeFactor ; } )
         ;
-      
+
       }
-      
+
     }
+
+
 
 
 
     /////////////////////////////////////////////////////////////////////////
     //DOC READY - launch autocomplete once page loaded / initialize D3.JS
     $(document).ready(function () {
+
         $("#search").autocomplete({ source: optArray });
-        
-        initD3(); 
-        
+
+
+
+        initD3();
+
+
+
+        // // reload page after n seconds to be sure to fit screen
+        // window.setTimeout(
+        //   function () {
+        //      setTimeout( function () {
+        //
+        //        console.log("--- restart auto / setTimeOut ---");
+        //        console.log("--- contHeight ready : ", contHeight );
+        //
+        //        // reset height - width
+        //        contWidth  = document.getElementById('body').clientWidth;
+        //        contHeight = document.documentElement.clientHeight;
+        //
+        //        console.log("--- contHeight new : ", contHeight );
+        //
+        //       //  d3.select("#containerLayout")
+        //       //     .attr("width" , contWidth -20 )
+        //       //     .attr("height" , contHeight - 1;
+        //
+        //       //  var svg = d3.select("svg"),
+        //       //    width  = +svg.attr("width"),
+        //       //    height = +svg.attr("height");
+        //
+        //        initD3();
+        //        //window.location.reload();
+        //
+        //      }, 10000);   // time in milliseconds, here every 3 seconds
+        //    }
+        //  );
+
+        //// réanimer les points du graph
+        window.setInterval(
+          function () {
+             setInterval( function () {
+
+                console.log("--- restart auto / setInterval ---");
+                // fonction à relancer toutes les n millisecondes qui s'applique au graph D3 : "restart" de la variable "simulation" avec un alpha de 0.5
+                simulation.alphaTarget(1.0).restart();
+                //initD3();
+
+             }, 3000);   // time in milliseconds, here every 3 seconds
+           }
+         );
+
+
+
+
       });
-    
-    
+
+
     //////////////////////////////////////////////////////////////////////////
     // SEARCH BAR - get search value from legend
     function getLegendValue () {
-      
+
       var from = "legend";
-      
+
       var selectedVal = d3.select(this).node().id;
-      
+
       //console.log("selectedVal from getLegendValue : ", d3.select(this) );
       //console.log("selectedVal from getLegendValue : ", d3.select(this).node() );
       //console.log("selectedVal from getLegendValue : ", d3.select(this).node().id );
       searchNode( selectedVal, from )
-      
+
     };
-    
+
     // get search value from searchbar
     function getSearchBarValue () {
-      
+
       var from = "searchbar" ;
       console.log("selectedVal from getSearchBarValue : ", document.getElementById('search') )
-      
+
       var selectedVal = document.getElementById('search').value;
       console.log("selectedVal from getSearchBarValue : ", selectedVal )
-      
+
       searchNode( selectedVal, from )
     };
-    
-    /// search bar functions 
+
+    /// search bar functions
     function searchNode(value, from) {
-      
+
       var node = vis.selectAll(".node");
-      
+
       if (value == "none") {
         node.style("stroke", "white")
           .style("stroke-width", "10");
       }
-      
+
       else {
-        
+
         // if value from search bar
         if (from == "searchbar") {
           var selected = node.filter(function (d, i) { return d.label      != value ; } );
         }
         // if value from legend or else
         else {
-          var selected = node.filter(function (d, i) { return d.group.indexOf(value) == -1    /// d.group != value ////////// 
+          var selected = node.filter(function (d, i) { return d.group.indexOf(value) == -1    /// d.group != value //////////
                                                               & d.tag.indexOf(value) == -1    /// d.tag   != value
                                                               & d.category != value
                                                               & d.label    != value ; } );
           //console.log("selected : ", selected)
         };
-        
+
         selected.style("opacity", "0.1");
-        
+
         var link = vis.selectAll(".links");
         link.style("opacity", "0.1");
-        
-        
+
+
          // reset all 'hideFilter' buttons
         var buttons = document.getElementsByClassName('hideFilter');
         for(var j = 0; j < buttons.length; j++) {
@@ -1162,18 +1219,18 @@
             button.setAttribute("class", "btn btn-default btn-sm hideFilter btn-filter") ;
           }
         };
-        
-        
+
+
         d3.selectAll(".node, .links")
           .transition()
           .duration(4000)
           .style("opacity", 1);
         }
-        
-       
-        
+
+
+
     };
-    
+
     //search bar / run searchNode if enter (aka keyCode==13) is pressed
     function handle(e){
       if(e.keyCode === 13){
@@ -1187,45 +1244,45 @@
     // inspired from : https://github.com/d3/d3-force/issues/35
     // sticky force http://bl.ocks.org/mbostock/3750558
     function pinNode(d) {
-      
+
       //console.log("pinning / d :", d);
       console.log("pinning / d.fixed :", d.fixed);
-      
+
       //if (!d3.event.active) simulation.alphaTarget(0).restart();
-      
+
       //simulation.stop();
       //d3.select(this).classed("fixed", d.fixed = true);
-      
+
       console.log("pinNode / d3.select(this)", d3.select(this));
-      
+
       if (d.fixed == undefined  ) {
         //console.log("pinning / d.fixed :", d.fixed);
           d3.select(this).classed("fixed", d.fixed = true);
           d.fx = d.x ;
           d.fy = d.y ;
         }
-      
+
       else if (d.fixed == false | d.fixed == null ) {
-        d.fixed = true; 
+        d.fixed = true;
         d.fx = d.x ;
-        d.fy = d.y ;  
+        d.fy = d.y ;
       }
-      
+
       else {
-        d.fixed = false; 
+        d.fixed = false;
         d.fx = null;
         d.fy = null;
       }
-      
+
       //simulation.alphaTarget(0.3).restart();
     }
-    
+
     // release all previously fixed nodes ///////////////////////
     function releaseAllNodes() {
-      
+
       //console.log("release all nodes");
       //console.log(nodes_);
-      
+
       var N = d3.selectAll(".node").filter(function (d, i) {
         return d.fixed == true;
       });
@@ -1235,38 +1292,38 @@
       N.each( function(d,i) { return d.fixed = false } );
       N.each( function(d,i) { return d.fx = null } );
       N.each( function(d,i) { return d.fy = null } );
-      
-      
+
+
       // restart animation
       simulation.alphaTarget(0.5).restart();
     }
-    
-    
+
+
     //////////////////////////////////////////////////////////////////////////
-    // DISPLAY INFOS - display node infos in div #nodeInfos 
+    // DISPLAY INFOS - display node infos in div #nodeInfos
     function displayInfos(d) {
-      
+
       n = d3.select(this).node().__data__;
       //console.log("displayInfos / node DATAS before __data__ :", d3.select(this).node());
-      
+
       ////// I STILL HAVE A PROBLEM UNDERSTANDING HOW DOM WORKS HERE & HOW TO ACCESS/MODIFY __DATA__
       //n_ = d3.select(this).classed("fixed", d.fixed = true);
       //console.log("node DATAS_ :", n_);
-      
+
       // display  collapsibleInfosCol
       $('#collapsibleInfosCol').collapse('show');
       $('#collapsibleInfos').collapse('show');
-      
+
       console.log("displayInfos / tags : ", n.tag);
       console.log("displayInfos / authors : ", n.authors);
-      
+
       //abstract
       abstract_ = "";
       if (n.abstractNote != undefined && n.abstractNote != [] && n.abstractNote != "" ) {
         abstract_ = ' " ' + n.abstractNote + ' " '
       };
-      
-      // authors 
+
+      // authors
       authors_ = "";
       if (n.authors != undefined && n.authors != [] && n.authors != "" ) {
         for (i=0; i < n.authors.length ; i++){
@@ -1280,11 +1337,11 @@
       else {
         authors_ = "na"
       };
-      
+
       // categ_
-      categ_ = '<a id="'+n.category+'" class="search_call" role="button" >' + n.category + '</a> '; 
-      
-      // tags_ 
+      categ_ = '<a id="'+n.category+'" class="search_call" role="button" >' + n.category + '</a> ';
+
+      // tags_
       tags_ = "";
       if (n.tag != undefined && n.tag != [] && n.tag != "" ) {
         for (i=0; i < n.tag.length ; i++){
@@ -1296,8 +1353,8 @@
       else {
         tags_ = "<a>untagged reference<a>"
       };
-      
-      // groups_ 
+
+      // groups_
       groups_ = "";
       if (n.group != undefined && n.group != [] && n.group != "" ) {
         for (i=0; i < n.group.length ; i++){
@@ -1309,41 +1366,41 @@
       else {
         groups_ = "<a>no group<a>"
       };
-      
-      
+
+
       d3.select('#nLabel').text(n.label);
       /////////////////////////////////////////////////////////////
-      d3.select('#nAuthors').text(authors_); 
+      d3.select('#nAuthors').text(authors_);
       d3.select('#nAbstract').text(abstract_);
-      
+
       //d3.select('#nAbstract').text(' " ' + n.abstractNote + ' " ');
       //console.log(n, n.abstractNote);
       d3.select('#nType').text(n.type); // need to be blank if none ////////
       d3.select('#nCategory').html(categ_);
-      
+
       d3.select('#nGroup').html(groups_); // need to be blank if none ////////
-      
+
       d3.select('#nUrl')
         .attr("href", n.url)
         .attr("target", "_blank")
         .text("Weblink"); // need to be blank if none ////////
-      
+
       //console.log("d :"    , d);
       //console.log("tags :" , d.tag);
-      
+
       d3.select('#nTags')
         .html(tags_)
         ; // need to be blank if none // + function to tags to create //
-      
+
       d3.selectAll('.search_call')
         .attr("onclick", "searchNode(this.id)");
-      
+
       // call function to pin nodes
       pinNode(n);
 
-      
+
     }
-  
+
 
     //////////////////////////////////////////////////////////////////////////
     // EXPORT SVG file /// STILL A LOT TO DO HERE ///////////////////////////////////
@@ -1359,6 +1416,7 @@
       downloadLink.click();
       document.body.removeChild(downloadLink);
       }
+
 
 
   </script>
