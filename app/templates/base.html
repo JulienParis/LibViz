@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
 <html lang="eng">
-    
+
     <head>
-    
+
         <meta charset="utf-8">
         <title> {{ glob.titleApp }} - {{ glob.version }} </title>
-        
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="{{ glob.metas }}">
 		<meta name="author"   content="Julien Paris">
 		<meta name="description" content="{{ glob.description }}">
-			
+
 		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
 
@@ -24,63 +24,63 @@
         <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
         <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
         <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
-		
+
 		<style>
-			
-			
+
+
 			a {
 				color: #f0ad4e;
 				text-decoration: none ;
 			}
-			
+
 			a:hover {
 				color: #d1513b;
 				text-decoration: none ;
 			};
-			
+
 			a:focus {
 				color: #d1513b;
 				text-decoration: none;
 			}
-			
+
 			a.nohref {
 				color: black ;
 				text-decoration: none;
 			}
-			
+
 			.modal-backdrop{
 				z-index: 1000;
 			}
 			.modal-dialog{
 				z-index: 1040;
 			}
-			
+
 			.navbar {
 				background-color: rgba(0, 0, 0, 0.5);
 				border: hidden;
 				margin-bottom: 5px;
 				z-index: 1;
 			}
-			
+
 			header {
 				/*opacity: 0.3;*/
 				background-color: rgba(0, 0, 0, 0.4) ;
 			}
 			/*.navbar-header :after{
 				opacity: 1;
-				
+
 			}*/
-			
+
 			body {
 				background-color: black;
 				height: 100%;
 			}
-			
-			
+
+
 			h4 {
 				color: white;
 			}
-			
+
 			.jumbotron{
 				/*color: grey;*/
 				/*border-color: black;*/
@@ -89,8 +89,8 @@
 				padding: 30px;
 
 			}
-			
-			
+
+
 			body.index_bckgrd {
 				/*background: url( {{ url_for('static', filename='images/index_background.png') }} ) no-repeat center center fixed;*/
 				background-color: black;
@@ -99,15 +99,15 @@
 				-moz-background-size: cover;
 				-o-background-size: cover;*/
 				background-size: cover;
-				
+
 			}
-			
+
 			/*.list-group-item{
-				background-color: black;    
-				color: white;    
+				background-color: black;
+				color: white;
 				opacity: .7;
 			}*/
-			
+
 			.btn-navbar {
 				margin-top: 16px;
 				margin-bottom: 5px;
@@ -115,30 +115,30 @@
 				margin-left: 5px;
 				margin-right: 0px;
 			}
-			
-			
+
+
 			/*custom spinning wheel for refresh dataset*/
 			.glyphicon.spinning {
 				animation: spin 1s infinite linear;
 				-webkit-animation: spin2 1s infinite linear;
 			}
-			
+
 			@keyframes spin {
 				from { transform: scale(1) rotate(0deg); }
 				to   { transform: scale(1) rotate(360deg); }
 			}
-			
+
 			@-webkit-keyframes spin2 {
 				from { -webkit-transform: rotate(0deg); }
 				to   { -webkit-transform: rotate(360deg); }
 			}
-	
-	
+
+
 			/* custom tooltips colors  */
 			.tooltip-inner{
 				background-color: grey;
 			}
-			
+
 			.tooltip.top .tooltip-arrow {
 				border-top-color: grey;
 			  }
@@ -163,19 +163,19 @@
 			.tooltip.bottom-right .tooltip-arrow {
 			  border-bottom-color: grey;
 			}
-			
-			
-			
+
+
+
 			.carousel { z-index: -99; } /* keeps this behind all content */
 			.carousel .item {
-				position: fixed; 
+				position: fixed;
 				width: 100%; height: 100%;
 				-webkit-transition: opacity 1s;
 				-moz-transition: opacity 1s;
 				-ms-transition: opacity 1s;
 				-o-transition: opacity 1s;
 				transition: opacity 1s;
-			
+
 			}
 			.carousel .one {
 				background: url( {{ url_for('static', filename='images/index_background_01.png') }} ) no-repeat center center fixed;
@@ -227,17 +227,17 @@
 				opacity:0;
 				z-index:2;
 			}
-			
-		</style>
-		
 
-		
+		</style>
+
+
+
     </head>
 
-	
+
 
     <header>
-		
+
 		{% if index %}
 		<div id="myCarousel" class="carousel container slide">
 			<div class="carousel-inner">
@@ -253,23 +253,23 @@
 			</div>
 		</div>
 		{% endif %}
-		
+
 		<nav class="navbar navbar-default navbar-fixed-top">
-			
+
 			<div class = "container-fluid">
-				
+
 				<!-- main logo / title / nav bar -->
 				<div class="navbar-header">
-					
+
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					  <span class="sr-only">Toggle navigation</span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					</button>
-				
+
 					<!-- logo appli -->
-					<li 
+					<li
 						>
 						<a class="navbar-brand text-center" href="/"
 						   style="margin-top: -5px; margin-bottom: 10px; height: 44px; margin-right: -5px"
@@ -277,28 +277,28 @@
 							<h4>{{ glob.titleApp }}</h4>
 						</a>
 					</li>
-				
-				
+
+
 				</div>
-	
-				
+
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					
-					
-					<!-- NAVBAR - left side of the navbar --> 
+
+
+					<!-- NAVBAR - left side of the navbar -->
 					<ul class="nav navbar-nav">
-						
-						
+
+
 						{% if data_JSON %}
-						
+
 						<li>
-							
+
 							<div>
-							
+
 								<!-- menu / icon for dropdown -->
 								<button id="collLabels"
-										class="btn btn-link" 
+										class="btn btn-link"
 										type="button"
 										data-toggle="dropdown"
 										aria-haspopup="true"
@@ -313,11 +313,11 @@
 											<span class="caret"> </span>
 										</div>
 								</button>
-								
-								
+
+
 								<!-- list of links to collections -->
 								<ul class="dropdown-menu" aria-labelledby="collLabels">
-								  
+
 									<li href="/" class="text-left" style="margin-top: 0; margin-bottom: 0">
 										<a href="/" style="color: black">
 											<h5 >
@@ -326,9 +326,9 @@
 											</h5>
 										</a>
 									</li>
-									
+
 									<!--<hr>-->
-									
+
 									<li class="text-left" style="margin-top: 3px; margin-bottom: -3px">
 										<a 	role="button"
 											class="btn btn-md btn-link"
@@ -341,9 +341,9 @@
 											</h5>
 										</a>
 									</li>
-									
+
 									<!--<hr>-->
-										
+
 									<li class="text-left" style="margin-top: 3px; margin-bottom: -3px">
 										<a>
 											<h5 style="color: black">
@@ -352,40 +352,40 @@
 											</h5>
 										</a>
 									</li>
-									
+
 									<!--<hr>-->
-									
+
 									<!-- links according to the length of 'collections_names' -->
 									{% for coll in glob.collections_names %}
 									<li>
 										<a href="/{{ coll[0] }}">
-											<span class="glyphicon glyphicon-option-horizontal"> </span> 
+											<span class="glyphicon glyphicon-option-horizontal"> </span>
 											{{ coll[1] }}
 										</a>
-										
+
 									</li>
 									{% endfor %}
-									
-									
-									
+
+
+
 									<br>
-										
+
 								</ul>
-							
+
 							</div>
 						</li> <!-- end of dropdown -->
-						
-						
-						
-						
+
+
+
+
 						<!-- BUTTON DATASET NAME -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="show/hide filter options"
-							> 
-							<!-- button collapser --> 
+							>
+							<!-- button collapser -->
 							<div role="button"
-								id = "collapserFilters" 
+								id = "collapserFilters"
 								data-toggle="collapse"
 								data-target="#collapsibleFilters"
 								aria-expanded="false"
@@ -395,18 +395,18 @@
 										height: 30px;
 										margin-right: 0px"
 								>
-							  
+
 							  <h3 class="text-center" style="color: white">
 								<span class="label label-warning">
 									<span class="caret"></span> {{ dataSet_name }} <span class="caret"></span>
 								</span>
 							  </h3>
-							  
+
 							</div>
 						</li>
-						
-						
-						
+
+
+
 						<!-- button INFOS on dataset  -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -420,15 +420,15 @@
 								<span class="glyphicon glyphicon-question-sign"></span>
 							</button>
 						</li>
-						
-						
-						
-						
+
+
+
+
 						<!-- REFRESH PAGE == for the current displayed collection -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							id={{ dataSet_url }}
-							title="refresh the view for {{ dataSet_name }}" 
+							title="refresh the view for {{ dataSet_name }}"
 							onclick="refreshPage(this.id)"
 							>
 							<button type="button"
@@ -438,19 +438,19 @@
 								<span class="glyphicon glyphicon-repeat"></span>
 							</button>
 						</li>
-						
-						
-						
-						
+
+
+
+
 						{% endif %}
-						
+
 					</ul> <!-- end left navbar -->
-					
-					
-					
-					
+
+
+
+
 					{% if data_JSON %}
-					
+
 					<!-- NAVBAR - left side of the navbar / search node bar -->
 					<form 	class="navbar-form navbar-left"
 							data-toggle="tooltip"
@@ -461,11 +461,11 @@
 										margin-bottom: 12px;
 										margin-right: 10px;
 										margin-left: -10px;"
-								>				
-							
+								>
+
 							<div 	class="input-group">
 								<input  id="search"
-										type="text"							
+										type="text"
 										class="form-control"
 										placeholder="search a node..."
 										onKeyPress="handle(event)"
@@ -483,30 +483,30 @@
 										<span class="glyphicon glyphicon-search"
 											  style="margin-top: -10px;"
 										>
-											
+
 										</span>
 									</button>
 								</span>
 							</div>
-							
+
 						</div>
 					</form>
-					
+
 					{% endif %}
-					
-					
-					
-					
-					
-					
-					
+
+
+
+
+
+
+
 					<!-- NAVBAR - right side of the navbar -->
-					
+
 					<ul class="nav navbar-nav navbar-right">
-						
+
 						{% if data_JSON %}
-						
-						
+
+
 						<!-- PLAY/PAUSE button -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -515,12 +515,12 @@
 							<button type="button"
 								id="play-pause"
 								class="btn btn-md btn-warning btn-navbar"
-								> 	
+								>
 								<span class="glyphicon glyphicon-pause" style="margin-top: -5px;"></span>
 							</button>
 						</li>
-						
-						
+
+
 						<!-- full screen button -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -529,12 +529,12 @@
 							<button type="button"
 								class="btn btn-md btn-default btn-navbar"
 								onclick="resetted()"
-								> 	
+								>
 								<span class="glyphicon glyphicon-fullscreen"></span>
 							</button>
 						</li>
-						
-						
+
+
 						<!-- Hide filters and infos -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -543,12 +543,12 @@
 							<button type="button"
 								id="collapseAll"
 								class="btn btn-md btn-default btn-navbar"
-								> 	
+								>
 								<span class="glyphicon glyphicon-resize-small"></span>
 							</button>
 						</li>
-						
-						
+
+
 						<!-- RELEASE all nodes -->
 						<!--<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -558,27 +558,27 @@
 								id="releaseAllNodes"
 								class="btn btn-md btn-default btn-navbar"
 								onclick="releaseAllNodes()"
-								> 	
+								>
 								<span class="glyphicon glyphicon-asterisk"></span>
 							</button>
-						</li>-->						
-						
-						
+						</li>-->
+
+
 						<!--  button EXPORT SVG -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
 							title="export the graph to a .svg image "
-							>						
+							>
 							<button type="button"
-								id="exportSVG" 
+								id="exportSVG"
 								class="btn btn-md btn-default btn-navbar"
 								onclick="exportSVG()"
-								> 	
+								>
 								<span class="glyphicon glyphicon-save"></span>
 							</button>
 						</li>
-						
-						
+
+
 						<!-- REBUILD dataset / python script -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -594,10 +594,10 @@
 									<span class="badge"> <span class="glyphicon glyphicon-refresh"></span> </span>
 							</button>
 						</li>
-						
+
 						{% endif %}
-						
-						
+
+
 						<!-- Button 'HOW TO' triggering modal -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -611,8 +611,8 @@
 								<span class="glyphicon glyphicon-wrench"></span>
 							</button>
 						</li>
-						
-						
+
+
 						<!-- Button 'ABOUT' triggering modal -->
 						<li data-toggle="tooltip"
 							data-placement="bottom"
@@ -622,42 +622,42 @@
 								class="btn btn-md btn-default btn-navbar"
 								data-toggle="modal"
 								data-target="#modalAbout"
-								> 
+								>
 								<span class="glyphicon glyphicon-info-sign"></span>
 							</button>
 						</li>
-						
-						
+
+
 					</ul> <!-- end right navbar -->
-					
-				
+
+
 				</div><!-- end of collapse navbar-collapse -->
-				
+
 			</div><!-- end of container-fluid -->
-		
+
 		</nav>
-	
+
     </header>
 
 
 
 
-    
+
 	<body id="body" {% if index %} class="index_bckgrd" {% endif %} >
-		
-		
+
+
 		<!-- contents -->
 		<div class="container-layout" id="containerLayout" ></div>
-	
+
 		<div class="container-fluid">
 			{% block content %}{% endblock %}
 		</div>
-		
 
-	
-	
+
+
+
 		<!-- MODALS --------------------------------------------------------------------- -->
-		
+
 		<!-- Modal About {{ glob.titleApp }} -->
 		<div 	class="modal fade"
 				id="modalAbout"
@@ -673,9 +673,9 @@
 							<br><small> version {{ glob.version }} </small>
 						</h3>
 					</div>
-					
+
 					<div class="modal-body">
-					  
+
 						<h4 class="text-center"><span class="label label-default"> PRESENTATION </span></h4>
 						<p  class="text-center lead">
 							<em>{{ glob.titleApp }}</em> allows to generate interactive data visualisations (graphs) from sets of
@@ -695,14 +695,14 @@
 							  <span class="caret"></span> read more <span class="caret"></span>
 							</a>
 						</p>
-						
+
 						<div class="collapse"
-							id="collapsiblePres" 
+							id="collapsiblePres"
 							>
 							<p>
-								<a target="_blank" href="https://www.zotero.org/" >Zotero</a> is a tool allowing to bookmark webpages and to organise them in folders, add tags, comments, and so on.  
+								<a target="_blank" href="https://www.zotero.org/" >Zotero</a> is a tool allowing to bookmark webpages and to organise them in folders, add tags, comments, and so on.
 								But such references are almost always interlinked : an article in a magazine, a webpage, a story you heard, or a book often refers to other books, page, etc...
-								If you try to draw the network references of every book in a library this could quickly become really complex, the map of interelations becomes a huuuge maze. 
+								If you try to draw the network references of every book in a library this could quickly become really complex, the map of interelations becomes a huuuge maze.
 							</p>
 							<p>
 								With, <em>{{ glob.titleApp }}</em> we tried to make visible such networks, but foremost to make networks of interlinked references you can navigate in and manipulate.
@@ -714,9 +714,9 @@
 								{{ glob.subtitleApp }}
 							</p>
 						</div>
-						
+
 						<hr></hr>
-						
+
 						<h4 class="text-center"><span class="label label-default"> HISTORY </span></h4>
 						<p><em>{{ glob.titleApp }}</em> started as a part of <a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=start">1.CAMP</a>,
 							which is a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ...
@@ -727,18 +727,18 @@
 							their other bibliographical references gathered in
 							<a target="_blank" href="https://www.zotero.org/" >Zotero</a>.
 							Considering all datas had the same root (i.e. Zotero) we thought about making an application able to display those different datasets from one and only place.
-							The <em>{{ glob.titleApp }}</em> project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero. 
+							The <em>{{ glob.titleApp }}</em> project eventually aimed to be as 'neutral' as possible to accept any kind of dataset from Zotero.
 						</p>
 						<hr></hr>
-						
+
 						<h4 class="text-center"><span class="label label-default"> UNDER THE HOOD </span></span></h4>
 						<p><em>{{ glob.titleApp }}</em> development is documented
 							<a target="_blank" href="http://artlabo.org/1/dokuwiki/doku.php?id=recherche:graphcom1">HERE</a>
 							and on <a target="_blank" href="https://github.com/JulienParis/{{ glob.titleApp }}">GitHub</a>.
 						</p>
-						
-						
-						
+
+
+
 						<a  class="nohref"
 							role="button"
 							id="collapserHood"
@@ -750,7 +750,7 @@
 						  <em>{{ glob.titleApp }}</em> is powered by... <span class="caret"></span>
 						</a>
 						<div class="collapse  list-group"
-							id="collapsibleHood" 
+							id="collapsibleHood"
 							>
 							<br>
 							<ul>
@@ -758,30 +758,30 @@
 								<li><a target="_blank" href="https://www.zotero.org/" >Zotero</a> to organise bibliographical references</li>
 								<li><a target="_blank" href="http://flask.pocoo.org/" >Flask</a> as backbone of the website</li>
 								<li><a target="_blank" href="http://getbootstrap.com/" >Bootstrap</a> for the global aspect website</li>
-								<li><a target="_blank" href="https://d3js.org/" >d3.js</a> library by 
+								<li><a target="_blank" href="https://d3js.org/" >d3.js</a> library by
 									<a target="_blank" href="https://bost.ocks.org/mike/" >Mike Bostock</a>
 									to create the graphic interactive visualisation </li>
 							</ul>
 						</div>
-					  
-					  
+
+
 						<hr></hr>
-						
+
 						<h4 class="text-center"><span class="label label-default"> CREDITS </span></h4>
 						<p>Project by
 							<a target="_blank" href="http://www.pingbase.net/">PING</a> /
 							<a target="_blank" href="http://artlabo.org/">ARTLABO</a> /
-							<a target="_blank" href="http://labomedia.net/">LABOMEDIA</a> 
+							<a target="_blank" href="http://labomedia.net/">LABOMEDIA</a>
 							and developped by <a target="_blank" href="https://github.com/JulienParis">Julien P</a>
-							with the precious help of Julien Bellanger, Benjamin Cadon, Ewen Chardonnet, et Xavier 
+							with the precious help of Julien Bellanger, Benjamin Cadon, Ewen Chardonnet, et Xavier
 						</p>
-						<p>This application is inspired by a previous work called 
+						<p>This application is inspired by a previous work called
 							<a href="http://www.laurent-malys.fr/sur-les-epaules-de-darwin/">"Constellations bibliographiques"</a>
-							developped by 
+							developped by
 							<a href="http://www.laurent-malys.fr">Laurent Malys</a>.
 						</p>
 						<hr></hr>
-						
+
 						<h4 class="text-center"><span class="label label-default"> LICENCE </span> &nbsp;
 						  <a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
 							  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/{{ licenceCC }}/4.0/88x31.png" />
@@ -793,14 +793,14 @@
 							  Creative Commons Attribution 4.0 International License
 							</a>.
 						</p>
-					
+
 					</div>
 				</div>
 			</div>
 		</div><!-- end modal about -->
-		
-		
-		
+
+
+
 		<!-- Modal How to -->
 		<div 	class="modal fade"
 				id="modalHowTo"
@@ -814,9 +814,9 @@
 				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				  <h3 class="modal-title text-center" id="myModalLabel">How to use {{ glob.titleApp }} </h3>
 				</div>
-		  
+
 				<div class="modal-body">
-				  
+
 					<h4 class="text-center" style="margin-bottom: 15px">
 						<span class="label label-warning">
 						Node infos and neighbours
@@ -841,8 +841,8 @@
 							<em>Hide or show all filters and infos</em>
 						</h6>
 					<hr></hr>
-					
-					
+
+
 					<h4 class="text-center" style="margin-bottom: 15px">
 						<span class="label label-warning">
 						Animation, zoom and pan graph
@@ -877,8 +877,8 @@
 							<em>Release all pinned nodes</em>
 						</h6>
 					  <hr></hr>
-					
-					
+
+
 					<h4 class="text-center" style="margin-bottom: 15px">
 						<span class="label label-warning">
 						Filters
@@ -899,10 +899,10 @@
 							</span>
 							<em>Show/hide nodes by group/tag </em>
 						</h6>
-					
+
 					<hr></hr>
-	
-						
+
+
 					<h4 class="text-center" style="margin-bottom: 15px">
 						<span class="label label-warning">
 						Radial fixing
@@ -919,9 +919,9 @@
 							<em>Click to release all nodes</em>
 						</h6>
 					<hr></hr>
-					  
-					  
-					  
+
+
+
 					<h4 class="text-center" style="margin-bottom: 15px">
 						<span class="label label-warning">
 						Refresh and reload
@@ -937,18 +937,18 @@
 							</span>
 							<em>Reload dataset from Zotero</em>
 						</h6>
-	
-				
+
+
 				</div>
 			</div>
 		  </div>
 		</div><!-- end modal how to-->
-		
-		
-		
+
+
+
 		{% if data_JSON %}
-		
-		
+
+
 		<!-- Modal INFOS DATASET -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
@@ -971,39 +971,39 @@
 							<a class="nohref" id="stats_refs"></a> references /
 							<a class="nohref" id="stats_groups"></a> collections /
 							<a class="nohref" id="stats_tags"></a> tags /
-							<a class="nohref" id="stats_edges"></a> links 
+							<a class="nohref" id="stats_edges"></a> links
 						</h6>
 					</div>
-					
+
 					<div class="modal-body">
-						
+
 						<h4 class="text-center"><span class="label label-default">
 						Presentation
 						</span></h4>
 						  <p id="dataset_presentation" > <!-- better calling via d3.js -->
 							{{ dataSet_infos.presentation|e }}
 						  </p>
-						
+
 						<hr>
-							
+
 						<h4 class="text-center"><span class="label label-default">
-						Methodology 
+						Methodology
 						</span></h4>
 						  <p id="dataset_methodology" > <!-- better calling via d3.js -->
-							 {{ dataSet_infos.methodology }} 
+							 {{ dataSet_infos.methodology }}
 						  </p>
-						  
+
 						<hr>
-							
+
 						<h4 class="text-center"><span class="label label-default">
 						Authors
 						</span></h4>
 						  <p id="dataset_authors" > <!-- better calling via d3.js -->
-							 {{ dataSet_infos.authors }} 
+							 {{ dataSet_infos.authors }}
 						  </p>
-						
+
 						<hr>
-							
+
 						<h4 class="text-center"><span class="label label-default">
 						Credits
 						</span></h4>
@@ -1015,15 +1015,15 @@
 								link to Zotero
 							</a>
 						  </h5>
-						
+
 					</div>
-					
+
 				</div>
 			</div>
 		</div> <!-- end modal infos dataset -->
-		
-		
-		
+
+
+
 		<!-- Modal REFRESH -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
@@ -1042,24 +1042,24 @@
 							Warning about refreshing (rebuild) datasets
 						</h3>
 					</div>
-					
+
 					<div class="modal-body">
-						
+
 						<p class="text-justify lead">
 							Refreshing a dataset with {{ glob.titleApp }} calls the Zotero's API,
 							gets the references, generates the new nodes/links datas...
 							and then displays the datas in a network graph within the page.
 						</p>
-						
+
 						<p class="text-center lead">
 							<strong>So it may take some time to do it properly</strong>
 						</p>
-						
+
 						<p class="text-justify lead">
-							Please just click once and be patient, and before doing any manipulation, 
+							Please just click once and be patient, and before doing any manipulation,
 							please wait a few seconds for the page to completely finish to load...
 						</p>
-						
+
 						<button type="button"
 							id="/refresh/{{ selection }}"
 							class="btn btn-lg btn-warning btn-block"
@@ -1069,27 +1069,27 @@
 							data-target="#modalLoading"
 							onclick="refreshPage(this.id)"
 							>
-							
+
 							<span class="badge">
 								<span class="glyphicon glyphicon-refresh"></span>
 							</span>
-							
+
 							rebuild '{{ dataSet_name }}' dataset
-							
+
 							<span class="badge">
 								<span class="glyphicon glyphicon-refresh"></span>
 							</span>
-							
+
 						</button>
-						
-						
+
+
 					</div>
-					
+
 				</div>
 			</div>
 		</div> <!-- end modal refresh -->
-		
-		
+
+
 		<!-- modal WAIT RELOAD -->
 		<div class="modal fade bs-example-modal-md"
 			 tabindex="-1"
@@ -1101,16 +1101,16 @@
 			<div class="modal-dialog modal-md" role="document">
 				<br><br><br>
 				<div class="modal-content">
-					
+
 					<div class="modal-header">
-						
+
 						<p class="lead text-center">
-							
+
 							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
 							<em>Please wait while rebuilding <br>'{{ dataSet_name }}' dataset... </em>
 							<!--<span class="glyphicon glyphicon-refresh spinning"></span>-->
 						</p>
-						
+
 						<div class="progress">
 							<div class="progress-bar progress-bar-warning progress-bar-striped active"
 								 role="progressbar"
@@ -1121,32 +1121,32 @@
 							  <!--<span class="sr-only"></span>-->
 							</div>
 						</div>
-						
+
 					</div>
-					
+
 				</div>
 			</div>
 		</div> <!-- end modal WAIT RELOAD  -->
-		
-		
+
+
 		{% endif %}
-		
-		
+
+
 		<!-- FOOTER --------------------------------------------------------------------- -->
-		
+
 		<div class="footer navbar-fixed-bottom">
-			
+
 			<div class="col-sm-8 col-sm-offset-4">
-				
+
 				<h6 class="text-right" style="color: white; opacity: 0.4">
-					
+
 						Developped for
 						<a color="black" target="_blank" href="http://www.pingbase.net/">PING</a>
-						and 
+						and
 						<a color="black" target="_blank" href="http://www.artlabo.org/">ARTLABO</a>
 						by
 						<a color="black" target="_blank" href="https://github.com/JulienParis">Julien P.</a>
-						 - 2016 &nbsp; 
+						 - 2016 &nbsp;
 						<a rel="license" href="http://creativecommons.org/licenses/{{ licenceCC }}/4.0/">
 							<img 	alt="Creative Commons License"
 									style="border-width:0; margin-top: -3px; opacity: 1.0"
@@ -1155,19 +1155,19 @@
 				</h6>
 			</div>
 			<br></br>
-		
+
 		</div><!-- end of footer-->
-	
+
     </body>
 
 
 
-    
+
 	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
     <!--  bootstrap callings  -->
     <script type="text/javascript">
-		
+
 		// activate bootstrap dropdown and carousel
 		$(document).ready( function(){ $(".dropdown-toggle").dropdown() } ) ;
 		$(document).ready(function() { $('.carousel').carousel({interval: 7000}); });
@@ -1175,9 +1175,9 @@
 		// full screen function to collapse all infos and filter
 		// from : http://jsfiddle.net/KyleMit/f8ypa/
 		$(function () {
-			
+
 			var active = false;
-			
+
 			$('#collapseAll').click(function () {
 				if (active) {
 					active = false;
@@ -1195,27 +1195,37 @@
 					$(this).html('<span class="glyphicon glyphicon-resize-full"></span>');
 				}
 			});
-			
+
 		});
 
 		// activate bootstrap tooltips
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
 		});
-		
-	
+
+
 		// refresh view
 		function refreshPage (href){
 			//console.log(href);
 			window.location = href ;
 		};
-	
-		
-		
-		
-		
-    </script>
-    
-    
-</html>
 
+
+    // reload page if resize
+    $(window).resize(function() {
+
+      console.log('!!!! window was resized');
+      console.log('!!!! window was resized -- > reload() ');
+
+      setTimeout( function () {
+        window.location.reload();
+      }, 1000 );
+      };
+
+    );
+
+
+    </script>
+
+
+</html>
