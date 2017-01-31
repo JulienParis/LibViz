@@ -13,11 +13,17 @@
 		<meta name="description" content="{{ glob.description }}">
 
 		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">
 
-		<script type='text/javascript' src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
-		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
-		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+
+  	<!--<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>-->
+  	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+
+  	<!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>-->
+  	<link href="{{ url_for('static', filename='css/jquery-ui.css') }}" rel="stylesheet">
+
+  	<!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>-->
+  	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.0.min.js') }}"></script>
 
 		<!--<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>-->
 
