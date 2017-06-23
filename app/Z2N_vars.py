@@ -56,7 +56,7 @@ edge_str_dict = {
             'source' : 'source' ,
             'target' : 'target' ,
             'label'  : node_str_dict['label'] , ### optional
-            'group'  : node_str_dict['group'],  
+            'group'  : node_str_dict['group'],
             'weight' : node_str_dict['weight'],
             'dash'   : 'dash'
             }
@@ -65,14 +65,14 @@ edge_str_dict = {
 ###########################################################################
 ####### collections of Zotero folders/references / EXTENDABLE LIST ########
 ###########################################################################
-### 
+###
 ### color gradient hue : http://tools.medialab.sciences-po.fr/iwanthue/ ###
 
 ### main collection list / should be stocked in mongo or SQL database to able user interaction (add collection for instance)
 collections = {
-    
+
     '1camp': {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : '[1.camp]',
         'dataSet_infos' : {
@@ -89,7 +89,7 @@ collections = {
                             'A3IIWJG7'  : {'name' : 'lexique'  , 'len' : 0, 'hex' : '#4b5731'},
                             'G2P8TN8H'  : {'name' : 'veille'   , 'len' : 0, 'hex' : '#ffd617'},
                             'Q74J8B7H'  : {'name' : 'activites', 'len' : 0, 'hex' : '#abdbb6'},
-                            'FMMA8WPK'  : {'name' : 'lectures' , 'len' : 0, 'hex' : '#01b617'}  
+                            'FMMA8WPK'  : {'name' : 'lectures' , 'len' : 0, 'hex' : '#01b617'}
                         },
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
@@ -104,13 +104,13 @@ collections = {
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": [], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : ['technosciences', 'savoirs communs', 'aliens', 'territoires']
-        
+
         }
-    
+
     ,
-    
+
     #'aliens_in_green' : {
-    #    
+    #
     #    'API'           : 'Zotero',
     #    'dataSet_name'  : 'ALIENS IN GREEN',
     #    'dataSet_infos' : {
@@ -127,8 +127,8 @@ collections = {
     #                        'VMXEDTC2'  : {'name' : 'controversial organisations' , 'len' : 0, 'hex' : '#61835a'},
     #                        '4VTS6RH6'  : {'name' : 'effects'                     , 'len' : 0, 'hex' : '#67d863'},
     #                        'W64DR56S'  : {'name' : 'scandals'                    , 'len' : 0, 'hex' : '#c5ce6c'},
-    #                        'DRTKSWNF'  : {'name' : 'scientific articles'         , 'len' : 0, 'hex' : '#96d6a3'},  
-    #                        '7VQU2DSV'  : {'name' : 'substances'                  , 'len' : 0, 'hex' : '#608b32'}  
+    #                        'DRTKSWNF'  : {'name' : 'scientific articles'         , 'len' : 0, 'hex' : '#96d6a3'},
+    #                        '7VQU2DSV'  : {'name' : 'substances'                  , 'len' : 0, 'hex' : '#608b32'}
     #                    },
     #    'nodesColorsDict' : {
     #            node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
@@ -147,9 +147,9 @@ collections = {
     #    }
     #
     #,
-    
+
     'substances' : {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : 'Substances & endocrine disruption',
         'dataSet_infos' : {
@@ -168,7 +168,7 @@ You can add all the BIOLOGICAL AND SOCIETAL EFFECTS directly connected with thes
 And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
 and organisation which produce conflicts with the controversial organisations and uses.
                                                 """
-                                                , 
+                                                ,
                             'authors'      : """The different persons involved in the collective group Aliens in green, mostly the artist group Bureau d'etudes and the writer Ewen Chardronnet,
                                                 have contributed to collect datas and to put them in the Zotero database. The support of Ping and specially Julien Bellanger,
                                                 the support of Labomedia and mostly Benjamin Cadon give us the understanding of the tools than we decide to use for this project :
@@ -192,7 +192,15 @@ and organisation which produce conflicts with the controversial organisations an
         'url_ROOT'      : create_API_URL('506887'),
         'url_WEB'       : create_WEB_URL('506887'),
         'urlsDict'      : {
-                            '9EXBK2DP'  : {'name' : 'OESTROGENS'  , 'len' : 0, 'hex' : '#502c81'}
+                            'N8IKC3JJ'  : {'name' : 'ANTAGONISTIC ORGANISATIONS'  ,     'len' : 0, 'hex' : '#502c81'},
+                            'MCZITC29'  : {'name' : 'BIOLOGICAL EFFECTS'  ,             'len' : 0, 'hex' : '#502c81'},
+                            'VMXEDTC2'  : {'name' : 'CONTROVERSIAL ORGANISATIONS'  ,    'len' : 0, 'hex' : '#502c81'},
+                            '4VTS6RH6'  : {'name' : 'EFFECTS'  ,                        'len' : 0, 'hex' : '#502c81'},
+                            '9EXBK2DP'  : {'name' : 'ENDOCRINE DISRUPTION'  ,           'len' : 0, 'hex' : '#502c81'},
+                            'W64DR56S'  : {'name' : 'SCANDALS'  ,                       'len' : 0, 'hex' : '#502c81'},
+                            'DRTKSWNF'  : {'name' : 'SCIENTIFIC ARTICLES'  ,            'len' : 0, 'hex' : '#502c81'},
+                            'DRFADGNQ'  : {'name' : 'SOCIETAL EFFECTS'  ,               'len' : 0, 'hex' : '#502c81'},
+                            '7VQU2DSV'  : {'name' : 'SUBSTANCES'  ,               'len' : 0, 'hex' : '#502c81'},
                         },
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' },
@@ -207,13 +215,13 @@ and organisation which produce conflicts with the controversial organisations an
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
         'supertags'     : []
-    
+
         }
-        
+
     ,
-    
+
     'mediasFR' : {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : 'Media owners in France',
         'dataSet_infos' : {
@@ -245,13 +253,13 @@ and organisation which produce conflicts with the controversial organisations an
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["tag"], "hideFilter" : ["group"] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
         'supertags'     : []
-    
+
         }
-        
+
     ,
-        
+
     'free_openSource_lib' : {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : 'Free and open source softwares',
         'dataSet_infos' : {
@@ -279,13 +287,13 @@ and organisation which produce conflicts with the controversial organisations an
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : ["group"] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
         'supertags'     : []
-    
+
         }
-        
+
     ,
-    
+
     'eval_instit_open' : {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : 'Evaluation institutionnelle et open access',
         'dataSet_infos' : {
@@ -316,13 +324,13 @@ and organisation which produce conflicts with the controversial organisations an
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : []
-    
+
         }
 
     ,
-    
+
     'bcn_smart_city_commons' : {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : 'Barcelona Smart City Commons',
         'dataSet_infos' : {
@@ -356,14 +364,14 @@ and organisation which produce conflicts with the controversial organisations an
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
         'supertags'     : []
-    
+
         }
 
 
     ,
-    
+
     'urbanmedialabwaste' : {
-        
+
         'API'           : 'Zotero',
         'dataSet_name'  : 'Urban Media Lab Waste',
         'dataSet_infos' : {
@@ -391,11 +399,11 @@ and organisation which produce conflicts with the controversial organisations an
                             'IFVE38TS'  : {'name' : 'methodology'                  , 'len' : 0, 'hex' : '#325d58'},
                             'P6TPRZ6J'  : {'name' : 'data gathering'               , 'len' : 0, 'hex' : '#325d58'},
                             'APGKQF3E'  : {'name' : 'projects'                     , 'len' : 0, 'hex' : '#325d58'},
-                        
+
                             'N434BTWU'  : {'name' : 'architecture & land use'      , 'len' : 0, 'hex' : '#325d58'},
                             'IZ3EW62R'  : {'name' : 'informal cities'              , 'len' : 0, 'hex' : '#325d58'},
                             'SNWGKNTA'  : {'name' : 'litterature'                  , 'len' : 0, 'hex' : '#325d58'},
-                            '5GS332CS'  : {'name' : 'theoretical backgrounds'      , 'len' : 0, 'hex' : '#325d58'},                        
+                            '5GS332CS'  : {'name' : 'theoretical backgrounds'      , 'len' : 0, 'hex' : '#325d58'},
                         },
         'nodesColorsDict' : {
                 node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
@@ -410,18 +418,51 @@ and organisation which produce conflicts with the controversial organisations an
         'switch_color'  : 'hex',
         'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : ["ref-tag"] }, ## selection by .class and by .id !!!
         'supertags'     : []
-    
+
         }
+
+        ,
+
+        'atelier-controverse' : {
+
+            'API'           : 'Zotero',
+            'dataSet_name'  : 'Atelier controverses CNAM',
+            'dataSet_infos' : {
+                                'presentation' : """... """,
+                                'authors'      : """... """,
+                                'methodology'  : """... """,
+                                'credits'      : """...""",
+                            },
+            'dataSet_key'   : '1307836', ### aka group key
+            'url_ROOT'      : create_API_URL('1307836'),
+            'url_WEB'       : create_WEB_URL('1307836'),
+            'urlsDict'      : {
+                                '4GNHM5CM'  : {'name' : 'culturelle'               , 'len' : 0, 'hex' : '#325d58'},
+                                'Z7QPH9M9'  : {'name' : 'sociale'                  , 'len' : 0, 'hex' : '#325d58'},
+                                '5MZXSX9Q'  : {'name' : 'territoriale'             , 'len' : 0, 'hex' : '#325d58'},
+                                '967XD3W7'  : {'name' : 'atelier'                     , 'len' : 0, 'hex' : '#325d58'},
+
+                            },
+            'nodesColorsDict' : {
+                    node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
+                    node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                    node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                            },
+            'edgesDashDict' : {
+                    'ref-ref'  : '1',
+                    'ref-tag'  : '1 1',
+                    'ref-group': '3 3'
+                            },
+            'switch_color'  : 'hex',
+            'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+            'supertags'     : []
+
+            }
+
 
 
     ### it should be possible to extend this list ...
 
-    
-    
+
+
 }
-
-
-
-
-
-
