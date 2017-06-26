@@ -440,7 +440,8 @@ and organisation which produce conflicts with the controversial organisations an
                                 '4GNHM5CM'  : {'name' : 'culturelle'               , 'len' : 0, 'hex' : '#325d58'},
                                 'Z7QPH9M9'  : {'name' : 'sociale'                  , 'len' : 0, 'hex' : '#325d58'},
                                 '5MZXSX9Q'  : {'name' : 'territoriale'             , 'len' : 0, 'hex' : '#325d58'},
-                                '967XD3W7'  : {'name' : 'atelier'                     , 'len' : 0, 'hex' : '#325d58'},
+                                'ZN6IUZXZ'  : {'name' : 'economique'               , 'len' : 0, 'hex' : '#325d58'},
+                                '967XD3W7'  : {'name' : 'atelier'                  , 'len' : 0, 'hex' : '#325d58'},
 
                             },
             'nodesColorsDict' : {
@@ -454,7 +455,7 @@ and organisation which produce conflicts with the controversial organisations an
                     'ref-group': '3 3'
                             },
             'switch_color'  : 'hex',
-            'presetsFilters': {"radialFilter": ["reference"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+            'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
             'supertags'     : []
 
             }
