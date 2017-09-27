@@ -4,84 +4,356 @@
       "ID": "edge_1",
       "dash": "1 1",
       "group": "ref-tag",
-      "source": "ref_WNUNBZKF",
-      "target": "tag_226",
+      "source": "ref_RG6IH3RW",
+      "target": "tag_351",
       "weight": 1.0
     },
     {
       "ID": "edge_2",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_WNUNBZKF",
-      "target": "group_51",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_RG6IH3RW",
+      "target": "tag_226",
       "weight": 1.0
     },
     {
       "ID": "edge_3",
       "dash": "1 1",
       "group": "ref-tag",
-      "source": "ref_UU9DIIP8",
-      "target": "tag_26",
+      "source": "ref_RG6IH3RW",
+      "target": "tag_701",
       "weight": 1.0
     },
     {
       "ID": "edge_4",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_UU9DIIP8",
-      "target": "tag_226",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_RG6IH3RW",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_5",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_UU9DIIP8",
-      "target": "group_101",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_I8SIWNB6",
+      "target": "tag_1551",
       "weight": 1.0
     },
     {
       "ID": "edge_6",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_PV3THDEI",
-      "target": "group_101",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_I8SIWNB6",
+      "target": "tag_626",
       "weight": 1.0
     },
     {
       "ID": "edge_7",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_BMRPJ25G",
-      "target": "group_101",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_I8SIWNB6",
+      "target": "tag_1526",
       "weight": 1.0
     },
     {
       "ID": "edge_8",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_4U9S9HPG",
-      "target": "group_101",
+      "source": "ref_I8SIWNB6",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_9",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_HB78M45Z",
-      "target": "group_101",
+      "source": "ref_J8ZUP77G",
+      "target": "group_1",
       "weight": 1.0
     },
     {
       "ID": "edge_10",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_Q3VJH7GF",
-      "target": "group_101",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_CEUFV9US",
+      "target": "tag_651",
       "weight": 1.0
     },
     {
       "ID": "edge_11",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CEUFV9US",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_12",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CEUFV9US",
+      "target": "group_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_13",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_3K9ZRJQW",
+      "target": "tag_1701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_14",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_3K9ZRJQW",
+      "target": "tag_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_15",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3K9ZRJQW",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_16",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3K9ZRJQW",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_17",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5EEVCKTZ",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_18",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_N8PMFVGW",
+      "target": "tag_1001",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_19",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_N8PMFVGW",
+      "target": "tag_1376",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_20",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_N8PMFVGW",
+      "target": "tag_1301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_21",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_N8PMFVGW",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_22",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_S4GEPMCC",
+      "target": "tag_251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_23",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_S4GEPMCC",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_24",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_S4GEPMCC",
+      "target": "tag_151",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_25",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_S4GEPMCC",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_26",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P4D38C87",
+      "target": "tag_401",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_27",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P4D38C87",
+      "target": "tag_451",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_28",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P4D38C87",
+      "target": "tag_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_29",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P4D38C87",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_30",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_JNS7ZN9X",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_31",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_JNS7ZN9X",
+      "target": "tag_1476",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_32",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_JNS7ZN9X",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_33",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_SIMHXV4H",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_34",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_SIMHXV4H",
+      "target": "tag_1476",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_35",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_SIMHXV4H",
+      "target": "tag_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_36",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_SIMHXV4H",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_37",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TVDERC4T",
+      "target": "tag_201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_38",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TVDERC4T",
+      "target": "tag_51",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_39",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TVDERC4T",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_40",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9GTB49EI",
+      "target": "tag_1376",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_41",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9GTB49EI",
+      "target": "tag_326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_42",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9GTB49EI",
+      "target": "tag_176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_43",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9GTB49EI",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_44",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9GTB49EI",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_45",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_MJJDQ6WU",
@@ -89,135 +361,15 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_12",
+      "ID": "edge_46",
       "dash": "3 3",
       "group": "ref-group",
-      "source": "ref_E64BE5UX",
-      "target": "group_101",
+      "source": "ref_MJJDQ6WU",
+      "target": "group_26",
       "weight": 1.0
     },
     {
-      "ID": "edge_13",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_Z8K95J9B",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_14",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_8JMQWJZT",
-      "target": "tag_126",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_15",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_8JMQWJZT",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_16",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_8I3FSFSJ",
-      "target": "tag_1",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_17",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_8I3FSFSJ",
-      "target": "tag_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_18",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_8I3FSFSJ",
-      "target": "tag_76",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_19",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_8I3FSFSJ",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_20",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_QX37PDMK",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_21",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_CAPP28KZ",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_22",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_NZZENVQU",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_23",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_J8ECF4ZM",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_24",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_88WR776W",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_25",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_275RCAJX",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_26",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_A83UHFGE",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_27",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_7C4XP69H",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_28",
+      "ID": "edge_47",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_5HFWZTHT",
@@ -225,7 +377,735 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_29",
+      "ID": "edge_48",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5HFWZTHT",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_49",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J9IBB8X5",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_50",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J9IBB8X5",
+      "target": "tag_1351",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_51",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_J9IBB8X5",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_52",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_XDGHAGU7",
+      "target": "tag_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_53",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_XDGHAGU7",
+      "target": "tag_726",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_54",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XDGHAGU7",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_55",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J4V6QZIR",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_56",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J4V6QZIR",
+      "target": "tag_876",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_57",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_J4V6QZIR",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_58",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4Z2HHGQP",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_59",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4Z2HHGQP",
+      "target": "tag_1726",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_60",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4Z2HHGQP",
+      "target": "tag_1501",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_61",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4Z2HHGQP",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_62",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_6P7BVJUN",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_63",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6P7BVJUN",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_64",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_K6A3N3AU",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_65",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_K6A3N3AU",
+      "target": "tag_1126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_66",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_K6A3N3AU",
+      "target": "tag_926",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_67",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_K6A3N3AU",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_68",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_FGJJXX7C",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_69",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_FGJJXX7C",
+      "target": "tag_776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_70",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_FGJJXX7C",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_71",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_NP85PNCN",
+      "target": "tag_126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_72",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_NP85PNCN",
+      "target": "tag_301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_73",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NP85PNCN",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_74",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NP85PNCN",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_75",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_MINRTVKH",
+      "target": "tag_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_76",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MINRTVKH",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_77",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MINRTVKH",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_78",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TH7WK5K5",
+      "target": "tag_301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_79",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TH7WK5K5",
+      "target": "tag_976",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_80",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TH7WK5K5",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_81",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TH7WK5K5",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_82",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_QBB7R5F6",
+      "target": "tag_501",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_83",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_QBB7R5F6",
+      "target": "tag_1076",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_84",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_QBB7R5F6",
+      "target": "tag_276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_85",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_QBB7R5F6",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_86",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TATK38M3",
+      "target": "tag_676",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_87",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TATK38M3",
+      "target": "tag_1426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_88",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TATK38M3",
+      "target": "tag_1451",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_89",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TATK38M3",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_90",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9GTB49EI",
+      "target": "tag_1376",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_91",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9GTB49EI",
+      "target": "tag_326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_92",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9GTB49EI",
+      "target": "tag_176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_93",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9GTB49EI",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_94",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9GTB49EI",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_95",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P7AKUU66",
+      "target": "tag_1601",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_96",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P7AKUU66",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_97",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P7AKUU66",
+      "target": "tag_951",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_98",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P7AKUU66",
+      "target": "tag_1226",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_99",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P7AKUU66",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_100",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4E6HH5AD",
+      "target": "tag_801",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_101",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4E6HH5AD",
+      "target": "tag_1826",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_102",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4E6HH5AD",
+      "target": "tag_1176",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_103",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_4E6HH5AD",
+      "target": "tag_1226",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_104",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4E6HH5AD",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_105",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_5KEJZ5W7",
+      "target": "tag_476",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_106",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5KEJZ5W7",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_107",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_U3DD7GXJ",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_108",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_U3DD7GXJ",
+      "target": "tag_651",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_109",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_U3DD7GXJ",
+      "target": "tag_576",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_110",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_U3DD7GXJ",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_111",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9VHSQWRZ",
+      "target": "tag_1276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_112",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9VHSQWRZ",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_113",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9VHSQWRZ",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_114",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_WNUNBZKF",
+      "target": "tag_1776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_115",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WNUNBZKF",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_116",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WNUNBZKF",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_117",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8DJ6P7H2",
+      "target": "tag_1651",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_118",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8DJ6P7H2",
+      "target": "tag_826",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_119",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8DJ6P7H2",
+      "target": "tag_376",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_120",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8DJ6P7H2",
+      "target": "tag_1776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_121",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8DJ6P7H2",
+      "target": "group_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_122",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_CEUFV9US",
+      "target": "tag_651",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_123",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CEUFV9US",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_124",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CEUFV9US",
+      "target": "group_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_125",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_88WR776W",
+      "target": "tag_1101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_126",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_88WR776W",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_127",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_88WR776W",
+      "target": "group_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_128",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MJJDQ6WU",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_129",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MJJDQ6WU",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_130",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5HFWZTHT",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_131",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_5HFWZTHT",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_132",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6BVZRDI7",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_133",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J5AC7UKC",
+      "target": "tag_1751",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_134",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J5AC7UKC",
+      "target": "tag_901",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_135",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_J5AC7UKC",
+      "target": "tag_751",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_136",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_J5AC7UKC",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_137",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Z8K95J9B",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_138",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_E64BE5UX",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_139",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_6B6GPFJ3",
@@ -233,7 +1113,591 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_30",
+      "ID": "edge_140",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_7C4XP69H",
+      "target": "tag_1251",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_141",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_7C4XP69H",
+      "target": "tag_1151",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_142",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_7C4XP69H",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_143",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_A83UHFGE",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_144",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_275RCAJX",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_145",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_Q3VJH7GF",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_146",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HB78M45Z",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_147",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4U9S9HPG",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_148",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_88WR776W",
+      "target": "tag_1101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_149",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_88WR776W",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_150",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_88WR776W",
+      "target": "group_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_151",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_BMRPJ25G",
+      "target": "tag_1626",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_152",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_BMRPJ25G",
+      "target": "tag_526",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_153",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_BMRPJ25G",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_154",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_PV3THDEI",
+      "target": "tag_426",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_155",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_PV3THDEI",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_156",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_J8ECF4ZM",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_157",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NZZENVQU",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_158",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_CAPP28KZ",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_159",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_QCCVM258",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_160",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_4SFG3JDC",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_161",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_23ESFF7J",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_162",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_K26JQZDM",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_163",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_6WMF3A3Q",
+      "target": "tag_1401",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_164",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_6WMF3A3Q",
+      "target": "tag_526",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_165",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_6WMF3A3Q",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_166",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HDG9UGTT",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_167",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_NP85PNCN",
+      "target": "tag_126",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_168",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_NP85PNCN",
+      "target": "tag_301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_169",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NP85PNCN",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_170",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_NP85PNCN",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_171",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_3K9ZRJQW",
+      "target": "tag_1701",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_172",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_3K9ZRJQW",
+      "target": "tag_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_173",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3K9ZRJQW",
+      "target": "group_1",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_174",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_3K9ZRJQW",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_175",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_HB5UJDV7",
+      "target": "tag_476",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_176",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_HB5UJDV7",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_177",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_S3BXWRDU",
+      "target": "tag_851",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_178",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_S3BXWRDU",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_179",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_J49TGPAC",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_180",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XQ2JUEGU",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_181",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_MINRTVKH",
+      "target": "tag_76",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_182",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MINRTVKH",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_183",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_MINRTVKH",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_184",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_XUCTCK2Z",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_185",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TH7WK5K5",
+      "target": "tag_301",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_186",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_TH7WK5K5",
+      "target": "tag_976",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_187",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TH7WK5K5",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_188",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_TH7WK5K5",
+      "target": "group_26",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_189",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_ITNKDNG3",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_190",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_9VHSQWRZ",
+      "target": "tag_1276",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_191",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9VHSQWRZ",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_192",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_9VHSQWRZ",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_193",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_WNUNBZKF",
+      "target": "tag_1776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_194",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WNUNBZKF",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_195",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_WNUNBZKF",
+      "target": "tag_1326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_196",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P77CTN59",
+      "target": "tag_1676",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_197",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_P77CTN59",
+      "target": "tag_1576",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_198",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_P77CTN59",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_199",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_VEUVCVM9",
+      "target": "tag_1801",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_200",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_VEUVCVM9",
+      "target": "tag_1676",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_201",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_VEUVCVM9",
+      "target": "tag_1051",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_202",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_VEUVCVM9",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_203",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_UU9DIIP8",
+      "target": "tag_551",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_204",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_UU9DIIP8",
+      "target": "tag_1776",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_205",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_UU9DIIP8",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_206",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8JMQWJZT",
+      "target": "tag_601",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_207",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8JMQWJZT",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_208",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8I3FSFSJ",
+      "target": "tag_326",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_209",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8I3FSFSJ",
+      "target": "tag_1201",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_210",
+      "dash": "1 1",
+      "group": "ref-tag",
+      "source": "ref_8I3FSFSJ",
+      "target": "tag_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_211",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_8I3FSFSJ",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_212",
+      "dash": "3 3",
+      "group": "ref-group",
+      "source": "ref_QX37PDMK",
+      "target": "group_101",
+      "weight": 1.0
+    },
+    {
+      "ID": "edge_213",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_38QDBF9N",
@@ -241,23 +1705,23 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_31",
+      "ID": "edge_214",
       "dash": "1 1",
       "group": "ref-tag",
       "source": "ref_MNF7A4HX",
-      "target": "tag_201",
+      "target": "tag_901",
       "weight": 1.0
     },
     {
-      "ID": "edge_32",
+      "ID": "edge_215",
       "dash": "1 1",
       "group": "ref-tag",
       "source": "ref_MNF7A4HX",
-      "target": "tag_151",
+      "target": "tag_1026",
       "weight": 1.0
     },
     {
-      "ID": "edge_33",
+      "ID": "edge_216",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_MNF7A4HX",
@@ -265,39 +1729,7 @@
       "weight": 1.0
     },
     {
-      "ID": "edge_34",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_J5AC7UKC",
-      "target": "tag_176",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_35",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_J5AC7UKC",
-      "target": "tag_201",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_36",
-      "dash": "1 1",
-      "group": "ref-tag",
-      "source": "ref_J5AC7UKC",
-      "target": "tag_51",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_37",
-      "dash": "3 3",
-      "group": "ref-group",
-      "source": "ref_J5AC7UKC",
-      "target": "group_101",
-      "weight": 1.0
-    },
-    {
-      "ID": "edge_38",
+      "ID": "edge_217",
       "dash": "3 3",
       "group": "ref-group",
       "source": "ref_KB6T84QX",
@@ -306,6 +1738,779 @@
     }
   ],
   "nodes": [
+    {
+      "ID": "ref_RG6IH3RW",
+      "abstractNote": "Les algorithmes d\u00e9tr\u00f4nent les instituts de sondage - Sciencesetavenir.fr",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale"
+      ],
+      "label": "Les algorithmes d\u00e9tr\u00f4nent les instituts de sondage - Sciencesetavenir.fr",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "election",
+        "prediction",
+        "sondage"
+      ],
+      "type": "webpage",
+      "url": "https://www.sciencesetavenir.fr/politique/les-algorithmes-detronent-les-instituts-de-sondage_111701",
+      "weight": 25
+    },
+    {
+      "ID": "ref_I8SIWNB6",
+      "abstractNote": "Id\u00e9e #48. Un algorithme pour faire tes choix de cours \u00e0 la rentr\u00e9e - 2035 id\u00e9es",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale"
+      ],
+      "label": "Id\u00e9e #48. Un algorithme pour faire tes choix de cours \u00e0 la rentr\u00e9e - 2035 id\u00e9es",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "cerveau",
+        "decision",
+        "depossession"
+      ],
+      "type": "webpage",
+      "url": "http://2035idees.be/idee-48-un-algorithme-pour-faire-tes-choix-de-cours-a-la-rentree/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J8ZUP77G",
+      "abstractNote": "",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale"
+      ],
+      "label": "Qui contr\u00f4le le code ?",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.franceculture.fr/conferences/college-des-bernardins/qui-controle-le-code",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CEUFV9US",
+      "abstractNote": "sondage IFOP",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale",
+        "territoriale"
+      ],
+      "label": "Notori\u00e9t\u00e9s et attentes sur les algo",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "moyen fiable"
+      ],
+      "type": "webpage",
+      "url": "about:newtab",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3K9ZRJQW",
+      "abstractNote": "La proc\u00e9dure d'admission post-bac est-elle trop opaque ?",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale",
+        "atelier"
+      ],
+      "label": "La proc\u00e9dure d'admission post-bac est-elle trop opaque ? - Le monde bouge - T\u00e9l\u00e9rama.fr",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "bac",
+        "etudes"
+      ],
+      "type": "webpage",
+      "url": "http://www.telerama.fr/medias/la-procedure-admission-post-bac-trop-opaque-une-association-mene-la-fronde,143719.php",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5EEVCKTZ",
+      "abstractNote": "",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "D. Cardon: \u00ab Ayons une culture critique des algorithmes \u00bb",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://rslnmag.fr/cite/dominique-cardon-algorithmes-politique/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_N8PMFVGW",
+      "abstractNote": "Le temps des algorithmes",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Amazon.fr - Le temps des algorithmes - Serge Abiteboul, Gilles Dowek - Livres",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "abiteboul",
+        "algorithme",
+        "philosophie"
+      ],
+      "type": "webpage",
+      "url": "https://www.amazon.fr/temps-algorithmes-Serge-Abiteboul/dp/2746511754/ref=sr_1_3?s=books&ie=UTF8&qid=1499179952&sr=1-3&keywords=algorithme",
+      "weight": 25
+    },
+    {
+      "ID": "ref_S4GEPMCC",
+      "abstractNote": "Sagesse en r\u00e9seaux : la passion d\u2019\u00e9valuer - La Vie des id\u00e9es",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Sagesse en r\u00e9seaux : la passion d\u2019\u00e9valuer - La Vie des id\u00e9es",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "collectif",
+        "fiable",
+        "intelligence"
+      ],
+      "type": "webpage",
+      "url": "http://www.laviedesidees.fr/Sagesse-en-reseaux-la-passion-d.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P4D38C87",
+      "abstractNote": "\u201c\u00catre enti\u00e8rement calculable par des algorithmes nous r\u00e9duit \u00e0 rien\u201d",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Les Inrocks - Bernard Stiegler : \u201c\u00catre enti\u00e8rement calculable par des algorithmes nous r\u00e9duit \u00e0 rien\u201d",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "critique",
+        "education",
+        "numerique"
+      ],
+      "type": "webpage",
+      "url": "http://www.lesinrocks.com/2016/06/14/idees/bernard-stiegler-gens-lucides-honnetes-eux-memes-ont-aujourdhui-moral-a-zero-11845663/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_JNS7ZN9X",
+      "abstractNote": "Xaphir : encore un moteur de recherche qui tente de d\u00e9stabiliser Google [MAJ] - ZDNet",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Xaphir : encore un moteur de recherche qui tente de d\u00e9stabiliser Google [MAJ] - ZDNet",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable",
+        "moteur de recherche"
+      ],
+      "type": "webpage",
+      "url": "http://www.zdnet.fr/actualites/xaphir-encore-un-moteur-de-recherche-qui-tente-de-destabiliser-google-maj-39852236.htm",
+      "weight": 25
+    },
+    {
+      "ID": "ref_SIMHXV4H",
+      "abstractNote": "Sur l\u2019humanisme num\u00e9rique",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Sur l\u2019humanisme num\u00e9rique. Une analyse de Milad Doueihi, universit\u00e9 de Laval au Canada. | e-South\u2026 Hic et Nunc",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "humain",
+        "moteur de recherche",
+        "numerique"
+      ],
+      "type": "webpage",
+      "url": "http://e-south.blog.lemonde.fr/2013/05/30/sur-lhumanisme-numerique-une-analyse-de-milad-doueihi-universite-de-laval-au-canada/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_TVDERC4T",
+      "abstractNote": "Visuel Capteurs",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Visuel Capteurs",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "capteurs",
+        "technique"
+      ],
+      "type": "webpage",
+      "url": "http://moodle.utc.fr/file.php/498/SupportWeb/res/zigbee-csmaca.png",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9GTB49EI",
+      "abstractNote": "visualisation de codes",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle",
+        "economique"
+      ],
+      "label": "image code",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "algorithme",
+        "code",
+        "image"
+      ],
+      "type": "webpage",
+      "url": "https://www.franceculture.fr/s3/cruiser-production/2016/12/79c7aebb-4e7c-405d-9705-d702c13a755a/738_gettyimages-660582997.jpg",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MJJDQ6WU",
+      "abstractNote": "Can an algorithm be wrong? Twitter Trends, the specter of censorship, and our faith in the algorithms around us \u2013 Culture Digitally",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ENJ7WCP9"
+      ],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Can an algorithm be wrong? Twitter Trends, the specter of censorship, and our faith in the algorithms around us \u2013 Culture Digitally",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://culturedigitally.org/2011/10/can-an-algorithm-be-wrong/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5HFWZTHT",
+      "abstractNote": "Les algorithmes sont-ils une nouvelle forme de bureaucratie ? | InternetActu.net",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QDJIAM4M"
+      ],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Les algorithmes sont-ils une nouvelle forme de bureaucratie ? | InternetActu.net",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.internetactu.net/2017/04/04/les-algorithmes-sont-ils-une-nouvelle-forme-de-bureaucratie/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J9IBB8X5",
+      "abstractNote": "Machine-Learning Algorithm Mines Rap Lyrics, Then Writes Its Own - MIT Technology Review",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Machine-Learning Algorithm Mines Rap Lyrics, Then Writes Its Own - MIT Technology Review",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable",
+        "machines learning"
+      ],
+      "type": "webpage",
+      "url": "https://www.technologyreview.com/s/537716/machine-learning-algorithm-mines-rap-lyrics-then-writes-its-own/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XDGHAGU7",
+      "abstractNote": "Interstices - L'art assist\u00e9 par ordinateur",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Interstices - L'art assist\u00e9 par ordinateur",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "art",
+        "ordinateur"
+      ],
+      "type": "webpage",
+      "url": "https://interstices.info/jcms/i_58118/l-art-assiste-par-ordinateur",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J4V6QZIR",
+      "abstractNote": "La gouvernance par les nombres - introduction - Alain Supiot - \u00c9tat social et mondialisation : analyse juridique des solidarit\u00e9s - Coll\u00e8ge de France",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "La gouvernance par les nombres - introduction - Alain Supiot - \u00c9tat social et mondialisation : analyse juridique des solidarit\u00e9s - Coll\u00e8ge de France",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable",
+        "gouvernement"
+      ],
+      "type": "webpage",
+      "url": "http://www.college-de-france.fr/site/alain-supiot/La-gouvernance-par-les-nombres-film.htm",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4Z2HHGQP",
+      "abstractNote": "\u00ab Ouvrir les mod\u00e8les ! \u00bb, pas seulement les donn\u00e9es | InternetActu.net",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "\u00ab\u00a0Ouvrir les mod\u00e8les !\u00a0\u00bb, pas seulement les donn\u00e9es | InternetActu.net",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable",
+        "opendata",
+        "transparence"
+      ],
+      "type": "webpage",
+      "url": "http://www.internetactu.net/2014/11/18/ouvrir-les-modeles-pas-seulement-les-donnees/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6P7BVJUN",
+      "abstractNote": "De la responsabilit\u00e9 algorithmique",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "De la responsabilit\u00e9 algorithmique | InternetActu.net",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable"
+      ],
+      "type": "webpage",
+      "url": "http://www.internetactu.net/2015/09/09/de-la-responsabilite-algorithmique/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_K6A3N3AU",
+      "abstractNote": "",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Le jour o\u00f9 les algorithmes\u2026",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable",
+        "journal",
+        "poetique"
+      ],
+      "type": "webpage",
+      "url": "https://terminal.revues.org/302",
+      "weight": 25
+    },
+    {
+      "ID": "ref_FGJJXX7C",
+      "abstractNote": "d\u00e9finition algorithme Ars Indus",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle"
+      ],
+      "label": "Algorithme (Programme) | Ars Industrialis",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "fiable",
+        "philosophique"
+      ],
+      "type": "webpage",
+      "url": "http://arsindustrialis.org/vocabulaire-algorithme-programme",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NP85PNCN",
+      "abstractNote": "Haunted by Algo",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Haunted by Algo",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "artiste",
+        "culture"
+      ],
+      "type": "webpage",
+      "url": "http://hauntedbyalgorithms.net/info/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MINRTVKH",
+      "abstractNote": "Predictive Art Bot",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Predictive Art Bot \u2b1a\u2b1a",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "art"
+      ],
+      "type": "webpage",
+      "url": "http://artbot.space/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_TH7WK5K5",
+      "abstractNote": "Algorithmes et r\u00e9alit\u00e9s \u2014 Centre de Ressources Num\u00e9riques - Labomedia",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Algorithmes et r\u00e9alit\u00e9s \u2014 Centre de Ressources Num\u00e9riques - Labomedia",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "culture",
+        "presentation"
+      ],
+      "type": "webpage",
+      "url": "https://wiki.labomedia.org/index.php/Algorithmes_et_r%C3%A9alit%C3%A9s",
+      "weight": 25
+    },
+    {
+      "ID": "ref_QBB7R5F6",
+      "abstractNote": "Recherche - ISFA : Institut de Science Financi\u00e8re et d'Assurances - Universit\u00e9 Lyon 1",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "economique"
+      ],
+      "label": "Recherche - ISFA : Institut de Science Financi\u00e8re et d'Assurances - Universit\u00e9 Lyon 1",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "actuariat",
+        "finance",
+        "risque"
+      ],
+      "type": "webpage",
+      "url": "http://isfa.univ-lyon1.fr/recherche/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_TATK38M3",
+      "abstractNote": "Explorateur de blocs Bitcoin - Blockchain.info",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "economique"
+      ],
+      "label": "Explorateur de blocs Bitcoin - Blockchain.info",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "bitcoin",
+        "evolution",
+        "prix"
+      ],
+      "type": "webpage",
+      "url": "https://blockchain.info/fr",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9GTB49EI",
+      "abstractNote": "visualisation de codes",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "culturelle",
+        "economique"
+      ],
+      "label": "image code",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "algorithme",
+        "code",
+        "image"
+      ],
+      "type": "webpage",
+      "url": "https://www.franceculture.fr/s3/cruiser-production/2016/12/79c7aebb-4e7c-405d-9705-d702c13a755a/738_gettyimages-660582997.jpg",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P7AKUU66",
+      "abstractNote": "Comparatif des meilleurs robots de trading 2015-2016",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "economique"
+      ],
+      "label": "Comparatif des meilleurs robots de trading 2015-2016",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "automatique",
+        "fiable",
+        "particulier",
+        "tradding"
+      ],
+      "type": "webpage",
+      "url": "http://www.droitdunet.fr/robots-de-trading-notre-comparatif/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4E6HH5AD",
+      "abstractNote": "Finance: comment les algorithmes ont pris le pouvoir - 20 avril 2013 - Bibliobs - L'Obs",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "economique"
+      ],
+      "label": "Finance: comment les algorithmes ont pris le pouvoir - 20 avril 2013 - Bibliobs - L'Obs",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "bourse",
+        "economie",
+        "fiable",
+        "tradding"
+      ],
+      "type": "webpage",
+      "url": "http://bibliobs.nouvelobs.com/essais/20130328.OBS6096/algorithmes-dans-la-peau.html",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5KEJZ5W7",
+      "abstractNote": "Algorithmes et donn\u00e9es personnelles - Fil d\u2019actualit\u00e9 du Service Informatique et libert\u00e9s du CNRS",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "economique"
+      ],
+      "label": "Algorithmes et donn\u00e9es personnelles - Fil d\u2019actualit\u00e9 du Service Informatique et libert\u00e9s du CNRS",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "tres fiable"
+      ],
+      "type": "webpage",
+      "url": "http://www.cil.cnrs.fr/CIL/spip.php?article2913",
+      "weight": 25
+    },
+    {
+      "ID": "ref_U3DD7GXJ",
+      "abstractNote": "Conf\u00e9rence Place publique : \"Qui contr\u00f4le le big data ?\" - YouTube",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "economique"
+      ],
+      "label": "Conf\u00e9rence Place publique : \"Qui contr\u00f4le le big data ?\" - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "economique",
+        "moyen fiable",
+        "politique"
+      ],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=16_YmDzrqU4",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9VHSQWRZ",
+      "abstractNote": "",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "economique"
+      ],
+      "label": "ARTE - Democracy : La ru\u00e9e vers les datas - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "data"
+      ],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=Ob0uRMlIT38",
+      "weight": 25
+    },
     {
       "ID": "ref_WNUNBZKF",
       "abstractNote": "Le premier est su\u00e9dois, professeur de philosophie \u00e0 Oxford et l\u2019un des leaders du courant transhumaniste, depuis qu\u2019il a fond\u00e9 en 1998 la World Transhumanist Association (devenue depuis Humanity+). En 2014, il pr\u00e9disait dans son livre Superintelligence : chemins, dangers, strat\u00e9gies, recommand\u00e9 par Elon Musk et Bill Gates, l\u2019arriv\u00e9e prochaine d\u2019une superintelligence qui surpassera l\u2019intelligence humaine. Le second, m\u00e9decin, co-fondateur de Doctissimo et entrepreneur, est devenu le porte-parole fran\u00e7ais le plus virulent du d\u00e9bat sur l\u2019avenir de l\u2019intelligence artificielle, et se d\u00e9fend d'\u00eatre transhumaniste. Nick Bostrom et Laurent Alexandre se sont succ\u00e9d\u00e9s \u00e0 Paris sur la sc\u00e8ne de l\u2019USI, conf\u00e9rence d\u00e9di\u00e9e aux professionnels et \u00e0 l'avenir du num\u00e9rique et du monde. Usbek & Rica s'est gliss\u00e9 dans le public pour tenter de r\u00e9soudre l'\u00e9quation suivante : deux gourous + une IA = z\u00e9ro chance de s'en sortir ?",
@@ -316,6 +2521,7 @@
       "dataset": "Atelier controverses CNAM",
       "dataset_": "atelier-controverse",
       "group": [
+        "atelier",
         "economique"
       ],
       "label": "\u00ab La soci\u00e9t\u00e9 algorithmique serait un cauchemar \u00bb | Usbek & Rica",
@@ -326,6 +2532,915 @@
       ],
       "type": "webpage",
       "url": "https://usbeketrica.com/article/la-societe-algorithmique-serait-un-cauchemar",
+      "weight": 25
+    },
+    {
+      "ID": "ref_8DJ6P7H2",
+      "abstractNote": "Localisation optimale d\u2019unit\u00e9s de soins dans un pays en voie de d\u00e9veloppement : analyse de sensibilit\u00e9",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "territoriale"
+      ],
+      "label": "Localisation optimale d\u2019unit\u00e9s de soins dans un pays en voie de d\u00e9veloppement\u00a0: analyse de sensibilit\u00e9",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "flux",
+        "rwanda",
+        "sant\u00e9",
+        "soci\u00e9t\u00e9"
+      ],
+      "type": "webpage",
+      "url": "https://cybergeo.revues.org/3316",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CEUFV9US",
+      "abstractNote": "sondage IFOP",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale",
+        "territoriale"
+      ],
+      "label": "Notori\u00e9t\u00e9s et attentes sur les algo",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "moyen fiable"
+      ],
+      "type": "webpage",
+      "url": "about:newtab",
+      "weight": 25
+    },
+    {
+      "ID": "ref_88WR776W",
+      "abstractNote": "Datavisualisation : Toute l'actualit\u00e9 sur Le Monde, decodex",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "territoriale"
+      ],
+      "label": "Datavisualisation : Toute l'actualit\u00e9 sur Le Monde.fr.",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "verit\u00e9"
+      ],
+      "type": "webpage",
+      "url": "http://www.lemonde.fr/data-visualisation/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MJJDQ6WU",
+      "abstractNote": "Can an algorithm be wrong? Twitter Trends, the specter of censorship, and our faith in the algorithms around us \u2013 Culture Digitally",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_ENJ7WCP9"
+      ],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Can an algorithm be wrong? Twitter Trends, the specter of censorship, and our faith in the algorithms around us \u2013 Culture Digitally",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://culturedigitally.org/2011/10/can-an-algorithm-be-wrong/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_5HFWZTHT",
+      "abstractNote": "Les algorithmes sont-ils une nouvelle forme de bureaucratie ? | InternetActu.net",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_QDJIAM4M"
+      ],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Les algorithmes sont-ils une nouvelle forme de bureaucratie ? | InternetActu.net",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.internetactu.net/2017/04/04/les-algorithmes-sont-ils-une-nouvelle-forme-de-bureaucratie/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6BVZRDI7",
+      "abstractNote": "",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Man & Computer - IBM 1965 - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=BUCZJWo9MZo",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J5AC7UKC",
+      "abstractNote": "The Human Fabric of the Facebook Pyramid \u2013 SHARE LAB",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [
+        "ref_FGD8M84H"
+      ],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "The Human Fabric of the Facebook Pyramid \u2013 SHARE LAB",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "facebook",
+        "internet",
+        "sociocracy"
+      ],
+      "type": "webpage",
+      "url": "https://labs.rs/en/the-human-fabric-of-the-facebook-pyramid/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Z8K95J9B",
+      "abstractNote": "\u00ab C'est quoi un Algorithme ? \u00bb",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "\u00ab C'est quoi un Algorithme ? \u00bb | La Ga\u00eet\u00e9 lyrique",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://gaite-lyrique.net/article/cest-quoi-un-algorithme",
+      "weight": 25
+    },
+    {
+      "ID": "ref_E64BE5UX",
+      "abstractNote": "The Relevance of Algorithms \u2013 Culture Digitally",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "The Relevance of Algorithms \u2013 Culture Digitally",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://culturedigitally.org/2012/11/the-relevance-of-algorithms/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6B6GPFJ3",
+      "abstractNote": "Algorithmic Composer",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Algorithmic Composer",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.algorithmiccomposer.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_7C4XP69H",
+      "abstractNote": "Des robots et des hommes",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Des robots et des hommes",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "humain",
+        "robots"
+      ],
+      "type": "webpage",
+      "url": "https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/des-robots-et-des-hommes",
+      "weight": 25
+    },
+    {
+      "ID": "ref_A83UHFGE",
+      "abstractNote": "Works",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Works",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://controverses.sciences-po.fr/archiveindex/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_275RCAJX",
+      "abstractNote": "Contropedia \u2013 the analysis and visualization of controversies in Wikipedia articles | Sciences Po | MedialabSciences Po | Medialab",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Contropedia \u2013 the analysis and visualization of controversies in Wikipedia articles | Sciences Po | MedialabSciences Po | Medialab",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.medialab.sciences-po.fr/fr/publications/contropedia-the-analysis-and-visualization-of-controversies-in-wikipedia-articles/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_Q3VJH7GF",
+      "abstractNote": "Pourquoi certains nient les r\u00e9sultats de la science | Passeur de sciences",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Pourquoi certains nient les r\u00e9sultats de la science | Passeur de sciences",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://passeurdesciences.blog.lemonde.fr/2016/12/28/pourquoi-certains-nient-les-resultats-de-la-science/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HB78M45Z",
+      "abstractNote": "Controverse | Plateforme \u00e9ditoriale",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Controverse | Plateforme \u00e9ditoriale",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://controverse.co/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4U9S9HPG",
+      "abstractNote": "Digital Video Database for Knowledge",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "SamNetwork : Digital Video Database for Knowledge",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.sam-network.org/about",
+      "weight": 25
+    },
+    {
+      "ID": "ref_88WR776W",
+      "abstractNote": "Datavisualisation : Toute l'actualit\u00e9 sur Le Monde, decodex",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "territoriale"
+      ],
+      "label": "Datavisualisation : Toute l'actualit\u00e9 sur Le Monde.fr.",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "verit\u00e9"
+      ],
+      "type": "webpage",
+      "url": "http://www.lemonde.fr/data-visualisation/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_BMRPJ25G",
+      "abstractNote": "Controver-Sciences",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "ControverSciences.org",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "plateforme",
+        "sciences"
+      ],
+      "type": "webpage",
+      "url": "https://www.controversciences.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_PV3THDEI",
+      "abstractNote": "How do we compose a common world?\n\nNot so long ago, the project that would have seen modernization spread over the whole planet came up against unexpected opposition from the planet itself. Should we give up, deny the problem, or grit our teeth and hope for a miracle? Alternatively we could inquire into what this modern project has meant so as to find out how it can be begun again on a new footing.",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "AIME",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "existence"
+      ],
+      "type": "webpage",
+      "url": "http://modesofexistence.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J8ECF4ZM",
+      "abstractNote": "Konrad Becker : Dictionnaire de r\u00e9alit\u00e9 tactique \u2013 Les presses du r\u00e9el (livre)",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Konrad Becker : Dictionnaire de r\u00e9alit\u00e9 tactique \u2013 Les presses du r\u00e9el (livre)",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.lespressesdureel.com/ouvrage.php?id=5313&menu",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NZZENVQU",
+      "abstractNote": "Les cartographies de controverses au Medialab | Knowtex Blog",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Les cartographies de controverses au Medialab | Knowtex Blog",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.knowtex.com/blog/les-cartographies-de-controverses-au-medialab/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_CAPP28KZ",
+      "abstractNote": "Data as Remedy for Post-Truth \u2014 24h Hackathon in Tartu, Estonia 31.03\u20121.04",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Data as Remedy for Post-Truth \u2014 24h Hackathon in Tartu, Estonia 31.03\u20121.04",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://hack24.ut.ee/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_QCCVM258",
+      "abstractNote": "Des algorithmes pour pr\u00e9dire l\u2019avenir ? - FUTUREMAG - ARTE - YouTube",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Des algorithmes pour pr\u00e9dire l\u2019avenir ? - FUTUREMAG - ARTE - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=LozdhscONXs",
+      "weight": 25
+    },
+    {
+      "ID": "ref_4SFG3JDC",
+      "abstractNote": "Marketing politique : D\u00e9mocra-cibl\u00e9e",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Marketing politique : D\u00e9mocra-cibl\u00e9e - #DATAGUEULE 68 - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=xO_dH2oANWY",
+      "weight": 25
+    },
+    {
+      "ID": "ref_23ESFF7J",
+      "abstractNote": "Big data : donn\u00e9es, donn\u00e9es, donnez-moi ! -",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Big data : donn\u00e9es, donn\u00e9es, donnez-moi ! - #DATAGUEULE 15 - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=5otaBKsz7k4",
+      "weight": 25
+    },
+    {
+      "ID": "ref_K26JQZDM",
+      "abstractNote": "Processing script",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Barricelli : Built with Processing and Processing.js",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://cultureandcommunication.org/galloway/Barricelli/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_6WMF3A3Q",
+      "abstractNote": "Data Science Toolkit",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Data Science Toolkit",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "outils",
+        "sciences"
+      ],
+      "type": "webpage",
+      "url": "http://www.datasciencetoolkit.org/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HDG9UGTT",
+      "abstractNote": "Clever Algorithms: Nature-Inspired Programming Recipes",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Clever Algorithms: Nature-Inspired Programming Recipes",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://cleveralgorithms.com/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_NP85PNCN",
+      "abstractNote": "Haunted by Algo",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Haunted by Algo",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "artiste",
+        "culture"
+      ],
+      "type": "webpage",
+      "url": "http://hauntedbyalgorithms.net/info/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_3K9ZRJQW",
+      "abstractNote": "La proc\u00e9dure d'admission post-bac est-elle trop opaque ?",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "sociale",
+        "atelier"
+      ],
+      "label": "La proc\u00e9dure d'admission post-bac est-elle trop opaque ? - Le monde bouge - T\u00e9l\u00e9rama.fr",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "bac",
+        "etudes"
+      ],
+      "type": "webpage",
+      "url": "http://www.telerama.fr/medias/la-procedure-admission-post-bac-trop-opaque-une-association-mene-la-fronde,143719.php",
+      "weight": 25
+    },
+    {
+      "ID": "ref_HB5UJDV7",
+      "abstractNote": "Les algorithmes menacent-ils la d\u00e9mocratie?",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Les algorithmes menacent-ils la d\u00e9mocratie?",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "tres fiable"
+      ],
+      "type": "webpage",
+      "url": "https://lejournal.cnrs.fr/print/1526",
+      "weight": 25
+    },
+    {
+      "ID": "ref_S3BXWRDU",
+      "abstractNote": "IA yann Lecun",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Le\u00e7on inaugurale | Yann Lecun au coll\u00e8ge de France - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "intelligence artificielle"
+      ],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=OzZoPVjv8iE",
+      "weight": 25
+    },
+    {
+      "ID": "ref_J49TGPAC",
+      "abstractNote": "Prospective, questions de soci\u00e9t\u00e9 et cultures num\u00e9riques.",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "FYP Editions - Prospective, questions de soci\u00e9t\u00e9 et cultures num\u00e9riques.",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.fypeditions.com/les-algorithmes-secrets-qui-controlent-leconomie-et-linformation-the-black-box-society/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XQ2JUEGU",
+      "abstractNote": "Agritech 10 innovations au service de l\u2019agriculture",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Agritech 10 innovations au service de l\u2019agriculture ! - NUMA Paris",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "https://paris.numa.co/blog/agritech-agtech/?utm_source=NUMA+Paris+%7C+Newsletter&utm_campaign=5f8eb2d1d9-EMAIL_CAMPAIGN_2017_04_24&utm_medium=email&utm_term=0_74cf6bd456-5f8eb2d1d9-28328765",
+      "weight": 25
+    },
+    {
+      "ID": "ref_MINRTVKH",
+      "abstractNote": "Predictive Art Bot",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Predictive Art Bot \u2b1a\u2b1a",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "art"
+      ],
+      "type": "webpage",
+      "url": "http://artbot.space/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_XUCTCK2Z",
+      "abstractNote": "Rassemblement contre la \"smart city\"",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Rassemblement contre la \"smart city\" le 11 mars 2017 \u00e0 Grenoble :: Pi\u00e8ces et Main d'Oeuvre",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://www.piecesetmaindoeuvre.com/spip.php?page=resume&id_article=919",
+      "weight": 25
+    },
+    {
+      "ID": "ref_TH7WK5K5",
+      "abstractNote": "Algorithmes et r\u00e9alit\u00e9s \u2014 Centre de Ressources Num\u00e9riques - Labomedia",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "culturelle"
+      ],
+      "label": "Algorithmes et r\u00e9alit\u00e9s \u2014 Centre de Ressources Num\u00e9riques - Labomedia",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "culture",
+        "presentation"
+      ],
+      "type": "webpage",
+      "url": "https://wiki.labomedia.org/index.php/Algorithmes_et_r%C3%A9alit%C3%A9s",
+      "weight": 25
+    },
+    {
+      "ID": "ref_ITNKDNG3",
+      "abstractNote": "Algorithmic Regimes and Generative Strategies | World-Information Institute",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Algorithmic Regimes and Generative Strategies | World-Information Institute",
+      "note": "",
+      "supertag": false,
+      "tag": [],
+      "type": "webpage",
+      "url": "http://world-information.net/algorithmic-regimes-and-generative-strategies/",
+      "weight": 25
+    },
+    {
+      "ID": "ref_9VHSQWRZ",
+      "abstractNote": "",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "economique"
+      ],
+      "label": "ARTE - Democracy : La ru\u00e9e vers les datas - YouTube",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "data"
+      ],
+      "type": "webpage",
+      "url": "https://www.youtube.com/watch?v=Ob0uRMlIT38",
+      "weight": 25
+    },
+    {
+      "ID": "ref_WNUNBZKF",
+      "abstractNote": "Le premier est su\u00e9dois, professeur de philosophie \u00e0 Oxford et l\u2019un des leaders du courant transhumaniste, depuis qu\u2019il a fond\u00e9 en 1998 la World Transhumanist Association (devenue depuis Humanity+). En 2014, il pr\u00e9disait dans son livre Superintelligence : chemins, dangers, strat\u00e9gies, recommand\u00e9 par Elon Musk et Bill Gates, l\u2019arriv\u00e9e prochaine d\u2019une superintelligence qui surpassera l\u2019intelligence humaine. Le second, m\u00e9decin, co-fondateur de Doctissimo et entrepreneur, est devenu le porte-parole fran\u00e7ais le plus virulent du d\u00e9bat sur l\u2019avenir de l\u2019intelligence artificielle, et se d\u00e9fend d'\u00eatre transhumaniste. Nick Bostrom et Laurent Alexandre se sont succ\u00e9d\u00e9s \u00e0 Paris sur la sc\u00e8ne de l\u2019USI, conf\u00e9rence d\u00e9di\u00e9e aux professionnels et \u00e0 l'avenir du num\u00e9rique et du monde. Usbek & Rica s'est gliss\u00e9 dans le public pour tenter de r\u00e9soudre l'\u00e9quation suivante : deux gourous + une IA = z\u00e9ro chance de s'en sortir ?",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier",
+        "economique"
+      ],
+      "label": "\u00ab La soci\u00e9t\u00e9 algorithmique serait un cauchemar \u00bb | Usbek & Rica",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "soci\u00e9t\u00e9"
+      ],
+      "type": "webpage",
+      "url": "https://usbeketrica.com/article/la-societe-algorithmique-serait-un-cauchemar",
+      "weight": 25
+    },
+    {
+      "ID": "ref_P77CTN59",
+      "abstractNote": "Un bras robotique arm\u00e9 d'un stylo recopie sur un carnet la phrase \u00abI must not hurt humans \u00bb (je ne dois pas blesser les humains). Cette installation l\u00e9g\u00e8rement d\u00e9rangeante nous renvoie aux questionnements \u00e9thiques sur l'intelligence artificielle et la robotisation. Rencontre avec le cr\u00e9ateur de The Punishment.",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "\u00ab The Punishment \u00bb : punir un robot pour pr\u00e9venir la r\u00e9bellion des machines ? | Usbek & Rica",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "machines",
+        "robot"
+      ],
+      "type": "webpage",
+      "url": "https://usbeketrica.com/article/the-punishment-punir-un-robot-pour-prevenir-la-rebellion-des-machines",
+      "weight": 25
+    },
+    {
+      "ID": "ref_VEUVCVM9",
+      "abstractNote": "\u00ab R\u00e9inventer le travail sans l\u2019emploi. Pourquoi le num\u00e9rique nous contraint \u00e0 changer notre conception du travail \u00bb. Tel est le titre de la note \u00e9crite pour l'Institut Diderot par l'essayiste Ariel Kyrou. L'auteur a souhait\u00e9 partager ce texte \u00e0 Usbek & Rica, dans une version l\u00e9g\u00e8rement augment\u00e9e. Dans cette partie, l'auteur d\u00e9crit une usine allemande comme symbole de ce qu'il pourrait advenir du travail.",
+      "authors": [],
+      "category": "reference",
+      "color": "#c57753",
+      "connex": [],
+      "dataset": "Atelier controverses CNAM",
+      "dataset_": "atelier-controverse",
+      "group": [
+        "atelier"
+      ],
+      "label": "Industrie 4.0 : l'homme, dieu ou esclave de la machine ? | Usbek & Rica",
+      "note": "",
+      "supertag": false,
+      "tag": [
+        "esclave",
+        "machines",
+        "travail"
+      ],
+      "type": "webpage",
+      "url": "https://usbeketrica.com/article/industrie-4-0-l-homme-dieu-ou-esclave-de-la-machine",
       "weight": 25
     },
     {
@@ -351,166 +3466,6 @@
       ],
       "type": "webpage",
       "url": "http://www.laviedesidees.fr/Citoyen-hackeur.html",
-      "weight": 25
-    },
-    {
-      "ID": "ref_PV3THDEI",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "AIME",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://modesofexistence.org/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_BMRPJ25G",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "ControverSciences.org",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "https://www.controversciences.org/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_4U9S9HPG",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "SamNetwork : Digital Video Database for Knowledge",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "https://www.sam-network.org/about",
-      "weight": 25
-    },
-    {
-      "ID": "ref_HB78M45Z",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Controverse | Plateforme \u00e9ditoriale",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://controverse.co/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_Q3VJH7GF",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Pourquoi certains nient les r\u00e9sultats de la science | Passeur de sciences",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://passeurdesciences.blog.lemonde.fr/2016/12/28/pourquoi-certains-nient-les-resultats-de-la-science/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_MJJDQ6WU",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Can an algorithm be wrong? Twitter Trends, the specter of censorship, and our faith in the algorithms around us \u2013 Culture Digitally",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://culturedigitally.org/2011/10/can-an-algorithm-be-wrong/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_E64BE5UX",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "The Relevance of Algorithms \u2013 Culture Digitally",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://culturedigitally.org/2012/11/the-relevance-of-algorithms/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_Z8K95J9B",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "\u00ab C'est quoi un Algorithme ? \u00bb | La Ga\u00eet\u00e9 lyrique",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "https://gaite-lyrique.net/article/cest-quoi-un-algorithme",
       "weight": 25
     },
     {
@@ -586,186 +3541,6 @@
       "weight": 25
     },
     {
-      "ID": "ref_CAPP28KZ",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Data as Remedy for Post-Truth \u2014 24h Hackathon in Tartu, Estonia 31.03\u20121.04",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://hack24.ut.ee/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_NZZENVQU",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Les cartographies de controverses au Medialab | Knowtex Blog",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://www.knowtex.com/blog/les-cartographies-de-controverses-au-medialab/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_J8ECF4ZM",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Konrad Becker : Dictionnaire de r\u00e9alit\u00e9 tactique \u2013 Les presses du r\u00e9el (livre)",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://www.lespressesdureel.com/ouvrage.php?id=5313&menu",
-      "weight": 25
-    },
-    {
-      "ID": "ref_88WR776W",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Datavisualisation : Toute l'actualit\u00e9 sur Le Monde.fr.",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://www.lemonde.fr/data-visualisation/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_275RCAJX",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Contropedia \u2013 the analysis and visualization of controversies in Wikipedia articles | Sciences Po | MedialabSciences Po | Medialab",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://www.medialab.sciences-po.fr/fr/publications/contropedia-the-analysis-and-visualization-of-controversies-in-wikipedia-articles/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_A83UHFGE",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Works",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://controverses.sciences-po.fr/archiveindex/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_7C4XP69H",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Des robots et des hommes",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/des-robots-et-des-hommes",
-      "weight": 25
-    },
-    {
-      "ID": "ref_5HFWZTHT",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Les algorithmes sont-ils une nouvelle forme de bureaucratie ? | InternetActu.net",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://www.internetactu.net/2017/04/04/les-algorithmes-sont-ils-une-nouvelle-forme-de-bureaucratie/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_6B6GPFJ3",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "Algorithmic Composer",
-      "note": "",
-      "supertag": false,
-      "tag": [],
-      "type": "webpage",
-      "url": "http://www.algorithmiccomposer.com/",
-      "weight": 25
-    },
-    {
       "ID": "ref_38QDBF9N",
       "abstractNote": "",
       "authors": [],
@@ -808,32 +3583,6 @@
       ],
       "type": "webpage",
       "url": "https://secrets.dyne.org/",
-      "weight": 25
-    },
-    {
-      "ID": "ref_J5AC7UKC",
-      "abstractNote": "",
-      "authors": [],
-      "category": "reference",
-      "color": "#c57753",
-      "connex": [
-        "ref_FGD8M84H"
-      ],
-      "dataset": "Atelier controverses CNAM",
-      "dataset_": "atelier-controverse",
-      "group": [
-        "atelier"
-      ],
-      "label": "The Human Fabric of the Facebook Pyramid \u2013 SHARE LAB",
-      "note": "",
-      "supertag": false,
-      "tag": [
-        "facebook",
-        "internet",
-        "sociocracy"
-      ],
-      "type": "webpage",
-      "url": "https://labs.rs/en/the-human-fabric-of-the-facebook-pyramid/",
       "weight": 25
     },
     {
@@ -943,10 +3692,10 @@
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "code",
+      "label": "numerique",
       "supertag": false,
       "tag": [
-        "code"
+        "numerique"
       ],
       "type": "tag name",
       "url": "",
@@ -957,10 +3706,10 @@
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "citoyen",
+      "label": "etudes",
       "supertag": false,
       "tag": [
-        "citoyen"
+        "etudes"
       ],
       "type": "tag name",
       "url": "",
@@ -971,10 +3720,10 @@
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "sociocracy",
+      "label": "technique",
       "supertag": false,
       "tag": [
-        "sociocracy"
+        "technique"
       ],
       "type": "tag name",
       "url": "",
@@ -982,6 +3731,20 @@
     },
     {
       "ID": "tag_76",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "art",
+      "supertag": false,
+      "tag": [
+        "art"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_101",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
@@ -995,21 +3758,273 @@
       "weight": 25
     },
     {
-      "ID": "tag_101",
+      "ID": "tag_126",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "lab",
+      "label": "artiste",
       "supertag": false,
       "tag": [
-        "lab"
+        "artiste"
       ],
       "type": "tag name",
       "url": "",
       "weight": 25
     },
     {
-      "ID": "tag_126",
+      "ID": "tag_151",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "intelligence",
+      "supertag": false,
+      "tag": [
+        "intelligence"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_176",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "image",
+      "supertag": false,
+      "tag": [
+        "image"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_201",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "capteurs",
+      "supertag": false,
+      "tag": [
+        "capteurs"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_226",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "prediction",
+      "supertag": false,
+      "tag": [
+        "prediction"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_251",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "collectif",
+      "supertag": false,
+      "tag": [
+        "collectif"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_276",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "risque",
+      "supertag": false,
+      "tag": [
+        "risque"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_301",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "culture",
+      "supertag": false,
+      "tag": [
+        "culture"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_326",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "code",
+      "supertag": false,
+      "tag": [
+        "code"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_351",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "election",
+      "supertag": false,
+      "tag": [
+        "election"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_376",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "sant\u00e9",
+      "supertag": false,
+      "tag": [
+        "sant\u00e9"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_401",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "critique",
+      "supertag": false,
+      "tag": [
+        "critique"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_426",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "existence",
+      "supertag": false,
+      "tag": [
+        "existence"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_451",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "education",
+      "supertag": false,
+      "tag": [
+        "education"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_476",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "tres fiable",
+      "supertag": false,
+      "tag": [
+        "tres fiable"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_501",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "actuariat",
+      "supertag": false,
+      "tag": [
+        "actuariat"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_526",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "sciences",
+      "supertag": false,
+      "tag": [
+        "sciences"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_551",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "citoyen",
+      "supertag": false,
+      "tag": [
+        "citoyen"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_576",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "politique",
+      "supertag": false,
+      "tag": [
+        "politique"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_601",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
@@ -1023,35 +4038,161 @@
       "weight": 25
     },
     {
-      "ID": "tag_151",
+      "ID": "tag_626",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "secret",
+      "label": "decision",
       "supertag": false,
       "tag": [
-        "secret"
+        "decision"
       ],
       "type": "tag name",
       "url": "",
       "weight": 25
     },
     {
-      "ID": "tag_176",
+      "ID": "tag_651",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
-      "label": "facebook",
+      "label": "moyen fiable",
       "supertag": false,
       "tag": [
-        "facebook"
+        "moyen fiable"
       ],
       "type": "tag name",
       "url": "",
       "weight": 25
     },
     {
-      "ID": "tag_201",
+      "ID": "tag_676",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "bitcoin",
+      "supertag": false,
+      "tag": [
+        "bitcoin"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_701",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "sondage",
+      "supertag": false,
+      "tag": [
+        "sondage"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_726",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "ordinateur",
+      "supertag": false,
+      "tag": [
+        "ordinateur"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_751",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "sociocracy",
+      "supertag": false,
+      "tag": [
+        "sociocracy"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_776",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "philosophique",
+      "supertag": false,
+      "tag": [
+        "philosophique"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_801",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "bourse",
+      "supertag": false,
+      "tag": [
+        "bourse"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_826",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "rwanda",
+      "supertag": false,
+      "tag": [
+        "rwanda"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_851",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "intelligence artificielle",
+      "supertag": false,
+      "tag": [
+        "intelligence artificielle"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_876",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "gouvernement",
+      "supertag": false,
+      "tag": [
+        "gouvernement"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_901",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
@@ -1065,7 +4206,483 @@
       "weight": 25
     },
     {
-      "ID": "tag_226",
+      "ID": "tag_926",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "poetique",
+      "supertag": false,
+      "tag": [
+        "poetique"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_951",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "particulier",
+      "supertag": false,
+      "tag": [
+        "particulier"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_976",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "presentation",
+      "supertag": false,
+      "tag": [
+        "presentation"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1001",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "abiteboul",
+      "supertag": false,
+      "tag": [
+        "abiteboul"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1026",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "secret",
+      "supertag": false,
+      "tag": [
+        "secret"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1051",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "travail",
+      "supertag": false,
+      "tag": [
+        "travail"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1076",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "finance",
+      "supertag": false,
+      "tag": [
+        "finance"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1101",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "verit\u00e9",
+      "supertag": false,
+      "tag": [
+        "verit\u00e9"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1126",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "journal",
+      "supertag": false,
+      "tag": [
+        "journal"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1151",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "robots",
+      "supertag": false,
+      "tag": [
+        "robots"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1176",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "fiable",
+      "supertag": false,
+      "tag": [
+        "fiable"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1201",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "lab",
+      "supertag": false,
+      "tag": [
+        "lab"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1226",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "tradding",
+      "supertag": false,
+      "tag": [
+        "tradding"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1251",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "humain",
+      "supertag": false,
+      "tag": [
+        "humain"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1276",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "data",
+      "supertag": false,
+      "tag": [
+        "data"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1301",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "philosophie",
+      "supertag": false,
+      "tag": [
+        "philosophie"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1326",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "economique",
+      "supertag": false,
+      "tag": [
+        "economique"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1351",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "machines learning",
+      "supertag": false,
+      "tag": [
+        "machines learning"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1376",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "algorithme",
+      "supertag": false,
+      "tag": [
+        "algorithme"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1401",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "outils",
+      "supertag": false,
+      "tag": [
+        "outils"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1426",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "evolution",
+      "supertag": false,
+      "tag": [
+        "evolution"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1451",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "prix",
+      "supertag": false,
+      "tag": [
+        "prix"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1476",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "moteur de recherche",
+      "supertag": false,
+      "tag": [
+        "moteur de recherche"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1501",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "transparence",
+      "supertag": false,
+      "tag": [
+        "transparence"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1526",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "depossession",
+      "supertag": false,
+      "tag": [
+        "depossession"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1551",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "cerveau",
+      "supertag": false,
+      "tag": [
+        "cerveau"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1576",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "robot",
+      "supertag": false,
+      "tag": [
+        "robot"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1601",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "automatique",
+      "supertag": false,
+      "tag": [
+        "automatique"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1626",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "plateforme",
+      "supertag": false,
+      "tag": [
+        "plateforme"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1651",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "flux",
+      "supertag": false,
+      "tag": [
+        "flux"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1676",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "machines",
+      "supertag": false,
+      "tag": [
+        "machines"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1701",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "bac",
+      "supertag": false,
+      "tag": [
+        "bac"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1726",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "opendata",
+      "supertag": false,
+      "tag": [
+        "opendata"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1751",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "facebook",
+      "supertag": false,
+      "tag": [
+        "facebook"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1776",
       "category": "tag",
       "color": "#a57eb7",
       "group": "",
@@ -1073,6 +4690,34 @@
       "supertag": false,
       "tag": [
         "soci\u00e9t\u00e9"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1801",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "esclave",
+      "supertag": false,
+      "tag": [
+        "esclave"
+      ],
+      "type": "tag name",
+      "url": "",
+      "weight": 25
+    },
+    {
+      "ID": "tag_1826",
+      "category": "tag",
+      "color": "#a57eb7",
+      "group": "",
+      "label": "economie",
+      "supertag": false,
+      "tag": [
+        "economie"
       ],
       "type": "tag name",
       "url": "",
@@ -1094,7 +4739,7 @@
         "name": "tag"
       }
     ],
-    "edges_number": 38,
+    "edges_number": 217,
     "groups_names": [
       "sociale",
       "culturelle",
@@ -1125,20 +4770,84 @@
         "name": "territoriale"
       }
     ],
-    "nodes_number": 41,
-    "refs_number": 26,
+    "nodes_number": 162,
+    "refs_number": 83,
     "tags_names": [
+      "abiteboul",
+      "actuariat",
+      "algorithme",
+      "art",
+      "artiste",
+      "automatique",
+      "bac",
+      "bitcoin",
+      "bourse",
+      "capteurs",
+      "cerveau",
       "citoyen",
       "code",
+      "collectif",
+      "critique",
+      "culture",
+      "data",
+      "decision",
+      "depossession",
+      "economie",
+      "economique",
+      "education",
+      "election",
+      "esclave",
+      "etudes",
+      "evolution",
+      "existence",
       "facebook",
+      "fiable",
+      "finance",
+      "flux",
+      "gouvernement",
+      "humain",
+      "image",
+      "intelligence",
+      "intelligence artificielle",
       "internet",
+      "journal",
       "lab",
       "livecode",
+      "machines",
+      "machines learning",
       "medias",
+      "moteur de recherche",
+      "moyen fiable",
+      "numerique",
+      "opendata",
+      "ordinateur",
+      "outils",
+      "particulier",
+      "philosophie",
+      "philosophique",
+      "plateforme",
+      "poetique",
+      "politique",
+      "prediction",
+      "presentation",
+      "prix",
+      "risque",
+      "robot",
+      "robots",
+      "rwanda",
+      "sant\u00e9",
+      "sciences",
       "secret",
       "sociocracy",
-      "soci\u00e9t\u00e9"
+      "soci\u00e9t\u00e9",
+      "sondage",
+      "technique",
+      "tradding",
+      "transparence",
+      "travail",
+      "tres fiable",
+      "verit\u00e9"
     ],
-    "tags_number": 10
+    "tags_number": 74
   }
 }

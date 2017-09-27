@@ -460,7 +460,39 @@ and organisation which produce conflicts with the controversial organisations an
 
             }
 
+        ,
 
+        'atelier-magnan' : {
+
+            'API'           : 'Zotero',
+            'dataSet_name'  : 'Atelier Magnan',
+            'dataSet_infos' : {
+                                'presentation' : """... """,
+                                'authors'      : """... """,
+                                'methodology'  : """... """,
+                                'credits'      : """...""",
+                            },
+            'dataSet_key'   : '1411268', ### aka group key
+            'url_ROOT'      : create_API_URL('1307836'),
+            'url_WEB'       : create_WEB_URL('1307836'),
+            'urlsDict'      : {
+
+                            },
+            'nodesColorsDict' : {
+                    node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
+                    node_str_dict['tags']      : {'name' : 'blue' , 'hex' : '#a57eb7' },
+                    node_str_dict['reference'] : {'name' : 'lime' , 'hex' : '#c57753' }
+                            },
+            'edgesDashDict' : {
+                    'ref-ref'  : '1',
+                    'ref-tag'  : '1 1',
+                    'ref-group': '3 3'
+                            },
+            'switch_color'  : 'hex',
+            'presetsFilters': {"radialFilter": ["group"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+            'supertags'     : []
+
+            }
 
     ### it should be possible to extend this list ...
 
