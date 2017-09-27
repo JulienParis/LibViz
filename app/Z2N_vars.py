@@ -489,7 +489,7 @@ and organisation which produce conflicts with the controversial organisations an
                     'ref-group': '3 3'
                             },
             'switch_color'  : 'hex',
-            'presetsFilters': {"radialFilter": ["tag"], "hideFilter" : [] , "breakFilter" : [] }, ## selection by .class and by .id !!!
+            'presetsFilters': {"radialFilter": ["tag"], "hideFilter" : [] , "breakFilter" : ["ref-tag"] }, ## selection by .class and by .id !!!
             'supertags'     : []
 
             }
