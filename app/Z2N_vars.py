@@ -554,7 +554,7 @@ and organisation which produce conflicts with the controversial organisations an
                     'ref-group': '3 3'
                             },
             'switch_color'  : 'hex',
-            'presetsFilters': {"radialFilter": ["tag"], "hideFilter" : [] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
+            'presetsFilters': {"radialFilter": ["THEMES"], "hideFilter" : [] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
             'supertags'     : []
 
             }
