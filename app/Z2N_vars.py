@@ -541,7 +541,7 @@ and organisation which produce conflicts with the controversial organisations an
             'url_ROOT'      : create_API_URL('1411268'),
             'url_WEB'       : create_WEB_URL('1411268'),
             'urlsDict'      : {
-                                '5QGTSJS5'  : {'name' : 'Nathalie Magnan Wikipedia' , 'len' : 0, 'hex' : '#325d58'},
+                                'IPPP3DAC'  : {'name' : 'Nathalie Magnan' , 'len' : 0, 'hex' : '#325d58'},
                             },
             'nodesColorsDict' : {
                     node_str_dict['group']     : {'name' : 'red'  , 'hex' : '#8eba7d' }, ###############
