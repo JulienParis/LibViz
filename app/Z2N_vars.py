@@ -277,7 +277,7 @@ and organisation which produce conflicts with the controversial organisations an
                 'ref-group': '3 3'
                         },
         'switch_color'  : 'hex',
-        'presetsFilters': {"radialFilter": ["group"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
+        'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
         'supertags'     : []
 
         }
