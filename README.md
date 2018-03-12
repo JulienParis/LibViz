@@ -26,7 +26,7 @@ website : <a href="http://libviz.artlabo.org">libviz.artlabo.org</a>
 LibViz allows to generate data visualisations (graphs) from sets of Zotero references.
 
 ------------
-##HISTORY
+## HISTORY
 
 LibViz started as a part of [1.CAMP](http://www.pingbase.net/activites/1-camp), which a larger project aiming to cross different topics as the anthropocene era, art, new practices, scientific research, ... Julien Bellanger from [PING](http://www.pingbase.net/) could tell more about this part...
 
