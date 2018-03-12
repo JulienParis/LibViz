@@ -1,13 +1,18 @@
                   
-<h4 align=center>
-LibViz : <a href="http://libviz.artlabo.org">libviz.artlabo.org</a>
-</h4>
-
-<hr>
 
 <h2 align=center>
-    Making graphs you can play with <br>from any Zotero library..
+    Making graphs you can play with <br>from any 
+    <a href="https://www.zotero.org/">Zotero</a> library..
 </h2>
+
+--------
+
+<h4 align=center>
+website : <a href="http://libviz.artlabo.org">libviz.artlabo.org</a>
+</h4>
+
+------
+
 
 <h2 align=center>
 	<img src="./preview_05a.png">
