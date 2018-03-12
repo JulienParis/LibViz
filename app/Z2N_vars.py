@@ -544,7 +544,7 @@ collections = {
                                 'authors'      : u""" 
                                                 The Zotero library was coordinated by Ewen Chardronnet. The different persons involved in the
                                                 organisation of « TRANS/BORDER : Les Enseignements de Nathalie Magnan » and of the « Edit-a-thon
-                                                Wikipédia Art+Feminism » organised in Paris (Gaité lyrique), Bourges (Ecole nationale supérieure d’art /
+                                                Wikipédia Art+Feminism » organised in Paris (Gaîté lyrique), Bourges (Ecole nationale supérieure d’art /
                                                 Bandits-Mages) and Bruxelles (Ecole de recherche graphique), have contributed to collect datas and to
                                                 put them in the Zotero database. 
                                                 \n
