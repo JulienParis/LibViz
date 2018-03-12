@@ -8,8 +8,8 @@ LibViz : <a href="http://libviz.artlabo.org">libviz.artlabo.org</a>
 <h2 align=center>
     Making graphs you can play with <br>from any Zotero library..
 </h2>
-<h2 align=center>
 
+<h2 align=center>
 	<img src="./preview_05a.png">
     <br>
 	<img src="./preview_05b.png">
