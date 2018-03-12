@@ -532,10 +532,10 @@ and organisation which produce conflicts with the controversial organisations an
             'API'           : 'Zotero',
             'dataSet_name'  : 'Nathalie Magnan',
             'dataSet_infos' : {
-                                'presentation' : """... """,
-                                'authors'      : """... """,
-                                'methodology'  : """... """,
-                                'credits'      : """...""",
+                                'presentation' : """ """,
+                                'authors'      : """ """,
+                                'methodology'  : """ """,
+                                'credits'      : """ """,
                             },
             'dataSet_key'   : '1411268', ### aka group key
             'url_ROOT'      : create_API_URL('1411268'),
@@ -554,7 +554,7 @@ and organisation which produce conflicts with the controversial organisations an
                     'ref-group': '3 3'
                             },
             'switch_color'  : 'hex',
-            'presetsFilters': {"radialFilter": ["THEMES"], "hideFilter" : [] , "breakFilter" : ["ref-group"] }, ## selection by .class and by .id !!!
+            'presetsFilters': {"radialFilter": [], "hideFilter" : [] , "breakFilter" : ["ref-group"], "collapsers" : "all" }, ## selection by .class and by .id !!!
             'supertags'     : []
 
             }

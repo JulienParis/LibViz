@@ -401,47 +401,72 @@
 
     // load presetsFilters
     var presets = {{ presetsFilters|tojson }};
-    //console.log("clickPresets : ", presets )
+    console.log("clickPresets : ", presets )
 
     // click presets
     function clickPresets() {
+
+      // handle full screen or selective hide from 
+      var presetCollapse = presets["collapsers"] ; 
+      console.log(">>>> from D3_network / presetCollapse : ", presetCollapse );
+
+      if ( presetCollapse != undefined ){
+        if ( presetCollapse == "all" ) {
+          console.log(">>>> from D3_network / #collapseAll : ", $('#collapseAll') );
+          $('#collapseAll').click(); 
+        }
+        else if ( presetCollapse == "filters" ){
+          console.log(">>>> document ready >>>> " );
+          $('#collapserFilters').click(); 
+        } 
+        else if ( presetCollapse == "legend" ){
+          console.log(">>>> document ready >>>> " );
+          $('#collapsibleInfosCol').collapse("hide"); 
+        } ;
+
+      };
+
 
       var values_toPress = [];
 
       // iterate through preset : radial / hide / break
       for (var key in presets ) {
+        
+        if (key != "collapsers"){
+          
+          // example : 'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
+          values              = presets[key] ; // example : key = ".radialFilter" ... presets[key] = Array["ref-group", "ref-tag"]
+          // console.log("clickPresets / presets : ", key, presets[key] );
 
-        // example : 'presetsFilters': {"radialFilter": ["SUBSTANCES"], "hideFilter" : ["group", "tag"] , "breakFilter" : ["ref-group", "ref-tag"] }, ## selection by .class and by .id !!!
-        values              = presets[key] ; // example : key = ".radialFilter" ... presets[key] = Array["ref-group", "ref-tag"]
-        console.log("clickPresets / presets : ", key, presets[key] );
+          if (values.length > 0 ) {
 
-        if (values.length > 0 ) {
+            // trigger corresponding preset functions
+            for (i = 0; i < values.length ; i++) {
 
-          // trigger corresponding preset functions
-          for (i = 0; i < values.length ; i++) {
+              var value = values[i];
+              console.log("clickPresets / value : ", value );
 
-            var value = values[i];
-            console.log("clickPresets / value : ", value );
+              if (key == "radialFilter") {
+                moveItToRadial(value) ;
+                console.log("...clickPresets / triggering moveItToRadial : ", value );
+              }
 
-            if (key == "radialFilter") {
-              moveItToRadial(value) ;
-              console.log("clickPresets / triggering moveItToRadial : ", value );
-            }
+              else if (key == "hideFilter" ) {
+                hideNodes(value);
+                console.log("...clickPresets / triggering hideNodes : ", value );
+                values_toPress.push(value);
+              }
 
-            else if (key == "hideFilter" ) {
-              hideNodes(value);
-              console.log("clickPresets / triggering hideNodes : ", value );
-              values_toPress.push(value);
-            }
+              else if (key == "breakFilter" ) {
+                Update_Node(value);
+                console.log("...clickPresets / triggering Update_Node : ", value );
+                values_toPress.push(value);
+              }
 
-            else if (key == "breakFilter" ) {
-              Update_Node(value);
-              console.log("clickPresets / triggering Update_Node : ", value );
-              values_toPress.push(value);
+
             }
 
           }
-
         }
 
         // 'press' buttons from hideFilter and breakFilter
@@ -609,6 +634,18 @@
     }
 
 
+    ////////////////////////////////////////////////////////////////////////////
+    /// SHOW OR HIDE FILTERS
+    function CollapseFilters(value){
+      //if ( value == "hide" ) {
+        console.log("CollapseFilters / value : ", value ) ; 
+        // var button_filters = $('#collapsibleFilters') ; //.collapse('hide');
+        // button_filters.setClass("collapsed");
+        // button_filters.setAttribute("aria-expanded", "false");
+        // button_filters.className += " active";
+        $('#collapsibleFilters').collapse('hide');
+      //}
+    }
 
     /////////////////////////////////////////////////////////////////////////////////
     /// BREAK LINKS & UPDATE function
@@ -622,8 +659,8 @@
 
       // change button status on click event / Enabled="0" -> not clicked ; 1 =
       if (status =="0"){
-		Clickbutton.setAttribute("Enabled","1");
-		Clickbutton.setAttribute("aria-pressed", "true") ;
+        Clickbutton.setAttribute("Enabled","1");
+        Clickbutton.setAttribute("aria-pressed", "true") ;
       }
       if (status =="1"){
         Clickbutton.setAttribute("Enabled","0");
@@ -638,12 +675,12 @@
       var rulesToHide = [] ;
       for(var j = 0; j < buttons.length; j++) {
         //console.log(button);
-		var button = buttons[j];
-		var status = button.getAttribute("Enabled");
+        var button = buttons[j];
+        var status = button.getAttribute("Enabled");
         // remove nodes and edges if button status is "1"
-		if (status=="1"){
-          rulesToHide.push(button.id);
-        }
+        if (status=="1"){
+              rulesToHide.push(button.id);
+            }
       }
       //console.log("rulesToHide breakFilter :", rulesToHide);
 
@@ -689,13 +726,13 @@
 
       // get button attributes
       for(var j = 0; j < buttons.length; j++) {
-		var button = buttons[j];
-        // use as clickbutton if : id == buttonValue
-        var id = button.getAttribute("id");
-		if (id == buttonValue){
-          Clickbutton = button ;
-          buttonStatus = button.getAttribute("Enabled");
-        }
+        var button = buttons[j];
+            // use as clickbutton if : id == buttonValue
+            var id = button.getAttribute("id");
+        if (id == buttonValue){
+              Clickbutton = button ;
+              buttonStatus = button.getAttribute("Enabled");
+            }
       };
 
       //console.log("Clickbutton", Clickbutton);
@@ -715,11 +752,11 @@
 
       // stores all criterias to hide
       for(var j = 0; j < buttons.length; j++) {
-		var button = buttons[j];
-		var status = button.getAttribute("Enabled");
-		if (status=="1"){
-          rulesToHide.push(button.id);
-        }
+            var button = buttons[j];
+            var status = button.getAttribute("Enabled");
+            if (status=="1"){
+              rulesToHide.push(button.id);
+            }
       }
       //console.log("rulesToHide hideFilter:", rulesToHide); ////////////////////
 
@@ -1086,10 +1123,27 @@
     //DOC READY - launch autocomplete once page loaded / initialize D3.JS
     $(document).ready(function () {
 
+        console.log(">>>> document ready >>>> " );
 
         $("#search").autocomplete({ source: optArray });
 
         initD3();
+
+
+        // var presets = {{ presetsFilters|tojson }};
+        // var presetCollapse = presets["collapsers"] ; 
+        
+        // if ( presetCollapse == "all" ) {
+        //   console.log(">>>> from D3_network / presetCollapse : ", presetCollapse );
+        //   console.log(">>>> from D3_network / #collapseAll : ", $('#collapseAll') );
+        //   $('#collapseAll').click(); 
+        // }
+        // else if ( presetCollapse == "filters" ){
+        //   console.log(">>>> from D3_network / presetCollapse : ", presetCollapse );
+        //   console.log(">>>> document ready >>>> " );
+        //   $('#collapserFilters').click(); 
+        // } ;
+
 
         //// reanimate graph every n milliseconds
         window.setInterval(

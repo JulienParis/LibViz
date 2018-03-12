@@ -3,9 +3,12 @@ LibViz // http://libviz.artlabo.org
 
 
 Making graphs you can play with from Zotero libraries..
--------------------------------------------------------
------------ VERSION IN DEVELOPMENT !!! ----------------
--------------------------------------------------------
+
+<h2 align=center>
+	<img src="./preview_05a.png">
+    <br>
+	<img src="./preview_05b.png">
+</h2>
 
 -------------------------------------------------------
 PRESENTATION
@@ -25,12 +28,11 @@ LibViz development is documented HERE and on GitHub.
 
 LibViz is powered by :
 
-    Python to get the references and create the JSON datasets
-    Zotero to organise bibliographical references
-    Flask as backbone of the website
-    Bootstrap for the global aspect website
-    d3.js by
-    Mike Bostock to create the graph visualisation
+    **Python** to get the references and create the JSON datasets
+    **Zotero** to organise bibliographical references
+    **Flask** as backbone of the website
+    **Bootstrap** for the global aspect website
+    **d3.js** by Mike Bostock to create the graph visualisation
 
 -------------------------------------------------------
 CREDITS
