@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 ### global variables and collections for Z2N ###
 ### to retrieve in Zotero   ###
@@ -226,19 +227,19 @@ collections = {
         'dataSet_name'  : 'Endocrine disruption',
         'dataSet_infos' : {
                             'presentation' : """
-Database ENDOCRINE DISRUPTION shows -substances- disrupting endocrinian system in human (males and females) and also in non humans, with their -biological effects- and -societal effects- on them.
-It shows -controversial organisations- producing endocrine disruptors and -antagonist organisations- which struggle against them.
-<br>
-Through the database it is possible to watch a large set of -scientific articles- in order to evaluate ways of action of endocrine disruptors.
-\n
-Pathways to investigate the different sets of datas, their structure and relationships :
-a - Recognizing the tags ? Please click in LEGEND . See the different COLORS of each tag, and learn to make distinction.
-b - Hierarchising the tags ? Please click the tag SUBSTANCE + RADIAL.
+                                                Database ENDOCRINE DISRUPTION shows -substances- disrupting endocrinian system in human (males and females) and also in non humans, with their -biological effects- and -societal effects- on them.
+                                                It shows -controversial organisations- producing endocrine disruptors and -antagonist organisations- which struggle against them.
+                                                <br>
+                                                Through the database it is possible to watch a large set of -scientific articles- in order to evaluate ways of action of endocrine disruptors.
+                                                \n
+                                                Pathways to investigate the different sets of datas, their structure and relationships :
+                                                a - Recognizing the tags ? Please click in LEGEND . See the different COLORS of each tag, and learn to make distinction.
+                                                b - Hierarchising the tags ? Please click the tag SUBSTANCE + RADIAL.
 
-You see a circle with the different substances indexed in the database
-You can add all the BIOLOGICAL AND SOCIETAL EFFECTS directly connected with these SUBSTANCES.
-And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
-and organisation which produce conflicts with the controversial organisations and uses.
+                                                You see a circle with the different substances indexed in the database
+                                                You can add all the BIOLOGICAL AND SOCIETAL EFFECTS directly connected with these SUBSTANCES.
+                                                And, when you have watched different nodes associating substances and effects, to connect them to organisations which produces substances,
+                                                and organisation which produce conflicts with the controversial organisations and uses.
                                                 """
                                                 ,
                             'authors'      : """The different persons involved in the collective group Aliens in green, mostly the artist group Bureau d'etudes and the writer Ewen Chardronnet,
@@ -532,10 +533,43 @@ and organisation which produce conflicts with the controversial organisations an
             'API'           : 'Zotero',
             'dataSet_name'  : 'Nathalie Magnan',
             'dataSet_infos' : {
-                                'presentation' : """ """,
-                                'authors'      : """ """,
-                                'methodology'  : """ """,
-                                'credits'      : """ """,
+                                'presentation' : u""" 
+                                                The LibViz datavisualisation NATHALIE MAGNAN shows different fields of activities explored by
+                                                Nathalie Magnan in her teachings, writings, translation works, activism and art practices. 
+                                                \n
+                                                For readibility purposes we made 6 simples categories : ART / ACTIVISME / CYBERFEMINISME /
+                                                ENSEIGNEMENT / PRESSE / THEMES / THEORIE DES MEDIAS. Main explored topics are
+                                                identified in THEMES.
+                                                """,
+                                'authors'      : u""" 
+                                                The Zotero library was coordinated by Ewen Chardronnet. The different persons involved in the
+                                                organisation of « TRANS/BORDER : Les Enseignements de Nathalie Magnan » and of the « Edit-a-thon
+                                                Wikipédia Art+Feminism » organised in Paris (Gaité lyrique), Bourges (Ecole nationale supérieure d’art /
+                                                Bandits-Mages) and Bruxelles (Ecole de recherche graphique), have contributed to collect datas and to
+                                                put them in the Zotero database. 
+                                                \n
+                                                The support of Ping and specially Julien Bellanger, the support of
+                                                Labomedia and mostly Benjamin Cadon gave us the understanding of the tools we decided to use for
+                                                this project : the use of Zotero database and the transcription in a D3JS visualisation. The work of
+                                                transcription from Zotero to D3JS, the machinery and the graphic design of the dataviz was produced by
+                                                Julien Paris.
+                                                """,
+                                'methodology'  : u"""
+                                                The first task of the project was the collect, digitalisation and indexation of Nathalie Magnan
+                                                works&articles in a Zotero data base, wether they were online or not. The indexation has been done in
+                                                french, but cover her english work as well. From this corpus it was possible to extend the dataset in order
+                                                to create a matrix of potential meta-relations interconnecting Nathalie Magnan main research fields,
+                                                thematics and people or organisations she worked with. This dataviz is a tool for the navigation in the
+                                                large sprectrum of actions, theoretical works, argumentations and narratives covered by Nathalie Magnan.
+                                                """,
+                                'credits'      : u""" 
+                                                Contact dataviz : jparis.py-at-gmail.com \ Contact for Nathalie Magnan’s Zotero library : e.chardronnet-
+                                                at-gmail.com \ LibViz was developed with the support of the CNC-Dicream in the context of the Aliens
+                                                in Green project (aliensingreen.eu).
+                                                \n
+                                                Ewen Chardronnet wants to thank Reine Prat, Isabelle Carlier, Marie Lechner, Isabelle Arvers, Chloé
+                                                Desmoineaux.
+                                                """,
                             },
             'dataSet_key'   : '1411268', ### aka group key
             'url_ROOT'      : create_API_URL('1411268'),
